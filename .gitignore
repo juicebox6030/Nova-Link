@@ -1,0 +1,24 @@
+# Object files
+*.o
+*.a
+*.out
+*.elf
+*.hex
+*.bin
+*.map
+
+# Build artifacts
+/build/
+/Debug/
+/Release/
+/dist/
+
+# VSCode project settings
+.vscode/
+
+# OS-generated
+*.DS_Store
+Thumbs.db
+
+# Logs
+*.log
