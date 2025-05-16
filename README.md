@@ -8,7 +8,6 @@ This SDK is the official implementation, targeting **ESP32**, with the **TI CC13
 ---
 =======
 This SDK is the official implementation, targeting **ESP32**, with the **TI CC1352R** for the **NOVA-LINK** Wireless stack. The goal is a  modular, efficient, low latency wireless stack that can be accept whatever payload is required. The goal is there is an SDK that a plugin based system can interact with the **NOVA-LINK** Wireless stack.
->>>>>>> 415d7dc1aad5c29e7e8eae9e1dc4dc8b21a363a3
 
 ## 🔧 System Overview
 
