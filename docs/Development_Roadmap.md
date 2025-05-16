@@ -17,4 +17,16 @@
 
 ## NOVA-Link
 
+- [ ] Send Fragment (SPI)
+- [ ] Receive Fragment (SPI)
 - [ ] Data_Fragment Structure
+- [ ] Clock Scheduler
+- [ ] Fragment -> TX 
+- [ ] RX -> Fragment
+- [ ] Logging/Alerts
+- [ ] Fragment De-Duplication
+- [ ] Zone 0 Flag Managment
+
+## Plugins
+
+- [ ] TBD...
