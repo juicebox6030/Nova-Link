@@ -1,4 +1,4 @@
-# 🌐 NOVA-LINK
+# NOVA-LINK
 
 **NOVA-LINK** is an open, low-latency wireless communication protocol and firmware stack designed for use in real-time live event environments.
 
@@ -12,23 +12,23 @@ This SDK is the official implementation, targeting **ESP32**, with the **TI CC13
 
 NOVA-LINK provides a dual-band (Sub-GHz + 2.4GHz) wireless backbone to reliably transport payloads like:
 
-- 🎛 DMX & RDM
-- 🔊 Audio Streams
-- 🎚 OSC and other control protocols
-- 🔁 Synchronization and Metadata messaging
+- DMX & RDM
+- Audio Streams
+- OSC and other control protocols
+- Synchronization and Metadata messaging
 
 ---
 
 ## 💡 Core Design Goals
 
-- ⚡ **Low latency**: Sub-5ms multi-packet delivery
-- 🔁 **Dual-band redundancy** (900 MHz + 2.4 GHz) / Zone
-- 🧱 **Modular architecture** by OSI layer and device
-- 🔓 **Open-source, plugin-based design**
-- 🎯 **Deterministic performance**, no mesh delay
-- 📦 **Fixed-size packets**, optional burst grouping
-- 🧠 **Plugin ownership model**, with strict access control
-- 📝 **Fully documented** using Doxygen
+- **Low latency**: Sub-5ms multi-packet delivery
+- **Dual-band redundancy** (900 MHz + 2.4 GHz) / Zone
+- **Modular architecture** by OSI layer and device
+- **Open-source, plugin-based design**
+- **Deterministic performance**, no mesh delay
+- **Fixed-size packets**, optional burst grouping
+- **Plugin ownership model**, with strict access control
+- **Fully documented** using Doxygen
 - **IEEE 802.15.4** Using 802.15.4 for the base wirelss stack.
 - **Co-Processor Model** Split brain logic to reduce workload and increase ease of use. ESP-32 is used for WIFI/BLE and plugin processing, the TI CC1352R will be used for sending the 802.15.4 fragment and deduplication.
   
