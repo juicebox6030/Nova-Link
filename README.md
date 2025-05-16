@@ -30,6 +30,8 @@ NOVA-LINK provides a dual-band (Sub-GHz + 2.4GHz) wireless backbone to reliably 
 - 🧠 **Plugin ownership model**, with strict access control
 - 📝 **Fully documented** using Doxygen
 - **IEEE 802.15.4** Using 802.15.4 for the base wirelss stack.
+- **Co-Processor Model** Split brain logic to reduce workload and increase ease of use. ESP-32 is used for WIFI/BLE and plugin processing, the TI CC1352R will be used for sending the 802.15.4 fragment and deduplication.
+  
 ---
 
 ## 📶 Protocol Highlights
@@ -71,22 +73,17 @@ NOVA-LINK provides a dual-band (Sub-GHz + 2.4GHz) wireless backbone to reliably 
 
 ## 📦 Plugin Model
 
-Plugins run on the **ESP host**, and must claim zones before use (except for zone 0). They implement the following hooks:
+Plugins run on the **ESP host**, and must claim zones before use (except for zone 0).
 
-```c
-void plugin_on_payload_ready(zoneID, originID, data, length);
-void plugin_on_stream_reset(zoneID, originID);
-void plugin_on_global_reset(void);
-```
+Zones can be set to exclusive or read only.
 
-And use the API:
+Plugins have full control of payload.
 
-```c
-plugin_send_payload(zoneID, pluginName, data, length, burst);
-plugin_read_payload(zoneID, pluginName, buffer, length);
-```
+Plugins can push data to the metadata buffer and the api will add it to the RF cycle as it will fit. 
 
-> Metadata is treated as any other zone, using `zoneID = 0`, and is globally readable/writable.
+Metadata is treated as any other zone, using `zoneID = 0`, and is globally readable/writable.
+
+Metadata zone is a non-time sensitive zone. All other zones will get priority over this. Therfore, it is not a reliable way to transmit important data.
 
 ---
 
@@ -122,7 +119,7 @@ To contribute, follow the upcoming [Development Roadmap](#) (coming soon).
 ## 🧠 Credits
 
 Designed by [Brent Scoggins](https://github.com/Juicebox6030)  
-Luminary Technology and Productions (https://LuminaryTechnology.productions)
+Luminary Technology and Productions (https://LuminaryTechnology.productions) 
 AI Assisted ; I am not a software dev, just highly motivated!
 
 ---
