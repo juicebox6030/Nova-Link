@@ -2,11 +2,10 @@
 
 **NOVA-LINK** is an open, low-latency wireless communication protocol and firmware stack designed for use in real-time live event environments.
 
-<<<<<<< HEAD
 This SDK is the official implementation, targeting **ESP32**, with the **TI CC1352R** for the **NOVA-LINK Wireless stack**. The goal is a modular, efficient, low latency wireless stack that can be accept whatever payload is required. The goal is there is an SDK that a plugin based system can interact with the **NOVA-LINK** Wireless stack.
 
 ---
-=======
+
 This SDK is the official implementation, targeting **ESP32**, with the **TI CC1352R** for the **NOVA-LINK** Wireless stack. The goal is a  modular, efficient, low latency wireless stack that can be accept whatever payload is required. The goal is there is an SDK that a plugin based system can interact with the **NOVA-LINK** Wireless stack.
 
 ## 🔧 System Overview
