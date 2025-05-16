@@ -1,22 +1,20 @@
 # Development Roadmap – NOVA-LINK/API
 
-## Phase 1 – Fragment + NOVA API
+## NOVA-API
 
-- [ ] `DataFragment` struct
-- [ ] `plugin_send_payload()`
-- [ ] Fragment buffer with deduplication
-- [ ] Logging system
+- [ ] Data_Fragment Structure
+- [ ] Fragment -> Payload
+- [ ] Payload -> Fragment
+- [ ] Zone Claim Table
+- [ ] Logging/Alerts
+- [ ] Zone 0 Flag Managment
+- [ ] Send Payload (Plugin)
+- [ ] Receive Payload (Plugin)
+- [ ] Zone Claim Managment (Plugin)
+- [ ] Send Fragment (SPI)
+- [ ] Receive Fragment (SPI)
 
-## Phase 2 – Plugin + Zone Logic (NOVA API)
 
-- [ ] Zone claim table
-- [ ] `plugin_init()`, `plugin_on_data()`, etc.
-- [ ] Metadata handling for zone 0
-- [ ] Burst mode grouping
+## NOVA-Link
 
-## Phase 3 – Firmware + Bridge
-
-- [ ] SPI protocol
-- [ ] NOVA-Link
-- [ ] Deduplication on radio
-- [ ] Burst-mode scan windows
+- [ ] Data_Fragment Structure
