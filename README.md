@@ -119,7 +119,9 @@ To contribute, follow the upcoming [Development Roadmap](#) (coming soon).
 ## 🧠 Credits
 
 Designed by [Brent Scoggins](https://github.com/Juicebox6030)  
+
 Luminary Technology and Productions (https://LuminaryTechnology.productions) 
+
 AI Assisted ; I am not a software dev, just highly motivated!
 
 ---
