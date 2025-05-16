@@ -53,7 +53,6 @@ NOVA-LINK provides a dual-band (Sub-GHz + 2.4GHz) wireless backbone to reliably 
 - **SPI/UART Transport**:
   - Fragments are built entirely on the ESP and sent to the CC1352R
   - `SYNC` (`0xAA`) + `LEN` framing protocol
-  - Metadata packets (zone 0) are handled exactly like any other zone
 
 ---
 
@@ -104,7 +103,7 @@ Metadata zone is a non-time sensitive zone. All other zones will get priority ov
 
 ## 🚧 Development Status
 
-NOVA-LINK is in **active development**, with planning completed for all OSI layers and subsystem responsibilities. Coding will proceed with a strict modular architecture and clearly defined API surface.
+NOVA-LINK is in **active development**, with planning completed for all OSI layers and subsystem responsibilities. 
 
 To contribute, follow the upcoming [Development Roadmap](#) (coming soon).
 
