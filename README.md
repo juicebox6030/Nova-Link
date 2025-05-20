@@ -25,7 +25,6 @@ NOVA-LINK provides a dual-band (Sub-GHz + 2.4GHz) wireless backbone to reliably 
 - **Fixed-size packets**, optional burst grouping
 - **Plugin ownership model**, with strict access control
 - **Fully documented** using Doxygen
-- **IEEE 802.15.4** Using 802.15.4 for the base wirelss stack.
 - **Co-Processor Model** Split brain logic to reduce workload and increase ease of use. ESP-32 is used for WIFI/BLE and plugin processing, the TI CC1352R will be used for sending the 802.15.4 fragment and deduplication.
   
 ---
