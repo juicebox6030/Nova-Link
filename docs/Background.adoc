@@ -1,0 +1,15 @@
+= SPEC-001: Nova-Link Architecture
+:sectnums:
+:toc:
+
+== Background
+
+Nova-Link is a modular, open wireless communication stack designed for ultra-low-latency operation in live/low-latency environments. The system targets embedded applications such as lighting, audio control, and automation —domains where reliability, timing precision, and extensibility are critical.
+
+The architecture uses a high-level controller and plugin host (ESP32-S3), and a multi-band RF Core (TI CC1352R) as the radio core. While these rolls can be combined into one processoer, this co-processor design allows the ESP32 to focus on plugin execution, Wi-Fi/BLE, and configuration, while the CC13xx handles deterministic Sub-GHz RF communication using TI's proprietary PHY. Low-power devices may still combine these functions with know limitations.
+
+Nova-Link avoids the limitations of traditional protocols like 802.15.4 by building on TI’s EasyLink abstraction, enabling custom DataFragment packet formats, zone-based message rotation, and burst-mode extensions. 
+
+It enables a flexible plugin-based API that supports dynamic routing, metadata exchange, stream tracking, and eventual delivery—designed to be simple to adopt while powerful in production scenarios.
+
+The project is released under the GPLv3 license, emphasizing open innovation while preventing proprietary lock-in.

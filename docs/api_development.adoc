@@ -1,0 +1,16 @@
+=== Plugin API and Development Workflow
+
+Nova-Link provides a C-based API for plugin development on the ESP32-S3.
+
+==== API Responsibilities
+- Zone Managment
+- Manage plugin data fragments
+- Zone 0 Managment
+- Zone 0 is always accessible.
+
+==== Workflow
+1. Set up ESP-IDF
+2. Write plugin init and handler
+3. Register plugin
+4. Build and flash
+5. Test and iterate

@@ -1,0 +1,24 @@
+=== Plugin System Architecture
+
+Nova-Link supports a modular plugin architecture on the ESP32-S3 host.
+
+==== API Responsibilities
+- Zone Managment 
+- Manage plugin data fragments
+- Zone 0 data management
+- Zone 0 is always accessible.
+
+==== Isolation
+- Plugins are sandboxed by zoneID
+- Only the latest deduplicated fragment is delivered
+- Plugins cannot interfere with each other’s zone data
+
+==== Lifecycle
+
+1. System boot
+2. Plugin init → claims zone(s)
+3. Stream Tracker dispatches data
+4. Plugin handles fragment
+5. Optionally sends response fragment
+
+Plugins are compiled into the firmware and run in a lightweight, event-driven fashion. INI files should be used to support "live" configuration changes.

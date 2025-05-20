@@ -1,0 +1,34 @@
+=== SPI Transport Protocol
+
+Nova-Link uses a minimal, binary SPI framing protocol for communication between the ESP32-S3 host and the TI CC1352R/1354P10 radio co-processor.
+
+==== Topology
+- ESP32-S3 is the SPI master
+- CC135x is the SPI slave
+- Interrupt line (GPIO) signals when data is ready
+
+==== Host-to-Radio ("Push")
+Command: 0x03  
+Payload: Serialized DataFragment  
+Usage: Transmit fragment to be queued and sent in RF zone window
+
+==== Radio-to-Host ("Pull")
+Command: 0x02  
+Triggered when CC135x toggles INT_READY GPIO  
+Returns: 0xD0 + serialized DataFragment  
+Usage: Host polls for new data only when available
+
+==== SPI Command Summary
+
+| Command Byte | Meaning             |
+|--------------|---------------------|
+| 0x01         | Ping / Ready Check  |
+| 0x02         | Pull Received Fragment |
+| 0x03         | Push New Fragment   |
+| 0x04         | Radio Status Request |
+| 0xD0         | Fragment Data Type  |
+
+==== Example Cycle
+1. ESP32 sends 0x03 + fragment → CC135x buffers for TX
+2. CC135x receives fragment → sets INT_READY
+3. ESP32 polls with 0x02 → CC135x responds with DataFragment

@@ -1,0 +1,22 @@
+=== Radio Stack Architecture (CC135x)
+
+Nova-Link uses a custom radio stack on the TI CC135x to handle RF scheduling and data transmission.
+
+==== Components
+- Zone Scheduler: Manages rotation of active zones
+- RF Core: Handles modulation, TX/RX
+- SPI "Plugin"": Communicates with ESP32-S3
+
+==== Zone Multiplexing
+Only zones subscribed by the host are included in rotation, reducing power and processing overhead.
+
+==== TX Flow
+1. ESP32 sends fragment via SPI
+2. CC135x buffers by zone
+3. Transmits fragment in next zone window
+
+==== RX Flow
+1. CC135x receives a packet
+2. Buffers and deduplicates it
+3. Raises GPIO interrupt
+4. ESP32 pulls the fragment over SPI

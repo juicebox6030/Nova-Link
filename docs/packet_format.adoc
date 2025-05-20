@@ -1,0 +1,31 @@
+=== DataFragment Packet Format
+
+Nova-Link transmits data using a compact binary unit called a `DataFragment`, optimized for minimal overhead, fast decoding, and zone-based routing. Each fragment begins with a single-byte header and contains minimal required fields. This allows a larger payload for plugins.
+
+==== Format Definition
+
+[cols="1,1,3", options="header"]
+|===
+| Field     | Size         | Description
+| Header    | 1 byte       | Encodes originID (3 bits), zoneID (3 bits), and flags (2 bits)
+| seqNum    | 1 byte       | Sequence number for deduplication and retry logic
+| payload   | ≤100 bytes   | Application-defined payload (no fixed size; depends on context)
+|===
+
+==== Header Format (1 byte)
+
+[cols="1,1,3", options="header"]
+|===
+| Bits | Name        | Description
+| 7–5  | originID    | Unique sender ID (0–7)
+| 4–2  | zoneID      | Logical destination zone (0–7)
+| 1    | BURST       | Instructs receiver to hold on this zone longer
+| 0    | MGMT_LISTEN | Denotes a metadata/control fragment
+|===
+
+==== Notes
+
+- No CRC; reliability is handled through timing and deduplication.
+- Payloads are plugin-defined and may be (de)fragmented/processed further at the application layer.
+- Total size is under 102 bytes for low-latency transmission.
+- Additional Zones can be claimed for higher bandwidth. Zone transmission cycle is set, so choosing contionus zones is ideal for multiplex style plugins.

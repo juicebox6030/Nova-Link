@@ -1,0 +1,27 @@
+== Requirements
+
+The following are the technical and product requirements for the Nova-Link system, prioritized using the MoSCoW methodology:
+
+=== Must Have
+- Support for low-latency, burst-capable wireless packet delivery over Sub-GHz
+- Plugin-based API architecture with zone-based message routing and deduplication
+- Deterministic zone rotation scheduler with retry/burst flags
+- Packet deduplication and sequence number tracking per (originID, zoneID)
+- Doxygen-based inline documentation and project-wide API docs
+- GitHub project organization with reproducible folder structure and version control
+- GPLv3 licensed firmware and SDK
+
+=== Should Have
+- Plugin isolation via zone claims and access control
+- Plugin management layer to track active zone interest
+- Support for metadata/control channel (Zone 0)
+- CLI configuration interface on Host
+- Live packet inspection/logging tools
+
+=== Could Have
+- Support for OTA plugin loading or dynamic plugin scaffolding
+- Auto-generated plugin boilerplate (via script or GUI)
+- Support for alternative host MCUs (e.g., Raspberry Pi Zero, RP2040)
+- Scripting sandbox for non-realtime plugin logic
+- BLE control channel
+- NFC control mechnism

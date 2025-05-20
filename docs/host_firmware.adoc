@@ -1,0 +1,15 @@
+=== Host Firmware Architecture (ESP32-S3)
+
+The ESP32-S3 manages all plugins and SPI communication with the CC135x radio.
+
+==== Key Responsibilities
+- Plugin lifecycle and dispatch
+- Plugin Fragment deduplication 
+- Zone claim management
+- SPI interface to radio (as plugin?)
+
+==== Workflow
+1. Boot plugins and claim zones
+2. Send/receive fragments over SPI
+3. Dispatch fragments to plugins via Stream Tracker
+4. Collect and send plugin responses

@@ -1,0 +1,16 @@
+=== Stream Tracker
+
+The Stream Tracker is apart of the API and ensures deduplication and correct routing of incoming `DataFragment`s.
+
+==== Key Features
+- Tracks (originID, zoneID) → seqNum
+- Deduplicates retransmitted fragments
+- Delivers only the latest data to plugins
+- Operates in RAM buffer (not persistent)
+
+==== Behavior
+- New fragment → check seqNum
+- If new → update buffer, call plugin
+- If duplicate → silently discard
+
+This helps maintain low processing overhead and prevents stale plugin data.

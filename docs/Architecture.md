@@ -2,7 +2,7 @@
 
 ## Components
 
-- **ESP32 SDK**: Hosts plugins, manages packet creation and SPI communication. Provides User connectivity via BLE and WIFI
+- **ESP32 API**: Hosts plugins, manages packet creation and SPI communication. Provides User connectivity via BLE and WIFI
 - **TI CC1352R**: Handles radio transmission, deduplication, timing.
 - **Plugin System**: Interface for applications to send/receive wireless payloads.
 - **Zone Manager**: Tracks ownership and validity of communication zones.
