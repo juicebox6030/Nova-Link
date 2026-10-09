@@ -1,0 +1,208 @@
+= NOVA-LINK Network Simulation
+:toc:
+
+`sim/` contains a discrete-time simulator that runs N complete devices
+(host core + radio core + SPI link) against a shared RF model. It runs the
+same portable C that the firmware will run; only the RF channel, SPI wires
+and clocks are simulated. Use it to choose defaults and to catch
+regressions in whole-network behaviour. It does *not* replace testing on
+hardware (see <<limits>>).
+
+== Running it
+
+[source,sh]
+----
+cmake -S . -B build-sim -DCMAKE_BUILD_TYPE=Release
+cmake --build build-sim -j8
+./build-sim/sim/nl_sim --help
+./build-sim/sim/nl_sim --nodes 4 --runs 4 --sweep cca-backoff=0,2000
+----
+
+`--sweep KEY=V1,V2,..` repeats the run for each value of one option, and
+`--runs N` pools N seeds per value. The radio and host options set the
+`nl_radio_params_t` / `nl_host_config_t` fields of the same name
+(`--cca-backoff` sets `cca_backoff_us`, `--repeats` sets `tx_repeats`).
+
+Columns:
+
+delivery:: unique fragments delivered / fragments that should have arrived
+p50..max:: send-to-delivery latency at the receiving host
+collide:: receptions lost because two transmissions overlapped
+missed:: receptions lost because the receiver was not listening on that
+frequency for the whole packet (other zone, own TX, tuned in late)
+defer:: transmissions put off by a busy clear-channel check
+load%:: airtime on the busiest frequency / time. Every transmission counts,
+so overlaps add up and more than 100% means the channel is saturated.
+disc ms:: worst time (over all runs) until every device knew every other;
+"never" if some pair never met
+
+The regression gates in `sim/CMakeLists.txt` run under `ctest` with every
+build.
+
+== Default scenario
+
+Unless stated otherwise: 4 devices, all sending 32-byte payloads 20 times a
+second on zone 1 and listening on zone 1, sub-GHz at 200 kbps, 3 repeats per
+fragment, default radio parameters, 5 s per run, 4 seeds pooled.
+
+All numbers below were produced with the code in this tree; rerun the
+commands to refresh them after changing the scheduler.
+
+== Findings
+
+=== Bitrate: 50 kbps is not enough
+
+`--sweep bitrate=50000,100000,200000`
+
+[cols="1,1,1,1"]
+|===
+|Bitrate |Delivery |p99 |Load
+
+|50 kbps |28.9% |72 ms |164%
+|100 kbps |74.0% |29 ms |82%
+|200 kbps |98.8% |13 ms |41%
+|===
+
+Four devices at 20 fragments/s with 3 repeats need about 165% of a 50 kbps
+channel. Either the bitrate is 200 kbps or more, or the traffic per zone
+must drop a lot (fewer repeats, lower rates, more zones on separate
+frequencies). `tools/nl_airtime.py` gives the same budget without
+simulating.
+
+=== Listen before talk (cca_backoff_us)
+
+`--nodes N --sweep cca-backoff=0,1000,2000,5000`. Delivery, with p99 in
+brackets:
+
+[cols="1,1,1,1,1"]
+|===
+|Nodes |off |1000 µs |2000 µs |5000 µs
+
+|2 |98.3% (6.7 ms) |99.4% (7.2 ms) |99.3% (8.1 ms) |98.9% (9.5 ms)
+|4 |91.1% (8.3 ms) |96.7% (10.1 ms) |98.8% (12.8 ms) |98.3% (16.7 ms)
+|8 |67.3% (10.0 ms) |76.5% (16.2 ms) |79.6% (25.0 ms) |79.3% (47.2 ms)
+|===
+
+Other presets, CCA off -> 2000 µs:
+
+[cols="3,1,1"]
+|===
+|Scenario |off |2000 µs
+
+|star, 8 nodes, 40/s, 10% PER |97.2% |97.0%
+|zones preset, 6 nodes |58.8% |68.5%
+|hidden terminals, 6 nodes |49.3% |52.3%
+|4 nodes, bursts of 4, 20/s (164% load) |27.5% |32.7%
+|4 nodes, bursts of 4, 5/s |74.6% |87.9%
+|2.4 GHz band |94.0% |97.8%
+|===
+
+The default is 2000 µs: it is the best or close to it everywhere, and
+larger values only add latency. CCA cannot help a saturated channel (the
+8-node and 20/s burst rows) or terminals that cannot hear each other (the
+hidden row).
+
+Regulatory note: ETSI EN 300 220 (EU sub-GHz) requires listen-before-talk or
+a duty-cycle limit for most sub-bands, so CCA is useful there. FCC 15.247
+does not require LBT. Either way the busy threshold and timing must be
+checked on the real CC1352R (<<limits>>).
+
+=== Zone 0 repeats (mgmt_repeats)
+
+Silent network (no data traffic, discovery only), 8 devices, 16 seeds.
+Worst discovery time:
+
+[cols="1,1,1,1"]
+|===
+|mgmt_repeats |no loss |10% PER, star 40/s |20% PER
+
+|3 |401 ms |4978 ms |4232 ms
+|4 |268 ms |599 ms |429 ms
+|6 |352 ms |451 ms |667 ms
+|===
+
+With 1 repeat discovery never completed in 10 s, and with 2 it took about
+2 s. Zone 0 is visited only briefly (every `discovery_interval_us`), so a
+single transmission is rarely heard. Below 4 the worst case has
+multi-second outliers under loss. The default is 6, which costs little
+because zone 0 traffic is a few fragments per device every 2 s; data
+delivery on the 4-node broadcast scenario is the same (96.0..96.1%) for
+3, 4 and 6.
+
+=== Discovery tail: the PEERS record
+
+Before the PEERS record (`NL_META_PEERS`, see `wire_format.adoc`), most
+runs discovered all peers in 100..300 ms, but some took about 2 s, and
+one configuration did not finish in 4 s. The cause was asymmetric misses:
+A heard B, but B missed A's announcement, and only learnt of A at A's next
+periodic announcement, a full `announce_interval_us` later.
+
+Each announcement now carries a bitmap of the peers the sender knows. A
+device that finds its own bit clear answers within half the mgmt hold
+time. Afterwards the worst case over 64 seed and configuration
+combinations was 357 ms, and the gate in `sim/CMakeLists.txt` was
+tightened from 1500 ms to 800 ms.
+
+The announcement ramp (`announce_ramp_steps`, first periods at
+interval/8, /4, /2) cut the worst silent discovery from 372 ms to 267 ms
+before PEERS existed. With PEERS it no longer changes the worst case
+(352 ms either way over 16 seeds). It is kept because it costs a handful
+of extra fragments at boot and helps when PEERS records are lost.
+
+=== Repeats under loss
+
+`--per 0.2 --sweep repeats=1,2,3`: 60.6%, 83.3%, 92.4% delivery. Each
+repeat costs one airtime share (load 14%, 28%, 41%).
+
+=== Platform behaviour that matters
+
+The simulator can model a less capable radio platform:
+
+[cols="2,1"]
+|===
+|Variant (4-node default) |Delivery
+
+|Reference |98.8%
+|`--no-finish-rx`: a slot change aborts a packet being received |69.4%
+|`--no-wake-on-push`: a PUSH waits for the current slot to end |94.9%
+|===
+
+The CC1352R firmware must keep receiving a packet that started before the
+slot ended, and must re-plan as soon as the host pushes a fragment. Both
+are part of the platform contract in `wire_format.adoc`.
+
+=== Known weak spots
+
+* *Zones preset (68% delivery).* One radio can listen on one frequency at
+  a time. With traffic spread over several zones, a device misses whatever
+  is sent on the zones it is not visiting. Mitigations are higher
+  priority for busy zones, `tx_policy = in_slot`, or more repeats. The
+  only full fix is a second receiver.
+* *Hidden terminals.* Devices that cannot hear each other collide at the
+  device in the middle, and never discover each other because there is no
+  relaying. This needs a protocol extension (relay or acknowledgement)
+  and is out of scope for now.
+* *Saturation.* Above about 80% load nothing in the scheduler helps; the
+  traffic must be reduced.
+
+[[limits]]
+== What the simulator does not tell you
+
+* The RF model is simple (see `sim/nl_sim.h`): every device hears every
+  other unless a link is marked lost. Two overlapping transmissions on one
+  frequency destroy each other, a receiver must be listening from the start
+  of a packet, and surviving packets are then dropped with probability PER.
+  There is no capture effect, fading, adjacent-channel interference or
+  frequency offset.
+* Clear-channel assessment is ideal: busy means some transmission the
+  device can hear is on the air at that instant. On the CC1352R,
+  `CMD_PROP_CS` has an RSSI threshold and a measurement time, so real
+  deferrals will differ.
+* RX->TX turnaround is a fixed 150 µs (sub-GHz) or 200 µs (2.4 GHz)
+  unless `--turnaround` is given, and SPI transactions complete instantly.
+  Neither has been measured.
+* Devices get random clock offsets (so wraparound is exercised), but
+  clocks do not drift and there is no CPU load.
+
+Measure these on hardware before relying on the absolute numbers. The
+comparisons between settings are the useful part.

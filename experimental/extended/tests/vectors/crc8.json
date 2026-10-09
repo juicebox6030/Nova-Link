@@ -1,0 +1,22 @@
+{
+  "generator": "tests/gen_vectors.c",
+  "description": "CRC-8/SMBUS (poly 0x07, init 0x00, no reflection, no final XOR) as computed by nl_crc8(0, data, len)",
+  "crc8": [
+    {"data": "", "crc": 0},
+    {"data": "313233343536373839", "crc": 244},
+    {"data": "00", "crc": 0},
+    {"data": "01", "crc": 7},
+    {"data": "07", "crc": 21},
+    {"data": "80", "crc": 137},
+    {"data": "aa", "crc": 95},
+    {"data": "ff", "crc": 243},
+    {"data": "0100", "crc": 21},
+    {"data": "0303200541", "crc": 94},
+    {"data": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff", "crc": 20},
+    {"data": "932b", "crc": 15},
+    {"data": "c9c840", "crc": 53},
+    {"data": "1b81b57871ce322e7320637f2dee8b27b8", "crc": 0},
+    {"data": "6d541343c4c248632d99f7dbfce14908517222bb37d7857bd0fe62de90e72f72f66563b84c6eb583ddfcc7de9c3c48c3eba3131a1002fe15e940f80c7b78c2e4", "crc": 1},
+    {"data": "8ceccb78fe48b08e6ae5b67c472279bf9a9366e4da4d1c1bb35d5c74df22e3cc99f8a00c4cc6027e0fa2807f289f44012aa53ac71fcba91e3e4ce93a138b15b3f0adfb44a009401b5ee71bae7ad88c28d247d56229f9b75a2dda4c1fbdbf06bbd387c15b37363c46f33afc3a538788bc1e9e93cbc5c3f960fe8fd797bf96c76c2138", "crc": 223}
+  ]
+}

@@ -1,3 +1,5 @@
+NOTE: The portable implementation and current limitations are described in `Development.md`, `Protocol_Decisions.md`, and `Development_Roadmap.md`. Board drivers and physical validation remain pending.
+
 === Host Firmware Architecture (ESP32-S3)
 
 The ESP32-S3 manages all plugins and SPI communication with the CC135x radio.

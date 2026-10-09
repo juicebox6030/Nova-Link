@@ -4,6 +4,8 @@
 
 == Background
 
+NOTE: This is the original design background. The portable implementation is PHY-agnostic; EasyLink versus 802.15.4, board drivers, and over-the-air timing remain unresolved. See `Protocol_Decisions.md`.
+
 Nova-Link is a modular, open wireless communication stack designed for ultra-low-latency operation in live/low-latency environments. The system targets embedded applications such as lighting, audio control, and automation —domains where reliability, timing precision, and extensibility are critical.
 
 The architecture uses a high-level controller and plugin host (ESP32-S3), and a multi-band RF Core (TI CC1352R) as the radio core. While these rolls can be combined into one processoer, this co-processor design allows the ESP32 to focus on plugin execution, Wi-Fi/BLE, and configuration, while the CC13xx handles deterministic Sub-GHz RF communication using TI's proprietary PHY. Low-power devices may still combine these functions with know limitations.

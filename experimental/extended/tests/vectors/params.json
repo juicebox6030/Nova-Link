@@ -1,0 +1,51 @@
+{
+  "generator": "tests/gen_vectors.c",
+  "description": "Link payload codecs: radio params (NL_CMD_RADIO_CONFIG, 33 bytes), zone plan (NL_CMD_ZONE_CONFIG, 72 bytes), radio status (NL_RSP_STATUS, 28 bytes), pong (NL_RSP_PONG, 4 bytes). Multi-byte fields are little-endian. 'frame' is the full link frame",
+  "radio_params": [
+    {"name": "default", "origin_id": 0, "band": 0, "tx_policy": 0, "tx_repeats": 3, "dwell_us": 2000, "burst_extend_us": 4000, "mgmt_hold_us": 250000, "repeat_interval_us": 1500, "tracker_stale_us": 500000, "repeat_jitter_us": 1000, "discovery_interval_us": 20000, "mgmt_repeats": 6, "cca_backoff_us": 2000, "wire": "00000003d0070000a00f000090d00300dc05000020a10700e8030000204e000006d0070000", "frame": "aa062500000003d0070000a00f000090d00300dc05000020a10700e8030000204e000006d0070000fd"},
+    {"name": "custom", "origin_id": 3, "band": 2, "tx_policy": 1, "tx_repeats": 2, "dwell_us": 1234, "burst_extend_us": 5678, "mgmt_hold_us": 100000, "repeat_interval_us": 2500, "tracker_stale_us": 750000, "repeat_jitter_us": 333, "discovery_interval_us": 0, "mgmt_repeats": 0, "cca_backoff_us": 3000, "wire": "03020102d20400002e160000a0860100c4090000b0710b004d0100000000000000b80b0000", "frame": "aa062503020102d20400002e160000a0860100c4090000b0710b004d0100000000000000b80b00005d"},
+    {"name": "max", "origin_id": 7, "band": 1, "tx_policy": 1, "tx_repeats": 255, "dwell_us": 4294967295, "burst_extend_us": 16909060, "mgmt_hold_us": 2147483648, "repeat_interval_us": 3735928559, "tracker_stale_us": 1, "repeat_jitter_us": 4294967295, "discovery_interval_us": 2779096485, "mgmt_repeats": 255, "cca_backoff_us": 2130706433, "wire": "070101ffffffffff0403020100000080efbeadde01000000ffffffffa5a5a5a5ff0100007f", "frame": "aa0625070101ffffffffff0403020100000080efbeadde01000000ffffffffa5a5a5a5ff0100007f89"},
+    {"name": "min", "origin_id": 0, "band": 0, "tx_policy": 0, "tx_repeats": 1, "dwell_us": 0, "burst_extend_us": 0, "mgmt_hold_us": 0, "repeat_interval_us": 0, "tracker_stale_us": 0, "repeat_jitter_us": 0, "discovery_interval_us": 0, "mgmt_repeats": 0, "cca_backoff_us": 0, "wire": "00000001000000000000000000000000000000000000000000000000000000000000000000", "frame": "aa062500000001000000000000000000000000000000000000000000000000000000000000000000bb"}
+  ],
+  "radio_params_decode_errors": [
+    {"wire": "08000003d0070000a00f000090d00300dc05000020a10700e8030000204e000006d0070000", "status": "arg"},
+    {"wire": "ff000003d0070000a00f000090d00300dc05000020a10700e8030000204e000006d0070000", "status": "arg"},
+    {"wire": "00030003d0070000a00f000090d00300dc05000020a10700e8030000204e000006d0070000", "status": "arg"},
+    {"wire": "00000203d0070000a00f000090d00300dc05000020a10700e8030000204e000006d0070000", "status": "arg"},
+    {"wire": "00000000d0070000a00f000090d00300dc05000020a10700e8030000204e000006d0070000", "status": "arg"},
+    {"wire": "", "status": "size"},
+    {"wire": "00000003d0070000a00f000090d00300dc05000020a10700", "status": "size"},
+    {"wire": "00000003d0070000a00f000090d00300dc05000020a10700e8030000204e000006d00700", "status": "size"},
+    {"wire": "00000003d0070000a00f000090d00300dc05000020a10700e8030000204e000006d007000000", "status": "size"}
+  ],
+  "zone_plan": [
+    {"name": "zero", "zones": [{"priority": 0, "subghz_hz": 0, "ghz24_hz": 0}, {"priority": 0, "subghz_hz": 0, "ghz24_hz": 0}, {"priority": 0, "subghz_hz": 0, "ghz24_hz": 0}, {"priority": 0, "subghz_hz": 0, "ghz24_hz": 0}, {"priority": 0, "subghz_hz": 0, "ghz24_hz": 0}, {"priority": 0, "subghz_hz": 0, "ghz24_hz": 0}, {"priority": 0, "subghz_hz": 0, "ghz24_hz": 0}, {"priority": 0, "subghz_hz": 0, "ghz24_hz": 0}], "wire": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", "frame": "aa054800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000047"},
+    {"name": "typical", "zones": [{"priority": 0, "subghz_hz": 902500000, "ghz24_hz": 2405000000}, {"priority": 2, "subghz_hz": 903000000, "ghz24_hz": 2410000000}, {"priority": 3, "subghz_hz": 903500000, "ghz24_hz": 0}, {"priority": 4, "subghz_hz": 904000000, "ghz24_hz": 2420000000}, {"priority": 1, "subghz_hz": 904500000, "ghz24_hz": 2425000000}, {"priority": 2, "subghz_hz": 905000000, "ghz24_hz": 0}, {"priority": 3, "subghz_hz": 905500000, "ghz24_hz": 2435000000}, {"priority": 4, "subghz_hz": 906000000, "ghz24_hz": 2440000000}], "wire": "00a00ecb354063598f02c0afd23580aea58f03e050da35000000000400f2e13500453e90012093e93540908a90024034f135000000000360d5f835c0262391048076003600726f91", "frame": "aa054800a00ecb354063598f02c0afd23580aea58f03e050da35000000000400f2e13500453e90012093e93540908a90024034f135000000000360d5f835c0262391048076003600726f9177"},
+    {"name": "extreme", "zones": [{"priority": 248, "subghz_hz": 4294967295, "ghz24_hz": 2139331154}, {"priority": 249, "subghz_hz": 4294967294, "ghz24_hz": 2515688182}, {"priority": 250, "subghz_hz": 4294967293, "ghz24_hz": 187842976}, {"priority": 251, "subghz_hz": 4294967292, "ghz24_hz": 600466499}, {"priority": 252, "subghz_hz": 4294967291, "ghz24_hz": 2265206690}, {"priority": 253, "subghz_hz": 4294967290, "ghz24_hz": 3505460122}, {"priority": 254, "subghz_hz": 4294967289, "ghz24_hz": 2730979771}, {"priority": 255, "subghz_hz": 4294967288, "ghz24_hz": 3539390371}], "wire": "f8ffffffff529a837ff9fefffffff65af295fafdffffffa041320bfbfcffffff4364ca23fcfbffffffa24f0487fdfaffffff9a13f1d0fef9ffffffbb71c7a2fff8ffffffa3cff6d2", "frame": "aa0548f8ffffffff529a837ff9fefffffff65af295fafdffffffa041320bfbfcffffff4364ca23fcfbffffffa24f0487fdfaffffff9a13f1d0fef9ffffffbb71c7a2fff8ffffffa3cff6d24a"}
+  ],
+  "zone_plan_decode_errors": [
+    {"wire": "", "status": "size"},
+    {"wire": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111", "status": "size"},
+    {"wire": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111", "status": "size"}
+  ],
+  "status": [
+    {"name": "zero", "proto_version": 0, "flags": 0, "rx_queue_len": 0, "tx_queue_len": 0, "rx_ok": 0, "rx_dup": 0, "rx_dropped": 0, "rx_ignored": 0, "tx_sent": 0, "tx_dropped": 0, "wire": "00000000000000000000000000000000000000000000000000000000", "frame": "aad41c0000000000000000000000000000000000000000000000000000000098"},
+    {"name": "typical", "proto_version": 1, "flags": 3, "rx_queue_len": 3, "tx_queue_len": 12, "rx_ok": 123456, "rx_dup": 7890, "rx_dropped": 2, "rx_ignored": 44, "tx_sent": 11259375, "tx_dropped": 1, "wire": "0103030c40e20100d21e0000020000002c000000efcdab0001000000", "frame": "aad41c0103030c40e20100d21e0000020000002c000000efcdab00010000005f"},
+    {"name": "extreme", "proto_version": 255, "flags": 252, "rx_queue_len": 255, "tx_queue_len": 128, "rx_ok": 4294967295, "rx_dup": 2147483648, "rx_dropped": 16909060, "rx_ignored": 2712847316, "tx_sent": 4294967294, "tx_dropped": 2147483647, "wire": "fffcff80ffffffff0000008004030201d4c3b2a1feffffffffffff7f", "frame": "aad41cfffcff80ffffffff0000008004030201d4c3b2a1feffffffffffff7f07"}
+  ],
+  "status_decode_errors": [
+    {"wire": "", "status": "size"},
+    {"wire": "222222222222222222222222222222222222222222222222222222", "status": "size"},
+    {"wire": "2222222222222222222222222222222222222222222222222222222222", "status": "size"},
+    {"wire": "2222222222222222222222222222222222222222222222222222222222222222", "status": "size"}
+  ],
+  "pong": [
+    {"proto_version": 1, "fw_major": 0, "fw_minor": 1, "fw_patch": 0, "wire": "01000100", "frame": "aad10401000100a1"},
+    {"proto_version": 2, "fw_major": 10, "fw_minor": 20, "fw_patch": 255, "wire": "020a14ff", "frame": "aad104020a14fff9"}
+  ],
+  "pong_decode_errors": [
+    {"wire": "", "status": "size"},
+    {"wire": "333333", "status": "size"},
+    {"wire": "3333333333", "status": "size"}
+  ]
+}
