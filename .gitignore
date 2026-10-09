@@ -9,6 +9,7 @@
 
 # Build artifacts
 /build/
+/build-*/
 /Debug/
 /Release/
 /dist/
@@ -22,3 +23,7 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Python bytecode
+__pycache__/
+*.py[cod]

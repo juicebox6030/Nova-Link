@@ -1,0 +1,31 @@
+# API reference for the portable core. Run from the repository root:
+#     doxygen Doxyfile
+# Output goes to build/doxygen/html/index.html.
+
+PROJECT_NAME           = NOVA-LINK
+PROJECT_NUMBER         = 0.1.0
+PROJECT_BRIEF          = "Dual-band, zone-based IoT link: portable C99 core"
+OUTPUT_DIRECTORY       = build/doxygen
+
+INPUT                  = include/nova_link docs/doxygen_main.md
+FILE_PATTERNS          = *.h *.md
+RECURSIVE              = NO
+USE_MDFILE_AS_MAINPAGE = docs/doxygen_main.md
+
+OPTIMIZE_OUTPUT_FOR_C  = YES
+TYPEDEF_HIDES_STRUCT   = NO
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+SOURCE_BROWSER         = NO
+MACRO_EXPANSION        = YES
+PREDEFINED             = __cplusplus=0
+
+QUIET                  = YES
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
+WARN_AS_ERROR          = FAIL_ON_WARNINGS
+
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HAVE_DOT               = NO

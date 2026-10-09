@@ -41,13 +41,16 @@ NOVA-LINK provides a dual-band (Sub-GHz + 2.4GHz) wireless backbone to reliably 
   ```
   [addr_flags][seqNum][payload...]
   ```
-  - `addr_flags`: [2-bit originID | 3-bit zoneID | 3-bit flags]
+  - `addr_flags`: [3-bit originID | 3-bit zoneID | 2-bit flags]
   - `seqNum`: 8-bit packet sequence number
   - `payload`: up to 100 bytes
 
 - **SPI/UART Transport**:
   - Fragments are built entirely on the ESP and sent to the CC1352R
-  - `SYNC` (`0xAA`) + `LEN` framing protocol
+  - `SYNC` (`0xAA`) + `CMD` + `LEN` + data + CRC-8 framing
+
+Byte-level details of everything on the air and on the link are in
+[docs/wire_format.adoc](docs/wire_format.adoc).
 
 ---
 
@@ -85,22 +88,59 @@ Metadata zone is a non-time sensitive zone. All other zones will get priority ov
 
 | Folder     | Purpose                                  |
 |------------|-------------------------------------------|
-| `src/`     | Core protocol code, fragment logic, etc. |
-| `include/` | Public headers for external integration  |
-| `platform/`| Board-specific code (e.g., CC1352R setup)|
-| `plugins/` | Modular plugin handlers                  |
-| `tools/`   | Flashing, debugging, logging utilities   |
-| `tests/`   | Unit tests and simulation harness        |
-| `docs/`    | Markdown + Doxygen-generated docs        |
-| `config/`  | Plugin mappings, filter rules, flags     |
+| `src/`     | Portable C99 core (host + radio), no hardware access |
+| `include/` | Public headers (`include/nova_link/`)    |
+| `platform/`| Board-specific code (ESP32, CC1352R) — not started |
+| `plugins/` | Modular plugin handlers — not started    |
+| `sim/`     | Multi-device network simulator           |
+| `tests/`   | C unit tests and shared byte vectors     |
+| `tools/`   | Python decoder, airtime calculator, `novalink` package |
+| `docs/`    | Design notes, wire format, simulation results |
+| `config/`  | Default settings (`nova_link.ini`)       |
+| `.github/` | CI: build + tests (gcc, clang, UBSan), Python tests, Doxygen |
+
+---
+
+## 🛠️ Building and Testing
+
+The portable core, unit tests and simulator build on any desktop with a C99
+compiler and CMake:
+
+```sh
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build -j
+ctest --test-dir build --output-on-failure
+```
+
+Other useful commands:
+
+```sh
+# Network simulator (see docs/simulation.adoc)
+./build/sim/nl_sim --nodes 4 --runs 4
+
+# Python tools and their tests
+python3 -m unittest discover -s tools/tests -t tools
+python3 tools/nl_decode.py --help
+
+# API documentation (output in build/doxygen/html)
+doxygen Doxyfile
+
+# Regenerate the shared test vectors after a wire format change
+./build/tests/gen_vectors --out tests/vectors
+```
 
 ---
 
 ## 🚧 Development Status
 
-NOVA-LINK is in **active development**, with planning completed for all OSI layers and subsystem responsibilities. 
+NOVA-LINK is in **active development**. The portable core (fragments,
+zones, metadata, stream tracking, segmentation, link framing, host and radio
+logic) is implemented and tested on the desktop and in simulation. The
+ESP32 and CC1352R platform layers, and testing on real radios, are next.
 
-To contribute, follow the upcoming [Development Roadmap](#) (coming soon).
+See the [Development Roadmap](docs/Development_Roadmap.md),
+[wire formats](docs/wire_format.adoc) and
+[simulation results](docs/simulation.adoc).
 
 ---
 

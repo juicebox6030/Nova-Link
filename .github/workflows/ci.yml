@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  core:
+    name: C core (${{ matrix.name }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: gcc
+            cc: gcc
+            flags: -DCMAKE_BUILD_TYPE=Release
+          - name: clang
+            cc: clang
+            flags: -DCMAKE_BUILD_TYPE=Release
+          - name: gcc ubsan
+            cc: gcc
+            flags: -DCMAKE_BUILD_TYPE=Debug -DNL_UBSAN=ON
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_C_COMPILER=${{ matrix.cc }} ${{ matrix.flags }}
+      - name: Build
+        run: cmake --build build -j
+      - name: Test
+        run: ctest --test-dir build --output-on-failure
+      - name: Check generated vectors are up to date
+        if: matrix.name == 'gcc'
+        run: |
+          ./build/tests/gen_vectors --out tests/vectors
+          git diff --exit-code tests/vectors
+
+  tools:
+    name: Python tools
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Unit tests
+        run: python3 -m unittest discover -s tools/tests -t tools
+
+  docs:
+    name: Doxygen
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install doxygen
+        run: sudo apt-get update && sudo apt-get install -y doxygen
+      - name: Build API docs (warnings are errors)
+        run: doxygen Doxyfile
