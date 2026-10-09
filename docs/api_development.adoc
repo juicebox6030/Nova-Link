@@ -1,3 +1,5 @@
+NOTE: The portable implementation and current limitations are described in `Development.md`, `Protocol_Decisions.md`, and `Development_Roadmap.md`. Board drivers and physical validation remain pending.
+
 === Plugin API and Development Workflow
 
 Nova-Link provides a C-based API for plugin development on the ESP32-S3.

@@ -9,6 +9,8 @@
 
 # Build artifacts
 /build/
+/build-*/
+__pycache__/
 /Debug/
 /Release/
 /dist/

@@ -1,3 +1,5 @@
+NOTE: The portable implementation and current limitations are described in `Development.md`, `Protocol_Decisions.md`, and `Development_Roadmap.md`. Board drivers and physical validation remain pending.
+
 === Radio Stack Architecture (CC135x)
 
 Nova-Link uses a custom radio stack on the TI CC135x to handle RF scheduling and data transmission.
