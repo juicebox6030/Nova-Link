@@ -1,5 +1,52 @@
 # Offline validation record
 
+## Consolidation checks (2026-10-09)
+
+The root build now includes the installed SDK, the independent DMX library and
+capture analyzer, and the separately linked extended protocol prototype.
+GCC Debug, Release, and ASan/UBSan configurations each passed all **27 CTest
+entries**. The extended prototype also passed its standalone UBSan trap build
+(16 entries), and the SDK without tools or the prototype passed seven entries.
+All builds treat compiler warnings as errors. Both source trees passed GCC
+`-fanalyzer` with strict conversion warnings, and both Doxygen references built
+with warnings as errors. Local Markdown file links were checked.
+
+The freestanding SDK/DMX build installed successfully; a separate
+`find_package(NovaLink)` program linked both `NovaLink::nova_link` and
+`NovaLink::nova_dmx` and exercised their encoders. The capture analyzer passed
+five Python unit tests. The prototype's 88 Python tests also passed directly
+under Python 3.14; CTest used Python 3.12. No third-party Python dependencies
+are needed.
+
+Consolidation fixes include distinct CMake targets and test names, installation
+of DMX headers/library, root build switches applying to the prototype,
+documentation output-directory creation, and ignored nested build/bytecode
+artifacts. Empty-message reassembly now avoids pointer arithmetic and zero-byte
+`memcpy` on NULL storage; invalid storage returns an error. A regression covers
+empty zero-capacity messages and recovery from insufficient storage.
+
+Reproduce the default checks with the README commands. For installation:
+
+```sh
+cmake -S . -B build/core -DNOVA_BUILD_TESTS=OFF -DNOVA_BUILD_TOOLS=OFF \
+  -DNOVA_BUILD_EXTENDED=OFF -DCMAKE_C_FLAGS=-ffreestanding
+cmake --build build/core --parallel
+cmake --install build/core --prefix "$PWD/build/sdk"
+cmake -S tests/consumer -B build/consumer -DCMAKE_PREFIX_PATH="$PWD/build/sdk"
+cmake --build build/consumer
+./build/consumer/consumer
+cmake --build build --target docs docs-extended
+```
+
+Local sanitized builds used the compatible runtimes described below, copied
+into ignored `build/sanitizer-runtime`, with local linker search path/RPATH.
+The GitHub workflow covers GCC, Clang, ASan/UBSan, installed consumers, the
+standalone prototype, Python 3.11/3.14, and both API references. Hardware,
+vendor SDKs, and actual RF/Multiverse interoperability remain unvalidated.
+No UniFi or gateway settings were changed.
+
+The earlier SDK-only validation record follows.
+
 Checked on 2026-10-09 with GCC 16.1.1, CMake 4.3.0, Python 3.14.6 and Doxygen.
 The scope is the portable C99 SDK and local software models. No packet captures,
 physical links, RF transmission, board access, or UniFi/gateway changes were used.

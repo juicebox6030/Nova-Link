@@ -68,6 +68,16 @@ and the sub-5 ms latency target cannot be verified by this simulation. They rema
 separate acceptance work. No packet captures or physical-link tests are required
 for the completed core work above.
 
+## Extended protocol experiments
+
+`experimental/extended/` contains a separately tested implementation of CRC-8
+link framing, metadata/peer discovery, segmentation, INI loading, remote zone
+claims, and multi-node RF simulation. These features are implemented in that
+prototype; unchecked SDK features above still require an integration decision.
+The APIs export overlapping symbols and the link formats differ, so applications
+must select one stack. The prototype is built by default but excluded from SDK
+installation. See its [guide](../experimental/extended/README.md).
+
 ## Next milestone: direct Multiverse TX/RX at 2.4 GHz
 
 Target: receive from a Multiverse Transmitter and transmit to ETC ColorSource V fixtures using the CC1352R directly. See the [bench plan and protocol questions](Multiverse_2_4GHz.md).
@@ -84,4 +94,3 @@ Target: receive from a Multiverse Transmitter and transmit to ETC ColorSource V 
 - [ ] Implement and validate RDM independently
 
 Software checks do not establish Multiverse RF compatibility. Native NOVA-LINK fragments are a separate wire format.
-

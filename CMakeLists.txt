@@ -3,6 +3,7 @@ project(nova_link VERSION 0.1.0 LANGUAGES C)
 
 option(NOVA_BUILD_TESTS "Build hardware-independent tests" ON)
 option(NOVA_BUILD_TOOLS "Build offline tools and simulation" ON)
+option(NOVA_BUILD_EXTENDED "Build the separate extended protocol prototype" ON)
 option(NOVA_ENABLE_SANITIZERS "Enable address and undefined behavior sanitizers" OFF)
 
 add_library(nova_link
@@ -33,7 +34,21 @@ if(NOVA_ENABLE_SANITIZERS AND CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
     target_link_options(nova_link INTERFACE -fsanitize=address,undefined)
 endif()
 
+add_library(nova_dmx src/dmx.c)
+add_library(NovaLink::nova_dmx ALIAS nova_dmx)
+target_include_directories(nova_dmx PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>)
+target_compile_features(nova_dmx PUBLIC c_std_99)
+nova_target(nova_dmx)
+if(NOVA_ENABLE_SANITIZERS AND CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
+    target_link_options(nova_dmx INTERFACE -fsanitize=address,undefined)
+endif()
+
 if(NOVA_BUILD_TOOLS)
+    add_executable(dmx_loopback examples/dmx_loopback.c)
+    target_link_libraries(dmx_loopback PRIVATE nova_dmx)
+    nova_target(dmx_loopback)
     add_executable(nova-sim examples/simulation.c plugins/counter.c)
     target_include_directories(nova-sim PRIVATE plugins)
     target_link_libraries(nova-sim PRIVATE nova_link)
@@ -45,6 +60,15 @@ endif()
 
 if(NOVA_BUILD_TESTS)
     enable_testing()
+    add_executable(test_dmx tests/test_dmx.c)
+    target_link_libraries(test_dmx PRIVATE nova_dmx)
+    nova_target(test_dmx)
+    add_test(NAME dmx COMMAND test_dmx)
+    find_package(Python3 COMPONENTS Interpreter QUIET)
+    if(Python3_FOUND)
+        add_test(NAME rf_capture COMMAND ${Python3_EXECUTABLE} -m unittest discover
+            -s tests -p test_rf_capture.py WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+    endif()
     foreach(suite protocol stream_zones host radio integration)
         add_executable(test_${suite} tests/test_${suite}.c)
         target_link_libraries(test_${suite} PRIVATE nova_link)
@@ -52,6 +76,7 @@ if(NOVA_BUILD_TESTS)
         add_test(NAME ${suite} COMMAND test_${suite})
     endforeach()
     if(NOVA_BUILD_TOOLS)
+        add_test(NAME dmx_loopback COMMAND dmx_loopback)
         add_test(NAME simulation COMMAND nova-sim)
         find_package(Python3 COMPONENTS Interpreter QUIET)
         if(Python3_FOUND)
@@ -64,6 +89,10 @@ if(NOVA_BUILD_TESTS)
     endif()
 endif()
 
+if(NOVA_BUILD_EXTENDED)
+    add_subdirectory(experimental/extended)
+endif()
+
 find_package(Doxygen QUIET)
 if(DOXYGEN_FOUND)
     set(DOXYGEN_PROJECT_NAME "NOVA-LINK")
@@ -72,7 +101,15 @@ if(DOXYGEN_FOUND)
     set(DOXYGEN_GENERATE_LATEX NO)
     set(DOXYGEN_QUIET YES)
     set(DOXYGEN_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/api-docs")
-    doxygen_add_docs(docs include/nova_link COMMENT "Generate public C API documentation")
+    doxygen_add_docs(docs include/nova_link include/nova COMMENT "Generate public C API documentation")
+    if(NOVA_BUILD_EXTENDED)
+        add_custom_target(docs-extended
+            COMMAND ${CMAKE_COMMAND} -E make_directory
+                ${CMAKE_CURRENT_SOURCE_DIR}/experimental/extended/build
+            COMMAND ${DOXYGEN_EXECUTABLE} Doxyfile
+            WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/experimental/extended
+            COMMENT "Generate extended prototype API documentation")
+    endif()
 endif()
 
 include(GNUInstallDirs)
@@ -82,11 +119,12 @@ configure_package_config_file(config/NovaLinkConfig.cmake.in
     INSTALL_DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/NovaLink)
 write_basic_package_version_file(${CMAKE_CURRENT_BINARY_DIR}/NovaLinkConfigVersion.cmake
     VERSION ${PROJECT_VERSION} COMPATIBILITY SameMinorVersion)
-install(TARGETS nova_link EXPORT NovaLinkTargets
+install(TARGETS nova_link nova_dmx EXPORT NovaLinkTargets
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 install(DIRECTORY include/nova_link DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+install(DIRECTORY include/nova DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 install(EXPORT NovaLinkTargets NAMESPACE NovaLink:: DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/NovaLink)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/NovaLinkConfig.cmake
     ${CMAKE_CURRENT_BINARY_DIR}/NovaLinkConfigVersion.cmake

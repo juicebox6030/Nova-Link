@@ -192,10 +192,11 @@ validate a CC1352R PHY. See [validation](Validation.md) for assumptions and limi
 
 ## Checks and packaging
 
-The five C suites cover codecs/parser, streams/zones/queues, host lifecycle,
-radio/scheduler, and end-to-end delivery. Additional CTest entries run the
-simulation and Python inspection/RF-budget tests when enabled: eight entries in
-total with Python and tools available. Release checks remain active;
+The default build runs 27 CTest entries with Python and tools available:
+the SDK's codecs, streams, host, radio, integration, simulation, and offline
+tools; DMX framing/loopback and capture analysis; and the separate extended
+prototype's C/Python tests, generated vectors, and network simulations.
+Use `-DNOVA_BUILD_EXTENDED=OFF` to omit the prototype. Release checks remain active;
 they do not depend on `assert()` or `NDEBUG`.
 
 ```sh

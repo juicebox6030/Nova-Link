@@ -2,6 +2,8 @@
 
 The current implementation is a portable software core. ESP32-S3 and CC1352R
 are the intended deployment targets; their board drivers are not implemented yet.
+This page describes the installed SDK. The [extended prototype](../experimental/extended/README.md)
+has a separate API and wire format; the DMX level library is independent of both.
 
 ```mermaid
 flowchart LR

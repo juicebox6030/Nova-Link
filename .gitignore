@@ -8,8 +8,8 @@
 *.map
 
 # Build artifacts
-/build/
-/build-*/
+build/
+build-*/
 __pycache__/
 /Debug/
 /Release/
@@ -27,4 +27,4 @@ Thumbs.db
 
 # Python cache
 __pycache__/
-*.pyc
+*.py[cod]

@@ -20,6 +20,7 @@ cmake --build build --parallel
 ctest --test-dir build --output-on-failure
 ./build/nova-sim
 ./build/nova-inspect frame 'AA 06 03 AF FE 00 AA FF'
+./build/dmx_loopback
 ```
 
 The simulation sends 300 counter messages through two plugin hosts, framed
@@ -39,7 +40,7 @@ ctest --test-dir build/sanitized --output-on-failure
 Build just the library for integration:
 
 ```sh
-cmake -S . -B build/core -DNOVA_BUILD_TESTS=OFF -DNOVA_BUILD_TOOLS=OFF
+cmake -S . -B build/core -DNOVA_BUILD_TESTS=OFF -DNOVA_BUILD_TOOLS=OFF -DNOVA_BUILD_EXTENDED=OFF
 cmake --build build/core
 ```
 
@@ -47,6 +48,7 @@ Use `add_subdirectory()` and link `NovaLink::nova_link`, or install the SDK with
 `cmake --install build/core --prefix <sdk-directory>` and use
 `find_package(NovaLink 0.1 CONFIG REQUIRED)`. See the
 [development guide](docs/Development.md) for plugin and embedded integration.
+The independent DMX library is installed as `NovaLink::nova_dmx`.
 
 ## Implemented core
 
@@ -88,6 +90,32 @@ unambiguous in software. Its compatibility with a future board adapter still
 needs validation. The [protocol decisions](docs/Protocol_Decisions.md) explain
 conflicting earlier notes, sequence limits, and unspecified commands.
 
+## DMX and Multiverse work
+
+The portable DMX library encodes level frames and parses validated UART
+BREAK/MARK/byte events. The [Multiverse bench plan](docs/Multiverse_2_4GHz.md)
+describes direct CC1352R interoperability work. The capture analyzer accepts
+existing JSONL observations:
+
+```sh
+python3 tools/analyze_rf_capture.py examples/rf_capture.simulated.jsonl
+```
+
+The example is synthetic. Multiverse RF reception, decoding, transmission, and
+fixture operation remain unimplemented and unverified.
+
+## Extended protocol prototype
+
+The [extended prototype](experimental/extended/README.md) preserves the separate
+implementation with CRC-8 link frames, metadata discovery, segmentation, INI
+configuration, Python codecs, and a multi-node RF simulator. The default build
+tests it alongside the SDK; use `-DNOVA_BUILD_EXTENDED=OFF` to omit it.
+
+Its `[AA][CMD][LEN][DATA][CRC8]` transport differs from the SDK's
+`[AA][LEN][CMD][DATA]`. Both libraries export overlapping `nl_*` symbols and
+must be used in separate programs. The extended API is not part of the installed
+SDK. Neither transport is an established physical-radio interoperability format.
+
 ## Project layout
 
 | Directory | Purpose |
@@ -100,10 +128,13 @@ conflicting earlier notes, sequence limits, and unspecified commands.
 | `tests/` | Unit, integration, CLI, and installed-SDK checks |
 | `platform/` | Board integration contracts and ESP-IDF component |
 | `config/` | CMake package configuration |
+| `experimental/extended/` | Separate extended API, simulator, codecs, and vectors |
 | `docs/` | Architecture, development guide, decisions, and roadmap |
 
 Generate the public API reference with `cmake --build build --target docs` when
 Doxygen is installed. Output is `build/api-docs/html/index.html`.
+The `docs-extended` target generates the prototype reference in
+`experimental/extended/build/doxygen/html/index.html`.
 
 The [development roadmap](docs/Development_Roadmap.md) separates completed software
 from remaining protocol decisions and board work. The [validation record](docs/Validation.md)
