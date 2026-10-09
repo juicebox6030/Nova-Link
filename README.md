@@ -136,6 +136,11 @@ Doxygen is installed. Output is `build/api-docs/html/index.html`.
 The `docs-extended` target generates the prototype reference in
 `experimental/extended/build/doxygen/html/index.html`.
 
+The CI workflow template is [config/ci.github-actions.yml](config/ci.github-actions.yml).
+Copy it to `.github/workflows/ci.yml` to enable GitHub Actions; publishing that
+path requires GitHub authentication with the `workflow` scope. Local build and
+CTest checks do not require it.
+
 The [development roadmap](docs/Development_Roadmap.md) separates completed software
 from remaining protocol decisions and board work. The [validation record](docs/Validation.md)
 documents software checks, Opus 5.5 High checkpoint reviews, and RF assumptions.

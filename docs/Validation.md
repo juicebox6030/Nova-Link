@@ -40,8 +40,11 @@ cmake --build build --target docs docs-extended
 
 Local sanitized builds used the compatible runtimes described below, copied
 into ignored `build/sanitizer-runtime`, with local linker search path/RPATH.
-The GitHub workflow covers GCC, Clang, ASan/UBSan, installed consumers, the
-standalone prototype, Python 3.11/3.14, and both API references. Hardware,
+The versioned GitHub workflow template (`config/ci.github-actions.yml`) covers
+GCC, Clang, ASan/UBSan, installed consumers, the standalone prototype, Python
+3.11/3.14, and both API references. It is inactive: the saved GitHub token lacks
+the `workflow` scope needed to publish `.github/workflows/ci.yml`. Hosted CI and
+Clang checks have not run for this consolidation. Hardware,
 vendor SDKs, and actual RF/Multiverse interoperability remain unvalidated.
 No UniFi or gateway settings were changed.
 
