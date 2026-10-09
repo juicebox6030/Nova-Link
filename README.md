@@ -98,9 +98,22 @@ Metadata zone is a non-time sensitive zone. All other zones will get priority ov
 
 ## 🚧 Development Status
 
-NOVA-LINK is in **active development**, with planning completed for all OSI layers and subsystem responsibilities. 
+NOVA-LINK is in **active development**. The repository now includes a portable C DMX level framing core, a software TX/RX loopback, and an RF capture log analyzer.
 
-To contribute, follow the upcoming [Development Roadmap](#) (coming soon).
+The next milestone is **direct CC1352R-to-Multiverse interoperability at 2.4 GHz**, receiving from a Multiverse Transmitter and transmitting to ETC ColorSource V fixtures. The PHY and on-air protocol still need to be established; hardware interoperability is not implemented or verified yet. Follow the [Multiverse bring-up plan](docs/Multiverse_2_4GHz.md) and [Development Roadmap](docs/Development_Roadmap.md).
+
+Build and run the current software checks:
+
+```sh
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+cmake --build build
+ctest --test-dir build --output-on-failure
+./build/dmx_loopback
+python3 -m unittest discover -s tests -p 'test_*.py'
+python3 tools/analyze_rf_capture.py examples/rf_capture.simulated.jsonl
+```
+
+These examples use software loopback and synthetic observations; they do not transmit RF.
 
 ---
 
