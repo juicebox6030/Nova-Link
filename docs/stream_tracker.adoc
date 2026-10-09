@@ -1,16 +1,23 @@
 === Stream Tracker
 
-The Stream Tracker is apart of the API and ensures deduplication and correct routing of incoming `DataFragment`s.
-
-==== Key Features
-- Tracks (originID, zoneID) → seqNum
-- Deduplicates retransmitted fragments
-- Delivers only the latest data to plugins
-- Operates in RAM buffer (not persistent)
+The portable host and radio each use `nl_stream_tracker` from `stream.h`.
+It tracks all 64 `(originID, zoneID)` streams in RAM.
 
 ==== Behavior
-- New fragment → check seqNum
-- If new → update buffer, call plugin
-- If duplicate → silently discard
 
-This helps maintain low processing overhead and prevents stale plugin data.
+- First validated packet in a stream is accepted.
+- Modulo-256 advance 1–127 is new; 0 is duplicate; 128–255 is stale.
+- Duplicate/stale packets do not refresh the accepted timestamp.
+- Radio RX queueing must succeed before committing a sequence.
+- Optional inactivity expiration or explicit origin reset permits sender restart.
+
+The host dispatches accepted packets to subscribed active plugins. Already
+accepted radio packets remain in FIFO order by default. The optional
+`NL_RX_LATEST_PER_STREAM` policy replaces an already queued state value of the
+same `(origin, zone)` stream in place, invalidating staged PULL revisions. It
+must not be used for fragment groups or event streams requiring every value.
+Neither policy provides reliable ordered delivery or reassembly.
+
+There is ambiguity after skipping 128 sequence values or delaying an old packet
+across a full wrap. Idle expiration may accept a delayed stale packet. See
+`Protocol_Decisions.md` for those constraints and restart handling.

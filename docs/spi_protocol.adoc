@@ -1,34 +1,48 @@
-=== SPI Transport Protocol
+=== Host / Radio Transport Protocol
 
-Nova-Link uses a minimal, binary SPI framing protocol for communication between the ESP32-S3 host and the TI CC1352R/1354P10 radio co-processor.
+The portable software envelope is `[0xAA][LEN][COMMAND][DATA]`. `LEN` includes
+COMMAND and is 1–103 bytes. Complete frames are 3–105 bytes. This choice combines
+the original SYNC/LEN framing concept with the command list. Physical SPI
+interoperability has not been validated; see `Protocol_Decisions.md`.
 
-==== Topology
-- ESP32-S3 is the SPI master
-- CC135x is the SPI slave
-- Interrupt line (GPIO) signals when data is ready
+==== Intended Topology
 
-==== Host-to-Radio ("Push")
-Command: 0x03  
-Payload: Serialized DataFragment  
-Usage: Transmit fragment to be queued and sent in RF zone window
+- ESP32-S3 SPI master, TI CC1352R SPI slave
+- INT_READY reflects whether the radio has buffered RX fragments
+- Board drivers own chip-select, clocking, padding, timeouts, and GPIO handling
 
-==== Radio-to-Host ("Pull")
-Command: 0x02  
-Triggered when CC135x toggles INT_READY GPIO  
-Returns: 0xD0 + serialized DataFragment  
-Usage: Host polls for new data only when available
+[cols="1,2,3", options="header"]
+|===
+| Command | Meaning | Portable behavior
+| 0x01 | Ping / Ready Check | Request parsed; response unspecified and unsupported
+| 0x02 | Pull Received Fragment | Empty request; prepares 0xD0 frame or returns C API EMPTY
+| 0x03 | Push New Fragment | Carries serialized fragment; enqueues or returns error
+| 0x04 | Radio Status Request | Request parsed; response unspecified and unsupported
+| 0xD0 | Fragment Data Type | Carries a radio-to-host fragment
+|===
 
-==== SPI Command Summary
+==== Golden Example
 
-| Command Byte | Meaning             |
-|--------------|---------------------|
-| 0x01         | Ping / Ready Check  |
-| 0x02         | Pull Received Fragment |
-| 0x03         | Push New Fragment   |
-| 0x04         | Radio Status Request |
-| 0xD0         | Fragment Data Type  |
+[source,text]
+----
+PUSH:     AA 06 03 AF FE 00 AA FF
+PULL:     AA 01 02
+response: AA 06 D0 AF FE 00 AA FF
+----
 
-==== Example Cycle
-1. ESP32 sends 0x03 + fragment → CC135x buffers for TX
-2. CC135x receives fragment → sets INT_READY
-3. ESP32 polls with 0x02 → CC135x responds with DataFragment
+The incremental parser handles arbitrary delivery chunks and `AA` payload bytes.
+Reset partial parsing at transaction boundaries/timeouts. There is no transport
+checksum, so plausible corrupted lengths cannot be reliably resynchronized.
+PUSH acknowledgment, empty/error response bytes, STATUS/PING replies, and remote
+zone configuration require a future protocol decision. The C model's synchronous
+status return is not a defined physical SPI acknowledgment.
+
+A prepared PULL response includes an adapter-local `nl_pull_token` and remains
+in the RX queue until `nl_radio_commit_pull(radio, response, token)` confirms
+adapter ownership transfer. The token is never serialized on the wire and is
+valid only for one radio initialization lifetime. An aborted transfer can be
+retried; the commit verifies both the prepared bytes and revision token. A
+coalesced replacement invalidates the token, preserving newer state even when
+its bytes match a previously staged response after sequence wrap.
+This does not define a physical acknowledgment or prove that a master decoded
+the response.
