@@ -12,11 +12,18 @@ RX: Multiverse Transmitter -> 2.4 GHz RF -> CC1352R -> decoded DMX levels
 TX: DMX levels -> CC1352R -> 2.4 GHz RF -> ETC ColorSource V
 ```
 
-Current implementation: portable DMX level framing, a software loopback, and
-an RF capture log analyzer. No CC1352R firmware, Multiverse RF decoder, or
-Multiverse RF transmitter has been implemented or tested. The example RF log
-is synthetic. The exact CC1352R board and transmitter variant still need to
-be identified before choosing the SDK project and radio configuration.
+Current implementation: portable DMX level framing, a software loopback, an
+RF capture log analyzer with differential stimulus comparisons, and a
+[TX/RX software emulator](Multiverse_Emulator.md) with chunked full/delta state,
+completion ownership, integrity checks, loss/recovery simulation and replay.
+The emulator uses explicitly synthetic packets behind a normalized adapter API.
+No CC1352R firmware, actual Multiverse RF decoder, or actual Multiverse RF
+transmitter has been implemented or tested. Both example RF traffic and emulator
+traffic are synthetic. Hardware preparation targets the documented ESP32-S3,
+CC1352R and 5911 2.4 GHz reference; record the actual board revision and SDK
+release with the deployment. The [preparation guide](Hardware_Preparation.md)
+provides a compile/startup project and capture-service handoff without assigning
+unverified PHY settings or board pins.
 
 ## Established facts and open questions
 
@@ -108,8 +115,11 @@ python3 tools/analyze_rf_capture.py capture.jsonl --output summary.json
 ```
 
 It reports observation counts, lengths, distinct payload counts, RSSI, and
-inter-arrival gaps grouped by profile, frequency, and stimulus. It does not
-decode Multiverse or infer a hop schedule. Observations on a scanned channel
+inter-arrival gaps grouped by profile, frequency, and stimulus. With
+`--compare-stimuli baseline channel_1_32` it also compares byte distributions
+within matching profile/frequency/length/CRC groups. These offsets are candidates
+for investigation, not decoded DMX channel mappings. It does not decode
+Multiverse or infer a hop schedule. Observations on a scanned channel
 omit traffic received elsewhere or while tuning, so observed gaps are not
 proof of the transmitter's packet rate or hop timing.
 

@@ -2,18 +2,106 @@
 
 Plugins are trusted C code compiled into the ESP32-S3 firmware, or into the
 portable desktop simulation. `nl_host` provides static registration for up to
-16 plugins, startup/shutdown, receive and tick hooks, and payload send.
+16 plugins, startup/shutdown, poll/receive/tick hooks, and payload send.
+
+==== Base and Plugin Responsibilities
+
+The base owns registration, lifecycle ordering, zone access, native sequence
+numbers, deduplicated dispatch, and the event loop boundary. Deployable
+capabilities use the same plugin lifecycle: application protocols, transport
+adapters, device adapters, management, and observation. A plugin does not need a
+data-zone claim when it only provides a local service.
+
+Packet codecs, queues, stream tracking, and scheduling remain portable reusable
+primitives. An adapter plugin composes them with its device or simulation
+backend. This keeps application plugins independent of SPI, operating-system
+I/O, and board-specific RF drivers.
+
+Application payloads remain owned by their plugin. Native NOVA-LINK fragments
+carry at most 100 payload bytes; larger values require an explicit codec and
+reassembly policy. The Multiverse-model plugin uses its own NLM1 payload to
+carry DMX updates through native fragments. NLM1 and the test-only NVS1 format
+are software protocols and do not establish compatibility with Multiverse RF.
+
+==== Uniform Module Composition
+
+`nova_link/module.h` defines `nl_module`: name, version, application/transport/
+service kind, zone claims, named dependencies, optional local service pointer,
+and the common `nl_plugin` hooks. Module instances and context are caller-owned.
+Metadata strings/lists and referenced service state remain valid throughout
+registration. Names and versions are local metadata, not wire negotiation.
+
+Mutable lifecycle context belongs to one instance. Non-null callback context
+reuse is rejected before startup unless both modules opt in with
+`shared_context`. Opt in only for immutable/stateless context or callbacks that
+safely support independent registrations. Sharing with a legacy plugin is an
+explicit assertion that its context is safe to share.
+
+`nl_modules_start()` accepts an unordered manifest, validates names and
+dependencies, and starts providers before consumers. Missing dependencies and
+cycles fail before hooks run. Failed startup rolls back that manifest in reverse
+dependency order. `nl_modules_stop()` stops consumers before their providers;
+active dependents prevent provider removal, including through raw host shutdown.
+An optional `can_stop` hook can refuse normal shutdown while work is outstanding.
+Claim declarations are validated individually during preflight. Cross-module or
+existing-owner claim conflicts can fail during startup and trigger rollback.
+
+The built-in counter, DMX/Multiverse-model, radio transport, and logger factories use
+this same interface. Their default constructors are `nl_counter_module()`,
+`nl_multiverse_module()`, and `nl_radio_link_module()`. Application modules depend
+on `radio-link` by default; descriptors can name another provider when needed.
+The base may be initialized with `nl_host_init_plugins()` and composed entirely
+from modules. The lower-level callback registration API remains available.
+
+`nl_logger_module()` provides the same lifecycle for an application-supplied
+host event observer. It is a local service and has no transport dependency.
+
+`nl_config_module()` provides a configuration service through the same lifecycle.
+It validates bounded caller-supplied INI text against a schema and exposes typed
+configuration values. File I/O and built-in choices belong to the
+offline `nova-config-manifest` application, not the base. See
+`Plugin_Configuration.md` for startup configuration and validation rules.
 
 ==== Access and Lifecycle
 
 - Startup may claim zones; sending is enabled only after successful startup.
-- Failed startup invokes optional cleanup and releases all claims.
+- Module declarations claim zones before their startup hook; failure releases claims.
+- Failed startup invokes optional cleanup for hooks whose startup was entered.
 - Exclusive claims allow read/write; shared read-only claims allow receive only.
 - Zone 0 is shared and cannot be claimed.
 - Unregistering calls shutdown and releases claims.
 - Registry changes and recursive dispatch during callbacks return BUSY.
+- Poll hooks may deliver received fragments before tick dispatch begins.
+
+One `nl_host_poll()` event-loop call runs poll hooks and then ticks all active
+plugins. `nl_host_tick()` remains available when input handling is external.
 
 Claims are cooperative API access checks, not memory isolation or a sandbox.
 Remote devices do not yet exchange claim tables. Dynamic loading, OTA plugins,
-and live INI configuration are future work. See `Development.md` and the complete
+and live configuration reload are future work. Offline startup configuration is
+available through the configuration service. See `Development.md` and the complete
 compiled example in `plugins/counter.c`.
+
+==== Execution and Ownership
+
+Serialize base and plugin operations in one event loop. Hooks return promptly;
+the base rejects recursive dispatch and registry changes during callbacks.
+Receive data is borrowed for the callback duration. Plugin context and backend
+state remain alive until shutdown completes, and asynchronous backend work must
+be canceled or drained before their storage is reused.
+
+Successful send means local transport acceptance. It does not mean an RF
+transmission completed or a peer acknowledged receipt. Adapters copy accepted
+fragment data before returning, preserve backpressure on rejection, and deliver
+received fragments at the event loop boundary rather than recursively entering
+host dispatch from a tick hook.
+
+The radio-link transport uses a backend `exchange` callback for native PUSH/PULL
+frames and an optional `commit` callback for two-phase PULL. It retains responses
+across busy dispatch or failed commit, and successful dispatch is not repeated
+while commit retries. Pending ownership prevents ordinary unregister. Physical
+SPI/GPIO, RF drivers, and proprietary Multiverse framing still require their own
+backend implementation and evidence.
+
+Commit `STALE`/`EMPTY` explicitly invalidates a held backend receipt; the transport
+abandons it and can poll its replacement. Other failed commits preserve it.

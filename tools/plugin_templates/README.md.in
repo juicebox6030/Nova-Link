@@ -1,0 +1,66 @@
+# @NAME@ plugin
+
+This generated C99 **@KIND@** plugin uses the installed Nova-Link SDK.
+Required providers: **@REQUIREMENTS@**. It contains no device or network I/O.
+
+```sh
+cmake -S . -B build -DCMAKE_PREFIX_PATH=/absolute/path/to/nova-sdk
+cmake --build build
+ctest --test-dir build --output-on-failure
+```
+
+The public API is in `include/@PREFIX@_plugin.h`; implement behavior in
+`src/@PREFIX@_plugin.c`. Link your application with `@PREFIX@_plugin`, or add this
+project with `add_subdirectory()` and set `BUILD_TESTING=OFF` when smoke tests
+are not needed.
+
+`examples/smoke.c` shows initialization, manifest startup, polling, and shutdown.
+Its dependency providers are **test placeholders**, not implementations of real
+services; replace them with the appropriate modules in your application. An
+application's transport placeholder accepts sends without transmitting them.
+Transport smoke backends also perform no physical I/O.
+
+`examples/conformance.c` adapts this plugin's actual context and factory to the
+shared SDK contract runner. It reports exercised and skipped cases explicitly;
+passing lifecycle checks does not establish unsupported capabilities or hardware
+compatibility. Run it alone with `ctest --test-dir build -V -R '_conformance$'`.
+Set `NOVA_PLUGIN_CONFORMANCE=OFF` to retain only the original smoke checks.
+The runner needs spare host slots; it defaults off when this starter requires
+more than @CONFORMANCE_LIMIT@ providers. Such a full-size manifest remains valid
+for runtime use; reduce test-only providers before enabling the conformance test.
+
+@FAULT_README@The normal plugin library links only the runtime SDK. Use the following to
+build it without developer-support tests:
+
+```sh
+cmake -S . -B build-runtime -DCMAKE_PREFIX_PATH=/absolute/path/to/nova-sdk -DBUILD_TESTING=OFF
+cmake --build build-runtime
+```
+
+Zero-initialize caller-owned context and `nl_module_instance` storage, initialize
+the context, then construct its module descriptor. Keep the context, descriptor
+strings, claims, and dependency arrays at stable addresses until shutdown
+succeeds. Customize descriptor names and requirements before registration.
+Do not initialize or construct another descriptor from a live context. Mutable
+contexts belong to one registration; leave `shared_context` disabled.
+
+Use `nl_host_init_plugins()` for the base and `nl_modules_start()` for an
+unordered manifest. Dependencies start first. Call `nl_host_poll()` once per
+event-loop turn; it polls all plugins before the tick phase. Calls are serialized;
+callbacks must return promptly and must not mutate the registry or re-enter
+poll/tick. Keep monotonic time in microseconds under application control.
+
+`nl_modules_stop()` may return `NL_ERR_BUSY` after stopping some modules. Keep
+all storage alive, drain pending backend work, and retry. Startup rollback bypasses
+`can_stop`; cleanup must cancel or drain anything acquired even during a failed
+start. A successful send means local transport acceptance, not RF completion or
+peer acknowledgement.
+
+The application template is a one-byte latest-value TX/RX example. Replace its
+payload format for your protocol; host payloads are limited to 100 bytes and
+larger messages require an explicit fragmentation format. The service template
+publishes its context through `nl_module_find(host, "@NAME@")->module.service`;
+the consumer must know and check the provider interface. The transport template
+attaches one send backend and optionally polls input; the backend owns encoding,
+device I/O, pending-transfer ownership, and cancellation. Its stop hook must fully
+release backend resources even if backend startup failed partway through.

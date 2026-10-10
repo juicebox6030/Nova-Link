@@ -34,11 +34,12 @@ jobs:
           cmake -S . -B build -DCMAKE_C_COMPILER=${{ matrix.cc }}
           -DCMAKE_BUILD_TYPE=${{ matrix.build_type }}
           -DNOVA_ENABLE_SANITIZERS=${{ matrix.sanitizers }}
+          -DNOVA_BUILD_EXTENDED=OFF
       - name: Build
         run: cmake --build build --parallel 2
-      - name: Test all stacks and tools
+      - name: Test SDK, plugin conformance, fault backends and offline tools
         run: ctest --test-dir build --output-on-failure --parallel 2
-      - name: Check installed SDK and DMX library
+      - name: Check installed SDK, developer support and common plugin manifests
         run: |
           cmake --install build --prefix "$PWD/build/sdk"
           cmake -S tests/consumer -B build/consumer -DCMAKE_C_COMPILER=${{ matrix.cc }} -DCMAKE_PREFIX_PATH="$PWD/build/sdk"
@@ -71,6 +72,8 @@ jobs:
           python-version: ${{ matrix.version }}
       - name: Capture analyzer
         run: python3 -m unittest discover -s tests -p test_rf_capture.py
+      - name: Plugin starter and conformance generator
+        run: python3 tests/test_plugin_scaffold.py
       - name: Extended codecs and CLI
         working-directory: experimental/extended
         run: python3 -m unittest discover -s tools/tests -t tools

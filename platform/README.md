@@ -10,14 +10,32 @@ are part of the software simulation.
 An ESP-IDF component definition is supplied in `platform/esp32/`. Add that directory
 to the firmware project's `EXTRA_COMPONENT_DIRS` before including ESP-IDF's
 `project.cmake`, then link/use the component from your application. This definition
-compiles the C core only; it supplies no pin mappings, SPI setup, tasks, Wi-Fi/BLE
+compiles the portable native core/module base, DMX library, normalized Multiverse
+engine, and counter, Multiverse-model, radio-link, logging, configuration and
+raw-capture service plugins;
+it supplies no pin mappings, SPI setup, tasks, Wi-Fi/BLE
 configuration, flash settings, or radio firmware.
 
-Keep `nl_host` in persistent application storage. Implement its send callback
-using the project's SPI master driver, and decode incoming `D0` frames through
-`nl_host_receive_frame()`. Handle INT_READY in the board layer, posting work from
+Keep `nl_host` and module contexts in persistent application storage. Initialize
+the base with `nl_host_init_plugins()` and register a dependency manifest. Supply
+the radio-link plugin's frame exchange/commit callbacks using the project's SPI
+master driver; call `nl_host_poll()` to process input and tick applications.
+The legacy direct send/receive entrypoints remain available. Handle INT_READY in
+the board layer, posting work from
 an ISR to the owning event loop/task. The core is not ISR-safe or thread-safe.
-The ESP-IDF component has not been compiled with the vendor SDK in this workspace.
+The [ESP32-S3 compile/startup project](esp32/example/CMakeLists.txt) provides a
+vendor build entrypoint with no radio or transport I/O. See the
+[hardware preparation guide](../docs/Hardware_Preparation.md) for the build and
+capture handoff. The actual `esp32s3` vendor build passed with ESP-IDF v5.5.1 and
+Xtensa GCC 14.2.0, compiling all production sources and producing ELF/BIN images.
+Hardware execution remains unverified. The separate offline check compiles the
+portable sources and runs the example lifecycle with a desktop compiler.
+The configuration service accepts a caller-supplied text buffer; firmware owns
+its source, storage and application policy. The desktop configuration CLI is an
+offline example and is not part of the component.
+The installed developer targets `nova_plugin_conformance` and
+`nova_fault_backend` are excluded from this component, along with the synthetic
+Multiverse test codec.
 
 ## TI CC1352R
 
@@ -40,8 +58,59 @@ parameter, not a demonstrated physical timing budget.
 
 ## Before implementing board drivers
 
+For direct Multiverse work, use the separate normalized TX/RX API in
+`nova/multiverse.h`, not the native fragment decoder. The
+[emulator and adapter contract](../docs/Multiverse_Emulator.md) describes local
+completion ownership, atomic level delivery, clocks, recovery, and the still
+unknown RF format. The synthetic codec is a tools/tests dependency and is not
+included in the ESP-IDF component or installed SDK.
+
+The installed Multiverse-model plugin carries normalized DMX state through native
+NLM1 application payloads and FIFO queues. It shares the common module lifecycle
+with transport and logging; it does not configure PHY settings or implement
+proprietary Multiverse RF. Replace or add a verified RF backend once its format
+is established, preserving explicit ownership and model/RF boundaries.
+
 Resolve response layouts for PING/STATUS, empty PULL and failed PUSH behavior,
 SPI chip-select/framing/timeout rules, and remote active-zone configuration.
 These are software design decisions that can be reviewed without hardware.
 See [protocol decisions](../docs/Protocol_Decisions.md) and the
 [roadmap](../docs/Development_Roadmap.md) for the remaining work.
+
+## Board and capture handoff
+
+Use the documented ESP32-S3 host and CC1352R radio families with the City
+Theatrical 5911 2.4 GHz reference and ETC ColorSource V fixture. The documentation
+does not pin development-board products/revisions or a TI SDK release. The
+ESP32-S3 compile baseline is ESP-IDF v5.5.1. Record the deployment details,
+available debug/programming interfaces, firmware
+versions and board schematics with the actual setup. The
+[hardware preparation guide](../docs/Hardware_Preparation.md) supplies the
+ESP32-S3 build entrypoint and CC1352R source/capture handoff without choosing
+unverified pins or proprietary PHY settings.
+
+The existing backend contract gives a future board plugin a concrete boundary:
+
+| Operation | Board/backend responsibility | Portable contract to preserve |
+| --- | --- | --- |
+| Start | Initialize the chosen driver and establish a serialized event-loop owner | Attach through the module lifecycle; failed startup releases ownership and cancels initialized work |
+| PUSH exchange | Encode native framing and submit through the selected physical interface | Failure must not enqueue; success means local ownership acceptance, with a defined bounded queue |
+| PULL exchange/commit | Retain the response and revision until its handoff is committed | Failed commit retries the exact receipt; STALE/EMPTY invalidates it without removing a replacement |
+| RF submission/completion | Retain bytes until completion or confirmed cancellation and enforce the chosen PHY deadlines | Local queue acceptance, physical completion and peer acknowledgment are separate events |
+| Stop/restart | Drain or cancel async I/O before storage reuse, and reject callbacks from an earlier lifetime | Pending ownership vetoes ordinary shutdown; startup rollback must clean up without that veto |
+| Clock/interrupt | Supply monotonic timestamps and post ISR events to the owner | Host/radio calls are serialized; no driver callback recursively dispatches or polls the host |
+
+Use the [conformance harness](../docs/Plugin_Conformance.md) and
+[fault backend](../docs/Transport_Fault_Simulation.md) to exercise those lifecycle
+and ownership paths on the development machine before replacing the backend
+with vendor I/O. Their passing reports validate software contracts only.
+
+Capture firmware should preserve raw received bytes, receive timestamps,
+frequency/PHY configuration, integrity results, board/firmware identifiers and
+the known DMX stimulus using the [capture log and bench plan](../docs/Multiverse_2_4GHz.md).
+Keep undecoded bytes and settings rather than inferring proprietary fields. The
+existing analyzer can compare labeled capture distributions; the synthetic
+replayer accepts only its declared local test profile. Feed real captures to
+independent framing/PHY analysis before implementing or validating proprietary
+Multiverse TX. The normalized model, NLM1 payloads and test codecs do not supply
+the missing RF encoding.

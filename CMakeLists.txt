@@ -78,10 +78,30 @@ add_library(nova_logger_plugin plugins/logger.c)
 add_library(NovaLink::nova_logger_plugin ALIAS nova_logger_plugin)
 target_link_libraries(nova_logger_plugin PUBLIC nova_link)
 nova_target(nova_logger_plugin)
+add_library(nova_config_plugin plugins/config.c)
+add_library(NovaLink::nova_config_plugin ALIAS nova_config_plugin)
+target_link_libraries(nova_config_plugin PUBLIC nova_link)
+nova_target(nova_config_plugin)
+add_library(nova_capture_plugin plugins/capture.c)
+add_library(NovaLink::nova_capture_plugin ALIAS nova_capture_plugin)
+target_link_libraries(nova_capture_plugin PUBLIC nova_link)
+nova_target(nova_capture_plugin)
 add_library(nova_plugins INTERFACE)
 add_library(NovaLink::nova_plugins ALIAS nova_plugins)
 target_link_libraries(nova_plugins INTERFACE
-    nova_counter_plugin nova_radio_plugin nova_logger_plugin nova_multiverse_plugin)
+    nova_counter_plugin nova_radio_plugin nova_logger_plugin nova_multiverse_plugin
+    nova_config_plugin nova_capture_plugin)
+
+# Explicit developer support: consumers opt in without adding simulator behavior
+# to the production plugin aggregate or the ESP-IDF component.
+add_library(nova_plugin_conformance support/plugin_conformance.c)
+add_library(NovaLink::nova_plugin_conformance ALIAS nova_plugin_conformance)
+target_link_libraries(nova_plugin_conformance PUBLIC nova_link)
+nova_target(nova_plugin_conformance)
+add_library(nova_fault_backend src/fault_backend.c)
+add_library(NovaLink::nova_fault_backend ALIAS nova_fault_backend)
+target_link_libraries(nova_fault_backend PUBLIC nova_radio_plugin)
+nova_target(nova_fault_backend)
 
 # Deliberately separate test-only bytes from the installed stream engine.
 if(NOVA_BUILD_TESTS OR NOVA_BUILD_TOOLS)
@@ -106,6 +126,12 @@ if(NOVA_BUILD_TOOLS)
     add_executable(nova-plugin-sim examples/plugin_simulation.c)
     target_link_libraries(nova-plugin-sim PRIVATE nova_plugins)
     nova_target(nova-plugin-sim)
+    add_executable(nova-plugin-fault-sim examples/plugin_fault_simulation.c)
+    target_link_libraries(nova-plugin-fault-sim PRIVATE nova_multiverse_plugin nova_fault_backend)
+    nova_target(nova-plugin-fault-sim)
+    add_executable(nova-config-manifest examples/config_manifest.c)
+    target_link_libraries(nova-config-manifest PRIVATE nova_plugins)
+    nova_target(nova-config-manifest)
     add_executable(nova-inspect tools/inspect.c)
     target_link_libraries(nova-inspect PRIVATE nova_link)
     nova_target(nova-inspect)
@@ -113,6 +139,26 @@ endif()
 
 if(NOVA_BUILD_TESTS)
     enable_testing()
+    add_executable(test_capture_plugin tests/test_capture_plugin.c)
+    target_link_libraries(test_capture_plugin PRIVATE nova_capture_plugin)
+    nova_target(test_capture_plugin)
+    add_test(NAME capture_plugin COMMAND test_capture_plugin)
+    add_executable(test_plugin_conformance tests/test_plugin_conformance.c)
+    target_link_libraries(test_plugin_conformance PRIVATE nova_plugin_conformance nova_plugins)
+    nova_target(test_plugin_conformance)
+    add_test(NAME plugin_conformance COMMAND test_plugin_conformance)
+    add_executable(nova-test-plugin-conformance-negative tests/test_plugin_conformance_negative.c)
+    target_link_libraries(nova-test-plugin-conformance-negative PRIVATE nova_plugin_conformance)
+    nova_target(nova-test-plugin-conformance-negative)
+    add_test(NAME plugin_conformance_negative COMMAND nova-test-plugin-conformance-negative)
+    add_executable(test_fault_backend tests/test_fault_backend.c)
+    target_link_libraries(test_fault_backend PRIVATE nova_fault_backend)
+    nova_target(test_fault_backend)
+    add_test(NAME fault_backend COMMAND test_fault_backend)
+    add_executable(nova-test-config-plugin tests/test_config_plugin.c)
+    target_link_libraries(nova-test-config-plugin PRIVATE nova_config_plugin)
+    nova_target(nova-test-config-plugin)
+    add_test(NAME config_plugin COMMAND nova-test-config-plugin)
     add_executable(test_multiverse_plugin tests/test_multiverse_plugin.c)
     target_link_libraries(test_multiverse_plugin PRIVATE nova_multiverse_plugin)
     nova_target(test_multiverse_plugin)
@@ -137,6 +183,12 @@ if(NOVA_BUILD_TESTS)
     if(Python3_FOUND)
         add_test(NAME rf_capture COMMAND ${Python3_EXECUTABLE} -m unittest discover
             -s tests -p test_rf_capture.py WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+        add_test(NAME plugin_scaffold COMMAND ${Python3_EXECUTABLE}
+            ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_plugin_scaffold.py
+            --sdk-build ${CMAKE_CURRENT_BINARY_DIR} --cmake ${CMAKE_COMMAND})
+        add_test(NAME platform_prep COMMAND ${Python3_EXECUTABLE}
+            ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_platform_prep.py)
+        set_tests_properties(platform_prep PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
     endif()
     foreach(suite protocol stream_zones host radio integration modules)
         add_executable(test_${suite} tests/test_${suite}.c)
@@ -149,8 +201,15 @@ if(NOVA_BUILD_TESTS)
         add_test(NAME dmx_loopback COMMAND dmx_loopback)
         add_test(NAME simulation COMMAND nova-sim)
         add_test(NAME plugin_simulation COMMAND nova-plugin-sim)
+        add_test(NAME plugin_fault_simulation COMMAND nova-plugin-fault-sim)
+        add_test(NAME config_manifest COMMAND nova-config-manifest
+            ${CMAKE_CURRENT_SOURCE_DIR}/examples/plugins.ini)
         find_package(Python3 COMPONENTS Interpreter QUIET)
         if(Python3_FOUND)
+            add_test(NAME config_manifest_cli COMMAND ${Python3_EXECUTABLE}
+                ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_config_manifest.py
+                $<TARGET_FILE:nova-config-manifest>
+                ${CMAKE_CURRENT_SOURCE_DIR}/examples/plugins.ini)
             add_test(NAME multiverse_replay COMMAND ${Python3_EXECUTABLE}
                 ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_multiverse_replay.py
                 $<TARGET_FILE:nova-multiverse-sim> $<TARGET_FILE:nova-multiverse-replay>)
@@ -194,7 +253,8 @@ configure_package_config_file(config/NovaLinkConfig.cmake.in
 write_basic_package_version_file(${CMAKE_CURRENT_BINARY_DIR}/NovaLinkConfigVersion.cmake
     VERSION ${PROJECT_VERSION} COMPATIBILITY SameMinorVersion)
 install(TARGETS nova_link nova_dmx nova_multiverse nova_multiverse_plugin
-    nova_counter_plugin nova_radio_plugin nova_logger_plugin nova_plugins
+    nova_counter_plugin nova_radio_plugin nova_logger_plugin nova_config_plugin nova_capture_plugin nova_plugins
+    nova_plugin_conformance nova_fault_backend
     EXPORT NovaLinkTargets
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
@@ -206,3 +266,5 @@ install(EXPORT NovaLinkTargets NAMESPACE NovaLink:: DESTINATION ${CMAKE_INSTALL_
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/NovaLinkConfig.cmake
     ${CMAKE_CURRENT_BINARY_DIR}/NovaLinkConfigVersion.cmake
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/NovaLink)
+install(PROGRAMS tools/new_plugin.py DESTINATION ${CMAKE_INSTALL_DATADIR}/NovaLink/tools)
+install(DIRECTORY tools/plugin_templates DESTINATION ${CMAKE_INSTALL_DATADIR}/NovaLink/tools)

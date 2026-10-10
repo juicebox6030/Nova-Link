@@ -1,0 +1,168 @@
+#include "@PREFIX@_plugin.h"
+#include "nova_link/fault_backend.h"
+#include <inttypes.h>
+#include <stdio.h>
+#include <string.h>
+
+#define CHECK(expression) do { if (!(expression)) { \
+    fprintf(stderr, "line %d: %s\n", __LINE__, #expression); return 1; \
+} } while (0)
+#define OK(expression) CHECK((expression) == NL_OK)
+
+typedef struct {
+    nl_host host;
+    nl_fault_backend backend;
+    nl_fault_adapter adapter;
+    @PREFIX@_context plugin;
+    @PREFIX@_backend callbacks;
+    nl_module module, providers[15], probe;
+    nl_module_zone probe_zone;
+    const nl_module *modules[NL_PLUGIN_MAX];
+    nl_module_instance instances[NL_PLUGIN_MAX];
+    size_t count;
+    unsigned received;
+    uint8_t expected_base;
+    bool wrong;
+} node;
+
+static void receive(nl_host *host, nl_plugin_id plugin, const nl_fragment *fragment, void *opaque)
+{
+    node *state = opaque;
+    (void)host;
+    (void)plugin;
+    if (fragment->origin != 1u || fragment->zone != 1u || fragment->payload_size != 1u ||
+        fragment->payload[0] != (uint8_t)(state->expected_base + state->received)) state->wrong = true;
+    ++state->received;
+}
+
+static int initialize(node *state, const nl_fault_options *options, bool sender, bool restart)
+{
+    node *fixture = state;
+    (void)fixture; /* The default transport has no provider placeholders. */
+    if (!restart) {
+        memset(state, 0, sizeof(*state));
+        OK(nl_fault_backend_init(&state->backend, options));
+    } else {
+        CHECK(!state->plugin.running && nl_fault_backend_drained(&state->backend));
+        OK(nl_fault_backend_restart(&state->backend));
+        memset(state->instances, 0, sizeof(state->instances));
+        state->received = 0u;
+        state->wrong = false;
+    }
+    OK(nl_fault_adapter_init(&state->adapter, &state->backend, 1u));
+    state->callbacks = (@PREFIX@_backend){.send = nl_fault_adapter_send,
+        .poll = nl_fault_adapter_poll, .start = nl_fault_adapter_start,
+        .stop = nl_fault_adapter_stop, .can_stop = nl_fault_adapter_can_stop,
+        .context = &state->adapter};
+    OK(@PREFIX@_init(&state->plugin, &state->callbacks));
+    state->module = @PREFIX@_module(&state->plugin);
+    state->modules[0] = &state->module;
+    state->count = @CONFORMANCE_COUNT@u;
+@CONFORMANCE_PROVIDER_SETUP@
+    state->probe_zone = (nl_module_zone){1u, sender ? NL_ZONE_EXCLUSIVE : NL_ZONE_READ_ONLY};
+    state->probe = (nl_module){.name = "__generated-fault-probe", .version = "1",
+        .kind = NL_MODULE_APPLICATION, .zones = &state->probe_zone, .zone_count = 1u,
+        .hooks = {.receive = receive, .context = state}};
+    CHECK(state->count < NL_PLUGIN_MAX);
+    state->modules[state->count++] = &state->probe;
+    OK(nl_host_init_plugins(&state->host, sender ? 1u : 2u, 0u));
+    OK(nl_modules_start(&state->host, state->modules, state->instances, state->count));
+    return 0;
+}
+
+static int run_batch(node *sender, node *receiver, nl_fault_transfer *transfer,
+                      uint64_t *now, bool reconnect, bool stale_probe,
+                      const nl_frame *old_receipt, nl_pull_token old_token)
+{
+    unsigned sent = 0u;
+    bool checked_stale = !stale_probe;
+    uint64_t deadline = *now + 1000000u;
+    while (sent < 80u || !nl_fault_backend_drained(&sender->backend) ||
+           !nl_fault_backend_drained(&receiver->backend) || transfer->pending || receiver->adapter.pending) {
+        nl_status status;
+        *now += 100u;
+        CHECK(*now < deadline);
+        OK(nl_fault_backend_set_time(&sender->backend, *now));
+        OK(nl_fault_backend_set_time(&receiver->backend, *now));
+        if (reconnect && *now >= 5000u) {
+            nl_fault_backend_set_connected(&sender->backend, true);
+            nl_fault_backend_set_connected(&receiver->backend, true);
+        }
+        if (sent < 80u) {
+            uint8_t value = (uint8_t)(receiver->expected_base + sent);
+            status = nl_host_send(&sender->host, sender->instances[sender->count - 1u].id,
+                                   1u, 0u, &value, 1u);
+            CHECK(status == NL_OK || status == NL_ERR_FULL || status == NL_ERR_BUSY);
+            if (status == NL_OK) ++sent;
+        }
+        OK(nl_host_poll(&sender->host, *now));
+        status = nl_fault_transfer_step(&sender->backend, &receiver->backend, transfer, *now);
+        CHECK(status == NL_OK || status == NL_ERR_EMPTY || status == NL_ERR_BUSY || status == NL_ERR_FULL);
+        CHECK(transfer->rejected == 0u);
+        OK(nl_host_poll(&receiver->host, *now));
+        if (!checked_stale && receiver->adapter.pending) {
+            size_t count = receiver->backend.radio.rx.count;
+            CHECK(receiver->adapter.config.commit(receiver->adapter.config.context,
+                                                 old_receipt, old_token) == NL_ERR_STALE);
+            CHECK(receiver->backend.radio.rx.count == count && receiver->adapter.pending);
+            checked_stale = true;
+        }
+        CHECK(!receiver->wrong);
+        CHECK(receiver->received == receiver->adapter.stats.rx_delivered);
+        CHECK(receiver->adapter.stats.rx_discarded == 0u);
+    }
+    CHECK(checked_stale && receiver->received == 80u);
+    CHECK(sender->adapter.stats.tx_accepted == 80u && receiver->backend.stats.commits >= 80u);
+    return 0;
+}
+
+int main(int argc, char **argv)
+{
+    static const char *const names[] = {"clean", "delayed", "disconnected", "congested", "commit-retry", "restart"};
+    unsigned selected;
+    node sender = {0}, receiver = {0};
+    nl_fault_options options;
+    nl_fault_transfer transfer = {0};
+    uint64_t now = 0u;
+    if (argc != 2) {
+        fputs("usage: @PREFIX@_faults clean|delayed|disconnected|congested|commit-retry|restart\n", stderr);
+        return 2;
+    }
+    for (selected = 0u; selected < 6u && strcmp(argv[1], names[selected]) != 0; ++selected) {}
+    if (selected == 6u) {
+        fprintf(stderr, "unknown deterministic scenario: %s\n", argv[1]);
+        return 2;
+    }
+    OK(nl_fault_profile_options(selected == 5u ? NL_FAULT_CLEAN : (nl_fault_profile)selected, &options));
+    CHECK(initialize(&sender, &options, true, false) == 0);
+    CHECK(initialize(&receiver, &options, false, false) == 0);
+    OK(nl_fault_transfer_init(&transfer, options.transfer_delay_us));
+    CHECK(run_batch(&sender, &receiver, &transfer, &now, selected == 2u, false, NULL, 0u) == 0);
+    if (selected == 1u) CHECK(transfer.blocked > 0u && receiver.backend.stats.commit_retries > 0u);
+    if (selected == 2u) CHECK(sender.backend.stats.offline_pushes > 0u);
+    if (selected == 3u) CHECK(sender.backend.stats.rejected_pushes > 0u &&
+                              receiver.backend.radio.stats.rx_full > 0u && transfer.blocked > 0u);
+    if (selected == 4u) CHECK(receiver.backend.stats.commit_retries >= 3u);
+    OK(nl_modules_stop(sender.instances, sender.count));
+    OK(nl_modules_stop(receiver.instances, receiver.count));
+    if (selected == 5u) {
+        nl_frame old_receipt = receiver.backend.receipt;
+        nl_pull_token old_token = receiver.backend.receipt_token;
+        CHECK(initialize(&sender, &options, true, true) == 0);
+        CHECK(initialize(&receiver, &options, false, true) == 0);
+        receiver.expected_base = 100u;
+        nl_fault_backend_fail_commits(&receiver.backend, 3u);
+        OK(nl_fault_transfer_init(&transfer, options.transfer_delay_us));
+        CHECK(run_batch(&sender, &receiver, &transfer, &now, false, true, &old_receipt, old_token) == 0);
+        CHECK(sender.backend.stats.restarts == 1u && receiver.backend.stats.restarts == 1u);
+        OK(nl_modules_stop(sender.instances, sender.count));
+        OK(nl_modules_stop(receiver.instances, receiver.count));
+    }
+    CHECK(sender.host.send == NULL && receiver.host.send == NULL);
+    CHECK(nl_fault_backend_drained(&sender.backend) && nl_fault_backend_drained(&receiver.backend));
+    printf("%s: exact FIFO=80 attempts=%" PRIu64 " rejected=%" PRIu64
+           " commit-retries=%" PRIu64 " logical-us=%" PRIu64 "\n", names[selected],
+           sender.backend.stats.pushes + sender.backend.stats.rejected_pushes,
+           sender.backend.stats.rejected_pushes, receiver.backend.stats.commit_retries, now);
+    return 0;
+}
