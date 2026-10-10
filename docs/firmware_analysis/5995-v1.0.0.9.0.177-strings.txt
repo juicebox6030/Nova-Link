@@ -1,0 +1,674 @@
+q K J!H
+!'K'J(H
+?J?HSxC
+1J(FSx
+Kc`c|o
+ q K!J!H
+H(.7H@
+x?K?HS
+"@?K2xS
+K+HYx		
+,h1F#x
+#F9FBF"H
+QKTJZ`
+NKPJZ`
+/K0J0HZ`
+K JZ`j
+4%x#F9-
+0K0JZ`
+c`c| Ff
+;K>JZ`>H
+4M.h3h
+FCp.K.H
+$ 3hcw
+0"W""D
+CF &9x
+ #0##u
+dL!z`h
+dKdK\x
+` ##`C$
+4h(F!F
+QF#u F
+!(K)J)H
+nBnAX%c
+ FZFAF\D	
+,0vIvOwN
+`=p3h#
+!9p3h#
+EKEJFHFN1`
+"#x``#r-K
+-0P#3`
+-0P#3`O
+"+!(FC
+*F+!nH
+-0;hbh
+`P"ZcpG
+^///////
+#*!tHb`
+G	Kfpe`"x
+!K!J"H	
+"rhbg"z
+/K/J8IH
+?0,F,+
+zhj!7z	
+CBCAHxc
+#+a #v
+#F4H5L
+q#}w+=
+A2K2J3H
+%K%JC`C|F
+zsx7OC
+\B\AOM+{
+F +/FC
+$K$JC`O
+;K;I3`
+,!!K"J"H
+##p#xbh
+#p"p#x
+9 + pG
+Ae;?+P`
+&%'5F3L
+"8`P!00
+1##v#KO
+!O!N"M<h<
+#h F;`
+#&!&:K
+TM"z+h	*'h
+QjKjJkH
+cuc|8JO
+FJGOQx
+JY{Rh`
+" `t!L0
+@cSC#aO
+R 0I1K
+rS@X@K@
+'ucueKO
+`2#YJ+w
+a2#@ kw
+;hQF3`
+##u#{`
+;hmO3`&Fg
+d!aGK[x
+D""cd8K9N
+b8H9I'
+#\##u#{b
+##e#lCE
+#3b#lCE
+7N7Krh]
+r"hZ`"
+<<@@<<<
+8` K:h
+x"xj@S
+#p*F9F0F
+x!xi@K
+*FAF0F
+2p:J;M
+????1KKQQ??E
+!K"J"H
+:K:M[x*z
+kr#uc|C
+b}!}"H
+BK"xXh
+2F)F/H
+!gKgJhH
+`9K\h*
+"0\i y
+`Z{(ho
+p!(h#p
+)O*M;x*{
+;FJFAF
+k 4LE&
+?!8K8J9H
+!KLBLA@
+\B\AbC
+= F%tc`
+qhKiJiH
+epbx#x
+3F*F!F
+3F*F!F
+G+KihZx
+XBXApGpG
+XBXApGO
+Zu$M(Fk}
+#cp+x F
+IM F)F
+5J2I F
+;h2FAF F
+"#tbvC
++K,J,H
+:K:J;H
+2F)F F
+!9K9J:H
+!$K#J$H
+JFAF F
+yAr0.$
+##r)F F
++ 1F+`
++ +`0F
+	L%h#`
+0P	@(P	@
+c@0@1@:
+=+n-p*?qMR
+mainMenu
+RFconfig
+pushMenu
+getCmdstaName
+Dd??????????????Gg??????????????Ss
+unknown
+hmalloc
+freeErr
+hrealloc
+'!& "#''$% &!'
+/).(*+//,-(.)/
+71602377450617
+?9>8:;??<=8>9?
+GAF@BCGGDE@FAG
+OINHJKOOLMHNIO
+WQVPRSWWTUPVQW
+_Y^XZ[__\]X^Y_
+gaf`bcggde`fag
+oinhjkoolmhnio
+wqvprswwtupvqw
+GAF@BCGGDE@FAG
+'!& "#''$% &!'
+queueNeoHubPkt
+neoNewDiscovery
+hubRxNeoTask
+nodeRxNeoTask
+W*1Y9V'
+(C f'h$`
+very high band
+avoiding lower 20MHz
+avoiding upper 20MHz
+high band
+low band
+full band
+:eA"xE
+Px@1ax
+0x@1Ax
+"u@Q&"
+`xAx@1
+")BSb=
+`"a&b(b
+31c=41d=
+@@@@@@@0@ @
+lyaza{a|a}a~a
+ppollListAdd
+pollListRmById
+hubSetRxPriority
+hubSetTxPriority
+hubClrAllNodes
+getNextAckNode
+queueNextHubPkt
+nodePoll
+makeParity
+hubRxNodeContent
+printFwInfo
+rfTxContStopCB
+rfTxContDone
+_resetTaskAt
+_setTaskAt
+RDM Traffic
+CTI_PROXIED_DEVICES_ENHANCED
+Multiverse 2.4GHz
+City Theatrical Inc.
+1.0.0.9.0.177
+Dtrunk@5429 (WC 5429) for mv5994
+by pkleissler, Feb 18 2021 15:25:02
+rdmSendUSNodeCb
+rdmRplyExtI2c
+rdmRxRspNode
+rdmSendDSHub
+rdmSendUSNode
+rdmRxQMsgNode
+rdmQMsgUSNode
+drdmExtPassToHost
+rdm_extnResponderQMsg
+U!a1setIntPriority
+spiRelMsgTxCb
+spiRxData
+GPIOIntHandler
+0123blRdy
+blStartDone
+blDataDone
+blDoneTask
+../src/blota.c
+rspCount == 0
+BL initiate: %d 
+BL data %d, fail 
+BL data %d, retry 
+Rel %d 
+Going to bootloader mode!
+Target: all nodes 
+Target: 0x%s 
+Target: BL nodes 
+Initiate node %s 
+%s gone 
+ixlpDev(hNode)->node.blDone
+ongoing discovery 
+Bootload restart 
+Bootload all done 
+Bootload %s timed out (%u) 
+bmSetBit
+bmClrBit
+bit < DEV_BM_ARRAY_LEN_BITS
+../src/devbitmap.c
+bm->nBits == 1
+%#.3o 
+%#.8b 
+%#.4x 
+%#.6o 
+%#.16b 
+%#.11o 
+%#.32b 
+Reliable test:
+[m radio off
+[modes config
+[mist nodes
+[mend reliably
+[m help
+ radio off
+reliable: 
+modulation is %s
+Modulation: 
+[m (%s)? 
+RF Amp is %s
+bypassed
+normal
+RF Amp: 
+[m %s, 
+[m %s (%s)? 
+, %s antenna, RF amp %s, Tx power 
+%01.2gdBm
+Radio:
+[m off
+[mware ver
+[monfig
+  show 
+[mx cont
+[mx pkts
+[mower
+[mfreq 1
+[mfreq 2
+[modulation on/off
+[mhitening
+[mest word
+[mop params
+[mdaptive chans
+[mntenna
+  Amp 
+[mypass
+[mtats
+[mummary
+[miew mem
+[main  heap
+[madio heap
+[mebugss
+[mquit menu
+irmware query
+%s packets
+ in neo showIDs only 
+mv5994 r5429(5429) %s: 
+showID %u (%s, %u hop channels
+ [%.6g Mhz]
+ [%.6g Mhz, %.6g Mhz]
+ [%s, seq %u]
+, show key %u)
+, encoding %i
+, %u bytes max every %u
+%s modulated at %.6g Mhz, whiten - %s, test word %#.4x
+un-modulated at %.6g Mhz
+Radio: 
+Hop on %u channels: low %.6g MHz, high %.6g MHz, separation %.6g MHz
+order [%2u
+Hops: %u channels %s 
+[m %2u channels %s
+[m channel
+[m channel
+ (%u channels %s)? 
+base: 
+[mex, 
+[mecimal, 
+[mctal, 
+[minary
+size: 
+[mhar (1 byte), 
+[mhort (2 byte), 
+[mong (4 byte)
+show: 
+[mext, 
+[mrevious, 
+[m de-reference
+[m set value
+[match this location (^W cancels)
+Watch %#.8x
+%#.8x 
+Enter value: 
+Format: [I2CREG REGVAL] [...]
+Must be in Hub mode!
+Node Config: 
+Tx test word (%#.4x) 
+Bad value
+ShowID %u 
+Not in hopping mode. Choose hop spec first
+Out of range
+Hop sequence %u 
+Hop sequence: max %u (%u) 
+out of range 
+Show key (%u) 
+Tx power (%u = %02.1g dB) 
+Msg done: %u,%d 
+unused
+[m' %3s %s
+Unlock
+out of range: 2400.0 <= F <= 2483.5
+Test %i freq (%.6g Mhz) 
+Main menu:
+[mebugs
+[miew mem
+[madio test
+[mliable test
+  sys 
+[main  heap
+[madio heap
+[mlash mem
+[mootload
+[mock menu
+[m help
+Seconds:
+../src/dbmenu.c
+main: 
+Format: ADDR MSG
+Cannot send more than one message at a time!
+Must be in Hub or Node mode!
+Missing address, retry
+Reliable message queue full
+flag: 
+Antenna
+[m - %s
+ (%s): 
+whiten: %s
+hitening (continuous Tx only)
+[m: %s
+as config
+PRBS-15
+PRBS-32
+(%s): 
+Radio cfg:
+i == 0
+setup radio %s
+[m  %s
+Must be Hub 
+Bad node ID 
+Bl test menu:
+  Send 
+[mo bootloader command
+  Print the 
+[mist of nodes
+  Set the active 
+  Go to the Bootloader 
+[mHoW ID
+[m help
+bootload: enter node ID, UID, 'l'(ist), 'a'(ll), 'b'(ootload nodes) 
+iHop %2u, map 
+At %2u/%2u map: %016b 
+Adaptive inactive 
+Debug flags:
+  flag %u unknown
+menuSP < (MENU_STACK_DEPTH - 1)
+slot array
+rf change
+devices
+E1.20 RDM
+good packets
+hop cycle
+rel messages
+poll cycle
+verbose
+internal (PCB)
+override 
+code < ARRAYSIZE(cmdstaNames)
+../src/dbmsg.c
+PwrOff
+RxPktTest
+TxPktTest
+TxContTest
+restart
+Pending
+BadPtr
+UnknownCmd
+UnknownDirCmd
+Unknown stat 0x84
+CtxtErr
+ScheduleErr
+ParErr
+QueueErr
+QueueBusy
+Timeout
+UID %s
+Mode %s, %s
+Strap 
+Multiverse...
+DMX in
+DMX out
+critical
+Unknown dev 
+ixlInit
+getNewShortId
+maxDevs <= ABS_MAX_DEVICES
+../RDM/RDMCommon/indexList.c
+ixlMaxDevs
+3UUfUx
+f3fUffx
+xxxKx-
+getNxtAttn
+i2cRxRq
+i2c ?%u? ->
+i2c ?%u? <- %u
+i2c %u <- %u val!
+i2c %u <- %u
+i2c %u -> %#.2x 
+i2c state %u?
+i2c %u !rw
+../src/i2cslave.c
+Heap at %#.8x
+ %s %5i at %#.8x
+blkSz > 0
+../src/memory.c
+%s %#.8x 
+residual > 0
+Radio heap unavailable 
+Paced DMX on 
+pktTx.prop.pPkt == NULL
+../src/neo.c
+Paced DMX off 
+ NeoS%u/%u
+uartErr
+rdmResponderCB
+err < e_max
+../src/optuart.c
+@%02x 
+fsOffDone
+cmdAndWait
+postRFcmd
+nxtQueuedRFcmd
+RFCCmdAckIntHandler
+rfChange
+../src/radio.c
+Override %s->%s 
+reg32(RFC_DBELL, CMDR) == 0
+(getticks() - tstart) < rfTimeOut
+cmdQcnt < CMDQ_LEN
+post %s blocked by %s 
+post %s: %s 
+CPE %#.8x 
+1Mbps FSK Neo
+1Mbps BLE
+2Mbps GFSK
+5Mbps 8FSK
+DR>I,(Q
+neoNodeRdmRsp
+../src/rdmneo.c
+R%c*%04x 
+Hrdm rfSend %x 
+../src/rdmoptimus.c
+pendingHeader->commandClass == GET_COMMAND || pendingHeader->commandClass == SET_COMMAND
+rdmFwdNodeCb
+RDM Rx
+header->commandClass == GET_COMMAND || header->commandClass == SET_COMMAND
+rfAllocPdu
+minLen <= maxLen
+../src/rfblockpkt.c
+minLen <= RFP_BLK_PYLD_LEN
+neoHubChanBad
+neoNodeChanBad
+JHPNLIGMOK
+'$+:.?
+AH %2uv %2u^ 
+NEO_AH_IS_ON()
+../src/rfhops.c
+A%2uv%2u^ 
+../src/rfhub.c
+hNode != RDMDL_NULL_DEV
+rf.hub.rxMsgNode == RDMDL_NULL_DEV
+rf.hub.txMsgNode == hNode || rf.hub.txMsgNode == RDMDL_NULL_DEV
+rslt >= 0
+ nulAsn
+ >%u=%#.8x
+ fulAsn
+ actAsn
+Discovered %u nodes 
+ %c%.8x
+PDU%02x,%02x? 
+hNode != fromNode
+rspNode: %d
+rf.hubMV.parityPkt == NULL
+ ttl%u
+External list
+Total: %u nodes
+  Id Type  UID
+(%3d) %s %04x%08x
+Total: %u devs inc %u nodes 
+%uEP%d:%u,%uw%u
+rfNodeDevchRelCB
+:cb%d 
+../src/rfnode.c
+ %cnodeId %u
+ +gp%u
+Go BL %u
+ noPdu
+ge%.2x 
+Enc%u 
+hubCmdCallback
+rfPktStart
+pktStop
+nodeQueueTxPkt
+hubOpTask
+initRxQueue
+../src/rfpktcycle.c
+rfIsPktMode(mode)
+Node: %u
+Hub: %u
+Rx packet test: %u
+Tx packet test: %u
+rfTxPktQ.pCurrEntry == NULL
+ m%#.4x
+ op%s#%s
+(pktLen & 3) == 0
+Warning: deleting active Rx packets 
+rxRelMsgTask
+getRelTxAcks
+handleUsMsgAck
+addDsRelPdus
+addUsRelPdus
+rf %u 
+rrelRx %.2x 
+Msg from node %u: %s 
+Msg from hub: %s 
+rfIsNode()
+../src/rfreliable.c
+rfIsHub()
+sr %i %u
+RelAck XID mismatch 
+AK%u,%u 
+rf.hubMV.nodesToAck > 0
+ACK%u,%u,%d,%u
+Msg %d ack: %d
+Dack? %u: %d
+len > RFP_DSREL_HDRLEN
+len > RFP_USREL_HDRLEN
+radioStartup
+enable task fail 
+rf pwr 
+startOffs >= fwi.startOffset && startOffs < len
+../src/rfsetup.c
+*pEvent == cmdPostOK
+*pEvent == cmdOpDone
+RF up: %s 
+event == cmdPostOK
+../src/rftest.c
+     FW version: %#.4x
+      RAM start: %#.4x
+       RAM size: %#.4x
+ Available RATs: %#.4x
+TxTest stuck. Resetting radio 
+TxTest fail %s 
+transmitting %s
+  modulation %s
+   whitening %s
+   data word %#.4x
+Tx %u byte packet test:
+Rx Packets                           byte errors   rssi   loss
+   total    good     bad  missed      lo      hi     dB      %
+Rx sequence broken, restarting
+%8u%8u%8u%8u%8u%8u%8d%7.2g 
+Rx %i No %u (%2x %2x ... %2x %2x), crc %#.8x, stat %#.4x, time %#.8x 
+%8u%8u%8.2g%8.2g 
+%8u%8u%8u%8u%8u%8u%8u/%u  %5.2g%% 
+Rx Packets
+   total    good rxQual%    RSSI
+Rx Packets
+   total    good    part     bad  missed  remade blk-recovery loss 
+rng overrun 
+sendNodeContentCB
+saPackSlotPdus
+../src/slotarray.c
+(flags & 1) == 0 && nFlags
+dmxO ctntID while !Node
+i2c ctntID while !Node
+DS%u>%u.%u 
+iNum < (NUM_INTERRUPTS - 16)
+../src/iodefs.h
+../src/spi.c
+sHdr%04x 
+len < 256 + 3
+len == MSP_NODE_ASSIGN_ID_LEN || len == MSP_NODE_ASSIGN_GRP_LEN
+len == MSP_NODE_LOST_LEN
+ev & (1 << DIO_SPI_nCS)
+sysRestart
+%s:%u at %#.8x 
+%s: %s...
+Fault at %#.8x: cpsr %#.8x, SP %#.8x 
+overflow!
+Assert fail in %s() %s:%u (%s) 
+tt != sentinelRef
+../src/tasking.c
+markChildrenEmpty
+rdmDL_remBinding
+rdmDL_setBinding
+rdmDL_addNode
+rdmDL_addChildDevice
+nodeId < ABS_MAX_DEVICES && hDevType(nodeId) == dev_node
+../RDM/RDMCommon/rdmDevList.c
+pDevType(pChild) == dev_dev
+bindId < RDMDL_NULL_BIND && ! rdmDL_pDev(bindId)->dev.isBound && rdmDL_pDev(bindId)->dev.bind
+devId != RDMDL_NULL_DEV && pDevType(pDev) == dev_dev
+bindId != RDMDL_NULL_BIND
+rf.hub.nNodes == 0
+parentId < RDMDL_NULL_PARENT && hDevType(parentId) == dev_node
+rdmDW_cb_DISC_UN_MUTE
+../RDM/RDMController/rdmDiscWired.c
+Statxxxx
+Cmdxxxx
+Mspxxxx
+Multiverse 2.4GHz

@@ -108,6 +108,7 @@ Target: receive from a Multiverse Transmitter and transmit to ETC ColorSource V 
 - [x] Explicit session binding and duplicate rejection after link expiry
 - [x] Synthetic byte codec, fault-injection emulator, and offline C-engine replay
 - [x] Labeled-capture byte-distribution comparisons for candidate offsets
+- [x] Analyze published Multiverse transmitter/receiver firmware; record candidate PHY modes, SHoW ID/hop hypotheses, and capture controls ([findings](Multiverse_Firmware_Findings.md))
 - [x] Installed host/adapter API and hardware-independent integration checks
 - [x] Native host/module plugin, 72-slot payload chunks, full TX/RX path and loss recovery
 - [x] Record SDK/toolchain baselines for documented ESP32-S3/CC1352R targets and 5911 transmitter reference

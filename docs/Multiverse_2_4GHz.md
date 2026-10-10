@@ -28,17 +28,24 @@ the deployment. The [preparation guide](Hardware_Preparation.md) records the
 vendor baselines, compile/startup projects and capture-service handoff without
 assigning unverified PHY settings or board pins.
 
+An offline analysis of the vendor's published transmitter and receiver
+firmware was performed to sharpen these capture plans; its conclusions,
+confidence labels, and reproduction offsets live in
+[Multiverse_Firmware_Findings.md](Multiverse_Firmware_Findings.md). Firmware
+facts remain hypotheses until confirmed on air.
+
 ## Established facts and open questions
 
 | Item | Evidence / implication |
 | --- | --- |
 | Fixture settings | ETC documents the ColorSource V radio settings `Uni` (universe), `id` (SHoW ID suffix), and `PAS` (SHoW Key). For example, `id=100` represents full SHoW ID `24100`. Record the full ID in captures. |
 | Wireless mode | Multiverse uses frequency hopping. The SHoW ID selects data-rate class, band selection, and hop pattern; it does not specify the bit-level radio configuration in the public user guide. |
+| Firmware-derived candidates | Analysis of the vendor's published firmware (see [Multiverse_Firmware_Findings.md](Multiverse_Firmware_Findings.md)) identifies the radio as a TI SimpleLink-class part with 1 Mbps 2-FSK, 1 Mbps BLE, 2 Mbps GFSK and 5 Mbps 8-FSK modes, band presets (full/low/high/avoiding/very high), whitening, adaptive hopping, a SHoW ID range 101-164 for Multiverse shows with a decoded hop-pool generator, SHoW Key range 0-500, and block-fragmented DMX transport with fragment recovery. These are firmware facts and capture hypotheses, not confirmed on-air settings. |
 | Transmitter variant | City Theatrical lists 5910 (900 MHz/2.4 GHz), 5911 (2.4 GHz), and 5912 (900 MHz). Confirm the label; 5912 cannot supply the required 2.4 GHz signal. |
 | Two radio streams | The 5911 has two 2.4 GHz radio streams. Record which radio and universes are active to avoid combining two independent streams during analysis. |
 | Packet contents | mDMX, error correction, SHoW Key, and mRDM affect transport. A complete DMX universe is not necessarily present verbatim in an RF packet. |
 | CC1352R capabilities | TI documents configurable proprietary PHYs, preambles, sync words, and CRCs. Supported combinations depend on the device, RF patches, SDK, and SmartRF configuration. Sharing the frequency band does not establish compatibility. |
-| Unknown RF details | Modulation, actual bit rates, deviation/bandwidth, channel frequencies, preamble/sync, whitening, length encoding, CRC, FEC, key handling, hopping timing/sequence, and control traffic remain unverified. |
+| Unknown RF details | Deviation/bandwidth, channel-grid scale, preamble/sync, length encoding, transmitted CRC, FEC layout, key handling, and hopping timing/sequence remain unverified; capture-verification controls derived from the firmware are listed in [Multiverse_Firmware_Findings.md](Multiverse_Firmware_Findings.md). |
 
 Do not send native NOVA-LINK DataFragments, IEEE 802.15.4 packets, or TI
 example packets to the fixtures and label that Multiverse support. A TI-to-TI
