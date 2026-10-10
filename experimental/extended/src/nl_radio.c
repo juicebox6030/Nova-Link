@@ -156,7 +156,8 @@ int nl_radio_queue_tx(nl_radio_t *r, const uint8_t *frag, size_t len,
         txq_remove(r, zone, 0); /* evict the oldest: newest data wins */
         r->stats.tx_dropped++;
     }
-    nl_radio_txq_entry_t *e = &r->txq[zone][r->txq_len[zone]++];
+    /* Fill the entry, then publish it by bumping the length. */
+    nl_radio_txq_entry_t *e = &r->txq[zone][r->txq_len[zone]];
     memcpy(e->data, frag, len);
     /* The radio owns the originID so its own-echo filter always matches. */
     e->data[0] = nl_fragment_make_header(r->params.origin_id, zone,
@@ -171,6 +172,7 @@ int nl_radio_queue_tx(nl_radio_t *r, const uint8_t *frag, size_t len,
     e->second_band = 0;
     e->defers = 0;
     e->next_due = now;
+    r->txq_len[zone]++;
     return NL_OK;
 }
 
@@ -355,8 +357,12 @@ void nl_radio_seed(nl_radio_t *r, uint32_t entropy)
 static void apply_params(nl_radio_t *r, const nl_radio_params_t *p)
 {
     bool origin_changed = p->origin_id != r->params.origin_id;
+    nl_irq_state_t s;
+    NL_CRITICAL_ENTER(s);
     r->params = *p;
     r->tracker.stale_us = p->tracker_stale_us;
+    r->config_flags |= NL_RADIO_CFG_PARAMS;
+    NL_CRITICAL_EXIT(s);
     if (origin_changed) {
         r->rng = nl_rand_seed(r->rng ^ ((uint32_t)p->origin_id << 24));
         /* Re-stamp queued fragments with the new originID. */
@@ -367,16 +373,18 @@ static void apply_params(nl_radio_t *r, const nl_radio_params_t *p)
             }
         }
     }
-    r->config_flags |= NL_RADIO_CFG_PARAMS;
 }
 
 static void apply_plan(nl_radio_t *r, const nl_zone_plan_t *plan)
 {
+    nl_irq_state_t s;
+    NL_CRITICAL_ENTER(s);
     r->plan = *plan;
     memset(r->swrr_cw, 0, sizeof(r->swrr_cw));
     r->slot_active = false; /* re-pick on the next action */
     r->last_meta_slot = 0;
     r->config_flags |= NL_RADIO_CFG_PLAN;
+    NL_CRITICAL_EXIT(s);
 }
 
 void nl_radio_configure(nl_radio_t *r, const nl_radio_params_t *params,
@@ -434,9 +442,11 @@ int nl_radio_tx_busy(nl_radio_t *r, nl_time_us_t now)
     }
     r->undo_valid = false;
     uint8_t zone = r->undo_zone;
-    nl_radio_txq_entry_t e = r->undo_entry;
-    e.defers++;
-    e.next_due = now + 1u + nl_rand_upto(&r->rng, r->params.cca_backoff_us);
+    /* Update the saved copy in place (it is dead once undo_valid is clear)
+     * rather than copying the whole entry onto the stack. */
+    nl_radio_txq_entry_t *e = &r->undo_entry;
+    e->defers++;
+    e->next_due = now + 1u + nl_rand_upto(&r->rng, r->params.cca_backoff_us);
     if (r->undo_removed) {
         uint8_t n = r->txq_len[zone];
         uint8_t idx = r->undo_idx <= n ? r->undo_idx : n;
@@ -445,19 +455,24 @@ int nl_radio_tx_busy(nl_radio_t *r, nl_time_us_t now)
         } else {
             memmove(&r->txq[zone][idx + 1], &r->txq[zone][idx],
                     (size_t)(n - idx) * sizeof(r->txq[zone][0]));
-            r->txq[zone][idx] = e;
+            r->txq[zone][idx] = *e;
             r->txq_len[zone] = (uint8_t)(n + 1u);
         }
     } else {
-        r->txq[zone][r->undo_idx] = e;
+        r->txq[zone][r->undo_idx] = *e;
     }
     r->stats.tx_sent--;
     r->cca_busy++;
     return NL_OK;
 }
 
+/* The slot is reserved and published in two short critical sections so a
+ * PULL in the SPI ISR (direct path) never sees a half-written entry: the
+ * new slot lies outside head..head+count until the count is bumped. */
 static void rxq_push(nl_radio_t *r, const uint8_t *data, size_t len)
 {
+    nl_irq_state_t s;
+    NL_CRITICAL_ENTER(s);
     if (r->rxq_count >= NL_RADIO_RXQ_DEPTH) {
         /* Drop the oldest so the host always sees the newest data. */
         r->rxq_head = (uint8_t)((r->rxq_head + 1u) % NL_RADIO_RXQ_DEPTH);
@@ -465,9 +480,12 @@ static void rxq_push(nl_radio_t *r, const uint8_t *data, size_t len)
         r->stats.rx_dropped++;
     }
     uint8_t slot = (uint8_t)((r->rxq_head + r->rxq_count) % NL_RADIO_RXQ_DEPTH);
+    NL_CRITICAL_EXIT(s);
     memcpy(r->rxq[slot], data, len);
     r->rxq_lens[slot] = (uint8_t)len;
+    NL_CRITICAL_ENTER(s);
     r->rxq_count++;
+    NL_CRITICAL_EXIT(s);
 }
 
 void nl_radio_rx_packet(nl_radio_t *r, const uint8_t *data, size_t len,
@@ -535,38 +553,89 @@ static void set_outbox(nl_radio_t *r, uint8_t cmd, const uint8_t *data, size_t l
     r->outbox_len = n > 0 ? (uint8_t)n : 0;
 }
 
-static void handle_frame(nl_radio_t *r, const nl_link_frame_t *f, nl_time_us_t now)
+/**
+ * Take the outbox for a reply. Always succeeds on the direct path. On the
+ * deferred path it fails while the previous reply is armed (owned by SPI);
+ * a reply that is ready but was never armed is replaced: the host has
+ * already moved on to a newer request.
+ */
+static bool reply_claim(nl_radio_t *r)
 {
-    uint8_t buf[NL_LINK_MAX_DATA];
+    if (!r->spi_deferred) {
+        return true;
+    }
+    nl_irq_state_t s;
+    NL_CRITICAL_ENTER(s);
+    bool ok = r->outbox_state != NL_OUTBOX_ARMED;
+    if (ok) {
+        r->outbox_state = NL_OUTBOX_EMPTY;
+    }
+    NL_CRITICAL_EXIT(s);
+    if (ok) {
+        r->reply_made = true;
+    } else {
+        r->spi_reply_busy++;
+    }
+    return ok;
+}
+
+/* The SPI request path may run in the SPI ISR: its warnings are compiled
+ * out unless NL_LOG_IN_ISR (nl_config.h); spi_rejected / spi_crc_errors
+ * count the events either way. */
+#if NL_LOG_IN_ISR
+#define SPI_LOGW(...) NL_LOGW("radio", __VA_ARGS__)
+#else
+#define SPI_LOGW(...) ((void)0)
+#endif
+
+static void handle_frame(nl_radio_t *r, const nl_link_view_t *f, nl_time_us_t now)
+{
+    /* Responses are encoded straight into the outbox's DATA field;
+     * nl_link_encode then wraps them in place (it uses memmove). */
+    uint8_t *buf = &r->outbox[3];
+    const size_t cap = sizeof(r->outbox) - NL_LINK_OVERHEAD;
     int n;
 
     switch (f->cmd) {
     case NL_CMD_PING:
-        n = nl_link_pong_encode(&r->fw, buf, sizeof(buf));
+        if (!reply_claim(r)) {
+            break;
+        }
+        n = nl_link_pong_encode(&r->fw, buf, cap);
         set_outbox(r, NL_RSP_PONG, buf, (size_t)n);
         break;
 
     case NL_CMD_PULL:
+        if (!reply_claim(r)) {
+            break; /* the fragment stays queued for the next PULL */
+        }
         if (r->rxq_count == 0) {
             set_outbox(r, NL_RSP_FRAGMENT, NULL, 0);
         } else {
             uint8_t h = r->rxq_head;
             set_outbox(r, NL_RSP_FRAGMENT, r->rxq[h], r->rxq_lens[h]);
+            nl_irq_state_t s;
+            NL_CRITICAL_ENTER(s);
             r->rxq_head = (uint8_t)((h + 1u) % NL_RADIO_RXQ_DEPTH);
             r->rxq_count--;
+            NL_CRITICAL_EXIT(s);
         }
         break;
 
     case NL_CMD_PUSH:
         if (nl_radio_queue_tx(r, f->data, f->len, now) != NL_OK) {
-            NL_LOGW("radio", "PUSH with bad fragment length %u", f->len);
+            r->spi_rejected++;
+            SPI_LOGW("PUSH with bad fragment length %u", f->len);
         }
         break;
 
     case NL_CMD_STATUS: {
+        if (!reply_claim(r)) {
+            break;
+        }
         nl_radio_status_t st;
         nl_radio_get_status(r, &st);
-        n = nl_radio_status_encode(&st, buf, sizeof(buf));
+        n = nl_radio_status_encode(&st, buf, cap);
         set_outbox(r, NL_RSP_STATUS, buf, (size_t)n);
         break;
     }
@@ -576,7 +645,8 @@ static void handle_frame(nl_radio_t *r, const nl_link_frame_t *f, nl_time_us_t n
         if (nl_zone_plan_decode(f->data, f->len, &plan) == NL_OK) {
             apply_plan(r, &plan);
         } else {
-            NL_LOGW("radio", "rejected ZONE_CONFIG (len %u)", f->len);
+            r->spi_rejected++;
+            SPI_LOGW("rejected ZONE_CONFIG (len %u)", f->len);
         }
         break;
     }
@@ -586,14 +656,37 @@ static void handle_frame(nl_radio_t *r, const nl_link_frame_t *f, nl_time_us_t n
         if (nl_radio_params_decode(f->data, f->len, &p) == NL_OK) {
             apply_params(r, &p);
         } else {
-            NL_LOGW("radio", "rejected RADIO_CONFIG (len %u)", f->len);
+            r->spi_rejected++;
+            SPI_LOGW("rejected RADIO_CONFIG (len %u)", f->len);
         }
         break;
     }
 
     default:
-        NL_LOGW("radio", "unknown link command 0x%02X", f->cmd);
+        r->spi_rejected++;
+        SPI_LOGW("unknown link command 0x%02X", f->cmd);
         break;
+    }
+}
+
+/* Handle every link frame in one SPI transaction's bytes. */
+static void handle_rx(nl_radio_t *r, const uint8_t *rx, size_t len, nl_time_us_t now)
+{
+    while (len > 0) {
+        nl_link_view_t f; /* points into rx: no NL_LINK_MAX_DATA copy here */
+        size_t used = 0;
+        int rc = nl_link_find(rx, len, &f, &used);
+        if (rc == NL_OK) {
+            handle_frame(r, &f, now);
+        } else if (rc == NL_ERR_CRC) {
+            r->spi_crc_errors++;
+            SPI_LOGW("link frame CRC error");
+        }
+        if (rc != NL_OK || used == 0 || used > len) {
+            break;
+        }
+        rx += used;
+        len -= used;
     }
 }
 
@@ -602,20 +695,83 @@ void nl_radio_spi_complete(nl_radio_t *r, const uint8_t *rx, size_t len,
 {
     /* Whatever was in the outbox has just been clocked out. */
     r->outbox_len = 0;
+    handle_rx(r, rx, len, now);
+}
 
-    while (len > 0) {
-        nl_link_frame_t f;
-        size_t used = 0;
-        int rc = nl_link_decode(rx, len, &f, &used);
-        if (rc == NL_OK) {
-            handle_frame(r, &f, now);
-        } else if (rc == NL_ERR_CRC) {
-            NL_LOGW("radio", "link frame CRC error");
-        }
-        if (rc != NL_OK || used == 0 || used > len) {
-            break;
-        }
-        rx += used;
-        len -= used;
+/* ---- Deferred SPI path ------------------------------------------------- */
+/*
+ * Ordering: the producer (ISR) fills a slot, then publishes it with the
+ * spi_wr store; the consumer (main loop) reads spi_wr, then the slot, and
+ * releases it with the spi_rd store. NL_COMPILER_BARRIER() keeps the slot
+ * accesses on the right side of those stores (see nl_config.h for the
+ * single-core assumption). The outbox is handed over through outbox_state.
+ */
+
+#define SPI_SLOT_MASK ((uint8_t)(NL_RADIO_SPI_SLOTS - 1u))
+
+void nl_radio_spi_isr(nl_radio_t *r, const uint8_t *rx, size_t len)
+{
+    /* The armed reply went out in this transaction. */
+    if (r->outbox_state == NL_OUTBOX_ARMED) {
+        r->outbox_state = NL_OUTBOX_EMPTY;
     }
+    const uint8_t *p = rx != NULL ? memchr(rx, NL_LINK_SYNC, len) : NULL;
+    if (p == NULL) {
+        return; /* filler only: a response read */
+    }
+    len -= (size_t)(p - rx);
+    uint8_t wr = r->spi_wr;
+    if ((uint8_t)(wr - r->spi_rd) >= NL_RADIO_SPI_SLOTS) {
+        r->spi_overruns++;
+        return;
+    }
+    if (len > NL_LINK_FRAME_MAX) {
+        len = NL_LINK_FRAME_MAX;
+    }
+    uint8_t i = wr & SPI_SLOT_MASK;
+    memcpy(r->spi_slot[i], p, len);
+    r->spi_slot_len[i] = (uint8_t)len;
+    NL_COMPILER_BARRIER();
+    r->spi_wr = (uint8_t)(wr + 1u);
+}
+
+const uint8_t *nl_radio_spi_arm(nl_radio_t *r, size_t *len)
+{
+    const uint8_t *p = NULL;
+    size_t n = 0;
+    nl_irq_state_t s;
+    NL_CRITICAL_ENTER(s);
+    if (r->outbox_state == NL_OUTBOX_READY) {
+        if (r->outbox_len > 0) {
+            r->outbox_state = NL_OUTBOX_ARMED;
+            p = r->outbox;
+            n = r->outbox_len;
+        } else {
+            r->outbox_state = NL_OUTBOX_EMPTY;
+        }
+    }
+    NL_CRITICAL_EXIT(s);
+    *len = n;
+    return p;
+}
+
+int nl_radio_poll(nl_radio_t *r, nl_time_us_t now)
+{
+    uint8_t rd = r->spi_rd;
+    if (rd == r->spi_wr) {
+        return 0;
+    }
+    NL_COMPILER_BARRIER(); /* read the slot only after seeing spi_wr */
+    uint8_t i = rd & SPI_SLOT_MASK;
+    r->spi_deferred = true;
+    r->reply_made = false;
+    handle_rx(r, r->spi_slot[i], r->spi_slot_len[i], now);
+    r->spi_deferred = false;
+    if (r->reply_made) {
+        NL_COMPILER_BARRIER(); /* outbox written before it is published */
+        r->outbox_state = NL_OUTBOX_READY;
+    }
+    NL_COMPILER_BARRIER(); /* done with the slot before releasing it */
+    r->spi_rd = (uint8_t)(rd + 1u);
+    return 1;
 }

@@ -1,7 +1,9 @@
 === Host / Radio Transport Protocol
 
-The portable software envelope is `[0xAA][LEN][COMMAND][DATA]`. `LEN` includes
-COMMAND and is 1–103 bytes. Complete frames are 3–105 bytes. This choice combines
+The portable software envelope is `[0xAA][LEN][COMMAND][DATA][CRC16]`. `LEN`
+includes COMMAND (not the CRC) and is 1–103 bytes. Complete frames are 5–107
+bytes. The CRC is CRC-16/CCITT-FALSE (polynomial 0x1021, initial 0xFFFF, no
+reflection), sent high byte first, over LEN, COMMAND and DATA. This choice combines
 the original SYNC/LEN framing concept with the command list. Physical SPI
 interoperability has not been validated; see `Protocol_Decisions.md`.
 
@@ -25,14 +27,15 @@ interoperability has not been validated; see `Protocol_Decisions.md`.
 
 [source,text]
 ----
-PUSH:     AA 06 03 AF FE 00 AA FF
-PULL:     AA 01 02
-response: AA 06 D0 AF FE 00 AA FF
+PUSH:     AA 06 03 AF FE 00 AA FF 00 C4
+PULL:     AA 01 02 0E 7C
+response: AA 06 D0 AF FE 00 AA FF 6A 90
 ----
 
 The incremental parser handles arbitrary delivery chunks and `AA` payload bytes.
-Reset partial parsing at transaction boundaries/timeouts. There is no transport
-checksum, so plausible corrupted lengths cannot be reliably resynchronized.
+Reset partial parsing at transaction boundaries/timeouts. A CRC mismatch
+rejects the frame (`NL_ERR_INTEGRITY`) and the parser hunts for the next SYNC,
+so line noise and bit errors are dropped instead of delivered.
 PUSH acknowledgment, empty/error response bytes, STATUS/PING replies, and remote
 zone configuration require a future protocol decision. The C model's synchronous
 status return is not a defined physical SPI acknowledgment.

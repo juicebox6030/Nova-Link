@@ -27,7 +27,10 @@ transport length (or a PHY adapter's received length) supplies payload length;
 there is no separate payload-length field in the RF fragment.
 
 No fragment checksum, application-message ID, fragment index, epoch, or
-acknowledgment is defined. A PHY adapter must establish CRC behavior. Larger
+acknowledgment is defined. A PHY adapter must establish CRC behavior. With
+`NOVA_SECURITY` the fragment is sealed as
+`[header][sequence][counter:4][payload][MIC:8]` (14–114 bytes); see
+`include/nova_link/secure.h`. Larger
 application messages need a plugin-owned fragmentation/reassembly format;
 the core rejects payloads over 100 bytes. Deduplication does not provide
 integrity or guaranteed delivery. MGMT_LISTEN does not change zone routing.

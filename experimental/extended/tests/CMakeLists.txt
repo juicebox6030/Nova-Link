@@ -27,6 +27,23 @@ foreach(t ${NL_TESTS})
   add_test(NAME extended_${t} COMMAND extended_${t})
 endforeach()
 
+# ---- ISR build: counting critical-section/plugin hooks, logging compiled out
+set(NL_ISR_SOURCES)
+foreach(s ${NL_CORE_SOURCES})
+  list(APPEND NL_ISR_SOURCES ${PROJECT_SOURCE_DIR}/${s})
+endforeach()
+add_library(nova_link_extended_isr STATIC ${NL_ISR_SOURCES})
+target_include_directories(nova_link_extended_isr PUBLIC
+  ${PROJECT_SOURCE_DIR}/include ${CMAKE_CURRENT_SOURCE_DIR}/isr_config)
+target_compile_definitions(nova_link_extended_isr PUBLIC NL_HAVE_CONFIG_USER NL_ISR_BUILD=1)
+nl_target(nova_link_extended_isr)
+
+add_executable(extended_test_isr test_isr.c nl_test.c)
+target_include_directories(extended_test_isr PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(extended_test_isr PRIVATE nova_link_extended_isr)
+nl_target(extended_test_isr)
+add_test(NAME extended_test_isr COMMAND extended_test_isr)
+
 # ---- Shared test vectors for the Python tools (tools/) -------------------
 # gen_vectors prints JSON vectors computed by the C core. Regenerate with:
 #   build/tests/gen_vectors --out tests/vectors

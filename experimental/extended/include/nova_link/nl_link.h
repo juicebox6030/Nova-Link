@@ -89,6 +89,21 @@ int nl_link_encode(uint8_t cmd, const uint8_t *data, size_t len, uint8_t *out,
 int nl_link_decode(const uint8_t *buf, size_t len, nl_link_frame_t *frame,
                    size_t *consumed);
 
+/** A frame found in place: @c data points into the scanned buffer. */
+typedef struct {
+    uint8_t cmd;
+    uint8_t len;
+    const uint8_t *data;
+} nl_link_view_t;
+
+/**
+ * nl_link_decode() without the copy: same scan, same results and
+ * @p consumed, but @p frame->data points into @p buf and is only valid
+ * while @p buf is. Avoids a NL_LINK_MAX_DATA-sized frame on the stack.
+ */
+int nl_link_find(const uint8_t *buf, size_t len, nl_link_view_t *frame,
+                 size_t *consumed);
+
 /** Streaming parser for byte-oriented transports (UART). */
 typedef struct {
     uint8_t state;
@@ -211,6 +226,17 @@ int nl_link_pong_decode(const uint8_t *buf, size_t len, nl_link_pong_t *p);
 
 /** Default scheduler parameters (also documented in config/nova_link.ini). */
 void nl_radio_params_default(nl_radio_params_t *p);
+
+/* LEN is one byte (nl_link_encode would truncate a larger length); buffers
+ * sized from NL_LINK_MAX_DATA must hold a whole fragment (nl_spi_link reads
+ * PULL responses into them) and every config payload. */
+#if NL_LINK_MAX_DATA > 255
+#error "NL_LINK_MAX_DATA must be at most 255 (one LEN byte)"
+#endif
+#if NL_LINK_MAX_DATA < NL_MAX_FRAGMENT || NL_LINK_MAX_DATA < NL_ZONE_PLAN_WIRE_SIZE || \
+    NL_LINK_MAX_DATA < NL_RADIO_PARAMS_WIRE_SIZE || NL_LINK_MAX_DATA < NL_RADIO_STATUS_WIRE_SIZE
+#error "NL_LINK_MAX_DATA is too small for a fragment or a config/status payload"
+#endif
 
 #ifdef __cplusplus
 }

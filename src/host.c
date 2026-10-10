@@ -1,7 +1,10 @@
 #include <string.h>
 #include "nova_link/host.h"
+#include "internal.h"
 
 #define GENERATION_MAX 0x00FFFFFFu
+/* Recipient and reader sets are uint16_t bit masks; handles keep the index in 8 bits. */
+NL_STATIC_ASSERT(NL_PLUGIN_MAX >= 1u && NL_PLUGIN_MAX <= 16u && NL_PLUGIN_MAX < NL_PLUGIN_NONE, plugin_max_fits_masks);
 
 static uint8_t plugin_index(nl_plugin_id plugin)
 {
@@ -26,6 +29,12 @@ static bool registered(const nl_host *host, nl_plugin_id plugin)
     return host != NULL && index < NL_PLUGIN_MAX &&
         host->plugins[index].state != NL_PLUGIN_FREE &&
         host->plugins[index].generation == (plugin >> 8);
+}
+
+/* True while a callback is running; host APIs reject re-entrant mutation. */
+static bool busy(const nl_host *host)
+{
+    return host->dispatching || host->lifecycle_busy || host->sending || host->logging;
 }
 
 static void log_event(nl_host *host, nl_log_event event, nl_status status, nl_plugin_id plugin, uint8_t zone)
@@ -63,7 +72,7 @@ nl_status nl_host_register(nl_host *host, const nl_plugin *plugin, nl_plugin_id 
     nl_plugin *callbacks;
     nl_status status = NL_OK;
     if (host == NULL || plugin == NULL || id == NULL) return NL_ERR_ARGUMENT;
-    if (host->dispatching || host->lifecycle_busy || host->sending || host->logging) return NL_ERR_BUSY;
+    if (busy(host)) return NL_ERR_BUSY;
     for (slot = 0; slot < NL_PLUGIN_MAX; ++slot)
         if (host->plugins[slot].state == NL_PLUGIN_FREE && host->plugins[slot].generation <= GENERATION_MAX) break;
     if (slot == NL_PLUGIN_MAX) return NL_ERR_FULL;
@@ -72,11 +81,17 @@ nl_status nl_host_register(nl_host *host, const nl_plugin *plugin, nl_plugin_id 
     host->plugins[slot].state = NL_PLUGIN_STARTING;
     handle = plugin_handle(host, slot);
     host->lifecycle_busy = true;
-    if (callbacks->start != NULL) status = callbacks->start(host, handle, callbacks->context);
+    if (callbacks->start != NULL) {
+        NL_PLUGIN_ENTER(host, slot);
+        status = callbacks->start(host, handle, callbacks->context);
+        NL_PLUGIN_EXIT(host, slot);
+    }
     if (status != NL_OK) {
         if (callbacks->stop != NULL) {
             host->plugins[slot].state = NL_PLUGIN_STOPPING;
+            NL_PLUGIN_ENTER(host, slot);
             callbacks->stop(host, handle, callbacks->context);
+            NL_PLUGIN_EXIT(host, slot);
         }
         nl_zones_release_plugin(&host->zones, slot);
         retire_slot(&host->plugins[slot]);
@@ -93,12 +108,16 @@ nl_status nl_host_unregister(nl_host *host, nl_plugin_id plugin)
 {
     nl_plugin_slot *slot;
     if (host == NULL) return NL_ERR_ARGUMENT;
-    if (host->dispatching || host->lifecycle_busy || host->sending || host->logging) return NL_ERR_BUSY;
+    if (busy(host)) return NL_ERR_BUSY;
     if (!registered(host, plugin)) return NL_ERR_NOT_FOUND;
     slot = &host->plugins[plugin_index(plugin)];
     host->lifecycle_busy = true;
     slot->state = NL_PLUGIN_STOPPING;
-    if (slot->callbacks.stop != NULL) slot->callbacks.stop(host, plugin, slot->callbacks.context);
+    if (slot->callbacks.stop != NULL) {
+        NL_PLUGIN_ENTER(host, plugin_index(plugin));
+        slot->callbacks.stop(host, plugin, slot->callbacks.context);
+        NL_PLUGIN_EXIT(host, plugin_index(plugin));
+    }
     nl_zones_release_plugin(&host->zones, plugin_index(plugin));
     retire_slot(slot);
     host->lifecycle_busy = false;
@@ -160,7 +179,7 @@ nl_status nl_host_receive(nl_host *host, const nl_fragment *fragment, uint64_t n
     uint16_t recipients = 0;
     nl_status status;
     if (host == NULL) return NL_ERR_ARGUMENT;
-    if (host->dispatching || host->lifecycle_busy || host->sending || host->logging) return NL_ERR_BUSY;
+    if (busy(host)) return NL_ERR_BUSY;
     status = nl_fragment_validate(fragment);
     if (status != NL_OK) return status;
     if (fragment->origin == host->origin) {
@@ -173,16 +192,20 @@ nl_status nl_host_receive(nl_host *host, const nl_fragment *fragment, uint64_t n
             nl_zones_can_read(&host->zones, plugin, fragment->zone))
             recipients |= (uint16_t)(1u << plugin);
     if (recipients == 0u) return NL_ERR_NOT_FOUND;
-    status = nl_stream_accept(&host->streams, fragment, now_us);
+    status = nl_stream_check_valid(&host->streams, fragment, now_us);
     if (status != NL_OK) {
         log_event(host, NL_LOG_RECEIVE, status, NL_PLUGIN_ID_NONE, fragment->zone);
         return status;
     }
+    nl_stream_commit(&host->streams, fragment, now_us);
     host->dispatching = true;
     for (plugin = 0; plugin < NL_PLUGIN_MAX; ++plugin) {
         nl_plugin *callbacks = &host->plugins[plugin].callbacks;
-        if ((recipients & (uint16_t)(1u << plugin)) != 0u)
+        if ((recipients & (uint16_t)(1u << plugin)) != 0u) {
+            NL_PLUGIN_ENTER(host, plugin);
             callbacks->receive(host, plugin_handle(host, plugin), fragment, callbacks->context);
+            NL_PLUGIN_EXIT(host, plugin);
+        }
     }
     host->dispatching = false;
     return NL_OK;
@@ -204,12 +227,15 @@ nl_status nl_host_tick(nl_host *host, uint64_t now_us)
 {
     uint8_t plugin;
     if (host == NULL) return NL_ERR_ARGUMENT;
-    if (host->dispatching || host->lifecycle_busy || host->sending || host->logging) return NL_ERR_BUSY;
+    if (busy(host)) return NL_ERR_BUSY;
     host->dispatching = true;
     for (plugin = 0; plugin < NL_PLUGIN_MAX; ++plugin) {
         nl_plugin *callbacks = &host->plugins[plugin].callbacks;
-        if (host->plugins[plugin].state == NL_PLUGIN_ACTIVE && callbacks->tick != NULL)
+        if (host->plugins[plugin].state == NL_PLUGIN_ACTIVE && callbacks->tick != NULL) {
+            NL_PLUGIN_ENTER(host, plugin);
             callbacks->tick(host, plugin_handle(host, plugin), now_us, callbacks->context);
+            NL_PLUGIN_EXIT(host, plugin);
+        }
     }
     host->dispatching = false;
     return NL_OK;

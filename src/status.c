@@ -16,6 +16,7 @@ const char *nl_status_name(nl_status status)
     case NL_ERR_BUSY: return "busy";
     case NL_ERR_UNSUPPORTED: return "unsupported";
     case NL_ERR_NOT_FOUND: return "not found";
+    case NL_ERR_INTEGRITY: return "integrity check failed";
     default: return "unknown status";
     }
 }

@@ -4,6 +4,14 @@
 #include "nova_link/nl_radio.h"
 
 #define DWELL 2000u
+
+/* SPI request-path warnings exist only with NL_LOG_IN_ISR; the counters
+ * are checked either way. */
+#if NL_LOG_IN_ISR
+#define SPI_LOGGED(s) nl_test_log_contains(NL_LOG_WARN, s)
+#else
+#define SPI_LOGGED(s) (nl_test_log_count(NL_LOG_WARN) == 0)
+#endif
 #define SUB(z) (903000000u + 3000000u * (uint32_t)(z))
 #define G24(z) (2405000000u + 10000000u * (uint32_t)(z))
 
@@ -620,7 +628,8 @@ static void test_spi_push_pull(void)
 
     nl_test_log_clear();
     CHECK_EQ(spi_cmd(&r, NL_CMD_PUSH, b, 1, &f), NL_ERR_EMPTY);
-    CHECK(nl_test_log_contains(NL_LOG_WARN, "PUSH with bad fragment length"));
+    CHECK_EQ(r.spi_rejected, 1);
+    CHECK(SPI_LOGGED("PUSH with bad fragment length"));
 
     /* RX overflow keeps the newest NL_RADIO_RXQ_DEPTH fragments, in order. */
     for (int i = 0; i < NL_RADIO_RXQ_DEPTH + 4; i++) {
@@ -642,7 +651,8 @@ static void test_spi_rejects(void)
     nl_link_frame_t f;
     nl_test_log_clear();
     CHECK_EQ(spi_cmd(&r, 0x42, NULL, 0, &f), NL_ERR_EMPTY);
-    CHECK(nl_test_log_contains(NL_LOG_WARN, "unknown link command 0x42"));
+    CHECK_EQ(r.spi_rejected, 1);
+    CHECK(SPI_LOGGED("unknown link command 0x42"));
 
     nl_radio_params_t p;
     nl_radio_params_default(&p);
@@ -650,9 +660,11 @@ static void test_spi_rejects(void)
     uint8_t pb[NL_RADIO_PARAMS_WIRE_SIZE];
     nl_radio_params_encode(&p, pb, sizeof(pb));
     spi_cmd(&r, NL_CMD_RADIO_CONFIG, pb, sizeof(pb), &f);
-    CHECK(nl_test_log_contains(NL_LOG_WARN, "rejected RADIO_CONFIG"));
+    CHECK_EQ(r.spi_rejected, 2);
+    CHECK(SPI_LOGGED("rejected RADIO_CONFIG"));
     spi_cmd(&r, NL_CMD_ZONE_CONFIG, pb, sizeof(pb), &f);
-    CHECK(nl_test_log_contains(NL_LOG_WARN, "rejected ZONE_CONFIG"));
+    CHECK_EQ(r.spi_rejected, 3);
+    CHECK(SPI_LOGGED("rejected ZONE_CONFIG"));
     CHECK_EQ(r.config_flags, 0);
 
     /* Corrupted frame is reported and ignored. */
@@ -660,7 +672,8 @@ static void test_spi_rejects(void)
     int n = nl_link_encode(NL_CMD_PING, NULL, 0, buf, sizeof(buf));
     buf[n - 1] ^= 0xFF;
     nl_radio_spi_complete(&r, buf, sizeof(buf), 0);
-    CHECK(nl_test_log_contains(NL_LOG_WARN, "CRC error"));
+    CHECK_EQ(r.spi_crc_errors, 1);
+    CHECK(SPI_LOGGED("CRC error"));
     size_t olen;
     nl_radio_outbox(&r, &olen);
     CHECK_EQ(olen, 0);

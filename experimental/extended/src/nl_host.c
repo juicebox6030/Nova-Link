@@ -119,7 +119,9 @@ int nl_host_register(nl_host_t *host, const nl_plugin_def_t *def)
     }
     host->plugins[slot] = def;
     if (def->init != NULL) {
+        NL_PLUGIN_ENTER(slot);
         int rc = def->init(host, slot, def->user);
+        NL_PLUGIN_EXIT(slot);
         if (rc < 0) {
             NL_LOGE("host", "plugin '%s' init failed: %s", def->name ? def->name : "?",
                     nl_status_str(rc));
@@ -141,7 +143,9 @@ int nl_host_unregister(nl_host_t *host, uint8_t slot)
     }
     const nl_plugin_def_t *def = host->plugins[slot];
     if (def->deinit != NULL) {
+        NL_PLUGIN_ENTER(slot);
         def->deinit(host, slot, def->user);
+        NL_PLUGIN_EXIT(slot);
     }
     nl_claims_release_all(&host->claims, slot);
     host->plugins[slot] = NULL;
@@ -192,11 +196,18 @@ static bool want_mgmt_flag(const nl_host_t *host)
            nl_time_before(host->now, host->mgmt_flag_until);
 }
 
-/** Encode and push one fragment. Claims must already be checked. */
-static int push_fragment(nl_host_t *host, uint8_t zone, const uint8_t *payload,
-                         size_t len, uint8_t flags)
+/** Where push_fragment_in() expects a payload built in place. */
+#define FRAG_PAYLOAD(buf) (&(buf)[NL_FRAGMENT_HEADER_SIZE])
+
+/**
+ * Encode one fragment into @p buf (NL_MAX_FRAGMENT bytes) and push it.
+ * @p payload may be FRAG_PAYLOAD(buf), so callers can build the payload in
+ * place instead of in a second stack buffer (nl_fragment_encode memmoves).
+ * Claims must already be checked.
+ */
+static int push_fragment_in(nl_host_t *host, uint8_t *buf, uint8_t zone,
+                            const uint8_t *payload, size_t len, uint8_t flags)
 {
-    uint8_t buf[NL_MAX_FRAGMENT];
     if (want_mgmt_flag(host)) {
         flags |= NL_FLAG_MGMT_LISTEN;
     }
@@ -208,7 +219,7 @@ static int push_fragment(nl_host_t *host, uint8_t zone, const uint8_t *payload,
         .payload = payload,
         .payload_len = (uint8_t)len,
     };
-    int n = nl_fragment_encode(&f, buf, sizeof(buf));
+    int n = nl_fragment_encode(&f, buf, NL_MAX_FRAGMENT);
     if (n < 0) {
         return n;
     }
@@ -220,6 +231,14 @@ static int push_fragment(nl_host_t *host, uint8_t zone, const uint8_t *payload,
     host->tx_seq[zone]++;
     host->stats.tx_fragments++;
     return NL_OK;
+}
+
+/** Encode and push one fragment. Claims must already be checked. */
+static int push_fragment(nl_host_t *host, uint8_t zone, const uint8_t *payload,
+                         size_t len, uint8_t flags)
+{
+    uint8_t buf[NL_MAX_FRAGMENT];
+    return push_fragment_in(host, buf, zone, payload, len, flags);
 }
 
 static int check_send(nl_host_t *host, uint8_t slot, uint8_t zone)
@@ -236,7 +255,7 @@ static int check_send(nl_host_t *host, uint8_t slot, uint8_t zone)
     if (!nl_claims_can_send(&host->claims, slot, zone)) {
         NL_LOGW("host", "plugin '%s' may not send on zone %u (claim: %s)",
                 host->plugins[slot]->name ? host->plugins[slot]->name : "?", zone,
-                nl_claim_mode_str(nl_claims_get(&host->claims, slot, zone)));
+                nl_claim_mode_str((uint8_t)nl_claims_get(&host->claims, slot, zone)));
         host->stats.tx_denied++;
         return NL_ERR_PERM;
     }
@@ -272,14 +291,14 @@ int nl_host_send_segmented(nl_host_t *host, uint8_t slot, uint8_t zone,
                 (unsigned)count, (unsigned)NL_RADIO_TXQ_DEPTH);
         return NL_ERR_SIZE;
     }
-    uint8_t payload[NL_MAX_PAYLOAD];
+    uint8_t buf[NL_MAX_FRAGMENT];
     for (int i = 0; i < count; i++) {
-        int n = nl_seg_build(msg, len, (uint8_t)i, payload, sizeof(payload));
+        int n = nl_seg_build(msg, len, (uint8_t)i, FRAG_PAYLOAD(buf), NL_MAX_PAYLOAD);
         if (n < 0) {
             return n;
         }
         uint8_t flags = (i + 1 < count) ? NL_FLAG_BURST : 0;
-        rc = push_fragment(host, zone, payload, (size_t)n, flags);
+        rc = push_fragment_in(host, buf, zone, FRAG_PAYLOAD(buf), (size_t)n, flags);
         if (rc != NL_OK) {
             return rc;
         }
@@ -427,14 +446,14 @@ static void flush_meta(nl_host_t *host)
     if (!nl_meta_queue_pending(&host->meta) || nl_time_before(host->now, host->next_meta)) {
         return;
     }
-    uint8_t payload[NL_MAX_PAYLOAD];
-    size_t n = nl_meta_queue_pack(&host->meta, payload, sizeof(payload));
+    uint8_t buf[NL_MAX_FRAGMENT];
+    size_t n = nl_meta_queue_pack(&host->meta, FRAG_PAYLOAD(buf), NL_MAX_PAYLOAD);
     if (n == 0) {
         return;
     }
     /* Keep flagging for a while so late listeners still find zone 0. */
     host->mgmt_flag_until = host->now + host->cfg.mgmt_flag_hold_us;
-    if (push_fragment(host, NL_META_ZONE, payload, n, 0) == NL_OK) {
+    if (push_fragment_in(host, buf, NL_META_ZONE, FRAG_PAYLOAD(buf), n, 0) == NL_OK) {
         host->stats.meta_fragments++;
     }
     host->next_meta = host->now + host->cfg.meta_interval_us;
@@ -494,7 +513,9 @@ static void handle_meta(nl_host_t *host, uint8_t origin, const uint8_t *payload,
             for (uint8_t s = 0; s < NL_MAX_PLUGINS; s++) {
                 const nl_plugin_def_t *d = host->plugins[s];
                 if (d != NULL && d->on_meta != NULL && d->type_id == ptype) {
+                    NL_PLUGIN_ENTER(s);
                     d->on_meta(host, s, origin, v + 2, (size_t)vlen - 2u, d->user);
+                    NL_PLUGIN_EXIT(s);
                 }
             }
             break;
@@ -580,7 +601,9 @@ void nl_host_handle_rx(nl_host_t *host, const uint8_t *data, size_t len,
             continue;
         }
         if (d->on_fragment != NULL) {
+            NL_PLUGIN_ENTER(s);
             d->on_fragment(host, s, &f, d->user);
+            NL_PLUGIN_EXIT(s);
         }
         delivered = true;
     }
@@ -738,7 +761,9 @@ void nl_host_poll(nl_host_t *host, nl_time_us_t now)
     for (uint8_t s = 0; s < NL_MAX_PLUGINS; s++) {
         const nl_plugin_def_t *d = host->plugins[s];
         if (d != NULL && d->on_tick != NULL) {
+            NL_PLUGIN_ENTER(s);
             d->on_tick(host, s, now, d->user);
+            NL_PLUGIN_EXIT(s);
         }
     }
 

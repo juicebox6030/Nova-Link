@@ -164,6 +164,36 @@ static void test_late_boot_counts(void)
     CHECK((double)r.delivered >= 0.97 * (double)r.expected);
 }
 
+static void test_spi_deferred(void)
+{
+    /* ISR handoff + main-loop poll: replies come late and the host re-reads,
+     * but within its read window (5 x 50 us) nothing is lost. */
+    nl_sim_scenario_t sc;
+    nl_sim_scenario_default(&sc, 2);
+    sc.duration_us = 4000000;
+    sc.spi_deferred = true;
+    nl_sim_result_t r;
+    nl_sim_run(&sc, &r);
+    CHECK(r.spi_transactions > 0);
+    CHECK(r.spi_read_retries > 0);
+    CHECK_EQ(r.spi_errors, 0);
+    CHECK_EQ(r.spi_overruns, 0);
+    CHECK_EQ(r.spi_reply_busy, 0);
+    CHECK((double)r.delivered >= 0.97 * (double)r.expected);
+
+    /* A main loop slower than the read window loses replies... */
+    sc.radio_loop_us = 2000;
+    nl_sim_run(&sc, &r);
+    CHECK(r.spi_errors > 0);
+    CHECK((double)r.delivered < 0.9 * (double)r.expected);
+
+    /* ...until the window covers it again. */
+    sc.spi_read_retries = 40;
+    nl_sim_run(&sc, &r);
+    CHECK_EQ(r.spi_errors, 0);
+    CHECK((double)r.delivered >= 0.97 * (double)r.expected);
+}
+
 int main(void)
 {
     RUN(test_airtime);
@@ -175,5 +205,6 @@ int main(void)
     RUN(test_collisions_counted);
     RUN(test_spi_faults_survived);
     RUN(test_late_boot_counts);
+    RUN(test_spi_deferred);
     return nl_test_finish();
 }

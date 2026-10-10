@@ -16,10 +16,14 @@ if(NL_BUILD_TESTS)
   # Regression gates on whole-network behaviour. Thresholds leave margin
   # below the values measured over several seeds when they were set
   # (single runs: broadcast_4 93.1..99.3%, p99 9..17 ms; star_8_lossy
-  # 94.9..98.7%; silent 105..347 ms over 30 seeds). See docs/simulation.adoc.
+  # 94.9..98.7%; silent 105..347 ms over 30 seeds; broadcast_4_deferred
+  # 90.6..99.0%, p99 11..19 ms over 10 seed pairs). See docs/simulation.adoc.
   add_test(NAME extended_sim_broadcast_4
            COMMAND nl_sim --nodes 4 --duration 4 --runs 2
                    --expect-delivery 0.93 --expect-p99-ms 30)
+  add_test(NAME extended_sim_broadcast_4_deferred
+           COMMAND nl_sim --nodes 4 --duration 4 --runs 2 --spi-deferred
+                   --expect-delivery 0.88 --expect-p99-ms 30)
   add_test(NAME extended_sim_star_8_lossy
            COMMAND nl_sim --preset star --nodes 8 --rate 40 --per 0.1 --duration 4
                    --runs 2 --expect-delivery 0.94)

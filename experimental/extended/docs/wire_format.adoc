@@ -256,6 +256,17 @@ After every SPI transaction the platform calls `nl_radio_spi_complete()`
 with the received bytes, then preloads `nl_radio_outbox()` (padded with
 zeros) for the next transaction.
 
+When SPI completes in an interrupt, use the deferred path instead (see
+`nl_radio.h`): the ISR calls `nl_radio_spi_isr()`, which only copies the
+request into a `NL_RADIO_SPI_SLOTS` ring, then loads `nl_radio_spi_arm()`.
+The main loop calls `nl_radio_poll()` until it returns 0 and, after each
+handled request, arms the reply with the SPI interrupt masked if the bus
+is idle; mid-transaction the next ISR arms it. The reply is then one main
+loop iteration late, and the host re-reads it (`read_retries` reads,
+`turnaround_us` apart, without re-sending the request). Size
+`turnaround_us * (1 + read_retries)` to cover the longest main-loop
+iteration; the simulator shows replies lost beyond that.
+
 Expectations the simulator showed to matter (see `simulation.adoc`):
 
 * *Finish a packet in progress.* If a listen slot ends while a packet is

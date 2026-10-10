@@ -148,7 +148,7 @@ int main(void)
     incoming.origin = host.origin;
     STATUS(nl_host_receive(&host, &incoming, 1), NL_ERR_CONFLICT);
     CHECK(writer.received == 1 && reader.received == 1);
-    CHECK(!host.streams.entries[host.origin][incoming.zone].seen);
+    CHECK((host.streams.seen[host.origin] & (1u << incoming.zone)) == 0u);
     incoming.origin = 7;
     STATUS(nl_host_receive(&host, &incoming, 1), NL_ERR_DUPLICATE);
     incoming.sequence = 0;

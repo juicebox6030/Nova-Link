@@ -7,9 +7,16 @@
  * request, a second one (after a turnaround delay) clocks out filler zeros
  * and reads the response frame the radio prepared.
  *
- * PULL is never retried: the radio dequeues the fragment when it answers,
+ * PULL is never re-sent: the radio dequeues the fragment when it answers,
  * so a retry after a corrupted response would skip a fragment rather than
- * repeat it. PING and STATUS are idempotent and are retried.
+ * repeat it. PING and STATUS are idempotent and are re-sent.
+ *
+ * An empty read (only filler: the radio has not processed the request
+ * yet, which is normal when it handles SPI in its main loop via
+ * nl_radio_poll()) or a reply to another command is read again, without
+ * re-sending, up to read_retries times one turnaround apart; this applies
+ * to PULL too. turnaround_us * (1 + read_retries) should cover the radio
+ * main loop's worst-case latency.
  */
 #ifndef NL_SPI_LINK_H
 #define NL_SPI_LINK_H
@@ -38,13 +45,15 @@ typedef struct {
     uint32_t crc_errors;   /**< Response frame failed its checksum. */
     uint32_t proto_errors; /**< No frame, or unexpected response code. */
     uint32_t io_errors;    /**< HAL transfer failures. */
-    uint32_t retries;
+    uint32_t retries;      /**< Requests re-sent (PING / STATUS). */
+    uint32_t read_retries; /**< Responses read again (empty or stale read). */
 } nl_spi_link_stats_t;
 
 typedef struct {
     nl_spi_hal_t hal;
     uint32_t turnaround_us; /**< Gap between request and response read. */
     uint8_t retries;        /**< Extra attempts for PING / STATUS. */
+    uint8_t read_retries;   /**< Extra response reads per request. */
     uint8_t tx[NL_LINK_FRAME_MAX];
     uint8_t rx[NL_LINK_FRAME_MAX];
     nl_spi_link_stats_t stats;
@@ -52,6 +61,8 @@ typedef struct {
 
 /** Default turnaround: generous for a CC1352R running its SPI ISR. */
 #define NL_SPI_DEFAULT_TURNAROUND_US 50u
+/** Default extra reads: 4 x 50 us more for a radio that defers to its loop. */
+#define NL_SPI_DEFAULT_READ_RETRIES 4u
 
 void nl_spi_link_init(nl_spi_link_t *l, const nl_spi_hal_t *hal);
 

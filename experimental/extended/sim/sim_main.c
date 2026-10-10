@@ -55,6 +55,10 @@ static void usage(void)
          "  --spi-fault P       probability a SPI response is corrupted\n"
          "  --no-wake-on-push   radio only re-plans at slot ends (pessimistic platform)\n"
          "  --no-finish-rx      slot changes abort a packet being received\n"
+        "  --spi-deferred      radio handles SPI via the ISR handoff + main-loop poll\n"
+        "  --radio-loop-us US  deferred: max radio main-loop iteration (default 200)\n"
+        "  --spi-hz HZ         deferred: SPI clock (default 8000000)\n"
+        "  --spi-read-retries N  host response re-reads, 50 us apart (default 4)\n"
          "  --tick US           simulation step (default 10)\n"
          "\n"
          "output:\n"
@@ -269,6 +273,14 @@ static int apply(nl_sim_scenario_t *sc, const char *k, const char *v)
         sc->wake_on_push = false;
     } else if (!strcmp(k, "no-finish-rx")) {
         sc->finish_rx = false;
+    } else if (!strcmp(k, "spi-deferred")) {
+        sc->spi_deferred = true;
+    } else if (!strcmp(k, "radio-loop-us")) {
+        sc->radio_loop_us = u32(k, v);
+    } else if (!strcmp(k, "spi-hz")) {
+        sc->spi_hz = u32(k, v);
+    } else if (!strcmp(k, "spi-read-retries")) {
+        sc->spi_read_retries = u8(k, v);
     } else if (!strcmp(k, "tick")) {
         sc->tick_us = u32(k, v);
     } else {
@@ -280,7 +292,8 @@ static int apply(nl_sim_scenario_t *sc, const char *k, const char *v)
 static bool is_flag(const char *k)
 {
     return !strcmp(k, "hidden") || !strcmp(k, "no-wake-on-push") ||
-           !strcmp(k, "no-finish-rx") || !strcmp(k, "csv") ||
+           !strcmp(k, "no-finish-rx") || !strcmp(k, "spi-deferred") ||
+           !strcmp(k, "csv") ||
            !strcmp(k, "help");
 }
 
@@ -344,6 +357,10 @@ static void pool(pooled_t *pl, const nl_sim_result_t *r)
     s->radio_tx_dropped += r->radio_tx_dropped;
     s->radio_rx_dropped += r->radio_rx_dropped;
     s->spi_errors += r->spi_errors;
+    s->spi_transactions += r->spi_transactions;
+    s->spi_read_retries += r->spi_read_retries;
+    s->spi_overruns += r->spi_overruns;
+    s->spi_reply_busy += r->spi_reply_busy;
     pl->p50 += r->lat_p50_us;
     pl->p90 += r->lat_p90_us;
     pl->p99 += r->lat_p99_us;
@@ -443,7 +460,8 @@ int main(int argc, char **argv)
     if (csv) {
         printf("%s%sruns,sent,expected,delivered,delivery,duplicates,reordered,"
                "p50_us,p90_us,p99_us,max_us,air_tx,collided,missed,lost,"
-               "busiest_util,txq_drops,rxq_drops,spi_errors,discovery_us,deferred\n",
+               "busiest_util,txq_drops,rxq_drops,spi_errors,discovery_us,deferred,"
+               "spi_transactions,spi_read_retries,spi_overruns,spi_reply_busy\n",
                sweep ? skey : "", sweep ? "," : "");
     } else {
         printf("%-12s %9s %8s %8s %8s %8s %8s %7s %7s %7s %6s %9s\n",
@@ -473,7 +491,7 @@ int main(int argc, char **argv)
         const char *label = svals[s] ? svals[s] : "-";
         if (csv) {
             printf("%s%s%d,%llu,%llu,%llu,%.6f,%llu,%llu,%.0f,%.0f,%.0f,%u,%llu,%llu,%llu,"
-                   "%llu,%.4f,%u,%u,%u,%lld,%llu\n",
+                   "%llu,%.4f,%u,%u,%u,%lld,%llu,%u,%u,%u,%u\n",
                    sweep ? label : "", sweep ? "," : "", pl.runs,
                    (unsigned long long)t->sent, (unsigned long long)t->expected,
                    (unsigned long long)t->delivered, delivery,
@@ -482,7 +500,8 @@ int main(int argc, char **argv)
                    (unsigned long long)t->air_tx, (unsigned long long)t->air_collided,
                    (unsigned long long)t->air_missed, (unsigned long long)t->air_lost,
                    pl.util, t->radio_tx_dropped, t->radio_rx_dropped, t->spi_errors, disc,
-                   (unsigned long long)t->air_deferred);
+                   (unsigned long long)t->air_deferred, t->spi_transactions,
+                   t->spi_read_retries, t->spi_overruns, t->spi_reply_busy);
         } else {
             char dbuf[16];
             if (disc < 0) {
@@ -496,6 +515,15 @@ int main(int argc, char **argv)
                    (unsigned long long)t->air_collided, (unsigned long long)t->air_missed,
                    (unsigned long long)t->air_deferred, 100.0 * pl.util,
                    t->radio_tx_dropped, dbuf);
+            if (t->spi_overruns != 0 || t->spi_read_retries != 0 ||
+                t->spi_reply_busy != 0) {
+                double tr = t->spi_transactions ? (double)t->spi_transactions : 1.0;
+                printf("%-12s spi: %u transactions, re-reads %u (%.2f%%), overruns %u "
+                       "(%.3f%%), reply busy %u, errors %u\n",
+                       "", t->spi_transactions, t->spi_read_retries,
+                       100.0 * t->spi_read_retries / tr, t->spi_overruns,
+                       100.0 * t->spi_overruns / tr, t->spi_reply_busy, t->spi_errors);
+            }
         }
         if (expect_delivery >= 0 && delivery < expect_delivery) {
             fprintf(stderr, "nl_sim: %s: delivery %.4f < %.4f\n", label, delivery,

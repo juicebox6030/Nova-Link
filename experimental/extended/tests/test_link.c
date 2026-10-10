@@ -110,6 +110,29 @@ static void test_decode_back_to_back(void)
     CHECK_EQ(f.len, 2);
 }
 
+static void test_find_view(void)
+{
+    /* nl_link_find points into the buffer and agrees with nl_link_decode. */
+    uint8_t buf[64] = {0};
+    const uint8_t data[] = {9, 8, 7};
+    int n = nl_link_encode(NL_RSP_FRAGMENT, data, sizeof(data), &buf[5], 40);
+    CHECK(n > 0);
+    nl_link_view_t v;
+    nl_link_frame_t f;
+    size_t used_v = 0, used_f = 0;
+    CHECK_EQ(nl_link_find(buf, sizeof(buf), &v, &used_v), NL_OK);
+    CHECK_EQ(nl_link_decode(buf, sizeof(buf), &f, &used_f), NL_OK);
+    CHECK_EQ(used_v, used_f);
+    CHECK_EQ(v.cmd, f.cmd);
+    CHECK_EQ(v.len, f.len);
+    CHECK(v.data == &buf[8]);
+    CHECK_MEM(v.data, data, sizeof(data));
+
+    buf[5 + n - 1] ^= 0x01;
+    CHECK_EQ(nl_link_find(buf, sizeof(buf), &v, NULL), NL_ERR_CRC);
+    CHECK_EQ(nl_link_decode(buf, sizeof(buf), NULL, NULL), NL_ERR_ARG);
+}
+
 static void test_stream_parser(void)
 {
     nl_link_parser_t p;
@@ -224,6 +247,7 @@ int main(void)
     RUN(test_decode_errors);
     RUN(test_no_phantom_frame_in_filler);
     RUN(test_decode_back_to_back);
+    RUN(test_find_view);
     RUN(test_stream_parser);
     RUN(test_params_roundtrip);
     RUN(test_plan_roundtrip);

@@ -13,7 +13,7 @@ def run(*args, data=None, success=True):
     return result
 
 
-golden = bytes.fromhex("aa0603affe00aaff")
+golden = bytes.fromhex("aa0603affe00aaff00c4")
 decoded = json.loads(run("frame", golden.hex()).stdout)
 assert decoded == {
     "command": 3,
@@ -22,13 +22,14 @@ assert decoded == {
                  "payload_hex": "00aaff"},
 }
 assert json.loads(run("fragment", "AF FE 00 AA FF").stdout) == decoded["fragment"]
-assert json.loads(run("frame", "aa0102").stdout) == {"command": 2}
-for invalid in ("", "a", "zz", "aa", "aa0002", "aa0202", "aa01ff", "00" * 106):
+assert json.loads(run("frame", "aa01020e7c").stdout) == {"command": 2}
+for invalid in ("", "a", "zz", "aa", "aa0002", "aa0202", "aa01ff", "aa01020e7d",
+                "aa0603affe00aaff01c4", "00" * 108):
     run("frame", invalid, success=False)
 run(success=False)
-run("frame", "aa0102", "extra", success=False)
+run("frame", "aa01020e7c", "extra", success=False)
 run("fragment", "00" * 103, success=False)
-stream = b"\x00\xff" + golden + bytes.fromhex("aa0102") + golden
+stream = b"\x00\xff" + golden + bytes.fromhex("aa01020e7c") + golden
 lines = run("stream", "-", data=stream).stdout.splitlines()
 assert [json.loads(line) for line in lines] == [decoded, {"command": 2}, decoded]
 run("stream", "-", data=b"", success=False)

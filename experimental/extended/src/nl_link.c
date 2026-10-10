@@ -8,13 +8,19 @@
 
 enum { P_SYNC = 0, P_CMD, P_LEN, P_DATA, P_CRC };
 
+/* CRC-8 of (i << 4) shifted four times through poly 0x07: lets nl_crc8 do a
+ * nibble per step instead of a bit, with a 16-byte table. */
+static const uint8_t crc8_nibble[16] = {
+    0x00, 0x07, 0x0E, 0x09, 0x1C, 0x1B, 0x12, 0x15,
+    0x38, 0x3F, 0x36, 0x31, 0x24, 0x23, 0x2A, 0x2D,
+};
+
 uint8_t nl_crc8(uint8_t crc, const uint8_t *data, size_t len)
 {
     for (size_t i = 0; i < len; i++) {
         crc ^= data[i];
-        for (int b = 0; b < 8; b++) {
-            crc = (uint8_t)((crc & 0x80u) ? ((unsigned)crc << 1) ^ 0x07u : ((unsigned)crc << 1));
-        }
+        crc = (uint8_t)((unsigned)crc << 4) ^ crc8_nibble[crc >> 4];
+        crc = (uint8_t)((unsigned)crc << 4) ^ crc8_nibble[crc >> 4];
     }
     return crc;
 }
@@ -38,8 +44,8 @@ int nl_link_encode(uint8_t cmd, const uint8_t *data, size_t len, uint8_t *out,
     return (int)(len + NL_LINK_OVERHEAD);
 }
 
-int nl_link_decode(const uint8_t *buf, size_t len, nl_link_frame_t *frame,
-                   size_t *consumed)
+int nl_link_find(const uint8_t *buf, size_t len, nl_link_view_t *frame,
+                 size_t *consumed)
 {
     if (buf == NULL || frame == NULL) {
         return NL_ERR_ARG;
@@ -59,7 +65,7 @@ int nl_link_decode(const uint8_t *buf, size_t len, nl_link_frame_t *frame,
         }
         frame->cmd = buf[i + 1];
         frame->len = (uint8_t)dlen;
-        memcpy(frame->data, &buf[i + 3], dlen);
+        frame->data = &buf[i + 3];
         if (consumed != NULL) {
             *consumed = i + dlen + NL_LINK_OVERHEAD;
         }
@@ -69,6 +75,22 @@ int nl_link_decode(const uint8_t *buf, size_t len, nl_link_frame_t *frame,
         *consumed = len;
     }
     return result;
+}
+
+int nl_link_decode(const uint8_t *buf, size_t len, nl_link_frame_t *frame,
+                   size_t *consumed)
+{
+    if (frame == NULL) {
+        return NL_ERR_ARG;
+    }
+    nl_link_view_t v;
+    int rc = nl_link_find(buf, len, &v, consumed);
+    if (rc == NL_OK) {
+        frame->cmd = v.cmd;
+        frame->len = v.len;
+        memcpy(frame->data, v.data, v.len);
+    }
+    return rc;
 }
 
 void nl_link_parser_init(nl_link_parser_t *p)

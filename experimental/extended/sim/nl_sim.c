@@ -51,6 +51,12 @@ typedef struct sim_node {
     uint32_t rx_freq;
     uint8_t last_pending;
 
+    /* Deferred SPI (spi_deferred) */
+    uint64_t spi_now;       /* SPI-side clock, at or ahead of the sim clock */
+    uint64_t radio_loop_at; /* next radio main-loop iteration */
+    const uint8_t *armed;   /* reply loaded into the SPI peripheral */
+    size_t armed_len;
+
     uint64_t next_poll;
     uint64_t next_send[2];
     uint32_t counter;
@@ -144,6 +150,8 @@ void nl_sim_scenario_default(nl_sim_scenario_t *sc, uint8_t nodes)
     nl_config_zone_plan_default(&sc->plan);
     sc->wake_on_push = true;
     sc->finish_rx = true;
+    sc->radio_loop_us = 200;
+    sc->spi_hz = 8000000;
     for (uint8_t i = 0; i < nodes; i++) {
         nl_sim_node_cfg_t *n = &sc->node[i];
         n->enabled = true;
@@ -164,18 +172,59 @@ size_t nl_sim_size(void)
 
 /* ---- SPI loopback ------------------------------------------------------- */
 
+/**
+ * Deferred mode: run the radio main loop's iterations due by SPI time
+ * @p until. Each drains the queued requests and, if @p bus_idle, loads
+ * the reply; during a transaction it is left for the ISR's
+ * nl_radio_spi_arm(). Radio time is the sim clock.
+ */
+static void radio_loop_until(struct nl_sim *sim, sim_node_t *n, uint64_t until,
+                             bool bus_idle)
+{
+    while (n->radio_loop_at <= until) {
+        while (nl_radio_poll(&n->radio, local_time(n, sim->now))) {
+            size_t len;
+            const uint8_t *p = bus_idle ? nl_radio_spi_arm(&n->radio, &len) : NULL;
+            if (p != NULL) {
+                n->armed = p;
+                n->armed_len = len;
+            }
+        }
+        n->radio_loop_at += 1u + nl_rand_upto(&sim->rng, sim->sc.radio_loop_us);
+    }
+}
+
 static int hal_transfer(void *ctx, const uint8_t *tx, uint8_t *rx, size_t len)
 {
     sim_node_t *n = ctx;
+    struct nl_sim *sim = n->sim;
     size_t olen;
-    const uint8_t *out = nl_radio_outbox(&n->radio, &olen);
-    memset(rx, 0, len);
-    memcpy(rx, out, olen < len ? olen : len);
-    if (n->sim->sc.spi_fault_rate > 0.0 && len > 0 &&
-        rand01(&n->sim->rng) < n->sim->sc.spi_fault_rate) {
-        rx[nl_rand_next(&n->sim->rng) % len] ^= 0x04;
+    const uint8_t *out;
+    if (sim->sc.spi_deferred) {
+        radio_loop_until(sim, n, n->spi_now, true);
+        out = n->armed;
+        olen = n->armed_len;
+    } else {
+        out = nl_radio_outbox(&n->radio, &olen);
     }
-    nl_radio_spi_complete(&n->radio, tx, len, local_time(n, n->sim->now));
+    memset(rx, 0, len);
+    if (out != NULL) {
+        memcpy(rx, out, olen < len ? olen : len);
+    }
+    if (sim->sc.spi_fault_rate > 0.0 && len > 0 &&
+        rand01(&sim->rng) < sim->sc.spi_fault_rate) {
+        rx[nl_rand_next(&sim->rng) % len] ^= 0x04;
+    }
+    if (!sim->sc.spi_deferred) {
+        nl_radio_spi_complete(&n->radio, tx, len, local_time(n, sim->now));
+        return 0;
+    }
+    /* The transaction ends (chip select high) len * 8 SPI clocks later. */
+    uint32_t hz = sim->sc.spi_hz ? sim->sc.spi_hz : 1u;
+    n->spi_now += ((uint64_t)len * 8000000u + hz - 1u) / hz;
+    radio_loop_until(sim, n, n->spi_now, false);
+    nl_radio_spi_isr(&n->radio, tx, len);
+    n->armed = nl_radio_spi_arm(&n->radio, &n->armed_len);
     return 0;
 }
 
@@ -186,8 +235,11 @@ static bool hal_int_ready(void *ctx)
 
 static void hal_delay(void *ctx, uint32_t us)
 {
-    (void)ctx;
-    (void)us; /* SPI timing is not modelled */
+    sim_node_t *n = ctx;
+    if (n->sim->sc.spi_deferred) {
+        n->spi_now += us;
+        radio_loop_until(n->sim, n, n->spi_now, true);
+    } /* direct mode: SPI timing is not modelled */
 }
 
 /* ---- Measurement plugin -------------------------------------------------- */
@@ -392,6 +444,9 @@ static void node_boot(struct nl_sim *sim, sim_node_t *n, uint64_t t)
     nl_radio_seed(&n->radio, nl_rand_next(&sim->rng));
     nl_spi_hal_t hal = {hal_transfer, hal_int_ready, hal_delay, n};
     nl_spi_link_init(&n->link, &hal);
+    if (sim->sc.spi_read_retries != 0) {
+        n->link.read_retries = sim->sc.spi_read_retries;
+    }
     nl_link_ops_t ops;
     nl_spi_link_ops(&n->link, &ops);
 
@@ -425,6 +480,10 @@ static void node_boot(struct nl_sim *sim, sim_node_t *n, uint64_t t)
 
     n->wake = t;
     n->busy_until = t;
+    n->spi_now = t;
+    n->radio_loop_at = t;
+    n->armed = NULL;
+    n->armed_len = 0;
     n->next_poll = t;
     for (int k = 0; k < 2; k++) {
         const nl_sim_traffic_t *tr = &c->traffic[k];
@@ -473,6 +532,12 @@ static void node_send(struct nl_sim *sim, sim_node_t *n, const nl_sim_traffic_t 
 static void node_host_step(struct nl_sim *sim, sim_node_t *n, uint64_t t)
 {
     const nl_sim_node_cfg_t *c = &sim->sc.node[n->idx];
+    if (sim->sc.spi_deferred) {
+        if (n->spi_now < t) {
+            n->spi_now = t;
+        }
+        radio_loop_until(sim, n, n->spi_now, true);
+    }
     for (int k = 0; k < 2; k++) {
         const nl_sim_traffic_t *tr = &c->traffic[k];
         if (tr->zone == 0 || tr->period_us == 0) {
@@ -701,6 +766,10 @@ void nl_sim_result(const nl_sim_t *sim, nl_sim_result_t *res)
         res->spi_errors += n->link.stats.crc_errors + n->link.stats.proto_errors +
                            n->link.stats.io_errors;
         res->radio_resets += n->host.stats.radio_resets;
+        res->spi_transactions += n->link.stats.transactions;
+        res->spi_read_retries += n->link.stats.read_retries;
+        res->spi_overruns += n->radio.spi_overruns;
+        res->spi_reply_busy += n->radio.spi_reply_busy;
     }
 }
 

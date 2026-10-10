@@ -5,7 +5,8 @@
 #include "nova_link/transport.h"
 #include "nova_link/zones.h"
 
-/** @file host.h Static plugin lifecycle, access-controlled send, and per-stream deduplicated dispatch. */
+/** @file host.h Static plugin lifecycle, access-controlled send, and per-stream deduplicated dispatch.
+ * Like the radio, the host takes no locks: call it from one task, never from an ISR. */
 typedef struct nl_host nl_host;
 /** Opaque slot + generation handle. Valid only for one host initialization lifetime. */
 typedef uint32_t nl_plugin_id;
@@ -23,6 +24,20 @@ typedef struct {
 } nl_plugin;
 typedef enum { NL_PLUGIN_FREE, NL_PLUGIN_STARTING, NL_PLUGIN_ACTIVE, NL_PLUGIN_STOPPING } nl_plugin_state;
 typedef struct { nl_plugin callbacks; nl_plugin_state state; uint32_t generation; } nl_plugin_slot;
+
+/** Sandbox hooks run around every plugin callback (start, receive, tick, stop)
+ * with the host and slot index (0..NL_PLUGIN_MAX-1). Define both before
+ * including this header (or with -D) to, for example, switch MPU regions to
+ * the plugin's own RAM and drop privilege; EXIT must restore the host's view.
+ * Callbacks may re-enter host APIs, so the hooks must leave nl_host and the
+ * plugin's context reachable. Both default to nothing.
+ */
+#ifndef NL_PLUGIN_ENTER
+#define NL_PLUGIN_ENTER(host, index) ((void)0)
+#endif
+#ifndef NL_PLUGIN_EXIT
+#define NL_PLUGIN_EXIT(host, index) ((void)0)
+#endif
 
 struct nl_host {
     uint8_t origin;

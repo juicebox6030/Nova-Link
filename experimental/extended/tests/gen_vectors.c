@@ -451,9 +451,15 @@ static void fuzz_stream(stream_t *s)
                 s_byte(s, (uint8_t)nl_rand_next(&g_rng));
             }
             break;
-        case 3:
-            s_fill(s, rng_upto(1) ? 0xFF : 0x00, 1 + rng_upto(7));
+        case 3: {
+            /* Two draws: sequence them (argument order is unspecified and
+             * differs between gcc and clang). Count first, as gcc did when
+             * the vectors were generated. */
+            size_t count = 1 + rng_upto(7);
+            uint8_t fill = rng_upto(1) ? 0xFF : 0x00;
+            s_fill(s, fill, count);
             break;
+        }
         case 4:
             s_byte(s, NL_LINK_SYNC);
             if (rng_upto(1)) {

@@ -40,7 +40,13 @@ void nl_log_set_sink(nl_log_sink_t sink, void *user);
 /** Set the runtime minimum level (default NL_LOG_INFO). */
 void nl_log_set_level(nl_log_level_t level);
 
-/** printf-style logging entry point; prefer the NL_LOG* macros. */
+/**
+ * printf-style logging entry point; prefer the NL_LOG* macros.
+ * The sink and level are process-wide globals shared by every host/radio
+ * instance. Formats into a 160-byte buffer on the caller's stack and calls
+ * the sink synchronously, so from an ISR the cost is that buffer plus
+ * vsnprintf plus the sink.
+ */
 void nl_log(nl_log_level_t level, const char *module, const char *fmt, ...)
 #if defined(__GNUC__)
     __attribute__((format(printf, 3, 4)))
@@ -67,7 +73,11 @@ const char *nl_log_level_str(nl_log_level_t level);
 #else
 #define NL_LOGW(mod, ...) ((void)0)
 #endif
+#if NL_LOG_MIN_LEVEL <= 3
 #define NL_LOGE(mod, ...) nl_log(NL_LOG_ERROR, mod, __VA_ARGS__)
+#else
+#define NL_LOGE(mod, ...) ((void)0)
+#endif
 
 #ifdef __cplusplus
 }

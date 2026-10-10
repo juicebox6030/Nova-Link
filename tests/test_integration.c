@@ -29,7 +29,7 @@ static void delivered(nl_host *host, nl_plugin_id id, const nl_fragment *value, 
 
 static void serial_pull(nl_radio *radio, nl_host *host, uint64_t now_us)
 {
-    const uint8_t pull[] = {0xAA, 0x01, 0x02};
+    const uint8_t pull[] = {0xAA, 0x01, 0x02, 0x0E, 0x7C};
     uint8_t bytes[NL_FRAME_MAX];
     nl_frame request, response, decoded;
     nl_pull_token token;

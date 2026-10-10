@@ -171,6 +171,40 @@ The CC1352R firmware must keep receiving a packet that started before the
 slot ended, and must re-plan as soon as the host pushes a fragment. Both
 are part of the platform contract in `wire_format.adoc`.
 
+=== Deferred SPI handling
+
+`--spi-deferred` runs the radio's SPI path as an ISR handoff
+(`nl_radio_spi_isr()` / `nl_radio_spi_arm()`) plus a main loop that calls
+`nl_radio_poll()` once per iteration, each iteration lasting a random
+1..`--radio-loop-us` (default 200). Transactions take `len * 8 / --spi-hz`
+(default 8 MHz). The main loop arms a reply only while the bus is idle.
+The host's response reads are `turnaround_us` (50 µs) apart, up to
+1 + `read_retries` (5) reads: a 250 µs read window.
+
+4-node default, 4 s, 8 seeds; direct handling gives 95.7% on the same
+seeds:
+
+[cols="1,1,1,1,1,1"]
+|===
+|Main loop |Delivery |Re-reads |Overruns |Reply busy |SPI errors
+
+|1..50 µs |95.1% |0.04% |0 |0 |0
+|1..200 µs |95.2% |19.5% |0 |0 |0
+|1..500 µs |97.6% |34.4% |0 |4 |5
+|1..1000 µs |85.8% |48.4% |2 (0.006%) |18 |899
+|1..2000 µs |63.5% |55.2% |79 (0.16%) |698 |3576
+|1..2000 µs, `--spi-read-retries 40` |97.6% |65.6% |1 (0.002%) |0 |1
+|===
+
+Re-reads are percent of transactions; overruns (a request arriving with
+the ring full, here 2 slots) are percent of transactions too. Delivery
+differences up to 500 µs are seed noise (collisions), not SPI losses. Once
+an iteration can outlast the read window, PULL replies are lost (the
+fragment with them) and requests pile up behind armed replies. Size
+`turnaround_us * (1 + read_retries)` to the longest main-loop iteration;
+re-reads cost SPI bus time but nothing else. `extended_sim_broadcast_4_deferred`
+gates the default 200 µs case.
+
 === Known weak spots
 
 * *Zones preset (68% delivery).* One radio can listen on one frequency at
@@ -199,8 +233,11 @@ are part of the platform contract in `wire_format.adoc`.
   `CMD_PROP_CS` has an RSSI threshold and a measurement time, so real
   deferrals will differ.
 * RX->TX turnaround is a fixed 150 µs (sub-GHz) or 200 µs (2.4 GHz)
-  unless `--turnaround` is given, and SPI transactions complete instantly.
-  Neither has been measured.
+  unless `--turnaround` is given, and SPI transactions complete instantly
+  unless `--spi-deferred` is given. Neither has been measured. In deferred
+  mode the host's SPI time (transfers, read delays) advances a per-device
+  clock that may run ahead of the RF clock; host blocking does not delay
+  the radio scheduler.
 * Devices get random clock offsets (so wraparound is exercised), but
   clocks do not drift and there is no CPU load.
 

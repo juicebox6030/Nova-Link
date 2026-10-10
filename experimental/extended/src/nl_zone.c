@@ -41,7 +41,7 @@ int nl_claims_acquire(nl_claim_table_t *t, uint8_t plugin, uint8_t zone,
         }
         if (other == NL_CLAIM_EXCLUSIVE || mode == NL_CLAIM_EXCLUSIVE) {
             NL_LOGW("zone", "plugin %u: %s claim on zone %u conflicts with plugin %u (%s)",
-                    plugin, nl_claim_mode_str(mode), zone, p, nl_claim_mode_str(other));
+                    plugin, nl_claim_mode_str((uint8_t)mode), zone, p, nl_claim_mode_str(other));
             return NL_ERR_CONFLICT;
         }
     }

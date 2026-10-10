@@ -19,7 +19,7 @@ cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
 cmake --build build --parallel
 ctest --test-dir build --output-on-failure
 ./build/nova-sim
-./build/nova-inspect frame 'AA 06 03 AF FE 00 AA FF'
+./build/nova-inspect frame 'AA 06 03 AF FE 00 AA FF 00 C4'
 ./build/dmx_loopback
 ```
 
@@ -36,6 +36,10 @@ cmake -S . -B build/sanitized -DCMAKE_BUILD_TYPE=Debug -DNOVA_ENABLE_SANITIZERS=
 cmake --build build/sanitized --parallel
 ctest --test-dir build/sanitized --output-on-failure
 ```
+
+`nova-field-sim [seed] [ticks]` runs a harsher model: two bands with loss,
+reordering, duplication, bit errors and SPI line noise, plus a fuzz phase.
+Build with `-DNOVA_SECURITY=ON` to run it over sealed air frames.
 
 Build just the library for integration:
 
@@ -63,13 +67,34 @@ The independent DMX library is installed as `NovaLink::nova_dmx`.
 - Clock-driven zone rounds, optional metadata slots, and bounded burst extensions.
 - PUSH/PULL command handling with transactional PULL receipts, offline JSON
   inspection, an RF airtime calculator, and a counter plugin.
+- CRC-16/CCITT-FALSE on every transport frame; corrupt frames are dropped.
+- Optional AES-128-CCM air security with per-origin replay windows (see below).
+- MPU sandbox hooks around every plugin callback (`NL_PLUGIN_ENTER/EXIT`).
 - CMake installation, an ESP-IDF component definition, and Doxygen documentation.
 
 All core storage is fixed or caller-owned. The library does not allocate memory,
-create threads, read configuration files, or access a network or device. Its APIs
-require serialized calls from the application's event loop. Zone checks provide
-cooperative access control for trusted compiled plugins; they are not a memory
-sandbox.
+create threads, read configuration files, or access a network or device. It
+takes no locks: each `nl_host`/`nl_radio` is owned by one task, and interrupt
+handlers only fill an adapter ring that the task drains. Zone checks provide
+cooperative access control for trusted compiled plugins; for memory isolation,
+define the plugin hooks to switch MPU regions (see the
+[protocol decisions](docs/Protocol_Decisions.md#concurrency-and-plugin-isolation)).
+
+## Optional air security
+
+Security is off by default. Turn it on with `-DNOVA_SECURITY=ON`:
+
+```sh
+cmake -S . -B build/secure -DNOVA_SECURITY=ON
+```
+
+Each fragment then carries a 4-byte counter and an 8-byte MIC. `NL_SECURE_AUTH`
+authenticates every byte. `NL_SECURE_ENCRYPT` also hides the payload. The cost
+is latency: about 0.26–0.88 ms per 16–100 byte fragment on a 64 MHz Cortex-M4
+in software, plus 12 air bytes. A hardware AES engine reduces it (see
+`NL_SECURE_EXTERNAL_AES`). With the option off, no security code is compiled.
+The [protocol decisions](docs/Protocol_Decisions.md#optional-air-security-nova_security)
+give the wire format, nonce and counter persistence rules, and measurements.
 
 ## Protocol
 
@@ -84,8 +109,8 @@ The maximum serialized fragment is 102 bytes. Larger messages require an
 application-defined fragmentation/reassembly format; the core returns an error
 instead of truncating or inventing such a format.
 
-The software transport envelope is `[0xAA][LEN][COMMAND][DATA]`, where `LEN`
-includes the command. This makes the existing command list and variable payloads
+The software transport envelope is `[0xAA][LEN][COMMAND][DATA][CRC16]`, where
+`LEN` includes the command, and the CRC-16/CCITT-FALSE covers LEN through DATA. This makes the existing command list and variable payloads
 unambiguous in software. Its compatibility with a future board adapter still
 needs validation. The [protocol decisions](docs/Protocol_Decisions.md) explain
 conflicting earlier notes, sequence limits, and unspecified commands.
@@ -112,7 +137,7 @@ configuration, Python codecs, and a multi-node RF simulator. The default build
 tests it alongside the SDK; use `-DNOVA_BUILD_EXTENDED=OFF` to omit it.
 
 Its `[AA][CMD][LEN][DATA][CRC8]` transport differs from the SDK's
-`[AA][LEN][CMD][DATA]`. Both libraries export overlapping `nl_*` symbols and
+`[AA][LEN][CMD][DATA][CRC16]`. Both libraries export overlapping `nl_*` symbols and
 must be used in separate programs. The extended API is not part of the installed
 SDK. Neither transport is an established physical-radio interoperability format.
 
@@ -124,7 +149,7 @@ SDK. Neither transport is an established physical-radio interoperability format.
 | `src/` | Portable protocol, host, and radio core |
 | `plugins/` | Example compiled counter plugin |
 | `examples/` | Complete in-memory simulation |
-| `tools/` | Offline fragment/frame/stream inspection and RF feasibility calculator |
+| `tools/` | Offline inspection, RF feasibility, local checks, embedded footprint and bench |
 | `tests/` | Unit, integration, CLI, and installed-SDK checks |
 | `platform/` | Board integration contracts and ESP-IDF component |
 | `config/` | CMake package configuration |
@@ -136,10 +161,16 @@ Doxygen is installed. Output is `build/api-docs/html/index.html`.
 The `docs-extended` target generates the prototype reference in
 `experimental/extended/build/doxygen/html/index.html`.
 
-The CI workflow template is [config/ci.github-actions.yml](config/ci.github-actions.yml).
-Copy it to `.github/workflows/ci.yml` to enable GitHub Actions; publishing that
-path requires GitHub authentication with the `workflow` scope. Local build and
-CTest checks do not require it.
+The project uses no hosted CI. Before pushing, run `tools/check.sh`. Push only
+when it prints `ALL CHECKS PASSED`. It runs:
+
+- GCC and Clang builds, with and without sanitizers and security;
+- the installed consumer, the extended prototype, and its Python tests;
+- field-simulation seeds, valgrind, cppcheck, `-fanalyzer`, and Doxygen;
+- Cortex-M0+/M4 code-size and stack budgets (`tools/embedded_footprint.sh`).
+
+`tools/check.sh --quick` runs one sanitized build for fast iteration. `BENCH=1`
+adds QEMU instruction counts for security (`tools/embedded_bench.sh`).
 
 The [development roadmap](docs/Development_Roadmap.md) separates completed software
 from remaining protocol decisions and board work. The [validation record](docs/Validation.md)

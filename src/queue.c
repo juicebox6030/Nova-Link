@@ -1,8 +1,10 @@
-#include "nova_link/queue.h"
+#include "internal.h"
 
 nl_status nl_queue_init(nl_queue *queue, nl_fragment *storage, size_t capacity)
 {
-    if (queue == NULL || storage == NULL || capacity == 0u) return NL_ERR_ARGUMENT;
+    /* The ring index sums two values below capacity; keep that sum in range. */
+    if (queue == NULL || storage == NULL || capacity == 0u || capacity > SIZE_MAX / 2u)
+        return NL_ERR_ARGUMENT;
     queue->storage = storage;
     queue->capacity = capacity;
     queue->head = 0;
@@ -12,14 +14,11 @@ nl_status nl_queue_init(nl_queue *queue, nl_fragment *storage, size_t capacity)
 
 nl_status nl_queue_push(nl_queue *queue, const nl_fragment *fragment)
 {
-    size_t tail;
     nl_status status = nl_fragment_validate(fragment);
     if (queue == NULL) return NL_ERR_ARGUMENT;
     if (status != NL_OK) return status;
     if (queue->count == queue->capacity) return NL_ERR_FULL;
-    tail = (queue->head + queue->count) % queue->capacity;
-    queue->storage[tail] = *fragment;
-    ++queue->count;
+    (void)nl_queue_append(queue, fragment);
     return NL_OK;
 }
 
@@ -35,7 +34,6 @@ nl_status nl_queue_pop(nl_queue *queue, nl_fragment *fragment)
 {
     nl_status status = nl_queue_peek(queue, fragment);
     if (status != NL_OK) return status;
-    queue->head = (queue->head + 1u) % queue->capacity;
-    --queue->count;
+    nl_queue_drop(queue);
     return NL_OK;
 }

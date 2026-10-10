@@ -13,6 +13,7 @@ void nl_spi_link_init(nl_spi_link_t *l, const nl_spi_hal_t *hal)
     l->hal = *hal;
     l->turnaround_us = NL_SPI_DEFAULT_TURNAROUND_US;
     l->retries = 2;
+    l->read_retries = NL_SPI_DEFAULT_READ_RETRIES;
 }
 
 static int xfer(nl_spi_link_t *l, size_t len)
@@ -34,36 +35,52 @@ static int send_request(nl_spi_link_t *l, uint8_t cmd, const uint8_t *data, size
     return xfer(l, (size_t)n);
 }
 
-/** Clock out @p data_cap + overhead filler bytes and decode the response. */
+/**
+ * Clock out @p data_cap + overhead filler bytes and decode the response.
+ * @p frame points into l->rx, valid until the next transfer.
+ *
+ * A read that returns only filler (the radio has not answered yet: it
+ * defers request handling to its main loop, see nl_radio_poll()) or a
+ * response to some other command (a stale reply to an abandoned request,
+ * which this read has now drained) is read again, without re-sending the
+ * request, up to read_retries times one turnaround apart. Re-sending would
+ * be wrong for PULL: the radio dequeues when it answers. A checksum
+ * failure is not re-read: the response was clocked out and is gone.
+ */
 static int read_response(nl_spi_link_t *l, uint8_t expect, size_t data_cap,
-                         nl_link_frame_t *frame)
+                         nl_link_view_t *frame)
 {
-    if (l->hal.delay_us != NULL && l->turnaround_us != 0) {
-        l->hal.delay_us(l->hal.ctx, l->turnaround_us);
-    }
     size_t len = data_cap + NL_LINK_OVERHEAD;
-    memset(l->tx, 0, len);
-    int rc = xfer(l, len);
-    if (rc < 0) {
-        return rc;
+    for (unsigned i = 0;; i++) {
+        if (l->hal.delay_us != NULL && l->turnaround_us != 0) {
+            l->hal.delay_us(l->hal.ctx, l->turnaround_us);
+        }
+        memset(l->tx, 0, len);
+        int rc = xfer(l, len);
+        if (rc < 0) {
+            return rc;
+        }
+        rc = nl_link_find(l->rx, len, frame, NULL);
+        if (rc == NL_ERR_CRC) {
+            l->stats.crc_errors++;
+            return rc;
+        }
+        if (rc == NL_OK && frame->cmd == expect) {
+            return NL_OK;
+        }
+        if (i >= l->read_retries) {
+            l->stats.proto_errors++;
+            return NL_ERR_PROTO;
+        }
+        l->stats.read_retries++;
     }
-    rc = nl_link_decode(l->rx, len, frame, NULL);
-    if (rc == NL_ERR_CRC) {
-        l->stats.crc_errors++;
-        return rc;
-    }
-    if (rc < 0 || frame->cmd != expect) {
-        l->stats.proto_errors++;
-        return NL_ERR_PROTO;
-    }
-    return NL_OK;
 }
 
 static int request(nl_spi_link_t *l, uint8_t cmd, uint8_t expect, size_t data_cap,
-                   nl_link_frame_t *frame, uint8_t attempts)
+                   nl_link_view_t *frame, unsigned attempts)
 {
     int rc = NL_ERR_PROTO;
-    for (uint8_t i = 0; i < attempts; i++) {
+    for (unsigned i = 0; i < attempts; i++) {
         if (i > 0) {
             l->stats.retries++;
         }
@@ -80,9 +97,9 @@ static int request(nl_spi_link_t *l, uint8_t cmd, uint8_t expect, size_t data_ca
 
 int nl_spi_link_ping(nl_spi_link_t *l, nl_link_pong_t *out)
 {
-    nl_link_frame_t f;
+    nl_link_view_t f;
     int rc = request(l, NL_CMD_PING, NL_RSP_PONG, NL_PONG_WIRE_SIZE, &f,
-                     (uint8_t)(l->retries + 1u));
+                     l->retries + 1u);
     if (rc < 0) {
         return rc;
     }
@@ -99,7 +116,7 @@ int nl_spi_link_push(nl_spi_link_t *l, const uint8_t *frag, size_t len)
 
 int nl_spi_link_pull(nl_spi_link_t *l, uint8_t *buf, size_t cap)
 {
-    nl_link_frame_t f;
+    nl_link_view_t f;
     int rc = request(l, NL_CMD_PULL, NL_RSP_FRAGMENT, NL_MAX_FRAGMENT, &f, 1);
     if (rc < 0) {
         return rc;
@@ -117,9 +134,9 @@ int nl_spi_link_pull(nl_spi_link_t *l, uint8_t *buf, size_t cap)
 
 int nl_spi_link_status(nl_spi_link_t *l, nl_radio_status_t *out)
 {
-    nl_link_frame_t f;
+    nl_link_view_t f;
     int rc = request(l, NL_CMD_STATUS, NL_RSP_STATUS, NL_RADIO_STATUS_WIRE_SIZE, &f,
-                     (uint8_t)(l->retries + 1u));
+                     l->retries + 1u);
     if (rc < 0) {
         return rc;
     }
@@ -129,10 +146,13 @@ int nl_spi_link_status(nl_spi_link_t *l, nl_radio_status_t *out)
 int nl_spi_link_configure(nl_spi_link_t *l, const nl_radio_params_t *params,
                           const nl_zone_plan_t *plan)
 {
-    uint8_t buf[NL_LINK_MAX_DATA];
+    /* Encode the payload where nl_link_encode puts DATA (it uses memmove,
+     * so in place is fine) rather than in a NL_LINK_MAX_DATA stack buffer. */
+    uint8_t *buf = &l->tx[3];
+    const size_t cap = sizeof(l->tx) - NL_LINK_OVERHEAD;
     int n, rc;
     if (params != NULL) {
-        n = nl_radio_params_encode(params, buf, sizeof(buf));
+        n = nl_radio_params_encode(params, buf, cap);
         if (n < 0) {
             return n;
         }
@@ -145,7 +165,7 @@ int nl_spi_link_configure(nl_spi_link_t *l, const nl_radio_params_t *params,
         if (params != NULL && l->hal.delay_us != NULL && l->turnaround_us != 0) {
             l->hal.delay_us(l->hal.ctx, l->turnaround_us);
         }
-        n = nl_zone_plan_encode(plan, buf, sizeof(buf));
+        n = nl_zone_plan_encode(plan, buf, cap);
         if (n < 0) {
             return n;
         }

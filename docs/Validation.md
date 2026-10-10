@@ -1,5 +1,42 @@
 # Offline validation record
 
+## Local checks (2026-10-10)
+
+`BENCH=1 tools/check.sh` passed. GCC 16 and Clang ran on Fedora 44. CTest results:
+
+| Configuration | CTest |
+|---|---|
+| GCC Debug, ASan/UBSan, security | 32/32 |
+| GCC Release | 31/31 |
+| GCC Release, security | 32/32 |
+| Clang Release, security | 32/32 |
+| Clang Debug, ASan/UBSan | 31/31 |
+| Extended prototype, UBSan traps | 18/18, plus 88 Python tests |
+
+Other results:
+
+- The installed consumer passed.
+- `nova-field-sim` passed seeds 1–8, with and without security.
+- Valgrind memcheck was clean on every Release+security test binary and the field sim.
+- cppcheck, GCC `-fanalyzer` and Doxygen (warnings as errors) were clean.
+
+Valgrind found an uninitialised read in `test_radio`. A `memcmp` compared a
+struct that has padding. The test now compares fields one by one; library code
+was unaffected.
+
+Cortex-M footprint with `arm-none-eabi-gcc -Os`:
+
+| Core | Code (security off) | Code (security on) |
+|---|---|---|
+| M0+ | 5,743 B | 8,091 B |
+| M4 | 5,357 B | 7,625 B |
+
+Static data and BSS are zero. The largest stack frame is 152 B, and the budget
+is 256 B. Measured under QEMU, AES-CCM ENCRYPT on a 100 B fragment takes 43,502
+instructions, about 0.88 ms at 64 MHz. Latency figures are in
+[Protocol decisions](Protocol_Decisions.md#optional-air-security-nova_security).
+No hardware or RF was involved.
+
 ## Consolidation checks (2026-10-09)
 
 The root build now includes the installed SDK, the independent DMX library and
@@ -40,11 +77,8 @@ cmake --build build --target docs docs-extended
 
 Local sanitized builds used the compatible runtimes described below, copied
 into ignored `build/sanitizer-runtime`, with local linker search path/RPATH.
-The versioned GitHub workflow template (`config/ci.github-actions.yml`) covers
-GCC, Clang, ASan/UBSan, installed consumers, the standalone prototype, Python
-3.11/3.14, and both API references. It is inactive: the saved GitHub token lacks
-the `workflow` scope needed to publish `.github/workflows/ci.yml`. Hosted CI and
-Clang checks have not run for this consolidation. Hardware,
+Hosted CI is not used; `tools/check.sh` is the local pre-push gate (see the
+2026-10-10 record above). Hardware,
 vendor SDKs, and actual RF/Multiverse interoperability remain unvalidated.
 No UniFi or gateway settings were changed.
 

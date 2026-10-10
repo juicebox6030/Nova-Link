@@ -149,7 +149,7 @@ See [platform integration](../platform/README.md) for the vendor SDK boundary.
 
 ```sh
 ./build/nova-inspect fragment 'AF FE 00 AA FF'
-./build/nova-inspect frame 'AA 01 02'
+./build/nova-inspect frame 'AA 01 02 0E 7C'
 ./build/nova-inspect stream fixture.bin
 ```
 

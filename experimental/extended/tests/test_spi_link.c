@@ -185,6 +185,13 @@ static void test_retries(void)
         CHECK_EQ(nl_spi_link_ping(&link, &pong), i == 0 ? NL_OK : NL_OK);
     }
     (void)before;
+
+    /* retries = 255 means 256 attempts; it used to wrap to 0 and fail
+     * without touching the bus. */
+    link.retries = 255;
+    int t = l.transfers;
+    CHECK_EQ(nl_spi_link_ping(&link, &pong), NL_OK);
+    CHECK(l.transfers > t);
 }
 
 static void test_pull_not_retried(void)

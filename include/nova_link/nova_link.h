@@ -9,4 +9,7 @@
 #include "nova_link/host.h"
 #include "nova_link/scheduler.h"
 #include "nova_link/radio.h"
+#if defined(NOVA_SECURITY) && NOVA_SECURITY
+#include "nova_link/secure.h"
+#endif
 #endif

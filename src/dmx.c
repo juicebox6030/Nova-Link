@@ -50,7 +50,9 @@ nova_dmx_result_t nova_dmx_rx_break(nova_dmx_rx_t *rx, uint32_t duration_us,
         *completed = rx->pending;
         result = NOVA_DMX_FRAME_READY;
     }
-    memset(&rx->pending, 0, sizeof(rx->pending));
+    /* Only the written prefix can be non-zero; keep the zero-tail invariant cheaply. */
+    memset(rx->pending.slots, 0, rx->pending.slot_count);
+    rx->pending.slot_count = 0;
     rx->state = NOVA_DMX_WAIT_MARK;
     return result;
 }

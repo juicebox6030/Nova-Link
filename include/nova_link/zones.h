@@ -6,7 +6,10 @@
 #include "nova_link/status.h"
 
 /** @file zones.h Cooperative plugin ownership; zone 0 is shared and cannot be claimed. */
+/* Build-time tunable, 1..16: reader sets are uint16_t bitmasks. */
+#ifndef NL_PLUGIN_MAX
 #define NL_PLUGIN_MAX 16u
+#endif
 #define NL_PLUGIN_NONE 255u
 typedef enum { NL_ZONE_READ_ONLY, NL_ZONE_EXCLUSIVE } nl_zone_mode;
 typedef struct {

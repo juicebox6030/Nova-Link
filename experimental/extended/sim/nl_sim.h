@@ -22,9 +22,19 @@
  * - Clocks: every device gets a random 32-bit clock offset so wrap handling
  *   is exercised, and devices boot at configurable times.
  *
+ * - SPI handling (spi_deferred): by default the radio answers inside the
+ *   SPI transaction (nl_radio_spi_complete()). In deferred mode it runs
+ *   the ISR handoff instead (nl_radio_spi_isr() / nl_radio_spi_arm() per
+ *   transaction, nl_radio_poll() from a main loop whose iterations take a
+ *   random 1..radio_loop_us), with transactions taking len * 8 / spi_hz
+ *   and the host driver's turnaround delays advancing a per-device SPI
+ *   clock. That exercises re-reads, handoff overruns and busy replies.
+ *   The SPI clock runs ahead of the RF clock within one host step: SPI
+ *   work does not delay radio actions.
+ *
  * Not modelled: adjacent-channel interference, frequency offset, RSSI,
- * capture, SPI bus timing (SPI transactions complete instantly) and CPU
- * load. Results are therefore an upper bound for scheduling behaviour, not
+ * capture, SPI bus timing in direct mode (transactions complete
+ * instantly) and CPU load. Results are therefore an upper bound for scheduling behaviour, not
  * a link budget.
  */
 #ifndef NL_SIM_H
@@ -106,6 +116,10 @@ typedef struct {
     bool finish_rx;           /**< Platform finishes a packet whose sync word it
                                    detected before starting the next action
                                    (otherwise a slot change aborts it). */
+    bool spi_deferred;        /**< Radio uses the deferred ISR handoff. */
+    uint32_t radio_loop_us;   /**< Deferred: max radio main-loop iteration. */
+    uint32_t spi_hz;          /**< Deferred: SPI clock (transaction time). */
+    uint8_t spi_read_retries; /**< Host link read_retries; 0 = library default. */
     nl_sim_node_cfg_t node[NL_SIM_MAX_NODES];
 } nl_sim_scenario_t;
 
@@ -142,6 +156,10 @@ typedef struct {
     uint32_t radio_rx_dropped;  /**< Sum of radio RX queue overflows. */
     uint32_t spi_errors;        /**< CRC + protocol + I/O errors on all links. */
     uint32_t radio_resets;
+    uint32_t spi_transactions;  /**< SPI transfers made by all hosts. */
+    uint32_t spi_read_retries;  /**< Responses read again (not yet ready). */
+    uint32_t spi_overruns;      /**< Requests dropped: radio handoff full. */
+    uint32_t spi_reply_busy;    /**< Replies skipped: previous one armed. */
     int64_t discovery_us;       /**< When every device first knew every other
                                      (from the last boot), or -1 if never. */
 } nl_sim_result_t;

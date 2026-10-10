@@ -16,7 +16,9 @@ static void scheduling(void)
         CHECK(window.zone == expected[i] && window.duration_us == 100);
         before = window;
         STATUS(nl_scheduler_next(&scheduler, (uint64_t)i * 100u + 99u, true, 0, &window), NL_ERR_BUSY);
-        CHECK(memcmp(&window, &before, sizeof(window)) == 0);
+        /* Field-wise: struct copies leave padding bytes unspecified. */
+        CHECK(window.zone == before.zone && window.start_us == before.start_us &&
+              window.duration_us == before.duration_us);
     }
     STATUS(nl_scheduler_next(&scheduler, 898, false, 0, &window), NL_OK);
     CHECK(window.zone == 1 && window.start_us == 898);
@@ -301,7 +303,7 @@ static void token_exhaustion(void)
     ++value.sequence;
     STATUS(nl_radio_receive(&radio, &value, 1), NL_ERR_SIZE);
     CHECK(radio.rx.count == 1 && radio.stats.received == 1 && radio.stats.coalesced == 0);
-    CHECK(radio.streams.entries[1][1].sequence == 0);
+    CHECK(radio.streams.sequence[1][1] == 0);
     STATUS(nl_radio_commit_pull(&radio, &response, token), NL_OK);
     STATUS(nl_radio_receive(&radio, &value, 2), NL_ERR_SIZE);
     CHECK(!nl_radio_ready(&radio) && radio.next_rx_token == UINT64_MAX);

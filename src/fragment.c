@@ -28,15 +28,14 @@ nl_status nl_fragment_encode(const nl_fragment *fragment, uint8_t *bytes,
 
 nl_status nl_fragment_decode(const uint8_t *bytes, size_t size, nl_fragment *fragment)
 {
-    nl_fragment decoded = {0};
     if (bytes == NULL || fragment == NULL) return NL_ERR_ARGUMENT;
     if (size < NL_FRAGMENT_MIN || size > NL_FRAGMENT_MAX) return NL_ERR_SIZE;
-    decoded.origin = (uint8_t)(bytes[0] >> 5);
-    decoded.zone = (uint8_t)((bytes[0] >> 2) & 0x07u);
-    decoded.flags = (uint8_t)(bytes[0] & NL_FLAGS_MASK);
-    decoded.sequence = bytes[1];
-    decoded.payload_size = (uint8_t)(size - NL_FRAGMENT_MIN);
-    memcpy(decoded.payload, bytes + NL_FRAGMENT_MIN, decoded.payload_size);
-    *fragment = decoded;
+    /* All checks precede the first write; decode in place without a staging copy. */
+    fragment->origin = (uint8_t)(bytes[0] >> 5);
+    fragment->zone = (uint8_t)((bytes[0] >> 2) & 0x07u);
+    fragment->flags = (uint8_t)(bytes[0] & NL_FLAGS_MASK);
+    fragment->sequence = bytes[1];
+    fragment->payload_size = (uint8_t)(size - NL_FRAGMENT_MIN);
+    memmove(fragment->payload, bytes + NL_FRAGMENT_MIN, fragment->payload_size);
     return NL_OK;
 }

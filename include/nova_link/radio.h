@@ -7,8 +7,18 @@
 #include "nova_link/transport.h"
 
 /** @file radio.h Portable co-processor model; adapters own all SPI/GPIO/PHY I/O. */
+/* Concurrency: the core takes no locks. Every nl_radio_* call on one radio
+ * (and any nl_secure state used with it) must come from a single task, or the
+ * caller must serialize them. Interrupt handlers must not call into the core;
+ * they only move bytes into an adapter-owned ring that the task drains.
+ */
+/* Queue depths are build-time tunables; TX storage is 8 zones x depth x 105 B. */
+#ifndef NL_RADIO_TX_DEPTH
 #define NL_RADIO_TX_DEPTH 8u
+#endif
+#ifndef NL_RADIO_RX_DEPTH
 #define NL_RADIO_RX_DEPTH 16u
+#endif
 typedef enum { NL_RX_FIFO, NL_RX_LATEST_PER_STREAM } nl_rx_policy;
 /** Adapter-local receipt; never sent on the wire. Valid for one radio lifetime. */
 typedef uint64_t nl_pull_token;

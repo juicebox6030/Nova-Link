@@ -26,6 +26,16 @@ cmake --build build/extended --parallel
 ctest --test-dir build/extended --output-on-failure
 ```
 
+Radio firmware whose SPI handling runs in an interrupt uses the deferred
+handoff (`nl_radio_spi_isr()` / `nl_radio_spi_arm()` in the ISR,
+`nl_radio_poll()` in the main loop; see `include/nova_link/nl_radio.h`).
+Compile-time switches in `nl_config.h`: `NL_CRITICAL_ENTER`/`EXIT` for the
+few shared updates, `NL_ISR_BUILD=1` to compile out all logging
+(`NL_LOG_MIN_LEVEL` 4), `NL_LOG_IN_ISR` (default 0) to keep the SPI request
+path free of log calls while still counting rejected frames, and
+`NL_PLUGIN_ENTER`/`EXIT` around plugin callbacks. `nl_sim --spi-deferred`
+simulates this path.
+
 `NL_BUILD_TESTS`, `NL_BUILD_SIM`, and `NL_UBSAN` control standalone tests,
 simulation, and runtime-free undefined-behavior checks. In the root build,
 `NOVA_BUILD_TESTS`, `NOVA_BUILD_TOOLS`, and `NOVA_ENABLE_SANITIZERS` also apply here.

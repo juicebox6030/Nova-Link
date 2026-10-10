@@ -15,7 +15,8 @@ typedef enum {
     NL_ERR_STALE,
     NL_ERR_BUSY,
     NL_ERR_UNSUPPORTED,
-    NL_ERR_NOT_FOUND
+    NL_ERR_NOT_FOUND,
+    NL_ERR_INTEGRITY
 } nl_status;
 
 /** Return a static, human-readable name for a status code. */

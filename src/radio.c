@@ -1,5 +1,9 @@
 #include <string.h>
 #include "nova_link/radio.h"
+#include "internal.h"
+
+NL_STATIC_ASSERT(NL_RADIO_TX_DEPTH >= 1u && NL_RADIO_TX_DEPTH <= 255u, radio_tx_depth_range);
+NL_STATIC_ASSERT(NL_RADIO_RX_DEPTH >= 1u && NL_RADIO_RX_DEPTH <= 255u, radio_rx_depth_range);
 
 nl_status nl_radio_init(nl_radio *radio, uint8_t active_mask, uint32_t slot_us,
                         uint32_t burst_extra_us, uint64_t idle_timeout_us)
@@ -36,11 +40,13 @@ nl_status nl_radio_enqueue(nl_radio *radio, const nl_fragment *fragment)
     if (status != NL_OK) return status;
     if (fragment->zone != 0u &&
         (radio->scheduler.active_mask & (uint8_t)(1u << fragment->zone)) == 0u) return NL_ERR_ACCESS;
-    status = nl_queue_push(&radio->tx[fragment->zone], fragment);
-    if (status == NL_ERR_FULL) ++radio->stats.tx_full;
-    if (status == NL_OK && (fragment->flags & NL_FLAG_MGMT_LISTEN) != 0u)
-        radio->management_listen = true;
-    return status;
+    if (radio->tx[fragment->zone].count == radio->tx[fragment->zone].capacity) {
+        ++radio->stats.tx_full;
+        return NL_ERR_FULL;
+    }
+    (void)nl_queue_append(&radio->tx[fragment->zone], fragment);
+    if ((fragment->flags & NL_FLAG_MGMT_LISTEN) != 0u) radio->management_listen = true;
+    return NL_OK;
 }
 
 nl_status nl_radio_set_rx_policy(nl_radio *radio, nl_rx_policy policy)
@@ -60,7 +66,7 @@ nl_status nl_radio_receive(nl_radio *radio, const nl_fragment *fragment, uint64_
     if (status != NL_OK) return status;
     if (fragment->zone != 0u &&
         (radio->scheduler.active_mask & (uint8_t)(1u << fragment->zone)) == 0u) return NL_ERR_ACCESS;
-    status = nl_stream_check(&radio->streams, fragment, now_us);
+    status = nl_stream_check_valid(&radio->streams, fragment, now_us);
     /* Timing control is independent of RX buffer ownership. Even a duplicate or
      * a fresh frame rejected for congestion can carry the current slot's hold.
      */
@@ -78,13 +84,13 @@ nl_status nl_radio_receive(nl_radio *radio, const nl_fragment *fragment, uint64_
     }
     if (radio->rx_policy == NL_RX_LATEST_PER_STREAM) {
         for (offset = 0; offset < radio->rx.count; ++offset) {
-            size_t index = (radio->rx.head + offset) % radio->rx.capacity;
+            size_t index = nl_queue_slot(&radio->rx, offset);
             nl_fragment *pending = &radio->rx.storage[index];
             if (pending->origin == fragment->origin && pending->zone == fragment->zone) {
                 if (radio->next_rx_token == UINT64_MAX) return NL_ERR_SIZE;
                 *pending = *fragment;
                 radio->rx_tokens[index] = ++radio->next_rx_token;
-                (void)nl_stream_accept(&radio->streams, fragment, now_us);
+                nl_stream_commit(&radio->streams, fragment, now_us);
                 ++radio->stats.received;
                 ++radio->stats.coalesced;
                 return NL_OK;
@@ -96,13 +102,8 @@ nl_status nl_radio_receive(nl_radio *radio, const nl_fragment *fragment, uint64_
         return NL_ERR_FULL;
     }
     if (radio->next_rx_token == UINT64_MAX) return NL_ERR_SIZE;
-    status = nl_queue_push(&radio->rx, fragment);
-    if (status != NL_OK) {
-        if (status == NL_ERR_FULL) ++radio->stats.rx_full;
-        return status;
-    }
-    radio->rx_tokens[(radio->rx.head + radio->rx.count - 1u) % radio->rx.capacity] = ++radio->next_rx_token;
-    (void)nl_stream_accept(&radio->streams, fragment, now_us);
+    radio->rx_tokens[nl_queue_append(&radio->rx, fragment)] = ++radio->next_rx_token;
+    nl_stream_commit(&radio->streams, fragment, now_us);
     ++radio->stats.received;
     return NL_OK;
 }
@@ -120,68 +121,72 @@ nl_status nl_radio_pull(nl_radio *radio, nl_fragment *fragment)
 
 nl_status nl_radio_prepare_pull(const nl_radio *radio, nl_frame *response, nl_pull_token *token)
 {
-    nl_fragment fragment;
+    const nl_fragment *head;
     nl_status status;
     if (radio == NULL || response == NULL || token == NULL) return NL_ERR_ARGUMENT;
-    status = nl_queue_peek(&radio->rx, &fragment);
-    if (status != NL_OK) return status;
-    status = nl_frame_from_fragment(NL_COMMAND_FRAGMENT, &fragment, response);
+    head = nl_queue_front(&radio->rx);
+    if (head == NULL) return NL_ERR_EMPTY;
+    status = nl_frame_from_fragment(NL_COMMAND_FRAGMENT, head, response);
     if (status == NL_OK) *token = radio->rx_tokens[radio->rx.head];
     return status;
 }
 
 nl_status nl_radio_commit_pull(nl_radio *radio, const nl_frame *response, nl_pull_token token)
 {
-    nl_frame expected;
-    nl_fragment discarded;
-    nl_pull_token expected_token;
+    const nl_fragment *head;
     nl_status status;
     if (radio == NULL) return NL_ERR_ARGUMENT;
     status = nl_frame_validate(response);
     if (status != NL_OK) return status;
     if (response->command != NL_COMMAND_FRAGMENT) return NL_ERR_UNSUPPORTED;
-    status = nl_radio_prepare_pull(radio, &expected, &expected_token);
-    if (status != NL_OK) return status;
-    if (token != expected_token || expected.data_size != response->data_size ||
-        memcmp(expected.data, response->data, expected.data_size) != 0) return NL_ERR_STALE;
-    return nl_queue_pop(&radio->rx, &discarded);
+    head = nl_queue_front(&radio->rx);
+    if (head == NULL) return NL_ERR_EMPTY;
+    /* Compare against the head's wire form in place instead of re-encoding it. */
+    if (token != radio->rx_tokens[radio->rx.head] ||
+        response->data_size != NL_FRAGMENT_MIN + head->payload_size ||
+        response->data[0] != (uint8_t)((head->origin << 5) | (head->zone << 2) | head->flags) ||
+        response->data[1] != head->sequence ||
+        memcmp(response->data + NL_FRAGMENT_MIN, head->payload, head->payload_size) != 0)
+        return NL_ERR_STALE;
+    nl_queue_drop(&radio->rx);
+    return NL_OK;
 }
 
 nl_status nl_radio_next_window(nl_radio *radio, uint64_t now_us, nl_window *window)
 {
     uint8_t zone, burst_mask = 0;
-    nl_fragment head;
+    const nl_fragment *head;
     nl_status status;
     bool management;
     if (radio == NULL || window == NULL) return NL_ERR_ARGUMENT;
     management = radio->management_listen || radio->tx[0].count != 0u;
-    for (zone = 0; zone < NL_ZONE_COUNT; ++zone)
-        if (nl_queue_peek(&radio->tx[zone], &head) == NL_OK && (head.flags & NL_FLAG_BURST) != 0u)
+    for (zone = 0; zone < NL_ZONE_COUNT; ++zone) {
+        head = nl_queue_front(&radio->tx[zone]);
+        if (head != NULL && (head->flags & NL_FLAG_BURST) != 0u)
             burst_mask |= (uint8_t)(1u << zone);
-    status = nl_scheduler_next(&radio->scheduler, now_us, management, burst_mask, window);
-    if (status == NL_OK) {
-        if (window->zone == 0u) radio->management_listen = false;
     }
+    status = nl_scheduler_next(&radio->scheduler, now_us, management, burst_mask, window);
+    if (status == NL_OK && window->zone == 0u) radio->management_listen = false;
     return status;
 }
 
 nl_status nl_radio_prepare_tx(nl_radio *radio, uint64_t now_us, nl_fragment *fragment, nl_window *window)
 {
-    nl_fragment head;
+    const nl_fragment *head;
     nl_window current;
     nl_status status;
     if (radio == NULL || fragment == NULL || window == NULL) return NL_ERR_ARGUMENT;
     status = nl_scheduler_current(&radio->scheduler, now_us, &current);
     if (status != NL_OK) return status;
-    status = nl_queue_peek(&radio->tx[current.zone], &head);
-    if (status != NL_OK) return status;
-    if ((head.flags & NL_FLAG_BURST) != 0u) {
+    head = nl_queue_front(&radio->tx[current.zone]);
+    if (head == NULL) return NL_ERR_EMPTY;
+    if ((head->flags & NL_FLAG_BURST) != 0u) {
         status = nl_scheduler_hold_burst(&radio->scheduler, current.zone, now_us);
         if (status != NL_OK) return status;
         status = nl_scheduler_current(&radio->scheduler, now_us, &current);
         if (status != NL_OK) return status;
     }
-    *fragment = head;
+    *fragment = *head;
     *window = current;
     return NL_OK;
 }
