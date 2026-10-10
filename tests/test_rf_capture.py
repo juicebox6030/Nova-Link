@@ -2,7 +2,7 @@
 import json
 import unittest
 
-from tools.analyze_rf_capture import read_capture, summarize
+from tools.analyze_rf_capture import compare_stimuli, read_capture, summarize
 
 
 def observation(**changes):
@@ -17,6 +17,39 @@ def observation(**changes):
 
 
 class CaptureTests(unittest.TestCase):
+    def test_candidate_byte_comparison_preserves_boundaries(self):
+        entries = list(read_capture([
+            observation(stimulus="baseline", crc="ok", payload_hex="000100"),
+            observation(timestamp_us=1001, stimulus="baseline", crc="ok", payload_hex="000100"),
+            observation(timestamp_us=1002, stimulus="changed", crc="ok", payload_hex="00ff00"),
+            observation(timestamp_us=1003, stimulus="changed", crc="bad", payload_hex="aaff00"),
+            observation(timestamp_us=1004, stimulus="changed", crc="ok", payload_hex="00ff"),
+            observation(timestamp_us=1005, stimulus="changed", profile="other", crc="ok", payload_hex="aaff00"),
+        ]))
+        compared = compare_stimuli(entries, "baseline", "changed")
+        self.assertEqual(len(compared["groups"]), 1)
+        group = compared["groups"][0]
+        self.assertEqual(group["baseline_observations"], 2)
+        self.assertEqual(group["differing_offsets"], [{
+            "offset": 1, "baseline_value_counts": {"01": 2},
+            "changed_value_counts": {"ff": 1}, "stable_in_both": True,
+        }])
+
+    def test_distribution_comparison_is_not_a_sample_count_comparison(self):
+        entries = list(read_capture([
+            observation(stimulus="a", payload_hex="00"),
+            observation(stimulus="a", payload_hex="01"),
+            observation(stimulus="b", payload_hex="00"),
+            observation(stimulus="b", payload_hex="01"),
+            observation(stimulus="b", payload_hex="00"),
+            observation(stimulus="b", payload_hex="01"),
+        ]))
+        self.assertEqual(compare_stimuli(entries, "a", "b")["groups"][0]["differing_offsets"], [])
+        with self.assertRaisesRegex(ValueError, "different"):
+            compare_stimuli(entries, "a", "a")
+        with self.assertRaisesRegex(ValueError, "no matching"):
+            compare_stimuli(entries, "a", "missing")
+
     def test_groups_keep_candidate_phys_and_stimuli_separate(self):
         report = summarize(read_capture([
             observation(rssi_dbm=-50, crc="ok"),
