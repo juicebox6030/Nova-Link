@@ -121,9 +121,10 @@ nova_mv_result_t nova_mv_rx_init(nova_mv_rx_t *rx, const nova_mv_rx_config_t *co
  * history, preserves counters/clock, and requires a FULL in the new session.
  */
 nova_mv_result_t nova_mv_rx_bind(nova_mv_rx_t *rx, uint32_t session);
-/** Expire assembly and hold-last-state. Expiry requires a new FULL; it never
- * fabricates blackout levels or delivers a partial frame. Sequence history
- * survives expiry so duplicates cannot revive an expired link.
+/** Expire assembly and hold-last-state. Assembly expiry discards partial work
+ * while preserving any synchronized committed base. Link-loss expiry requires
+ * a new FULL; no expiry fabricates blackout levels or delivers a partial frame.
+ * Sequence history survives loss so duplicates cannot revive an expired link.
  */
 nova_mv_result_t nova_mv_rx_tick(nova_mv_rx_t *rx, uint64_t now_us);
 /** Only verified integrity is accepted. New frames commit atomically once all
