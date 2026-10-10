@@ -7,7 +7,8 @@
 # Optional tools are skipped with a notice when missing: clang, valgrind,
 # cppcheck, doxygen, arm-none-eabi-gcc, qemu-system-arm.
 # Environment: JOBS (default: nproc), SEEDS (field-sim seeds, default 8),
-# BENCH=1 to also print Cortex-M4 secure seal/open instruction counts.
+# BENCH=1 to also print Cortex-M4 secure seal/open instruction counts,
+# FUZZ_SECONDS per libFuzzer harness (default 10, 0 to skip; clang only).
 set -eu
 root=$(cd "$(dirname "$0")/.." && pwd)
 out="$root/build/check"
@@ -47,6 +48,13 @@ if have clang; then
     config clang-asan clang Debug ON OFF
 else
     skip "clang builds"
+fi
+
+if have clang && [ "${FUZZ_SECONDS:-10}" -gt 0 ]; then
+    step "libFuzzer smoke (${FUZZ_SECONDS:-10}s per harness; long runs: tools/fuzz.sh)"
+    FUZZ_STATE="$out/fuzz-state" "$root/tools/fuzz.sh" "${FUZZ_SECONDS:-10}"
+else
+    skip "libFuzzer smoke"
 fi
 
 step "installed SDK consumer"

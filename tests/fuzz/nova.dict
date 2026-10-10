@@ -1,0 +1,11 @@
+# libFuzzer/AFL dictionary: SPI sync, lengths and command bytes.
+sync="\xAA"
+ping="\xAA\x01\x01"
+pull="\xAA\x01\x02\x0E\x7C"
+push="\xAA\x06\x03"
+status="\xAA\x01\x04"
+fragment="\xAA\x06\xD0"
+max_len="\x67"
+cmd_push="\x03"
+cmd_fragment="\xD0"
+burst_header="\x02"

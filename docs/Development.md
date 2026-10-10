@@ -192,10 +192,11 @@ validate a CC1352R PHY. See [validation](Validation.md) for assumptions and limi
 
 ## Checks and packaging
 
-The default build runs 27 CTest entries with Python and tools available:
+The default build runs 33 CTest entries with Python and tools available:
 the SDK's codecs, streams, host, radio, integration, simulation, and offline
 tools; DMX framing/loopback and capture analysis; and the separate extended
-prototype's C/Python tests, generated vectors, and network simulations.
+prototype's C/Python tests, generated vectors, and network simulations; and
+replays of every fuzz seed in `tests/fuzz/seeds/` (35 entries with security).
 Use `-DNOVA_BUILD_EXTENDED=OFF` to omit the prototype. Release checks remain active;
 they do not depend on `assert()` or `NDEBUG`.
 
@@ -211,3 +212,41 @@ Local GCC checks cover Debug, Release, address/undefined behavior sanitizers,
 a freestanding core build, docs, and the installed-SDK consumer. See
 [validation](Validation.md) for commands and results. Clang and vendor SDK
 builds have not been run here.
+
+## Fuzzing and long-term tests
+
+`tests/fuzz/` has three libFuzzer harnesses with ASan and UBSan. Each one
+checks invariants as well as crashes:
+
+- `transport` covers SPI frames, fragments and the byte-stream parser. Every
+  accepted input must re-encode to the same bytes.
+- `radio` drives one `nl_radio` with random frames, commits, time jumps, TX
+  windows and configuration changes. Every frame it emits must validate.
+- `secure` checks seal-then-open round trips, bit flips, truncation,
+  forgeries and replays through `nl_radio_receive_sealed`.
+
+```sh
+tools/fuzz.sh 600            # 10 minutes per harness; needs clang
+tools/fuzz.sh 60 radio       # one harness
+```
+
+The corpus is kept in `build/fuzz-state` (`FUZZ_STATE`). Crashes are saved in
+`<harness>/crashes/`, and running `build/fuzz/tests/fuzz/fuzz_<harness>
+<file>` reproduces one. After a fix, copy the file into `tests/fuzz/seeds/<harness>/`.
+Normal test builds replay every seed through gcc-built `replay_*` binaries, so
+a fixed crash stays covered. `tools/check.sh` runs a 10-second fuzz smoke test
+(`FUZZ_SECONDS`).
+
+`tools/soak.sh` runs `nova-field-sim` over new seeds until `SOAK_SECONDS`
+runs out. Each seed runs in Release with and without security, and in an
+ASan+UBSan build with a tenth of the ticks. The next seed is saved, so no soak
+repeats a seed.
+
+`tools/longterm/install.sh` sets up both jobs as systemd user units on a build
+machine:
+
+- `nova-fuzz.service` fuzzes continuously.
+- `nova-nightly.timer` runs `git pull`, `tools/check.sh` and a two-hour soak.
+
+`tools/longterm/report.sh` summarises the last results, corpus sizes, crashes
+and soak failures. Logs go to `~/nova-longterm/logs`.

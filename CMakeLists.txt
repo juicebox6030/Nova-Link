@@ -6,6 +6,7 @@ option(NOVA_BUILD_TOOLS "Build offline tools and simulation" ON)
 option(NOVA_BUILD_EXTENDED "Build the separate extended protocol prototype" ON)
 option(NOVA_ENABLE_SANITIZERS "Enable address and undefined behavior sanitizers" OFF)
 option(NOVA_SECURITY "Build optional AES-128-CCM air security (adds latency per fragment)" OFF)
+option(NOVA_FUZZ "Build libFuzzer harnesses (clang only; see tools/fuzz.sh)" OFF)
 
 add_library(nova_link
     src/status.c src/fragment.c src/transport.c src/stream.c
@@ -122,6 +123,10 @@ if(NOVA_BUILD_TESTS)
                 ${CMAKE_CURRENT_SOURCE_DIR}/tools/rf_feasibility.py)
         endif()
     endif()
+endif()
+
+if(NOVA_FUZZ OR NOVA_BUILD_TESTS)
+    add_subdirectory(tests/fuzz)
 endif()
 
 if(NOVA_BUILD_EXTENDED)

@@ -167,10 +167,13 @@ when it prints `ALL CHECKS PASSED`. It runs:
 - GCC and Clang builds, with and without sanitizers and security;
 - the installed consumer, the extended prototype, and its Python tests;
 - field-simulation seeds, valgrind, cppcheck, `-fanalyzer`, and Doxygen;
+- fuzz-seed replays and a short libFuzzer smoke run;
 - Cortex-M0+/M4 code-size and stack budgets (`tools/embedded_footprint.sh`).
 
 `tools/check.sh --quick` runs one sanitized build for fast iteration. `BENCH=1`
 adds QEMU instruction counts for security (`tools/embedded_bench.sh`).
+For long runs, `tools/fuzz.sh` fuzzes, `tools/soak.sh` soaks the field simulation,
+and `tools/longterm/install.sh` schedules both on a build machine.
 
 The [development roadmap](docs/Development_Roadmap.md) separates completed software
 from remaining protocol decisions and board work. The [validation record](docs/Validation.md)

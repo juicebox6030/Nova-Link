@@ -6,11 +6,11 @@
 
 | Configuration | CTest |
 |---|---|
-| GCC Debug, ASan/UBSan, security | 32/32 |
-| GCC Release | 31/31 |
-| GCC Release, security | 32/32 |
-| Clang Release, security | 32/32 |
-| Clang Debug, ASan/UBSan | 31/31 |
+| GCC Debug, ASan/UBSan, security | 35/35 |
+| GCC Release | 33/33 |
+| GCC Release, security | 35/35 |
+| Clang Release, security | 35/35 |
+| Clang Debug, ASan/UBSan | 33/33 |
 | Extended prototype, UBSan traps | 18/18, plus 88 Python tests |
 
 Other results:
@@ -19,6 +19,13 @@ Other results:
 - `nova-field-sim` passed seeds 1–8, with and without security.
 - Valgrind memcheck was clean on every Release+security test binary and the field sim.
 - cppcheck, GCC `-fanalyzer` and Doxygen (warnings as errors) were clean.
+- The libFuzzer harnesses (transport, radio, secure) ran clean, with ASan and
+  UBSan and invariant checks, at about 1.1M, 1.3M and 0.6M executions per
+  20-second run. Radio reached 238 coverage edges. libFuzzer's `-fork` mode
+  segfaults in its own parent process under clang 22.1, before running any
+  input, so `tools/fuzz.sh` uses `-jobs`/`-workers` instead.
+- Continuous fuzzing and nightly checks and soaks run on the GPUT3 build
+  machine (see [development guide](Development.md#fuzzing-and-long-term-tests)).
 
 Valgrind found an uninitialised read in `test_radio`. A `memcmp` compared a
 struct that has padding. The test now compares fields one by one; library code
