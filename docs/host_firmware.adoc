@@ -2,16 +2,24 @@ NOTE: The portable implementation and current limitations are described in `Deve
 
 === Host Firmware Architecture (ESP32-S3)
 
-The ESP32-S3 manages all plugins and SPI communication with the CC135x radio.
+The ESP32-S3 runs the portable base and compiled application, transport, and
+service plugins. SPI communication with the CC135x belongs to a transport
+plugin's board backend.
 
 ==== Key Responsibilities
 - Plugin lifecycle and dispatch
 - Plugin Fragment deduplication 
 - Zone claim management
-- SPI interface to radio (as plugin?)
+- Named module composition, dependency ordering, and rollback
+- Poll transport plugins before application ticks
 
 ==== Workflow
-1. Boot plugins and claim zones
-2. Send/receive fragments over SPI
-3. Dispatch fragments to plugins via Stream Tracker
-4. Collect and send plugin responses
+1. Initialize persistent plugin/backend context and the base
+2. Start the module manifest; dependencies and declarative zone claims are applied
+3. Poll transport plugins for incoming fragments and dispatch through Stream Tracker
+4. Tick application/service plugins and send through the active transport plugin
+5. Stop modules in reverse dependency order and drain/cancel backend work
+
+The desktop radio transport backend exercises the same lifecycle without SPI
+hardware. ESP-IDF SPI/GPIO and physical RF drivers still need implementation and
+board validation. See `Development.md` for the installed module API.

@@ -90,14 +90,67 @@ def summarize(entries):
     }
 
 
+def compare_stimuli(entries, baseline, changed):
+    """Compare byte distributions, keeping candidate PHY/length/CRC separate.
+
+    This finds candidate offsets for later investigation, not decoded channels.
+    Sample-size, counters, keys, checksums, FEC and hopping may all affect bytes.
+    """
+    if baseline == changed:
+        raise ValueError("comparison stimuli must be different")
+    groups = defaultdict(lambda: {baseline: [], changed: []})
+    for entry in entries:
+        if entry["stimulus"] in (baseline, changed):
+            payload = bytes.fromhex(entry["payload_hex"])
+            key = (entry["profile"], entry["frequency_hz"], len(payload), entry["crc"])
+            groups[key][entry["stimulus"]].append(payload)
+    comparisons = []
+    for (profile, frequency, length, crc), samples in sorted(groups.items()):
+        a, b = samples[baseline], samples[changed]
+        if not a or not b:
+            continue
+        differing = []
+        for offset in range(length):
+            ca, cb = Counter(p[offset] for p in a), Counter(p[offset] for p in b)
+            # Compare normalized counts exactly; unequal sample sizes alone
+            # must not mark identical distributions as changed.
+            if all(ca[v] * len(b) == cb[v] * len(a) for v in ca.keys() | cb.keys()):
+                continue
+            differing.append({
+                "offset": offset,
+                "baseline_value_counts": {f"{v:02x}": n for v, n in sorted(ca.items())},
+                "changed_value_counts": {f"{v:02x}": n for v, n in sorted(cb.items())},
+                "stable_in_both": len(ca) == len(cb) == 1,
+            })
+        comparisons.append({
+            "profile": profile, "frequency_hz": frequency,
+            "payload_length": length, "crc": crc,
+            "baseline_observations": len(a), "changed_observations": len(b),
+            "differing_offsets": differing,
+        })
+    if not comparisons:
+        raise ValueError("no matching profile/frequency/length/CRC groups for both stimuli")
+    return {
+        "baseline": baseline, "changed": changed, "groups": comparisons,
+        "interpretation": "Byte-distribution differences are candidates for investigation, not DMX channel mappings or proof of causation. No RF format, key, FEC or hop schedule has been inferred.",
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("capture", type=Path, help="JSONL log from one receiver")
     parser.add_argument("--output", type=Path, help="write the summary as JSON")
+    parser.add_argument("--compare-stimuli", nargs=2, metavar=("BASELINE", "CHANGED"),
+                        help="compare candidate byte offsets within matching PHY/length/CRC groups")
     args = parser.parse_args()
     try:
         with args.capture.open(encoding="utf-8") as capture:
-            report = summarize(read_capture(capture))
+            entries = list(read_capture(capture))
+        report = summarize(entries)
+        if args.compare_stimuli:
+            report["stimulus_comparison"] = compare_stimuli(entries, *args.compare_stimuli)
+        if args.output and args.output.resolve() == args.capture.resolve():
+            raise ValueError("output must not overwrite the capture")
         output = json.dumps(report, indent=2, allow_nan=False) + "\n"
         if args.output:
             args.output.write_text(output, encoding="utf-8")

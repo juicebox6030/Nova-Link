@@ -7,8 +7,8 @@ has a separate API and wire format; the DMX level library is independent of both
 
 ```mermaid
 flowchart LR
-    P[Compiled host plugins] <--> H[Host API: claims, sequences, dispatch]
-    H <--> T[Framed command adapter]
+    P[Application and service plugins] <--> H[Base: lifecycle, claims, sequences, dispatch]
+    H <--> T[Transport plugin: framed command adapter]
     T <--> R[Radio core: bounded queues, dedup, scheduler]
     R <--> PHY[Future SPI/GPIO/RF board drivers]
 ```
@@ -18,19 +18,34 @@ flowchart LR
 | Component | Portable module | Responsibility |
 |---|---|---|
 | Plugin host | `host.c` | Lifecycle, payload send/receive, callbacks, logging |
+| Plugin composition | `module.h` | Named modules, dependencies, declarative claims, transactional startup and reverse shutdown |
 | Zone manager | `zones.c` | Local exclusive/read-only claims and zone interest |
 | Packet codec | `fragment.c` | Explicit wire serialization, 3/3/2 header split |
 | Transport | `transport.c` | SYNC/LEN/command framing and incremental parsing |
 | Stream tracker | `stream.c` | Per-origin/zone wrap-aware duplicate/stale rejection |
 | Buffering | `queue.c`, `radio.c` | Per-zone TX queues, shared RX with optional coalescing, in-process backpressure |
 | Scheduler | `scheduler.c` | Monotonic timed data rounds and optional metadata slots |
-| Platform adapter | To be implemented | Device I/O, shared RF timing, PHY pacing/completion |
+| Radio transport plugin | `radio_plugin.h` | Host transport lifecycle and bounded PUSH/PULL exchanges through a caller-supplied backend |
+| SPI driver service plugin | `spi_backend.h` | Immutable async native requests, local completion/receipt ownership, uncertainty resolution |
+| Native slave helper | `spi_slave.h` | Complete request validation and transactional radio response staging |
+| Configuration service plugin | `config_plugin.h` | Bounded schema validation and typed configuration values |
+| Capture service plugin | `capture_plugin.h` | Bounded raw-observation JSONL staging with caller-owned output and pending shutdown protection |
+| Physical platform backend | To be implemented | Device I/O, shared RF timing, PHY pacing/completion |
+
+The base has no application or device policy. Application, transport, and
+service modules share one plugin lifecycle and can be composed in a manifest.
+Counter and Multiverse-model plugins use the same host API as future management,
+logging, or board adapters. Portable codecs, queues, deduplication, and scheduling
+are reusable primitives underneath those plugins. An application can still use
+the lower-level host callbacks directly when it needs custom composition.
 
 ## Data flow
 
 **TX:** A registered plugin with write access supplies up to 100 bytes. The host
-adds its origin, zone, flags, and the next per-zone sequence. Its send callback
-encodes a PUSH command. The radio validates and queues the fragment, and the
+adds its origin, zone, flags, and the next per-zone sequence. The active transport
+plugin constructs a PUSH frame and passes it to its backend. The backend owns
+physical frame encoding and exchange. The radio validates
+and queues the fragment, and the
 scheduler exposes a due zone window. The PHY adapter peeks, submits, then takes
 ownership of TX data. Local acceptance is not an over-the-air acknowledgment.
 
@@ -41,7 +56,41 @@ a full queue leaves the sequence available for retry. INT_READY can reflect
 revision token. The adapter commits removal after ownership transfer; aborted
 handoffs retain the RX head, and stale tokens preserve replacements. The host's
 own tracker deduplicates and dispatches to interested plugins, rejecting
-fragments bearing its own origin.
+fragments bearing its own origin. The transport plugin polls outside receive/tick
+dispatch, so delivering a PULL response does not recursively enter a callback.
+
+Modules start after their named dependencies and stop in reverse order. A
+failed startup stops modules started by that manifest and releases their claims;
+preexisting modules stay registered. Transport and plugin context remain alive
+through shutdown. Local queue acceptance, RF completion, and peer acknowledgment
+remain separate ownership events.
+
+Configuration is a service plugin. It parses application-supplied text against a caller-defined schema; the base
+does not read files or choose application protocols. The offline host CLI owns
+file I/O and selects the included factories to compose its manifest. See the
+[configuration guide](Plugin_Configuration.md).
+
+The [native SPI backend](SPI_Backend.md) is another service plugin. A radio-link
+provider depends on it, and it calls a board-owned asynchronous driver while
+retaining immutable request and PULL receipt storage. The portable
+`nl_spi_slave` helper parses complete native requests and stages transactional
+responses around the same radio core. Driver status and receipt tokens are
+adapter-local C values; they add no ACK, status, empty/error bytes, or other
+fields to the documented transport. Physical chip-select timing, interrupt
+mapping and RF I/O remain board responsibilities.
+
+Plugin development uses separately linked support libraries. The
+[conformance harness](Plugin_Conformance.md) exercises real module manifests and
+reports which contract capabilities an adapter verified. The
+[fault backend](Transport_Fault_Simulation.md) supplies bounded deterministic
+transport ownership, delays and failure scenarios. They use the same portable
+APIs as production plugins, but are explicit developer dependencies rather than
+base behavior or members of the production plugin aggregate. ESP-IDF excludes
+their sources.
+The [virtual SPI driver](SPI_Backend.md) is also developer support. It joins the
+production backend to the production complete-frame slave helper and exercises
+actual serialized requests and responses. Its separate logical air path connects
+native radio queues, preserving FIFO ownership without choosing an RF PHY.
 
 ## Scheduling and metadata
 

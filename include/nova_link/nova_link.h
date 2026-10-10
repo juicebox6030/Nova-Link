@@ -7,6 +7,8 @@
 #include "nova_link/queue.h"
 #include "nova_link/zones.h"
 #include "nova_link/host.h"
+#include "nova_link/module.h"
 #include "nova_link/scheduler.h"
 #include "nova_link/radio.h"
+#include "nova_link/spi_slave.h"
 #endif

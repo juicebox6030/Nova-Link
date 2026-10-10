@@ -1,0 +1,44 @@
+#include "@PREFIX@_plugin.h"
+#include <stdio.h>
+
+#define CHECK(expression) do { if (!(expression)) { \
+    fprintf(stderr, "check failed at line %d: %s\n", __LINE__, #expression); return 1; \
+} } while (0)
+
+int main(void)
+{
+    nl_host host, other;
+    @PREFIX@_context context = {0};
+    nl_module module;
+@PROVIDER_DEFINITIONS@
+    const nl_module *manifest[] = {&module@PROVIDER_MANIFEST@};
+    nl_module_instance instances[sizeof(manifest) / sizeof(manifest[0])] = {{0}};
+    nl_module_instance rejected = {0};
+    nl_module_instance *provider;
+    CHECK(@PREFIX@_init(&context) == NL_OK);
+    module = @PREFIX@_module(&context);
+    CHECK(nl_host_init_plugins(&host, 1u, 1000u) == NL_OK);
+    CHECK(nl_modules_start(&host, manifest, instances, sizeof(instances) / sizeof(instances[0])) == NL_OK);
+    CHECK(@PREFIX@_init(&context) == NL_ERR_BUSY);
+    provider = nl_module_find(&host, "@NAME@");
+    CHECK(provider != NULL && provider->module.service == &context);
+    CHECK(nl_host_poll(&host, 1u) == NL_OK);
+    CHECK(context.polls == 1u && context.ticks == 1u);
+    CHECK(nl_host_init_plugins(&other, 2u, 1000u) == NL_OK);
+    {
+        nl_module invalid = @PREFIX@_module(NULL);
+        invalid.requires = NULL;
+        invalid.require_count = 0u;
+        CHECK(nl_module_register(&other, &invalid, &rejected) == NL_ERR_ARGUMENT);
+    }
+    {
+        nl_module duplicate = module;
+        duplicate.requires = NULL;
+        duplicate.require_count = 0u;
+        CHECK(nl_module_register(&other, &duplicate, &rejected) == NL_ERR_ARGUMENT);
+        CHECK(context.running && context.owner == &host);
+    }
+    CHECK(nl_modules_stop(instances, sizeof(instances) / sizeof(instances[0])) == NL_OK);
+    CHECK(!context.running && nl_module_find(&host, "@NAME@") == NULL);
+    return 0;
+}

@@ -1,5 +1,302 @@
 # Offline validation record
 
+## Paired asynchronous SPI, two-way DMX and replay acceptance (2026-10-10)
+
+The installed native SPI backend and complete-frame slave helper now run
+together through a separately linked virtual driver. This extends both TX and
+RX through actual serialized native requests, bounded local queues, deferred
+PULL receipts and explicit uncertain-TX resolution. Native PUSH completion and
+receipt outcomes are local software metadata; the physical protocol's ACK,
+empty/error encodings, SPI/GPIO drivers and proprietary RF remain unresolved.
+See the [SPI backend and simulation guide](SPI_Backend.md).
+
+Fresh independent complete runs passed **53/53 CTest entries** each with
+GCC **16.1.1** Debug, Release and ASan/UBSan, including the extended prototype.
+Clang **22.1.8** Release passed **37/37** with `NOVA_BUILD_EXTENDED=OFF` for the
+prototype's previously recorded conversion errors. The final simultaneous
+two-way scenario also passed an affected-target rebuild/check in all four
+configurations after its snapshot-order, drain and silence-loss assertions were finalized.
+No test was disabled to obtain these results.
+
+The actual SPI backend service and its radio-link transport each pass all seven
+reusable conformance cases, with no skipped capability. Together with the six
+existing factories, this gives **49 exercised contract cases** and **7 explicitly
+skipped optional cases**. SPI cases check exact ownership and cleanup, both
+startup rollback paths, live dependencies, pending-TX shutdown refusal, bounded
+full-queue retries retaining exact bytes, and fresh lower-sequence restart work.
+The runner supports bounded multi-poll restart workloads and rejects an excessive
+restart budget through the negative fixture suite.
+
+`nova-spi-pair-sim` delivers **50 exact counter messages** and reconstructs
+**13 complete 512-slot frames**. It reaches the native **8-TX/16-RX** queue
+limits and preserves FIFO work through **273 congestion retries**. Cases include
+definite rejection, uncertainty before/after slave acceptance, explicit retry
+and discard, malformed requests/responses, application CRC corruption, retained
+receipts after coalesced replacement, disconnection, deferred commit and restart.
+RX continues while TX is held uncertain, and retries preserve frozen bytes.
+
+`nova-spi-duplex-sim` uses unmodified production plugin ticks with independent
+logical air paths in each direction. It commits **46/42 exact 512-slot frames**
+from **20/17 distinct submitted snapshots**, checks monotonic snapshot progress,
+and reaches TX queue peaks **8/8** and RX peaks **16/3**. It exercises concurrent
+send/receive, coalescing, congestion and receipt retries, an outage, periodic
+FULL recovery, exact final frames, orderly draining and silence expiry. These counts and
+delays are deterministic software scenarios, without physical timing or airtime
+claims.
+
+Replay now checks optional per-observation result/link expectations and final
+frame-count/link expectations, in addition to delivered-frame level oracles.
+The annotated eleven-observation example passes **4 exact frames** and final
+`lost`; deliberately incorrect expectations fail. See the
+[replay acceptance guide](Replay_Acceptance.md) for commands and strict schema
+semantics. Real candidate-PHY observations still cannot enter the synthetic
+decoder.
+
+Each of the four compiler/sanitizer packages installed successfully, and the
+independent consumer built and ran against each exported SDK. It exercises
+native SPI TX plus RX with exact big-endian counter decoding and committed
+receipt cleanup, alongside the aggregate plugins, capture and developer support.
+A separate `-ffreestanding` library-only build installed and passed that consumer.
+Synthetic codec/header/target isolation was retained. Both Doxygen references
+generated with warnings as errors. **117 relative Markdown links** across
+**22 Markdown documents** and `git diff --check` passed.
+
+Actual ESP32-S3 and CC1352R vendor compile/link checks passed with the recorded
+ESP-IDF **5.5.1** and SimpleLink **7.41.00.17** baselines; all **20 production
+sources** also passed strict freestanding TI Arm Clang compilation. The selected
+board configurations, toolchain versions, image/memory sizes and evidence paths
+are in [hardware preparation](Hardware_Preparation.md). Vendor compilation does
+not establish execution, pin mappings, physical capture or RF interoperability.
+No UniFi or gateway settings were changed.
+
+```sh
+./build/nova-spi-pair-sim
+./build/nova-spi-duplex-sim
+ctest --test-dir build --output-on-failure
+python3 tools/replay_multiverse.py examples/multiverse.synthetic.jsonl \
+  --end-us 104000 --expect-frames 4 --expect-link lost --summary-only
+```
+
+## Reusable plugin contracts and documented hardware preparation (2026-10-10)
+
+The SDK exports `NovaLink::nova_plugin_conformance` and
+`NovaLink::nova_fault_backend` as explicit developer dependencies, separately
+from the production plugin aggregate and ESP-IDF component. Generated application,
+service and transport projects include adapters for the same conformance runner;
+generated transports also expose six individually selectable deterministic fault
+scenarios. Their production targets retain only the runtime SDK dependency.
+
+The actual counter, radio-link, logger, Multiverse-model, configuration and capture
+factories passed **35 exercised contract cases**, with **7 optional cases explicitly
+skipped**. The negative fixture suite detects eleven deliberately broken plugin
+behaviors, including resource leaks, ignored pending ownership, altered rejected
+work, unbounded attempts, duplicate acceptance and stale restart behavior. The
+Multiverse fixture drains old work, resets native history, selects a fresh model
+session and submits fresh TX work after reinitialization.
+
+Independent full runs passed **45/45 CTest entries** each in GCC Debug, Release
+and ASan/UBSan, and **29/29** with Clang and the extended prototype disabled.
+The final generated restart-work change also passed the affected scaffold entry
+again in all four configurations.
+The installed consumer exercises the six-plugin aggregate, both developer targets,
+and capture output backpressure, retry and shutdown. Freestanding compilation,
+SDK export isolation, warnings-as-errors Doxygen, 84 relative Markdown links and
+`git diff --check` passed. Actual capture-service JSONL output, including timestamp
+zero and UINT64_MAX, passes the existing analyzer with exact payload preservation.
+
+The reusable fault backend preserves FIFO ownership, invalidated receipt safety,
+bounded queues and drain-before-restart behavior. The migrated combined simulator
+retains its previous deterministic results: 100 FIFO congestion retries, 800
+receipt retries, 50 disconnected PUSH rejections and 88 native completions before
+exact-frame recovery and restart. These are logical software scenarios rather
+than measured device timings.
+
+The hardware preparation follows the documented ESP32-S3/CC1352R targets and
+City Theatrical 5911 reference. The platform test compiles the production
+ESP-IDF component sources with a desktop shim and runs the example lifecycle
+twice. Separately, the actual `esp32s3` vendor build succeeded with ESP-IDF
+**v5.5.1** (revision `fcae32885b0296b32044cb99ecbdc50d98dddb83`) and Xtensa
+GCC **14.2.0** (`esp-14.2.0_20241119`). It compiled all 18 production component
+sources without warnings and generated ELF/BIN artifacts. This selected SDK
+baseline is recorded in the [hardware preparation guide](Hardware_Preparation.md);
+it is a new implementation choice rather than a previously documented board
+specification. Hardware execution, the CC1352R vendor build, packet captures and
+real RF interoperability remain unverified. The capture plugin formats supplied observations;
+it does not select a PHY or decode proprietary Multiverse packets. The synthetic
+codec remains excluded from SDK installation and the board component.
+
+```sh
+ctest --test-dir build --output-on-failure \
+  -R 'plugin_conformance|fault_backend|capture_plugin|platform_prep|plugin_scaffold'
+```
+
+See the [conformance contract](Plugin_Conformance.md),
+[fault scenarios](Transport_Fault_Simulation.md) and
+[development guide](Development.md). No UniFi or gateway settings were changed.
+
+## Plugin development tooling and transport faults (2026-10-10)
+
+The SDK now includes an allocation-free configuration service, a standalone
+plugin starter generator, an offline startup configuration CLI and a deterministic
+transport fault simulation. These address the Host CLI configuration and
+auto-generated plugin boilerplate goals in [the design](requirements.adoc).
+Configuration remains outside the base: the service validates caller-supplied
+text against a schema, while the example chooses compiled factories and composes
+the manifest. Live reload and dynamic code loading remain future work.
+
+Initial complete runs passed **39 CTest entries** each in GCC Debug, Release
+and ASan/UBSan, and **23 entries** in Clang with the extended prototype disabled.
+After adding the CLI regression entry, that new entry passed in all four
+configurations. Affected configuration and plugin integration entries were also
+rebuilt and rerun. The final configured suites therefore passed cumulatively
+**40/40 entries** in each GCC configuration and **24/24** in Clang.
+
+The starter tests cover all three plugin kinds, invalid/reserved names,
+dependency validation, safe destination handling and relocated templates. The
+installed-SDK test stages the generator and templates in a temporary prefix,
+then generates, builds and runs application, service and transport projects via
+`find_package(NovaLink)`, including paths with spaces. Configuration tests cover
+strict schemas, typed values, bounded storage, error diagnostics and provider
+lifecycle. Eight CLI cases check successful TX/RX startup, optional defaults,
+command/file errors and invalid field relationships rejected before startup.
+
+`nova-plugin-fault-sim` exercises delayed queue handoff, disconnected PUSH
+rejection, retained PULL receipts with exactly-once dispatch, bounded 8/16 TX/RX
+queues, congestion, coalescing, drain-before-shutdown and explicit model/native
+restart. The deterministic baseline completes 11 DMX updates from 401 submitted
+snapshots, then recovers the exact final 512 levels and a new session. Transfer
+delays are logical test inputs; this does not measure physical SPI or RF timing.
+
+The freestanding SDK build, refreshed installation, independent aggregate-plugin
+consumer and warnings-as-errors Doxygen build passed. The consumer exercises
+schema parsing, typed values and the configuration provider alongside the four
+existing plugins. The synthetic codec/header remain excluded from installation.
+The configuration source also passed strict GCC `-fanalyzer` checks. Markdown
+relative links and `git diff --check` pass. The CI template now tests the SDK
+compiler matrix separately from the extended prototype's GCC/UBSan job; hosted
+CI remains inactive as described below.
+
+```sh
+python3 tools/new_plugin.py scene-player --kind application --zone 7 \
+  --output build/scene_player
+./build/nova-config-manifest examples/plugins.ini
+./build/nova-plugin-fault-sim
+ctest --test-dir build --output-on-failure -R 'config|plugin_scaffold|plugin_fault'
+```
+
+See the [development guide](Development.md),
+[configuration contract](Plugin_Configuration.md) and
+[transport scenarios](Transport_Fault_Simulation.md). No hardware, packet
+capture, device/network operations or UniFi/gateway changes were used. Vendor
+SDK builds and proprietary Multiverse RF interoperability remain unverified.
+
+## Uniform plugins and Multiverse host integration (2026-10-09)
+
+The installed SDK now has named `nl_module` descriptors with declarative claims,
+provider dependencies and service lookup. Unordered manifests validate before
+startup, start providers first and roll back failure. Shutdown protects live
+dependents, pending transport receipts and optional backend-owned work. The
+plugin-only base registers transport, logging and application modules through
+one lifecycle and polls input before application ticks.
+
+Counter, radio-link transport, logger and Multiverse-model plugins are installed
+individually or through `NovaLink::nova_plugins`. The native Multiverse plugin
+segments 512-slot frames into eight bounded NLM1 payloads, retries queue pressure
+without changing frozen chunks, and reconstructs complete frames atomically.
+NLM1 is a native application format, not proprietary Multiverse RF.
+
+GCC Debug, Release and ASan/UBSan each passed all **35 CTest entries**. Clang
+passed all **19 entries** with the separate extended prototype disabled for its
+previously documented conversion warnings. The six changed/new base and plugin
+sources passed GCC `-fanalyzer` with strict C99/conversion warnings. A
+freestanding build installed successfully; the independent installed consumer
+linked the aggregate plugin target and ran a complete manifest startup,
+TX queue acceptance and shutdown, alongside the normalized engine checks.
+Doxygen generated the public reference with warnings treated as errors.
+
+New tests cover dependency graphs, missing providers, cycles, duplicate names,
+context-sharing opt-in, rollback, provider shutdown guards, callback reentry,
+bounded PUSH/PULL polling, queue backpressure, aborted commits, stale/empty
+receipts after latest-state replacement, lifecycle/observer ownership and legacy
+adapter compatibility. Multiverse plugin tests exercise the complete framed
+host/radio path for all 0..512 slot counts, independent NLM1 golden bytes and
+every-byte corruption, immutable retries/coalescing, loss/recovery, filters,
+explicit restart, deadlines, two independent universes and 65,540 updates.
+
+`nova-plugin-sim` bootstraps four plugins per host from manifests. It delivered
+301 counters and 25 exact complete DMX frames despite 141 dropped native
+fragments and 73 corrupted payloads, recovered the final 512-channel frame via
+a clean FULL and then reported link expiry through silence. This is a logical
+software scenario with no airtime/physical timing claim. The original counter
+simulation also runs through the common transport/module lifecycle.
+
+```sh
+./build/nova-plugin-sim
+ctest --test-dir build --output-on-failure
+cmake --build build --target docs
+```
+
+No hardware, device/network operations, or UniFi/gateway changes were used.
+Vendor SDK builds and actual Multiverse RF/fixture interoperability remain
+unverified. See the [plugin guide](../plugins/README.md) and
+[native Multiverse integration contract](Multiverse_Emulator.md).
+
+## Multiverse emulator checks (2026-10-09)
+
+Added the installed `NovaLink::nova_multiverse` normalized TX/RX engine, a
+separate test-only synthetic byte codec, seeded fault simulation, offline replay
+through the C receiver, a versioned synthetic log, and differential capture
+analysis. These implement hardware-independent host/adapter state and ownership;
+they do not establish City Theatrical RF compatibility.
+
+GCC Debug, Release and ASan/UBSan builds passed all **30 CTest entries**.
+Clang 22.1.8 passed all **14 entries** with `NOVA_BUILD_EXTENDED=OFF`.
+The full Clang build encountered existing enum-to-uint8 conversion errors in
+`experimental/extended/src/nl_zone.c:44` and `nl_host.c:239`; those prototype
+sources were not changed by this work. GCC still tests the prototype in all
+three complete configurations. The new C modules passed GCC `-fanalyzer`,
+strict C99/conversion warnings, and freestanding compilation. Doxygen generated
+the API reference with warnings as errors. The installed consumer linked the
+normalized engine and exercised a complete TX/RX update; the test codec/header
+were excluded from SDK installation. ESP-IDF/vendor and physical RF builds
+remain unverified.
+
+The new C suite covers all 0..512 slot counts with chunk sizes 1, 7, 64, 127,
+and 512; full, changed-span and empty refresh updates; 65,540 sequential updates
+including 16-bit wrap; failed/stale TX completions and frozen snapshots under
+host changes; overlapping/reordered chunks and conflicting metadata; missing
+bases, recovery, assembly/loss deadlines, session/universe filtering; duplicate
+rejection after expiry; backward timestamps, end-of-uint64 clocks and token
+exhaustion; malformed frames, truncations and each golden packet byte corrupted.
+Independent Python `struct`/`zlib` vectors validate C framing and CRC behavior.
+
+Replay tests run 0%, 20%, 75% and 100% loss scenarios, verify every complete frame
+against the exact stimulus snapshot, compare simulator/replay result counters,
+and check malformed logs, unknown profiles, wrong settings, silence expiry,
+CLI output and preservation of source captures. The eleven-observation versioned
+example reconstructs four exact frames before reporting link loss. The capture
+analyzer has seven unit tests, including distribution comparisons that keep
+PHY/frequency/length/CRC groups separate and account for unequal sample counts.
+
+Reproduce the emulator/demo using [its guide](Multiverse_Emulator.md), or run:
+
+```sh
+ctest --test-dir build --output-on-failure -R multiverse
+python3 tools/replay_multiverse.py examples/multiverse.synthetic.jsonl \
+  --end-us 104000 --summary-only
+python3 -m unittest discover -s tests -p test_rf_capture.py
+cmake -S . -B build/clang -DCMAKE_C_COMPILER=clang \
+  -DCMAKE_BUILD_TYPE=Debug -DNOVA_BUILD_EXTENDED=OFF
+cmake --build build/clang --parallel
+ctest --test-dir build/clang --output-on-failure
+```
+
+No hardware, real packet captures, network/device I/O, RF transmission, or
+UniFi/gateway changes were used. The real PHY, framing/integrity, hopping,
+mDMX/FEC, SHoW Key and control exchanges still need measurements and fixture
+validation. The emulator's sequence/session/chunk format and timing are local
+model assumptions; the synthetic codec is not an on-air implementation.
+
 ## Consolidation checks (2026-10-09)
 
 The root build now includes the installed SDK, the independent DMX library and

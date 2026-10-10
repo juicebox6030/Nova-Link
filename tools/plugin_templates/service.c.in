@@ -1,0 +1,58 @@
+#include "@PREFIX@_plugin.h"
+#include <string.h>
+
+static nl_status start(nl_host *host, nl_plugin_id plugin, void *opaque)
+{
+    @PREFIX@_context *context = opaque;
+    if (context == NULL || context->running) return NL_ERR_ARGUMENT;
+    context->running = true;
+    context->owner = host;
+    context->plugin = plugin;
+    return NL_OK;
+}
+
+static void poll(nl_host *host, nl_plugin_id plugin, uint64_t now_us, void *opaque)
+{
+    @PREFIX@_context *context = opaque;
+    (void)host;
+    (void)plugin;
+    (void)now_us;
+    ++context->polls; /* Add bounded service input work here. */
+}
+
+static void tick(nl_host *host, nl_plugin_id plugin, uint64_t now_us, void *opaque)
+{
+    @PREFIX@_context *context = opaque;
+    (void)host;
+    (void)plugin;
+    (void)now_us;
+    ++context->ticks; /* Publish application-facing service state here. */
+}
+
+static void stop(nl_host *host, nl_plugin_id plugin, void *opaque)
+{
+    @PREFIX@_context *context = opaque;
+    /* Cancel/drain future service-owned resources, including failed starts. */
+    if (context == NULL || context->owner != host || context->plugin != plugin) return;
+    context->running = false;
+    context->owner = NULL;
+}
+
+nl_status @PREFIX@_init(@PREFIX@_context *context)
+{
+    if (context == NULL) return NL_ERR_ARGUMENT;
+    if (context->running) return NL_ERR_BUSY;
+    memset(context, 0, sizeof(*context));
+    return NL_OK;
+}
+
+nl_module @PREFIX@_module(@PREFIX@_context *context)
+{
+@DEPENDENCY_DECL@    nl_module module = {
+        .name = "@NAME@", .version = "1", .kind = NL_MODULE_SERVICE,
+@DEPENDENCY_FIELDS@        .service = context,
+        .hooks = {.start = start, .poll = poll, .tick = tick,
+                  .stop = stop, .context = context}
+    };
+    return module;
+}

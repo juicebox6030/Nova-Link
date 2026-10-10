@@ -1,0 +1,73 @@
+#include "@PREFIX@_plugin.h"
+#include <stdio.h>
+
+#define CHECK(expression) do { if (!(expression)) { \
+    fprintf(stderr, "check failed at line %d: %s\n", __LINE__, #expression); return 1; \
+} } while (0)
+
+/* Test-only provider: accepts local ownership without physical transmission. */
+static nl_status accept(void *context, const nl_fragment *fragment)
+{
+    (void)context;
+    return fragment->payload_size == 1u ? NL_OK : NL_ERR_SIZE;
+}
+
+static nl_status transport_start(nl_host *host, nl_plugin_id plugin, void *context)
+{
+    (void)context;
+    return nl_host_attach_transport(host, plugin, accept, NULL);
+}
+
+static void transport_stop(nl_host *host, nl_plugin_id plugin, void *context)
+{
+    (void)context;
+    (void)nl_host_detach_transport(host, plugin);
+}
+
+int main(void)
+{
+    nl_host host, other;
+    @PREFIX@_context context = {0};
+    nl_module module;
+@PROVIDER_DEFINITIONS@
+    const nl_module *manifest[] = {&module@PROVIDER_MANIFEST@};
+    nl_module_instance instances[sizeof(manifest) / sizeof(manifest[0])] = {{0}};
+    nl_module_instance rejected = {0};
+    nl_fragment fragment = {.origin = 2u, .zone = @ZONE@u, .payload_size = 1u, .payload = {77u}};
+    CHECK(@PREFIX@_init(&context, @ZONE@u, true) == NL_OK);
+    module = @PREFIX@_module(&context);
+    CHECK(nl_host_init_plugins(&host, 1u, 1000u) == NL_OK);
+    CHECK(nl_modules_start(&host, manifest, instances, sizeof(instances) / sizeof(instances[0])) == NL_OK);
+    CHECK(@PREFIX@_init(&context, @ZONE@u, true) == NL_ERR_BUSY);
+    CHECK(@PREFIX@_submit(&context, 42u) == NL_OK);
+    CHECK(nl_host_poll(&host, 1u) == NL_OK);
+    CHECK(context.accepted == 1u && !context.pending);
+    /* A failed second registration must not reset the first context. */
+    CHECK(nl_host_init_plugins(&other, 3u, 1000u) == NL_OK);
+    {
+        nl_module invalid = @PREFIX@_module(NULL);
+        invalid.requires = NULL;
+        invalid.require_count = 0u;
+        CHECK(nl_module_register(&other, &invalid, &rejected) == NL_ERR_ARGUMENT);
+    }
+    {
+        nl_module duplicate = module;
+        duplicate.requires = NULL;
+        duplicate.require_count = 0u;
+        CHECK(nl_module_register(&other, &duplicate, &rejected) == NL_ERR_ARGUMENT);
+        CHECK(context.running && context.owner == &host);
+    }
+    CHECK(@PREFIX@_submit(&context, 43u) == NL_OK && context.pending);
+    CHECK(nl_modules_stop(instances, sizeof(instances) / sizeof(instances[0])) == NL_OK);
+    CHECK(!context.pending); /* Stop cancels an unsent latest value. */
+    CHECK(!context.running && host.send == NULL);
+    /* Reinitialize as RX: read-only claim receives but cannot submit. */
+    CHECK(@PREFIX@_init(&context, @ZONE@u, false) == NL_OK);
+    module = @PREFIX@_module(&context);
+    CHECK(nl_modules_start(&host, manifest, instances, sizeof(instances) / sizeof(instances[0])) == NL_OK);
+    CHECK(@PREFIX@_submit(&context, 99u) == NL_ERR_ARGUMENT);
+    CHECK(nl_host_receive(&host, &fragment, 2u) == NL_OK);
+    CHECK(context.received == 1u && context.received_value == 77u);
+    CHECK(nl_modules_stop(instances, sizeof(instances) / sizeof(instances[0])) == NL_OK);
+    return 0;
+}

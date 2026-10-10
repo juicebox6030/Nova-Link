@@ -1,0 +1,26 @@
+#ifndef @GUARD@_PLUGIN_H
+#define @GUARD@_PLUGIN_H
+
+#include "nova_link/module.h"
+
+typedef struct {
+    nl_module_zone claim;
+    bool transmitter;
+    bool running;
+    nl_host *owner;
+    nl_plugin_id plugin;
+    bool pending;
+    uint8_t next_value;
+    uint8_t received_value;
+    uint64_t accepted;
+    uint64_t received;
+    nl_status last_status;
+} @PREFIX@_context;
+
+/* Zero-initialize first. Do not move/reinitialize live storage. */
+nl_status @PREFIX@_init(@PREFIX@_context *context, uint8_t zone, bool transmitter);
+nl_module @PREFIX@_module(@PREFIX@_context *context);
+/* Latest-value coalescing is suitable for this self-contained one-byte example. */
+nl_status @PREFIX@_submit(@PREFIX@_context *context, uint8_t value);
+
+#endif

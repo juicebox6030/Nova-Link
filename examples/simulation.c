@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "nova_link/nova_link.h"
-#include "counter.h"
+#include "nova_link/counter_plugin.h"
+#include "nova_link/radio_plugin.h"
 
 static void require(nl_status status, const char *operation)
 {
@@ -12,46 +13,63 @@ static void require(nl_status status, const char *operation)
     }
 }
 
-static nl_status push(void *context, const nl_fragment *fragment)
+static nl_status exchange(void *context, const nl_frame *request,
+                          nl_frame *response, nl_pull_token *token)
 {
-    nl_frame frame, decoded;
+    nl_frame decoded;
     uint8_t bytes[NL_FRAME_MAX];
     size_t size;
-    nl_status status = nl_frame_from_fragment(NL_COMMAND_PUSH, fragment, &frame);
-    if (status != NL_OK) return status;
-    status = nl_frame_encode(&frame, bytes, sizeof(bytes), &size);
+    nl_status status = nl_frame_encode(request, bytes, sizeof(bytes), &size);
     if (status != NL_OK) return status;
     status = nl_frame_decode(bytes, size, &decoded);
-    return status == NL_OK ? nl_radio_handle_frame(context, &decoded, NULL, NULL) : status;
+    if (status != NL_OK) return status;
+    status = nl_radio_handle_frame(context, &decoded, response, token);
+    if (status != NL_OK || request->command == NL_COMMAND_PUSH) return status;
+    status = nl_frame_encode(response, bytes, sizeof(bytes), &size);
+    return status == NL_OK ? nl_frame_decode(bytes, size, response) : status;
+}
+
+static nl_status commit(void *context, const nl_frame *response, nl_pull_token token)
+{
+    return nl_radio_commit_pull(context, response, token);
 }
 
 int main(void)
 {
     nl_host sender, receiver;
     nl_radio tx_radio, rx_radio;
-    nl_counter_context tx = {true, 1, 0, 0, 0, NL_OK};
-    nl_counter_context rx = {false, 1, 0, 0, 0, NL_OK};
-    nl_plugin tx_plugin = nl_counter_plugin(&tx), rx_plugin = nl_counter_plugin(&rx);
-    nl_plugin_id tx_id, rx_id;
+    nl_counter_context tx = {.transmitter = true, .zone = 1};
+    nl_counter_context rx = {.zone = 1};
+    nl_radio_link tx_link, rx_link;
+    nl_radio_link_config tx_config = {.exchange = exchange, .commit = commit,
+                                      .context = &tx_radio, .poll_budget = 16};
+    nl_radio_link_config rx_config = {.exchange = exchange, .commit = commit,
+                                      .context = &rx_radio, .poll_budget = 16};
+    nl_module tx_module = nl_counter_module(&tx), rx_module = nl_counter_module(&rx);
+    nl_module tx_transport, rx_transport;
+    const nl_module *tx_manifest[] = {&tx_module, &tx_transport};
+    const nl_module *rx_manifest[] = {&rx_module, &rx_transport};
+    nl_module_instance tx_instances[2] = {0}, rx_instances[2] = {0};
     uint8_t bytes[NL_FRAME_MAX];
     nl_fragment outgoing, incoming;
-    nl_frame pull = {0}, response, decoded;
-    nl_pull_token token;
     nl_window window;
     size_t size;
     unsigned i;
     uint64_t now_us = 0;
-    pull.command = NL_COMMAND_PULL;
     require(nl_radio_init(&tx_radio, 2, 1000, 500, 0), "TX radio init");
     require(nl_radio_init(&rx_radio, 2, 1000, 500, 0), "RX radio init");
     require(nl_radio_set_rx_policy(&rx_radio, NL_RX_LATEST_PER_STREAM), "Counter RX policy");
-    require(nl_host_init(&sender, 1, 0, push, &tx_radio), "Sender init");
-    require(nl_host_init(&receiver, 2, 0, push, &rx_radio), "Receiver init");
-    require(nl_host_register(&sender, &tx_plugin, &tx_id), "Register counter TX");
-    require(nl_host_register(&receiver, &rx_plugin, &rx_id), "Register counter RX");
+    require(nl_host_init_plugins(&sender, 1, 0), "Sender base init");
+    require(nl_host_init_plugins(&receiver, 2, 0), "Receiver base init");
+    require(nl_radio_link_init(&tx_link, &tx_config), "TX transport init");
+    require(nl_radio_link_init(&rx_link, &rx_config), "RX transport init");
+    tx_transport = nl_radio_link_module(&tx_link);
+    rx_transport = nl_radio_link_module(&rx_link);
+    require(nl_modules_start(&sender, tx_manifest, tx_instances, 2), "Start TX manifest");
+    require(nl_modules_start(&receiver, rx_manifest, rx_instances, 2), "Start RX manifest");
     puts("NOVA-LINK in-memory simulation (logical time, two copies per RF fragment)");
     for (i = 0; i < 300; ++i) {
-        require(nl_host_tick(&sender, now_us), "Counter tick");
+        require(nl_host_poll(&sender, now_us), "Sender poll");
         require(tx.last_status, "Counter send");
         require(nl_radio_next_window(&tx_radio, now_us, &window), "Zone window");
         require(nl_radio_prepare_tx(&tx_radio, now_us, &outgoing, &window), "Prepare RF TX");
@@ -60,12 +78,9 @@ int main(void)
         require(nl_radio_receive(&rx_radio, &incoming, now_us), "First RF copy");
         if (nl_radio_receive(&rx_radio, &incoming, now_us) != NL_ERR_DUPLICATE) return EXIT_FAILURE;
         require(nl_radio_pop_tx(&tx_radio, window.zone, &outgoing), "Complete TX ownership");
-        require(nl_radio_handle_frame(&rx_radio, &pull, &response, &token), "Host pull");
-        require(nl_frame_encode(&response, bytes, sizeof(bytes), &size), "Pull serialize");
-        require(nl_frame_decode(bytes, size, &decoded), "Pull deserialize");
-        require(nl_frame_to_fragment(&decoded, &incoming), "Pull fragment");
-        require(nl_host_receive_frame(&receiver, &decoded, now_us), "Plugin dispatch");
-        require(nl_radio_commit_pull(&rx_radio, &response, token), "Commit host pull");
+        require(nl_host_poll(&receiver, now_us), "Receiver transport/plugin poll");
+        if (rx_link.last_status != NL_OK && rx_link.last_status != NL_ERR_EMPTY)
+            require(rx_link.last_status, "Receive handoff");
         if (rx.deliveries != i + 1u || rx.last_value != i) return EXIT_FAILURE;
         now_us += window.duration_us;
     }
@@ -74,7 +89,7 @@ int main(void)
     printf("Sequence wrapped at 256. Logical duration=%" PRIu64 " us.\n", now_us);
     printf("Portable state sizes on this build: host=%zu bytes, radio=%zu bytes.\n",
         sizeof(nl_host), sizeof(nl_radio));
-    require(nl_host_unregister(&sender, tx_id), "Stop TX plugin");
-    require(nl_host_unregister(&receiver, rx_id), "Stop RX plugin");
+    require(nl_modules_stop(tx_instances, 2), "Stop TX manifest");
+    require(nl_modules_stop(rx_instances, 2), "Stop RX manifest");
     return EXIT_SUCCESS;
 }

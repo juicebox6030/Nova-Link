@@ -1,0 +1,113 @@
+#include "@PREFIX@_plugin.h"
+#include <stdio.h>
+
+#define CHECK(expression) do { if (!(expression)) { \
+    fprintf(stderr, "check failed at line %d: %s\n", __LINE__, #expression); return 1; \
+} } while (0)
+
+typedef struct {
+    unsigned starts;
+    unsigned stops;
+    unsigned sends;
+    unsigned polls;
+    bool busy;
+    bool fail_start;
+} smoke_backend;
+
+static nl_status send(void *opaque, const nl_fragment *fragment)
+{
+    smoke_backend *backend = opaque;
+    (void)fragment;
+    ++backend->sends;
+    return NL_OK;
+}
+
+static nl_status start(void *opaque)
+{
+    smoke_backend *backend = opaque;
+    ++backend->starts;
+    return backend->fail_start ? NL_ERR_UNSUPPORTED : NL_OK;
+}
+
+static void stop(void *opaque)
+{
+    smoke_backend *backend = opaque;
+    ++backend->stops;
+    backend->busy = false; /* Also cancel ownership during startup rollback. */
+}
+
+static nl_status can_stop(void *opaque)
+{
+    smoke_backend *backend = opaque;
+    return backend->busy ? NL_ERR_BUSY : NL_OK;
+}
+
+static void poll(nl_host *host, uint64_t now_us, void *opaque)
+{
+    smoke_backend *backend = opaque;
+    (void)host;
+    (void)now_us;
+    ++backend->polls;
+}
+
+int main(void)
+{
+    nl_host host, other;
+    @PREFIX@_context context = {0};
+    smoke_backend backend = {0};
+    @PREFIX@_backend config = {.send = send, .start = start, .stop = stop,
+                              .can_stop = can_stop, .poll = poll, .context = &backend};
+    nl_module module;
+@PROVIDER_DEFINITIONS@
+    const nl_module *manifest[] = {&module@PROVIDER_MANIFEST@};
+    nl_module_instance instances[sizeof(manifest) / sizeof(manifest[0])] = {{0}};
+    nl_module_instance rejected = {0};
+    nl_fragment fragment = {.origin = 1u, .zone = 1u};
+    CHECK(@PREFIX@_init(&context, &config) == NL_OK);
+    module = @PREFIX@_module(&context);
+    CHECK(nl_host_init_plugins(&host, 1u, 1000u) == NL_OK);
+    CHECK(nl_modules_start(&host, manifest, instances, sizeof(instances) / sizeof(instances[0])) == NL_OK);
+    CHECK(@PREFIX@_init(&context, &config) == NL_ERR_BUSY);
+    CHECK(host.send != NULL && host.send(host.send_context, &fragment) == NL_OK);
+    CHECK(nl_host_poll(&host, 1u) == NL_OK);
+    CHECK(backend.sends == 1u && backend.polls == 1u && backend.starts == 1u);
+    {
+        nl_host occupied;
+        @PREFIX@_context competing = {0};
+        nl_module duplicate;
+        CHECK(@PREFIX@_init(&competing, &config) == NL_OK);
+        duplicate = @PREFIX@_module(&competing);
+        duplicate.requires = NULL;
+        duplicate.require_count = 0u;
+        CHECK(nl_host_init(&occupied, 4u, 1000u, send, &backend) == NL_OK);
+        CHECK(nl_module_register(&occupied, &duplicate, &rejected) == NL_ERR_CONFLICT);
+        CHECK(backend.starts == 1u && backend.stops == 0u && context.running);
+    }
+    CHECK(nl_host_init_plugins(&other, 2u, 1000u) == NL_OK);
+    {
+        nl_module invalid = @PREFIX@_module(NULL);
+        invalid.requires = NULL;
+        invalid.require_count = 0u;
+        CHECK(nl_module_register(&other, &invalid, &rejected) == NL_ERR_ARGUMENT);
+    }
+    {
+        nl_module duplicate = module;
+        duplicate.requires = NULL;
+        duplicate.require_count = 0u;
+        CHECK(nl_module_register(&other, &duplicate, &rejected) == NL_ERR_ARGUMENT);
+        CHECK(context.running && context.owner == &host && backend.stops == 0u);
+    }
+    backend.busy = true;
+    CHECK(nl_modules_stop(instances, sizeof(instances) / sizeof(instances[0])) == NL_ERR_BUSY);
+    CHECK(context.running && host.send != NULL && backend.stops == 0u);
+    backend.busy = false;
+    CHECK(nl_modules_stop(instances, sizeof(instances) / sizeof(instances[0])) == NL_OK);
+    CHECK(!context.running && host.send == NULL && backend.stops == 1u);
+    /* Partially failed backend startup invokes cleanup despite a busy veto. */
+    backend.fail_start = true;
+    backend.busy = true;
+    CHECK(nl_modules_start(&host, manifest, instances, sizeof(instances) / sizeof(instances[0])) == NL_ERR_UNSUPPORTED);
+    CHECK(!context.running && !context.backend_started && host.send == NULL);
+    CHECK(backend.starts == 2u && backend.stops == 2u && !backend.busy);
+    return 0;
+}

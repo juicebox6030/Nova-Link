@@ -2,17 +2,34 @@ NOTE: The portable implementation and current limitations are described in `Deve
 
 === Plugin API and Development Workflow
 
-Nova-Link provides a C-based API for plugin development on the ESP32-S3.
+Nova-Link provides one compiled C plugin API for ESP32-S3 applications and
+portable desktop development. Application, transport, and service plugins use
+the same module metadata and lifecycle.
 
 ==== API Responsibilities
-- Zone Managment
+- Named modules and dependencies
+- Declarative zone claims
 - Manage plugin data fragments
-- Zone 0 Managment
+- Zone 0 management
 - Zone 0 is always accessible.
+- Poll/tick separation and explicit transport ownership
 
 ==== Workflow
-1. Set up ESP-IDF
-2. Write plugin init and handler
-3. Register plugin
-4. Build and flash
-5. Test and iterate
+1. Start with `tools/new_plugin.py` or the compiled counter example
+2. Allocate stable context and define plugin hooks
+3. Declare module name/version/kind, claims, and named dependencies
+4. Start the module manifest; check the returned status before running the event loop
+5. Call `nl_host_poll()` with monotonic timestamps; it polls inputs then ticks plugins
+6. Verify lifecycle, backpressure, and payload handling in desktop simulation
+7. Add the board backend and use ESP-IDF when physical I/O is needed
+
+`tools/new_plugin.py` generates application, service and transport starters with
+a standalone installed-SDK CMake project and a lifecycle smoke test.
+`nova-config-manifest examples/plugins.ini` demonstrates validated offline startup
+configuration using a configuration service plugin and caller-selected factories.
+These implement the Host CLI configuration and boilerplate goals in
+`requirements.adoc`; live reload and dynamic code loading remain future work.
+
+See `Development.md`, `plugin_system.adoc`, and `plugins/README.md`. The separate
+`experimental/extended/` prototype uses a different API and wire format and is
+not linked with the installed native SDK.

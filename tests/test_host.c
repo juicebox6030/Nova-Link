@@ -59,7 +59,7 @@ static void receive(nl_host *host, nl_plugin_id id, const nl_fragment *value, vo
 static void tick(nl_host *host, nl_plugin_id id, uint64_t now_us, void *context)
 {
     plugin_context *state = context;
-    (void)now_us;
+    CHECK(host->callback_now_us == now_us);
     ++state->ticks;
     STATUS(nl_host_send(host, id, 0, 0, NULL, 0), NL_OK);
 }
@@ -77,7 +77,8 @@ static void logger(void *context, nl_log_event event, nl_status status, nl_plugi
 
 static nl_plugin make_plugin(plugin_context *context)
 {
-    nl_plugin plugin = {start, receive, tick, stop, context};
+    nl_plugin plugin = {.start = start, .receive = receive, .tick = tick,
+                        .stop = stop, .context = context};
     return plugin;
 }
 

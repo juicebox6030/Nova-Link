@@ -1,0 +1,71 @@
+#include "@PREFIX@_plugin.h"
+#include <string.h>
+
+static nl_status start(nl_host *host, nl_plugin_id plugin, void *opaque)
+{
+    @PREFIX@_context *context = opaque;
+    nl_status status;
+    if (context == NULL || context->running || context->backend.send == NULL) return NL_ERR_ARGUMENT;
+    /* Claim ownership before touching a backend: failed duplicate startup must
+     * not initialize or stop another registration's backend. */
+    status = nl_host_attach_transport(host, plugin, context->backend.send, context->backend.context);
+    if (status != NL_OK) return status;
+    context->running = true;
+    context->owner = host;
+    context->plugin = plugin;
+    context->backend_started = true;
+    if (context->backend.start != NULL) {
+        status = context->backend.start(context->backend.context);
+        if (status != NL_OK) return status; /* Module wrapper invokes stop. */
+    }
+    return NL_OK;
+}
+
+static void poll(nl_host *host, nl_plugin_id plugin, uint64_t now_us, void *opaque)
+{
+    @PREFIX@_context *context = opaque;
+    (void)plugin;
+    /* The backend may dispatch bounded RX with nl_host_receive/frame(). */
+    if (context->backend.poll != NULL) context->backend.poll(host, now_us, context->backend.context);
+}
+
+static nl_status can_stop(nl_host *host, nl_plugin_id plugin, void *opaque)
+{
+    @PREFIX@_context *context = opaque;
+    (void)host;
+    (void)plugin;
+    return context->backend.can_stop != NULL ? context->backend.can_stop(context->backend.context) : NL_OK;
+}
+
+static void stop(nl_host *host, nl_plugin_id plugin, void *opaque)
+{
+    @PREFIX@_context *context = opaque;
+    if (context == NULL || context->owner != host || context->plugin != plugin) return;
+    (void)nl_host_detach_transport(host, plugin);
+    /* Startup rollback bypasses can_stop; stop must cancel/drain all ownership. */
+    if (context->backend_started && context->backend.stop != NULL) {
+        context->backend.stop(context->backend.context);
+    }
+    context->backend_started = false;
+    context->running = false;
+    context->owner = NULL;
+}
+
+nl_status @PREFIX@_init(@PREFIX@_context *context, const @PREFIX@_backend *backend)
+{
+    if (context == NULL || backend == NULL || backend->send == NULL) return NL_ERR_ARGUMENT;
+    if (context->running || context->backend_started) return NL_ERR_BUSY;
+    memset(context, 0, sizeof(*context));
+    context->backend = *backend;
+    return NL_OK;
+}
+
+nl_module @PREFIX@_module(@PREFIX@_context *context)
+{
+@DEPENDENCY_DECL@    nl_module module = {
+        .name = "@NAME@", .version = "1", .kind = NL_MODULE_TRANSPORT,
+@DEPENDENCY_FIELDS@        .hooks = {.start = start, .poll = poll, .stop = stop,
+                  .can_stop = can_stop, .context = context}
+    };
+    return module;
+}

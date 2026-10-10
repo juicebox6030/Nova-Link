@@ -1,0 +1,27 @@
+#ifndef @GUARD@_PLUGIN_H
+#define @GUARD@_PLUGIN_H
+
+#include "nova_link/module.h"
+
+typedef struct {
+    nl_send_fn send; /* Error must not enqueue; OK accepts local TX ownership. */
+    void (*poll)(nl_host *host, uint64_t now_us, void *context);
+    nl_status (*start)(void *context);
+    void (*stop)(void *context); /* Cancel/drain even after a failed start. */
+    nl_status (*can_stop)(void *context); /* BUSY while backend owns work. */
+    void *context;
+} @PREFIX@_backend;
+
+typedef struct {
+    @PREFIX@_backend backend;
+    bool running;
+    nl_host *owner;
+    nl_plugin_id plugin;
+    bool backend_started;
+} @PREFIX@_context;
+
+/* Zero-initialize first; backend/context outlive successful shutdown. */
+nl_status @PREFIX@_init(@PREFIX@_context *context, const @PREFIX@_backend *backend);
+nl_module @PREFIX@_module(@PREFIX@_context *context);
+
+#endif

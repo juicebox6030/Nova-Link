@@ -1,0 +1,76 @@
+#include "@PREFIX@_plugin.h"
+#include <string.h>
+
+static nl_status start(nl_host *host, nl_plugin_id plugin, void *opaque)
+{
+    @PREFIX@_context *context = opaque;
+    if (context == NULL || context->running) return NL_ERR_ARGUMENT;
+    context->running = true;
+    context->owner = host;
+    context->plugin = plugin;
+    return NL_OK; /* Declarative claims are already owned by this module. */
+}
+
+static void receive(nl_host *host, nl_plugin_id plugin, const nl_fragment *fragment, void *opaque)
+{
+    @PREFIX@_context *context = opaque;
+    (void)host;
+    (void)plugin;
+    if (fragment->zone != context->claim.zone || fragment->payload_size != 1u) return;
+    context->received_value = fragment->payload[0];
+    ++context->received;
+}
+
+static void tick(nl_host *host, nl_plugin_id plugin, uint64_t now_us, void *opaque)
+{
+    @PREFIX@_context *context = opaque;
+    (void)now_us;
+    if (!context->transmitter || !context->pending) return;
+    context->last_status = nl_host_send(host, plugin, context->claim.zone, 0,
+                                       &context->next_value, 1u);
+    if (context->last_status == NL_OK) {
+        context->pending = false;
+        ++context->accepted;
+    }
+}
+
+static void stop(nl_host *host, nl_plugin_id plugin, void *opaque)
+{
+    @PREFIX@_context *context = opaque;
+    /* Cancel this unsent local value. Host releases declarative claims. */
+    if (context == NULL || context->owner != host || context->plugin != plugin) return;
+    context->pending = false;
+    context->running = false;
+    context->owner = NULL;
+}
+
+nl_status @PREFIX@_init(@PREFIX@_context *context, uint8_t zone, bool transmitter)
+{
+    if (context == NULL || zone == 0u || zone >= NL_ZONE_COUNT) return NL_ERR_ARGUMENT;
+    if (context->running) return NL_ERR_BUSY;
+    memset(context, 0, sizeof(*context));
+    context->claim.zone = zone;
+    context->claim.mode = transmitter ? NL_ZONE_EXCLUSIVE : NL_ZONE_READ_ONLY;
+    context->transmitter = transmitter;
+    return NL_OK;
+}
+
+nl_status @PREFIX@_submit(@PREFIX@_context *context, uint8_t value)
+{
+    if (context == NULL || !context->transmitter) return NL_ERR_ARGUMENT;
+    context->next_value = value;
+    context->pending = true;
+    return NL_OK;
+}
+
+nl_module @PREFIX@_module(@PREFIX@_context *context)
+{
+@DEPENDENCY_DECL@    nl_module module = {
+        .name = "@NAME@", .version = "1", .kind = NL_MODULE_APPLICATION,
+@DEPENDENCY_FIELDS@        .zones = context != NULL ? &context->claim : NULL,
+        .zone_count = context != NULL ? 1u : 0u,
+        .hooks = {.start = start, .receive = receive, .tick = tick,
+                  .stop = stop, .context = context}
+    };
+    return module;
+}

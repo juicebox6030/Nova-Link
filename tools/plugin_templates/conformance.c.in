@@ -1,0 +1,283 @@
+#include "@PREFIX@_plugin.h"
+#include "nova_link/plugin_conformance.h"
+#include <stdio.h>
+#include <string.h>
+
+/* Adapt the actual generated plugin. Placeholder providers have no external I/O. */
+#define ROLE @CONFORMANCE_ROLE@
+#define REQUIRE(expression) do { if (!(expression)) return NL_ERR_CONFLICT; } while (0)
+
+typedef struct {
+    nl_module module, providers[15];
+    @PREFIX@_context plugin;
+    uint64_t attempts, accepted;
+    bool pressure, owned, hold_acceptance, driver_pending, captured, mismatch;
+    uint8_t retained[NL_FRAGMENT_MAX], queued[NL_FRAGMENT_MAX];
+    size_t retained_size, queued_size;
+#if ROLE == 3
+    @PREFIX@_backend backend;
+    nl_module driver;
+    nl_module_zone driver_zone;
+#endif
+} fixture_state;
+
+#if ROLE != 2
+static nl_status send(void *opaque, const nl_fragment *fragment)
+{
+    fixture_state *state = opaque;
+    uint8_t bytes[NL_FRAGMENT_MAX];
+    size_t size = 0u;
+    nl_status status = nl_fragment_encode(fragment, bytes, sizeof(bytes), &size);
+    if (status != NL_OK) return status;
+    ++state->attempts;
+    if (!state->captured) {
+        memcpy(state->retained, bytes, size);
+        state->retained_size = size;
+        state->captured = true;
+    } else if (size != state->retained_size || memcmp(bytes, state->retained, size) != 0) {
+        state->mismatch = true;
+    }
+    if (state->pressure) return NL_ERR_FULL;
+    ++state->accepted;
+    if (state->hold_acceptance) {
+        memcpy(state->queued, bytes, size);
+        state->queued_size = size;
+        state->owned = true; /* Actual accepted bytes await simulated completion. */
+    }
+    return NL_OK;
+}
+#endif
+
+#if ROLE == 1
+static nl_status transport_start(nl_host *host, nl_plugin_id plugin, void *opaque)
+{
+    return nl_host_attach_transport(host, plugin, send, opaque);
+}
+
+static void transport_stop(nl_host *host, nl_plugin_id plugin, void *opaque)
+{
+    (void)opaque;
+    (void)nl_host_detach_transport(host, plugin);
+}
+#endif
+
+#if ROLE == 3
+static nl_status backend_start(void *opaque)
+{
+    (void)opaque;
+    return NL_OK;
+}
+
+static void backend_stop(void *opaque)
+{
+    fixture_state *state = opaque;
+    state->owned = false;
+    state->queued_size = 0u;
+}
+
+static nl_status backend_can_stop(void *opaque)
+{
+    const fixture_state *state = opaque;
+    return state->owned ? NL_ERR_BUSY : NL_OK;
+}
+
+static void driver_tick(nl_host *host, nl_plugin_id plugin, uint64_t now_us, void *opaque)
+{
+    fixture_state *state = opaque;
+    const uint8_t value = 42u;
+    (void)now_us;
+    if (state->driver_pending && nl_host_send(host, plugin, 1u, 0u, &value, 1u) == NL_OK)
+        state->driver_pending = false;
+}
+#endif
+
+static nl_status prepare(void *opaque, nl_conformance_fixture *fixture,
+                         nl_conformance_case test_case)
+{
+    fixture_state *state = opaque;
+    nl_status status;
+    (void)test_case;
+    memset(state, 0, sizeof(*state));
+#if ROLE == 1
+    status = @PREFIX@_init(&state->plugin, @ZONE@u, true);
+#elif ROLE == 2
+    status = @PREFIX@_init(&state->plugin);
+#else
+    state->backend = (@PREFIX@_backend){.send = send, .start = backend_start,
+        .stop = backend_stop, .can_stop = backend_can_stop, .context = state};
+    status = @PREFIX@_init(&state->plugin, &state->backend);
+#endif
+    if (status != NL_OK) return status;
+    state->module = @PREFIX@_module(&state->plugin);
+    fixture->modules[0] = &state->module;
+    fixture->subject = 0u;
+    fixture->count = @CONFORMANCE_COUNT@u;
+    if (fixture->count >= NL_PLUGIN_MAX) return NL_ERR_FULL;
+    fixture->max_attempts_per_poll = 1u;
+    fixture->recovery_polls = 1u;
+@CONFORMANCE_PROVIDER_SETUP@
+#if ROLE == 3
+    if (fixture->count >= NL_PLUGIN_MAX - 1u) return NL_ERR_FULL;
+    state->driver_zone = (nl_module_zone){1u, NL_ZONE_EXCLUSIVE};
+    state->driver = (nl_module){.name = "__generated-conformance-driver", .version = "1",
+        .kind = NL_MODULE_APPLICATION, .zones = &state->driver_zone, .zone_count = 1u,
+        .hooks = {.tick = driver_tick, .context = state}};
+    fixture->modules[fixture->count++] = &state->driver;
+#endif
+    return NL_OK;
+}
+
+static nl_status inspect(void *opaque, const nl_conformance_fixture *fixture,
+                         nl_conformance_checkpoint checkpoint)
+{
+    const fixture_state *state = opaque;
+    if (checkpoint == NL_CONFORMANCE_STOPPED || checkpoint == NL_CONFORMANCE_ROLLED_BACK) {
+        REQUIRE(!state->plugin.running && state->plugin.owner == NULL && !state->owned && state->queued_size == 0u);
+#if ROLE == 1
+        REQUIRE(!state->plugin.pending);
+#elif ROLE == 3
+        REQUIRE(!state->plugin.backend_started && fixture->host.send == NULL);
+#endif
+        return NL_OK;
+    }
+    REQUIRE(state->plugin.running && state->plugin.owner == &fixture->host);
+#if ROLE == 3
+    if (checkpoint == NL_CONFORMANCE_BLOCKED && state->hold_acceptance) {
+        REQUIRE(state->owned && state->queued_size == 3u && state->queued[2] == 42u);
+        REQUIRE(fixture->host.send != NULL);
+        return NL_OK;
+    }
+#endif
+    if (checkpoint == NL_CONFORMANCE_RESTARTED) {
+#if ROLE == 2
+        REQUIRE(state->plugin.polls == 1u && state->plugin.ticks == 1u);
+#else
+        REQUIRE(state->attempts == 1u && state->accepted == 1u && !state->mismatch);
+        REQUIRE(state->captured && state->retained_size == 3u);
+        REQUIRE(state->retained[1] == 0u && state->retained[2] == 42u);
+#if ROLE == 1
+        REQUIRE(!state->plugin.pending && state->plugin.accepted == 1u);
+#else
+        REQUIRE(!state->driver_pending);
+#endif
+#endif
+    }
+#if ROLE != 2
+    if (checkpoint == NL_CONFORMANCE_BLOCKED || checkpoint == NL_CONFORMANCE_RECOVERED) {
+        const uint8_t zone = ROLE == 1 ? @ZONE@u : 1u;
+        REQUIRE(state->captured && !state->mismatch && state->retained_size == 3u);
+        REQUIRE(state->retained[1] == 0u && state->retained[2] == 42u);
+        if (checkpoint == NL_CONFORMANCE_BLOCKED) {
+            REQUIRE(state->accepted == 0u && fixture->host.next_sequence[zone] == 0u);
+#if ROLE == 1
+            REQUIRE(state->plugin.pending && state->plugin.next_value == 42u);
+#else
+            REQUIRE(state->driver_pending);
+#endif
+        } else {
+            REQUIRE(state->accepted == 1u && fixture->host.next_sequence[zone] == 1u);
+#if ROLE == 1
+            REQUIRE(!state->plugin.pending && state->plugin.accepted == 1u);
+#else
+            REQUIRE(!state->driver_pending);
+#endif
+        }
+    }
+#endif
+    return NL_OK;
+}
+
+#if ROLE != 2
+static nl_status control(void *opaque, nl_conformance_fixture *fixture,
+                         nl_conformance_action action)
+{
+    fixture_state *state = opaque;
+    (void)fixture;
+    switch (action) {
+    case NL_CONFORMANCE_PENDING_ON: {
+        const nl_fragment fragment = {.origin = 1u, .zone = 1u,
+            .payload_size = 1u, .payload = {42u}};
+        state->hold_acceptance = true;
+        return fixture->host.send(fixture->host.send_context, &fragment);
+    }
+    case NL_CONFORMANCE_PENDING_OFF:
+        state->owned = false;
+        state->hold_acceptance = false;
+        state->queued_size = 0u;
+        return NL_OK;
+    case NL_CONFORMANCE_PRESSURE_ON: state->pressure = true; return NL_OK;
+    case NL_CONFORMANCE_PRESSURE_OFF: state->pressure = false; return NL_OK;
+    case NL_CONFORMANCE_SEED_WORK:
+#if ROLE == 1
+        return @PREFIX@_submit(&state->plugin, 42u);
+#else
+        state->driver_pending = true;
+        return NL_OK;
+#endif
+    }
+    return NL_ERR_ARGUMENT;
+}
+
+static nl_status measure(void *opaque, const nl_conformance_fixture *fixture,
+                         nl_conformance_metrics *metrics)
+{
+    const fixture_state *state = opaque;
+    (void)fixture;
+    metrics->attempts = state->attempts;
+    metrics->accepted = state->accepted;
+    return NL_OK;
+}
+#endif
+
+static nl_status reinitialize(void *opaque, nl_conformance_fixture *fixture)
+{
+    return prepare(opaque, fixture, NL_CONFORMANCE_RESTART);
+}
+
+#if ROLE != 2
+static nl_status seed_restart_work(void *opaque, nl_conformance_fixture *fixture)
+{
+    return control(opaque, fixture, NL_CONFORMANCE_SEED_WORK);
+}
+#endif
+
+static void finish(void *opaque, nl_conformance_fixture *fixture)
+{
+    fixture_state *state = opaque;
+    state->owned = false;
+    state->queued_size = 0u;
+    state->pressure = false;
+    state->driver_pending = false;
+    (void)nl_modules_stop(fixture->instances, fixture->count);
+}
+
+static void report(void *opaque, const char *adapter, nl_conformance_case test_case,
+                   nl_status status, const char *detail)
+{
+    (void)opaque;
+    printf("%s: %s: %s (%s)\n", adapter, nl_conformance_case_name(test_case),
+           status == NL_OK ? "pass" : status == NL_ERR_UNSUPPORTED ? "skip" : "fail", detail);
+}
+
+int main(void)
+{
+    fixture_state state = {0};
+    nl_conformance_result result;
+    const nl_conformance_adapter adapter = {
+        .name = "@NAME@", .context = &state,
+        .capabilities = NL_CONFORMANCE_CAN_RESTART
+#if ROLE != 2
+            | NL_CONFORMANCE_CAN_BACKPRESSURE
+#endif
+#if ROLE == 3
+            | NL_CONFORMANCE_CAN_PENDING
+#endif
+        , .prepare = prepare, .inspect = inspect, .reinitialize = reinitialize, .finish = finish,
+#if ROLE != 2
+        .control = control, .measure = measure, .seed_restart_work = seed_restart_work,
+#endif
+    };
+    nl_status status = nl_plugin_conformance_run(&adapter, &result, report, NULL);
+    printf("passed=%u failed=%u skipped=%u\n", result.passed, result.failed, result.skipped);
+    return status == NL_OK && result.failed == 0u ? 0 : 1;
+}

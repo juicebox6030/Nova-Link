@@ -1,0 +1,18 @@
+#ifndef @GUARD@_PLUGIN_H
+#define @GUARD@_PLUGIN_H
+
+#include "nova_link/module.h"
+
+typedef struct {
+    bool running;
+    nl_host *owner;
+    nl_plugin_id plugin;
+    uint64_t polls;
+    uint64_t ticks;
+} @PREFIX@_context;
+
+/* Zero-initialize first. Exposed service is this stable context. */
+nl_status @PREFIX@_init(@PREFIX@_context *context);
+nl_module @PREFIX@_module(@PREFIX@_context *context);
+
+#endif

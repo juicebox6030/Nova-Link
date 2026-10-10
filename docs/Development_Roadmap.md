@@ -14,11 +14,16 @@ readiness or over-the-air performance.
 - [x] Plugin payload send with backpressure and per-zone sequence counters
 - [x] Payload receive with per-stream duplicate/stale rejection and dispatch
 - [x] Plugin startup, failure rollback, tick hooks, and shutdown cleanup
+- [x] Uniform named modules, declarative claims, service lookup and dependencies
+- [x] Unordered manifests with transactional startup and dependency-safe shutdown
+- [x] Transport and logging services using the common plugin lifecycle
 - [x] Generation handles rejecting retired IDs and guarded logger reentrancy
 - [x] Self-origin receive rejection
 - [x] Framed transport encoding, decoding, incremental parser, PUSH/PULL flow
-- [ ] Application-specific fragmentation/reassembly for messages over 100 bytes
-- [ ] Live INI configuration loader and host CLI for applying configuration
+- [ ] Generic message fragmentation/reassembly beyond the DMX application format
+- [x] DMX-specific native segmentation/reassembly for complete 512-slot frames
+- [x] Configuration service with schema-validated INI buffers and offline host CLI composition
+- [ ] Live configuration reload with ownership-safe drain/restart policy
 - [ ] Remote zone-claim discovery/coordination and origin-ID assignment
 - [ ] OTA/dynamic plugin loading and any actual runtime memory isolation
 
@@ -42,12 +47,16 @@ readiness or over-the-air performance.
 - [ ] Session epochs, remote restart/reset, and authentication/replay policy
 - [ ] Vendor-specific RF TX/RX adapter and asynchronous completion handling
 - [ ] ESP32 SPI master and CC1352R SPI slave/GPIO adapters
-- [ ] Vendor SDK builds, flashing, and hardware validation
+- [x] Portable asynchronous SPI backend service and complete-frame native slave adapter
+- [x] Reusable virtual SPI driver joining both adapters with deterministic faults
+- [x] Vendor SDK compile/link checks for the documented ESP32-S3 and CC1352R targets
+- [ ] Firmware flashing, hardware execution and physical validation
 
 ## SDK and offline development
 
 - [x] Strict C99 CMake build, installation, and installed-package consumer check
-- [x] ESP-IDF component definition (vendor SDK build remains unverified)
+- [x] ESP-IDF component and ESP32-S3 example compiled with selected ESP-IDF v5.5.1 baseline
+- [x] CC1352R native project compiled/linked with SimpleLink 7.41.00.17 and TI Arm Clang 3.2.0.LTS
 - [x] Doxygen public API generation
 - [x] Golden packet vectors and exhaustive header/payload-size codec tests
 - [x] All 65,536 previous/current sequence pairs
@@ -58,7 +67,16 @@ readiness or over-the-air performance.
 - [x] Local GCC Debug/Release, sanitizer, freestanding, docs, and packaging checks
 - [x] Counter example plugin with application-owned payload encoding
 - [x] Offline RF airtime, slot fit, backlog, sequence-horizon, and assumed dual-band budget tool
-- [ ] DMX/RDM, audio, OSC, and synchronization plugins with concrete requirements
+- [x] Installed counter and DMX/Multiverse-model plugins with runnable manifests
+- [x] Standalone plugin starter generator and installed-SDK CMake template
+- [x] Deterministic transport delay, disconnect, congestion and restart scenarios
+- [x] Reusable plugin conformance harness with explicit optional-capability reporting
+- [x] Installed deterministic fault backend and generated transport-test integration
+- [x] Capture observation service using the existing JSONL schema and a compile-only ESP32-S3 project
+- [x] Installed developer-only virtual SPI target and paired counter/DMX simulation
+- [x] Simultaneous two-way 512-slot DMX through production ticks and paired virtual SPI
+- [x] Actual SPI service/transport reusable conformance adapters with all seven cases
+- [ ] RDM, audio, OSC, and synchronization plugins with concrete requirements
 
 ## Work that needs physical validation
 
@@ -84,7 +102,17 @@ Target: receive from a Multiverse Transmitter and transmit to ETC ColorSource V 
 
 - [x] Portable DMX level framing and software TX/RX loopback
 - [x] RF capture log format, analyzer, and validation checks
-- [ ] Confirm the CC1352R board, SDK, and transmitter variant
+- [x] Portable normalized TX/RX engine with full/delta chunking and atomic reconstruction
+- [x] TX completion tokens, immutable retries, coalescing, and periodic full resync
+- [x] RX integrity/filter/sequence checks, assembly deadlines, holdover and loss status
+- [x] Explicit session binding and duplicate rejection after link expiry
+- [x] Synthetic byte codec, fault-injection emulator, and offline C-engine replay
+- [x] Labeled-capture byte-distribution comparisons for candidate offsets
+- [x] Installed host/adapter API and hardware-independent integration checks
+- [x] Native host/module plugin, 72-slot payload chunks, full TX/RX path and loss recovery
+- [x] Record SDK/toolchain baselines for documented ESP32-S3/CC1352R targets and 5911 transmitter reference
+- [ ] Record actual development-board products, revisions and deployment pin mappings
+- [x] Offline board-adapter ownership and capture handoff checklist
 - [ ] Verify the existing transmitter-to-fixture reference link and record settings
 - [ ] Build and flash receive capture firmware for the selected board
 - [ ] Establish the actual PHY, framing/integrity fields, and hopping behavior
