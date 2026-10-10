@@ -8,7 +8,7 @@ option(NOVA_ENABLE_SANITIZERS "Enable address and undefined behavior sanitizers"
 
 add_library(nova_link
     src/status.c src/fragment.c src/transport.c src/stream.c
-    src/queue.c src/zones.c src/host.c src/scheduler.c src/radio.c)
+    src/queue.c src/zones.c src/host.c src/module.c src/scheduler.c src/radio.c)
 add_library(NovaLink::nova_link ALIAS nova_link)
 target_include_directories(nova_link PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -57,6 +57,32 @@ if(NOVA_ENABLE_SANITIZERS AND CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
     target_link_options(nova_multiverse INTERFACE -fsanitize=address,undefined)
 endif()
 
+add_library(nova_multiverse_plugin plugins/multiverse.c)
+add_library(NovaLink::nova_multiverse_plugin ALIAS nova_multiverse_plugin)
+target_link_libraries(nova_multiverse_plugin PUBLIC nova_link nova_multiverse)
+target_compile_features(nova_multiverse_plugin PUBLIC c_std_99)
+nova_target(nova_multiverse_plugin)
+if(NOVA_ENABLE_SANITIZERS AND CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
+    target_link_options(nova_multiverse_plugin INTERFACE -fsanitize=address,undefined)
+endif()
+
+add_library(nova_counter_plugin plugins/counter.c)
+add_library(NovaLink::nova_counter_plugin ALIAS nova_counter_plugin)
+target_link_libraries(nova_counter_plugin PUBLIC nova_link)
+nova_target(nova_counter_plugin)
+add_library(nova_radio_plugin plugins/radio_link.c)
+add_library(NovaLink::nova_radio_plugin ALIAS nova_radio_plugin)
+target_link_libraries(nova_radio_plugin PUBLIC nova_link)
+nova_target(nova_radio_plugin)
+add_library(nova_logger_plugin plugins/logger.c)
+add_library(NovaLink::nova_logger_plugin ALIAS nova_logger_plugin)
+target_link_libraries(nova_logger_plugin PUBLIC nova_link)
+nova_target(nova_logger_plugin)
+add_library(nova_plugins INTERFACE)
+add_library(NovaLink::nova_plugins ALIAS nova_plugins)
+target_link_libraries(nova_plugins INTERFACE
+    nova_counter_plugin nova_radio_plugin nova_logger_plugin nova_multiverse_plugin)
+
 # Deliberately separate test-only bytes from the installed stream engine.
 if(NOVA_BUILD_TESTS OR NOVA_BUILD_TOOLS)
     add_library(nova_multiverse_synthetic src/multiverse_synthetic.c)
@@ -74,10 +100,12 @@ if(NOVA_BUILD_TOOLS)
     add_executable(dmx_loopback examples/dmx_loopback.c)
     target_link_libraries(dmx_loopback PRIVATE nova_dmx)
     nova_target(dmx_loopback)
-    add_executable(nova-sim examples/simulation.c plugins/counter.c)
-    target_include_directories(nova-sim PRIVATE plugins)
-    target_link_libraries(nova-sim PRIVATE nova_link)
+    add_executable(nova-sim examples/simulation.c)
+    target_link_libraries(nova-sim PRIVATE nova_counter_plugin nova_radio_plugin)
     nova_target(nova-sim)
+    add_executable(nova-plugin-sim examples/plugin_simulation.c)
+    target_link_libraries(nova-plugin-sim PRIVATE nova_plugins)
+    nova_target(nova-plugin-sim)
     add_executable(nova-inspect tools/inspect.c)
     target_link_libraries(nova-inspect PRIVATE nova_link)
     nova_target(nova-inspect)
@@ -85,6 +113,18 @@ endif()
 
 if(NOVA_BUILD_TESTS)
     enable_testing()
+    add_executable(test_multiverse_plugin tests/test_multiverse_plugin.c)
+    target_link_libraries(test_multiverse_plugin PRIVATE nova_multiverse_plugin)
+    nova_target(test_multiverse_plugin)
+    add_test(NAME multiverse_plugin COMMAND test_multiverse_plugin)
+    add_executable(test_radio_plugin tests/test_radio_plugin.c)
+    target_link_libraries(test_radio_plugin PRIVATE nova_radio_plugin)
+    nova_target(test_radio_plugin)
+    add_test(NAME radio_plugin COMMAND test_radio_plugin)
+    add_executable(test_logger_plugin tests/test_logger_plugin.c)
+    target_link_libraries(test_logger_plugin PRIVATE nova_logger_plugin)
+    nova_target(test_logger_plugin)
+    add_test(NAME logger_plugin COMMAND test_logger_plugin)
     add_executable(test_multiverse tests/test_multiverse.c)
     target_link_libraries(test_multiverse PRIVATE nova_multiverse_synthetic)
     nova_target(test_multiverse)
@@ -98,7 +138,7 @@ if(NOVA_BUILD_TESTS)
         add_test(NAME rf_capture COMMAND ${Python3_EXECUTABLE} -m unittest discover
             -s tests -p test_rf_capture.py WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
     endif()
-    foreach(suite protocol stream_zones host radio integration)
+    foreach(suite protocol stream_zones host radio integration modules)
         add_executable(test_${suite} tests/test_${suite}.c)
         target_link_libraries(test_${suite} PRIVATE nova_link)
         nova_target(test_${suite})
@@ -108,6 +148,7 @@ if(NOVA_BUILD_TESTS)
         add_test(NAME multiverse_simulation COMMAND nova-multiverse-sim)
         add_test(NAME dmx_loopback COMMAND dmx_loopback)
         add_test(NAME simulation COMMAND nova-sim)
+        add_test(NAME plugin_simulation COMMAND nova-plugin-sim)
         find_package(Python3 COMPONENTS Interpreter QUIET)
         if(Python3_FOUND)
             add_test(NAME multiverse_replay COMMAND ${Python3_EXECUTABLE}
@@ -152,7 +193,9 @@ configure_package_config_file(config/NovaLinkConfig.cmake.in
     INSTALL_DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/NovaLink)
 write_basic_package_version_file(${CMAKE_CURRENT_BINARY_DIR}/NovaLinkConfigVersion.cmake
     VERSION ${PROJECT_VERSION} COMPATIBILITY SameMinorVersion)
-install(TARGETS nova_link nova_dmx nova_multiverse EXPORT NovaLinkTargets
+install(TARGETS nova_link nova_dmx nova_multiverse nova_multiverse_plugin
+    nova_counter_plugin nova_radio_plugin nova_logger_plugin nova_plugins
+    EXPORT NovaLinkTargets
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
