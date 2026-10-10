@@ -57,6 +57,7 @@ Built-in factories provide a starting point:
 | Counter | `nova_link/counter_plugin.h` | `nl_counter_module()` | `radio-link` |
 | DMX/Multiverse model | `nova_link/multiverse_plugin.h` | `nl_multiverse_module()` | `radio-link` |
 | Radio transport | `nova_link/radio_plugin.h` | `nl_radio_link_module()` | None |
+| Asynchronous SPI service | `nova_link/spi_backend.h` | `nl_spi_backend_module()` | None |
 | Host event logger | `nova_link/logger_plugin.h` | `nl_logger_module()` | None |
 | Configuration service | `nova_link/config_plugin.h` | `nl_config_module()` | None |
 | Capture service | `nova_link/capture_plugin.h` | `nl_capture_module()` | None |
@@ -66,6 +67,8 @@ when an application uses a differently named transport. A plugin that only uses
 local services can omit transport dependencies and zone claims. Start with the
 counter hooks for a small application protocol; use a service module for a
 capability that should not receive zone payloads.
+For SPI, construct the transport with `nl_spi_backend_link_module()` instead;
+its dependency on `spi-backend` starts the service before `radio-link`.
 
 Module instances are caller-owned and zero-initialized. Keep their storage,
 descriptor strings/lists, hook context, and backend context alive until shutdown.
@@ -360,6 +363,36 @@ slot.
 
 See [platform integration](../platform/README.md) for the vendor SDK boundary.
 
+For an asynchronous SPI driver, link `NovaLink::nova_spi_backend` and initialize
+`nl_spi_backend` with stable `nl_spi_driver` callbacks. Build its service module
+with `nl_spi_backend_module()`, derive the existing transport configuration with
+`nl_spi_backend_link_config()`, and construct that transport using
+`nl_spi_backend_link_module()`. The latter retains the name `radio-link` and
+declares its dependency on `spi-backend`; existing application dependencies keep
+working. Register both descriptors in the same manifest. The
+[SPI backend guide](SPI_Backend.md) specifies accepted request storage,
+transaction lifetimes, immutable PULL receipts, and cancellation/draining.
+Terminal PUSH failures may report uncertain remote acceptance. The backend holds
+those bytes and stops retransmitting until application policy explicitly calls
+`nl_spi_backend_resolve_tx()` with a retry or discard decision. Only a failure
+that guarantees no remote acceptance permits automatic retry. This distinction
+prevents a transport fault from silently creating duplicate remote work.
+
+On the CC1352R side, `nl_spi_slave_exchange()` accepts exactly one complete native
+request and stages a response without immediately popping RX data. Its commit and
+cancel APIs preserve the underlying radio revision receipt. The helper belongs to
+`NovaLink::nova_link` and performs no SPI/GPIO I/O. Its status returns and tokens
+are local metadata; a physical implementation must decide how a board driver
+learns remote queue rejection, empty PULL, and transfer ownership outcomes.
+
+Link `NovaLink::nova_spi_virtual` from developer tests to connect these actual
+host/slave adapters without physical drivers. It supplies an `nl_spi_driver`
+with deterministic delay, disconnect and malformed-transfer controls, plus a
+separate logical native radio-queue path. The
+[SPI simulation guide](SPI_Backend.md) describes the paired simulation and its
+limits. This target is installed for opt-in tests, separately from the production
+plugin aggregate and ESP-IDF component.
+
 ## Offline tools
 
 ```sh
@@ -428,8 +461,9 @@ Local GCC checks cover Debug, Release, address/undefined behavior sanitizers,
 a freestanding core build, docs, and the installed-SDK consumer. See
 [validation](Validation.md) for commands and results. Clang checks currently
 exclude the extended prototype. The ESP32-S3 example also builds with the selected
-ESP-IDF v5.5.1 toolchain; CC1352R vendor builds and hardware execution remain
-unverified. See [hardware preparation](Hardware_Preparation.md) for the exact
+ESP-IDF v5.5.1 toolchain. The CC1352R native startup project compiles and links with
+SimpleLink SDK 7.41.00.17, TI Arm Clang 3.2.0.LTS and SysConfig 1.18.1;
+hardware execution remains unverified. See [hardware preparation](Hardware_Preparation.md) for the exact
 SDK baseline and artifacts.
 
 ## Multiverse host/adapter integration

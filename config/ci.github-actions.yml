@@ -13,6 +13,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - name: gcc debug
+            cc: gcc
+            build_type: Debug
+            sanitizers: OFF
           - name: gcc
             cc: gcc
             build_type: Release
@@ -37,9 +41,9 @@ jobs:
           -DNOVA_BUILD_EXTENDED=OFF
       - name: Build
         run: cmake --build build --parallel 2
-      - name: Test SDK, plugin conformance, fault backends and offline tools
+      - name: Test SDK, plugin contracts, paired SPI faults and offline tools
         run: ctest --test-dir build --output-on-failure --parallel 2
-      - name: Check installed SDK, developer support and common plugin manifests
+      - name: Check installed SDK, async SPI, developer support and plugin manifests
         run: |
           cmake --install build --prefix "$PWD/build/sdk"
           cmake -S tests/consumer -B build/consumer -DCMAKE_C_COMPILER=${{ matrix.cc }} -DCMAKE_PREFIX_PATH="$PWD/build/sdk"

@@ -45,7 +45,7 @@ class PlatformPreparationTests(unittest.TestCase):
                 "function(idf_component_register)\n"
                 "  cmake_parse_arguments(SOURCES \"\" \"\" \"SRCS;INCLUDE_DIRS\" ${ARGN})\n"
                 "  foreach(source IN LISTS SOURCES_SRCS)\n"
-                "    if(source MATCHES \"(multiverse_synthetic|plugin_conformance|fault_backend)\\\\.c$\")\n"
+                "    if(source MATCHES \"(multiverse_synthetic|plugin_conformance|fault_backend|spi_virtual)\\\\.c$\")\n"
                 "      message(FATAL_ERROR \"Developer source in production component\")\n"
                 "    endif()\n"
                 "  endforeach()\n"

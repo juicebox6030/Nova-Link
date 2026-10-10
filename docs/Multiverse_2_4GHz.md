@@ -17,13 +17,16 @@ RF capture log analyzer with differential stimulus comparisons, and a
 [TX/RX software emulator](Multiverse_Emulator.md) with chunked full/delta state,
 completion ownership, integrity checks, loss/recovery simulation and replay.
 The emulator uses explicitly synthetic packets behind a normalized adapter API.
-No CC1352R firmware, actual Multiverse RF decoder, or actual Multiverse RF
-transmitter has been implemented or tested. Both example RF traffic and emulator
-traffic are synthetic. Hardware preparation targets the documented ESP32-S3,
-CC1352R and 5911 2.4 GHz reference; record the actual board revision and SDK
-release with the deployment. The [preparation guide](Hardware_Preparation.md)
-provides a compile/startup project and capture-service handoff without assigning
-unverified PHY settings or board pins.
+The ESP32-S3 and CC1352R native startup projects compile with pinned vendor
+SDKs, and portable asynchronous SPI host/slave boundaries run together through
+a virtual device. The CC1352R project exercises the native PUSH/PULL model;
+physical SPI/GPIO, a Multiverse RF decoder and a Multiverse RF transmitter
+remain unimplemented and untested. Both example RF traffic and emulator traffic
+are synthetic. Hardware preparation targets the documented ESP32-S3, CC1352R
+and 5911 2.4 GHz reference; record actual board revisions and pin mappings with
+the deployment. The [preparation guide](Hardware_Preparation.md) records the
+vendor baselines, compile/startup projects and capture-service handoff without
+assigning unverified PHY settings or board pins.
 
 ## Established facts and open questions
 

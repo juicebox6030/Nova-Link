@@ -104,6 +104,70 @@ class ReplayTests(unittest.TestCase):
         self.assertEqual(events[2]["slots_hex"], "1020")
         self.assertEqual(events[-1]["link"], "lost")
 
+    def test_explicit_result_and_link_acceptance(self):
+        events = self.replay([
+            entry(expected_result="frame_ready", expected_link="live", expected_slots_hex="0001"),
+            entry(1, expected_result="duplicate", expected_link="live"),
+            entry(2, payload_hex=packet(kind=1, seq=2, base=1),
+                  expected_result="need_full", expected_link="recovering"),
+            # A verified FULL with a newer sequence restores exact host levels.
+            entry(3, payload_hex=packet(seq=3, values=b"\x10\x20"),
+                  expected_result="frame_ready", expected_link="live", expected_slots_hex="1020"),
+            # The old full is rejected after silence and cannot revive the link.
+            entry(100003, payload_hex=packet(seq=3, values=b"\x10\x20"),
+                  expected_result="duplicate", expected_link="lost"),
+            entry(100004, payload_hex=packet(seq=4, values=b"\x30\x40"),
+                  expected_result="frame_ready", expected_link="live", expected_slots_hex="3040"),
+        ], "--end-us", "200004", "--expect-frames", "3", "--expect-link", "lost")
+        summary = events[-1]
+        self.assertEqual(summary["expected_results_checked"], 6)
+        self.assertEqual(summary["expected_links_checked"], 6)
+        self.assertEqual(summary["expected_frames_checked"], 3)
+        self.assertEqual(summary["final_expectations_checked"], 2)
+        self.assertEqual(summary["losses"], 2)
+
+    def test_snapshot_labels_remain_optional_delivery_expectations(self):
+        # Historical simulator labels describe host snapshots even for packets
+        # that are deliberately corrupt, filtered or incomplete.
+        events = self.replay([entry(crc="bad", expected_slots_hex="0001")])
+        self.assertEqual(events[-1]["frames"], 0)
+        self.assertEqual(events[-1]["expected_frames_checked"], 0)
+        self.assertEqual(events[-1]["final_expectations_checked"], 0)
+        failed = self.replay([entry(crc="bad", expected_result="frame_ready",
+                                   expected_slots_hex="0001")], success=False)
+        self.assertIn("expected frame_ready, got bad_packet", failed.stderr)
+
+    def test_missing_and_extra_frames_fail_explicit_acceptance(self):
+        for expected in (0, 2):
+            with self.subTest(expected=expected):
+                failed = self.replay([entry()], "--expect-frames", expected, success=False)
+                self.assertIn(f"frame count mismatch: expected {expected}, got 1", failed.stderr)
+        # A second update where the trace expects a duplicate is an extra frame,
+        # even if its levels happen to match the first frame exactly.
+        failed = self.replay([entry(), entry(1, payload_hex=packet(seq=1),
+                                           expected_result="duplicate")], success=False)
+        self.assertIn("expected duplicate, got frame_ready", failed.stderr)
+        events = self.replay([entry(crc="bad", expected_result="bad_packet",
+                                    expected_link="wait_full")],
+                             "--expect-frames", 0, "--expect-link", "wait_full")
+        self.assertEqual(events[-1]["expected_results_checked"], 1)
+
+    def test_link_and_result_expectation_errors(self):
+        failed = self.replay([entry(expected_link="lost")], success=False)
+        self.assertIn("expected lost, got live", failed.stderr)
+        failed = self.replay([entry()], "--expect-link", "lost", success=False)
+        self.assertIn("final link mismatch: expected lost, got live", failed.stderr)
+        for fields in ({"expected_result": None}, {"expected_result": "FRAME_READY"},
+                       {"expected_result": []}, {"expected_result": 0},
+                       {"expected_link": None}, {"expected_link": "unknown"},
+                       {"expected_link": True}):
+            with self.subTest(fields=fields):
+                self.replay([entry(**fields)], success=False)
+        for flag, value in (("--expect-frames", "-1"), ("--expect-frames", str(2**64)),
+                            ("--expect-frames", "1.0"), ("--expect-link", "unknown")):
+            with self.subTest(flag=flag, value=value):
+                self.replay([entry()], flag, value, success=False)
+
     def test_mismatch_profile_and_clock_are_errors(self):
         self.replay([entry(expected_slots_hex="ffff")], success=False)
         for fields in ({"profile": "candidate-real"}, {"synthetic": False},
@@ -134,14 +198,21 @@ class ReplayTests(unittest.TestCase):
             self.assertEqual(json.loads(output.read_text())["frames"], 1)
             run([sys.executable, CLI, capture, "--engine", ENGINE, "--output", capture], success=False)
             self.assertEqual(capture.read_text(), original)
+            previous_output = output.read_text()
+            run([sys.executable, CLI, capture, "--engine", ENGINE, "--output", output,
+                 "--expect-frames", "2"], success=False)
+            self.assertEqual(output.read_text(), previous_output)
 
     def test_versioned_example_and_differential_analyzer_cli(self):
         capture = ROOT / "examples/multiverse.synthetic.jsonl"
         summary = json.loads(run([sys.executable, CLI, capture, "--engine", ENGINE,
-                                  "--end-us", "104000", "--summary-only"]).stdout)
+                                  "--end-us", "104000", "--expect-frames", "4",
+                                  "--expect-link", "lost", "--summary-only"]).stdout)
         self.assertEqual(summary["frames"], 4)
         self.assertEqual(summary["expected_frames_checked"], 4)
         self.assertEqual(summary["link"], "lost")
+        self.assertEqual(summary["expected_results_checked"], 11)
+        self.assertEqual(summary["expected_links_checked"], 11)
         analyzer = ROOT / "tools/analyze_rf_capture.py"
         report = json.loads(run([sys.executable, analyzer, capture, "--compare-stimuli",
                                  "resync", "channel_1_85"]).stdout)

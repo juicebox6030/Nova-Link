@@ -51,6 +51,7 @@ static bool fixture_valid(const nl_conformance_fixture *fixture)
     size_t i;
     if (fixture->count == 0u || fixture->count >= NL_PLUGIN_MAX ||
         fixture->subject >= fixture->count || fixture->recovery_polls > 1024u ||
+        fixture->restart_polls > 1024u ||
         !empty_host(&fixture->host)) return false;
     for (i = 0; i < fixture->count; ++i)
         if (fixture->modules[i] == NULL || fixture->modules[i]->name == NULL ||
@@ -116,6 +117,7 @@ static const char *run_case(const nl_conformance_adapter *adapter,
     nl_conformance_metrics baseline = {0}, previous = {0}, current = {0};
     unsigned polls;
     uint64_t expected;
+    uint64_t restart_start;
     bool prepared = false;
 #define CHECK(condition, detail) do { if (!(condition)) { failure = detail; goto done; } } while (0)
 #define INSPECT(checkpoint, detail) CHECK(adapter->inspect(adapter->context, &fixture, checkpoint) == NL_OK, detail)
@@ -263,7 +265,11 @@ static const char *run_case(const nl_conformance_adapter *adapter,
         if (adapter->seed_restart_work != NULL)
             CHECK(adapter->seed_restart_work(adapter->context, &fixture) == NL_OK,
                   "initial live restart workload submission failed");
-        CHECK(nl_host_poll(&fixture.host, 100u) == NL_OK, "pre-restart poll failed");
+        polls = fixture.restart_polls == 0u ? 1u : fixture.restart_polls;
+        for (i = 0; i < polls; ++i)
+            CHECK(nl_host_poll(&fixture.host, (uint64_t)(i + 1u) * 100u) == NL_OK,
+                  "pre-restart poll failed");
+        restart_start = (uint64_t)(polls + 1u) * 100u;
         CHECK(nl_modules_stop(fixture.instances, fixture.count) == NL_OK && unbound(&fixture),
               "pre-restart stop left live ownership");
         INSPECT(NL_CONFORMANCE_STOPPED, "pre-restart cleanup leaked actual resources");
@@ -277,7 +283,10 @@ static const char *run_case(const nl_conformance_adapter *adapter,
         if (adapter->seed_restart_work != NULL)
             CHECK(adapter->seed_restart_work(adapter->context, &fixture) == NL_OK,
                   "restarted live workload submission failed");
-        CHECK(nl_host_poll(&fixture.host, 200u) == NL_OK, "restarted poll failed");
+        polls = fixture.restart_polls == 0u ? 1u : fixture.restart_polls;
+        for (i = 0; i < polls; ++i)
+            CHECK(nl_host_poll(&fixture.host, restart_start + (uint64_t)i * 100u) == NL_OK,
+                  "restarted poll failed");
         INSPECT(NL_CONFORMANCE_RESTARTED, "restart retained stale ownership/session/state or failed fresh work");
     }
 

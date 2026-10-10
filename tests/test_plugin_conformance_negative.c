@@ -42,6 +42,7 @@ typedef struct {
     unsigned prepares, finishes, triggered;
     bool cleanup_complete;
     bool malformed_name;
+    bool malformed_restart_polls;
 } fixture_context;
 
 static const uint8_t workload[8] = {0, 0xff, 0x81, 0x13, 0x42, 0x09, 0xa5, 0x7e};
@@ -170,6 +171,7 @@ static nl_status prepare(void *context, nl_conformance_fixture *fixture,
     ++state->prepares;
     make_module(state, fixture);
     if (state->malformed_name) state->plugin.module.name = NULL;
+    if (state->malformed_restart_polls) fixture->restart_polls = 1025u;
     return NL_OK;
 }
 
@@ -362,6 +364,20 @@ static void malformed_manifest(void)
     CHECK(state.prepares == 4u && state.finishes == 4u && state.cleanup_complete);
 }
 
+static void malformed_restart_budget(void)
+{
+    fixture_context state = {.cleanup_complete = true, .malformed_restart_polls = true};
+    nl_conformance_adapter adapter = adapter_for(&state);
+    nl_conformance_result result;
+    STATUS(nl_plugin_conformance_run(&adapter, &result, NULL, NULL), NL_ERR_CONFLICT);
+    CHECK(result.failed == NL_CONFORMANCE_CASE_COUNT && result.passed == 0u &&
+          result.skipped == 0u && result.alias_checks == 0u);
+    CHECK(result.first_failure != NULL &&
+          strcmp(result.first_failure, "prepare must supply a fresh bounded manifest") == 0);
+    CHECK(state.prepares == NL_CONFORMANCE_CASE_COUNT &&
+          state.finishes == state.prepares && state.cleanup_complete);
+}
+
 int main(void)
 {
     expect_defect(GOOD, NL_CONFORMANCE_CASE_COUNT, NULL);
@@ -389,5 +405,6 @@ int main(void)
                   "restart retained stale ownership/session/state or failed fresh work");
     invalid_adapters();
     malformed_manifest();
+    malformed_restart_budget();
     return EXIT_SUCCESS;
 }

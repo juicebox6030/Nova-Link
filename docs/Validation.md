@@ -1,5 +1,82 @@
 # Offline validation record
 
+## Paired asynchronous SPI, two-way DMX and replay acceptance (2026-10-10)
+
+The installed native SPI backend and complete-frame slave helper now run
+together through a separately linked virtual driver. This extends both TX and
+RX through actual serialized native requests, bounded local queues, deferred
+PULL receipts and explicit uncertain-TX resolution. Native PUSH completion and
+receipt outcomes are local software metadata; the physical protocol's ACK,
+empty/error encodings, SPI/GPIO drivers and proprietary RF remain unresolved.
+See the [SPI backend and simulation guide](SPI_Backend.md).
+
+Fresh independent complete runs passed **53/53 CTest entries** each with
+GCC **16.1.1** Debug, Release and ASan/UBSan, including the extended prototype.
+Clang **22.1.8** Release passed **37/37** with `NOVA_BUILD_EXTENDED=OFF` for the
+prototype's previously recorded conversion errors. The final simultaneous
+two-way scenario also passed an affected-target rebuild/check in all four
+configurations after its snapshot-order, drain and silence-loss assertions were finalized.
+No test was disabled to obtain these results.
+
+The actual SPI backend service and its radio-link transport each pass all seven
+reusable conformance cases, with no skipped capability. Together with the six
+existing factories, this gives **49 exercised contract cases** and **7 explicitly
+skipped optional cases**. SPI cases check exact ownership and cleanup, both
+startup rollback paths, live dependencies, pending-TX shutdown refusal, bounded
+full-queue retries retaining exact bytes, and fresh lower-sequence restart work.
+The runner supports bounded multi-poll restart workloads and rejects an excessive
+restart budget through the negative fixture suite.
+
+`nova-spi-pair-sim` delivers **50 exact counter messages** and reconstructs
+**13 complete 512-slot frames**. It reaches the native **8-TX/16-RX** queue
+limits and preserves FIFO work through **273 congestion retries**. Cases include
+definite rejection, uncertainty before/after slave acceptance, explicit retry
+and discard, malformed requests/responses, application CRC corruption, retained
+receipts after coalesced replacement, disconnection, deferred commit and restart.
+RX continues while TX is held uncertain, and retries preserve frozen bytes.
+
+`nova-spi-duplex-sim` uses unmodified production plugin ticks with independent
+logical air paths in each direction. It commits **46/42 exact 512-slot frames**
+from **20/17 distinct submitted snapshots**, checks monotonic snapshot progress,
+and reaches TX queue peaks **8/8** and RX peaks **16/3**. It exercises concurrent
+send/receive, coalescing, congestion and receipt retries, an outage, periodic
+FULL recovery, exact final frames, orderly draining and silence expiry. These counts and
+delays are deterministic software scenarios, without physical timing or airtime
+claims.
+
+Replay now checks optional per-observation result/link expectations and final
+frame-count/link expectations, in addition to delivered-frame level oracles.
+The annotated eleven-observation example passes **4 exact frames** and final
+`lost`; deliberately incorrect expectations fail. See the
+[replay acceptance guide](Replay_Acceptance.md) for commands and strict schema
+semantics. Real candidate-PHY observations still cannot enter the synthetic
+decoder.
+
+Each of the four compiler/sanitizer packages installed successfully, and the
+independent consumer built and ran against each exported SDK. It exercises
+native SPI TX plus RX with exact big-endian counter decoding and committed
+receipt cleanup, alongside the aggregate plugins, capture and developer support.
+A separate `-ffreestanding` library-only build installed and passed that consumer.
+Synthetic codec/header/target isolation was retained. Both Doxygen references
+generated with warnings as errors. **117 relative Markdown links** across
+**22 Markdown documents** and `git diff --check` passed.
+
+Actual ESP32-S3 and CC1352R vendor compile/link checks passed with the recorded
+ESP-IDF **5.5.1** and SimpleLink **7.41.00.17** baselines; all **20 production
+sources** also passed strict freestanding TI Arm Clang compilation. The selected
+board configurations, toolchain versions, image/memory sizes and evidence paths
+are in [hardware preparation](Hardware_Preparation.md). Vendor compilation does
+not establish execution, pin mappings, physical capture or RF interoperability.
+No UniFi or gateway settings were changed.
+
+```sh
+./build/nova-spi-pair-sim
+./build/nova-spi-duplex-sim
+ctest --test-dir build --output-on-failure
+python3 tools/replay_multiverse.py examples/multiverse.synthetic.jsonl \
+  --end-us 104000 --expect-frames 4 --expect-link lost --summary-only
+```
+
 ## Reusable plugin contracts and documented hardware preparation (2026-10-10)
 
 The SDK exports `NovaLink::nova_plugin_conformance` and

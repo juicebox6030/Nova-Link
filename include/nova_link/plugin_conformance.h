@@ -66,6 +66,7 @@ typedef struct {
     unsigned max_attempts_per_poll; /**< Required for BACKPRESSURE, nonzero. */
     unsigned recovery_polls; /**< 1..1024; zero selects four. */
     uint64_t expected_accepts; /**< Work fragments on recovery; zero selects one. */
+    unsigned restart_polls; /**< 1..1024 per restart lifetime; zero selects one. */
 } nl_conformance_fixture;
 
 typedef struct {

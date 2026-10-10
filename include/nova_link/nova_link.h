@@ -10,4 +10,5 @@
 #include "nova_link/module.h"
 #include "nova_link/scheduler.h"
 #include "nova_link/radio.h"
+#include "nova_link/spi_slave.h"
 #endif

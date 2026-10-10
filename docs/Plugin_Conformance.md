@@ -104,8 +104,11 @@ contexts and borrowed descriptors, select a new Multiverse-model TX session,
 and drain old backend queues before reusing them. Seed known fresh work where
 the plugin needs a submission. APIs which require a live registration can use
 the optional `seed_restart_work` callback, invoked after startup and before the
-poll in both restart lifetimes. `inspect(RESTARTED)` runs after the restarted
-host poll, so check fresh work and session/sequence behavior as well as owner
+polls in both restart lifetimes. Set `restart_polls` to the required bounded
+number of polls in each lifetime; zero selects one and values above 1024 are
+invalid. This allows asynchronous adapters to finish real transfers before stop
+and inspection. `inspect(RESTARTED)` runs after the restarted host polls, so
+check fresh work and session/sequence behavior as well as owner
 binding. A restart flag does not promise that a stopped context can be
 registered again without reinitialization.
 
@@ -138,6 +141,11 @@ The capture adapter uses actual bounded JSONL staging and an atomic output sink
 to verify pending-stop veto, immutable retries, exact acceptance and fresh
 timestamp state after restart.
 
+[`test_spi_conformance.c`](../tests/test_spi_conformance.c) adapts the actual
+SPI backend service and SPI radio-link provider through the virtual driver and
+native slave. Both run all seven cases, checking byte-preserving full-queue retry,
+pending TX ownership, provider cleanup and fresh lower-sequence restart work.
+
 [`test_plugin_conformance_negative.c`](../tests/test_plugin_conformance_negative.c)
 feeds deliberately broken compiled plugins to the runner. These tests ensure
 it catches resource leaks, ignored pending ownership, changed rejected work,
@@ -149,7 +157,7 @@ that reports success without checking the advertised behavior.
 Run the focused cases with:
 
 ```sh
-ctest --test-dir build --output-on-failure -R plugin_conformance
+ctest --test-dir build --output-on-failure -R 'plugin_conformance|spi_conformance'
 ```
 
 These contracts complement the

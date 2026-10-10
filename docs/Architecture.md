@@ -26,6 +26,8 @@ flowchart LR
 | Buffering | `queue.c`, `radio.c` | Per-zone TX queues, shared RX with optional coalescing, in-process backpressure |
 | Scheduler | `scheduler.c` | Monotonic timed data rounds and optional metadata slots |
 | Radio transport plugin | `radio_plugin.h` | Host transport lifecycle and bounded PUSH/PULL exchanges through a caller-supplied backend |
+| SPI driver service plugin | `spi_backend.h` | Immutable async native requests, local completion/receipt ownership, uncertainty resolution |
+| Native slave helper | `spi_slave.h` | Complete request validation and transactional radio response staging |
 | Configuration service plugin | `config_plugin.h` | Bounded schema validation and typed configuration values |
 | Capture service plugin | `capture_plugin.h` | Bounded raw-observation JSONL staging with caller-owned output and pending shutdown protection |
 | Physical platform backend | To be implemented | Device I/O, shared RF timing, PHY pacing/completion |
@@ -68,7 +70,16 @@ does not read files or choose application protocols. The offline host CLI owns
 file I/O and selects the included factories to compose its manifest. See the
 [configuration guide](Plugin_Configuration.md).
 
-Plugin development uses two separately linked support libraries. The
+The [native SPI backend](SPI_Backend.md) is another service plugin. A radio-link
+provider depends on it, and it calls a board-owned asynchronous driver while
+retaining immutable request and PULL receipt storage. The portable
+`nl_spi_slave` helper parses complete native requests and stages transactional
+responses around the same radio core. Driver status and receipt tokens are
+adapter-local C values; they add no ACK, status, empty/error bytes, or other
+fields to the documented transport. Physical chip-select timing, interrupt
+mapping and RF I/O remain board responsibilities.
+
+Plugin development uses separately linked support libraries. The
 [conformance harness](Plugin_Conformance.md) exercises real module manifests and
 reports which contract capabilities an adapter verified. The
 [fault backend](Transport_Fault_Simulation.md) supplies bounded deterministic
@@ -76,6 +87,10 @@ transport ownership, delays and failure scenarios. They use the same portable
 APIs as production plugins, but are explicit developer dependencies rather than
 base behavior or members of the production plugin aggregate. ESP-IDF excludes
 their sources.
+The [virtual SPI driver](SPI_Backend.md) is also developer support. It joins the
+production backend to the production complete-frame slave helper and exercises
+actual serialized requests and responses. Its separate logical air path connects
+native radio queues, preserving FIFO ownership without choosing an RF PHY.
 
 ## Scheduling and metadata
 

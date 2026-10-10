@@ -9,6 +9,52 @@
 #include "nova_link/fault_backend.h"
 #include "nova_link/plugin_conformance.h"
 #include "nova_link/capture_plugin.h"
+#include "nova_link/spi_virtual.h"
+
+static int asynchronous_spi(void)
+{
+    nl_host host;
+    nl_radio radio;
+    nl_spi_slave slave;
+    nl_spi_virtual device;
+    nl_spi_driver driver;
+    nl_spi_backend backend;
+    nl_radio_link link;
+    nl_radio_link_config config;
+    nl_counter_context counter = {.transmitter = true, .zone = 1};
+    const nl_fragment incoming = {.origin = 2, .zone = 1, .sequence = 0,
+        .payload_size = 4, .payload = {0x12, 0x34, 0x56, 0x78}};
+    nl_module modules[3];
+    const nl_module *manifest[3];
+    nl_module_instance instances[3] = {0};
+    if (nl_host_init_plugins(&host, 1, 0) != NL_OK ||
+        nl_radio_init(&radio, 2, 1000, 0, 0) != NL_OK ||
+        nl_spi_slave_init(&slave, &radio) != NL_OK ||
+        nl_spi_virtual_init(&device, &slave, 10) != NL_OK) return 1;
+    driver = nl_spi_virtual_driver(&device);
+    if (nl_spi_backend_init(&backend, &driver) != NL_OK ||
+        nl_spi_backend_link_config(&backend, 2, &config) != NL_OK ||
+        nl_radio_link_init(&link, &config) != NL_OK) return 1;
+    modules[0] = nl_counter_module(&counter);
+    modules[1] = nl_spi_backend_link_module(&link);
+    modules[2] = nl_spi_backend_module(&backend);
+    for (unsigned i = 0; i < 3; ++i) manifest[i] = &modules[i];
+    if (nl_modules_start(&host, manifest, instances, 3) != NL_OK ||
+        nl_host_poll(&host, 0) != NL_OK || counter.next_value != 1u ||
+        nl_module_unregister(&instances[1]) != NL_ERR_BUSY) return 1;
+    counter.transmitter = false;
+    if (nl_host_poll(&host, 1) != NL_OK ||
+        nl_host_poll(&host, 11) != NL_OK ||
+        radio.tx[1].count != 1u || backend.stats.tx_completed != 1u ||
+        nl_radio_receive(&radio, &incoming, 12) != NL_OK ||
+        nl_host_poll(&host, 21) != NL_OK ||
+        nl_host_poll(&host, 31) != NL_OK || counter.deliveries != 1u ||
+        counter.last_value != UINT32_C(0x12345678) || radio.rx.count != 0u ||
+        backend.stats.rx_committed != 1u ||
+        nl_modules_stop(instances, 3) != NL_OK || host.send != NULL ||
+        !nl_spi_virtual_drained(&device)) return 1;
+    return 0;
+}
 
 static nl_status capture_output(void *context, const char *jsonl, size_t length)
 {
@@ -163,7 +209,8 @@ int main(void)
     nova_mv_rx_config_t rc = {1, 42, 10000, 1000};
     nova_mv_packet_t packet;
     uint64_t token;
-    if (plugins() != 0 || developer_support() != 0 || capture_service() != 0)
+    if (plugins() != 0 || developer_support() != 0 || capture_service() != 0 ||
+        asynchronous_spi() != 0)
         return 1;
     if (nova_mv_tx_init(&tx, &tc) != NOVA_MV_OK ||
         nova_mv_rx_init(&rx, &rc) != NOVA_MV_OK ||

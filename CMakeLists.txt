@@ -8,7 +8,8 @@ option(NOVA_ENABLE_SANITIZERS "Enable address and undefined behavior sanitizers"
 
 add_library(nova_link
     src/status.c src/fragment.c src/transport.c src/stream.c
-    src/queue.c src/zones.c src/host.c src/module.c src/scheduler.c src/radio.c)
+    src/queue.c src/zones.c src/host.c src/module.c src/scheduler.c src/radio.c
+    src/spi_slave.c)
 add_library(NovaLink::nova_link ALIAS nova_link)
 target_include_directories(nova_link PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -74,6 +75,10 @@ add_library(nova_radio_plugin plugins/radio_link.c)
 add_library(NovaLink::nova_radio_plugin ALIAS nova_radio_plugin)
 target_link_libraries(nova_radio_plugin PUBLIC nova_link)
 nova_target(nova_radio_plugin)
+add_library(nova_spi_backend plugins/spi_backend.c)
+add_library(NovaLink::nova_spi_backend ALIAS nova_spi_backend)
+target_link_libraries(nova_spi_backend PUBLIC nova_radio_plugin)
+nova_target(nova_spi_backend)
 add_library(nova_logger_plugin plugins/logger.c)
 add_library(NovaLink::nova_logger_plugin ALIAS nova_logger_plugin)
 target_link_libraries(nova_logger_plugin PUBLIC nova_link)
@@ -90,7 +95,7 @@ add_library(nova_plugins INTERFACE)
 add_library(NovaLink::nova_plugins ALIAS nova_plugins)
 target_link_libraries(nova_plugins INTERFACE
     nova_counter_plugin nova_radio_plugin nova_logger_plugin nova_multiverse_plugin
-    nova_config_plugin nova_capture_plugin)
+    nova_config_plugin nova_capture_plugin nova_spi_backend)
 
 # Explicit developer support: consumers opt in without adding simulator behavior
 # to the production plugin aggregate or the ESP-IDF component.
@@ -102,6 +107,10 @@ add_library(nova_fault_backend src/fault_backend.c)
 add_library(NovaLink::nova_fault_backend ALIAS nova_fault_backend)
 target_link_libraries(nova_fault_backend PUBLIC nova_radio_plugin)
 nova_target(nova_fault_backend)
+add_library(nova_spi_virtual support/spi_virtual.c)
+add_library(NovaLink::nova_spi_virtual ALIAS nova_spi_virtual)
+target_link_libraries(nova_spi_virtual PUBLIC nova_spi_backend nova_link)
+nova_target(nova_spi_virtual)
 
 # Deliberately separate test-only bytes from the installed stream engine.
 if(NOVA_BUILD_TESTS OR NOVA_BUILD_TOOLS)
@@ -111,6 +120,13 @@ if(NOVA_BUILD_TESTS OR NOVA_BUILD_TOOLS)
 endif()
 
 if(NOVA_BUILD_TOOLS)
+    add_executable(nova-spi-duplex-sim examples/spi_duplex_simulation.c)
+    target_link_libraries(nova-spi-duplex-sim PRIVATE nova_spi_virtual nova_multiverse_plugin)
+    nova_target(nova-spi-duplex-sim)
+    add_executable(nova-spi-pair-sim examples/spi_pair_simulation.c)
+    target_link_libraries(nova-spi-pair-sim PRIVATE nova_spi_virtual
+        nova_counter_plugin nova_multiverse_plugin)
+    nova_target(nova-spi-pair-sim)
     add_executable(nova-multiverse-sim examples/multiverse_sim.c)
     target_link_libraries(nova-multiverse-sim PRIVATE nova_multiverse_synthetic)
     nova_target(nova-multiverse-sim)
@@ -139,6 +155,30 @@ endif()
 
 if(NOVA_BUILD_TESTS)
     enable_testing()
+    add_executable(nova-test-spi-conformance tests/test_spi_conformance.c)
+    target_link_libraries(nova-test-spi-conformance PRIVATE nova_plugin_conformance
+        nova_spi_backend nova_radio_plugin nova_spi_virtual)
+    nova_target(nova-test-spi-conformance)
+    add_test(NAME spi_conformance COMMAND nova-test-spi-conformance)
+    add_executable(nova-test-cc1352r-example tests/test_cc1352r_example.c
+        platform/cc1352r/example/nova_radio_check.c)
+    target_include_directories(nova-test-cc1352r-example PRIVATE
+        platform/cc1352r/example)
+    target_link_libraries(nova-test-cc1352r-example PRIVATE nova_link)
+    nova_target(nova-test-cc1352r-example)
+    add_test(NAME cc1352r_example COMMAND nova-test-cc1352r-example)
+    add_executable(nova-test-spi-slave tests/test_spi_slave.c)
+    target_link_libraries(nova-test-spi-slave PRIVATE nova_link)
+    nova_target(nova-test-spi-slave)
+    add_test(NAME spi_slave COMMAND nova-test-spi-slave)
+    add_executable(nova-test-spi-virtual tests/test_spi_virtual.c)
+    target_link_libraries(nova-test-spi-virtual PRIVATE nova_spi_virtual nova_counter_plugin)
+    nova_target(nova-test-spi-virtual)
+    add_test(NAME spi_virtual COMMAND nova-test-spi-virtual)
+    add_executable(nova-test-spi-backend tests/test_spi_backend.c)
+    target_link_libraries(nova-test-spi-backend PRIVATE nova_spi_backend)
+    nova_target(nova-test-spi-backend)
+    add_test(NAME spi_backend COMMAND nova-test-spi-backend)
     add_executable(test_capture_plugin tests/test_capture_plugin.c)
     target_link_libraries(test_capture_plugin PRIVATE nova_capture_plugin)
     nova_target(test_capture_plugin)
@@ -189,6 +229,10 @@ if(NOVA_BUILD_TESTS)
         add_test(NAME platform_prep COMMAND ${Python3_EXECUTABLE}
             ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_platform_prep.py)
         set_tests_properties(platform_prep PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+        add_test(NAME cc1352r_build_check COMMAND ${Python3_EXECUTABLE}
+            ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_cc1352r_build_check.py)
+        set_tests_properties(cc1352r_build_check PROPERTIES
+            WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
     endif()
     foreach(suite protocol stream_zones host radio integration modules)
         add_executable(test_${suite} tests/test_${suite}.c)
@@ -197,6 +241,8 @@ if(NOVA_BUILD_TESTS)
         add_test(NAME ${suite} COMMAND test_${suite})
     endforeach()
     if(NOVA_BUILD_TOOLS)
+        add_test(NAME spi_duplex_simulation COMMAND nova-spi-duplex-sim)
+        add_test(NAME spi_pair_simulation COMMAND nova-spi-pair-sim)
         add_test(NAME multiverse_simulation COMMAND nova-multiverse-sim)
         add_test(NAME dmx_loopback COMMAND dmx_loopback)
         add_test(NAME simulation COMMAND nova-sim)
@@ -253,8 +299,8 @@ configure_package_config_file(config/NovaLinkConfig.cmake.in
 write_basic_package_version_file(${CMAKE_CURRENT_BINARY_DIR}/NovaLinkConfigVersion.cmake
     VERSION ${PROJECT_VERSION} COMPATIBILITY SameMinorVersion)
 install(TARGETS nova_link nova_dmx nova_multiverse nova_multiverse_plugin
-    nova_counter_plugin nova_radio_plugin nova_logger_plugin nova_config_plugin nova_capture_plugin nova_plugins
-    nova_plugin_conformance nova_fault_backend
+    nova_counter_plugin nova_radio_plugin nova_spi_backend nova_logger_plugin nova_config_plugin nova_capture_plugin nova_plugins
+    nova_plugin_conformance nova_fault_backend nova_spi_virtual
     EXPORT NovaLinkTargets
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}

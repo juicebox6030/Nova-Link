@@ -47,12 +47,16 @@ readiness or over-the-air performance.
 - [ ] Session epochs, remote restart/reset, and authentication/replay policy
 - [ ] Vendor-specific RF TX/RX adapter and asynchronous completion handling
 - [ ] ESP32 SPI master and CC1352R SPI slave/GPIO adapters
-- [ ] Vendor SDK builds, flashing, and hardware validation
+- [x] Portable asynchronous SPI backend service and complete-frame native slave adapter
+- [x] Reusable virtual SPI driver joining both adapters with deterministic faults
+- [x] Vendor SDK compile/link checks for the documented ESP32-S3 and CC1352R targets
+- [ ] Firmware flashing, hardware execution and physical validation
 
 ## SDK and offline development
 
 - [x] Strict C99 CMake build, installation, and installed-package consumer check
 - [x] ESP-IDF component and ESP32-S3 example compiled with selected ESP-IDF v5.5.1 baseline
+- [x] CC1352R native project compiled/linked with SimpleLink 7.41.00.17 and TI Arm Clang 3.2.0.LTS
 - [x] Doxygen public API generation
 - [x] Golden packet vectors and exhaustive header/payload-size codec tests
 - [x] All 65,536 previous/current sequence pairs
@@ -69,6 +73,9 @@ readiness or over-the-air performance.
 - [x] Reusable plugin conformance harness with explicit optional-capability reporting
 - [x] Installed deterministic fault backend and generated transport-test integration
 - [x] Capture observation service using the existing JSONL schema and a compile-only ESP32-S3 project
+- [x] Installed developer-only virtual SPI target and paired counter/DMX simulation
+- [x] Simultaneous two-way 512-slot DMX through production ticks and paired virtual SPI
+- [x] Actual SPI service/transport reusable conformance adapters with all seven cases
 - [ ] RDM, audio, OSC, and synchronization plugins with concrete requirements
 
 ## Work that needs physical validation
@@ -103,7 +110,8 @@ Target: receive from a Multiverse Transmitter and transmit to ETC ColorSource V 
 - [x] Labeled-capture byte-distribution comparisons for candidate offsets
 - [x] Installed host/adapter API and hardware-independent integration checks
 - [x] Native host/module plugin, 72-slot payload chunks, full TX/RX path and loss recovery
-- [ ] Record board mappings and SDK releases for the documented ESP32-S3/CC1352R targets and 5911 transmitter reference
+- [x] Record SDK/toolchain baselines for documented ESP32-S3/CC1352R targets and 5911 transmitter reference
+- [ ] Record actual development-board products, revisions and deployment pin mappings
 - [x] Offline board-adapter ownership and capture handoff checklist
 - [ ] Verify the existing transmitter-to-fixture reference link and record settings
 - [ ] Build and flash receive capture firmware for the selected board

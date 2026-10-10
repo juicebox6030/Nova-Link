@@ -5,8 +5,10 @@ such as lighting, audio control, and synchronization. The intended system uses a
 ESP32-S3 plugin host and a TI CC1352R radio co-processor.
 
 The repository currently provides a **portable C99 implementation of the protocol
-and application core**, with tests and an in-memory simulation. Board drivers and
-over-the-air operation are still to be implemented and validated. Dual-band
+and application core**, with tests and an in-memory simulation. Native SPI host
+and slave adapters provide portable asynchronous ownership boundaries; physical
+SPI/GPIO drivers and over-the-air operation still require implementation and
+validation. Dual-band
 redundancy and sub-5 ms delivery are design targets, not measured capabilities.
 
 ## Build and try it without hardware
@@ -21,6 +23,8 @@ ctest --test-dir build --output-on-failure
 ./build/nova-sim
 ./build/nova-plugin-sim
 ./build/nova-plugin-fault-sim
+./build/nova-spi-pair-sim
+./build/nova-spi-duplex-sim
 ./build/nova-config-manifest examples/plugins.ini
 ./build/nova-inspect frame 'AA 06 03 AF FE 00 AA FF'
 ./build/dmx_loopback
@@ -53,7 +57,8 @@ Use `add_subdirectory()` and link `NovaLink::nova_link`, or install the SDK with
 [development guide](docs/Development.md) for plugin and embedded integration.
 The independent DMX library is installed as `NovaLink::nova_dmx`.
 Link `NovaLink::nova_plugins` for the included counter, Multiverse-model,
-radio-link transport, logger, configuration and capture plugins, or select their individual targets.
+radio-link transport, asynchronous native SPI backend, logger, configuration and
+capture plugins, or select their individual targets.
 The base initializes with `nl_host_init_plugins()`; an unordered manifest starts
 providers before consumers, and `nl_host_poll()` polls input then ticks plugins.
 See [the compiled plugin guide](plugins/README.md) for the common module API.
@@ -76,7 +81,22 @@ congestion and explicit restart; see its
 The [hardware preparation guide](docs/Hardware_Preparation.md) uses the documented
 ESP32-S3, TI CC1352R and City Theatrical 5911 reference. Its capture service stages
 raw observations in the existing JSONL schema; board I/O and real Multiverse RF
-decoding still require vendor builds and measurements.
+decoding still require implementation and measurements. Both documented vendor
+compile projects build with pinned SDK/toolchain baselines; see the guide for
+their artifacts and deployment records.
+The [native SPI backend](docs/SPI_Backend.md) connects the radio-link provider to
+a caller-supplied asynchronous driver. Its completion outcomes and receipt tokens
+are local adapter metadata; the existing wire format defines no physical PUSH
+acknowledgment or empty/error response.
+`NovaLink::nova_spi_virtual` is an explicit developer dependency that connects
+the actual host backend and slave helper using native serialized frames. Run
+`nova-spi-pair-sim` for the counter/Multiverse-model pair under logical transfer
+delays and injected faults. See the [SPI simulation guide](docs/SPI_Backend.md).
+Run `nova-spi-duplex-sim` for simultaneous two-way 512-slot DMX using production
+plugin ticks, exact frame checks, congestion, outage recovery and silence expiry.
+The virtual driver is excluded from the production plugin aggregate and
+ESP-IDF component; its software outcomes do not establish physical timing or
+Multiverse interoperability.
 
 ## Implemented core
 
@@ -95,6 +115,8 @@ decoding still require vendor builds and measurements.
 - Clock-driven zone rounds, optional metadata slots, and bounded burst extensions.
 - PUSH/PULL command handling with transactional PULL receipts, offline JSON
   inspection, an RF airtime calculator, and a counter plugin.
+- Native complete-frame slave adapter and lifecycle-managed asynchronous SPI
+  driver service, with immutable transfers and shutdown ownership checks.
 - CMake installation, an ESP-IDF component definition, and Doxygen documentation.
 
 All core storage is fixed or caller-owned. The library does not allocate memory,

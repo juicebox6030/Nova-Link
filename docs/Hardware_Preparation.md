@@ -9,9 +9,11 @@ Prepare the documented **ESP32-S3 host**, **TI CC1352R radio**, **City Theatrica
 
 The original target references identify silicon families and bench devices.
 ESP32-S3 development-board products and CC1352R board revisions remain deployment
-records. The ESP-IDF build baseline below is a new implementation choice; a TI
-SDK release remains a deployment selection. Record those details with the actual
-setup and its pin mapping.
+records. The ESP-IDF and TI SDK build baselines below are implementation choices.
+The CC1352R compile project uses **LAUNCHXL_CC1352R1**; this identifies the vendor
+project's board configuration and does not establish which physical board the
+deployment owns. Record actual products, revisions and pin mappings with the
+setup.
 
 ## ESP32-S3 vendor compile project
 
@@ -38,14 +40,14 @@ The chosen reproducible build baseline is **ESP-IDF v5.5.1**, revision
 build check. Keep a deployment's SDK selection recorded and revalidate its
 build when changing versions.
 
-On 2026-10-10 the actual ESP-IDF `esp32s3` build passed, compiling all 18 production
+On 2026-10-10 the actual ESP-IDF `esp32s3` build passed, compiling all 20 production
 core/plugin source files, linking the application and bootloader, and generating
 `build/esp32-vendor/nova_link_plugin_check.elf` and a 217,136-byte application
 binary. Local evidence is recorded in `build/vendor-sdk-evidence.json` and
-`build/vendor-sdk-build.log`; Python package versions are retained in
+`build/vendor-sdk-build-final.log`; Python package versions are retained in
 `build/vendor-sdk-python-freeze.txt`. This validates vendor compilation and image
 generation. No hardware was present for execution, flashing or physical I/O
-validation. The CC1352R vendor build remains unverified.
+validation. The CC1352R vendor build is recorded separately below.
 
 Keep the version output, ESP-IDF Git revision/release, toolchain version,
 generated `sdkconfig`, and build logs with the artifact. The target is selected
@@ -60,7 +62,50 @@ The offline platform test compiles the production component sources and runs the
 same startup example with a desktop log shim. This catches missing sources and
 portable API regressions; it does not substitute for an ESP-IDF compiler/build.
 
-## CC1352R receiver project handoff
+## CC1352R native compile project and receiver handoff
+
+The reproducible compile baseline is **SimpleLink CC13xx/CC26xx SDK 7.41.00.17**,
+**TI Arm Clang 3.2.0.LTS**, and **SysConfig 1.18.1** (build 3343), using the SDK's
+**LAUNCHXL_CC1352R1** configuration. The
+[CC1352R project](../platform/cc1352r/README.md) retains vendor startup,
+RTOS/linker and generated board support while compiling the portable native radio
+and complete-frame slave adapter. Its startup check runs only a local native
+PUSH/PULL model loopback. It does not configure SPI transfers, GPIO mappings,
+candidate RF settings or proprietary Multiverse decoding.
+
+The [host backend and virtual SPI device](SPI_Backend.md)
+exercise that same native slave boundary without hardware. Their driver status
+and receipt tokens are local software metadata, with no new physical wire ACK or
+empty/error encoding. A physical adapter still needs a reviewed way to obtain
+those outcomes, plus chip-select framing, cancellation, interrupt and timing
+rules.
+
+On 2026-10-10 the actual TI build compiled and linked the native check, producing
+`build/cc1352r-check/cc1352r-project/tirtos7/ticlang/nova-radio-check.out`
+(519,168 bytes), plus an Intel HEX artifact. The linked image contains the eight
+portable radio/slave sources and the native task check with vendor startup,
+SysConfig and TI-RTOS support. The map reports 19,020 bytes of flash and 30,878
+bytes of SRAM for this compile image. Separately, all **20 production sources**
+passed strict C99 freestanding TI Arm Clang compilation. The unchanged vendor
+`empty`, `spiperipheral`, and `rfPacketRx` examples also compiled and linked.
+The stock RF example retains its supplied TI PHY; it does not establish a
+Multiverse profile.
+
+Exact commands, official download hashes, artifact/source hashes and logs are recorded
+in `build/ti-sdk/vendor-evidence.json` and `build/ti-sdk/nova-cc1352r-build-final.log`.
+The SDK ZIP SHA-256 is
+`00a10b7f344a0fc5eb678d8137c3f56617737995e2e520f0394a4df6b184f12b`;
+the Nova ELF SHA-256 is
+`e20e74fec69918cb551142db902172426a28be19b6f1dd56f7771200c8f3008c`.
+The [project guide](../platform/cc1352r/README.md) supplies the helper invocation
+for an installed SDK/compiler/SysConfig environment. On this development host,
+the compiler's compatibility library was extracted under ignored build storage
+and selected for the build command; system libraries were unchanged.
+
+This validates vendor compilation and image generation. The unchanged vendor
+empty project retains its board-default LED0 GPIO and Power configuration; it
+does not authorize deployment wiring. The Nova check opens no physical SPI or RF
+driver, and no image was flashed or executed on hardware.
 
 Use the receiver example supplied by the installed SimpleLink CC13xx/CC26xx SDK
 for the actual CC1352R board, retain its SysConfig/SmartRF exports, and record the

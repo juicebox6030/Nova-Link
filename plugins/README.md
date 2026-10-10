@@ -11,6 +11,7 @@ implementations.
 | `counter.c` | `nova_link/counter_plugin.h` | Four-byte counter application |
 | `multiverse.c` | `nova_link/multiverse_plugin.h` | DMX levels over native NLM1 chunks |
 | `radio_link.c` | `nova_link/radio_plugin.h` | Bounded native PUSH/PULL transport |
+| `spi_backend.c` | `nova_link/spi_backend.h` | Asynchronous native SPI driver service for radio-link |
 | `logger.c` | `nova_link/logger_plugin.h` | Lifecycle-managed host observer service |
 | `config.c` | `nova_link/config_plugin.h` | Schema-validated INI parsing and typed value service |
 | `capture.c` | `nova_link/capture_plugin.h` | Bounded raw-observation JSONL staging and output service |
@@ -44,6 +45,17 @@ callback supports two-phase PULL ownership. Commit failures retain the response
 without redelivering it, and pending ownership can block shutdown. Backend
 start/stop/can-stop callbacks provide the same lifecycle for in-memory and future
 board adapters.
+
+`spi_backend.c` is a provider service below radio-link. Initialize its caller-owned
+`nl_spi_backend` with an `nl_spi_driver`, derive the radio-link configuration with
+`nl_spi_backend_link_config()`, and use `nl_spi_backend_link_module()` for the
+transport descriptor. The resulting dependency chain is application → radio-link
+→ spi-backend, preserving existing application dependency names. Its driver owns
+device setup, serialized SPI transactions, and receipt settlement. The service
+owns bounded immutable transfer storage, retries, and pending-work shutdown
+checks. See the [SPI backend guide](../docs/SPI_Backend.md) for the distinction
+between local completion metadata and the still unspecified physical wire
+acknowledgment/error protocol.
 
 An invalidated PULL receipt (`NL_ERR_STALE`/`NL_ERR_EMPTY` from commit) is abandoned
 before polling the replacement. Use latest-value coalescing only for independent

@@ -36,10 +36,12 @@ base, full resync, corrupt/unknown integrity, session filtering, and silence:
 
 ```sh
 python3 tools/replay_multiverse.py examples/multiverse.synthetic.jsonl \
-  --end-us 104000 --summary-only
+  --end-us 104000 --summary-only --expect-frames 4 --expect-link lost
 ```
 
 It reconstructs four exact frames from eleven observations, then reports `lost`.
+The [replay acceptance guide](Replay_Acceptance.md) describes per-observation
+status/link expectations and final frame-count/link checks for regression runs.
 
 All time is logical. The host polls at 10,100 us intervals; the model refresh
 interval is 10,000 us, full-update interval 50,000 us, assembly timeout 5,000 us,
@@ -97,7 +99,8 @@ The model's sequence/session widths are local choices, not RF field discoveries.
 threads, callbacks, files, socket access, or board SDK is used. One instance
 models one universe/session; instantiate independently for multiple streams.
 The ESP-IDF component includes the portable engine and DMX core, but its vendor
-build is still unverified. Tests and synthetic tools remain separate from the
+build passed with the pinned baseline in the
+[hardware preparation guide](Hardware_Preparation.md). Tests and synthetic tools remain separate from the
 installed engine. Neither this library nor its normalized packets share native
 NOVA-LINK zones, DataFragments, or SPI framing.
 
@@ -170,6 +173,15 @@ for the next update. Here engine completion means **native queue acceptance**;
 downstream driver failures and packet loss require a periodic/forced FULL.
 The direct verified-RF adapter contract above uses its own completion boundary.
 
+The [virtual SPI support](SPI_Backend.md) joins two real native host backends
+and complete-frame slave helpers through serialized requests and local receipts.
+`nova-spi-pair-sim` exercises DMX and counters with deterministic transport faults;
+`nova-spi-duplex-sim` sends 512-slot DMX in both directions through production
+ticks with exact frame checks, bounded queue congestion, outage recovery and
+silence expiry. Service and transport conformance adapters exercise all seven
+plugin contract cases each. These extend the native application boundary without
+adding evidence about proprietary RF bytes or physical timing.
+
 Read levels with `nl_multiverse_get()` and check `NOVA_MV_FRAME_READY`; inspect
 `rx.stats.frames` for newly committed frames and `rx.link` for holdover/loss.
 It never exposes incomplete or expired levels or fabricates blackout. Tick through
@@ -227,11 +239,12 @@ exact SmartRF profile/settings alongside run notes.
 
 ## Remaining evidence boundary
 
-Further real Multiverse progress needs the board/transmitter identities,
+Further real Multiverse progress needs the physical board/transmitter records,
 reproducible captures with controlled DMX inputs, actual PHY/framing/integrity
 and hopping characterization, startup/join/reacquisition exchanges, mDMX/FEC
-and SHoW Key handling, and independent fixture-output checks. CC1352R firmware
-and vendor SDK builds need the exact board/configuration. RDM is a separate
+and SHoW Key handling, and independent fixture-output checks. Vendor compile/startup
+projects for ESP32-S3 and LAUNCHXL_CC1352R1 now build; physical SPI/GPIO and capture
+firmware still need the deployment's reviewed mappings and established PHY. RDM is a separate
 implementation and validation effort. These cannot be established by a
 synthetic loopback or by successfully submitting an RF command.
 
