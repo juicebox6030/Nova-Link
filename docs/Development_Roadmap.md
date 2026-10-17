@@ -112,7 +112,7 @@ Target: receive from a Multiverse Transmitter and transmit to ETC ColorSource V 
 - [x] Installed host/adapter API and hardware-independent integration checks
 - [x] Native host/module plugin, 72-slot payload chunks, full TX/RX path and loss recovery
 - [x] Record SDK/toolchain baselines for documented ESP32-S3/CC1352R targets and 5911 transmitter reference
-- [ ] Record actual development-board products, revisions and deployment pin mappings
+- [ ] Record actual development-board products, revisions and deployment pin mappings ([decision log](../DECISIONS.md#open-questions))
 - [x] Offline board-adapter ownership and capture handoff checklist
 - [ ] Verify the existing transmitter-to-fixture reference link and record settings
 - [ ] Build and flash receive capture firmware for the selected board
