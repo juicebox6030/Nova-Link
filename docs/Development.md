@@ -228,6 +228,7 @@ checks invariants as well as crashes:
 ```sh
 tools/fuzz.sh 600            # 10 minutes per harness; needs clang
 tools/fuzz.sh 60 radio       # one harness
+tools/fuzz.sh --admit-only 60 radio  # check capacity before choosing a build host
 ```
 
 The corpus is kept in `build/fuzz-state` (`FUZZ_STATE`). Crashes are saved in
@@ -236,6 +237,20 @@ The corpus is kept in `build/fuzz-state` (`FUZZ_STATE`). Crashes are saved in
 Normal test builds replay every seed through gcc-built `replay_*` binaries, so
 a fixed crash stays covered. `tools/check.sh` runs a 10-second fuzz smoke test
 (`FUZZ_SECONDS`).
+
+Each fuzz round admits workers against current one-minute load and available
+memory, reserving one CPU and 1024 MiB for other work. `FORKS` is an upper bound;
+both the build and fuzzing use the admitted count. `FUZZ_RESERVE_CPUS` and
+`FUZZ_RESERVE_MB` adjust those reserves. Exit 75 means no capacity or another
+fuzz round owns the host; retry later or choose an existing compatible checkout
+on a CPU build VM. `--admit-only` is a read-only capacity snapshot, not a reserved
+slot. Keep the same source revision and record input and artifact hashes when
+comparing hosts. Use a separate `FUZZ_STATE` on the destination; leave the
+continuous runner's corpus and active jobs with their owner. These harnesses
+operate on bytes in memory; RF capture, flashing and acquisition stay on their
+hardware host under its existing lease.
+The long-term wrapper records admission exits as `DEFER`; the existing
+continuous service retries them with its normal restart delay.
 
 `tools/soak.sh` runs `nova-field-sim` over new seeds until `SOAK_SECONDS`
 runs out. Each seed runs in Release with and without security, and in an

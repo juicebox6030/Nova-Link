@@ -27,8 +27,11 @@ nightly)
     exit 2 ;;
 esac
 rc=$?
-result=PASS
-[ "$rc" = 0 ] || result="FAIL rc=$rc"
+case "$job:$rc" in
+fuzz:75) result=DEFER ;;
+*:0) result=PASS ;;
+*) result="FAIL rc=$rc" ;;
+esac
 echo "$(date -Is) $result $(git -C "$root" rev-parse --short HEAD) $log" | tee "$lt/status/$job"
 # Keep two weeks of logs.
 find "$lt/logs" -name '*.log' -mtime +14 -delete
