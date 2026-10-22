@@ -4,6 +4,9 @@ The portable core can be exercised entirely on a development machine. Checked
 items below describe software implementation and offline validation, not board
 readiness or over-the-air performance.
 
+See the [2026-10-22 architecture evaluation](Architecture_Evaluation_2026-10-22.md)
+for design strengths, unresolved risks, evidence limits, and recommended next work.
+
 ## NOVA API / host
 
 - [x] DataFragment structure, validation, and explicit serialization
