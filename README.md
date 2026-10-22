@@ -181,6 +181,15 @@ atomically. `nova-plugin-sim` runs it alongside counter, transport and logger
 plugins with injected loss/corruption and final recovery. NLM1 is a documented
 NOVA-LINK application format; real Multiverse RF still needs captures and hardware.
 
+## Proposed compact hardware
+
+The [DMX dongle and USB-C power barrel design](docs/hardware/DMX_Dongle_and_Power_Barrel.md)
+describes a TI radio/isolated-DMX dongle with a 10–30 second supercapacitor buffer,
+plus inline powerCON, TRUE1 and NEMA 5-15 barrel variants with a central USB-C
+outlet. It includes an [illustrated concept](docs/hardware/dmx-hardware-concept.html)
+and [candidate BOM](docs/hardware/dmx-hardware-bom.csv). This is preliminary
+hardware design, not released schematics, fabrication files or bench validation.
+
 ## Extended protocol prototype
 
 The [extended prototype](experimental/extended/README.md) preserves the separate

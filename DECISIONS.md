@@ -11,6 +11,14 @@ Status values: `decided`, `verified-on-hardware`, `verified-in-emulation`, `open
 | NL-BOARD-003 | 2026-10-17 | Use ESP32-C6 DevKit and TI LAUNCHXL-CC1352R1 as the boards under discussion for the ESP32-C6 port; this records thread context, not a deployment selection. | The user named these boards, while repo docs only identify the TI vendor compile configuration and ESP32-S3 reference target. | Thread `501c0fb8`; [docs/Hardware_Preparation.md](docs/Hardware_Preparation.md) | open |
 | NL-MV-001 | 2026-10-17 | Multiverse PHY settings, over-air framing, hopping behavior, and interoperable pin/wiring remain unresolved for implementation purposes. Firmware-derived material is not an on-air confirmation. | The repo's bench plan expressly leaves these items unverified and requires capture/bench observations. | [docs/Multiverse_2_4GHz.md](docs/Multiverse_2_4GHz.md); [docs/Multiverse_Emulator.md](docs/Multiverse_Emulator.md); thread `2203da05` | open |
 
+## Hardware concept, 2026-10-22
+
+| ID | Date | Decision | Rationale | Source | Status |
+|---|---|---|---|---|---|
+| NL-HW-001 | 2026-10-22 | Design a fixture-plugging transceiver and separate USB-C power barrel for native NOVA-LINK; this task is hardware only, with 10–30 seconds of internal buffer. | Owner clarified protocol, scope and backup duration. No firmware implementation or evaluation is requested. | Owner request/clarification preserved in [hardware design brief](docs/hardware/DMX_Dongle_and_Power_Barrel.md#current-brief-and-acceptance) | decided |
+| NL-HW-002 | 2026-10-22 | Preliminary dongle uses CC1352R1 + ESP32-S3 host, ISOW1412 isolated DMX, USB-C 5 V/1.5 A input and a 25 F supercapacitor; base RF population is 2.4 GHz. Exact pins, passives, antenna and enclosure remain unapproved. | Reuses the project architecture; calculated buffer fits the duration target at the stated load. Does not establish a deployment board or measured performance. | [Hardware design and primary component sources](docs/hardware/DMX_Dongle_and_Power_Barrel.md) | open |
+| NL-HW-003 | 2026-10-22 | Preliminary power barrel has a central side USB-C 5 V/1.5 A output and separate powerCON XX, TRUE1 TOP and NEMA 5-15 assemblies. NEMA variant is 120 V nominal; assembly ratings and safety design remain open. | Retains keyed connector directions and separate mains/isolated USB paths; avoids combining multiple power inputs. | [Power barrel architecture and connector sources](docs/hardware/DMX_Dongle_and_Power_Barrel.md#3-power-barrel) | open |
+
 ## Open questions
 
 - Which exact development-board products and revisions are in use, and what reviewed pin mapping connects host and radio? See roadmap TODO [docs/Development_Roadmap.md](docs/Development_Roadmap.md#L115) and `NL-BOARD-001`/`NL-BOARD-002`.

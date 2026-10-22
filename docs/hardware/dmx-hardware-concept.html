@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOVA-LINK · DMX dongle and USB-C power barrel</title>
+<style>
+:root{color-scheme:light dark;--ink:var(--foreground,#e7ebf0);--sub:var(--muted-foreground,#a0aaba);--line:var(--border,#343e4c);--panel:var(--card,#19212c);--r:var(--radius,14px);--cyan:#58cbd5;--green:#79d3a1;--orange:#eebc77}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font:15px/1.55 var(--font-sans,system-ui,sans-serif)}main{width:100%;padding:0}h1{font-size:29px;letter-spacing:-1px;line-height:1.1;margin:8px 0 14px;font-weight:650}h2{font-size:21px;letter-spacing:-.4px;line-height:1.25;margin:0 0 8px}h3{font-size:15px;margin:0 0 6px}p{margin:8px 0 14px}.eyebrow{font:11px/1.5 var(--font-mono,monospace);letter-spacing:2px;text-transform:uppercase;color:var(--sub)}.intro{font-size:16px;max-width:650px}.muted,.caption{color:var(--sub)}.caption{font-size:12px;line-height:1.5}.pillrow{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0 24px}.pill{font-size:12px;padding:5px 10px;border:1px solid var(--line);border-radius:30px}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px;margin:0 0 18px;overflow:hidden}.darkstage{background:#111923;color:#e6ecf3;padding:16px;border-radius:var(--r);margin:16px 0 12px}.darkstage svg{display:block;width:100%;height:auto}.stagehead{display:flex;gap:10px;justify-content:space-between;align-items:baseline;font-size:11px;color:#abb9ca}.stagehead strong{font-size:12px;color:#e3ebf3;font-weight:500}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.feature{border-top:1px solid var(--line);padding-top:12px}.feature p{margin:0;color:var(--sub);font-size:13px}.tag{display:inline-block;font-size:11px;padding:2px 7px;border-radius:5px;background:#315456;color:#b5f0ee;margin-right:6px}.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:15px 0}button{font:inherit;color:var(--ink);background:transparent;border:1px solid var(--line);padding:8px 13px;border-radius:9px;cursor:pointer;font-size:13px}button[aria-pressed="true"]{background:var(--ink);color:var(--panel);border-color:var(--ink)}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}.variantdetails{min-height:120px}.variantname{font-weight:600}.connectorrow{display:grid;grid-template-columns:1fr 30px 1fr;gap:8px;align-items:start}.connector{border-top:2px solid var(--line);padding-top:9px;font-size:12px}.connector strong{display:block;font-size:13px}.arrow{padding-top:9px;text-align:center;color:var(--sub)}.note{padding:12px 0 0;border-top:1px solid var(--line);font-size:13px;color:var(--sub)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:15px}.step{padding:14px;border:1px solid var(--line);border-radius:10px;font-size:12px}.step b{display:block;font-size:14px;margin:5px 0}.step span{color:var(--sub)}.powerflow{display:grid;grid-template-columns:1fr 30px 1fr;gap:8px;align-items:center;margin:16px 0}.block{border:1px solid var(--line);padding:13px;border-radius:10px;font-size:12px;min-height:88px}.block b{font-size:14px;display:block}.block small{display:block;color:var(--sub)}.span3{grid-column:1/-1}.bus{border-left:3px solid var(--cyan);padding-left:12px;margin:12px 0 16px;font-size:13px}.isolated{border:1px dashed #85bda2;border-radius:10px;padding:16px;margin-top:15px}.schematic{width:100%;display:block;margin-top:12px}.schematic text{fill:var(--ink);font:14px system-ui,sans-serif}.schematic .small{font-size:12px;fill:var(--sub)}.schematic .wire{stroke:var(--ink);stroke-width:1.6;fill:none}.schematic .box{fill:var(--panel);stroke:var(--line);stroke-width:1.4}.schematic .isoline{stroke:var(--green);stroke-width:2;stroke-dasharray:6 5}.schematic .label{font-weight:600}.runtimecontrols{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:17px 0}label{display:block;font-size:13px}input[type=range]{display:block;width:100%;margin:13px 0 0;accent-color:#52b7bd}output{float:right;font-weight:600}.runtimefigures{display:grid;grid-template-columns:1fr 1fr;gap:15px}.stat{padding:15px;border:1px solid var(--line);border-radius:10px}.stat .number{font-size:34px;line-height:1.2;letter-spacing:-1px;font-weight:600}.stat .unit{font-size:15px;margin-left:3px}.stat .caption{margin-top:5px}.bars{height:104px;margin:17px 0 10px;display:flex;flex-direction:column;gap:12px;justify-content:center}.barrow{display:grid;grid-template-columns:58px 1fr 50px;gap:10px;align-items:center;font-size:12px}.track{height:13px;border-radius:9px;background:var(--line);overflow:hidden}.fill{height:100%;border-radius:9px;background:var(--cyan);transition:width .2s}.fill.aged{background:var(--green)}.warn{color:var(--warning,#efbe7f);font-size:12px;min-height:19px}.formula{font:12px/1.7 var(--font-mono,monospace);padding:12px 0;border-top:1px solid var(--line);color:var(--sub)}table{border-collapse:collapse;width:100%;font-size:12px}th,td{text-align:left;border-bottom:1px solid var(--line);padding:10px 7px;vertical-align:top}th:first-child,td:first-child{padding-left:0}th{font-size:11px;color:var(--sub);font-weight:500}.links{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;margin-top:15px}a{color:var(--ink);text-underline-offset:3px}.foot{font-size:12px;color:var(--sub);margin:20px 0 5px}.dot{width:6px;height:6px;border-radius:50%;background:var(--cyan);display:inline-block;margin-right:6px}.datasources{font-size:11px;color:var(--sub);margin-top:12px}.datasources a{color:var(--sub)}
+@media(max-width:480px){h1{font-size:25px}.card{padding:16px}.grid2{grid-template-columns:1fr;gap:12px}.steps{grid-template-columns:1fr}.step{padding:12px}.runtimecontrols{grid-template-columns:1fr;gap:12px}.stat{padding:12px}.stat .number{font-size:29px}.connectorrow{grid-template-columns:1fr 18px 1fr}.darkstage{padding:16px}.stagehead{font-size:10px}.stagehead strong{font-size:10px}th,td{padding:9px 4px;font-size:11px}}
+@media print{.card{break-inside:avoid}button,input{display:none}.darkstage{print-color-adjust:exact}.card{background:white;color:#111}.muted,.caption{color:#555}body{color:#111}.foot{color:#555}}
+</style>
+</head>
+<body><main>
+<div class="eyebrow">NOVA-LINK · preliminary hardware · revision A</div>
+<h1>Wireless DMX.<br>Power from the fixture’s feed.</h1>
+<p class="intro">A TI-based transceiver plugs into the light’s DMX input. A matching inline power barrel passes mains to the fixture and supplies USB-C from its center.</p>
+<div class="pillrow"><span class="pill">Native NOVA-LINK</span><span class="pill">10–30 s buffer target</span><span class="pill">5 V USB-C</span><span class="pill">Hardware only</span></div>
+
+<section class="card" aria-labelledby="dongle-title">
+<div class="eyebrow">01 / fixture transceiver</div><h2 id="dongle-title">A small, buffered DMX dongle</h2>
+<p class="muted">TI CC1352R1 radio + ESP32-S3 host + isolated DMX. A single supercapacitor bridges brief USB power interruptions.</p>
+<div class="darkstage">
+<div class="stagehead"><strong>DMX DONGLE</strong><span>Concept geometry · not to scale</span></div>
+<svg viewBox="0 0 720 245" role="img" aria-label="Illustration of a black elongated DMX dongle with female XLR connector at left, recessed USB-C input on its side, status lights and a plastic antenna tail at right">
+<defs><linearGradient id="body" x2="0" y2="1"><stop stop-color="#3c495a"/><stop offset=".45" stop-color="#202d3e"/><stop offset="1" stop-color="#141f2c"/></linearGradient><linearGradient id="metal"><stop stop-color="#6c7a8d"/><stop offset=".3" stop-color="#d1dbe3"/><stop offset=".55" stop-color="#93a2b5"/><stop offset="1" stop-color="#4c5c70"/></linearGradient><linearGradient id="top" x2="1" y2="1"><stop stop-color="#4b5c70"/><stop offset="1" stop-color="#243345"/></linearGradient></defs>
+<ellipse cx="378" cy="188" rx="265" ry="13" fill="#080d14" opacity=".6"/>
+<path d="M204 91 L237 65 H603 L636 93 V152 L604 178 H235 L204 153 Z" fill="url(#body)" stroke="#526278"/>
+<path d="M204 91 L237 65 H603 L636 93 H244 Z" fill="url(#top)"/>
+<path d="M244 93 V178 M590 93 V178" stroke="#131d2a" stroke-width="2"/>
+<path d="M590 93 L603 65 M590 93 H636" stroke="#73839a" opacity=".35"/>
+<path d="M591 95 H635 V151 L605 176 H591 Z" fill="#28384a"/>
+<path d="M612 111 q10 9 0 18 M607 107 q17 13 0 26" stroke="#7b96ad" stroke-width="2" fill="none"/>
+<path d="M131 96 L163 78 H215 L235 98 V153 L209 169 H158 L131 152 Z" fill="url(#metal)" stroke="#71839a"/>
+<ellipse cx="139" cy="125" rx="26" ry="36" fill="#9daec1" stroke="#b9c8d6" stroke-width="2"/>
+<ellipse cx="138" cy="125" rx="20" ry="29" fill="#1a2532"/>
+<g fill="#080d15" stroke="#63768a" stroke-width="1.5"><ellipse cx="131" cy="111" rx="3.6" ry="4.7"/><ellipse cx="145" cy="111" rx="3.6" ry="4.7"/><ellipse cx="126" cy="127" rx="3.6" ry="4.7"/><ellipse cx="150" cy="127" rx="3.6" ry="4.7"/><ellipse cx="138" cy="141" rx="3.6" ry="4.7"/></g>
+<path d="M165 85 V162 M179 81 V166 M194 81 V166" stroke="#718398" stroke-width="2" opacity=".65"/>
+<rect x="185" y="72" width="30" height="9" rx="3" fill="#b7c4d3"/>
+<text x="272" y="119" fill="#e5edf6" font-size="21" font-family="system-ui" letter-spacing="2">NOVA-LINK</text>
+<text x="273" y="142" fill="#94a7bc" font-size="11" font-family="monospace" letter-spacing="1.8">DMX / TRANSCEIVER</text>
+<circle cx="530" cy="113" r="3.5" fill="#64d9cf"/><circle cx="545" cy="113" r="3.5" fill="#88d39b"/>
+<rect x="485" y="142" width="66" height="21" rx="6" fill="#101821" stroke="#5e728a"/>
+<rect x="498" y="148" width="39" height="9" rx="4" fill="#080d14" stroke="#8295a8"/>
+<path d="M503 152 H532" stroke="#bb9c66" stroke-width="2"/>
+<circle cx="567" cy="151" r="6" fill="#131f2d" stroke="#687d96"/>
+<path d="M135 186 V204 H601 V186" stroke="#62748b" fill="none"/>
+<text x="366" y="224" text-anchor="middle" fill="#96a9bd" font-family="monospace" font-size="13">~110 mm overall target · 34 × 28 mm body section</text>
+</svg>
+</div>
+<div class="grid2">
+<div class="feature"><h3>Fixture end</h3><p>Female 5-pin XLR fits the usual male DMX input. Three-pin female and male-input transmitter end assemblies are variants.</p></div>
+<div class="feature"><h3>USB-C + retention</h3><p>Recessed 5 V input, status indicators, function button and a tether eye. Use a short, retained cable.</p></div>
+<div class="feature"><h3>25 F internal buffer</h3><p>One 2.7 V supercapacitor, charged to 2.6 V. About 26 s calculated at a 1.5 W load; verify on a prototype.</p></div>
+<div class="feature"><h3>Plastic antenna tail</h3><p>2.4 GHz base design. Keep metal, the capacitor and USB wiring away from the matched TI antenna.</p></div>
+</div>
+<p class="note">The buffer powers the dongle and DMX circuit. The fixture continues to need its own mains feed.</p>
+</section>
+
+<section class="card" aria-labelledby="barrel-title">
+<div class="eyebrow">02 / inline power barrel</div><h2 id="barrel-title">Mains through. USB-C at the center.</h2>
+<p class="muted">One shared isolated 5 V supply design, with three connector-specific assemblies.</p>
+<div class="tabs" role="group" aria-label="Power connector variant">
+<button type="button" data-variant="t1" aria-pressed="true">TRUE1 TOP</button><button type="button" data-variant="pc" aria-pressed="false">powerCON</button><button type="button" data-variant="us" aria-pressed="false">NEMA 5-15</button>
+</div>
+<div class="darkstage">
+<div class="stagehead"><strong id="barrel-stage-title">TRUE1 TOP BARREL</strong><span>~125 × 60 × 50 mm center body target</span></div>
+<svg viewBox="0 0 720 245" role="img" aria-label="Illustration of an inline power adapter with connectors on opposite ends and a recessed USB-C output in the center of its side">
+<defs><linearGradient id="barrelbody" x2="0" y2="1"><stop stop-color="#3a485b"/><stop offset=".55" stop-color="#233145"/><stop offset="1" stop-color="#151f2e"/></linearGradient></defs>
+<ellipse cx="366" cy="193" rx="276" ry="13" fill="#080d14" opacity=".6"/>
+<g id="locking-connectors">
+<path d="M109 100 H192 V165 H109 Z" fill="#26354a" stroke="#687a91"/>
+<path d="M534 100 H619 V165 H534 Z" fill="#26354a" stroke="#687a91"/>
+<rect id="in-collar" x="121" y="99" width="41" height="67" rx="5" fill="#bec469"/>
+<rect id="out-collar" x="570" y="99" width="38" height="67" rx="5" fill="#bec469"/>
+<ellipse cx="109" cy="132" rx="21" ry="33" fill="#3b4c62" stroke="#72839b"/>
+<ellipse cx="109" cy="132" rx="14" ry="24" fill="#111b28"/>
+<path d="M102 123 V134 M115 123 V134 M109 139 V147" stroke="#b2bbab" stroke-width="3"/>
+<ellipse cx="619" cy="132" rx="20" ry="33" fill="#182436" stroke="#72839b"/>
+<path d="M613 120 V132 M625 120 V132 M619 138 V147" stroke="#778ba2" stroke-width="3"/>
+</g>
+<g id="nema-connectors" style="display:none">
+<path d="M77 133 H190 M535 133 H645" stroke="#080e17" stroke-width="16"/>
+<rect x="62" y="107" width="48" height="52" rx="13" fill="#36445a" stroke="#71829a"/>
+<path d="M48 118 H65 M48 141 H65" stroke="#b8ac8d" stroke-width="7"/>
+<path d="M48 152 H65" stroke="#8390a1" stroke-width="7"/>
+<rect x="615" y="105" width="49" height="58" rx="13" fill="#36445a" stroke="#71829a"/>
+<path d="M630 117 V130 M647 115 V132" stroke="#0a111b" stroke-width="5"/>
+<path d="M635 146 Q639 137 643 146 V151 H635 Z" fill="#0a111b"/>
+</g>
+<path d="M180 94 L218 68 H510 L547 96 V163 L510 188 H217 L180 163 Z" fill="url(#barrelbody)" stroke="#5c708a"/>
+<path d="M180 94 L218 68 H510 L547 96 H217 Z" fill="#405169"/>
+<path d="M216 96 V187 M509 96 V187" stroke="#111b29" stroke-width="2"/>
+<text x="255" y="121" fill="#c0cede" font-size="12" font-family="monospace" letter-spacing="2">NOVA-LINK / POWER</text>
+<rect x="324" y="137" width="81" height="31" rx="9" fill="#111a26" stroke="#7589a3"/>
+<rect x="340" y="147" width="48" height="11" rx="5" fill="#090e16" stroke="#92a1b4"/>
+<path d="M347 152 H382" stroke="#c5aa7a" stroke-width="2"/>
+<circle cx="428" cy="152" r="4" fill="#80d2aa"/>
+<path d="M364 170 V214" stroke="#59cad2" stroke-width="3"/>
+<text x="364" y="234" text-anchor="middle" fill="#75d8dd" font-size="14" font-family="system-ui">USB-C OUT · 5 V / 1.5 A</text>
+<text x="111" y="200" text-anchor="middle" fill="#9aacbf" font-size="13" font-family="system-ui">AC IN</text>
+<text x="619" y="200" text-anchor="middle" fill="#9aacbf" font-size="13" font-family="system-ui">AC OUT</text>
+</svg>
+</div>
+<div class="variantdetails" aria-live="polite">
+<p><span class="variantname" id="variant-name">TRUE1 TOP</span> <span class="caption" id="variant-voltage">100–240 V AC nominal · indoor/dry assembly</span></p>
+<div class="connectorrow"><div class="connector"><span class="caption">BARREL INPUT</span><strong id="input-part">NAC3MPX-TOP</strong><span id="input-description">TRUE1 appliance inlet</span></div><div class="arrow">→</div><div class="connector"><span class="caption">BARREL OUTPUT</span><strong id="output-part">NAC3FPX-TOP</strong><span id="output-description">TRUE1 appliance outlet</span></div></div>
+<p class="caption" id="variant-note">Correctly mated TRUE1 TOP pairs support breaking capacity. An open USB port makes this an indoor/dry concept, regardless of the connector’s ingress rating.</p>
+</div>
+<div class="steps"><div class="step"><span>MAINS PATH</span><b>15 A total target</b><span>Rated wire/splices carry fixture power. USB supply shares the input budget. Final assembly rating pending.</span></div><div class="step"><span>USB BRANCH</span><b>Isolated AC/DC</b><span>10 W candidate module; 7.5 W USB output. Dedicated branch protection and secondary OVP.</span></div><div class="step"><span>CENTER OUTLET</span><b>5 V / 1.5 A USB-C</b><span>Source CC controller, attachment-gated VBUS, current protection and discharge. No PD required.</span></div></div>
+</section>
+
+<section class="card" aria-labelledby="circuit-title">
+<div class="eyebrow">03 / circuit architecture</div><h2 id="circuit-title">A buffered rail keeps the whole dongle alive</h2>
+<p class="muted">The USB input and capacitor feed one power path. Radio, host and isolated DMX remain on the same protected 3.3 V rail.</p>
+<div class="powerflow">
+<div class="block"><b>USB-C input</b><small>5 V · source must advertise ≥1.5 A</small><small>CC detection + input OVP/reverse block</small></div><div class="arrow">→</div><div class="block"><b>TPS61094</b><small>Normal: bypass USB-derived supply</small><small>Backup: regulate SYS_RAW to 3.6 V</small></div>
+<div class="block span3"><b>TPS61094 SUP ↔ 25 F capacitor</b><small>Same backup IC charges the cap and boosts from it during an interruption.</small><small>2.6 V charge target · 500 mA cap charge · ~1.6 V under-load cutoff</small></div>
+<div class="block"><b>SYS_RAW</b><small>Protected USB-derived voltage normally</small><small>3.6 V while running from the capacitor</small></div><div class="arrow">→</div><div class="block"><b>TPS62132 → 3.3 V</b><small>Fixed 3.3 V buck</small><small>Hardware power-good and shutdown latch</small></div>
+</div>
+<div class="bus">3.3 V distribution → ESP32-S3 host · TI CC1352R1 · TI ISOW1412</div>
+<div class="isolated"><h3>Isolated DMX port · 500 kbit/s TI ISOW1412</h3><p class="caption">Its internal converter supplies the isolated side. Half-duplex ties: Y↔A for positive data, Z↔B for negative data. The isolated ground goes to XLR pin 1.</p>
+<svg class="schematic" viewBox="0 0 650 195" role="img" aria-label="DMX circuit intent. Host UART TX, RX and enable signals enter an isolated TI transceiver. Its positive output goes to XLR pin 3, negative output to pin 2, and isolated common to pin 1, with TVS protection and switched 120 ohm termination.">
+<rect class="box" x="4" y="30" width="120" height="125" rx="8"/><text class="label" x="64" y="59" text-anchor="middle">ESP32-S3</text><text class="small" x="64" y="83" text-anchor="middle">UART + enables</text>
+<path class="wire" d="M124 103 H178 M124 123 H178"/><text class="small" x="150" y="95" text-anchor="middle">TX / RX</text>
+<rect class="box" x="178" y="30" width="188" height="125" rx="8"/><text class="label" x="272" y="59" text-anchor="middle">ISOW1412</text><path class="isoline" d="M268 70 V144"/><text class="small" x="222" y="100" text-anchor="middle">logic</text><text class="small" x="319" y="100" text-anchor="middle">isolated</text>
+<path class="wire" d="M366 87 H574 M366 110 H574 M366 144 H574"/>
+<rect class="box" x="410" y="69" width="45" height="59" rx="5"/><text class="small" x="432" y="103" text-anchor="middle">TVS</text>
+<path class="wire" d="M494 87 V92 M494 104 V110"/><rect class="box" x="488" y="92" width="12" height="12"/>
+<text class="small" x="494" y="55" text-anchor="middle">120 Ω</text><text class="small" x="494" y="70" text-anchor="middle">switched*</text>
+<text class="small" x="397" y="164" text-anchor="middle">isolated common</text>
+<rect class="box" x="574" y="62" width="70" height="102" rx="7"/><text x="609" y="49" text-anchor="middle">XLR</text><text x="609" y="92" text-anchor="middle">3 +</text><text x="609" y="115" text-anchor="middle">2 −</text><text x="609" y="149" text-anchor="middle">1</text>
+<text class="small" x="4" y="186">DE defaults low. *Termination OFF when driving a fixture chain.</text>
+</svg></div>
+<p class="caption">Functional schematic only. Final supervisor/CC logic, protection, passives, pin assignments and footprints remain schematic-capture work.</p>
+</section>
+
+<section class="card" aria-labelledby="runtime-title">
+<div class="eyebrow">04 / buffer sizing</div><h2 id="runtime-title">Designed around a 10–30 second interruption</h2>
+<p class="muted">Explore the energy estimate. These are calculations for a fully charged cell, not measured or guaranteed runtime.</p>
+<div class="runtimecontrols"><label for="load">Average useful load<output id="load-value" for="load">1.50 W</output><input id="load" type="range" min="0.75" max="3" step="0.05" value="1.5"></label><label for="efficiency">Boost + buck efficiency<output id="efficiency-value" for="efficiency">75%</output><input id="efficiency" type="range" min="60" max="90" step="1" value="75"></label></div>
+<div class="runtimefigures" aria-live="polite"><div class="stat"><span class="number" id="nominal-runtime">26.3</span><span class="unit">s</span><div class="caption">Nominal cell · 25 F · start 2.60 V</div></div><div class="stat"><span class="number" id="aged-runtime">15.5</span><span class="unit">s</span><div class="caption">Illustrative aged/tolerance case</div></div></div>
+<div class="bars" aria-label="Calculated runtime comparison on a zero to 60 second scale"><div class="barrow"><span>Nominal</span><div class="track"><div class="fill" id="nominal-bar" style="width:43.75%"></div></div><span id="nominal-label">26.3 s</span></div><div class="barrow"><span>Aged</span><div class="track"><div class="fill aged" id="aged-bar" style="width:25.87%"></div></div><span id="aged-label">15.5 s</span></div></div>
+<div class="warn" id="runtime-warning" aria-live="polite">Prototype acceptance: at least 10 s at the agreed worst-case load and temperature.</div>
+<div class="formula">t = ½ C (Vstart² − Vcutoff²) × η / P<br>Cutoff: 1.60 V under load. Aged case: 15.75 F, start 2.55 V.<br>Initial tolerance factor 0.90 × end-of-life factor 0.70.</div>
+<p class="caption">Capacitor ESR, temperature, peak current and converter efficiency still need bench verification. Ideal recharge: about 130 s from empty, or 50 s from cutoff, at 500 mA cap current. A lighter load may run longer than 30 s.</p>
+</section>
+
+<section class="card" aria-labelledby="parts-title">
+<div class="eyebrow">05 / preliminary component choices</div><h2 id="parts-title">A concrete starting point for schematic capture</h2>
+<table><thead><tr><th>Function</th><th>Candidate</th><th>Design role</th></tr></thead><tbody>
+<tr><td>Radio</td><td>TI CC1352R1</td><td>Native NOVA-LINK; 2.4 GHz base antenna</td></tr>
+<tr><td>Host</td><td>ESP32-S3-MINI-1U</td><td>Project host architecture; host RF inactive</td></tr>
+<tr><td>DMX</td><td>TI ISOW1412</td><td>Isolated data + isolated power, 3.3 V mode</td></tr>
+<tr><td>Buffer power</td><td>TI TPS61094</td><td>Charge cap and supply backup rail</td></tr>
+<tr><td>Logic rail</td><td>TI TPS62132</td><td>3.3 V buck from USB or backup rail</td></tr>
+<tr><td>Capacitor</td><td>Eaton HV1625-2R7256-R</td><td>25 F / 2.7 V; 16.5 × 28.4 mm</td></tr>
+<tr><td>USB sink</td><td>TI TUSB320 + CC monitor</td><td>Attachment/current detection; continuous monitor required</td></tr>
+<tr><td>USB source</td><td>TI TPS25810</td><td>Hardware 1.5 A advertisement, port switch + discharge</td></tr>
+<tr><td>Protection</td><td>TI TPS25947 family</td><td>OVP, current limit and reverse block; exact variants pending</td></tr>
+<tr><td>Barrel supply</td><td>MEAN WELL IRM-10-5</td><td>Isolated 5 V / 2 A module, derating to be checked</td></tr>
+</tbody></table>
+<div class="datasources">Primary component references: <a href="https://www.ti.com/product/CC1352R">TI radio</a> · <a href="https://www.ti.com/lit/ds/symlink/isow1412.pdf">DMX isolation</a> · <a href="https://www.ti.com/lit/ds/symlink/tps61094.pdf">buffer power</a> · <a href="https://www.eaton.com/us/en-us/skuPage.HV1625-2R7256-R.html">capacitor</a> · <a href="https://www.meanwell.com/Upload/PDF/IRM-10/IRM-10-SPEC.PDF">AC/DC module</a></div>
+<p class="note">Hardware limits for later software: one TI RF chain; one half-duplex DMX port; full-universe wired refresh around 40 Hz is a target; native RF fragmentation and RDM still need implementation. No software evaluation was performed.</p>
+<div class="links"><a href="https://github.com/juicebox6030/Nova-Link/blob/main/docs/hardware/DMX_Dongle_and_Power_Barrel.md">Full hardware design</a><a href="https://github.com/juicebox6030/Nova-Link/blob/main/docs/hardware/dmx-hardware-bom.csv">Candidate BOM</a></div>
+</section>
+<p class="foot"><span class="dot"></span>Preliminary design, 2026-10-22. Packaging targets require CAD fit. Schematics, PCB layout, mains product-safety assessment and prototype measurements remain before fabrication or release.</p>
+</main>
+<script>
+'use strict';
+const variants={
+t1:{name:'TRUE1 TOP',stage:'TRUE1 TOP BARREL',voltage:'100–240 V AC nominal · indoor/dry assembly',input:'NAC3MPX-TOP',output:'NAC3FPX-TOP',inputDescription:'TRUE1 appliance inlet',outputDescription:'TRUE1 appliance outlet',inColor:'#bec469',outColor:'#bec469',note:'Correctly mated TRUE1 TOP pairs support breaking capacity. An open USB port makes this an indoor/dry concept, regardless of the connector’s ingress rating.'},
+pc:{name:'powerCON XX',stage:'POWERCON BARREL',voltage:'100–240 V AC nominal · indoor/dry assembly',input:'NAC3MPXXA',output:'NAC3MPXXB',inputDescription:'Blue power-in chassis connector',outputDescription:'Gray power-out chassis connector',inColor:'#4a9ad2',outColor:'#a9b0bb',note:'Use the correct gray-to-blue jumper to the fixture. De-energize before mating legacy powerCON parts; breaking-capacity claims depend on the complete identified mating pair.'},
+us:{name:'NEMA 5-15',stage:'NEMA 5-15 BARREL',voltage:'120 V AC nominal · 125 V connector ceiling',input:'5-15P',output:'5-15R',inputDescription:'Molded input pigtail / male plug',outputDescription:'Molded output pigtail / female receptacle',inColor:'#36445a',outColor:'#36445a',note:'Grounded three-conductor cord assemblies. Short pigtails reduce leverage at the outlet. This variant must never be labeled for 240 V.'}
+};
+function setVariant(key){
+ const v=variants[key]; if(!v) return;
+ for(const button of document.querySelectorAll('[data-variant]')) button.setAttribute('aria-pressed',String(button.dataset.variant===key));
+ const fields={'variant-name':'name','barrel-stage-title':'stage','variant-voltage':'voltage','input-part':'input','output-part':'output','input-description':'inputDescription','output-description':'outputDescription','variant-note':'note'};
+ for(const [id,field] of Object.entries(fields))document.getElementById(id).textContent=v[field];
+ document.getElementById('in-collar').setAttribute('fill',v.inColor);document.getElementById('out-collar').setAttribute('fill',v.outColor);
+ document.getElementById('locking-connectors').style.display=key==='us'?'none':'';
+ document.getElementById('nema-connectors').style.display=key==='us'?'':'none';
+}
+for(const button of document.querySelectorAll('[data-variant]'))button.addEventListener('click',()=>setVariant(button.dataset.variant));
+function estimate(c,start,cutoff,efficiency,load){return .5*c*(start*start-cutoff*cutoff)*efficiency/load;}
+function updateRuntime(){
+ const load=Number(document.getElementById('load').value),eta=Number(document.getElementById('efficiency').value)/100;
+ const nominal=estimate(25,2.6,1.6,eta,load),aged=estimate(25*.9*.7,2.55,1.6,eta,load);
+ document.getElementById('load-value').textContent=load.toFixed(2)+' W';document.getElementById('efficiency-value').textContent=Math.round(eta*100)+'%';
+ for(const [key,time] of [['nominal',nominal],['aged',aged]]){document.getElementById(key+'-runtime').textContent=time.toFixed(1);document.getElementById(key+'-label').textContent=time.toFixed(1)+' s';document.getElementById(key+'-bar').style.width=Math.min(100,time/60*100)+'%';}
+ document.getElementById('runtime-warning').textContent=load>1.5?'Above the 1.5 W planning allocation: power-path and peak-current review required.':aged<10?'This assumption falls below 10 s in the aged case; revise the buffer or load budget.':'Prototype acceptance: at least 10 s at the agreed worst-case load and temperature.';
+}
+for(const id of ['load','efficiency'])document.getElementById(id).addEventListener('input',updateRuntime);
+updateRuntime();
+// Deterministic checks of the published design and its interactive presentation.
+function check(ok,label){if(!ok)throw new Error(label);}
+check(Math.abs(estimate(25,2.6,1.6,.75,1.5)-26.25)<1e-9,'Nominal runtime calculation');
+check(Math.abs(estimate(25*.9*.7,2.55,1.6,.75,1.5)-15.52359375)<1e-6,'Aged runtime calculation');
+for(const key of ['pc','us','t1']){setVariant(key);check(document.getElementById('input-part').textContent===variants[key].input,'Connector input selection '+key);check(document.getElementById('output-part').textContent===variants[key].output,'Connector output selection '+key);check(document.querySelectorAll('[data-variant][aria-pressed="true"]').length===1,'Exactly one selected variant');}
+check(variants.us.voltage.includes('125 V'),'NEMA voltage limit');
+console.info('Design checks: runtime arithmetic and all three connector selections passed. Hardware performance remains unverified.');
+window.addEventListener('load',()=>{const overflow=document.documentElement.scrollWidth>window.innerWidth+1;if(overflow)console.error('Horizontal page overflow at width '+window.innerWidth);else console.info('Layout check: no horizontal overflow at width '+window.innerWidth);});
+</script>
+</body>
+</html>

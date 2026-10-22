@@ -1,0 +1,38 @@
+assembly,reference,quantity,candidate,value_or_function,status,source
+Dongle,U1,1,TI CC1352R1F3RGZ,NOVA-LINK radio 2.4 GHz base population,Preliminary exact ordering code check required,https://www.ti.com/product/CC1352R
+Dongle,U2,1,Espressif ESP32-S3-MINI-1U,Host module external antenna version host RF inactive in base design,Preliminary module memory option pending,https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf
+Dongle,U3,1,TI TPS61094,Supercapacitor charge and backup SYS_RAW 3.6 V,Preliminary supporting passives and transient design pending,https://www.ti.com/lit/ds/symlink/tps61094.pdf
+Dongle,U4,1,TI TPS62132,Fixed 3.3 V buck from SYS_RAW,Preliminary verify low-headroom transient performance,https://www.ti.com/lit/ds/symlink/tps62130.pdf
+Dongle,U5,1,TI ISOW1412,500 kbit/s isolated DMX transceiver with integrated isolated supply,Preliminary 3.3 V isolation mode half-duplex ties required,https://www.ti.com/lit/ds/symlink/isow1412.pdf
+Dongle,U6,1,TI TUSB320 family,USB-C fixed sink CC current detection GPIO mode,Exact suffix and dead-battery circuit pending,https://www.ti.com/lit/ds/symlink/tusb320.pdf
+Dongle,U7,1,TI TPS25947 family,Input OVP controlled inrush current limit and reverse blocking,Exact variant and limits pending,https://www.ti.com/product/TPS25947
+Dongle,U8,1,TBD,Independent VBUS bias LDO for CC controller,Selection pending do not tie bias rail to buffered rail,
+Dongle,U9+,TBD,TBD,Cap cutoff latch USB return rearm rail supervisor and continuous CC current monitor logic,Schematic implementation pending,
+Dongle,C_BUF,1,Eaton HV1625-2R7256-R,25 F 2.7 V cell charged to 2.6 V,Preliminary verify thermal lifetime and tolerance,https://www.eaton.com/us/en-us/skuPage.HV1625-2R7256-R.html
+Dongle,R_OSEL,1,TBD,17.4 kohm 1 percent sets backup output 3.6 V,Value from TPS61094 table 7-1,https://www.ti.com/lit/ds/symlink/tps61094.pdf
+Dongle,R_VCHG,1,TBD,9.53 kohm 1 percent sets cap target 2.6 V,Value from TPS61094 table 7-2,https://www.ti.com/lit/ds/symlink/tps61094.pdf
+Dongle,R_ICHG,1,TBD,274 kohm 1 percent sets cap charge 500 mA,Value from TPS61094 table 7-3,https://www.ti.com/lit/ds/symlink/tps61094.pdf
+Dongle,R_TERM,1,TBD,120 ohm 1 percent switched differential termination,Package power rating pending,
+Dongle,SW_TERM,1,TBD,Recessed manual termination switch,Mechanical selection pending,
+Dongle,R_DE,1,TBD,10 kohm DE pulldown,Initial schematic value,
+Dongle,R_RE,1,TBD,10 kohm receiver disable pullup,Initial schematic value,
+Dongle,L_BUF,1,TBD,2.2 uH shielded initial candidate,Peak saturation and DCR calculation required,
+Dongle,L_BUCK,1,TBD,Per TPS62132 3.3 V reference application,Select with actual load transient and PCB,https://www.ti.com/lit/ds/symlink/tps62130.pdf
+Dongle,J_DMX,1,TBD,5-pin female XLR mating face,Exact insert mounting and latch selection pending,
+Dongle,J_USB,1,TBD,USB-C sink receptacle power only,Mechanical anchoring and ESD selection pending,
+Dongle,D_DMX,1,TBD,RS-485-compatible TVS array on isolated ground,Stand-off clamp capacitance and fault selection pending,
+Dongle,RF1,1,TBD,2.4 GHz matched TI radio antenna and conducted test access,RF reference layout and antenna design pending,
+Dongle,MISC,TBD,TBD,RF crystals matching decoupling ferrites USB ESD reservoirs debug pads indicators and shell,Not a complete procurement BOM,
+Barrel common,PS1,1,MEAN WELL IRM-10-5,Isolated AC/DC 5 V 2 A 10 W,Preliminary enclosure derating and approvals review required,https://www.meanwell.com/Upload/PDF/IRM-10/IRM-10-SPEC.PDF
+Barrel common,U10,1,TI TPS25810,USB-C source controller integrated switch and discharge hardware-select 1.5 A advertisement,Exact CHG straps and limit tolerance validation pending,https://www.ti.com/lit/ds/symlink/tps25810.pdf
+Barrel common,U11,1,TI TPS25947 family or suitable equivalent,Upstream secondary OVP and reverse blocking stage before USB source controller,Exact protection variant and limit coordination pending,https://www.ti.com/product/TPS25947
+Barrel common,F1,1,TBD,PSU primary branch fuse,Value voltage breaking capacity and coordination pending,
+Barrel common,SURGE1,1,TBD,Voltage-specific coordinated thermal and surge protection,Select separately for input voltage scope,
+Barrel common,J_USB_OUT,1,TBD,Central side-facing USB-C source receptacle 5 V 1.5 A,Recessed mounting ESD and cable retention pending,
+Barrel common,MISC,TBD,TBD,Rated mains splices PE conductors wiring barriers enclosure and secondary support parts,Full assembly safety and thermal review pending,
+Barrel PC,J_IN,1,Neutrik NAC3MPXXA,Blue powerCON XX power-in chassis connector,Preliminary use manufacturer cutout and compatible mates,https://www.neutrik.com/en/product/nac3mpxxa.pdf
+Barrel PC,J_OUT,1,Neutrik NAC3MPXXB,Gray powerCON XX power-out chassis connector,Preliminary legacy mate restrictions apply,https://www.neutrik.com/en/product/nac3mpxxb.pdf
+Barrel T1,J_IN,1,Neutrik NAC3MPX-TOP,TRUE1 TOP appliance inlet,Preliminary exact mounting and ratings review pending,https://www.neutrik.co.uk/product/nac3mpx-top
+Barrel T1,J_OUT,1,Neutrik NAC3FPX-TOP,TRUE1 TOP appliance outlet,Preliminary exact mounting and ratings review pending,https://www.neutrik.com/en/product/nac3fpx-top
+Barrel US,J_IN,1,TBD,NEMA 5-15P molded input cord 125 V class,Exact recognized assembly cord and strain relief pending,
+Barrel US,J_OUT,1,TBD,NEMA 5-15R molded output cord 125 V class,Exact recognized assembly cord and strain relief pending,
