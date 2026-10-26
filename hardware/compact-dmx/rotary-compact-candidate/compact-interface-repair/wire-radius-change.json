@@ -1,0 +1,11 @@
+{
+  "changed": [
+    "SourceWireCopper1",
+    "SourceWireInsulation1_0",
+    "SourceWireCopper2",
+    "SourceWireInsulation2_0"
+  ],
+  "before_native_sha256": "e07fae7e2d25f96ff125e285d1c5803bdf3a38450217537863e04b23b8ea9088",
+  "after_native_sha256": "2dd337b465d60489c4ba3bf4de568b71333bda1549f3926051ed4a69c8edbb04",
+  "reason": "Smooth terminal3D bends: positive radius>=2.347mm, return>=1.978mm; OD2 envelope; former0.629mm positive radius rejected. Supplier wire bend specification remains UNMET."
+}

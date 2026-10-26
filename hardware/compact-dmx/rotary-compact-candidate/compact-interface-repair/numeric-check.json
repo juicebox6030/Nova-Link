@@ -1,0 +1,142 @@
+{
+  "protected_hashes": 241,
+  "fixed_extension_mm": 20.932835285633967,
+  "moving_extension_mm": 189.2365858592986,
+  "fixed_tail_mm": 7.497865090535626,
+  "moving_tail_mm": 9.152159800863286,
+  "total_static_flex_trace_length_each_mm": 226.81944603633144,
+  "active_length_each_mm": 1046.167655992167,
+  "static_flex_hot_loop_ohm": 0.019669158122137126,
+  "wire_hot_loop_ohm_nominal_1mm_copper": 0.007635730733399418,
+  "stress_A": 2,
+  "static_plus_wire_drop_at_2A": 0.05460977771107309,
+  "static_plus_wire_heat_at_2A": 0.10921955542214618,
+  "assumptions": {
+    "copper_rho_20C_ohm_mm2_per_m": 0.017241,
+    "temp_coefficient": 0.00393,
+    "copper_temp_C": 80,
+    "flex_finished_width_mm": 7.8,
+    "flex_copper_thickness_mm": 0.063,
+    "wire_copper_diameter_mm_nominal_only": 1,
+    "termination_resistance": "UNKNOWN, not zero; not included",
+    "current": "2A engineering stress, NOT instantaneous fault bound or ampacity grant"
+  },
+  "wire_paths": {
+    "1": {
+      "controls": [
+        [
+          [
+            -53.3,
+            -2.4,
+            -15
+          ],
+          [
+            -40,
+            -2.4,
+            -24
+          ],
+          [
+            25.200000000000003,
+            -5.0,
+            13.5
+          ],
+          [
+            33.2,
+            -5.0,
+            13.5
+          ]
+        ],
+        [
+          [
+            33.2,
+            6.0,
+            13.5
+          ],
+          [
+            31.2,
+            6.0,
+            13.5
+          ],
+          [
+            30.2,
+            6.0,
+            13.5
+          ],
+          [
+            28.2,
+            6.0,
+            13.5
+          ]
+        ]
+      ],
+      "length": 132.13998102210593,
+      "radius_min": 2.3471468740255186,
+      "Uturn_radius": 5.5,
+      "terminal_bend_radius": 2.3471468740255186,
+      "diameter_copper": 1,
+      "diameter_insulated": 2
+    },
+    "2": {
+      "controls": [
+        [
+          [
+            -53.3,
+            -10.4,
+            -15
+          ],
+          [
+            -40,
+            -10.4,
+            -24
+          ],
+          [
+            29.200000000000003,
+            -10.0,
+            15.5
+          ],
+          [
+            37.2,
+            -10.0,
+            15.5
+          ]
+        ],
+        [
+          [
+            37.2,
+            10.0,
+            15.5
+          ],
+          [
+            35.2,
+            10.0,
+            15.5
+          ],
+          [
+            34.2,
+            10.0,
+            15.5
+          ],
+          [
+            32.2,
+            10.0,
+            15.5
+          ]
+        ]
+      ],
+      "length": 149.3285481233266,
+      "radius_min": 1.9786257627548063,
+      "Uturn_radius": 10.0,
+      "terminal_bend_radius": 1.9786257627548063,
+      "diameter_copper": 1,
+      "diameter_insulated": 2
+    }
+  },
+  "fixed_min_radius": 2.2584747642972385,
+  "fixed_active181_gap": 0.1370093759571193,
+  "connector_axial_lower_bound_deltas_mm": {
+    "classic": 12.8,
+    "TRUE1": 16.0,
+    "NEMA": 40.9
+  },
+  "source_electrical_or_lifetime_qualified": false
+}

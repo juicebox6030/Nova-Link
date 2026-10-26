@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source12-candidate/source12.kicad_sch</source>
+    <date>2026-10-23T14:52:38</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>NOVA 12V internal bus / independently protected 5V USB prototype</title>
+        <company/>
+        <rev>S12-R1</rev>
+        <date/>
+        <source>source12.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>MSAST21GBB5106MTNA01 10uF</value>
+      <footprint>S12:C0805</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>26e55ed4-3572-5b9c-a379-967cdf767ac2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>MSAST21GBB5106MTNA01 10uF</value>
+      <footprint>S12:C0805</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eb270fb0-b172-55aa-9e67-1874abceaf07</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>MSAST21GBB5106MTNA01 10uF</value>
+      <footprint>S12:C0805</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>68729d5f-7066-5109-bf6d-fdf618036fed</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>MSASE21GBB5226MTNA01 22uF</value>
+      <footprint>S12:C0805</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f056667-3d29-552b-955c-f364081f934d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>MSASE21GBB5226MTNA01 22uF</value>
+      <footprint>S12:C0805</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>609e8a00-3ac6-5f35-8b8c-779fc8a7a9d6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>T520D157M010ATE055 150uF</value>
+      <footprint>S12:T520D</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:T520D</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4ffbc030-c8e5-5bc1-a5e5-cdd3a35dd65a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>MSAST21GBB5106MTNA01 10uF</value>
+      <footprint>S12:C0805</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e7779333-81fa-519e-aaa5-969fcd992e32</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>TMK105B7104MV-FR 100nF</value>
+      <footprint>S12:C0402</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce2e11f5-beed-5ff3-8644-c34cba5d29e1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>TMK105B7104MV-FR 100nF</value>
+      <footprint>S12:C0402</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48ef935a-9633-57f9-8b06-a33749ea2366</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>GRM155R71E103KA01D 10nF</value>
+      <footprint>S12:C0402</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00d68c4a-3fae-5865-a0e0-437959fbfd5e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>GRM155R71E103KA01D 10nF</value>
+      <footprint>S12:C0402</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0bcabf5a-f5d8-5be4-abd6-bf1622f542cb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>GRM155R71E103KA01D 10nF</value>
+      <footprint>S12:C0402</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c13c5a0e-b11b-505e-9583-82b67dc0de50</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>GRM155R71E103KA01D 10nF</value>
+      <footprint>S12:C0402</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d62b1746-76a2-5c76-98e1-c6fa84e65bc0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>TMK105B7104MV-FR 100nF</value>
+      <footprint>S12:C0402</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a703d9b-2f01-5688-bb29-0de383eaf7fa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>TMK105B7104MV-FR 100nF</value>
+      <footprint>S12:C0402</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>668ffa20-a500-5df0-a112-df314f0019f0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>TMK105B7104MV-FR 100nF</value>
+      <footprint>S12:C0402</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>196f67f0-1e36-50bf-aee1-5c86509a4b49</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>TMK105B7104MV-FR 100nF</value>
+      <footprint>S12:C0402</footprint>
+      <fields>
+        <field name="Role">Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="C" description=""/>
+      <property name="Role" value="Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>467067fb-1118-519d-8076-ea5b4e495fd0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>TPD1E10B06DPYR</value>
+      <footprint>S12:DPY2</footprint>
+      <fields>
+        <field name="Role">ESD suppression only; NOT DC overvoltage clamp</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:DPY2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="ESD" description=""/>
+      <property name="Role" value="ESD suppression only; NOT DC overvoltage clamp"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e42ff95a-509d-5eea-84f2-6de2ec3471cf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J0">
+      <value>FAB_SOURCE12_WIRE_LANDS</value>
+      <footprint>S12:Wire2</footprint>
+      <fields>
+        <field name="Role">Stationary isolated module12V lead termination; primary/mains NOT present</field>
+        <field name="Scope">land_only</field>
+        <field name="Footprint">S12:Wire2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="PAIR" description=""/>
+      <property name="Role" value="Stationary isolated module12V lead termination; primary/mains NOT present"/>
+      <property name="Scope" value="land_only"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08538e43-5eef-5278-aa2c-4501a9eb48ea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>USB4105-GF-A</value>
+      <footprint>S12:USB4105</footprint>
+      <fields>
+        <field name="Role">Actual16contacts/12signal lands plus4shellstakes</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:USB4105</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="USB4105" description=""/>
+      <property name="Role" value="Actual16contacts/12signal lands plus4shellstakes"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf20874f-0b76-5611-a25f-5bd7cc31782b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A1_B12"/>
+            <pin num="A4_B9"/>
+            <pin num="B8"/>
+            <pin num="A5"/>
+            <pin num="B7"/>
+            <pin num="A6"/>
+            <pin num="A7"/>
+            <pin num="B6"/>
+            <pin num="A8"/>
+            <pin num="B5"/>
+            <pin num="B4_A9"/>
+            <pin num="B1_A12"/>
+            <pin num="S1"/>
+            <pin num="S2"/>
+            <pin num="S3"/>
+            <pin num="S4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>FAB_FPC20_STATIONARY</value>
+      <footprint>S12:FPC20</footprint>
+      <fields>
+        <field name="Role">Stationary flex clamp/coverlay/strain relief external; no connector invented</field>
+        <field name="Scope">land_only</field>
+        <field name="Footprint">S12:FPC20</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="PAIR" description=""/>
+      <property name="Role" value="Stationary flex clamp/coverlay/strain relief external; no connector invented"/>
+      <property name="Scope" value="land_only"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77882487-eec0-504f-86b7-0b9e73e6b0fa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>FAB_FPC20_ROTATING</value>
+      <footprint>S12:FPC20</footprint>
+      <fields>
+        <field name="Role">Rotating end of SAME external finite-resistance20mm FPC</field>
+        <field name="Scope">land_only</field>
+        <field name="Footprint">S12:FPC20</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="PAIR" description=""/>
+      <property name="Role" value="Rotating end of SAME external finite-resistance20mm FPC"/>
+      <property name="Scope" value="land_only"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bdb199a4-6572-5961-bbf3-848d7ea11cfa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>XAL4020-152MEC 1.5uH</value>
+      <footprint>S12:XAL4020</footprint>
+      <fields>
+        <field name="Role">TI supported1.5uH option; maxDCR23.6mohm25C, current/thermal derating gate</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:XAL4020</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="L" description=""/>
+      <property name="Role" value="TI supported1.5uH option; maxDCR23.6mohm25C, current/thermal derating gate"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6356aeca-0b39-5642-98f3-4cebf5384ae7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>TNPW040268K1BYED 68100ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5240f1b6-a690-574e-a125-8e8f86fb3864</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>TNPW040210K0BYED 10000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3215b6a8-dc86-5bd6-9c4d-435c279b7a6f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>13b6969c-820d-5150-aa71-2c1a35739c76</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>TNPW04029K09BYED 9090ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ee4eadea-ee5c-57aa-8b07-5db630ced86c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>TNPW04022K00BYED 2000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a72388d8-9888-5ac7-9738-b32ae631f1cf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>TNPW0402100RBYED 100ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a0820c46-1b9d-56d1-a825-0f0238751268</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>TNPW040264K0BYED 64000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3c92e6ca-88de-57ad-a757-5e8b956a85a4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>TNPW040210K0BYED 10000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>28dcd97a-22f9-5bf0-a039-a570560b0375</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0ac10ee4-7b38-52c8-b4f8-3151507fba8c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>TNPW040210K0BYED 10000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>786c0489-9b9e-55f7-b938-b2542e09cfa7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>78735f20-2b7f-5158-bc27-5e24b3e97a91</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>TNPW04029K09BYED 9090ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6f08b286-bb85-53c8-be93-776f1044ad89</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>725bb5af-41b5-5d15-90d4-3331fa571d27</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>TNPW04028K00BYED 8000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fb35e7fb-002d-5982-b1d3-b91b6fc18800</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bb43ec9b-67ce-58c4-a9c8-8b9f757fa209</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70f60b50-6a2e-5ceb-b61d-e129d18f84d3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f90ffec5-5184-52b5-84af-f918c3dd6322</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R18">
+      <value>TNPW040220K0BYED 20000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ba6d1af8-645f-56b0-b7a7-c563ccf269ab</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R19">
+      <value>TNPW040224K9BYED 24900ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>88430905-b70f-5af7-bd80-3331b55b599e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>TNPW040237K4BYED 37400ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f104c3f5-fd31-5900-a292-81e42895cdb8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>TNPW040210K0BYED 10000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b7dfc68e-692a-57d4-9502-3341fee52bb0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e74ec990-92d5-5378-ab7a-90edba62306a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R23">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5fcaf5e8-218b-52f1-b104-2cf6427fbdaf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R24">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>49aeceab-889e-5ee6-9d98-b305292e3c55</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R25">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>99e8d9a6-81fd-5660-a854-38b665c588a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R26">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f134ad6a-2aaf-54c6-b627-6125df0cd041</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R27">
+      <value>TNPW040210K0BYED 10000ohm</value>
+      <footprint>S12:R0402</footprint>
+      <fields>
+        <field name="Role">0.1%10ppm; independent checker includes\u00b10.2% allocation</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="R" description=""/>
+      <property name="Role" value="0.1%10ppm; independent checker includes\u00b10.2% allocation"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d85000fa-83d6-55e0-b7df-a4ef971fd8bd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>FAB_PORT_FAULT_PROBE</value>
+      <footprint>S12:TP1</footprint>
+      <fields>
+        <field name="Role">Diagnostic only; no MCU interface</field>
+        <field name="Scope">land_only</field>
+        <field name="Footprint">S12:TP1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="TP" description=""/>
+      <property name="Role" value="Diagnostic only; no MCU interface"/>
+      <property name="Scope" value="land_only"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0f1fd3e4-3c36-5841-b1d5-1c7d29c8d1a4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>FAB_PROTECT_FAULT_PROBE</value>
+      <footprint>S12:TP1</footprint>
+      <fields>
+        <field name="Role">Diagnostic only; no qualified source-good signal</field>
+        <field name="Scope">land_only</field>
+        <field name="Footprint">S12:TP1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="TP" description=""/>
+      <property name="Role" value="Diagnostic only; no qualified source-good signal"/>
+      <property name="Scope" value="land_only"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6f58ada7-4228-57c3-8fb7-a3e60ee8a508</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>TPS259474LRPWR</value>
+      <footprint>S12:RPW10</footprint>
+      <fields>
+        <field name="Role">Stationary: reverse-blocking latched breaker BEFORE flex; finite response, not instantaneous limiter</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:RPW10</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="TPS259474" description=""/>
+      <property name="Role" value="Stationary: reverse-blocking latched breaker BEFORE flex; finite response, not instantaneous limiter"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9df81c32-dbfd-5bb8-92cc-6b3d141a6052</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>TPS62135RGXR</value>
+      <footprint>S12:RGX11</footprint>
+      <fields>
+        <field name="Role">4A buck, forcedPWM,5.18V; MODE high and VSEL low</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:RGX11</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="TPS62135" description=""/>
+      <property name="Role" value="4A buck, forcedPWM,5.18V; MODE high and VSEL low"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a5768e0f-4f80-5988-9eae-a98ad2425ce9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>TPS25810RVCR</value>
+      <footprint>S12:RVC20</footprint>
+      <fields>
+        <field name="Role">5V1.5A CC advertisement; no firmware, data or higherPD</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:RVC20</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="TPS25810" description=""/>
+      <property name="Role" value="5V1.5A CC advertisement; no firmware, data or higherPD"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>29b4845f-8c91-53cc-b040-4fa9b8b68d35</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>TPS25940LRVCR</value>
+      <footprint>S12:RVC20</footprint>
+      <fields>
+        <field name="Role">Independent reverse-blocking output disconnector; thermal latch; OVP recovery is NOT latched</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:RVC20</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="TPS25940" description=""/>
+      <property name="Role" value="Independent reverse-blocking output disconnector; thermal latch; OVP recovery is NOT latched"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>22cab289-aff9-5fde-aaf4-096087b2c7db</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>TPS3700DDCR</value>
+      <footprint>S12:DDC6</footprint>
+      <fields>
+        <field name="Role">Independent12V-powered4.8..5.4V window; wire-AND outputs control U4EN</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">S12:DDC6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="S12" part="TPS3700_DDC" description=""/>
+      <property name="Role" value="Independent12V-powered4.8..5.4V window; wire-AND outputs control U4EN"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="source12"/>
+      <property name="Sheetfile" value="source12.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7b1bd9f3-84aa-5d33-b7cb-28568955ae8b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="S12" part="C">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="S12" part="ESD">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESD</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="S12" part="L">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="S12" part="PAIR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PAIR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="ISOLATED_PLUS" type="passive"/>
+        <pin num="2" name="ISOLATED_RETURN" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="S12" part="R">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="S12" part="TP">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TP</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="DIAGNOSTIC_ONLY" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="S12" part="TPS25810">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS25810</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="FAULT_N" type="open_collector"/>
+        <pin num="2" name="IN1" type="power_in"/>
+        <pin num="3" name="IN1" type="passive"/>
+        <pin num="4" name="IN2" type="power_in"/>
+        <pin num="5" name="AUX" type="power_in"/>
+        <pin num="6" name="EN" type="input"/>
+        <pin num="7" name="CHG_HIGH" type="input"/>
+        <pin num="8" name="CHG_HI_LOW" type="input"/>
+        <pin num="9" name="REF_RTN" type="passive"/>
+        <pin num="10" name="REF" type="passive"/>
+        <pin num="11" name="CC1" type="bidirectional"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="CC2" type="bidirectional"/>
+        <pin num="14" name="OUT" type="power_out"/>
+        <pin num="15" name="OUT" type="passive"/>
+        <pin num="16" name="DEBUG_N_UNUSED" type="open_collector"/>
+        <pin num="17" name="AUDIO_N_UNUSED" type="open_collector"/>
+        <pin num="18" name="POL_N_UNUSED" type="open_collector"/>
+        <pin num="19" name="UFP_N_UNUSED" type="open_collector"/>
+        <pin num="20" name="LD_DET_UNUSED" type="open_collector"/>
+        <pin num="21" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="S12" part="TPS25940">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS25940</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="DEVSLP_LOW" type="input"/>
+        <pin num="2" name="PGOOD" type="open_collector"/>
+        <pin num="3" name="PGTH" type="input"/>
+        <pin num="4" name="OUT" type="power_out"/>
+        <pin num="5" name="OUT" type="passive"/>
+        <pin num="6" name="OUT" type="passive"/>
+        <pin num="7" name="OUT" type="passive"/>
+        <pin num="8" name="OUT" type="passive"/>
+        <pin num="9" name="IN" type="power_in"/>
+        <pin num="10" name="IN" type="passive"/>
+        <pin num="11" name="IN" type="passive"/>
+        <pin num="12" name="IN" type="passive"/>
+        <pin num="13" name="IN" type="passive"/>
+        <pin num="14" name="EN_UVLO" type="input"/>
+        <pin num="15" name="OVP_BACKSTOP" type="input"/>
+        <pin num="16" name="GND" type="power_in"/>
+        <pin num="17" name="ILIM" type="input"/>
+        <pin num="18" name="DVDT" type="input"/>
+        <pin num="19" name="IMON_UNUSED" type="output"/>
+        <pin num="20" name="FAULT_N" type="open_collector"/>
+        <pin num="21" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="S12" part="TPS259474">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS259474</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="EN_UVLO" type="input"/>
+        <pin num="2" name="OVLO" type="input"/>
+        <pin num="3" name="PG_UNUSED" type="open_collector"/>
+        <pin num="4" name="PGTH_UNUSED" type="input"/>
+        <pin num="5" name="IN" type="power_in"/>
+        <pin num="6" name="OUT" type="power_out"/>
+        <pin num="7" name="DVDT" type="input"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="ILM" type="input"/>
+        <pin num="10" name="ITIMER_OPEN_FASTEST" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="S12" part="TPS3700_DDC">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3700_DDC</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUTA_UV_ACTIVE_LOW" type="open_collector"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="INA_PLUS" type="input"/>
+        <pin num="4" name="INB_MINUS" type="input"/>
+        <pin num="5" name="VDD_INDEPENDENT_12V" type="power_in"/>
+        <pin num="6" name="OUTB_OV_ACTIVE_LOW" type="open_collector"/>
+      </pins>
+    </libpart>
+    <libpart lib="S12" part="TPS62135">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS62135</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="SW" type="power_out"/>
+        <pin num="3" name="GND_ACTUAL_POWER_BAR" type="power_in"/>
+        <pin num="4" name="FB2_UNUSED" type="open_collector"/>
+        <pin num="5" name="FB" type="input"/>
+        <pin num="6" name="VOS_KELVIN_OUTPUT" type="input"/>
+        <pin num="7" name="PG" type="open_collector"/>
+        <pin num="8" name="EN" type="input"/>
+        <pin num="9" name="SS_TR" type="input"/>
+        <pin num="10" name="MODE_HIGH_FORCED_PWM" type="input"/>
+        <pin num="11" name="VSEL_LOW" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="S12" part="USB4105">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">USB4105</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="A1_B12" name="GND_shared_land" type="passive"/>
+        <pin num="A4_B9" name="VBUS_shared_land" type="passive"/>
+        <pin num="A5" name="CC1" type="passive"/>
+        <pin num="A6" name="D_PLUS" type="passive"/>
+        <pin num="A7" name="D_MINUS" type="passive"/>
+        <pin num="A8" name="SBU1_NC" type="passive"/>
+        <pin num="B1_A12" name="GND_shared_land" type="passive"/>
+        <pin num="B4_A9" name="VBUS_shared_land" type="passive"/>
+        <pin num="B5" name="CC2" type="passive"/>
+        <pin num="B6" name="D_PLUS" type="passive"/>
+        <pin num="B7" name="D_MINUS" type="passive"/>
+        <pin num="B8" name="SBU2_NC" type="passive"/>
+        <pin num="S1" name="SHELL" type="passive"/>
+        <pin num="S2" name="SHELL" type="passive"/>
+        <pin num="S3" name="SHELL" type="passive"/>
+        <pin num="S4" name="SHELL" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="S12">
+      <uri>${KIPRJMOD}/source12.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/BACKSTOP_OVP" class="Default">
+      <node ref="R17" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R18" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="15" pinfunction="OVP_BACKSTOP_15" pintype="input"/>
+    </net>
+    <net code="2" name="/BARRIER_DVDT" class="Default">
+      <node ref="C12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="18" pinfunction="DVDT_18" pintype="input"/>
+    </net>
+    <net code="3" name="/BARRIER_EN" class="Default">
+      <node ref="R15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="14" pinfunction="EN_UVLO_14" pintype="input"/>
+      <node ref="U5" pin="1" pinfunction="OUTA_UV_ACTIVE_LOW_1" pintype="open_collector"/>
+      <node ref="U5" pin="6" pinfunction="OUTB_OV_ACTIVE_LOW_6" pintype="open_collector"/>
+    </net>
+    <net code="4" name="/BARRIER_ILIM" class="Default">
+      <node ref="R19" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="17" pinfunction="ILIM_17" pintype="input"/>
+    </net>
+    <net code="5" name="/BUCK5_18" class="Default">
+      <node ref="C16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="VOS_KELVIN_OUTPUT_6" pintype="input"/>
+      <node ref="U4" pin="10" pinfunction="IN_10" pintype="passive"/>
+      <node ref="U4" pin="11" pinfunction="IN_11" pintype="passive"/>
+      <node ref="U4" pin="12" pinfunction="IN_12" pintype="passive"/>
+      <node ref="U4" pin="13" pinfunction="IN_13" pintype="passive"/>
+      <node ref="U4" pin="9" pinfunction="IN_9" pintype="power_in"/>
+    </net>
+    <net code="6" name="/BUCK_OV_SENSE" class="Default">
+      <node ref="R13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="4" pinfunction="INB_MINUS_4" pintype="input"/>
+    </net>
+    <net code="7" name="/BUCK_UV_SENSE" class="Default">
+      <node ref="R11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="INA_PLUS_3" pintype="input"/>
+    </net>
+    <net code="8" name="/FPC12_PROTECTED" class="Default">
+      <node ref="C15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="ISOLATED_PLUS_1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="ISOLATED_PLUS_1" pintype="passive"/>
+      <node ref="R9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="OUT_6" pintype="power_out"/>
+      <node ref="U2" pin="1" pinfunction="VIN_1" pintype="power_in"/>
+      <node ref="U2" pin="10" pinfunction="MODE_HIGH_FORCED_PWM_10" pintype="input"/>
+      <node ref="U5" pin="5" pinfunction="VDD_INDEPENDENT_12V_5" pintype="power_in"/>
+    </net>
+    <net code="9" name="/GND_ISO" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C17" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J0" pin="2" pinfunction="ISOLATED_RETURN_2" pintype="passive"/>
+      <node ref="J1" pin="A1_B12" pinfunction="GND_shared_land_A1_B12" pintype="passive"/>
+      <node ref="J1" pin="B1_A12" pinfunction="GND_shared_land_B1_A12" pintype="passive"/>
+      <node ref="J1" pin="S1" pinfunction="SHELL_S1" pintype="passive"/>
+      <node ref="J1" pin="S2" pinfunction="SHELL_S2" pintype="passive"/>
+      <node ref="J1" pin="S3" pinfunction="SHELL_S3" pintype="passive"/>
+      <node ref="J1" pin="S4" pinfunction="SHELL_S4" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="ISOLATED_RETURN_2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="ISOLATED_RETURN_2" pintype="passive"/>
+      <node ref="R10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R18" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R19" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R21" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R23" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R27" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="PGTH_UNUSED_4" pintype="input"/>
+      <node ref="U1" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U2" pin="11" pinfunction="VSEL_LOW_11" pintype="input"/>
+      <node ref="U2" pin="3" pinfunction="GND_ACTUAL_POWER_BAR_3" pintype="power_in"/>
+      <node ref="U3" pin="12" pinfunction="GND_12" pintype="power_in"/>
+      <node ref="U3" pin="21" pinfunction="EP_GND_21" pintype="power_in"/>
+      <node ref="U3" pin="8" pinfunction="CHG_HI_LOW_8" pintype="input"/>
+      <node ref="U4" pin="1" pinfunction="DEVSLP_LOW_1" pintype="input"/>
+      <node ref="U4" pin="16" pinfunction="GND_16" pintype="power_in"/>
+      <node ref="U4" pin="21" pinfunction="EP_GND_21" pintype="power_in"/>
+      <node ref="U5" pin="2" pinfunction="GND_2" pintype="power_in"/>
+    </net>
+    <net code="10" name="/MODULE12_UNPROTECTED" class="Default">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J0" pin="1" pinfunction="ISOLATED_PLUS_1" pintype="passive"/>
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="IN_5" pintype="power_in"/>
+    </net>
+    <net code="11" name="/PORT_ENABLE" class="Default">
+      <node ref="R22" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R23" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="PG_7" pintype="open_collector"/>
+      <node ref="U3" pin="6" pinfunction="EN_6" pintype="input"/>
+      <node ref="U4" pin="2" pinfunction="PGOOD_2" pintype="open_collector"/>
+    </net>
+    <net code="12" name="/PORT_FAULT_N" class="Default">
+      <node ref="R25" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="DIAGNOSTIC_ONLY_1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="FAULT_N_1" pintype="open_collector"/>
+    </net>
+    <net code="13" name="/PROTECT_FAULT_N" class="Default">
+      <node ref="R26" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="DIAGNOSTIC_ONLY_1" pintype="passive"/>
+      <node ref="U4" pin="20" pinfunction="FAULT_N_20" pintype="open_collector"/>
+    </net>
+    <net code="14" name="/REF" class="Default">
+      <node ref="R24" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="REF_10" pintype="passive"/>
+    </net>
+    <net code="15" name="/REF_RTN" class="Default">
+      <node ref="R24" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="REF_RTN_9" pintype="passive"/>
+    </net>
+    <net code="16" name="/REG_EN" class="Default">
+      <node ref="R10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="EN_8" pintype="input"/>
+    </net>
+    <net code="17" name="/REG_FB" class="Default">
+      <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="FB_5" pintype="input"/>
+    </net>
+    <net code="18" name="/REG_SS" class="Default">
+      <node ref="C10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="SS_TR_9" pintype="input"/>
+    </net>
+    <net code="19" name="/SAFE5_18" class="Default">
+      <node ref="C17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R20" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R22" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R25" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R26" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R27" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="IN1_2" pintype="power_in"/>
+      <node ref="U3" pin="3" pinfunction="IN1_3" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="IN2_4" pintype="power_in"/>
+      <node ref="U3" pin="5" pinfunction="AUX_5" pintype="power_in"/>
+      <node ref="U3" pin="7" pinfunction="CHG_HIGH_7" pintype="input"/>
+      <node ref="U4" pin="4" pinfunction="OUT_4" pintype="power_out"/>
+      <node ref="U4" pin="5" pinfunction="OUT_5" pintype="passive"/>
+      <node ref="U4" pin="6" pinfunction="OUT_6" pintype="passive"/>
+      <node ref="U4" pin="7" pinfunction="OUT_7" pintype="passive"/>
+      <node ref="U4" pin="8" pinfunction="OUT_8" pintype="passive"/>
+    </net>
+    <net code="20" name="/SAFE_PGTH" class="Default">
+      <node ref="R20" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R21" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="PGTH_3" pintype="input"/>
+    </net>
+    <net code="21" name="/SOURCE_DVDT" class="Default">
+      <node ref="R6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="DVDT_7" pintype="input"/>
+    </net>
+    <net code="22" name="/SOURCE_DVDT_C" class="Default">
+      <node ref="C11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R6" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="23" name="/SOURCE_ILM" class="Default">
+      <node ref="R5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="ILM_9" pintype="input"/>
+    </net>
+    <net code="24" name="/SOURCE_OVLO" class="Default">
+      <node ref="R3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="OVLO_2" pintype="input"/>
+    </net>
+    <net code="25" name="/SOURCE_UVLO" class="Default">
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="EN_UVLO_1" pintype="input"/>
+    </net>
+    <net code="26" name="/SW" class="Default">
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="SW_2" pintype="power_out"/>
+    </net>
+    <net code="27" name="/USB_CC1" class="Default">
+      <node ref="J1" pin="A5" pinfunction="CC1_A5" pintype="passive"/>
+      <node ref="U3" pin="11" pinfunction="CC1_11" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="/USB_CC2" class="Default">
+      <node ref="J1" pin="B5" pinfunction="CC2_B5" pintype="passive"/>
+      <node ref="U3" pin="13" pinfunction="CC2_13" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="/USB_D_SHORT" class="Default">
+      <node ref="J1" pin="A6" pinfunction="D_PLUS_A6" pintype="passive"/>
+      <node ref="J1" pin="A7" pinfunction="D_MINUS_A7" pintype="passive"/>
+      <node ref="J1" pin="B6" pinfunction="D_PLUS_B6" pintype="passive"/>
+      <node ref="J1" pin="B7" pinfunction="D_MINUS_B7" pintype="passive"/>
+    </net>
+    <net code="30" name="/USB_VBUS" class="Default">
+      <node ref="C7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J1" pin="A4_B9" pinfunction="VBUS_shared_land_A4_B9" pintype="passive"/>
+      <node ref="J1" pin="B4_A9" pinfunction="VBUS_shared_land_B4_A9" pintype="passive"/>
+      <node ref="U3" pin="14" pinfunction="OUT_14" pintype="power_out"/>
+      <node ref="U3" pin="15" pinfunction="OUT_15" pintype="passive"/>
+    </net>
+    <net code="31" name="unconnected-(J1-SBU1_NC-PadA8)" class="Default">
+      <node ref="J1" pin="A8" pinfunction="SBU1_NC_A8" pintype="passive+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(J1-SBU2_NC-PadB8)" class="Default">
+      <node ref="J1" pin="B8" pinfunction="SBU2_NC_B8" pintype="passive+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(U1-ITIMER_OPEN_FASTEST-Pad10)" class="Default">
+      <node ref="U1" pin="10" pinfunction="ITIMER_OPEN_FASTEST_10" pintype="input+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(U1-PG_UNUSED-Pad3)" class="Default">
+      <node ref="U1" pin="3" pinfunction="PG_UNUSED_3" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(U2-FB2_UNUSED-Pad4)" class="Default">
+      <node ref="U2" pin="4" pinfunction="FB2_UNUSED_4" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U3-AUDIO_N_UNUSED-Pad17)" class="Default">
+      <node ref="U3" pin="17" pinfunction="AUDIO_N_UNUSED_17" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U3-DEBUG_N_UNUSED-Pad16)" class="Default">
+      <node ref="U3" pin="16" pinfunction="DEBUG_N_UNUSED_16" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(U3-LD_DET_UNUSED-Pad20)" class="Default">
+      <node ref="U3" pin="20" pinfunction="LD_DET_UNUSED_20" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(U3-POL_N_UNUSED-Pad18)" class="Default">
+      <node ref="U3" pin="18" pinfunction="POL_N_UNUSED_18" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U3-UFP_N_UNUSED-Pad19)" class="Default">
+      <node ref="U3" pin="19" pinfunction="UFP_N_UNUSED_19" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(U4-IMON_UNUSED-Pad19)" class="Default">
+      <node ref="U4" pin="19" pinfunction="IMON_UNUSED_19" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

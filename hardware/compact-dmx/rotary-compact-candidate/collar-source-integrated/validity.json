@@ -1,0 +1,518 @@
+{
+  "StationaryCoreEnvelope": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 256957.14632241635
+  },
+  "FixedEarPad0": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 1.0078452550178119
+  },
+  "FixedScrew0": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 1.784424627239001
+  },
+  "FixedEarShoe0": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 4.378622393114376
+  },
+  "FixedEarPad1": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 1.007845219003697
+  },
+  "FixedScrew1": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 1.7844246272390036
+  },
+  "FixedEarShoe1": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 4.3786223931143615
+  },
+  "FixedAdhesive": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 7.669817340496294
+  },
+  "FixedStiffener": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 30.53133410099386
+  },
+  "FixedStaticTail": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 28.487571844360055
+  },
+  "MovingEarPad0": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 1.2744714186571324
+  },
+  "MovingScrew0": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 1.784424627239001
+  },
+  "MovingEarShoe0": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 5.298247717012141
+  },
+  "MovingEarPad1": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 1.2744714186570905
+  },
+  "MovingScrew1": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 1.7844246272390039
+  },
+  "MovingEarShoe1": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 5.2982477170121545
+  },
+  "MovingAdhesive": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 9.455500031420028
+  },
+  "MovingStiffener": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 37.96993509080606
+  },
+  "MovingStaticTail": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 34.84004656268887
+  },
+  "IndexKnob": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 17.496092595723653
+  },
+  "IndexPin": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 41.954788519933345
+  },
+  "IndexRearCap": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 42.9392883892653
+  },
+  "IndexSpring": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 10.93274243449249
+  },
+  "StationarySpool": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 3794.108481699925
+  },
+  "CoreBondFront": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 30.22212132753475
+  },
+  "CoreBondRear": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 30.22212132753475
+  },
+  "FrameBolt_45_25_m29_5": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 5.475795995207006
+  },
+  "FrameBolt_45_25_29_5": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 5.475795995207006
+  },
+  "FrameBolt_68_9_m29_5": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 5.475795995207019
+  },
+  "FrameBolt_68_9_29_5": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 5.475795995207019
+  },
+  "RotorHalfPositiveY": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 10658.45721471812
+  },
+  "RotorHalfNegativeY": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 10817.297369821386
+  },
+  "Flex_minus90": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 3347.5628477673895
+  },
+  "Flex_0": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 3347.5474286690405
+  },
+  "Flex_90": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 3347.531339721763
+  },
+  "SRC_PCB_27x20x1_actual_holes_nominal": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 529.4222684037048
+  },
+  "SRC_C1_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 3.827249999999996
+  },
+  "SRC_C10_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.395999999999999
+  },
+  "SRC_C11_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.3959999999999996
+  },
+  "SRC_C12_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.395999999999999
+  },
+  "SRC_C13_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.3959999999999991
+  },
+  "SRC_C2_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 3.827249999999996
+  },
+  "SRC_C3_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 1.3769999999999964
+  },
+  "SRC_C4_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 3.8272499999999985
+  },
+  "SRC_C5_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 3.8272499999999963
+  },
+  "SRC_C6_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 3.827249999999996
+  },
+  "SRC_C7_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 1.3769999999999964
+  },
+  "SRC_C8_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 108.37599999999998
+  },
+  "SRC_C9_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 3.827249999999998
+  },
+  "SRC_D1_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.30712500000000076
+  },
+  "SRC_J0_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 12.000000000000009
+  },
+  "SRC_J1_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 240.60321000000008
+  },
+  "SRC_L1_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 41.23270000000003
+  },
+  "SRC_R1_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.23100000000000132
+  },
+  "SRC_R10_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.23100000000000065
+  },
+  "SRC_R11_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.2310000000000006
+  },
+  "SRC_R12_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.23100000000000132
+  },
+  "SRC_R13_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.23100000000000137
+  },
+  "SRC_R2_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.23100000000000054
+  },
+  "SRC_R3_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.23100000000000132
+  },
+  "SRC_R4_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.23100000000000065
+  },
+  "SRC_R5_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.2310000000000006
+  },
+  "SRC_R6_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.23100000000000132
+  },
+  "SRC_R7_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.23100000000000132
+  },
+  "SRC_R8_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.23100000000000137
+  },
+  "SRC_R9_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.23100000000000065
+  },
+  "SRC_U1_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 4.409999999999997
+  },
+  "SRC_U2_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 8.059999999999995
+  },
+  "SRC_U3_maximum_body_allocation": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 10.167999999999996
+  },
+  "SRC_J1_S1_stake_swept_slot_allocation_not_vendor_profile": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 1.0370176727053906
+  },
+  "SRC_J1_S2_stake_swept_slot_allocation_not_vendor_profile": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 1.0370176727053895
+  },
+  "SRC_J1_S3_stake_swept_slot_allocation_not_vendor_profile": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.8390176727053881
+  },
+  "SRC_J1_S4_stake_swept_slot_allocation_not_vendor_profile": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 0.8390176727053872
+  },
+  "SRC_FPC_external_clamp_reserved_not_designed": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 164.40000000000003
+  },
+  "SRC_FPC_solder_access_volume": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 168.8388000000001
+  },
+  "SRC_Top_assembly_clearance_proposal": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 135.0
+  },
+  "SRC_Bottom_assembly_clearance_proposal": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 135.0
+  },
+  "BoardRetainerScrew_m11": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 2.9813714282567183
+  },
+  "BoardRetainerScrew_11": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 2.981371428256718
+  },
+  "BoardEndRetainer": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 18.279336444578213
+  },
+  "TailClampScrew_74_4": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 2.0985838925979854
+  },
+  "TailClampScrew_96_6": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 2.0985838925979854
+  },
+  "TailClampShoe": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 42.58137625790355
+  },
+  "StaticDevelopedFanout": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 577.0469296469491
+  },
+  "StaticFanoutChannelReserve": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 1692.1901211896682
+  },
+  "USBPlugApproach": {
+    "valid": true,
+    "solids": 1,
+    "closed": true,
+    "volume_mm3": 936.0
+  }
+}

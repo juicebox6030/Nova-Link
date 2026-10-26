@@ -1,0 +1,290 @@
+{
+  "status": "SAVED BREP VALIDITY ONLY PASS; known assembly failures retained",
+  "rows": [
+    {
+      "name": "StationaryCoreEnvelope",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 256957.14632241635
+    },
+    {
+      "name": "FrontJournal",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 215.0734330647565
+    },
+    {
+      "name": "RearJournal",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 215.0734330647565
+    },
+    {
+      "name": "FixedScrew0",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 1.5330972149518174
+    },
+    {
+      "name": "FixedEarShoe0",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 4.173828735696985
+    },
+    {
+      "name": "FixedScrew1",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 1.5330972149518192
+    },
+    {
+      "name": "FixedEarShoe1",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 4.173828735696952
+    },
+    {
+      "name": "FixedStaticTail",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 28.487571844360055
+    },
+    {
+      "name": "FixedBacking",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 105.7272204451916
+    },
+    {
+      "name": "MovingScrew0",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 1.5330972149518174
+    },
+    {
+      "name": "MovingEarShoe0",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 5.046651465325025
+    },
+    {
+      "name": "MovingScrew1",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 1.5330972149518192
+    },
+    {
+      "name": "MovingEarShoe1",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 5.046651465324912
+    },
+    {
+      "name": "MovingStaticTail",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 34.84004656268887
+    },
+    {
+      "name": "InnerDielectricGuide",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 1581.1681845280582
+    },
+    {
+      "name": "IndexPin",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 43.03981935418016
+    },
+    {
+      "name": "IndexCarrier",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 127.1920373349381
+    },
+    {
+      "name": "StopTrack",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 860.2230055046766
+    },
+    {
+      "name": "StopPeg",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 3.1415926535897927
+    },
+    {
+      "name": "PowerBoard_TARGET",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 448.55999999999995
+    },
+    {
+      "name": "Components_TARGET",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 1007.9999999999998
+    },
+    {
+      "name": "USB4105ShellEnvelope",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 217.49678999999975
+    },
+    {
+      "name": "USBStake0",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 0.06750000000000049
+    },
+    {
+      "name": "USBStake1",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 0.06750000000000049
+    },
+    {
+      "name": "USBStake2",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 0.06750000000000049
+    },
+    {
+      "name": "USBStake3",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 0.06750000000000049
+    },
+    {
+      "name": "USBPlugScreen",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 936.0
+    },
+    {
+      "name": "FrontCoreSaddle",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 324.08961865470883
+    },
+    {
+      "name": "RearCoreSaddle",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 307.8760800518007
+    },
+    {
+      "name": "FrontGuideLink",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 152.995562229823
+    },
+    {
+      "name": "RearGuideLink",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 152.995562229823
+    },
+    {
+      "name": "FrameBolt_45_25_m29_5",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 5.475795995207006
+    },
+    {
+      "name": "FrameBolt_45_25_29_5",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 5.475795995207006
+    },
+    {
+      "name": "FrameBolt_68_9_m29_5",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 5.475795995207019
+    },
+    {
+      "name": "FrameBolt_68_9_29_5",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 5.475795995207019
+    },
+    {
+      "name": "RotorHalfPositiveY",
+      "valid": true,
+      "solid_count": 2,
+      "closed_solids": true,
+      "volume_mm3": 10219.741684865936
+    },
+    {
+      "name": "RotorHalfNegativeY",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 10540.7116847072
+    },
+    {
+      "name": "Flex_minus90",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 3347.5628477673895
+    },
+    {
+      "name": "Flex_0",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 3347.5474286690405
+    },
+    {
+      "name": "Flex_90",
+      "valid": true,
+      "solid_count": 1,
+      "closed_solids": true,
+      "volume_mm3": 3347.531339721763
+    }
+  ],
+  "solid_total": 41,
+  "target_board_x_mm": [
+    73.8,
+    98.8
+  ]
+}

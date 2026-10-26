@@ -1,0 +1,18 @@
+{
+  "Altium_board_outline_mil": {
+    "VX0": "692",
+    "VY0": "1534",
+    "VX1": "3290.4252",
+    "VY1": "1534",
+    "VX2": "3290.4252",
+    "VY2": "3502.5039",
+    "VX3": "692",
+    "VY3": "3502.5039",
+    "VX4": "692",
+    "VY4": "1534"
+  },
+  "width_mm": 66.00000008,
+  "height_mm": 49.99999906,
+  "transformer_embedded_step_sha256": "04b7b67d968cfe7e1ef9e5a450cdcc777d411e10a26633269419222b0e01085b",
+  "embedded_model_not_supplier_maximum": true
+}

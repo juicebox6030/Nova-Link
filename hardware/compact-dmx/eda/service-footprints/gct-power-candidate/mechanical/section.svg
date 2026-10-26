@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="800" viewBox="0 0 1100 800"><rect width="1100" height="800" fill="white"/>
+<text x="35" y="30" font-size="19" font-family="Helvetica, sans-serif" fill="#172c3e">GCT FLUSH PROTOTYPE - DIMENSIONED Y/Z SECTION</text>
+<text x="35" y="52" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Coordinates in mm. Equal Y/Z scale: 18 drawing points/mm; print scaling may vary.</text>
+<text x="35" y="73" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Connector/stakes are envelopes, not supplier 3D. External plug screening only; no universal cable-fit claim.</text>
+<rect x="60" y="516" width="198" height="36" fill="#adb7bf"/>
+<rect x="222" y="156.0" width="36" height="207.0" fill="#adb7bf"/>
+<rect x="60" y="120" width="198" height="36" fill="#adb7bf"/>
+<rect x="88.80000000000003" y="300" width="169.20000000000002" height="54" fill="#6c8b9a"/>
+<rect x="88.80000000000003" y="300.0" width="36" height="135.0" fill="#6c8b9a"/>
+<rect x="60" y="444" width="185.4" height="18" fill="#3b9d79"/>
+<rect x="135.60000000000005" y="387.12" width="122.39999999999999" height="56.88" fill="#e5af50"/>
+<rect x="265.2" y="363.0" width="216" height="108" fill="#b0c1eb"/>
+<line x1="258" y1="138" x2="510" y2="133" stroke="#506475" stroke-width="0.7"/>
+<line x1="510" y1="133" x2="535" y2="133" stroke="#506475" stroke-width="0.7"/>
+<text x="545" y="137" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Lid z27..29; complete case z5..29 (24 high)</text>
+<line x1="258" y1="246" x2="510" y2="192" stroke="#506475" stroke-width="0.7"/>
+<line x1="510" y1="192" x2="535" y2="192" stroke="#506475" stroke-width="0.7"/>
+<text x="545" y="196" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Front wall y52..54; outer mating plane y54</text>
+<line x1="249.0" y1="318" x2="510" y2="258" stroke="#506475" stroke-width="0.7"/>
+<line x1="510" y1="258" x2="535" y2="258" stroke="#506475" stroke-width="0.7"/>
+<text x="545" y="262" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Bridge z16..19, x37.5..47.9; PA12 prototype</text>
+<line x1="124.80000000000003" y1="426" x2="510" y2="319" stroke="#506475" stroke-width="0.7"/>
+<line x1="510" y1="319" x2="535" y2="319" stroke="#506475" stroke-width="0.7"/>
+<text x="545" y="323" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Rear stop ends y46.6; rigid gap 0.60 to shell</text>
+<line x1="258" y1="387.12" x2="510" y2="370" stroke="#506475" stroke-width="0.7"/>
+<line x1="510" y1="370" x2="535" y2="370" stroke="#506475" stroke-width="0.7"/>
+<text x="545" y="374" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Shell y47.2..54, z11..14.16; face formerly y51</text>
+<line x1="481.2000000000001" y1="417.0" x2="510" y2="421" stroke="#506475" stroke-width="0.7"/>
+<line x1="510" y1="421" x2="535" y2="421" stroke="#506475" stroke-width="0.7"/>
+<text x="545" y="425" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Engineering overmold: Y12 x Z6, y54.4..66.4</text>
+<line x1="245.39999999999995" y1="453.0" x2="510" y2="473" stroke="#506475" stroke-width="0.7"/>
+<line x1="510" y1="473" x2="535" y2="473" stroke="#506475" stroke-width="0.7"/>
+<text x="545" y="477" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">PCB z10..11; tongue ends y53.3</text>
+<line x1="258" y1="534" x2="510" y2="535" stroke="#506475" stroke-width="0.7"/>
+<line x1="510" y1="535" x2="535" y2="535" stroke="#506475" stroke-width="0.7"/>
+<text x="545" y="539" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Base z5..7; external case 98 x 34 x 24</text>
+<text x="60" y="580" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Y increases right; Z increases up. Section at connector centre X42.7.</text>
+<text x="60" y="600" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Stakes and support rails lie out of this section; see PCB view and editable solids.</text>
+<text x="35" y="641" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">PLAN: main board x4..94 / y23..51. Tongue x36.5..48.9 / y51..53.3 (12.4 x 2.3).</text>
+<text x="35" y="664" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">USB origin (42.7,47.6); stakes x38.38/47.02 at y47.6/51.4; plated slots 0.6 x 1.2.</text>
+<text x="35" y="687" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Rails: x36.9..37.4 and 48.0..48.5, y49..52.7; z7..9.6 + 0.4 foam. Stake screening bottom z9.75.</text>
+<text x="35" y="710" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Bridge, rear stop and shell are projected envelopes; compliant rear pad omitted for clarity. No supplier internal model.</text>
+<text x="35" y="745" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Gates: stake thickness, shim/pad compression, insertion-load/creep strength, exact plug and process tolerances.</text>
+<text x="35" y="768" font-size="12" font-family="Helvetica, sans-serif" fill="#172c3e">Local prototype only; no routed-PCB, RF, power-placement, assembly-fit or manufacturing-release acceptance.</text>
+</svg>

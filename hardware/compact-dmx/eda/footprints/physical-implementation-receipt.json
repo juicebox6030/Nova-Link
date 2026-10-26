@@ -1,0 +1,140 @@
+{
+  "status": "TERMINATION_CAPTURE_AND_PARTIAL_FOOTPRINTS_CHECKED; COMPLETE_FOOTPRINT_SET_BLOCKED_BY_SOURCE_GAPS",
+  "changed_paths": [
+    "docs/hardware/dmx-hardware-bom.csv",
+    "hardware/compact-dmx/README.md",
+    "hardware/compact-dmx/eda/dmx-erc.json",
+    "hardware/compact-dmx/eda/dmx-interface.kicad_pro",
+    "hardware/compact-dmx/eda/dmx-interface.kicad_sch",
+    "hardware/compact-dmx/eda/dmx-interface.net",
+    "hardware/compact-dmx/eda/dmx-interface.pdf",
+    "hardware/compact-dmx/eda/dmx-pin-net.csv",
+    "hardware/compact-dmx/eda/footprints/DESIGN.md",
+    "hardware/compact-dmx/eda/footprints/NOTICE.md",
+    "hardware/compact-dmx/eda/footprints/NOVA_HW.pretty/Johanson_0900AD47_IsolatedLands.kicad_mod",
+    "hardware/compact-dmx/eda/footprints/NOVA_HW.pretty/PCM12_PENDING_MANUFACTURER_LAND_RECHECK.kicad_mod",
+    "hardware/compact-dmx/eda/footprints/NOVA_HW.pretty/TI_DFM0020A.kicad_mod",
+    "hardware/compact-dmx/eda/footprints/NOVA_HW.pretty/TI_RGZ0048A.kicad_mod",
+    "hardware/compact-dmx/eda/footprints/NOVA_HW.pretty/Vishay_CRCW1206.kicad_mod",
+    "hardware/compact-dmx/eda/footprints/generate.py",
+    "hardware/compact-dmx/eda/footprints/input-hashes.json",
+    "hardware/compact-dmx/eda/footprints/physical-implementation-receipt.json",
+    "hardware/compact-dmx/eda/footprints/source-evidence.json",
+    "hardware/compact-dmx/eda/footprints/termination-budget.json",
+    "hardware/compact-dmx/eda/footprints/termination_budget.py",
+    "hardware/compact-dmx/eda/footprints/validation.json",
+    "hardware/compact-dmx/eda/footprints/verify.py",
+    "hardware/compact-dmx/eda/fp-lib-table",
+    "hardware/compact-dmx/eda/generate_dmx_sheet.py",
+    "hardware/compact-dmx/eda/kicad-validation.json",
+    "hardware/compact-dmx/eda/mcu-radio/DESIGN.md",
+    "hardware/compact-dmx/eda/mcu-radio/component-ledger.csv",
+    "hardware/compact-dmx/eda/mcu-radio/erc.json",
+    "hardware/compact-dmx/eda/mcu-radio/fp-lib-table",
+    "hardware/compact-dmx/eda/mcu-radio/generate.py",
+    "hardware/compact-dmx/eda/mcu-radio/integration-inputs/dmx.net",
+    "hardware/compact-dmx/eda/mcu-radio/integration-inputs/power.net",
+    "hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_pro",
+    "hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_sch",
+    "hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_sym",
+    "hardware/compact-dmx/eda/mcu-radio/mcu-radio.net",
+    "hardware/compact-dmx/eda/mcu-radio/mcu-radio.pdf",
+    "hardware/compact-dmx/eda/mcu-radio/pin-allocation.csv",
+    "hardware/compact-dmx/eda/mcu-radio/rendered/mcu-radio.png",
+    "hardware/compact-dmx/eda/mcu-radio/rendered/mcu-radio.svg",
+    "hardware/compact-dmx/eda/mcu-radio/sym-lib-table",
+    "hardware/compact-dmx/eda/mcu-radio/validation.json",
+    "hardware/compact-dmx/eda/nova-dmx.kicad_sym",
+    "hardware/compact-dmx/eda/rendered/dmx-interface.png",
+    "hardware/compact-dmx/eda/rendered/dmx-interface.svg",
+    "hardware/compact-dmx/eda/source-cache-manifest.json",
+    "hardware/compact-dmx/eda/verify_kicad.py",
+    "hardware/compact-dmx/validate_package.py"
+  ],
+  "kicad_version": "10.0.7",
+  "commands": [
+    "python3 hardware/compact-dmx/eda/generate_dmx_sheet.py",
+    "python3 hardware/compact-dmx/eda/verify_kicad.py",
+    "python3 hardware/compact-dmx/eda/mcu-radio/generate.py",
+    "python3 hardware/compact-dmx/eda/mcu-radio/verify.py",
+    "python3 hardware/compact-dmx/eda/footprints/generate.py",
+    "flatpak run --command=python3 org.kicad.KiCad hardware/compact-dmx/eda/footprints/verify.py",
+    "python3 hardware/compact-dmx/eda/footprints/termination_budget.py",
+    "git diff --check -- docs/hardware/dmx-hardware-bom.csv"
+  ],
+  "DMX": {
+    "components": 14,
+    "nets": 15,
+    "ERC_errors": 0,
+    "ERC_warnings": 0,
+    "ERC_exclusions": 0,
+    "termination": "two240R1% parallel throughPCM12 manual SPDT; position1 assembledOFF; latched not POR-reset"
+  },
+  "MCU_RF": {
+    "components": 26,
+    "nets": 57,
+    "ERC_violations": 0,
+    "cross_sheet_contract": "fresh actual netlist exports passed"
+  },
+  "footprints": {
+    "parsed": 5,
+    "manufacturer_dimensions_checked": 4,
+    "numbered_pads_checked": 79,
+    "schematic_assignments": 6,
+    "entire_required_set_complete": false
+  },
+  "BOM_rows": 52,
+  "BOM_LF_only": true,
+  "protection_basis": "TI SLLSF86D6.2 bus\u00b18kVcontact component capability; system test open; no unrequested bus-surge claim; no externalTVS",
+  "thermal": "At6V differential/85C corner each240R dissipates0.15252W versus0.20588W derated allowance; enclosure temperature unmeasured",
+  "specific_stop_gates": [
+    "IPC exact dimensioned solder lands",
+    "MCU remaining support and RF tuning lands",
+    "DMX existing passives exactMPNs/lands",
+    "PCM12 manufacturer visual land/pin-position recheck"
+  ],
+  "placement": "U5rotation/isolation-island/DMXentryx72 relocation consideration reported; switch8.8x5.85 candidate courtyard plus toolaccess;2 resistor4.1x2.3 courtyards; no CAD mutation or fitclaim",
+  "input_hash_check": {
+    "status": "PARTIAL_SOURCE_LANDS_CHECKED_NOT_COMPLETE_FOOTPRINT_SET",
+    "kicad_version": "10.0.7",
+    "parsed_footprints": 5,
+    "dimension_checked_footprints": 4,
+    "numbered_pads_dimension_checked": 79,
+    "assigned_schematic_components": {
+      "R_TERM1": "NOVA_HW:Vishay_CRCW1206",
+      "R_TERM2": "NOVA_HW:Vishay_CRCW1206",
+      "S_TERM": "NOVA_HW:PCM12_PENDING_MANUFACTURER_LAND_RECHECK",
+      "U5": "NOVA_HW:TI_DFM0020A",
+      "A101": "NOVA_HW:Johanson_0900AD47_IsolatedLands",
+      "U1": "NOVA_HW:TI_RGZ0048A"
+    },
+    "power_input_unchanged": true,
+    "power_unchanged_during_check": true,
+    "before_sha256": {
+      "hardware/compact-dmx/eda/power-service/power-service.kicad_sch": "68c63044c78d65f60ffd4554e0d0021bbdd8436baec43b053ab5d7b370e15e3c",
+      "hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_sch": "c89850ac5482eed166c506b4480759fed3a45feb0e7631454fd0a4ba0e2b5b69",
+      "hardware/compact-dmx/eda/dmx-interface.kicad_sch": "94f88a1aceee4ff5ebad1d1b09eaea44b9b0c6e3b1ffa6217c198123e1f6f4d5"
+    },
+    "after_sha256": {
+      "hardware/compact-dmx/eda/power-service/power-service.kicad_sch": "68c63044c78d65f60ffd4554e0d0021bbdd8436baec43b053ab5d7b370e15e3c",
+      "hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_sch": "6a8ad30a50decd0f9aa8e1a74e91aea759a1222fb8bbeeb9b37cfae338078d69",
+      "hardware/compact-dmx/eda/dmx-interface.kicad_sch": "0638107a7f952c304d23f02cd4e927ae73e19c72aebfa309617a3ccb62471031"
+    },
+    "intentional_owned_changes": [
+      "DMX termination and footprint assignment",
+      "MCU/antenna footprint assignment"
+    ],
+    "unassigned_or_gated": [
+      "IPC exact dimensioned solder lands",
+      "MCU remaining support and RF tuning lands",
+      "DMX existing passives exactMPNs/lands",
+      "PCM12 manufacturer visual land/pin-position recheck"
+    ],
+    "full_footprint_acceptance": false,
+    "PCB_DRC_or_routing_claim": false
+  },
+  "power_mutated": false,
+  "CAD_mutated": false,
+  "whole_package_validator": "NOT RUN while power startup remains independently owned; parent integration rerun required",
+  "full_product_release": false
+}

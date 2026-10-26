@@ -1,0 +1,38 @@
+[
+  {
+    "file": "taiyo-100n.html",
+    "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=TMK105B7104MV-FR",
+    "rc": 0,
+    "error": ""
+  },
+  {
+    "file": "murata-10n.html",
+    "url": "https://www.murata.com/en-us/products/productdetail?partno=GRM155R71E103KA01%23",
+    "rc": 0,
+    "error": ""
+  },
+  {
+    "file": "GRM155R71E103KA01.pdf",
+    "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71E103KA01-01A.pdf",
+    "rc": 0,
+    "error": ""
+  },
+  {
+    "file": "GRM155R71E104KE14.pdf",
+    "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71E104KE14-01A.pdf",
+    "rc": 22,
+    "error": "ad  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "file": "GRM155R71E104KE14.pdf",
+    "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71E104KE14-01.pdf",
+    "rc": 22,
+    "error": "ad  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "file": "taiyo-100n-standard.html",
+    "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=TMK105B7104KV-F",
+    "rc": 22,
+    "error": "ad  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (22) The requested URL returned error: 404\n"
+  }
+]

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1000" viewBox="0 0 1100 1000"><rect width="100%" height="100%" fill="white"/>
+<text x="30" y="35" font-family="Arial,sans-serif" font-size="20" fill="#263746">AXIAL-R1 SOURCE / REPAIRED ROTARY COLLAR INTEGRATION</text>
+<text x="30" y="60" font-family="Arial,sans-serif" font-size="11" fill="#263746">Dimensions mm. Source board bytes preserved. Mechanical prototype; electrical and physical qualification remain open.</text>
+<text x="30" y="95" font-family="Arial,sans-serif" font-size="13" fill="#263746">AXIAL ENVELOPE / X scale 10; radial scale 13 drawing units per mm</text>
+<rect x="50" y="264" width="910" height="26" fill="#c8cdd1" stroke="#30383e" stroke-width=".6"/>
+<rect x="210" y="147" width="600" height="13" fill="#9caebb" stroke="#30383e" stroke-width=".6"/>
+<rect x="260" y="179.5" width="200" height="71.5" fill="#e7c58f" stroke="#30383e" stroke-width=".6"/>
+<rect x="540" y="236.7" width="270" height="13" fill="#578f67" stroke="#30383e" stroke-width=".6"/>
+<rect x="540" y="188.46999999999997" width="215.2" height="48.23" fill="#c8dfbf" stroke="#30383e" stroke-width=".6"/>
+<rect x="755.1999999999999" y="191.71999999999997" width="76.5" height="44.98" fill="#9ca5b1" stroke="#30383e" stroke-width=".6"/>
+<polyline fill="none" stroke="#b54e56" stroke-width="0.8" points="831.7000,256.4600 951.7000,256.4600 951.7000,171.9600 831.7000,171.9600"/>
+<polyline fill="none" stroke="#30383e" stroke-width="0.8" points="58.0000,290.0000 58.0000,295.0000"/>
+<text x="48.00000000000001" y="310" font-family="Arial,sans-serif" font-size="9" fill="#263746">26.8</text>
+<polyline fill="none" stroke="#30383e" stroke-width="0.8" points="100.0000,290.0000 100.0000,295.0000"/>
+<text x="90" y="310" font-family="Arial,sans-serif" font-size="9" fill="#263746">31</text>
+<polyline fill="none" stroke="#30383e" stroke-width="0.8" points="260.0000,290.0000 260.0000,295.0000"/>
+<text x="250" y="310" font-family="Arial,sans-serif" font-size="9" fill="#263746">47</text>
+<polyline fill="none" stroke="#30383e" stroke-width="0.8" points="460.0000,290.0000 460.0000,295.0000"/>
+<text x="450" y="310" font-family="Arial,sans-serif" font-size="9" fill="#263746">67</text>
+<polyline fill="none" stroke="#30383e" stroke-width="0.8" points="540.0000,290.0000 540.0000,295.0000"/>
+<text x="530" y="310" font-family="Arial,sans-serif" font-size="9" fill="#263746">75</text>
+<polyline fill="none" stroke="#30383e" stroke-width="0.8" points="810.0000,290.0000 810.0000,295.0000"/>
+<text x="800" y="310" font-family="Arial,sans-serif" font-size="9" fill="#263746">102</text>
+<polyline fill="none" stroke="#30383e" stroke-width="0.8" points="831.7000,290.0000 831.7000,295.0000"/>
+<text x="821.7" y="310" font-family="Arial,sans-serif" font-size="9" fill="#263746">104.17</text>
+<polyline fill="none" stroke="#30383e" stroke-width="0.8" points="951.7000,290.0000 951.7000,295.0000"/>
+<text x="941.7" y="310" font-family="Arial,sans-serif" font-size="9" fill="#263746">116.17</text>
+<text x="30" y="340" font-family="Arial,sans-serif" font-size="11" fill="#263746">OD66. Locked X31..104.17 =73.17; released X26.8..104.17 =77.37. Core Ø48 x142 unchanged.</text>
+<text x="30" y="363" font-family="Arial,sans-serif" font-size="10" fill="#263746">Connector front is a conservative body allocation, NOT a sourced mating plane. 12 x6.5 x12 plug screen is engineering-only.</text>
+<text x="30" y="405" font-family="Arial,sans-serif" font-size="13" fill="#263746">ACTUAL SOURCE PLAN / local PCB27 x20; 18 drawing units per mm</text>
+<rect x="70" y="450" width="486" height="360" fill="#d6ead5" stroke="#30383e" stroke-width=".6"/>
+<rect x="70" y="450" width="486" height="3.6" fill="#a6b3c7" stroke="#30383e" stroke-width=".6"/>
+<rect x="70" y="806.4000000000001" width="486" height="3.6" fill="#a6b3c7" stroke="#30383e" stroke-width=".6"/>
+<rect x="90.25" y="490.5" width="24.3" height="37.800000000000004" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="91.25" y="512.4" font-family="Arial,sans-serif" font-size="7" fill="#263746">C1</text>
+<rect x="349.0" y="656.1" width="10.799999999999999" height="19.8" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="350.0" y="669.0" font-family="Arial,sans-serif" font-size="7" fill="#263746">C10</text>
+<rect x="188.8" y="614.7" width="19.8" height="10.799999999999999" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="189.8" y="623.1" font-family="Arial,sans-serif" font-size="7" fill="#263746">C11</text>
+<rect x="174.39999999999998" y="702.9" width="10.799999999999999" height="19.8" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="175.39999999999998" y="715.8" font-family="Arial,sans-serif" font-size="7" fill="#263746">C12</text>
+<rect x="127.6" y="601.2" width="10.799999999999999" height="19.8" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="128.6" y="614.1" font-family="Arial,sans-serif" font-size="7" fill="#263746">C13</text>
+<rect x="135.25" y="490.5" width="24.3" height="37.800000000000004" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="136.25" y="512.4" font-family="Arial,sans-serif" font-size="7" fill="#263746">C2</text>
+<rect x="141.1" y="548.1" width="30.599999999999998" height="16.2" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="142.1" y="559.2" font-family="Arial,sans-serif" font-size="7" fill="#263746">C3</text>
+<rect x="285.1" y="475.65" width="37.800000000000004" height="24.3" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="286.1" y="490.8" font-family="Arial,sans-serif" font-size="7" fill="#263746">C4</text>
+<rect x="340.45" y="508.5" width="24.3" height="37.800000000000004" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="341.45" y="530.4" font-family="Arial,sans-serif" font-size="7" fill="#263746">C5</text>
+<rect x="381.84999999999997" y="508.5" width="24.3" height="37.800000000000004" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="382.84999999999997" y="530.4" font-family="Arial,sans-serif" font-size="7" fill="#263746">C6</text>
+<rect x="274.29999999999995" y="564.3" width="30.599999999999998" height="16.2" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="275.29999999999995" y="575.4" font-family="Arial,sans-serif" font-size="7" fill="#263746">C7</text>
+<rect x="198.7" y="663.3" width="136.79999999999998" height="82.8" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="199.7" y="707.7" font-family="Arial,sans-serif" font-size="7" fill="#263746">C8</text>
+<rect x="470.5" y="500.85" width="37.800000000000004" height="24.3" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="471.5" y="516.0" font-family="Arial,sans-serif" font-size="7" fill="#263746">C9</text>
+<rect x="424.15000000000003" y="601.65" width="11.700000000000001" height="18.900000000000002" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="425.15000000000003" y="614.1" font-family="Arial,sans-serif" font-size="7" fill="#263746">D1</text>
+<rect x="79.0" y="763.2" width="360" height="36" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="80.0" y="784.2" font-family="Arial,sans-serif" font-size="7" fill="#263746">J0</text>
+<rect x="457.36" y="548.19" width="137.70000000000002" height="163.62" fill="#abb6c6" stroke="#30383e" stroke-width=".6"/>
+<text x="458.36" y="633.0" font-family="Arial,sans-serif" font-size="7" fill="#263746">J1</text>
+<rect x="184.3" y="457.2" width="77.39999999999999" height="77.39999999999999" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="185.3" y="498.9" font-family="Arial,sans-serif" font-size="7" fill="#263746">L1</text>
+<rect x="86.65" y="625.95" width="9.9" height="18.900000000000002" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="87.65" y="638.4" font-family="Arial,sans-serif" font-size="7" fill="#263746">R1</text>
+<rect x="402.55" y="733.05" width="18.900000000000002" height="9.9" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="403.55" y="741.0" font-family="Arial,sans-serif" font-size="7" fill="#263746">R10</text>
+<rect x="379.15000000000003" y="610.65" width="18.900000000000002" height="9.9" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="380.15000000000003" y="618.6" font-family="Arial,sans-serif" font-size="7" fill="#263746">R11</text>
+<rect x="160.45" y="581.85" width="9.9" height="18.900000000000002" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="161.45" y="594.3" font-family="Arial,sans-serif" font-size="7" fill="#263746">R12</text>
+<rect x="150.55" y="706.95" width="9.9" height="18.900000000000002" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="151.55" y="719.4000000000001" font-family="Arial,sans-serif" font-size="7" fill="#263746">R13</text>
+<rect x="87.55" y="589.05" width="18.900000000000002" height="9.9" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="88.55" y="597.0" font-family="Arial,sans-serif" font-size="7" fill="#263746">R2</text>
+<rect x="86.65" y="669.15" width="9.9" height="18.900000000000002" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="87.65" y="681.6" font-family="Arial,sans-serif" font-size="7" fill="#263746">R3</text>
+<rect x="87.55" y="718.65" width="18.900000000000002" height="9.9" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="88.55" y="726.5999999999999" font-family="Arial,sans-serif" font-size="7" fill="#263746">R4</text>
+<rect x="171.25" y="638.55" width="18.900000000000002" height="9.9" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="172.25" y="646.5" font-family="Arial,sans-serif" font-size="7" fill="#263746">R5</text>
+<rect x="246.85" y="618.75" width="9.9" height="18.900000000000002" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="247.85" y="631.2" font-family="Arial,sans-serif" font-size="7" fill="#263746">R6</text>
+<rect x="275.65" y="624.15" width="9.9" height="18.900000000000002" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="276.65" y="636.6" font-family="Arial,sans-serif" font-size="7" fill="#263746">R7</text>
+<rect x="349.45" y="694.35" width="9.9" height="18.900000000000002" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="350.45" y="706.8" font-family="Arial,sans-serif" font-size="7" fill="#263746">R8</text>
+<rect x="355.74999999999994" y="731.25" width="18.900000000000002" height="9.9" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="356.74999999999994" y="739.2" font-family="Arial,sans-serif" font-size="7" fill="#263746">R9</text>
+<rect x="529.0" y="477.0" width="18" height="18" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="530.0" y="489.0" font-family="Arial,sans-serif" font-size="7" fill="#263746">TP1</text>
+<rect x="114.1" y="648.9" width="37.800000000000004" height="37.800000000000004" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="115.1" y="670.8" font-family="Arial,sans-serif" font-size="7" fill="#263746">U1</text>
+<rect x="195.10000000000002" y="550.8" width="55.800000000000004" height="46.800000000000004" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="196.10000000000002" y="577.2" font-family="Arial,sans-serif" font-size="7" fill="#263746">U2</text>
+<rect x="375.09999999999997" y="638.1" width="55.800000000000004" height="73.8" fill="#e5ca9e" stroke="#30383e" stroke-width=".6"/>
+<text x="376.09999999999997" y="678.0" font-family="Arial,sans-serif" font-size="7" fill="#263746">U3</text>
+<rect x="79.0" y="846" width="360" height="36" fill="#d1a058" stroke="#30383e" stroke-width=".6"/>
+<text x="70" y="918" font-family="Arial,sans-serif" font-size="10" fill="#263746">External clamp / shaped flex tongue; screws outside routed board</text>
+<text x="610" y="455" font-family="Arial,sans-serif" font-size="10" fill="#263746">Proper rotation: local +Z -&gt; global +Y; local +Y -&gt; global -Z.</text>
+<text x="610" y="479" font-family="Arial,sans-serif" font-size="10" fill="#263746">Global=(75+x, 26.1+z, 10-y); determinant +1.</text>
+<text x="610" y="503" font-family="Arial,sans-serif" font-size="10" fill="#263746">PCB X75..102 / Y25.1..26.1 / Z-10..10.</text>
+<text x="610" y="527" font-family="Arial,sans-serif" font-size="10" fill="#263746">98 actual holes and four swept stake allocations retained.</text>
+<text x="610" y="551" font-family="Arial,sans-serif" font-size="10" fill="#263746">Edge capture0.20; copper gap &gt;=0.3005 from actual saved copper.</text>
+<text x="610" y="575" font-family="Arial,sans-serif" font-size="10" fill="#263746">No new PCB holes. End retainer uses two external M1 screws.</text>
+<text x="610" y="599" font-family="Arial,sans-serif" font-size="10" fill="#263746">Board1.0 +/-0.1; top lip clearance0.24 nominal.</text>
+<text x="610" y="623" font-family="Arial,sans-serif" font-size="10" fill="#263746">Bottom reserve -1.35; top reserve +3.71 from PCB top.</text>
+<text x="610" y="647" font-family="Arial,sans-serif" font-size="10" fill="#263746">R2.5 formed static bend; saddle ends before PCB edge.</text>
+<text x="610" y="671" font-family="Arial,sans-serif" font-size="10" fill="#263746">Clamp shoe0.94 high; two M1 screws, preload unqualified.</text>
+<text x="610" y="695" font-family="Arial,sans-serif" font-size="10" fill="#263746">Solder access slot20.8 x2.8; enclosure sealing/guard gate.</text>
+<text x="610" y="719" font-family="Arial,sans-serif" font-size="10" fill="#263746">No insulating pad over ICs; no rated heat path asserted.</text>
+<text x="610" y="743" font-family="Arial,sans-serif" font-size="10" fill="#263746">Four inherited GCT NPTH process errors remain unresolved.</text>
+<text x="30" y="970" font-family="Arial,sans-serif" font-size="10" fill="#263746">Static flex, solder, spring, wear, thermal/current, source faults, USB profile and mains safety remain qualification gates.</text>
+</svg>

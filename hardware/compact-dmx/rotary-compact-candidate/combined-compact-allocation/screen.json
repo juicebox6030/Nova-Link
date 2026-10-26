@@ -1,0 +1,85 @@
+{
+  "units": "mm",
+  "baseline": {
+    "dimensions": [
+      330,
+      89,
+      72
+    ],
+    "volume_mm3": 2114640
+  },
+  "inline": {
+    "dimensions": [
+      270,
+      89,
+      72
+    ],
+    "volume_mm3": 1730160,
+    "length_reduction_mm": 60,
+    "volume_reduction_percent": 18.181818181818176,
+    "pod_x": [
+      -140,
+      -12
+    ],
+    "input_blank_x": [
+      -164,
+      -140
+    ],
+    "neck_x": [
+      -12,
+      0
+    ],
+    "core_x": [
+      0,
+      82
+    ],
+    "collar_released_x": [
+      4,
+      81.37
+    ],
+    "output_blank_x": [
+      82,
+      106
+    ],
+    "collar_translation_x": -22.8,
+    "reason": "Retains finite oldpod branch and R12 trunk allocations; removes empty core instead of appending source. Does not prove shortest globally."
+  },
+  "offset": {
+    "dimensions": [
+      152,
+      150,
+      72
+    ],
+    "volume_mm3": 1641600,
+    "pod_x": [
+      -12,
+      116
+    ],
+    "pod_y": [
+      -117,
+      -35
+    ],
+    "collar_x": [
+      4,
+      81.37
+    ],
+    "source_side_gap_to_R33": 2,
+    "reason_rejected": "Length improves but transverse width150 exceeds inline89; bounding volume22.37percent below baseline versus inline18.18percent, only5.12percent better than inline while68.54percent wider. NegativeY placement avoids the forward180degree USB sector, but requires a new transverse harness neck and source mounting; those can only increase this optimistic bound. Select narrower inline for fixture-adjacent development. Actual181-position screen below."
+  },
+  "lower_bounds": {
+    "source_only_reservation": [
+      72.9,
+      47.7,
+      44
+    ],
+    "whole_carrier_conservative": [
+      81,
+      52,
+      44
+    ],
+    "inline_axial_sum_source_only_plus_collar_plus_two_blanks": 198.27,
+    "inline_axial_sum_carrier_plus_collar_plus_two_blanks": 206.37,
+    "excluded_from_lower_bound": "walls, film, assembly tolerances, finite primary/secondary termination bends, neck, lock access, source carrier retention; therefore NOT achievable housing dimensions"
+  },
+  "selection": "Inline conditional allocation for one CAD attempt; continuous branch/terminal construction must be checked, not implied by labels."
+}

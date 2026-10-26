@@ -1,0 +1,40 @@
+{
+  "unchanged_noncell_footprints": 177,
+  "unchanged_pad_checks": 671,
+  "C23_pads": 2,
+  "new_edges": 8,
+  "arc_radius_mm": 0.5,
+  "minimum_conservative_pad_to_aperture_gap": [
+    1.1499999999999986,
+    "C23",
+    "1"
+  ],
+  "DRC_violations": 0,
+  "unconnected": 452,
+  "ignored_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "tracks": 0,
+  "source_sha256": "fc0785cdaaf874002b2362835070f29f00b187e4054dd3ab093c43e177ea035f",
+  "board_sha256": "a607ea54646ee852cc41a1894928887a5fa5276dce76ea12690f43ff46b24dd8",
+  "ERC": "Not applicable to PCB-only local derivative; no new schematic/full-design ERC claim."
+}

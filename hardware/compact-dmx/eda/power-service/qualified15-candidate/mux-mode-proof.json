@@ -1,0 +1,254 @@
+{
+  "status": "PASS source-table/topology/DC regression; no transient guarantee",
+  "primary": {
+    "document": "TI SLVSFG1A May2021",
+    "pdf": "hardware/compact-dmx/eda/source-cache/tps2116.pdf",
+    "pdf_sha256": "5babd88afb84e2e65c9c0da23b75f85758c0c730e34102a0fb746ac9573ed1d5",
+    "text_sha256": "941acfc2eb600223e615a5d823cd6dc44e7f3186a29141890965bc9fc3e2ecd8",
+    "sections": "6.1 absolute controls -0.3..6V; 6.3 inputs1.6..5.5V controls0..5.5V; 6.5 leakage/IQ/VREF; 7.3.1 seven truth rows; 7.3.2 softstart; 7.4 collapse",
+    "cached_text_line_ranges": {
+      "absolute": [
+        116,
+        125
+      ],
+      "operating": [
+        153,
+        164
+      ],
+      "truth_table": [
+        583,
+        603
+      ]
+    }
+  },
+  "documented_truth_rows_tested": 7,
+  "qualified_source_corner_cases": 48,
+  "raw_boost_cases": [
+    {
+      "VIN1_V": 0,
+      "boost_V": 0,
+      "selection": "unpowered"
+    },
+    {
+      "VIN1_V": 0,
+      "boost_V": 1.5,
+      "selection": "unspecified"
+    },
+    {
+      "VIN1_V": 0,
+      "boost_V": 3.8,
+      "selection": "VIN2"
+    },
+    {
+      "VIN1_V": 0,
+      "boost_V": 4.1,
+      "selection": "VIN2"
+    },
+    {
+      "VIN1_V": 1.5,
+      "boost_V": 0,
+      "selection": "unspecified"
+    },
+    {
+      "VIN1_V": 1.5,
+      "boost_V": 1.5,
+      "selection": "unspecified"
+    },
+    {
+      "VIN1_V": 1.5,
+      "boost_V": 3.8,
+      "selection": "VIN2"
+    },
+    {
+      "VIN1_V": 1.5,
+      "boost_V": 4.1,
+      "selection": "VIN2"
+    },
+    {
+      "VIN1_V": 2.8,
+      "boost_V": 0,
+      "selection": "unspecified"
+    },
+    {
+      "VIN1_V": 2.8,
+      "boost_V": 1.5,
+      "selection": "unspecified"
+    },
+    {
+      "VIN1_V": 2.8,
+      "boost_V": 3.8,
+      "selection": "VIN2"
+    },
+    {
+      "VIN1_V": 2.8,
+      "boost_V": 4.1,
+      "selection": "VIN2"
+    },
+    {
+      "VIN1_V": 3.6,
+      "boost_V": 0,
+      "selection": "VIN1"
+    },
+    {
+      "VIN1_V": 3.6,
+      "boost_V": 1.5,
+      "selection": "VIN1"
+    },
+    {
+      "VIN1_V": 3.6,
+      "boost_V": 3.8,
+      "selection": "VIN1"
+    },
+    {
+      "VIN1_V": 3.6,
+      "boost_V": 4.1,
+      "selection": "VIN1"
+    },
+    {
+      "VIN1_V": 3.73769,
+      "boost_V": 0,
+      "selection": "VIN1"
+    },
+    {
+      "VIN1_V": 3.73769,
+      "boost_V": 1.5,
+      "selection": "VIN1"
+    },
+    {
+      "VIN1_V": 3.73769,
+      "boost_V": 3.8,
+      "selection": "VIN1"
+    },
+    {
+      "VIN1_V": 3.73769,
+      "boost_V": 4.1,
+      "selection": "VIN1"
+    },
+    {
+      "VIN1_V": 5.5,
+      "boost_V": 0,
+      "selection": "VIN1"
+    },
+    {
+      "VIN1_V": 5.5,
+      "boost_V": 1.5,
+      "selection": "VIN1"
+    },
+    {
+      "VIN1_V": 5.5,
+      "boost_V": 3.8,
+      "selection": "VIN1"
+    },
+    {
+      "VIN1_V": 5.5,
+      "boost_V": 4.1,
+      "selection": "VIN1"
+    }
+  ],
+  "old_wiring_negative_regressions": [
+    {
+      "scenario": "valid-source empty-cap coldboot",
+      "old_before": "unpowered",
+      "old_after": "Hi-Z",
+      "fixed_after": "VIN1",
+      "old_guaranteed_AON_path": false
+    },
+    {
+      "scenario": "valid-source hotattach",
+      "old_before": "VIN2",
+      "old_after": "Hi-Z",
+      "fixed_after": "VIN1",
+      "old_guaranteed_AON_path": false
+    }
+  ],
+  "priority_input_threshold_min_V": 2.936814974661186,
+  "priority_input_threshold_max_V": 3.4857840169869547,
+  "qualified_raw_V": 4.4,
+  "total_AON_feed_allocation_A": 0.002,
+  "AON_VIN1_min_under_allocation_V": 3.73769,
+  "PR1_min_under_allocation_V": 1.1580976848526943,
+  "priority_load_at_threshold_max_A": 0.0027606890519939167,
+  "divider_max_A": 0.00017194135861809166,
+  "conservative_mux_IQ_standby_control_sum_A": 1.12e-05,
+  "remaining_2mA_allocation_for_LDO_logic_pullups_A": 0.0018168586413819083,
+  "main_U19_ramp_states": [
+    {
+      "AON_MODE_V": 0,
+      "PR1_high": false,
+      "empty_cap_selection": "VIN1"
+    },
+    {
+      "AON_MODE_V": 0,
+      "PR1_high": true,
+      "empty_cap_selection": "Hi-Z"
+    },
+    {
+      "AON_MODE_V": 0.2,
+      "PR1_high": false,
+      "empty_cap_selection": "VIN1"
+    },
+    {
+      "AON_MODE_V": 0.2,
+      "PR1_high": true,
+      "empty_cap_selection": "Hi-Z"
+    },
+    {
+      "AON_MODE_V": 0.35,
+      "PR1_high": false,
+      "empty_cap_selection": "VIN1"
+    },
+    {
+      "AON_MODE_V": 0.35,
+      "PR1_high": true,
+      "empty_cap_selection": "Hi-Z"
+    },
+    {
+      "AON_MODE_V": 0.6,
+      "PR1_high": false,
+      "empty_cap_selection": "unspecified"
+    },
+    {
+      "AON_MODE_V": 0.6,
+      "PR1_high": true,
+      "empty_cap_selection": "unspecified"
+    },
+    {
+      "AON_MODE_V": 1,
+      "PR1_high": false,
+      "empty_cap_selection": "unspecified"
+    },
+    {
+      "AON_MODE_V": 1,
+      "PR1_high": true,
+      "empty_cap_selection": "VIN1"
+    },
+    {
+      "AON_MODE_V": 1.65,
+      "PR1_high": false,
+      "empty_cap_selection": "unspecified"
+    },
+    {
+      "AON_MODE_V": 1.65,
+      "PR1_high": true,
+      "empty_cap_selection": "VIN1"
+    },
+    {
+      "AON_MODE_V": 2.5,
+      "PR1_high": false,
+      "empty_cap_selection": "unspecified"
+    },
+    {
+      "AON_MODE_V": 2.5,
+      "PR1_high": true,
+      "empty_cap_selection": "VIN1"
+    }
+  ],
+  "limitations": [
+    "2mA total steady AON load is an engineering allocation, not a measured or full switching-current maximum. Separate max IQ values retain their TI test conditions.",
+    "Selected input below1.6V, equal inputs in manual low mode, PR1 at threshold and MODE external .35..1V have no table guarantee.",
+    "U19 may feed BACKUP_RAW early while MODE low; source qualification/buck enable are separate. AON gates below1.65V remain unspecified.",
+    "U40 priority is raw-fed before AON exists; no self-powered external MODE bias. Cold startup U40 output softstart current/time maximum unspecified.",
+    "Switching/RCB/hold-up, fast raw collapse per7.4, ramp, loadsteps, ESR and thermal require bench validation. No startup gate closed."
+  ],
+  "manufacturing_release": false
+}

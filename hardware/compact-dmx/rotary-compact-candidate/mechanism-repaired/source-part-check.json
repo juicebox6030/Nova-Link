@@ -1,0 +1,8 @@
+{
+  "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/component-ledger.csv",
+  "sha256": "176e6ae3f4f739ff3d2ff5ccc17454181baa4d7bd5f430b88b6154d7a41c294a",
+  "selected_line": [
+    "J1,USB4105-GF-A,purchased,USB4105,\"16 contacts /12 shared electrical lands +4 shellstakes, actual primaryB4 drawing\""
+  ],
+  "scope": "Completed source MPN read only. No unfinished axial routing inspected; no board integration acceptance."
+}

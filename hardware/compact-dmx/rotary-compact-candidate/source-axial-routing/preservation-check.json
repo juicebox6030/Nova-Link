@@ -1,0 +1,18 @@
+{
+  "protected_current_matches": 349,
+  "changed_protected": [],
+  "root_authorized_metadata_delta_paths": [
+    "hardware/compact-dmx/eda/cell-protection-candidate/DESIGN.md",
+    "hardware/compact-dmx/eda/cell-protection-candidate/receipt.json",
+    "hardware/compact-dmx/eda/cell-protection-candidate/SHA256SUMS",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/protected-inputs.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/receipt.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/SHA256SUMS",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/DESIGN.md",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/verify.py"
+  ],
+  "rotary_review_artifacts_unchanged_other_than_five_authorized_doc_check_inventory_files": true,
+  "cell_review_artifacts_unchanged_other_than_three_metadata_files": true,
+  "primary_PDF_hashes_verified": 14,
+  "frozen_rotary_review_hashes_verified": 90
+}

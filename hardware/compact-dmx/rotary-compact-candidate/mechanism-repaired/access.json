@@ -1,0 +1,2064 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "StationaryCoreEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "FixedEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "FixedScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "FixedEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "FixedEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "FixedScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "FixedEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "FixedAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "FixedStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "FixedStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "MovingEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "MovingScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "MovingEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "MovingEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "MovingScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "MovingEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "MovingAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "MovingStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "MovingStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "IndexKnob",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "IndexPin",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "IndexRearCap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "IndexSpring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "PowerBoard_TARGET",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "USB4105ShellEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "USBStake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "USBStake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "USBStake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "USBStake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "StationarySpool",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "CoreBondFront",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "CoreBondRear",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_-29.5",
+      "stage": "assembled",
+      "part": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "StationaryCoreEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "FixedEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "FixedScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "FixedEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "FixedEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "FixedScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "FixedEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "FixedAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "FixedStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "FixedStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "MovingEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "MovingScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "MovingEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "MovingEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "MovingScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "MovingEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "MovingAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "MovingStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "MovingStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "IndexKnob",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "IndexPin",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "IndexRearCap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "IndexSpring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "PowerBoard_TARGET",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "USB4105ShellEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "USBStake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "USBStake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "USBStake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "USBStake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "StationarySpool",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "CoreBondFront",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "CoreBondRear",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver45.25_29.5",
+      "stage": "assembled",
+      "part": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "StationaryCoreEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "FixedEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "FixedScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "FixedEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "FixedEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "FixedScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "FixedEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "FixedAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "FixedStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "FixedStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "MovingEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "MovingScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "MovingEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "MovingEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "MovingScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "MovingEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "MovingAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "MovingStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "MovingStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "IndexKnob",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "IndexPin",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "IndexRearCap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "IndexSpring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "PowerBoard_TARGET",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "USB4105ShellEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "USBStake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "USBStake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "USBStake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "USBStake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "StationarySpool",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "CoreBondFront",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "CoreBondRear",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_-29.5",
+      "stage": "assembled",
+      "part": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "StationaryCoreEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "FixedEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "FixedScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "FixedEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "FixedEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "FixedScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "FixedEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "FixedAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "FixedStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "FixedStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "MovingEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "MovingScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "MovingEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "MovingEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "MovingScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "MovingEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "MovingAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "MovingStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "MovingStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "IndexKnob",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "IndexPin",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "IndexRearCap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "IndexSpring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "PowerBoard_TARGET",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "USB4105ShellEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "USBStake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "USBStake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "USBStake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "USBStake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "StationarySpool",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "CoreBondFront",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "CoreBondRear",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FrameDriver68.9_29.5",
+      "stage": "assembled",
+      "part": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "StationaryCoreEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "FixedEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "FixedScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "FixedEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "FixedEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "FixedScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "FixedEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "FixedAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "FixedStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "FixedStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "IndexKnob",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "IndexPin",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "IndexRearCap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "IndexSpring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "StationarySpool",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "CoreBondFront",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver45.75",
+      "stage": "stationary_before_rotor",
+      "part": "CoreBondRear",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "MovingEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "MovingScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "MovingEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "MovingEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "MovingScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "MovingEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "MovingAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "MovingStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "MovingStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "PowerBoard_TARGET",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "USB4105ShellEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "USBStake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "USBStake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "USBStake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "USBStake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "FrameBolt_45_25_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "FrameBolt_68_9_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver45.75",
+      "stage": "rotor_before_core",
+      "part": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "StationaryCoreEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "FixedEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "FixedScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "FixedEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "FixedEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "FixedScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "FixedEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "FixedAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "FixedStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "FixedStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "IndexKnob",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "IndexPin",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "IndexRearCap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "IndexSpring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "StationarySpool",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "CoreBondFront",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "FixedEarDriver68.25",
+      "stage": "stationary_before_rotor",
+      "part": "CoreBondRear",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "MovingEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "MovingScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "MovingEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "MovingEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "MovingScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "MovingEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "MovingAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "MovingStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "MovingStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "PowerBoard_TARGET",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "USB4105ShellEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "USBStake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "USBStake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "USBStake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "USBStake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "FrameBolt_45_25_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "FrameBolt_68_9_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "MovingEarDriver68.25",
+      "stage": "rotor_before_core",
+      "part": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "StationaryCoreEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "FixedEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "FixedScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "FixedEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "FixedEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "FixedScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "FixedEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "FixedAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "FixedStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "FixedStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "MovingEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "MovingScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "MovingEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "MovingEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "MovingScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "MovingEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "MovingAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "MovingStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "MovingStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "IndexKnob",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "IndexPin",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "IndexRearCap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "IndexSpring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "PowerBoard_TARGET",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "USB4105ShellEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "USBStake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "USBStake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "USBStake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "USBStake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "StationarySpool",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "CoreBondFront",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "CoreBondRear",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner-2.6",
+      "stage": "assembled",
+      "part": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "StationaryCoreEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "FixedEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "FixedScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "FixedEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "FixedEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "FixedScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "FixedEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "FixedAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "FixedStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "FixedStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "MovingEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "MovingScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "MovingEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "MovingEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "MovingScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "MovingEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "MovingAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "MovingStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "MovingStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "IndexKnob",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "IndexPin",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "IndexRearCap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "IndexSpring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "PowerBoard_TARGET",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "USB4105ShellEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "USBStake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "USBStake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "USBStake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "USBStake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "StationarySpool",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "CoreBondFront",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "CoreBondRear",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "CapSpanner2.6",
+      "stage": "assembled",
+      "part": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "StationaryCoreEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "FixedEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "FixedScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "FixedEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "FixedEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "FixedScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "FixedEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "FixedAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "FixedStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "FixedStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "MovingEarPad0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "MovingScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "MovingEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "MovingEarPad1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "MovingScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "MovingEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "MovingAdhesive",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "MovingStiffener",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "MovingStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "IndexKnob",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "IndexPin",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "IndexRearCap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "IndexSpring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "PowerBoard_TARGET",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "USB4105ShellEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "USBStake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "USBStake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "USBStake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "USBStake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "StationarySpool",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "CoreBondFront",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "CoreBondRear",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "FrameBolt_45_25_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "FrameBolt_68_9_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "KnobSlotDriver",
+      "stage": "assembled",
+      "part": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "tool_diameter_mm": 1.2,
+  "cap_spanner_pin_diameter_mm": 0.4,
+  "assembly_stage_limits": [
+    "Fixed ears assembled before rotor installation",
+    "Moving ears assembled on rotor half before insertion around core",
+    "Frame bores and cap spanner accessible on assembled neutral mechanism"
+  ]
+}

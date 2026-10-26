@@ -1,0 +1,303 @@
+{
+  "DCK6": {
+    "source": "TI DCK0006A example in SN74LVC1G11 appendix",
+    "height_max_mm": 1.1,
+    "body_max_mm": [
+      1.4,
+      2.15
+    ],
+    "courtyard_mm": [
+      3.6,
+      2.65
+    ],
+    "notes": ""
+  },
+  "DCK5": {
+    "source": "TI DCK0005A example in SN74LVC1G14 appendix",
+    "height_max_mm": 1.1,
+    "body_max_mm": [
+      1.4,
+      2.15
+    ],
+    "courtyard_mm": [
+      3.6500000000000004,
+      2.65
+    ],
+    "notes": "Numbers corrected below: right top5/right bottom4"
+  },
+  "DCU8": {
+    "source": "TI DCU0008A example in SN74LVC2G08 appendix",
+    "height_max_mm": 0.9,
+    "body_max_mm": [
+      2.1,
+      2.4
+    ],
+    "courtyard_mm": [
+      4.45,
+      2.9
+    ],
+    "notes": ""
+  },
+  "DRL8": {
+    "source": "TI DRL0008A example in TPS2116 appendix",
+    "height_max_mm": 0.6,
+    "body_max_mm": [
+      1.3,
+      2.2
+    ],
+    "courtyard_mm": [
+      2.65,
+      2.7
+    ],
+    "notes": ""
+  },
+  "DRL6": {
+    "source": "TI DRL0006A example in TPS61023 appendix",
+    "height_max_mm": 0.6,
+    "body_max_mm": [
+      1.3,
+      1.7
+    ],
+    "courtyard_mm": [
+      2.65,
+      2.2
+    ],
+    "notes": ""
+  },
+  "DDC6": {
+    "source": "TI DDC0006A example in TPS3702-Q1 appendix; same package code TPS3700",
+    "height_max_mm": 1.1,
+    "body_max_mm": [
+      1.75,
+      3.05
+    ],
+    "courtyard_mm": [
+      4.300000000000001,
+      3.55
+    ],
+    "notes": ""
+  },
+  "DBV6": {
+    "source": "TI DBV0006A example in TPS3808 appendix",
+    "height_max_mm": 1.45,
+    "body_max_mm": [
+      1.75,
+      3.05
+    ],
+    "courtyard_mm": [
+      4.2,
+      3.55
+    ],
+    "notes": ""
+  },
+  "DBV5": {
+    "source": "TI DBV0005A example in TPS709 appendix",
+    "height_max_mm": 1.45,
+    "body_max_mm": [
+      1.75,
+      3.05
+    ],
+    "courtyard_mm": [
+      4.2,
+      3.55
+    ],
+    "notes": ""
+  },
+  "DBZ3": {
+    "source": "TI DBZ0003A example in TPS3839 appendix",
+    "height_max_mm": 1.12,
+    "body_max_mm": [
+      1.4,
+      3.04
+    ],
+    "courtyard_mm": [
+      3.9000000000000004,
+      3.54
+    ],
+    "notes": ""
+  },
+  "DSG8": {
+    "source": "TI DSG0008A example in BQ25173 appendix",
+    "height_max_mm": 0.8,
+    "body_max_mm": [
+      2.1,
+      2.1
+    ],
+    "courtyard_mm": [
+      2.9,
+      2.6
+    ],
+    "notes": "EP full paste in prototype; thermal vias and stencil windowing remain assembly/layout gate"
+  },
+  "RGT16": {
+    "source": "TI RGT0016C example in TPS62130 appendix",
+    "height_max_mm": 1,
+    "body_max_mm": [
+      3.1,
+      3.1
+    ],
+    "courtyard_mm": [
+      3.9,
+      3.9
+    ],
+    "notes": "EP full paste in prototype; thermal vias/stencil windows are unresolved, not hidden pins"
+  },
+  "RWB12": {
+    "source": "TI RWB0012A example in TUSB320LAI appendix",
+    "height_max_mm": 0.4,
+    "body_max_mm": [
+      1.7,
+      1.7
+    ],
+    "courtyard_mm": [
+      2.5,
+      2.5
+    ],
+    "notes": "Side pads1/2/7/8 .7long; top/bottom8pads .5long, nonuniform corner pitch per drawing"
+  },
+  "RPW10": {
+    "source": "TI RPW0010A example, TPS25947 PDF p73,4225183/A",
+    "height_max_mm": 1,
+    "body_max_mm": [
+      2.1,
+      2.1
+    ],
+    "courtyard_mm": [
+      2.9,
+      2.9
+    ],
+    "notes": "Two same-pin primitives form each corner L. No fictional exposed pin. Full paste shown; exact RPW p74 stencil/assembly process must be reviewed"
+  },
+  "DQN4": {
+    "source": "TI DQN0004A exposed-metal dimensions, TPS3839 appendix drawing4215302/E",
+    "height_max_mm": 0.4,
+    "body_max_mm": [
+      1.05,
+      1.05
+    ],
+    "courtyard_mm": [
+      1.55,
+      1.55
+    ],
+    "notes": "Diagonal EP .48square and clipped inner corners .22 clearance; prototype NSMD unlike source SMD, assembly approval gate"
+  },
+  "R0402": {
+    "source": "Vishay28950 IPC7351 reflow0402: .55x.60 lands gap.40",
+    "height_max_mm": 0.4,
+    "body_max_mm": [
+      1.05,
+      0.55
+    ],
+    "courtyard_mm": [
+      2.0,
+      1.1
+    ],
+    "notes": ""
+  },
+  "C0402": {
+    "source": "Murata GRM15 table2 reflow .4x.6 lands gap.4; selected from source ranges",
+    "height_max_mm": 0.6,
+    "body_max_mm": [
+      1.1,
+      0.6
+    ],
+    "courtyard_mm": [
+      1.7000000000000002,
+      1.1
+    ],
+    "notes": ""
+  },
+  "R0805": {
+    "source": "Vishay28950 IPC7351 reflow0805:.9x1.45 lands gap1.0",
+    "height_max_mm": 0.55,
+    "body_max_mm": [
+      2.1,
+      1.4
+    ],
+    "courtyard_mm": [
+      3.3,
+      1.95
+    ],
+    "notes": ""
+  },
+  "R1206": {
+    "source": "Vishay28950 IPC7351 reflow1206:1.15x1.8 lands gap1.75",
+    "height_max_mm": 0.65,
+    "body_max_mm": [
+      3.3,
+      1.75
+    ],
+    "courtyard_mm": [
+      4.55,
+      2.3
+    ],
+    "notes": ""
+  },
+  "L4020": {
+    "source": "Coilcraft XGL4020 doc1529-3 and XFL4020 doc745-3: .98x3.4 lands with2.37 innergap",
+    "height_max_mm": 2.23,
+    "body_max_mm": [
+      4.3,
+      4.3
+    ],
+    "courtyard_mm": [
+      4.83,
+      4.8
+    ],
+    "notes": "Height2.1mounted+.13pre-mount maximum; pin1 short highdvdt start. Bodymax4.3, no shrink"
+  },
+  "Contact2": {
+    "source": "PCB service/reset contact, engineering geometry1mm pads1.5pitch",
+    "height_max_mm": 0,
+    "body_max_mm": [
+      2.5,
+      1
+    ],
+    "courtyard_mm": [
+      3.0,
+      1.5
+    ],
+    "notes": "No purchased switch or claimed tactile envelope"
+  },
+  "Factory6": {
+    "source": "PCB factory18/7/6 contract six accessible lands; engineering1mm/1.5pitch",
+    "height_max_mm": 0,
+    "body_max_mm": [
+      4,
+      2.5
+    ],
+    "courtyard_mm": [
+      4.5,
+      3.0
+    ],
+    "notes": ""
+  },
+  "Cell_leads": {
+    "source": "Eaton HV sheet4376 p3",
+    "height_max_mm": 13.5,
+    "body_max_mm": [
+      28.4,
+      13.5
+    ],
+    "courtyard_mm": [
+      2.1,
+      7.1
+    ],
+    "notes": "Full horizontal cell projection separately reserved x26..61/y23.5..37; leads forming and mounting remain gates"
+  },
+  "C0805": {
+    "source": "hardware/compact-dmx/eda/footprints/NOVA_HW.pretty/Murata_GRM21_Reflow.kicad_mod",
+    "notes": "Exact read-only source footprint copied; file hash in manifest",
+    "height_max_mm": 1.35
+  },
+  "USB_GCT": {
+    "source": "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/Candidate.pretty/GCT_USB4125_GF_A.kicad_mod",
+    "notes": "Exact read-only source footprint copied; file hash in manifest",
+    "height_max_mm": 3.16
+  },
+  "NOR8": {
+    "source": "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/Candidate.pretty/AT25SF161B_MHB_Derived.kicad_mod",
+    "notes": "Exact read-only source footprint copied; file hash in manifest",
+    "height_max_mm": 0.9
+  }
+}

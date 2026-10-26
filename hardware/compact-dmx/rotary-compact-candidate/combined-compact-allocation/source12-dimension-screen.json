@@ -1,0 +1,46 @@
+{
+  "source12_receipt_sha256": "51393c2a663f8cc206af64d4d0aa09d541832f1a5ac542f7a93bc06f95e2e519",
+  "rotating_board": [
+    32,
+    26,
+    1
+  ],
+  "stationary_board": [
+    24,
+    16,
+    1
+  ],
+  "rotating_transform": {
+    "X": "52.2+x",
+    "Y": "26.1+z",
+    "Z": "13-y",
+    "determinant": 1
+  },
+  "max_top_height_rotating": 3.46,
+  "max_top_height_stationary": 2.5,
+  "external_clamp_dimensions": [
+    20.5,
+    5,
+    2
+  ],
+  "outer_clamp_radius_at_transform": 33.370795615328085,
+  "existing_collar_radius": 33,
+  "radial_excess_before_wall": 0.3707956153280847,
+  "engineering_wall": 1,
+  "engineering_assembly_clearance": 0.25,
+  "illustrative_OD_at_transform": 69.24159123065617,
+  "new_USB_body_end": 86.37,
+  "old_USB_body_end": 81.37,
+  "body_not_mating_plane": true,
+  "axial_growth": 5,
+  "illustrative_combined_dimensions": [
+    275,
+    90.62079561532809,
+    73.62079561532809
+  ],
+  "illustrative_volume_mm3": 1834683.1449359846,
+  "reduction_vs_rejected_baseline_percent": 13.238984180003,
+  "new_geometry_built": false,
+  "stationary_nominal_transverse_margin": 0.25,
+  "status": "DIMENSION CONSTRAINTS ONLY; not integrated, supported, routed or qualified"
+}

@@ -1,0 +1,280 @@
+{
+  "revision": "CI-R1",
+  "units": "mm unless stated",
+  "candidate_interface_count": 6,
+  "mates_are_external_cord_parts_not_additional_barrel_mount_candidates": true,
+  "blank_reference": {
+    "diameter_mm": 48,
+    "axial_mm": 24,
+    "source": "docs/hardware/DMX_Dongle_and_Power_Barrel.md; generic allocation only"
+  },
+  "interfaces": [
+    {
+      "id": "pc-in",
+      "part": "NAC3MPXXA",
+      "variant": "classic-powerCON",
+      "role": "upstream barrel appliance inlet",
+      "gender": "male contacts; blue/A input key",
+      "mate": "NAC3FXXA-W-S",
+      "axis_index": 2,
+      "outward_sign": 1,
+      "panel_coordinate_mm": 0,
+      "panel_face": "Face460",
+      "panel_face_area_mm2": 176.18,
+      "flange_mm": [
+        26,
+        31
+      ],
+      "drawing_rear_depth_mm": 30.4,
+      "drawing_front_projection_mm": 7.05,
+      "flange_thickness_mm": 4.5,
+      "cutout_diameter_min_mm": 24,
+      "mount_hole_centers_transverse_mm": [
+        [
+          -9.5,
+          12
+        ],
+        [
+          9.5,
+          -12
+        ]
+      ],
+      "mount_hole_min_diameter_mm": 3.2,
+      "mount_pitch_tolerance_mm": 0.1,
+      "source_drawing": "sources/pc-in-drawing.pdf",
+      "drawing_id": "ST-NAC3MPXXA; 24.10.19; ISO 2768-m",
+      "cad_vs_drawing": "STEP modeled rear approximately 30.05, drawing rear 30.4; do not reduce allocation to CAD value",
+      "termination": "3/16 in flat tabs; 4.75 x 0.51 mm NLFASTON listed accessory. Complete insulated terminal, insertion tool and wire bend geometry unresolved.",
+      "source_step": "sources/pc-in.step",
+      "source_page": "sources/pc-in.html",
+      "source_step_sha256": "636e5d416ef048d16e9e42abe32c329b759ad4e4a196816179dbb25cbb7cefb4",
+      "drawing_depth_excess_over_24_mm": 6.4,
+      "mating_plane": "UNKNOWN: no certified installed/mated contact reference plane extracted. Panel plane is a mounting datum, not a contact mating plane.",
+      "depth_status": "Nominal bare part only; plus termination, insulation, manufacturing tolerances, and assembly access. 24 mm standalone allocation fails before those additions.",
+      "panel_datum_confidence": "Drawing shoulder matched to imported planar face; local CAD nominal, not an installed assembly"
+    },
+    {
+      "id": "pc-out",
+      "part": "NAC3MPXXB",
+      "variant": "classic-powerCON",
+      "role": "downstream barrel appliance outlet",
+      "gender": "male contacts; gray/B output key",
+      "mate": "NAC3FXXB-W-S",
+      "axis_index": 2,
+      "outward_sign": 1,
+      "panel_coordinate_mm": 0,
+      "panel_face": "Face680",
+      "panel_face_area_mm2": 381.72,
+      "flange_mm": [
+        26,
+        31
+      ],
+      "drawing_rear_depth_mm": 30.4,
+      "drawing_front_projection_mm": 7.05,
+      "flange_thickness_mm": 4.5,
+      "cutout_diameter_min_mm": 24,
+      "mount_hole_centers_transverse_mm": [
+        [
+          -9.5,
+          12
+        ],
+        [
+          9.5,
+          -12
+        ]
+      ],
+      "mount_hole_min_diameter_mm": 3.2,
+      "mount_pitch_tolerance_mm": 0.1,
+      "source_drawing": "sources/pc-out-drawing.pdf",
+      "drawing_id": "ST-NAC3MPXXB; 22.10.19; ISO 2768-m",
+      "cad_vs_drawing": "2025 STEP rear approximately 29.95, drawing rear 30.4; discrepancy remains open",
+      "termination": "3/16 in flat tabs; do not omit the no-suffix insulation divider or substitute WOT variant.",
+      "source_step": "sources/pc-out.step",
+      "source_page": "sources/pc-out.html",
+      "source_step_sha256": "2985ffa3b2e3306dccf65e6476c974007dffc04798e935f58abde3c33bafff63",
+      "drawing_depth_excess_over_24_mm": 6.4,
+      "mating_plane": "UNKNOWN: no certified installed/mated contact reference plane extracted. Panel plane is a mounting datum, not a contact mating plane.",
+      "depth_status": "Nominal bare part only; plus termination, insulation, manufacturing tolerances, and assembly access. 24 mm standalone allocation fails before those additions.",
+      "panel_datum_confidence": "Drawing shoulder matched to imported planar face; local CAD nominal, not an installed assembly"
+    },
+    {
+      "id": "true1-in",
+      "part": "NAC3MPX-TOP",
+      "variant": "TRUE1-TOP",
+      "role": "upstream barrel appliance inlet",
+      "gender": "male; TRUE1 input",
+      "mate": "NAC3FX-W-TOP",
+      "axis_index": 1,
+      "outward_sign": 1,
+      "panel_coordinate_mm": 0,
+      "panel_face": "Face178",
+      "panel_face_area_mm2": 158.08,
+      "flange_mm": [
+        26,
+        31
+      ],
+      "drawing_rear_depth_mm": 31.2,
+      "drawing_front_projection_mm": 7,
+      "flange_thickness_mm": 4.5,
+      "cutout_diameter_min_mm": 23.8,
+      "mount_hole_centers_transverse_mm": [
+        [
+          -9.5,
+          -12
+        ],
+        [
+          9.5,
+          12
+        ]
+      ],
+      "mount_hole_min_diameter_mm": 3.2,
+      "mount_pitch_tolerance_mm": 0.1,
+      "source_drawing": "sources/true1-in-drawing.pdf",
+      "drawing_id": "ST-NAC3MPX-TOP; 03.05.18; ISO 2768-m",
+      "termination": "1/4 in FASTON tabs; complete insulated terminal plus conductor bend/insertion access not defined. Retain no-suffix divider.",
+      "source_step": "sources/true1-in.step",
+      "source_page": "sources/true1-in.html",
+      "source_step_sha256": "51b7d0442112bb36f3aaa77a1a26ec9aab76682a24c99cd6baffe8e54e6988f0",
+      "drawing_depth_excess_over_24_mm": 7.2,
+      "mating_plane": "UNKNOWN: no certified installed/mated contact reference plane extracted. Panel plane is a mounting datum, not a contact mating plane.",
+      "depth_status": "Nominal bare part only; plus termination, insulation, manufacturing tolerances, and assembly access. 24 mm standalone allocation fails before those additions.",
+      "panel_datum_confidence": "Drawing shoulder matched to imported planar face; local CAD nominal, not an installed assembly"
+    },
+    {
+      "id": "true1-out",
+      "part": "NAC3FPX-TOP",
+      "variant": "TRUE1-TOP",
+      "role": "downstream barrel appliance outlet",
+      "gender": "female; TRUE1 output",
+      "mate": "NAC3MX-W-TOP",
+      "axis_index": 2,
+      "outward_sign": 1,
+      "panel_coordinate_mm": 0,
+      "panel_face": "Face105",
+      "panel_face_area_mm2": 129.02,
+      "flange_mm": [
+        35.4,
+        35.4
+      ],
+      "drawing_rear_depth_mm": 32.8,
+      "drawing_front_projection_mm": 10.2,
+      "flange_thickness_mm": 4.5,
+      "cutout_diameter_nominal_mm": 28.7,
+      "cutout_tolerance_mm": 0.1,
+      "mount_hole_centers_transverse_mm": [
+        [
+          -12.2,
+          12.2
+        ],
+        [
+          12.2,
+          -12.2
+        ]
+      ],
+      "mount_hole_min_diameter_mm": 3.2,
+      "mount_pitch_tolerance_mm": 0.1,
+      "source_drawing": "sources/true1-out-drawing.pdf",
+      "drawing_id": "20003608; approved 02.03.2023; model ID 30009221; CAD header 30010398 is linked by current product page; ISO 2768 mK",
+      "termination": "6.35 x 0.8 mm FASTON tabs. BDA 545 V3 specifies 40 Ncm mounting torque; terminal sleeve/tool/bend remain open.",
+      "source_step": "sources/true1-out.step",
+      "source_page": "sources/true1-out.html",
+      "source_step_sha256": "35c6cf7b4716bf914fce640593727a32d41d9318d98db7d985977f46cfcecca1",
+      "drawing_depth_excess_over_24_mm": 8.8,
+      "mating_plane": "UNKNOWN: no certified installed/mated contact reference plane extracted. Panel plane is a mounting datum, not a contact mating plane.",
+      "depth_status": "Nominal bare part only; plus termination, insulation, manufacturing tolerances, and assembly access. 24 mm standalone allocation fails before those additions.",
+      "panel_datum_confidence": "Drawing shoulder matched to imported planar face; local CAD nominal, not an installed assembly"
+    },
+    {
+      "id": "nema-in",
+      "part": "5278-C",
+      "variant": "NEMA5-15",
+      "role": "upstream barrel flanged inlet comparison",
+      "gender": "male NEMA 5-15P",
+      "mate": "5269-C",
+      "axis_index": 0,
+      "outward_sign": -1,
+      "panel_coordinate_mm": -19.83732635802925,
+      "panel_face": "Face4",
+      "panel_face_area_mm2": 1617.03,
+      "flange_diameter_mm": 63.5,
+      "drawing_rear_depth_mm": 45.3,
+      "drawing_front_projection_mm": null,
+      "cutout_diameter_range_mm": [
+        43.66,
+        44.45
+      ],
+      "mount_pitch_mm": 53.6,
+      "mount_slot_mm": [
+        4,
+        5.9
+      ],
+      "source_drawing": "sources/nema-in-drawing.jpg",
+      "drawing_id": "CATSTD-05278-00C-D01 rev 1; paired CAD M01; inch governing drawing with metric references",
+      "termination": "Rear screw terminals, product page 18–10 AWG and 10–14 in-lb. PK-93763-10-02-0C requires 9/16 in (1.4 cm) stripped length, copper/copper-clad conductors, no tinned strands. Not an assembly instruction here.",
+      "source_step": "sources/nema-in.step",
+      "source_page": "sources/nema-in.html",
+      "source_step_sha256": "e1bc0695fcd40393ee978d827b9ddb97aa633635ce38817b8a78a5545c98b944",
+      "drawing_depth_excess_over_24_mm": 21.3,
+      "mating_plane": "UNKNOWN: no certified installed/mated contact reference plane extracted. Panel plane is a mounting datum, not a contact mating plane.",
+      "depth_status": "Nominal bare part only; plus termination, insulation, manufacturing tolerances, and assembly access. 24 mm standalone allocation fails before those additions.",
+      "panel_datum_confidence": "Drawing shoulder matched to imported planar face; local CAD nominal, not an installed assembly"
+    },
+    {
+      "id": "nema-out",
+      "part": "5279-C",
+      "variant": "NEMA5-15",
+      "role": "downstream barrel flanged outlet comparison",
+      "gender": "female NEMA 5-15R",
+      "mate": "5266-C",
+      "axis_index": 0,
+      "outward_sign": 1,
+      "panel_coordinate_mm": -4.3434736419707365,
+      "panel_face": "Face71",
+      "panel_face_area_mm2": 1617.04,
+      "flange_diameter_mm": 63.5,
+      "drawing_rear_depth_mm": 43.6,
+      "drawing_front_projection_mm": 4.34351236,
+      "cutout_diameter_range_mm": [
+        43.66,
+        44.45
+      ],
+      "mount_pitch_mm": 53.6,
+      "mount_slot_mm": [
+        4,
+        5.9
+      ],
+      "source_drawing": "sources/nema-out-drawing.pdf",
+      "drawing_id": "CATSTD-05279-00C-M01 rev 1; 2020 copyright; inch governing drawing with metric references",
+      "termination": "Rear screw terminals as 5278-C; 2.4 mm raised nose dimension is beyond front flange, not total panel projection. No rear tool/wire sweep supplied.",
+      "source_step": "sources/nema-out.step",
+      "source_page": "sources/nema-out.html",
+      "source_step_sha256": "a7dbe69fe92b770157f15b3fdfb16ae645a063f75d0a2d540ac53733eb23de70",
+      "drawing_depth_excess_over_24_mm": 19.6,
+      "mating_plane": "UNKNOWN: no certified installed/mated contact reference plane extracted. Panel plane is a mounting datum, not a contact mating plane.",
+      "depth_status": "Nominal bare part only; plus termination, insulation, manufacturing tolerances, and assembly access. 24 mm standalone allocation fails before those additions.",
+      "panel_datum_confidence": "Drawing shoulder matched to imported planar face; local CAD nominal, not an installed assembly"
+    }
+  ],
+  "mating_maps": [
+    {
+      "variant": "classic-powerCON",
+      "upstream": "source cord NAC3FXXA-W-S [female socket/A] → barrel NAC3MPXXA [male/A]",
+      "downstream": "barrel NAC3MPXXB [male/B] → NAC3FXXB-W-S [female socket/B] — interconnection cord — NAC3FXXA-W-S [female socket/A] → fixture NAC3MPA-1 (legacy male/A) or NAC3MPXXA (XX male/A)",
+      "forbidden": "B cable connector directly into A fixture inlet; incompatible keyways",
+      "legacy_policy": "FXX cable connectors are source-confirmed mating compatible with existing blue/gray receptacles. Legacy mating combination has no CBC. Do not transfer current XX/FXX live/load mating permission to a legacy fixture."
+    },
+    {
+      "variant": "TRUE1-TOP",
+      "upstream": "source cord NAC3FX-W-TOP [female] → barrel NAC3MPX-TOP [male]",
+      "downstream": "barrel NAC3FPX-TOP [female] → NAC3MX-W-TOP [male] — interconnection cord — NAC3FX-W-TOP [female] → fixture NAC3MPX-TOP [male]",
+      "scope": "BDA 544/545 provide this assignment and preceding TRUE1 compatibility; no classic powerCON compatibility."
+    },
+    {
+      "variant": "NEMA5-15",
+      "upstream": "source extension cord 5269-C [5-15R female] → barrel 5278-C [5-15P male]",
+      "downstream": "barrel 5279-C [5-15R female] → 5266-C [5-15P male] — cord — 5269-C [5-15R female] → fixture 5278-C or other identified NEMA5-15P inlet; a fixture 5266-C-type attached plug may instead mate directly with 5279-C or the jumper 5269-C",
+      "scope": "No default mains locking. Flanged comparison does not qualify the baseline molded-pigtail procurement; no direct wall support claim.",
+      "confidence": "Derived compatible mate choice from matching manufacturer-declared NEMA5-15P/R classes; exact-PN manufacturer pair recommendation not found in retrieved files."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "path": "sources/meanwell-pcb-installation.pdf",
+    "url": "https://www.meanwell.com/Upload/PDF/IRM-01/PCB.pdf",
+    "sha256": "fa68e719a5e78a45bae42d2c01afdd3dfecd1a43b6a48768616036003f05f54a",
+    "read_only": false
+  },
+  {
+    "path": "../regulated-source/sources/irm20.pdf",
+    "url": "https://www.meanwell.com/Upload/PDF/IRM-20-SPEC.PDF",
+    "sha256": "aa1afdbcdf0bf6db796710e26bd5e258f4857ffb1c14bd1ac3d94af86f3b8789",
+    "read_only": true
+  },
+  {
+    "path": "sources/tensility-30-02075.pdf",
+    "url": "https://tensility.s3.us-west-2.amazonaws.com/imports/product_spec_sheets/30-02075.pdf",
+    "sha256": "8543044232363e092e159edd011735e7cec0b163df8e8f82b9f6246423b225d9",
+    "read_only": false
+  },
+  {
+    "path": "sources/tensility-30-02075-product.html",
+    "url": "https://www.tensility.com/products/30-02075",
+    "sha256": "23ae21c1039629959a2f920bcb6adc5601993333533b72959aefd437c6aa4772",
+    "read_only": false
+  }
+]

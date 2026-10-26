@@ -1,0 +1,56 @@
+{
+  "revision": "CSR-R1",
+  "active_hot_loop_ohm": 0.09208361747042736,
+  "full_input_path_R_ohm": 0.18438850632596393,
+  "direct_5V_counterfactual": [
+    {
+      "VCONN_A": 0,
+      "bus_A": 1.51,
+      "allocated_drop_V": 0.5750666445522057,
+      "source_low_needed_V": 5.325066644552206,
+      "port_at_nominal_5V": 4.424933355447794,
+      "source_corner_window_to_5p45_V": 0.12493335544779427
+    },
+    {
+      "VCONN_A": 0.25,
+      "bus_A": 1.76,
+      "allocated_drop_V": 0.6371637711336966,
+      "source_low_needed_V": 5.387163771133697,
+      "port_at_nominal_5V": 4.362836228866303,
+      "source_corner_window_to_5p45_V": 0.06283622886630358
+    },
+    {
+      "VCONN_A": 0.41,
+      "bus_A": 1.92,
+      "allocated_drop_V": 0.6769059321458508,
+      "source_low_needed_V": 5.426905932145851,
+      "port_at_nominal_5V": 4.323094067854149,
+      "source_corner_window_to_5p45_V": 0.023094067854149358
+    }
+  ],
+  "TIDA_12V_conditional": [
+    {
+      "buck_output_A": 1.76,
+      "conditional_12p1V_input_A": 0.9717089592054386,
+      "margin_to_1p125_A": 0.15329104079456135
+    },
+    {
+      "buck_output_A": 1.92,
+      "conditional_12p1V_input_A": 1.061332851988431,
+      "margin_to_1p125_A": 0.06366714801156892
+    },
+    {
+      "buck_output_A": 2.24,
+      "conditional_12p1V_input_A": 1.2413439069724053,
+      "margin_to_1p125_A": -0.11634390697240526
+    }
+  ],
+  "assumptions": "80C copper; inherited minimum flex section; nominal wire copper; 20mohm input termination/PCB allowance; 80% buck efficiency not guaranteed; 50mV one-sided output allowance; no revised circuit selected",
+  "areas_mm2": {
+    "IRM_body": 1465.33,
+    "IRM_conservative_carrier": 4212,
+    "TIDA_actual_board": 3300
+  },
+  "complete_enclosure_comparison": "UNKNOWN; installation, maximum assembled height, harness and retention unresolved",
+  "status": "SCREEN ONLY; no electrical or mechanical qualification"
+}

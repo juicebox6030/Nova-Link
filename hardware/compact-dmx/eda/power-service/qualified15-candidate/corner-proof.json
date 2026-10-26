@@ -1,0 +1,136 @@
+{
+  "status": "PASS enumerated DC inequalities + explicitly conditional engineering screens; no transient/USB/release guarantee",
+  "threshold_corners": 192,
+  "thresholds": {
+    "CAP": {
+      "rise_min_V": 1.6692828798430495,
+      "rise_max_V": 1.7229677371575516,
+      "fall_min_V": 1.6313262879147985,
+      "fall_max_V": 1.7059166985223284
+    },
+    "CAP_START": {
+      "rise_min_V": 2.4513300807343055,
+      "rise_max_V": 2.533074464609258,
+      "fall_min_V": 2.39558842154148,
+      "fall_max_V": 2.508007510269067
+    },
+    "USB": {
+      "rise_min_V": 3.925037117589687,
+      "rise_max_V": 4.059657493726794,
+      "fall_min_V": 3.8357808844058305,
+      "fall_max_V": 4.019485170595836
+    },
+    "MAIN": {
+      "rise_min_V": 3.5634876578811663,
+      "rise_max_V": 3.685135790583292,
+      "fall_min_V": 3.4824536668497763,
+      "fall_max_V": 3.6486693179290017
+    },
+    "RAW": {
+      "rise_min_V": 3.925037117589687,
+      "rise_max_V": 4.059657493726794,
+      "fall_min_V": 3.8357808844058305,
+      "fall_max_V": 4.019485170595836
+    },
+    "BOOST_MON": {
+      "rise_min_V": 3.5634876578811663,
+      "rise_max_V": 3.685135790583292,
+      "fall_min_V": 3.4824536668497763,
+      "fall_max_V": 3.6486693179290017
+    }
+  },
+  "resistor_total_allowance": 0.0035,
+  "source_current": {
+    "advertised_A": 1.5,
+    "main_trip_min_A": 0.8470353761833582,
+    "main_trip_max_A": 1.1540391369794278,
+    "raw_feeds_fault_max_A": 0.05474396302943776,
+    "steady_trip_plus_raw_A": 1.2087831000088656,
+    "margin_to_1p5_A": 0.2912168999911344,
+    "default_mainoff_resistor_limited_A": 0.05474396302943776,
+    "instantaneous_max_A": null,
+    "quiescent_test_limit": "TPS25947 IQ610uA atVIN12V, not a published full-range5V max; other unbounded dynamic current not included",
+    "finite_fault": "Circuitbreaker ITIMER finite interval allows overload; fasttrip ratios/response times typical only. No instantaneous1.5A claim."
+  },
+  "healthy_allocations": {
+    "buck_input_min_if_source_good_V": 3.716538536187065,
+    "normal_raw_min_V": 4.348068238835926,
+    "main_normal_input_A": 0.38196718201979085,
+    "normal_source_A": 0.3871904894211972,
+    "headroom_to_min_trip_A": 0.46506819416356737,
+    "application_load_W": 1.11,
+    "buck_efficiency": 0.85,
+    "buck_start_input_A": 0.3898477688171176,
+    "buck_softstart_min_screen_s": 0.0022666666666666673,
+    "eFuse_initial_C_nom_uF": 11.000000000000002,
+    "eFuse_initial_C_max_alloc_uF": 13.915000000000001,
+    "eFuse_slew_alloc_V_s": 499.3464052287581,
+    "eFuse_cap_inrush_alloc_A": 0.00694840522875817,
+    "eFuse_slew_guaranteed": false,
+    "later_mux_common_C_max_alloc_uF": 25.3,
+    "later_mux_common_inrush_typ5V1p7ms_screen_A": 0.0818529411764706,
+    "later_mux_common_inrush_max_A": null,
+    "later_mux_charge_C": 0.00013915000000000002,
+    "later_mux_continuous_OC_time_charge_bound_s_conditional": 0.0003043608307793232,
+    "recovery_live_mux_charge_max_A": null,
+    "inrush_boundary": "eFuse dVdt controlsinitial11uF only, NOT later20uFmainmux common precharge orlivebackup-to-USBhandoff. ThosehaveNOspecifiedmaximumcurrent.",
+    "ITIMER_cap_formula_min_s": 0.00393516,
+    "ITIMER_cap_formula_max_s": 0.01835304166666667,
+    "ITIMER_total_shutdown_max_guaranteed": false,
+    "early_U19_common_plus_initial_C_max_alloc_uF": 39.215,
+    "early_U19_cap_inrush_alloc_A": 0.01958186928104575,
+    "initial_C_assumption": "11uF screen requires U19 already in manual VIN2 state; at low AON, MODE<=.35V/PR1low can connect VIN1 early, adding20uF common (31uFnominal total). Neither sequencing order nor slew maximum is guaranteed."
+  },
+  "charge": {
+    "nominal_A": 0.025,
+    "conditional_min_A": 0.02242152466367713,
+    "conditional_max_A": 0.027596588058203714,
+    "nominal_empty_to2p6_min_before_tail": 26.0,
+    "corner_empty_to2p652_min_before_tail": 38.440740000000005,
+    "regulation_min_with25nA_bias_allocation_V": 2.5610089754764576,
+    "regulation_max_with25nA_bias_allocation_V": 2.639335166191044,
+    "guaranteed": false,
+    "gate": "KISET has270..330 generalrow but accuracy rows onlyOUT3.8/7.6 and ICHG_RANGE refers to undefinedVBAT_LOWV; empty-cell curve is typical. FBbias fulltemp max absent; thermal/dropout/leakage/tail require validation"
+  },
+  "off_and_AON": {
+    "priority_max_V": 3.4857840169869547,
+    "priority_min_V": 2.936814974661186,
+    "raw_feed_under2mA_allocation_min_V": 3.73769,
+    "raw_voltage_reverseleak_test_V": 0.00150525,
+    "CC_ALLOW_off_leak_bound_V": 0.4384443098262032,
+    "CC_3V3_off_leak_bound_V": 0.03658079478609626,
+    "CC_ALLOW_high_min_V": 1.7820226148670955,
+    "CC_ALLOW_prePOR_max_V": 0.9629117848903461,
+    "CC_supervisor_lowV_sink_max_A": 1.4848813237636074e-05,
+    "CC_supervisor_rising_max_V": 3.192799999999999,
+    "VPOR_condition": "TPS3808 Trise>=15us/V; actualramp measurementgate, alongside TUSB<=25ms ramp",
+    "reverse_transient_max_s": null,
+    "MODE_connection": "U40.5=U40.3=AON_USB_LIMITED; priority mode per7.3.1, independently evaluated for coldboot/reattach/detach",
+    "priority_margin_under2mA_allocation_V": 0.25190598301304545
+  },
+  "runtime": {
+    "conditional_s": 10.497339984609122,
+    "first_arm_conditional_s": 10.552899734712366,
+    "explicit_ESR_electronics_eta0p8": {
+      "initial30mohm_s": 10.112440152438715,
+      "aged60mohm_s": 9.72955167368144
+    },
+    "capacitance_F": 9.45,
+    "start_V": 2.448,
+    "loaded_floor_V": 1.7059166985223284,
+    "efficiency": 0.8,
+    "load_W": 1.11,
+    "historical_extra_start_reserve_V": 0.1,
+    "guaranteed": false,
+    "gate": "10.50 uses80%combined efficiency. If80%electronics BEFORE60mohmcellESR, only9.73s. Cold/aging/lowVINefficiency andRF+DMXload unmeasured; armisNOTguaranteed10sready, bothradios shareoneCC1352R"
+  },
+  "unclosed_maxima": [
+    "CC VDD ramp25ms and debounce/downgrade response",
+    "eFuse transfer/slew, peak and fault-response maxima",
+    "TPS61023 startup current/time and PFM voltage upper bound",
+    "TPS2116 switchover/RCB timing and effectiveC ride-through",
+    "sub1.65V AON logic and SR propagation hazards",
+    "bootload, current/thermal, capESR, RF/DMX, USB compliance"
+  ],
+  "manufacturing_release": false
+}

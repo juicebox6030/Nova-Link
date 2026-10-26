@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/juicebox/Nova-Link/hardware/compact-dmx/eda/dmx-interface.kicad_sch</source>
+    <date>2026-10-22T20:26:21</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>NOVA partial isolated DMX interface - NOT RELEASED</title>
+        <company/>
+        <rev>C-TERM1</rev>
+        <date/>
+        <source>dmx-interface.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>GRM155R71E104KE14D 100nF 25V X7R</value>
+      <footprint>NOVA_HW:TI_CAPC1005_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC1005_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="C" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>def87b61-63c8-5cc5-ad30-559765bf861c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>GRM21BR71A106KE51L 10uF 10V X7R</value>
+      <footprint>NOVA_HW:Murata_GRM21_Reflow</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Murata_GRM21_Reflow</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="C" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>53f0e22a-9fdd-56a7-adac-fe9055ad35de</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>GRM155R71E104KE14D 100nF 25V X7R</value>
+      <footprint>NOVA_HW:TI_CAPC1005_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC1005_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="C" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c7962e30-93f3-5fad-a278-7886a0f29643</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>GRM21BR71A106KE51L 10uF 10V X7R</value>
+      <footprint>NOVA_HW:Murata_GRM21_Reflow</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Murata_GRM21_Reflow</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="C" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3dfef727-094d-53b2-9383-6cecae266b9f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>XLR1/2/3 boundary</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="DMX_BOUNDARY" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>20926e16-c200-569e-a751-41716ba6a370</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>CRCW040210K0FKED 10k 1%</value>
+      <footprint>NOVA_HW:Vishay_CRCW0402</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Vishay_CRCW0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="R" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>200c4d7e-f5ff-5a59-8918-6895ff85f0d8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>CRCW040210K0FKED 10k 1%</value>
+      <footprint>NOVA_HW:Vishay_CRCW0402</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Vishay_CRCW0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="R" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4b615dcf-5314-550d-b14d-2767d1e8de46</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>CRCW040210K0FKED 10k 1%</value>
+      <footprint>NOVA_HW:Vishay_CRCW0402</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Vishay_CRCW0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="R" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7fb8b78f-d0d9-52d2-ab88-bb9c712ccf22</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>CRCW04021K00FKED 1k 1%</value>
+      <footprint>NOVA_HW:Vishay_CRCW0402</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Vishay_CRCW0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="R" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>57c85cf0-83ed-5ffc-b514-ea6ddddc8558</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_TERM1">
+      <value>CRCW1206240RFKEA 240R 1% 0.25W</value>
+      <footprint>NOVA_HW:Vishay_CRCW1206</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Vishay_CRCW1206</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="R" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e974d66f-6c34-5653-bdfd-3442508391fc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_TERM2">
+      <value>CRCW1206240RFKEA 240R 1% 0.25W</value>
+      <footprint>NOVA_HW:Vishay_CRCW1206</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Vishay_CRCW1206</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="R" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>902a9021-b901-5550-b9bb-de0d96340f51</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="S_TERM">
+      <value>PCM12SMTR OFF=1-2 / ON=2-3</value>
+      <footprint>NOVA_HW:PCM12_PENDING_MANUFACTURER_LAND_RECHECK</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:PCM12_PENDING_MANUFACTURER_LAND_RECHECK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="PCM12SMTR" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>15353155-d89d-5481-a4dc-ad318fee2aa8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>ISOW1412DFMR</value>
+      <footprint>NOVA_HW:TI_DFM0020A</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_DFM0020A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="ISOW1412_ENABLE_MODE" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>93a8763a-d445-5403-8978-d50c4ac604e2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="20"/>
+            <pin num="19"/>
+            <pin num="18"/>
+            <pin num="17"/>
+            <pin num="16"/>
+            <pin num="15"/>
+            <pin num="14"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="X1">
+      <value>OFF-SHEET CONTROL / POWER CONTRACT</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="NOVA" part="EXTERNAL_CONTROL_REQUIRED" description=""/>
+      <property name="Sheetname" value="dmx-interface"/>
+      <property name="Sheetfile" value="dmx-interface.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0aa967be-633e-5ca5-8f04-bb1117294084</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="NOVA" part="C">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NOVA" part="DMX_BOUNDARY">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">DMX_BOUNDARY</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND_ISO" type="passive"/>
+        <pin num="2" name="DMX_N" type="passive"/>
+        <pin num="3" name="DMX_P" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NOVA" part="EXTERNAL_CONTROL_REQUIRED">
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">EXTERNAL_CONTROL_REQUIRED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SYS_3V3" type="power_out"/>
+        <pin num="2" name="GND_USB" type="power_out"/>
+        <pin num="3" name="DMX_TX" type="output"/>
+        <pin num="4" name="DMX_DE_SAFE" type="output"/>
+        <pin num="5" name="DMX_RE_N" type="output"/>
+        <pin num="6" name="DMX_RX" type="input"/>
+        <pin num="7" name="DMX_POWER_EN" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="NOVA" part="ISOW1412_ENABLE_MODE">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ISOW1412_ENABLE_MODE</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VIO" type="power_in"/>
+        <pin num="2" name="D" type="input"/>
+        <pin num="3" name="DE" type="input"/>
+        <pin num="4" name="R" type="output"/>
+        <pin num="5" name="RE_N" type="input"/>
+        <pin num="6" name="GNDIO" type="power_in"/>
+        <pin num="7" name="OUT" type="output"/>
+        <pin num="8" name="EN_FLT" type="input"/>
+        <pin num="9" name="VDD" type="power_in"/>
+        <pin num="10" name="GND1" type="power_in"/>
+        <pin num="11" name="GND2" type="power_in"/>
+        <pin num="12" name="VISOOUT" type="power_out"/>
+        <pin num="13" name="MODE" type="input"/>
+        <pin num="14" name="IN" type="input"/>
+        <pin num="15" name="GISOIN" type="power_in"/>
+        <pin num="16" name="VISOIN" type="power_in"/>
+        <pin num="17" name="Y" type="output"/>
+        <pin num="18" name="Z" type="output"/>
+        <pin num="19" name="B" type="input"/>
+        <pin num="20" name="A" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="NOVA" part="PCM12SMTR">
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">PCM12SMTR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="NOVA" part="R">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="NOVA">
+      <uri>${KIPRJMOD}/nova-dmx.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/DMX_DE_SAFE" class="Default">
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="3" pinfunction="DE_3" pintype="input"/>
+      <node ref="X1" pin="4" pinfunction="DMX_DE_SAFE_4" pintype="output"/>
+    </net>
+    <net code="2" name="/DMX_N" class="Default">
+      <node ref="J1" pin="2" pinfunction="DMX_N_2" pintype="passive"/>
+      <node ref="R_TERM1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_TERM2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U5" pin="18" pinfunction="Z_18" pintype="output"/>
+      <node ref="U5" pin="19" pinfunction="B_19" pintype="input"/>
+    </net>
+    <net code="3" name="/DMX_P" class="Default">
+      <node ref="J1" pin="3" pinfunction="DMX_P_3" pintype="passive"/>
+      <node ref="S_TERM" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U5" pin="17" pinfunction="Y_17" pintype="output"/>
+      <node ref="U5" pin="20" pinfunction="A_20" pintype="input"/>
+    </net>
+    <net code="4" name="/DMX_POWER_EN" class="Default">
+      <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="X1" pin="7" pinfunction="DMX_POWER_EN_7" pintype="output"/>
+    </net>
+    <net code="5" name="/DMX_RE_N" class="Default">
+      <node ref="R2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U5" pin="5" pinfunction="RE_N_5" pintype="input"/>
+      <node ref="X1" pin="5" pinfunction="DMX_RE_N_5" pintype="output"/>
+    </net>
+    <net code="6" name="/DMX_RX" class="Default">
+      <node ref="U5" pin="4" pinfunction="R_4" pintype="output"/>
+      <node ref="X1" pin="6" pinfunction="DMX_RX_6" pintype="input"/>
+    </net>
+    <net code="7" name="/DMX_TX" class="Default">
+      <node ref="U5" pin="2" pinfunction="D_2" pintype="input"/>
+      <node ref="X1" pin="3" pinfunction="DMX_TX_3" pintype="output"/>
+    </net>
+    <net code="8" name="/GND_ISO" class="Default">
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="GND_ISO_1" pintype="passive"/>
+      <node ref="U5" pin="11" pinfunction="GND2_11" pintype="power_in"/>
+      <node ref="U5" pin="13" pinfunction="MODE_13" pintype="input"/>
+      <node ref="U5" pin="14" pinfunction="IN_14" pintype="input"/>
+      <node ref="U5" pin="15" pinfunction="GISOIN_15" pintype="power_in"/>
+    </net>
+    <net code="9" name="/GND_USB" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U5" pin="10" pinfunction="GND1_10" pintype="power_in"/>
+      <node ref="U5" pin="6" pinfunction="GNDIO_6" pintype="power_in"/>
+      <node ref="X1" pin="2" pinfunction="GND_USB_2" pintype="power_out"/>
+    </net>
+    <net code="10" name="/ISOW_EN_PIN" class="Default">
+      <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U5" pin="8" pinfunction="EN_FLT_8" pintype="input"/>
+    </net>
+    <net code="11" name="/ISO_3V3" class="Default">
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="12" pinfunction="VISOOUT_12" pintype="power_out"/>
+      <node ref="U5" pin="16" pinfunction="VISOIN_16" pintype="power_in"/>
+    </net>
+    <net code="12" name="/SYS_3V3" class="Default">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="VIO_1" pintype="power_in"/>
+      <node ref="U5" pin="9" pinfunction="VDD_9" pintype="power_in"/>
+      <node ref="X1" pin="1" pinfunction="SYS_3V3_1" pintype="power_out"/>
+    </net>
+    <net code="13" name="/TERM_SW" class="Default">
+      <node ref="R_TERM1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_TERM2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="S_TERM" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="14" name="unconnected-(S_TERM-Pad1)" class="Default">
+      <node ref="S_TERM" pin="1" pinfunction="1_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(U5-OUT-Pad7)" class="Default">
+      <node ref="U5" pin="7" pinfunction="OUT_7" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

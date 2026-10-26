@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "Q15") (type "KiCad") (uri "${KIPRJMOD}/Qualified.pretty") (options "") (descr "Frozen qualified lands plus protection")) (lib (name "CP") (type "KiCad") (uri "${KIPRJMOD}/CellProtection.pretty") (options "") (descr "Protection")) (lib (name "Buffer25") (type "KiCad") (uri "${KIPRJMOD}/Buffer25.pretty") (options "") (descr "Engineered cell")))

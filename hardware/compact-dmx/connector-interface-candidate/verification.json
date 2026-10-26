@@ -1,0 +1,15 @@
+{
+  "status": "PASS_REFERENCE_CONTRACT_CHECKS",
+  "sources_checked": 42,
+  "official_steps_checked": 12,
+  "barrel_candidate_interfaces": 6,
+  "external_mate_models": 6,
+  "saved_models_checked": 12,
+  "protected_inputs_checked": 96,
+  "protected_deltas": [],
+  "negative_mating_cases": 3,
+  "legacy_no_cbc_negative_case": true,
+  "all_24mm_bare_rear_allocations_fail": true,
+  "nema_48mm_flange_allocation_fails": true,
+  "manufacturing_release": false
+}

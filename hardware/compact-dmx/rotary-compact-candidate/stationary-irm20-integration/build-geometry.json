@@ -1,0 +1,36 @@
+{
+  "PCB_bottom": -11.0,
+  "PCB_top": -9.4,
+  "module_bottom": -9.0,
+  "module_top": 15.0,
+  "source_pin_table": {
+    "AC_N": [
+      48.4,
+      -10.4,
+      0.65,
+      0.9
+    ],
+    "AC_L": [
+      48.4,
+      10.4,
+      0.65,
+      1.4
+    ],
+    "V_MINUS": [
+      93.4,
+      -10.4,
+      1.15,
+      0.9
+    ],
+    "V_PLUS": [
+      93.4,
+      -2.4,
+      1.15,
+      1.4
+    ]
+  },
+  "wire_path_length_mm": 54.46150082346219,
+  "source_wire_min_bend_R_mm": 9,
+  "physical_parts_including_references": 54,
+  "endcap_allocations_unchanged": true
+}

@@ -1,0 +1,88 @@
+{
+  "contacts": [
+    {
+      "a": "SourceWireCopper1",
+      "b": "Pin_LVplus",
+      "gap": 0.0,
+      "max_gap": 1e-07
+    },
+    {
+      "a": "SourceWireCopper1",
+      "b": "J0_Solder1_0",
+      "gap": 0.0,
+      "max_gap": 1e-07
+    },
+    {
+      "a": "J0_Solder1_0",
+      "b": "stationary_J0_Pad1_0",
+      "gap": 0.0,
+      "max_gap": 1e-07
+    },
+    {
+      "a": "SourceWireCopper1",
+      "b": "J0_Solder1_1",
+      "gap": 0.0,
+      "max_gap": 1e-07
+    },
+    {
+      "a": "J0_Solder1_1",
+      "b": "stationary_J0_Pad1_0",
+      "gap": 0.0,
+      "max_gap": 1e-07
+    },
+    {
+      "a": "SourceWireCopper2",
+      "b": "Pin_LVminus",
+      "gap": 0.0,
+      "max_gap": 1e-07
+    },
+    {
+      "a": "SourceWireCopper2",
+      "b": "J0_Solder2_0",
+      "gap": 0.0,
+      "max_gap": 1e-07
+    },
+    {
+      "a": "J0_Solder2_0",
+      "b": "stationary_J0_Pad2_1",
+      "gap": 0.0,
+      "max_gap": 1e-07
+    },
+    {
+      "a": "SourceWireCopper2",
+      "b": "J0_Solder2_1",
+      "gap": 0.0,
+      "max_gap": 1e-07
+    },
+    {
+      "a": "J0_Solder2_1",
+      "b": "stationary_J0_Pad2_1",
+      "gap": 0.0,
+      "max_gap": 1e-07
+    },
+    {
+      "a": "IRM20_12_maxbody",
+      "b": "RetainedCarrier",
+      "gap": 0.0,
+      "max_gap": 1e-07
+    },
+    {
+      "a": "RetainedCarrier",
+      "b": "LowerShellPosts",
+      "gap": 1.7763568394002505e-15,
+      "max_gap": 1e-07
+    },
+    {
+      "a": "SupportedFilm",
+      "b": "LowerShellPosts",
+      "gap": 0.0,
+      "max_gap": 1e-07
+    }
+  ],
+  "module_top_retention_gap": 0.25,
+  "fuse_conductor_envelope_gap": 0.9999999999999574,
+  "fuse_centerline_endpoint_gap": 4,
+  "fuse_unconnected": true,
+  "S12_through_board_electrical_path": "UNROUTED / no physical continuity claim",
+  "sourcepin_wire_and_J0_solder_contact": "Geometry only; solder/splice process unqualified"
+}

@@ -1,0 +1,36 @@
+{
+  "protected_hash_count": 403,
+  "protected_failures": [],
+  "source_hashes": {
+    "regulated-source/sources/irm20.pdf": true,
+    "stationary-irm20-integration/sources/meanwell-pcb-installation.pdf": true,
+    "regulated-source/sources/usb4105.pdf": true
+  },
+  "s_bend_samples_per_lane": 2001,
+  "lanes": 3,
+  "continuous_arc_radius": 12,
+  "arc_join_tangent_continuous": true,
+  "endpoints_xz": [
+    [
+      -21.330729007701542,
+      -29.0
+    ],
+    [
+      -0.0,
+      -16.0
+    ]
+  ],
+  "minimum_conical_bore_wire_screen_gap": -0.03947767264419966,
+  "conical_bore_not_retained_or_released": true,
+  "wire_to_wire_surface_gap": 2.5,
+  "transition_pass": false,
+  "CAD_generated": false,
+  "phase0": "HOLD: no demonstrated materially compact complete construction; bounded screen ends before CAD",
+  "unclosed": [
+    "retained carrier and its installation-spacing crossings",
+    "primary branch/fuse/termination construction",
+    "secondary reroute to actual S12 J0 after source Z recenter",
+    "variant terminal/tool and molded NEMA cord interfaces",
+    "final housing/USB/endcap obstruction and whole-assembly motion"
+  ]
+}

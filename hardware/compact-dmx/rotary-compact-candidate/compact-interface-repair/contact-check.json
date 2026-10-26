@@ -1,0 +1,164 @@
+{
+  "status": "PASS local mechanical contacts only",
+  "rows": [
+    {
+      "a": "Pin_LVplus",
+      "b": "SourceWireCopper1",
+      "gap": 0.0,
+      "volume": 0.08879449923534324,
+      "role": "named unqualified source-pin electrical endpoint"
+    },
+    {
+      "a": "SourceWireCopper1",
+      "b": "J0_Solder1_0",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "proposed wire/fillet surface"
+    },
+    {
+      "a": "J0_Solder1_0",
+      "b": "stationary_J0_Pad1_0",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "proposed fillet/actual J0 land"
+    },
+    {
+      "a": "SourceWireCopper1",
+      "b": "J0_Solder1_1",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "proposed wire/fillet surface"
+    },
+    {
+      "a": "J0_Solder1_1",
+      "b": "stationary_J0_Pad1_0",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "proposed fillet/actual J0 land"
+    },
+    {
+      "a": "stationary_J2_Pad1_0",
+      "b": "J2_Solder1",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "actual protected/return pad to preform"
+    },
+    {
+      "a": "J2_Solder1",
+      "b": "FixedFanoutCopper1",
+      "gap": 1.7763568394002505e-15,
+      "volume": 0.0,
+      "role": "back-access exposed copper"
+    },
+    {
+      "a": "FixedFanoutCopper1",
+      "b": "FixedTailCopper1",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "continuous developed static copper to fixed tail"
+    },
+    {
+      "a": "MovingTailCopper1",
+      "b": "MovingFanoutCopper1",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "continuous moving tail to developed static copper"
+    },
+    {
+      "a": "MovingFanoutCopper1",
+      "b": "J3_Solder1",
+      "gap": 3.552713678800501e-15,
+      "volume": 0.0,
+      "role": "exposed copper to preform"
+    },
+    {
+      "a": "J3_Solder1",
+      "b": "rotating_J3_Pad1_0",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "actual rotating positive/return land"
+    },
+    {
+      "a": "Pin_LVminus",
+      "b": "SourceWireCopper2",
+      "gap": 0.0,
+      "volume": 0.0888147310665102,
+      "role": "named unqualified source-pin electrical endpoint"
+    },
+    {
+      "a": "SourceWireCopper2",
+      "b": "J0_Solder2_0",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "proposed wire/fillet surface"
+    },
+    {
+      "a": "J0_Solder2_0",
+      "b": "stationary_J0_Pad2_1",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "proposed fillet/actual J0 land"
+    },
+    {
+      "a": "SourceWireCopper2",
+      "b": "J0_Solder2_1",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "proposed wire/fillet surface"
+    },
+    {
+      "a": "J0_Solder2_1",
+      "b": "stationary_J0_Pad2_1",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "proposed fillet/actual J0 land"
+    },
+    {
+      "a": "stationary_J2_Pad2_1",
+      "b": "J2_Solder2",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "actual protected/return pad to preform"
+    },
+    {
+      "a": "J2_Solder2",
+      "b": "FixedFanoutCopper2",
+      "gap": 1.7763568394002505e-15,
+      "volume": 0.0,
+      "role": "back-access exposed copper"
+    },
+    {
+      "a": "FixedFanoutCopper2",
+      "b": "FixedTailCopper2",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "continuous developed static copper to fixed tail"
+    },
+    {
+      "a": "MovingTailCopper2",
+      "b": "MovingFanoutCopper2",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "continuous moving tail to developed static copper"
+    },
+    {
+      "a": "MovingFanoutCopper2",
+      "b": "J3_Solder2",
+      "gap": 3.552713678800501e-15,
+      "volume": 0.0,
+      "role": "exposed copper to preform"
+    },
+    {
+      "a": "J3_Solder2",
+      "b": "rotating_J3_Pad2_1",
+      "gap": 0.0,
+      "volume": 0.0,
+      "role": "actual rotating positive/return land"
+    }
+  ],
+  "not_physical_edges": [
+    "J0 through U1 to J2: actual netlist, UNROUTED board",
+    "active1046mm copper lanes: invariant X lane contract on frozen winding, supplier circuit fabrication UNQUALIFIED"
+  ],
+  "complete_electrical_assembly": false
+}

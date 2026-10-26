@@ -1,0 +1,4 @@
+(footprint "Murata_GRM21_Reflow" (version 20241229) (generator "nova_source_lands") (layer "F.Cu") (attr smd) (descr "GRM21BR71A106KE51-01 Notice Table2 reflow:gap1.2 padlengthchosen.7 from.6..8 widthchosen1.3 from1.2..1.4; assembly validation required") (fp_text reference "REF**" (at 0 -1.65) (layer "F.SilkS") (effects (font (size .8 .8) (thickness .12))))(fp_rect (start -1.0 -0.625) (end 1.0 0.625) (stroke (width .05) (type default)) (fill none) (layer "F.Fab"))(fp_rect (start -1.55 -0.9) (end 1.55 0.9) (stroke (width .05) (type default)) (fill none) (layer "F.CrtYd"))
+(pad "1" smd rect (at -0.95 0) (size 0.7 1.3) (layers "F.Cu" "F.Mask" "F.Paste"))
+(pad "2" smd rect (at 0.95 0) (size 0.7 1.3) (layers "F.Cu" "F.Mask" "F.Paste"))
+)

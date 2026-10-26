@@ -1,0 +1,186 @@
+{
+  "scope": "Candidate-only provenance; shared manifests untouched. Original cached TI documents independently used; no typical-only datum promoted to a specified maximum. Original manufacturer web-only sources and failed downloads distinguished.",
+  "cached_originals": [
+    {
+      "family": "tps2553",
+      "path": "../../source-cache/tps2553.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+      "evidence": "DBV physical pinout; ILIM=IN50..100mA; R_ILIM DC equations;5..10ms fault; Ron; no peak-current guarantee",
+      "access": "existing original PDF cache; read-only",
+      "sha256": "88e453700cea2b263cdb5b44fce1e883e0f6d3b975457f879ac1423eeea42071",
+      "bytes": 2091666
+    },
+    {
+      "family": "tps2116",
+      "path": "../../source-cache/tps2116.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps2116.pdf",
+      "evidence": "DRL physical pins; manual MODE/PR1 truth table; Ron test conditions; typical-only softstart and switchover/reverse behavior",
+      "access": "existing original PDF cache; read-only",
+      "sha256": "5babd88afb84e2e65c9c0da23b75f85758c0c730e34102a0fb746ac9573ed1d5",
+      "bytes": 2924080
+    },
+    {
+      "family": "tps62130",
+      "path": "../../source-cache/tps62130.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps62130.pdf",
+      "evidence": "TPS62132 pinout and fixed3.3 selection; SS max2.7uA/ramp formula; support passives/dropout",
+      "access": "existing original PDF cache; read-only",
+      "sha256": "f9b1af285622c0cf1a5991f9641a6e64c5e6d899e52cc0b1632808742019579f",
+      "bytes": 2536822
+    },
+    {
+      "family": "tps7a02",
+      "path": "../../source-cache/tps7a02.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps7a02.pdf",
+      "evidence": "TPS7A0225PDBVR pins;2.5V accuracy; input/enable/dropout/bypass and current test conditions",
+      "access": "existing original PDF cache; read-only",
+      "sha256": "ed213c153f1db84762558fcac2ff9752e322151a1d44672cf554988b860cebc8",
+      "bytes": 3405603
+    },
+    {
+      "family": "tps3839",
+      "path": "../../source-cache/tps3839.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps3839.pdf",
+      "evidence": "G25DBZ and K33DQN physical pins/reset thresholds/delays and temperature scope",
+      "access": "existing original PDF cache; read-only",
+      "sha256": "a18940237afc63cf6d1a0bb5e1c8c0b2c3274e01c47fa5f27e470a005072621b",
+      "bytes": 948524
+    },
+    {
+      "family": "sn74lvc2g02",
+      "path": "../../source-cache/sn74lvc2g02.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g02.pdf",
+      "evidence": "DCU NOR gates/pinout; actual cross-coupled SR implementation; supply/input/output and Ioff limits",
+      "access": "existing original PDF cache; read-only",
+      "sha256": "ba6416add62208fc2b09122a3cd9978b494b23705acedf5071e6b946beef7278",
+      "bytes": 774794
+    },
+    {
+      "family": "sn74lvc2g04",
+      "path": "../../source-cache/sn74lvc2g04.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g04.pdf",
+      "evidence": "DCK inverter pinout; input/supply/Ioff/DC drive limits",
+      "access": "existing original PDF cache; read-only",
+      "sha256": "a70afa4e4d049ffaa382fe75d22c438fe2350de13923c54cdebe7e2b08df1b6e",
+      "bytes": 1025016
+    },
+    {
+      "family": "sn74lvc2g08",
+      "path": "../../source-cache/sn74lvc2g08.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g08.pdf",
+      "evidence": "DCU AND pinout; input/supply/Ioff/DC drive limits",
+      "access": "existing original PDF cache; read-only",
+      "sha256": "75dff6a7b9ba988865b776e0f7c5dd2855f13f64f05bfcda3b1baec886007199",
+      "bytes": 784167
+    },
+    {
+      "family": "sn74lvc2g32",
+      "path": "../../source-cache/sn74lvc2g32.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g32.pdf",
+      "evidence": "DCU OR pinout; input/supply/Ioff/DC drive limits",
+      "access": "existing original PDF cache; read-only",
+      "sha256": "6a22b3c7445d250e3e9e4f335e5bc9cff1aee0b3d3a1184a9a4a62f32b48f71c",
+      "bytes": 771819
+    },
+    {
+      "family": "tps3700",
+      "path": "../source-cache/tps3700.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+      "evidence": "DDC pinout; comparator polarity/rising/falling threshold and input-current limits; propagation typical only",
+      "access": "original PDF cache",
+      "sha256": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0",
+      "bytes": 682718
+    },
+    {
+      "family": "bq25173",
+      "path": "../startup-source-cache/bq25173.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/bq25173.pdf",
+      "evidence": "DSG pinout/EP; CE low-enable; zero-volt cell charge; ISET RC recommendation<50mA; KISET and FB test conditions; CV/thermal",
+      "access": "original PDF cache",
+      "sha256": "75869a03b40472ff587ffa5223dc5e5314f3b76478c6582119cf5a204d6e777e",
+      "bytes": 2519667
+    },
+    {
+      "family": "tps61023",
+      "path": "../startup-source-cache/tps61023.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps61023.pdf",
+      "evidence": "DRL pins; startupVINmax1.8V; input/startup/current/PWM vs PFM conditions; support L/C; missing max startup time/current/PFM FB",
+      "access": "original PDF cache",
+      "sha256": "f61135a93053e9e875a67ec9fbf51a3dda13194ae8d6e1fdd817af6e8590fae5",
+      "bytes": 2392725
+    },
+    {
+      "family": "sn74lvc2g17",
+      "path": "source-cache/sn74lvc2g17.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf",
+      "evidence": "DCK pinout; Schmitt thresholds at2.3/3V; unlimited input transition rate; DC leakage/ICC/Ioff",
+      "access": "original PDF cache",
+      "sha256": "624dbe55679d2fed4123b0d7708cd0d295efcc78de395e71a0caf5cd13cbc216",
+      "bytes": 1888823
+    },
+    {
+      "family": "TNPW e3",
+      "path": "source-cache/tnpw_e3.pdf",
+      "url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+      "evidence": "Document28758 rev10-Apr2026 ordering/tolerance/TCR/package resistance ranges; exact MPN encoding",
+      "access": "new original PDF cache",
+      "sha256": "6f0508c568cb355aaf2accdd33fe3a780d3ea5ef207c4c9a71839a8acadc33a5",
+      "bytes": 363615
+    },
+    {
+      "family": "AT25SF161B",
+      "path": "source-cache/at25sf161b.pdf",
+      "url": "https://www.renesas.com/en/document/dst/at25sf161b-datasheet?r=1608796",
+      "evidence": "RevH Sep19,2024 pp7\u20138 physical pinout; p56 MHB-T; p59 EP electrically isolated/recommended ground; register-controlled WP",
+      "access": "new original PDF cache",
+      "sha256": "f969d1a82b18de2fd33b01ef1b8b8a636a31b8c29a5094193d295fafe1fe581b",
+      "bytes": 1763634
+    },
+    {
+      "family": "Murata10uF",
+      "path": "../../source-cache/grm21-spec.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KE51-01.pdf",
+      "evidence": "GRM21BR71A106KE51 capacitor nominal/package/dielectric/tolerance; effectiveC allocations are not guaranteed from nominal",
+      "access": "existing original manufacturer PDF cache; read-only",
+      "sha256": "e8432c7acfa982b24eb06dd145682f78051dc4649abbeb35bbca8646b1408e4f",
+      "bytes": 824601
+    }
+  ],
+  "web_only_originals": [
+    {
+      "family": "BAT54H,115",
+      "url": "https://www.nexperia.com/product/BAT54H",
+      "original_pdf_url": "https://assets.nexperia.com/documents/data-sheet/BAT54H.pdf",
+      "facts_used": "Existing SOD123F diode;1K/2A. 25C VF/leakage do not establish full-temperature0.7V allocation or reverse-leakage behavior.",
+      "local_pdf": "unavailable: vendor403; bounded distributor fallback timed out; not represented as cached"
+    },
+    {
+      "family": "XGL4020-222MEC",
+      "url": "https://www.coilcraft.com/getmedia/76c9c081-4945-4c85-9129-9356e1ad6734/xgl4020.pdf",
+      "facts_used": "Manufacturer original Document1529-1 read through web:2.2uH20%,DCRmax21.5mohm25C;10%inductance-drop reference2.7A. This is not an absolute current/temperature rating. 4.3x4.3 area is an allocated envelope.",
+      "local_pdf": "vendor403; web-only original"
+    },
+    {
+      "family": "XFL4020-222MEC",
+      "url": "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf",
+      "facts_used": "Manufacturer original Document745-1 read through web:2.2uH20%,DCRmax23.5mohm25C;10%inductance-drop reference3.1A. Not an absolute current/temperature rating. 4.3x4.3 area allocated.",
+      "local_pdf": "vendor403; web-only original"
+    },
+    {
+      "family": "HV1325-2R7156-R",
+      "url": "https://www.eaton.com/us/en-us/skuPage.HV1325-2R7156-R.html",
+      "original_pdf_url": "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-hv-supercapacitors-cylindrical-cells-data-sheet.pdf",
+      "facts_used": "Original SKU/spec:15F2.7V;13.5mm diameter28.4mm height;-40..65C;0.03ohmESR;70%capacitance/200%ESR end-of-life ratings. Runtime remains conditional.",
+      "local_pdf": "download timed out; original PDF and SKU read through web"
+    }
+  ],
+  "cached_primary_nonpdf": [
+    {
+      "path": "../../source-cache/swrc354/docs/BOM and PnP - CC1352EM IPC Rev1_1.xlsx",
+      "archive_url": "https://www.ti.com/lit/zip/swrc354",
+      "sha256": "92ac705ec14c80a035e1fb3c86465af3564c6e1e0ef768eb6896df1c4a41b22f",
+      "bytes": 12626,
+      "evidence": "TI original reference BOM explicitly lists GRM155R71E104KE14D and GRM155R61C105KA12D; nominal parts retained. Bias/temperature effectiveC remains an allocation."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "rows": [
+    {
+      "a": "Trunk_L",
+      "b": "L_TrunkToFuse",
+      "volume": 14.963057928260259,
+      "named_electrical_endpoint": true
+    },
+    {
+      "a": "Trunk_N",
+      "b": "N_TrunkToCarrier",
+      "volume": 15.009098397609634,
+      "named_electrical_endpoint": true
+    },
+    {
+      "a": "Pin_L",
+      "b": "L_FuseToCarrier",
+      "volume": 0.26084921061953475,
+      "named_electrical_endpoint": true
+    },
+    {
+      "a": "Pin_N",
+      "b": "N_TrunkToCarrier",
+      "volume": 0.18083333337598545,
+      "named_electrical_endpoint": true
+    }
+  ],
+  "failures": [],
+  "paths": {
+    "L_FuseToCarrier": {
+      "control_points": [
+        [
+          -124,
+          29,
+          -7
+        ],
+        [
+          -124,
+          18,
+          -7
+        ],
+        [
+          -114,
+          10.4,
+          -20
+        ],
+        [
+          -98.3,
+          10.4,
+          -15
+        ]
+      ],
+      "length": 37.35779239560912,
+      "min_bend_radius": 11.057058429677944
+    },
+    "N_TrunkToCarrier": {
+      "control_points": [
+        [
+          -132,
+          38,
+          -25
+        ],
+        [
+          -132,
+          38,
+          -8
+        ],
+        [
+          -120,
+          -10.4,
+          -25
+        ],
+        [
+          -98.3,
+          -10.4,
+          -15
+        ]
+      ],
+      "length": 66.80791623387826,
+      "min_bend_radius": 5.743278542634697
+    }
+  },
+  "carrier_hole_diameter": 2,
+  "pin_nominal_diameter": 1,
+  "conservative_pin_diameter_screen": 1.5,
+  "nominal_carrier_pin_radial_gap": 0.5,
+  "screen_radial_gap_at_1p5_pin": 0.25,
+  "source_pin_tolerance_scope_unqualified": true
+}

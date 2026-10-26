@@ -1,0 +1,19 @@
+{
+  "revision": "CME-R1",
+  "status": "PASS_EVIDENCE_AND_HOLD_CONTRACTS_NOT_INSTALLED_FIT",
+  "protected_inputs_unchanged": 233,
+  "CI_R1_inherited_protection_matches": 95,
+  "CI_R1_inherited_protection_total": 96,
+  "CI_R1_inherited_doc_deltas": 1,
+  "reused_primary_sources": 28,
+  "new_exact_mate_drawings": 4,
+  "saved_unplaced_models_checked": 8,
+  "isolated_plane_probes": 8,
+  "defended_installed_pairs": 0,
+  "unclosed_pairs": 4,
+  "bare_rear_depth_exceeds_24mm_pairs": 4,
+  "whole_model_invalid_count": 2,
+  "open_surface_model_count": 2,
+  "manufacturer_pairing_and_key_checks": true,
+  "invented_installed_dimensions": 0
+}

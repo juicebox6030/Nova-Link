@@ -1,0 +1,44 @@
+[
+  {
+    "file": "hardware/compact-dmx/eda/source-cache/isow1412.pdf",
+    "bytes": 3995213,
+    "sha256": "3e46deca77909a2aab205ffae1ea0df4630a888126ef6dd60caaa08d6e4fa4b4",
+    "status": "Primary manufacturer document or explicitly identified KiCad candidate"
+  },
+  {
+    "file": "hardware/compact-dmx/eda/source-cache/cc1352r.pdf",
+    "bytes": 3175767,
+    "sha256": "d477d5873939ff66ad61baa58af71a8985305b1684be8b085348633d7cf98b93",
+    "status": "Primary manufacturer document or explicitly identified KiCad candidate"
+  },
+  {
+    "file": "hardware/compact-dmx/eda/source-cache/antenna0900ad47.pdf",
+    "bytes": 1222841,
+    "sha256": "426450ebeb728496304354e63ce7a39a8fcab896ac59a0b35c013ade1e8ac532",
+    "status": "Primary manufacturer document or explicitly identified KiCad candidate"
+  },
+  {
+    "file": "hardware/compact-dmx/eda/source-cache/johanson0900.pdf",
+    "bytes": 644974,
+    "sha256": "563b68f6e467fcf147581b7a18ee3beac1c3e0b682cf86b0e08d2d4d41e2d0ce",
+    "status": "Primary manufacturer document or explicitly identified KiCad candidate"
+  },
+  {
+    "file": "hardware/compact-dmx/eda/source-cache/dcrcwe3.pdf",
+    "bytes": 150402,
+    "sha256": "f3f8ad4a0e2962b809aa20273e80a0aedcd2a2c174a66024445e9b541a3996fd",
+    "status": "Primary manufacturer document or explicitly identified KiCad candidate"
+  },
+  {
+    "file": "hardware/compact-dmx/eda/source-cache/pcm-kicad.kicad_mod",
+    "bytes": 3495,
+    "sha256": "8eceac9943fe078d49769932c89fa76a53144bcd13b0ae8a0b3db811c2322071",
+    "status": "Primary manufacturer document or explicitly identified KiCad candidate"
+  },
+  {
+    "file": "hardware/compact-dmx/eda/source-cache/pcm.failed.html",
+    "bytes": 187292,
+    "sha256": "0073136a912d6b753fe9aa94a614be904186e9672c23f7ac25f856cd9df9d332",
+    "status": "FAILED HTML not datasheet"
+  }
+]

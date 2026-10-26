@@ -1,0 +1,160 @@
+{
+  "status": "PASS: netlist-derived DC/corner arithmetic on declared allocations; NOT transient or manufacturing acceptance",
+  "guaranteed_component_DC_bounds": {
+    "main_TPS2553_R_kohm": 61.9,
+    "main_MIN_mA": 380.20506335970583,
+    "main_MAX_mA": 477.0810313300889,
+    "branch_mode": "ILIM=IN",
+    "branch_MIN_mA": 50,
+    "branch_MAX_mA": 100,
+    "raw_AON_resistor_short_bound_mA": 16.725204883759826,
+    "raw_voltage_monitors_and_bleed_MAX_mA": 0.8832014254298863,
+    "whole_static_USB_draw_upper_mA": 494.8294376392786,
+    "margin_below500mA_mA": 5.170562360721419,
+    "caveat": "DC IOS equations and resistor bounds only; no guaranteed peak transient bound, no USB compliance claim"
+  },
+  "detector_corners": 256,
+  "detectors": {
+    "raw": {
+      "rise_min_V": 3.925037117589687,
+      "rise_max_V": 4.059657493726794,
+      "fall_min_V": 3.8357808844058305,
+      "fall_max_V": 4.019485170595836
+    },
+    "raw_present": {
+      "rise_min_V": 0.7889885431614351,
+      "rise_max_V": 0.8110888077646764,
+      "fall_min_V": 0.7710513234304933,
+      "fall_max_V": 0.8030607094204717
+    },
+    "usb": {
+      "rise_min_V": 4.05472333683296,
+      "rise_max_V": 4.193996800289137,
+      "fall_min_V": 3.9625178211378924,
+      "fall_max_V": 4.152495204704591
+    },
+    "main": {
+      "rise_min_V": 3.5634876578811663,
+      "rise_max_V": 3.685135790583292,
+      "fall_min_V": 3.4824536668497763,
+      "fall_max_V": 3.6486693179290017
+    },
+    "cap": {
+      "rise_min_V": 1.6692828798430495,
+      "rise_max_V": 1.7229677371575516,
+      "fall_min_V": 1.6313262879147985,
+      "fall_max_V": 1.7059166985223284
+    },
+    "cap_start": {
+      "rise_min_V": 2.1762381005213007,
+      "rise_max_V": 2.248112299173984,
+      "fall_min_V": 2.126752495140135,
+      "fall_max_V": 2.225865013674737
+    },
+    "chgin": {
+      "rise_min_V": 3.5634876578811663,
+      "rise_max_V": 3.685135790583292,
+      "fall_min_V": 3.4824536668497763,
+      "fall_max_V": 3.6486693179290017
+    },
+    "boost_ready": {
+      "rise_min_V": 3.5634876578811663,
+      "rise_max_V": 3.685135790583292,
+      "fall_min_V": 3.4824536668497763,
+      "fall_max_V": 3.6486693179290017
+    }
+  },
+  "normal_voltage_and_mode_allocations": {
+    "source_low_V": 4.4,
+    "assumed_USB_side_floor_V": 4.335594060770438,
+    "assumed_buck_input_floor_V": 4.306969198890633,
+    "Ron_mux60mohm": "Specified200mA3.3/5V; low-input/full-current application remains allocation",
+    "boost_nominal_PWM_V": 3.9389,
+    "boost_PWM_low_V_with25nA_FB_allocation": 3.8027632066641748,
+    "boost_PWM_high_V_with25nA_FB_allocation": 4.076380860900652,
+    "full_temperature_FB_and_PFM_upper_limits_closed": false,
+    "common_boost_low_after_mux_V": 3.7822246177056362,
+    "main_ready_rise_margin_after50mV_sag_V": 0.04708882712234441,
+    "buck_headroom_at_earliest_common_cutoff_V": 0.07245366684977617,
+    "buck_EN_SS_static_VIN_relative_absolute_max": "EN<=2.5375V and SS~1.25V below common falling_MIN+0.3V; arbitrary fast collapse/gate/SS discharge NOT proved"
+  },
+  "charge": {
+    "nominal_mA": 25,
+    "KISET_based_MIN_mA": 22.42152466367713,
+    "KISET_based_MAX_mA": 27.596588058203714,
+    "target2p6_min_with_FB_allocation_V": 2.5610050379764577,
+    "target2p6_max_with_FB_allocation_V": 2.639335166191044,
+    "zero_to2p65V_accuracy_and_FB_bias_guaranteed": false,
+    "ideal_nominal_seconds": 1560.0,
+    "ideal_corner_seconds_before_CV_thermal": 2304.705,
+    "cold_cap_linear_heat_estimate_W": 0.15178123432012042,
+    "fault_response": "Branch/mainFAULT wired-OR -> raw-AON SR latch. Charger-arm survives buckPG/USB-qualifier loss while RAW remains valid, allowing real5..10ms switchFAULT deglitch to complete. Main rail may collapse; continued operation is not required."
+  },
+  "aon": {
+    "logic_IC_count": 28,
+    "logic_input_count": 90,
+    "calculated_static_inventory_A": 0.0015092909705244956,
+    "load_allocation_A": 0.002,
+    "diode_drop_allocation_V": 0.7,
+    "allocated_AON_input_floor_V": 3.03769,
+    "diode_full_temperature_and_LDO_ground_current_closed": false,
+    "minimum_OD_high_at_buffer_with7uA_sink_V": 2.1323485,
+    "Schmitt_threshold_used_V": 2.0,
+    "sub1p65V_logic_behavior": "Unspecified; actual startup and pulldown behavior is a bench gate, not a formal proof"
+  },
+  "current_state_budgets": [
+    {
+      "condition": "normal",
+      "allocated_buck_input_V": 4.306969198890633,
+      "base_main_mA": 302.4706064283338,
+      "healthy_total_mA": 330.90719448653755,
+      "healthy_margin_to_main_MIN_mA": 49.297868873168284,
+      "branch100mA_fault_total_mA": 402.61060642833377,
+      "fault_exceeds_minimum_main_limit": true
+    },
+    {
+      "condition": "lowest_qualified_after50mV_and_mux_drop",
+      "allocated_buck_input_V": 3.883892959258087,
+      "base_main_mA": 335.201161987232,
+      "healthy_total_mA": 363.6377500454358,
+      "healthy_margin_to_main_MIN_mA": 16.567313314270052,
+      "branch100mA_fault_total_mA": 435.341161987232,
+      "fault_exceeds_minimum_main_limit": true
+    }
+  ],
+  "healthy_precharge_allocations": {
+    "CHGIN_max_F": 2.6e-06,
+    "LIMITED5V_min_effective_F": 3.3e-05,
+    "input_precharge_deficit_charge_C": 3.2039926588137975e-06,
+    "estimated_LIMITED5V_droop_V": 0.09709068663072112,
+    "remaining_USB_qualifier_falling_margin_after50mV_extra_V": 0.03600816943512619,
+    "main_cap_CC_time_scale_s": 0.0018805641189569063,
+    "branch_cap_CC_time_scale_s": 0.000286,
+    "buck_SS_min_based_ramp_s": 0.03541666666666666,
+    "maximum_allocated_output_cap_ramp_A": 0.0048451764705882356,
+    "is_guaranteed_startup_time_current_or_single_attach_proof": false,
+    "missing": "Actual effectiveC/leakage, main/buck/MCU boot peaks, dynamic current-limit overshoot, mux softstart/reverse/collapse, detector and enable delays; bench single-attach must verify"
+  },
+  "runtime": {
+    "start_allocation_V": 2.448,
+    "earliest_loaded_cap_cutoff_V": 1.7059166985223284,
+    "C_effective_F": 9.45,
+    "combined_efficiency_assumption": 0.8,
+    "load_allocation_W": 1.11,
+    "conditional_seconds": 10.497339984609122,
+    "margin_over10s_s": 0.49733998460912154,
+    "guaranteed": false,
+    "CAP_arm_rebound": "Source required for arm; loaded cap or proven-rail loss disarms backup, independent of external source status"
+  },
+  "physical_gates": [
+    "Single-attach cold/partial/full cap at source/cable/temp/load corners with all enables/source/PG/AON traces",
+    "Persistent short/failed charger: safe latched shutdown even after PG loss; external cycle only; check fault overshoot/SOA/thermal",
+    "Raw-AON startup through330ohm and actual diode/leakage overtemperature, all logic sub1.65V, Schmitt edges and SR hazards",
+    "Cap-fed boost startup/ESR, low-VIN switch-current ability and PFM/FB upper limits vs mux5.5V; loaded-cutoff/rebound/switchover",
+    "BQ ISET RC stability/current accuracy0..2.65V/FB bias/CV/thermal; no stated max if absent",
+    "Buck dropout/stability/magnetics and EN/SS VIN+0.3V during fast collapse; RF shared2.4GHz/US915 and DMX/flash peaks, measured runtime",
+    "USB Type-C power-only/current/inrush/detach and inputESD/shell; no interoperability/compliance guarantee",
+    "Area/footprints/routing/housing before integration; active BOM/validator untouched"
+  ],
+  "manufacturing_release": false
+}

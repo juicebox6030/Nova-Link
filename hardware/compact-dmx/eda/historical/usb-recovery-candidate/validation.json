@@ -1,0 +1,16 @@
+{
+  "capture_check": "PASS",
+  "product_power_acceptance": "NOT_MET",
+  "kicad_version": "10.0.7",
+  "components": 31,
+  "ICs": 8,
+  "boundary_connectors": 2,
+  "exported_nets": 32,
+  "erc_errors": 0,
+  "erc_warnings": 0,
+  "erc_exclusions": 0,
+  "all_component_pin_connections_checked": true,
+  "IC_pin_types_checked": true,
+  "power_flags": 0,
+  "scope": "USB recovery candidate only; normal path, CC, cap/UVLO latch, rail merger, BOOT/RESET sequencing not captured. Not an accepted product circuit."
+}

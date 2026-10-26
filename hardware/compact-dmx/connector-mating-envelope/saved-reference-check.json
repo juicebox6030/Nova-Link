@@ -1,0 +1,210 @@
+{
+  "revision": "CME-R1",
+  "models_checked": [
+    {
+      "model": "pc-in",
+      "source_sha256": "636e5d416ef048d16e9e42abe32c329b759ad4e4a196816179dbb25cbb7cefb4",
+      "millimetre_STEP_unit": true,
+      "saved_placement_identity": true,
+      "same_topology_and_geometry_invariants": true,
+      "valid_whole_shape": true,
+      "closed_solids": 1,
+      "faces": 1245,
+      "face_planes_checked": 6
+    },
+    {
+      "model": "pc-mate-a",
+      "source_sha256": "2ff3f3d0e8bd30590eb6796c1708644955572aea8d9bd911d72f491f7e4d5c24",
+      "millimetre_STEP_unit": true,
+      "saved_placement_identity": true,
+      "same_topology_and_geometry_invariants": true,
+      "valid_whole_shape": true,
+      "closed_solids": 1,
+      "faces": 2617,
+      "face_planes_checked": 6
+    },
+    {
+      "model": "pc-out",
+      "source_sha256": "2985ffa3b2e3306dccf65e6476c974007dffc04798e935f58abde3c33bafff63",
+      "millimetre_STEP_unit": true,
+      "saved_placement_identity": true,
+      "same_topology_and_geometry_invariants": true,
+      "valid_whole_shape": true,
+      "closed_solids": 1,
+      "faces": 1339,
+      "face_planes_checked": 4
+    },
+    {
+      "model": "pc-mate-b",
+      "source_sha256": "1601412b311fcd9d86fbb22939f8ca187ac1cf982442b7fc6489161051a1b950",
+      "millimetre_STEP_unit": true,
+      "saved_placement_identity": true,
+      "same_topology_and_geometry_invariants": true,
+      "valid_whole_shape": true,
+      "closed_solids": 1,
+      "faces": 2595,
+      "face_planes_checked": 6
+    },
+    {
+      "model": "true1-in",
+      "source_sha256": "51b7d0442112bb36f3aaa77a1a26ec9aab76682a24c99cd6baffe8e54e6988f0",
+      "millimetre_STEP_unit": true,
+      "saved_placement_identity": true,
+      "same_topology_and_geometry_invariants": true,
+      "valid_whole_shape": false,
+      "closed_solids": 1,
+      "faces": 1492,
+      "face_planes_checked": 4
+    },
+    {
+      "model": "true1-mate-f",
+      "source_sha256": "fbf7264b3ea29e904193086df571ffce41bd6eab4ac84cc5aa2c5c494ae58dc0",
+      "millimetre_STEP_unit": true,
+      "saved_placement_identity": true,
+      "same_topology_and_geometry_invariants": true,
+      "valid_whole_shape": true,
+      "closed_solids": 0,
+      "faces": 2513,
+      "face_planes_checked": 5
+    },
+    {
+      "model": "true1-out",
+      "source_sha256": "35c6cf7b4716bf914fce640593727a32d41d9318d98db7d985977f46cfcecca1",
+      "millimetre_STEP_unit": true,
+      "saved_placement_identity": true,
+      "same_topology_and_geometry_invariants": true,
+      "valid_whole_shape": false,
+      "closed_solids": 1,
+      "faces": 1836,
+      "face_planes_checked": 4
+    },
+    {
+      "model": "true1-mate-m",
+      "source_sha256": "5c42933b98684d551ed63616555a9ba1fc4b4edd9f8e3ab6a2f82240f7bb46c9",
+      "millimetre_STEP_unit": true,
+      "saved_placement_identity": true,
+      "same_topology_and_geometry_invariants": true,
+      "valid_whole_shape": true,
+      "closed_solids": 0,
+      "faces": 2438,
+      "face_planes_checked": 6
+    }
+  ],
+  "isolated_face_probes": [
+    {
+      "pair": "pc-in",
+      "chassis_face": "Face337",
+      "mate_face": "Face2435",
+      "valid_isolated_faces": [
+        true,
+        true
+      ],
+      "axis_only_analytical_plane_translation_mm": -2.1499999999999986,
+      "normal_parallel_cross_residual": 0.0,
+      "face_common_area_mm2": 50.69983583356421,
+      "whole_model_boolean_performed": false,
+      "accepted_pose": false
+    },
+    {
+      "pair": "pc-in",
+      "chassis_face": "Face466",
+      "mate_face": "Face247",
+      "valid_isolated_faces": [
+        true,
+        true
+      ],
+      "axis_only_analytical_plane_translation_mm": -1.6499999999999995,
+      "normal_parallel_cross_residual": 0.0,
+      "face_common_area_mm2": 0.0,
+      "whole_model_boolean_performed": false,
+      "accepted_pose": false
+    },
+    {
+      "pair": "pc-out",
+      "chassis_face": "Face620",
+      "mate_face": "Face2413",
+      "valid_isolated_faces": [
+        true,
+        true
+      ],
+      "axis_only_analytical_plane_translation_mm": -2.0500000000000007,
+      "normal_parallel_cross_residual": 0.0,
+      "face_common_area_mm2": 50.388762975688216,
+      "whole_model_boolean_performed": false,
+      "accepted_pose": false
+    },
+    {
+      "pair": "pc-out",
+      "chassis_face": "Face4",
+      "mate_face": "Face247",
+      "valid_isolated_faces": [
+        true,
+        true
+      ],
+      "axis_only_analytical_plane_translation_mm": -1.6499999999999995,
+      "normal_parallel_cross_residual": 0.0,
+      "face_common_area_mm2": 0.0,
+      "whole_model_boolean_performed": false,
+      "accepted_pose": false
+    },
+    {
+      "pair": "true1-in",
+      "chassis_face": "Face203",
+      "mate_face": "Face1",
+      "valid_isolated_faces": [
+        true,
+        true
+      ],
+      "axis_only_analytical_plane_translation_mm": -5.3,
+      "normal_parallel_cross_residual": 0.0,
+      "face_common_area_mm2": 79.61572205909863,
+      "whole_model_boolean_performed": false,
+      "accepted_pose": false
+    },
+    {
+      "pair": "true1-in",
+      "chassis_face": "Face195",
+      "mate_face": "Face499",
+      "valid_isolated_faces": [
+        true,
+        true
+      ],
+      "axis_only_analytical_plane_translation_mm": -13.100000000000001,
+      "normal_parallel_cross_residual": 0.0,
+      "face_common_area_mm2": 87.21364052948165,
+      "whole_model_boolean_performed": false,
+      "accepted_pose": false
+    },
+    {
+      "pair": "true1-out",
+      "chassis_face": "Face18",
+      "mate_face": "Face326",
+      "valid_isolated_faces": [
+        true,
+        true
+      ],
+      "axis_only_analytical_plane_translation_mm": -13.3,
+      "normal_parallel_cross_residual": 1.1102230246251565e-16,
+      "face_common_area_mm2": 23.401105172695676,
+      "whole_model_boolean_performed": false,
+      "accepted_pose": false
+    },
+    {
+      "pair": "true1-out",
+      "chassis_face": "Face416",
+      "mate_face": "Face1386",
+      "valid_isolated_faces": [
+        true,
+        true
+      ],
+      "axis_only_analytical_plane_translation_mm": -10.0,
+      "normal_parallel_cross_residual": 1.1102230246251565e-16,
+      "face_common_area_mm2": 0.0,
+      "whole_model_boolean_performed": false,
+      "accepted_pose": false
+    }
+  ],
+  "accepted_installed_poses": 0,
+  "full_assembly_or_continuous_motion_verified": false,
+  "warning": "Identity placements retain unrelated raw supplier coordinate systems. No mated assembly is represented. Invalid whole-shapes and open surface models remain reference-only."
+}

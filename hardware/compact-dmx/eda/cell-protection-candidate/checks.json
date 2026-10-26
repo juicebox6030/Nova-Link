@@ -1,0 +1,473 @@
+{
+  "status": "PASS literal/DC/static/conditionalruntime checks; protection transient/clearing acceptance UNMET",
+  "IC_pin_checks": 27,
+  "two_terminal_checks": 17,
+  "stable_state_cases": 32,
+  "independent_references": true,
+  "software_dependency": false,
+  "OVP_latched": false,
+  "thresholds": {
+    "resistor_initial_plus100K_TCR_allowance": 0.002,
+    "OV_trip_V": [
+      2.6230585884730537,
+      2.6971640223947895
+    ],
+    "OV_release_envelope_V": [
+      2.56341158248503,
+      2.670473441232465
+    ],
+    "hysteresis": "TI5.5mV typical/12mV max at sense input; no guaranteed minimum. Separate rise/fall extrema are not one device correlated hysteresis.",
+    "charger_V": [
+      2.5426671878443114,
+      2.609505528837676
+    ],
+    "nominal_charger_V": 2.576,
+    "healthy_overshoot_alloc_V": 0.005,
+    "remaining_healthy_nuisance_margin_V": 0.008553059635377894,
+    "fault_overshoot_room_to2p7_V": 0.0028359776052107044,
+    "charge_FB_bias_A": "25nA engineering allocation, not published full-temp BQ maximum",
+    "existing_arm_max_V": 2.533074464609258,
+    "arm_min_margin_after_hot_fuse_charge_drop_V": 0.00611555313972012,
+    "resistor_lifetime_drift_included": false
+  },
+  "added_source_current": {
+    "allocated_A": 0.00025,
+    "resistor_network_max_at5p5V_A": 6.730875136147247e-05,
+    "TPS3700_IDD_max_at5V_A": 1.3e-05,
+    "TPS3808_IDD_max_at6p5V_A": 6e-06,
+    "TPS22963_IQ_max_at5V_A": 9.6e-05,
+    "full5p5V_max_proven": false,
+    "unclosed": "TPS22963 no5.5V IQ table bound; TPS3808 fixedSENSE current typical-only. 250uA is integration allocation, not guaranteed maximum. Switched2uF input inrush remains unmeasured."
+  },
+  "ON_levels": {
+    "minimum_high_V": 1.4189808933433898,
+    "maximum_prePOR_V": 0.3301510249672018,
+    "maximum_inhibited_low_V": 0.3410226412992549,
+    "POR_lowV_sink_max_A": 1.4211750272294496e-05,
+    "minimum_reset_hold_s": 0.012,
+    "TPS3700_max_startup_s": 0.00045,
+    "TPS3808_rise_max_V": 3.192799999999999,
+    "POR_ramp_requirement": "TPS3808 Trise>=15us/V perfootnote. Must measure actual independent5V ramp. BelowTPS22963 input1V no functional assertion."
+  },
+  "static_states": [
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": false,
+      "cell_OV": false,
+      "existing_CE_disable": false,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": false,
+      "cell_OV": false,
+      "existing_CE_disable": false,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": false,
+      "cell_OV": false,
+      "existing_CE_disable": true,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": false,
+      "cell_OV": false,
+      "existing_CE_disable": true,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": false,
+      "cell_OV": true,
+      "existing_CE_disable": false,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": false,
+      "cell_OV": true,
+      "existing_CE_disable": false,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": false,
+      "cell_OV": true,
+      "existing_CE_disable": true,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": false,
+      "cell_OV": true,
+      "existing_CE_disable": true,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": true,
+      "cell_OV": false,
+      "existing_CE_disable": false,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": true,
+      "cell_OV": false,
+      "existing_CE_disable": false,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": true,
+      "cell_OV": false,
+      "existing_CE_disable": true,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": true,
+      "cell_OV": false,
+      "existing_CE_disable": true,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": true,
+      "cell_OV": true,
+      "existing_CE_disable": false,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": true,
+      "cell_OV": true,
+      "existing_CE_disable": false,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": true,
+      "cell_OV": true,
+      "existing_CE_disable": true,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": false,
+      "monitor_startup_complete": true,
+      "cell_OV": true,
+      "existing_CE_disable": true,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": false,
+      "cell_OV": false,
+      "existing_CE_disable": false,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": false,
+      "cell_OV": false,
+      "existing_CE_disable": false,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": false,
+      "cell_OV": false,
+      "existing_CE_disable": true,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": false,
+      "cell_OV": false,
+      "existing_CE_disable": true,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": false,
+      "cell_OV": true,
+      "existing_CE_disable": false,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": false,
+      "cell_OV": true,
+      "existing_CE_disable": false,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": false,
+      "cell_OV": true,
+      "existing_CE_disable": true,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": false,
+      "cell_OV": true,
+      "existing_CE_disable": true,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": true,
+      "cell_OV": false,
+      "existing_CE_disable": false,
+      "fuse_intact": false,
+      "charger_switch": true,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": true,
+      "cell_OV": false,
+      "existing_CE_disable": false,
+      "fuse_intact": true,
+      "charger_switch": true,
+      "charge_path": true
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": true,
+      "cell_OV": false,
+      "existing_CE_disable": true,
+      "fuse_intact": false,
+      "charger_switch": true,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": true,
+      "cell_OV": false,
+      "existing_CE_disable": true,
+      "fuse_intact": true,
+      "charger_switch": true,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": true,
+      "cell_OV": true,
+      "existing_CE_disable": false,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": true,
+      "cell_OV": true,
+      "existing_CE_disable": false,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": true,
+      "cell_OV": true,
+      "existing_CE_disable": true,
+      "fuse_intact": false,
+      "charger_switch": false,
+      "charge_path": false
+    },
+    {
+      "LIMITED_5V_above_supervisor_release": true,
+      "monitor_startup_complete": true,
+      "cell_OV": true,
+      "existing_CE_disable": true,
+      "fuse_intact": true,
+      "charger_switch": false,
+      "charge_path": false
+    }
+  ],
+  "faults": [
+    {
+      "fault": "BQ FB topopen / bottomshort",
+      "interruption": "U101 independent cell sense -> U103 OFF -> charger input removed",
+      "residual": "Hysteretic retries after falling threshold; no latchedOVP. Max response/overshoot not specified."
+    },
+    {
+      "fault": "BQ IN-OUT short",
+      "interruption": "U103 opens upstream5V path after independent cellOV threshold",
+      "residual": "U103 disabled reverse blocking applies; leakage/turnoff current maxima not specified. Existing inputbreaker finite current envelope retained."
+    },
+    {
+      "fault": "BQ OUT-GND / boost VIN-GND short",
+      "interruption": "F101 in cell-positive power path before branch split",
+      "residual": "Clearing against decaying cell current, prospective-current interruption and thermalI2t require tests; nominalI2t not a max."
+    },
+    {
+      "fault": "U103 OUT-GND short",
+      "interruption": "Cell path through BQ can blowF101; USB path through U103 remains downstream of existinginputbreaker",
+      "residual": "No assertion about BQ reverse-current path impedance or universal fault clearing."
+    },
+    {
+      "fault": "F101 open",
+      "interruption": "Cell isolated from all power branches",
+      "residual": "No buffer; OVP divider remains cell-connected and current-limited by R101. CAP_POS may still rise on charger output capacitance; existing cap-arm cannot prove fuse continuity and may cycle backup. No protection-good MCU boundary or loader promise is added."
+    },
+    {
+      "fault": "F101 short / bypass copper",
+      "interruption": "None for cell shorts",
+      "residual": "Single protection-device fault defeats short protection; no all-single-fault claim."
+    },
+    {
+      "fault": "U103 short / ON stuckhigh / U101 wrong reference or R101 open",
+      "interruption": "Not independently protected by this singleOVP channel",
+      "residual": "BQ normally regulates but a combined charger fault is not covered. R101 short can force nuisance cutoff or stress input."
+    },
+    {
+      "fault": "Cell internalshort / exposed lead ahead ofF101",
+      "interruption": "None",
+      "residual": "Minimize and insulate tabsegment, route F101 before all branches. Cell internal energy cannot be interrupted externally."
+    },
+    {
+      "fault": "Source absent/brownout",
+      "interruption": "U102 pullspermitlow, U103 OFF; no cell-supply control requirement down to1.7V",
+      "residual": "Finite response and TPS22963 disabled reverse leakage are physical gates; no boost-fed5V control rail intended."
+    },
+    {
+      "fault": "OVP sense input unpowered/shorttoGND",
+      "interruption": "R101 limits sense-path cell current",
+      "residual": "Does not provide overvoltage detection under that protection-channel fault."
+    }
+  ],
+  "runtime": {
+    "cell": "HV1625-2R7256-R",
+    "C_F": 15.75,
+    "start_V": 2.439190017748978,
+    "requested_2p448V_start_retained": false,
+    "start_derivation": "min(2.448, newcharger_min -100mV historicalreserve -conditional maxcharge*0.126ohm fuseallocation)",
+    "loaded_cutoff_V": 1.705917,
+    "load_W": 1.11,
+    "electronics_efficiency": 0.8,
+    "cell_ESR_aged_screen_ohm": 0.054,
+    "fuse_nominal_ohm": 0.063,
+    "fuse_hot_alloc_ohm": 0.126,
+    "extra_trace_alloc_ohm": 0.01,
+    "sense_cell_current_resistor_bound_A": 4.788337737421746e-05,
+    "switch_reverse_leak_alloc_A": 1e-05,
+    "cell_self_leak_20C72h_reference_A": 4.5e-05,
+    "runtime_at_nominal_fuse_s": 14.563899257835237,
+    "runtime_at_hot_fuse_alloc_s": 13.256009692177749,
+    "independent100us_time_step_s": 13.256099999982444,
+    "conditional_fuse_resistance_limit_for10s_ohm": 0.28662224817839643,
+    "unprotected_requested_basis_s": 16.343271606784583,
+    "healthy_10s_guaranteed": false,
+    "fuse_resistance_max_specified": false
+  },
+  "fault_current": {
+    "fuse_MPN": "045101.5MRL",
+    "nominal_I2t_A2s": 0.853,
+    "DC_interrupt_primary2025_A_at32V": 300,
+    "specified_opening_max_s_at_constant3A": 5,
+    "constant1p5A_hold_min_s": 14400,
+    "nominal_fault_initial_A": 19.2755905511811,
+    "nominal_fault_tau_s": 2.00025,
+    "nominal_current_above3A_duration_s": 3.7209195938281576,
+    "interpretation": "Source5s max requires sustained3A; current decays below3A sooner. Cannot turn averageTCC or nominalI2t into a guaranteed clearing integral.",
+    "fuse_hot_power_at_cutoff_alloc_W": 0.08335290387239126,
+    "cutoff_load_A": 0.8133455496369402,
+    "minimum_temperature_rerating_factor_after_standard75percent": 0.7229738218995023,
+    "boost_start_max_A": null,
+    "boost_start_I2t_max_A2s": null,
+    "cell_fault_peak_max_A": null
+  },
+  "response": {
+    "TPS3700_typ_propagation_s": 1.8e-05,
+    "TPS3700_max_propagation_s": null,
+    "TPS22963_typ_turnoff_s_at5V": 2.5e-06,
+    "TPS22963_max_turnoff_s": null,
+    "conditional1p5A_overshoot_time_allowance_s": 0.029777764854712396,
+    "post_switch_2uF_max_alloc_uF": 2.53,
+    "post_cutoff_stored_input_charge_max_alloc_C": 7.091175023341182e-06,
+    "extra_cell_voltage_from_stored_input_charge_alloc_V": 4.5023333481531315e-07,
+    "closed": false
+  },
+  "cell_limits": "2.7V <=65C; 85C needs2.3V derating; neither cold nor full85C operation claimed.118.46J maxreference remains.",
+  "concrete_unclosed_source_objections": [
+    "TPS3700 tPHL and TPS22963 tOFF are typical-only;2.7V fault overshoot cannot be guaranteed from published maxima.",
+    "Littelfuse resistance and meltingI2t are nominal; only5s max at constant200% is published, insufficient for a decaying supercap fault proof.",
+    "TPS22963 disabled reverse current has typical-only entries. Added leakage10uA and hotfuse126mohm are test allocations.",
+    "Cell leakage45uA applies20C after72h, not fulltemperature/earlycharge maximum. BQ FB bias25nA, healthy5mVovershoot, emptycell charge curve and existing KISET applicability remain conditional. No unconditional runtime/OVP acceptance."
+  ],
+  "manufacturing_release": false,
+  "real_ERC_violations": 0,
+  "ERC_ignored_defaults": [
+    {
+      "description": "Global label only appears once in the schematic",
+      "key": "single_global_label"
+    },
+    {
+      "description": "Four connection points are joined together",
+      "key": "four_way_junction"
+    },
+    {
+      "description": "SPICE model issue",
+      "key": "simulation_model_issue"
+    },
+    {
+      "description": "Assigned footprint doesn't match footprint filters",
+      "key": "footprint_filter"
+    }
+  ]
+}

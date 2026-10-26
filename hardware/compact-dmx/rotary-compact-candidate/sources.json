@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/sources/irm10.pdf",
+      "url": "https://www.meanwell.com/Upload/PDF/IRM-10/IRM-10-SPEC.PDF",
+      "basis": "2025-08-08;pp2-3 ratings/tolerances/thermal/dimensions",
+      "sha256": "1aab6b30492328818e4d0900416676891eeb1076f409d56dc2277d7119ed208a"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/sources/tps25810.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps25810.pdf",
+      "basis": "SLVSCR1C July2017;6.5 resistance/current;8.3 and9 IRdrop/receptacle voltage",
+      "sha256": "ccc31e3ad8b7970005e23ba8b6a165694f712e86fd337b9ba2fe117a98a2e13e"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/sources/minco.pdf",
+      "url": "https://www.minco.com/wp-content/uploads/Minco-Flex-Circuits-Design-Guide-2019.pdf",
+      "basis": "2019 designguide;dynamic singlelayer/material/plating discussion",
+      "sha256": "ea0e935ae408bbb5ccfad89b0e1fb1cb6ab640a40a27c65b9faecfba3ff4ca11"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/sources/allflex.pdf",
+      "url": "https://www.allflexinc.com/wp-content/uploads/2024/03/Minimum-Bend-Radius-Considerations-in-Flexible-Circuits.pdf",
+      "basis": "Primary guidance;RA foil/dynamic vs static, thickness ratio not cycle approval",
+      "sha256": "7297fab82b554e9ee58fba4f9805eed79447f7fabecb41d85664829b54b0ffad"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/sources/drawing.pdf",
+      "url": "https://gct.co/download?name=USB4125.pdf&type=PDFDrawing",
+      "sha256": "ea33e0b40545e545bf698cbac3bb1c0f5a3fc7ca6b5b7fda83a63134d4affaa7",
+      "reused_readonly": true
+    },
+    {
+      "path": "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/sources/spec.pdf",
+      "url": "https://gct.co/download?name=usb4125-spec.pdf&type=PDFSpecification",
+      "sha256": "adeaf1f264b8999c4b40bfd7fd202543201a60246297be6906a83e08a59259a2",
+      "reused_readonly": true
+    },
+    {
+      "path": ".tools/references/usb-type-c-r2.4.pdf",
+      "url": "Existing primary USB-IF R2.4 PDF cache;4.8.1.1/4.8.1.2",
+      "sha256": "f5407e6120db1e28137e7fee60f3125f4284e2252b1240d271ce6e40c0ba3121",
+      "reused_readonly": true
+    }
+  ],
+  "retrieval": "2026-10-23 actual primary PDFs; no external outreach",
+  "material_numbers": "Copper resistivity/alpha/process allowances are engineering allocations, not supplier guaranteed stackup"
+}

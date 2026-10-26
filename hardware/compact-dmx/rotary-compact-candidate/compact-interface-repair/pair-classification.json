@@ -1,0 +1,1467 @@
+{
+  "status": "PASS",
+  "baseline_pairs": 56575,
+  "fresh_repaired_pairs": 674,
+  "fresh_wire_pairs": 1342,
+  "unchanged_parts": 358,
+  "classified_contacts": [
+    {
+      "a": "Trunk_L",
+      "b": "L_TrunkToFuse",
+      "volume": 14.963057928260259,
+      "bound_mm3": 15,
+      "basis": "Named electrical endpoint envelope intersection; actual termination/insulation remains UNMET"
+    },
+    {
+      "a": "Trunk_N",
+      "b": "N_TrunkToCarrier",
+      "volume": 15.009098397609634,
+      "bound_mm3": 15.1,
+      "basis": "Named electrical endpoint envelope intersection; actual termination/insulation remains UNMET"
+    },
+    {
+      "a": "COL_StationarySpool",
+      "b": "COL_FixedScrew0",
+      "volume": 0.1320210744306095,
+      "bound_mm3": 0.2,
+      "basis": "Frozen M1 pilot thread engagement"
+    },
+    {
+      "a": "COL_StationarySpool",
+      "b": "COL_FixedScrew1",
+      "volume": 0.13202107443060956,
+      "bound_mm3": 0.2,
+      "basis": "Frozen M1 pilot thread engagement"
+    },
+    {
+      "a": "COL_StationarySpool",
+      "b": "COL_IndexRearCap",
+      "volume": 3.141592653589771,
+      "bound_mm3": 3.2,
+      "basis": "Frozen captive cap thread envelope"
+    },
+    {
+      "a": "Pin_N",
+      "b": "N_TrunkToCarrier",
+      "volume": 0.18083333337598545,
+      "bound_mm3": 0.181,
+      "basis": "Named electrical endpoint envelope intersection; actual termination/insulation remains UNMET"
+    },
+    {
+      "a": "Pin_L",
+      "b": "L_FuseToCarrier",
+      "volume": 0.26084921061953475,
+      "bound_mm3": 0.261,
+      "basis": "Named electrical endpoint envelope intersection; actual termination/insulation remains UNMET"
+    },
+    {
+      "a": "rotating_R10_Body",
+      "b": "rotating_R10_Pad1_0",
+      "volume": 0.0073124446785944675,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R10_Body",
+      "b": "rotating_R10_Pad2_1",
+      "volume": 0.007312444678594498,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R18_Body",
+      "b": "rotating_R18_Pad1_0",
+      "volume": 0.007312444678594435,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R18_Body",
+      "b": "rotating_R18_Pad2_1",
+      "volume": 0.0073124446785943166,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_D1_Body",
+      "b": "rotating_D1_Pad1_0",
+      "volume": 0.005222960168588095,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_D1_Body",
+      "b": "rotating_D1_Pad2_1",
+      "volume": 0.0052229601685880945,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R15_Body",
+      "b": "rotating_R15_Pad1_0",
+      "volume": 0.007312444678594735,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R15_Body",
+      "b": "rotating_R15_Pad2_1",
+      "volume": 0.007312444678594616,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C13_Body",
+      "b": "rotating_C13_Pad1_0",
+      "volume": 0.007312444678594657,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C13_Body",
+      "b": "rotating_C13_Pad2_1",
+      "volume": 0.007312444678594657,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R7_Body",
+      "b": "rotating_R7_Pad1_0",
+      "volume": 0.0073124446785944675,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R7_Body",
+      "b": "rotating_R7_Pad2_1",
+      "volume": 0.007312444678594496,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R24_Body",
+      "b": "rotating_R24_Pad1_0",
+      "volume": 0.007312444678594437,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R24_Body",
+      "b": "rotating_R24_Pad2_1",
+      "volume": 0.0073124446785943166,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U5_Body",
+      "b": "rotating_U5_Pad1_0",
+      "volume": 0.0015374446785945094,
+      "bound_mm3": 0.023100100000000002,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U5_Body",
+      "b": "rotating_U5_Pad2_1",
+      "volume": 0.0015374446785945094,
+      "bound_mm3": 0.023100100000000002,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U5_Body",
+      "b": "rotating_U5_Pad3_2",
+      "volume": 0.0015374446785945094,
+      "bound_mm3": 0.023100100000000002,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U5_Body",
+      "b": "rotating_U5_Pad4_3",
+      "volume": 0.0015374446785945094,
+      "bound_mm3": 0.023100100000000002,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U5_Body",
+      "b": "rotating_U5_Pad5_4",
+      "volume": 0.0015374446785945098,
+      "bound_mm3": 0.023100100000000002,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U5_Body",
+      "b": "rotating_U5_Pad6_5",
+      "volume": 0.0015374446785945094,
+      "bound_mm3": 0.023100100000000002,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad1_0",
+      "volume": 0.003143991148575169,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad2_1",
+      "volume": 0.0031439911485751687,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad3_2",
+      "volume": 0.0031439911485751687,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad4_3",
+      "volume": 0.0031439911485751683,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad5_4",
+      "volume": 0.0031439911485751683,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad6_5",
+      "volume": 0.003143991148575169,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad7_6",
+      "volume": 0.0031439911485750794,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad8_7",
+      "volume": 0.0031439911485750794,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad9_8",
+      "volume": 0.0031439911485750803,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad10_9",
+      "volume": 0.0031439911485750794,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad11_10",
+      "volume": 0.0031439911485751774,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad12_11",
+      "volume": 0.0031439911485751757,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad13_12",
+      "volume": 0.0031439911485751765,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad14_13",
+      "volume": 0.0031439911485751765,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad15_14",
+      "volume": 0.0031439911485751765,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad16_15",
+      "volume": 0.0031439911485751774,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad17_16",
+      "volume": 0.003143991148575081,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad18_17",
+      "volume": 0.003143991148575081,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad19_18",
+      "volume": 0.0031439911485750807,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad20_19",
+      "volume": 0.0031439911485750816,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad21_20",
+      "volume": 0.14483086701761638,
+      "bound_mm3": 0.1456001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C4_Body",
+      "b": "rotating_C4_Pad1_0",
+      "volume": 0.02267639157004495,
+      "bound_mm3": 0.031850100000000006,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C4_Body",
+      "b": "rotating_C4_Pad2_1",
+      "volume": 0.022676391570045005,
+      "bound_mm3": 0.031850100000000006,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C17_Body",
+      "b": "rotating_C17_Pad1_0",
+      "volume": 0.00731244467859465,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C17_Body",
+      "b": "rotating_C17_Pad2_1",
+      "volume": 0.0073124446785946505,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C12_Body",
+      "b": "rotating_C12_Pad1_0",
+      "volume": 0.007312444678594657,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C12_Body",
+      "b": "rotating_C12_Pad2_1",
+      "volume": 0.007312444678594655,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C10_Body",
+      "b": "rotating_C10_Pad1_0",
+      "volume": 0.007312444678594574,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C10_Body",
+      "b": "rotating_C10_Pad2_1",
+      "volume": 0.007312444678594573,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C6_Body",
+      "b": "rotating_C6_Pad1_0",
+      "volume": 0.20393091148724096,
+      "bound_mm3": 0.21000010000000002,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C6_Body",
+      "b": "rotating_C6_Pad2_1",
+      "volume": 0.20393091148724227,
+      "bound_mm3": 0.21000010000000002,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R20_Body",
+      "b": "rotating_R20_Pad1_0",
+      "volume": 0.007312444678594437,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R20_Body",
+      "b": "rotating_R20_Pad2_1",
+      "volume": 0.007312444678594318,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R12_Body",
+      "b": "rotating_R12_Pad1_0",
+      "volume": 0.007312444678594468,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R12_Body",
+      "b": "rotating_R12_Pad2_1",
+      "volume": 0.007312444678594498,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R9_Body",
+      "b": "rotating_R9_Pad1_0",
+      "volume": 0.007312444678594467,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R9_Body",
+      "b": "rotating_R9_Pad2_1",
+      "volume": 0.007312444678594497,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R14_Body",
+      "b": "rotating_R14_Pad1_0",
+      "volume": 0.0073124446785944675,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R14_Body",
+      "b": "rotating_R14_Pad2_1",
+      "volume": 0.007312444678594496,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R21_Body",
+      "b": "rotating_R21_Pad1_0",
+      "volume": 0.007312444678594437,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R21_Body",
+      "b": "rotating_R21_Pad2_1",
+      "volume": 0.007312444678594317,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R11_Body",
+      "b": "rotating_R11_Pad1_0",
+      "volume": 0.007312444678594469,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R11_Body",
+      "b": "rotating_R11_Pad2_1",
+      "volume": 0.007312444678594498,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R23_Body",
+      "b": "rotating_R23_Pad1_0",
+      "volume": 0.007312444678594438,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R23_Body",
+      "b": "rotating_R23_Pad2_1",
+      "volume": 0.007312444678594317,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad1_0",
+      "volume": 0.00314399114857507,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad2_1",
+      "volume": 0.00314399114857507,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad3_2",
+      "volume": 0.00314399114857507,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad4_3",
+      "volume": 0.0031439911485750694,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad5_4",
+      "volume": 0.0031439911485750655,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad6_5",
+      "volume": 0.0031439911485750646,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad7_6",
+      "volume": 0.0031439911485750763,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad8_7",
+      "volume": 0.0031439911485750763,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad9_8",
+      "volume": 0.0031439911485750763,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad10_9",
+      "volume": 0.003143991148575076,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad11_10",
+      "volume": 0.00314399114857517,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad12_11",
+      "volume": 0.0031439911485751705,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad13_12",
+      "volume": 0.003143991148575177,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad14_13",
+      "volume": 0.003143991148575177,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad15_14",
+      "volume": 0.003143991148575177,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad16_15",
+      "volume": 0.003143991148575177,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad17_16",
+      "volume": 0.0031439911485750794,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad18_17",
+      "volume": 0.00314399114857508,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad19_18",
+      "volume": 0.00314399114857508,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad20_19",
+      "volume": 0.00314399114857508,
+      "bound_mm3": 0.004200100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad21_20",
+      "volume": 0.14483086701761635,
+      "bound_mm3": 0.1456001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R19_Body",
+      "b": "rotating_R19_Pad1_0",
+      "volume": 0.0073124446785947355,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R19_Body",
+      "b": "rotating_R19_Pad2_1",
+      "volume": 0.007312444678594617,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C7_Body",
+      "b": "rotating_C7_Pad1_0",
+      "volume": 0.02267639157004559,
+      "bound_mm3": 0.031850100000000006,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C7_Body",
+      "b": "rotating_C7_Pad2_1",
+      "volume": 0.022676391570044998,
+      "bound_mm3": 0.031850100000000006,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_L1_Body",
+      "b": "rotating_L1_Pad1_0",
+      "volume": 0.11461228341700566,
+      "bound_mm3": 0.1166201,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_L1_Body",
+      "b": "rotating_L1_Pad2_1",
+      "volume": 0.11461228341700613,
+      "bound_mm3": 0.1166201,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C5_Body",
+      "b": "rotating_C5_Pad1_0",
+      "volume": 0.022676391570044946,
+      "bound_mm3": 0.031850100000000006,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C5_Body",
+      "b": "rotating_C5_Pad2_1",
+      "volume": 0.022676391570044994,
+      "bound_mm3": 0.031850100000000006,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C8_Body",
+      "b": "rotating_C8_Pad1_0",
+      "volume": 0.007312444678594647,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C8_Body",
+      "b": "rotating_C8_Pad2_1",
+      "volume": 0.007312444678594646,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C3_Body",
+      "b": "rotating_C3_Pad1_0",
+      "volume": 0.02267639157004531,
+      "bound_mm3": 0.031850100000000006,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C3_Body",
+      "b": "rotating_C3_Pad2_1",
+      "volume": 0.022676391570045366,
+      "bound_mm3": 0.031850100000000006,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadA1_B12_2",
+      "volume": 0.0240418406743532,
+      "bound_mm3": 0.0241501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadA4_B9_3",
+      "volume": 0.024041840674352385,
+      "bound_mm3": 0.0241501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadA5_4",
+      "volume": 0.01204796016858811,
+      "bound_mm3": 0.0120751,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadA6_5",
+      "volume": 0.012047960168588119,
+      "bound_mm3": 0.0120751,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadA7_6",
+      "volume": 0.012047960168588117,
+      "bound_mm3": 0.0120751,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadA8_7",
+      "volume": 0.012047960168588116,
+      "bound_mm3": 0.0120751,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadB1_A12_8",
+      "volume": 0.024041840674352385,
+      "bound_mm3": 0.0241501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadB4_A9_9",
+      "volume": 0.024041840674352385,
+      "bound_mm3": 0.0241501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadB5_10",
+      "volume": 0.012047960168588116,
+      "bound_mm3": 0.0120751,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadB6_11",
+      "volume": 0.012047960168588119,
+      "bound_mm3": 0.0120751,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadB7_12",
+      "volume": 0.012047960168588114,
+      "bound_mm3": 0.0120751,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadB8_13",
+      "volume": 0.01204796016858811,
+      "bound_mm3": 0.0120751,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadS1_14",
+      "volume": 0.01986291366503851,
+      "bound_mm3": 0.07350010000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadS2_15",
+      "volume": 0.019862913665038777,
+      "bound_mm3": 0.07350010000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadS3_16",
+      "volume": 0.017762913665038644,
+      "bound_mm3": 0.06300010000000002,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadS4_17",
+      "volume": 0.017762913665039147,
+      "bound_mm3": 0.06300010000000002,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R22_Body",
+      "b": "rotating_R22_Pad1_0",
+      "volume": 0.007312444678594436,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R22_Body",
+      "b": "rotating_R22_Pad2_1",
+      "volume": 0.0073124446785943166,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R8_Body",
+      "b": "rotating_R8_Pad1_0",
+      "volume": 0.0073124446785944675,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R8_Body",
+      "b": "rotating_R8_Pad2_1",
+      "volume": 0.007312444678594497,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R13_Body",
+      "b": "rotating_R13_Pad1_0",
+      "volume": 0.007312444678594468,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R13_Body",
+      "b": "rotating_R13_Pad2_1",
+      "volume": 0.007312444678594498,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C16_Body",
+      "b": "rotating_C16_Pad1_0",
+      "volume": 0.0073124446785946505,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C16_Body",
+      "b": "rotating_C16_Pad2_1",
+      "volume": 0.0073124446785946505,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R25_Body",
+      "b": "rotating_R25_Pad1_0",
+      "volume": 0.00731244467859444,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R25_Body",
+      "b": "rotating_R25_Pad2_1",
+      "volume": 0.00731244467859432,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R26_Body",
+      "b": "rotating_R26_Pad1_0",
+      "volume": 0.007312444678594443,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R26_Body",
+      "b": "rotating_R26_Pad2_1",
+      "volume": 0.007312444678594324,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R16_Body",
+      "b": "rotating_R16_Pad1_0",
+      "volume": 0.007312444678594468,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R16_Body",
+      "b": "rotating_R16_Pad2_1",
+      "volume": 0.007312444678594617,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C2_Body",
+      "b": "rotating_C2_Pad1_0",
+      "volume": 0.022676391570045314,
+      "bound_mm3": 0.031850100000000006,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C2_Body",
+      "b": "rotating_C2_Pad2_1",
+      "volume": 0.022676391570045366,
+      "bound_mm3": 0.031850100000000006,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R27_Body",
+      "b": "rotating_R27_Pad1_0",
+      "volume": 0.00731244467859444,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R27_Body",
+      "b": "rotating_R27_Pad2_1",
+      "volume": 0.007312444678594321,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R17_Body",
+      "b": "rotating_R17_Pad1_0",
+      "volume": 0.007312444678594439,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_R17_Body",
+      "b": "rotating_R17_Pad2_1",
+      "volume": 0.007312444678594317,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C15_Body",
+      "b": "rotating_C15_Pad1_0",
+      "volume": 0.007312444678594573,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C15_Body",
+      "b": "rotating_C15_Pad2_1",
+      "volume": 0.007312444678594576,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad1_0",
+      "volume": 0.018375000000000006,
+      "bound_mm3": 0.0210001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad2_1",
+      "volume": 0.018375000000000006,
+      "bound_mm3": 0.0210001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad3_2",
+      "volume": 0.018375000000000006,
+      "bound_mm3": 0.0210001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad4_3",
+      "volume": 0.00392811116964865,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad5_4",
+      "volume": 0.00392811116964865,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad6_5",
+      "volume": 0.003928111169648651,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad7_6",
+      "volume": 0.003928111169648651,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad8_7",
+      "volume": 0.003928111169648657,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad9_8",
+      "volume": 0.003928111169648657,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad10_9",
+      "volume": 0.003928111169648656,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad11_10",
+      "volume": 0.003928111169648657,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C9_Body",
+      "b": "rotating_C9_Pad1_0",
+      "volume": 0.007312444678594575,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "rotating_C9_Body",
+      "b": "rotating_C9_Pad2_1",
+      "volume": 0.007312444678594575,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_R2_Body",
+      "b": "stationary_R2_Pad1_0",
+      "volume": 0.007312444678594468,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_R2_Body",
+      "b": "stationary_R2_Pad2_1",
+      "volume": 0.007312444678594646,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_R5_Body",
+      "b": "stationary_R5_Pad1_0",
+      "volume": 0.007312444678594317,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_R5_Body",
+      "b": "stationary_R5_Pad2_1",
+      "volume": 0.007312444678594645,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_R6_Body",
+      "b": "stationary_R6_Pad1_0",
+      "volume": 0.007312444678594319,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_R6_Body",
+      "b": "stationary_R6_Pad2_1",
+      "volume": 0.007312444678594646,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_C14_Body",
+      "b": "stationary_C14_Pad1_0",
+      "volume": 0.007312444678594544,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_C14_Body",
+      "b": "stationary_C14_Pad2_1",
+      "volume": 0.007312444678594542,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_C1_Body",
+      "b": "stationary_C1_Pad1_0",
+      "volume": 0.022676391570045442,
+      "bound_mm3": 0.031850100000000006,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_C1_Body",
+      "b": "stationary_C1_Pad2_1",
+      "volume": 0.02267639157004552,
+      "bound_mm3": 0.031850100000000006,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_R3_Body",
+      "b": "stationary_R3_Pad1_0",
+      "volume": 0.007312444678594469,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_R3_Body",
+      "b": "stationary_R3_Pad2_1",
+      "volume": 0.007312444678594646,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_C11_Body",
+      "b": "stationary_C11_Pad1_0",
+      "volume": 0.007312444678594501,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_C11_Body",
+      "b": "stationary_C11_Pad2_1",
+      "volume": 0.007312444678594651,
+      "bound_mm3": 0.0084001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_R1_Body",
+      "b": "stationary_R1_Pad1_0",
+      "volume": 0.007312444678594468,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_R1_Body",
+      "b": "stationary_R1_Pad2_1",
+      "volume": 0.007312444678594644,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_R4_Body",
+      "b": "stationary_R4_Pad1_0",
+      "volume": 0.007312444678594465,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_R4_Body",
+      "b": "stationary_R4_Pad2_1",
+      "volume": 0.007312444678594646,
+      "bound_mm3": 0.0115501,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad1_0",
+      "volume": 0.0046874446785944756,
+      "bound_mm3": 0.0063001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad1_1",
+      "volume": 0.004337444678594564,
+      "bound_mm3": 0.005687600000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad2_2",
+      "volume": 0.003899944678594486,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad3_3",
+      "volume": 0.003899944678594487,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad4_4",
+      "volume": 0.00468744467859447,
+      "bound_mm3": 0.0063001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad4_5",
+      "volume": 0.004337444678594567,
+      "bound_mm3": 0.005687600000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad5_6",
+      "volume": 0.022050000000000042,
+      "bound_mm3": 0.0252001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad6_7",
+      "volume": 0.022050000000000042,
+      "bound_mm3": 0.0252001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad7_8",
+      "volume": 0.004337444678594568,
+      "bound_mm3": 0.005687600000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad7_9",
+      "volume": 0.004687444678594546,
+      "bound_mm3": 0.0063001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad8_10",
+      "volume": 0.0038999446785945493,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad9_11",
+      "volume": 0.0038999446785945493,
+      "bound_mm3": 0.005250100000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad10_12",
+      "volume": 0.004337444678594566,
+      "bound_mm3": 0.005687600000000001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad10_13",
+      "volume": 0.004687444678594553,
+      "bound_mm3": 0.0063001,
+      "basis": "Specific own-component body allocation intersects its physical copper land; supplier package profile unresolved"
+    },
+    {
+      "a": "stationary_U1_Pad1_0",
+      "b": "stationary_U1_Pad1_1",
+      "volume": 0.0025686670178917763,
+      "bound_mm3": 0.005687600000000001,
+      "basis": "Source-defined duplicate same-number same-net land features, union copper not a short"
+    },
+    {
+      "a": "stationary_U1_Pad4_4",
+      "b": "stationary_U1_Pad4_5",
+      "volume": 0.002568667017891774,
+      "bound_mm3": 0.005687600000000001,
+      "basis": "Source-defined duplicate same-number same-net land features, union copper not a short"
+    },
+    {
+      "a": "stationary_U1_Pad7_8",
+      "b": "stationary_U1_Pad7_9",
+      "volume": 0.0025686670178918245,
+      "bound_mm3": 0.005687600000000001,
+      "basis": "Source-defined duplicate same-number same-net land features, union copper not a short"
+    },
+    {
+      "a": "stationary_U1_Pad10_12",
+      "b": "stationary_U1_Pad10_13",
+      "volume": 0.0025686670178918214,
+      "bound_mm3": 0.005687600000000001,
+      "basis": "Source-defined duplicate same-number same-net land features, union copper not a short"
+    },
+    {
+      "a": "RotorHalfNegativeY",
+      "b": "COL_FrameBolt_45_25_m29_5",
+      "volume": 0.9952565526572446,
+      "bound_mm3": 1.05,
+      "basis": "Frozen bounded frame-screw pilot engagement"
+    },
+    {
+      "a": "RotorHalfNegativeY",
+      "b": "COL_FrameBolt_45_25_29_5",
+      "volume": 0.9952565526572479,
+      "bound_mm3": 1.05,
+      "basis": "Frozen bounded frame-screw pilot engagement"
+    },
+    {
+      "a": "RotorHalfNegativeY",
+      "b": "COL_FrameBolt_68_9_m29_5",
+      "volume": 0.9952565526572565,
+      "bound_mm3": 1.05,
+      "basis": "Frozen bounded frame-screw pilot engagement"
+    },
+    {
+      "a": "RotorHalfNegativeY",
+      "b": "COL_FrameBolt_68_9_29_5",
+      "volume": 0.99525655265726,
+      "bound_mm3": 1.05,
+      "basis": "Frozen bounded frame-screw pilot engagement"
+    },
+    {
+      "a": "StationaryCoreWithSupports",
+      "b": "StationaryCapScrewFrontm",
+      "volume": 0.3317521842190821,
+      "bound_mm3": 0.3317531842190821,
+      "basis": "1mm M1 pilot engagement; screw/material/strength unqualified"
+    },
+    {
+      "a": "StationaryCoreWithSupports",
+      "b": "StationaryCapScrewFrontp",
+      "volume": 0.33175218421908204,
+      "bound_mm3": 0.3317531842190821,
+      "basis": "1mm M1 pilot engagement; screw/material/strength unqualified"
+    },
+    {
+      "a": "StationaryCoreWithSupports",
+      "b": "StationaryCapScrewRearm",
+      "volume": 0.3317521842190821,
+      "bound_mm3": 0.3317531842190821,
+      "basis": "1mm M1 pilot engagement; screw/material/strength unqualified"
+    },
+    {
+      "a": "StationaryCoreWithSupports",
+      "b": "StationaryCapScrewRearp",
+      "volume": 0.33175218421908187,
+      "bound_mm3": 0.3317531842190821,
+      "basis": "1mm M1 pilot engagement; screw/material/strength unqualified"
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "COL_MovingScrew0",
+      "volume": 0.09952565526572502,
+      "bound_mm3": 0.2,
+      "basis": "Frozen moving clamp M1 pilot thread engagement"
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "COL_MovingScrew1",
+      "volume": 0.09952565526572626,
+      "bound_mm3": 0.2,
+      "basis": "Frozen moving clamp M1 pilot thread engagement"
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "MovingClampScrew51_7",
+      "volume": 0.24549661632211905,
+      "bound_mm3": 0.24549761632212078,
+      "basis": "0.74mm M1 pilot engagement; no head interference allowed"
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "MovingClampScrew74_7",
+      "volume": 0.2454966163221221,
+      "bound_mm3": 0.24549761632212078,
+      "basis": "0.74mm M1 pilot engagement; no head interference allowed"
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "SourceEndGateScrewm17",
+      "volume": 0.6635043684381611,
+      "bound_mm3": 0.6635053684381643,
+      "basis": "2mm M1 pilot engagement; no head interference allowed"
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "SourceEndGateScrew17",
+      "volume": 0.6635043684381482,
+      "bound_mm3": 0.6635053684381643,
+      "basis": "2mm M1 pilot engagement; no head interference allowed"
+    },
+    {
+      "a": "SourceWireCopper1",
+      "b": "Pin_LVplus",
+      "volume": 0.08879449923534326,
+      "bound_mm3": 0.089,
+      "basis": "Named electrical endpoint envelope intersection; actual termination/insulation remains UNMET"
+    },
+    {
+      "a": "SourceWireCopper2",
+      "b": "Pin_LVminus",
+      "volume": 0.08881473106651018,
+      "bound_mm3": 0.089,
+      "basis": "Named electrical endpoint envelope intersection; actual termination/insulation remains UNMET"
+    }
+  ],
+  "unintended": [],
+  "basis": "Fresh two-part checks replace old pairs; all other BRep topology/tokens unchanged to1e-12 numerical save normalization. Frozen-frozen mechanism evidence retained. Relative rigid contacts remain invariant at all poses; cross-domain motion separately checked."
+}

@@ -1,0 +1,13 @@
+# Preserve generated hardware deliverables byte-for-byte. STEP/PDF can look
+# textual to Git, but their serializer formatting is part of pinned artifacts.
+hardware/**/*.step binary
+hardware/**/*.stp binary
+hardware/**/*.FCStd binary
+hardware/**/*.pdf binary
+hardware/**/*.dxf binary
+hardware/**/*.png binary
+# These are generated plots/serialized boards, not hand-edited source diffs.
+hardware/**/*.svg binary
+hardware/**/*.kicad_pcb whitespace=blank-at-eol,space-before-tab
+# CSV writers use CRLF; keep original bytes because receipts pin them.
+hardware/**/*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

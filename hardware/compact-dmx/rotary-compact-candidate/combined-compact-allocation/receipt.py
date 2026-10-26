@@ -1,0 +1,11 @@
+from pathlib import Path
+import hashlib,json
+P=Path(__file__).resolve().parent;root=P.parents[3];h=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+protected={}
+for f in ['protected-inputs.json','source12-frozen-inputs.json']:
+ for p,expected in json.loads((P/f).read_text()).items():
+  assert h(root/p)==expected,p;protected[p]=expected
+c=json.loads((P/'checks.json').read_text())
+artifacts={str(p.relative_to(P)):h(p) for p in P.rglob('*') if p.is_file() and p.name not in ['receipt.json','receipt-check.log'] and '__pycache__' not in str(p)}
+r={'head':'b42c0e6284aac734fde851c69146abf73920f337','owned_path':'hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation','requested_model':'Astra LOW/default','status':'FAIL integration; bounded comparison only; S12 fit and eight physical interferences UNMET','artifacts':artifacts,'protected_hash_count':len(protected),'primary_source_count':len(json.loads((P/'sources.json').read_text())),'comparison_dimensions':[270,89,72],'rejected_prior_dimensions':[330,89,72],'length_reduction_mm':60,'volume_reduction_percent':18.1818181818,'S12_receipt_sha256':h(P.parent/'source12-candidate/receipt.json'),'S12_dimension_screen':{'bare_clamp_OD':c['S12_bare_clamp_min_OD'],'wall_tolerance_screen_OD':c['S12_with_1mm_wall_and_0p25_assembly_allocation_OD'],'axial_length_screen':275,'integrated':False},'checks':{k:c[k] for k in ['valid_solids','identity_shapes','pair_checks','USB_positions','USB_checks','USB_min_gap','offset_USB_checks','offset_USB_min_gap','STEP']},'unintended_physical_interferences':8,'positive_intersections_count':len(c['positive_intersections']),'wire_contact_gaps':c['disconnected_wire_contacts'],'USB_failures':c['USB_failures'],'unmet':['Primary branch overlap24.141856mm3 andN/carrier interference0.564065mm3','Fixedtail spool/clamp interference and0.581013mm disconnectedcontact','Source12 actual integration; clamp reserve exceeds oldØ66','Carrier retention, holes/terminals and source-insulation connection construction','New12V protection-board route and support integration','Mains/PE, all3actualconnector variants and strain relief','Protection energy/startup/thermal, flex equilibrium/endurance, actualfixturefit']}
+(P/'receipt.json').write_text(json.dumps(r,indent=2)+'\n');print('ARTIFACTS',len(artifacts),'PROTECTED',len(protected),'STATUS',r['status'])

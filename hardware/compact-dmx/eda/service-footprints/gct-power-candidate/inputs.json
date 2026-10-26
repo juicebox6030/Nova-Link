@@ -1,0 +1,40 @@
+{
+  "raw_sha256": {
+    "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/placement-candidate/candidate.kicad_pcb": "fe577602e2891b7c78ec8fba5d71f8648076cadccff2774c96e2673c6fb15a2b",
+    "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/service-footprints/Service.pretty/AT25SF161B_MHB_Derived.kicad_mod": "f52a1fc88a1c17325135c27e3c68693037b56130849b50a00c4d2fe47af419aa",
+    "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/power-service.net": "a33ad758114dc968396f22c2dd16fa2923f833b37bde1f5b35f5268f3c79b620",
+    "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/placement-candidate/inputs.json": "4508589ac36638327ea48064455fbd10c8b0de0fc2e4995ec9145a0337f41612"
+  },
+  "contracts": {
+    "J_USB": {
+      "A5": "CC1",
+      "B5": "CC2",
+      "A9": "VBUS_RAW",
+      "B9": "VBUS_RAW",
+      "A12": "GND_USB",
+      "B12": "GND_USB",
+      "SH": "GND_USB"
+    },
+    "U2": {
+      "1": "SPI_CS_N",
+      "2": "SPI_MISO",
+      "3": "FLASH_WP_N",
+      "4": "GND_USB",
+      "5": "SPI_MOSI",
+      "6": "SPI_SCK",
+      "7": "FLASH_HOLD_N",
+      "8": "SYS_3V3",
+      "9": "GND_USB"
+    }
+  },
+  "USB_origin_mm": [
+    42.7,
+    44.6
+  ],
+  "NOR_origin_mm": [
+    32,
+    41.2
+  ],
+  "shell_ground": "PROPOSED ONLY in this copy; manufacturer SHELL GND; not active circuit binding",
+  "removed_slot": "Required proposal: restore solid PCB x36.5..48.9 y45.1..51; baseline PCB copy was already rectangular"
+}

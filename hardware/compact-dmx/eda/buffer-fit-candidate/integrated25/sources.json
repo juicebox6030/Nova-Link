@@ -1,0 +1,27 @@
+{
+  "sources": [
+    {
+      "path": "hardware/compact-dmx/eda/buffer-fit-candidate/integrated25/sources/eaton-guide.pdf",
+      "url": "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/technical/eaton-supercapacitor-application-guidelines.pdf",
+      "basis": "TechnicalNotePS-5006,December2017;handling/soldering;no numerical bend limit",
+      "sha256": "ad251a1e8bb97c2e0c5da1edf55e02aa16aad469d97f689b661eebab9dfb8faa",
+      "bytes": 187096
+    },
+    {
+      "path": "hardware/compact-dmx/eda/buffer-fit-candidate/sources/eaton-hv.pdf",
+      "url": "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-hv-supercapacitors-cylindrical-cells-data-sheet.pdf",
+      "basis": "TechnicalData4376,January2020;dimensionsp3,solderingp5",
+      "sha256": "17fb1d0f56d6766f0866ecb4cc656ce603a74371183ab21ad96f648303b246f1",
+      "bytes": 533466
+    },
+    {
+      "path": "hardware/compact-dmx/eda/buffer-fit-candidate/buffer25-proposal.FCStd",
+      "url": "local immutable input",
+      "basis": "Parent verified development envelope",
+      "sha256": "4ec40f29ae2b1110fe9beb61d7e05c5e93581f8f8a5a717c267a806e888f7a10",
+      "bytes": 36670
+    }
+  ],
+  "retrieval": "Guide primarysameorigin browserfetch200 aftercurlHTTP2error;187096bytes. One bounded guide pass.",
+  "parent_artifact_hashes_unchanged": 26
+}

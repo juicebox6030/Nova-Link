@@ -1,0 +1,59 @@
+{
+  "status": "PASS actual saved-board pad/net/placement geometry;150mm2 reservation FAIL; routing not performed",
+  "candidate_footprints": 137,
+  "actual_numbered_pad_checks": 443,
+  "source_original37_plus4holes_unchanged": 41,
+  "GCT_and_NOR_exact_source_pad_geometry": true,
+  "real_DRC_geometric_violations": 0,
+  "real_DRC_unconnected_items": 452,
+  "DRC_ignored_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "reserve_checks": 828,
+  "new_core_courtyard_sum_mm2": 749.9554999999999,
+  "core_courtyard_top_mm2": 572.2838999999999,
+  "core_courtyard_bottom_mm2": 177.67159999999996,
+  "original37_courtyard_sum_mm2": 466.46082,
+  "combined_all_electrical_courtyard_sum_mm2": 1313.14962,
+  "minimum_new_to_any_same_side_courtyard_gap_mm": 0.2049999999999983,
+  "board_main_area_mm2": 2520,
+  "tongue_area_mm2": 28.52,
+  "cell_projection_reserve_mm2": 472.5,
+  "antenna_projection_reserve_mm2": 296.8,
+  "new_core_excess_over150_mm2": 599.9554999999999,
+  "area_interpretation": "Courtyard sums are occupied areas on their own assemblyside, not a single rectangular floorplan. No overlap on a side; top/bottom projections can overlap. Reserve unions and routing channels are additional. Does not authorize reservation/case change.",
+  "manufacturing_release": false,
+  "U40_correction": {
+    "reviewed_board": "history/pre-u40-fix-qualified15-placement.kicad_pcb",
+    "all_footprint_positions_rotations_sides_values_preserved": 178,
+    "all_actual_pad_geometry_preserved": true,
+    "only_pad_net_changes": [
+      [
+        "U40",
+        "5",
+        "GND_USB",
+        "AON_USB_LIMITED"
+      ]
+    ],
+    "repacked": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-22",
+  "method": "Live official manufacturer product-page DOM via T3 collaborative browser",
+  "links": [
+    {
+      "text": "Datasheet",
+      "url": "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-pcm-series-datasheet?assetguid=d2f6a96c-7a9a-4c4e-a5aa-4fe3075dffe5"
+    },
+    {
+      "text": "Littelfuse C&K Slide PCM Series Datasheet",
+      "url": "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-pcm-series-datasheet?assetguid=d2f6a96c-7a9a-4c4e-a5aa-4fe3075dffe5"
+    }
+  ],
+  "statusText": "Product Status\n|\nActive\ni\nOverview\nApplications\nResources\nModels",
+  "title": "PCM12SMTR | PCM Series + Slide Switches | Littelfuse",
+  "url": "https://www.littelfuse.com/products/switches/slide-switches/pcm/pcm12smtr",
+  "observed_product_status": "Active",
+  "PDF": {
+    "url": "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-pcm-series-datasheet?assetguid=d2f6a96c-7a9a-4c4e-a5aa-4fe3075dffe5",
+    "cached_path": ".tools/references/pcm-official.pdf",
+    "bytes": 498359,
+    "sha256": "6a758d151b7eee7f8cd59594bd92cfec4c9b1470e0743094f185f19e7ac2a868",
+    "retrieval": "HTTP200 via same-origin fetch in T3 collaborative browser; direct CLI requests returned403",
+    "document_revision": "VL03/14/25",
+    "visually_inspected_printed_page": 2
+  }
+}

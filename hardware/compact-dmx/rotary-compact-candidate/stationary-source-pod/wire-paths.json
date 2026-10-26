@@ -1,0 +1,47 @@
+{
+  "L": {
+    "length_mm": 327.4600729004711,
+    "radius_mm": 12,
+    "wire_envelope_diameter": 4.5,
+    "start": [
+      -145,
+      32,
+      -25
+    ],
+    "end": [
+      150,
+      -8,
+      -16
+    ]
+  },
+  "N": {
+    "length_mm": 325.4600729004711,
+    "radius_mm": 12,
+    "wire_envelope_diameter": 4.5,
+    "start": [
+      -145,
+      38,
+      -25
+    ],
+    "end": [
+      150,
+      0,
+      -16
+    ]
+  },
+  "PE": {
+    "length_mm": 323.4600729004711,
+    "radius_mm": 12,
+    "wire_envelope_diameter": 4.5,
+    "start": [
+      -145,
+      44,
+      -25
+    ],
+    "end": [
+      150,
+      8,
+      -16
+    ]
+  }
+}

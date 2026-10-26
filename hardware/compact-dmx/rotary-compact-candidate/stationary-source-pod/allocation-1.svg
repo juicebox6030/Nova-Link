@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900"><rect width="100%" height="100%" fill="white"/>
+<text x="30" y="32" fill="#17364b" font-family="sans-serif" font-size="23">STATIONARY12V SOURCE POD / ONE ALLOCATION</text>
+<text x="30" y="58" fill="#17364b" font-family="sans-serif" font-size="12">Not a manufactured minimum housing. Old5V collar is comparison only; new12V rotor board is not integrated.</text>
+<text x="30" y="85" fill="#17364b" font-family="sans-serif" font-size="13">TOP X/Y projection - equal scale2.7 drawing points/mm. All stated dimensions inmm.</text>
+<rect x="99.80000000000001" y="138.5" width="345.6" height="221.4" fill="#d2dde4" stroke="#49616d" stroke-width=".7"/>
+<rect x="35.0" y="125.0" width="64.80000000000001" height="129.60000000000002" fill="#d2dde4" stroke="#49616d" stroke-width=".7"/>
+<rect x="445.40000000000003" y="230.3" width="32.400000000000006" height="91.80000000000001" fill="#d2dde4" stroke="#49616d" stroke-width=".7"/>
+<rect x="477.8" y="211.4" width="383.40000000000003" height="129.60000000000002" fill="#d2dde4" stroke="#49616d" stroke-width=".7"/>
+<rect x="861.2" y="211.4" width="64.80000000000001" height="129.60000000000002" fill="#d2dde4" stroke="#49616d" stroke-width=".7"/>
+<rect x="164.60000000000002" y="206.0" width="218.70000000000002" height="140.4" fill="#f9e6b7" stroke="#49616d" stroke-width=".7"/>
+<rect x="202.535" y="238.805" width="142.83" height="74.79" fill="#d6b26a" stroke="#49616d" stroke-width=".7"/>
+<rect x="550.1600000000001" y="187.1" width="208.89900000000003" height="178.20000000000002" fill="#96cbb9" stroke="#49616d" stroke-width=".7"/>
+<rect x="759.0590000000001" y="192.284" width="32.400000000000006" height="17.55" fill="#e6ad7b" stroke="#49616d" stroke-width=".7"/>
+<rect x="791.4590000000001" y="192.284" width="48.6" height="17.55" fill="#f2d0a9" stroke="#49616d" stroke-width=".7"/>
+<rect x="840.059" y="192.959" width="216.0" height="16.200000000000003" fill="#ecdcc8" stroke="#49616d" stroke-width=".7"/>
+<line x1="35.0" y1="403" x2="926.0000000000001" y2="403" stroke="#17364b" stroke-width=".8"/>
+<line x1="35.0" y1="397" x2="35.0" y2="409" stroke="#17364b" stroke-width=".8"/>
+<line x1="926.0000000000001" y1="397" x2="926.0000000000001" y2="409" stroke="#17364b" stroke-width=".8"/>
+<text x="350" y="425" fill="#17364b" font-family="sans-serif" font-size="14">330 overall product allocation / X-164..166</text>
+<text x="55" y="465" fill="#17364b" font-family="sans-serif" font-size="13">Pod shell128 x82 x62; input blank offsetY32,Z-15, Ø48 x24.</text>
+<text x="55" y="489" fill="#17364b" font-family="sans-serif" font-size="13">Whole product including collar/endcap blanks:330L x89W x72H.</text>
+<text x="55" y="513" fill="#17364b" font-family="sans-serif" font-size="13">Bounds X-164..166 / Y-33..56 / Z-39..33. No universal connector/fixture-fit claim.</text>
+<text x="55" y="545" fill="#17364b" font-family="sans-serif" font-size="13">Collar comparisonØ66; released sweep startsX26.8. Sourcepod/neck endsX0:26.8 axial gap.</text>
+<text x="55" y="569" fill="#17364b" font-family="sans-serif" font-size="13">Only isolatedLV rotates.13 detents at15degrees; ±90degree range inherited unchanged.</text>
+<text x="55" y="601" fill="#17364b" font-family="sans-serif" font-size="13">Actual frozen USB body allocation endsX104.17; this is NOT its exact mating plane.</text>
+<text x="55" y="625" fill="#17364b" font-family="sans-serif" font-size="13">Engineering approach:12mm plug +18mm relief +80mm cable; far endX214.17.</text>
+<text x="55" y="649" fill="#17364b" font-family="sans-serif" font-size="13">Product plus finite cable screen spans378.17mm. No cable supplier profile or bend approval.</text>
+<text x="55" y="681" fill="#17364b" font-family="sans-serif" font-size="13">−X pod placement clears the USB approach throughout181 angles; output blank remains a gate.</text>
+<text x="55" y="713" fill="#17364b" font-family="sans-serif" font-size="13">Carrier supports, terminal transitions and final fixed-clamp radial exit are visible unimplemented</text>
+<text x="55" y="737" fill="#17364b" font-family="sans-serif" font-size="13">interfaces. Neither wire continuity nor mains construction approval follows from this layout.</text>
+<text x="55" y="785" fill="#17364b" font-family="sans-serif" font-size="12">Solid/spacing/motion evidence:checks.json. Exact allocations and scope labels:editableFCStd +STEP.</text>
+</svg>

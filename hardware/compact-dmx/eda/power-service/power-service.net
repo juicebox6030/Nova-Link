@@ -1,0 +1,2692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/power-service.kicad_sch</source>
+    <date>2026-10-22T20:26:24</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>NOVA power-only / buffer / RDM service hardware - PROTOTYPE</title>
+        <company/>
+        <rev>C-POWER-REVIEW-FIX</rev>
+        <date/>
+        <source>power-service.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C_AON_IN">
+      <value>1u effective 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1d73f097-7ba8-51bb-8299-02bd43de95cf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_AON_OUT">
+      <value>1u effective 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>daf6c317-6a1e-5188-a74c-5c2ad976f614</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_BACKUP">
+      <value>22u effective 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e91d9ed-0128-5308-ab27-4399eb8973fd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_BUCK_IN">
+      <value>10u effective 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>568013c0-de07-544a-9e1f-a5a0702209ba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_BUF">
+      <value>HV1325-2R7156-R 15F 2.7V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>575221fc-1570-54f7-b6c8-110fe0076593</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_FLASH">
+      <value>100n 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c4b51756-3687-5487-be2e-e1550d56a375</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_FLASH_BULK">
+      <value>1u effective 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d71c9db7-937d-5e9b-925a-19b2bf6cd788</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_IN">
+      <value>10u effective 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce767d33-1d8e-5b72-aade-6740b510dd2a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_LIMIT">
+      <value>1u effective 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d1254512-9058-5b51-ba2f-428605712dc4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_RAW">
+      <value>100n 16V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b85f4dd0-6b5b-5462-8184-c0fd1cb52d1c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_REF">
+      <value>10n</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9c41fad7-c92c-5441-ba49-b1cfd6c87058</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_SS">
+      <value>3.3n</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d71db457-a573-5c40-815e-f6c7ca29d2c2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_SYS">
+      <value>22u effective 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a6530127-ac85-5fe3-bc47-cf43922d451d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_U8">
+      <value>100n 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>01a577c4-c516-512f-a3d1-a802cca15f89</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_U9">
+      <value>100n 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f93b7f7e-804c-5c46-8d42-f110ffeda2d7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_U10">
+      <value>100n 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>26eb21d9-63eb-5295-b28e-e29d1c25030e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_U11">
+      <value>100n 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da20cad5-1dd1-5ccc-b6d3-375f92188f61</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_U12">
+      <value>100n 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ba7893c5-1b7f-5b45-933f-99bcc22f3eaa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_U13">
+      <value>100n 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>781b4a6c-c36c-56fd-8f2a-d72d892177df</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_U14">
+      <value>100n 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>61b6a4e7-fc12-59cc-bd82-da3935e1230b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_U15">
+      <value>100n 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>63cf7cdf-b943-5d9c-a5f0-29a70c6d0ce9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_U16">
+      <value>100n 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>79f09d98-b6df-58b3-9359-4079587a1d95</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_U17">
+      <value>100n 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d767d3b9-8c09-5534-a03e-8d7d9ffd8b2d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_U18">
+      <value>100n 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a354b1b6-0f75-55d2-946c-b86d6e39159a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C_U19">
+      <value>100n 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="C" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bce5e2e0-25e4-5408-81fe-66f4d97f20a9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D_AON_BUF">
+      <value>BAT54H,115</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="D" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>474e41ec-6479-5067-a68b-0b7fde1036dd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D_AON_USB">
+      <value>BAT54H,115</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="D" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca4fe9ca-8acb-5fc9-b84f-ddcb49691c3e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J_FACTORY">
+      <value>VREF sense; cJTAG/RESET/ROM strap; no power injection</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="FACTORY_PADS" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fec03a98-4e20-58a0-961a-3179c55cbddd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J_USB">
+      <value>CX70M-24P1 electrical interface; shell/ESD integration open</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="USB_C_POWER_ONLY_BOUNDARY" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>07d04bee-a638-50e4-b780-26478849b00f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A1"/>
+            <pin num="A2"/>
+            <pin num="A3"/>
+            <pin num="A4"/>
+            <pin num="A5"/>
+            <pin num="A6"/>
+            <pin num="A7"/>
+            <pin num="A8"/>
+            <pin num="A9"/>
+            <pin num="A10"/>
+            <pin num="A11"/>
+            <pin num="A12"/>
+            <pin num="B1"/>
+            <pin num="B2"/>
+            <pin num="B3"/>
+            <pin num="B4"/>
+            <pin num="B5"/>
+            <pin num="B6"/>
+            <pin num="B7"/>
+            <pin num="B8"/>
+            <pin num="B9"/>
+            <pin num="B10"/>
+            <pin num="B11"/>
+            <pin num="B12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L_BOOST">
+      <value>XGL4020-222MEC 2.2uH</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="L" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>085bda44-d51b-57b6-aba3-a9a5d5d61d36</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L_BUCK">
+      <value>XFL4020-222MEC 2.2uH</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="L" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>006a9705-7183-524e-b574-c5d49a9a4d95</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_BUCK_PG">
+      <value>100k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ac53cb7e-a97d-5fe3-be3a-a15304af64c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_CAP_BOTTOM">
+      <value>100k 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95a971e7-6c41-591f-a9d4-8497c99a96a9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_CAP_TOP">
+      <value>20.0k 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ad1e2b46-a87b-556e-b6a5-16ae98a60a6e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_CC1">
+      <value>5.1k 1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d66b6b48-44e8-54d4-9d44-6c013ce7bbc0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_CC2">
+      <value>5.1k 1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>269a7f0c-7a2d-5e39-9493-0b430a9fb0e5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_CS">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a568813a-4d68-5d1a-9539-03a3feb68548</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_DE">
+      <value>100k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e76ec3db-4b26-5f32-a895-d58815a33145</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_HOLD">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f6354769-7080-516e-93af-8b5d5c9fb5fd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_ICHG">
+      <value>9.53k 1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2995bfa1-a9fb-59dc-862c-a9bedd21417a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_ILIM">
+      <value>60.4k 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>acceab09-b43b-5a38-acfb-55eba8d3b3e0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_INPUT_BLEED">
+      <value>47k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d17a71b2-a978-5c47-ac29-b999d9378272</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_INPUT_FAULT">
+      <value>100k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0544b4e9-2772-5bb6-aeeb-880393460a6f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_ISO">
+      <value>100k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45d3236b-8021-56f0-83e2-125a113beab8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_MOSI">
+      <value>100k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e6ae2d82-66f3-5e05-880e-419253ad6526</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_MR">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7784fbe7-7134-59db-aa9a-1f8e0ee54bd7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_OSEL">
+      <value>17.4k 1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f480937d-9948-53e5-ab81-ee7d670c28ad</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_RE">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>be18b9bf-199f-5143-aa3a-bb81fd5975e5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_ROM">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e2b1aec-0489-5d0c-877a-5ae7f28d15bc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_RUN_PD">
+      <value>100k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>14688e7a-78d1-5b7e-bc48-28f33cc96cc3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_SCK">
+      <value>100k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f3e0a00c-c38f-5a79-ae2a-c26b078b4d5e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_SERVICE">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e5fc04c3-2602-527f-a993-3d2c0d591369</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_VBUS_BOTTOM">
+      <value>10k 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>20e88593-69ad-5eb6-8792-bda931791bc0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_VBUS_PU">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bea242fd-878d-598e-a326-4b1f687ac39b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_VBUS_TOP">
+      <value>93.1k 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f8f92328-6f60-5dbe-8249-5e2b089b7be5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_VCHG">
+      <value>9.53k 1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>250c4bd1-d18c-50be-b6fa-636a1cb963a0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R_WP">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="R" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e23b139-b788-5dc8-a981-24d812438ffb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="S_RESET">
+      <value>RESET</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="SW_NO" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>714bf9a3-c363-5fde-bd16-302f3b34200c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="S_SERVICE">
+      <value>RESIDENT LOADER SERVICE / NOT ROM</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="SW_NO" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8efc1e78-71bb-5c4a-8e95-263cd302cde3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>AT25SF161B-MHB-T 16Mbit</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="AT25SF161B_MHB" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3fbe497a-b90f-5dbd-badc-79f1cc6152a6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>TPS61094DSSR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="TPS61094DSS" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd06a070-28f3-5db0-80bf-32d4349f4f12</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>TPS62132RGTR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="TPS62132RGT" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2a03824d-41c2-5f9c-9202-82b054e1b194</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>TPS2553DBVR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="TPS2553DBV" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e72c3fc-fee3-52eb-aef8-3e4e5540715d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U7">
+      <value>TPS7A0225PDBVR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="TPS7A0225DBV" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7fd6c652-205e-57a7-a983-02d619d3dce1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>TLV3012BIDCKR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="TLV3012BDCK" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c1acafd5-f9c7-54ac-89a0-5ae434f43532</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U9">
+      <value>TPS3839G25DBZR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="TPS3839DBZ" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>874749fb-20ab-5c49-9da2-e0524d323440</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>TPS3700DDCR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="TPS3700DDC" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>347c42c0-688b-59db-a75d-ddf9c0b80275</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U11">
+      <value>SN74LVC1G74DCUR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="SN74LVC1G74DCU" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8332844f-3165-52a5-a9dd-61ec133b9d24</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U12">
+      <value>SN74LVC2G08DCUR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="SN74LVC2G08DCU" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ced91d7a-2eeb-5c7d-9e82-c9a02d95c046</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U13">
+      <value>SN74LVC2G32DCUR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="SN74LVC2G32DCU" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>431718d5-be75-5325-9c0c-5ce3ac20f67e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U14">
+      <value>SN74LVC1G04DCKR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="SN74LVC1G04DCK" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3df2813a-654c-5703-8fc4-3a6d320a6614</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U15">
+      <value>SN74LVC2G08DCUR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="SN74LVC2G08DCU" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4fc7e484-00cf-5a87-baa0-87900feb35d1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U16">
+      <value>TPS3831K33DQNR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="TPS3831DQN" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a3503e2b-89cc-5923-816d-8a3b8d8e0317</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U17">
+      <value>SN74LVC2G08DCUR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="SN74LVC2G08DCU" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>76a1a21f-9809-5bbe-9b70-816170f188d9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U18">
+      <value>SN74LVC2G08DCUR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="SN74LVC2G08DCU" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2450fe37-8d03-5de2-bcd4-eed9ec54dd8d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U19">
+      <value>TPS2116DRLR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="TPS2116DRL" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>be4e2ebb-85c1-5d54-afe8-4558a157bcd5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="X_DMX">
+      <value>MATCH dmx-interface.kicad_sch X1</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="ISOW1412_SHEET_BOUNDARY" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>74e01fc6-3c75-5931-9aa7-f08d1be1c987</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="X_MCU">
+      <value>MCU/RF NOT CAPTURED; proposed signals NO GPIO numbering</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PWR" part="CC1352_MCU_RF_BOUNDARY" description=""/>
+      <property name="Sheetname" value="power-service"/>
+      <property name="Sheetfile" value="power-service.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ecbd2555-dc22-5202-9799-4a950d2eb2af</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="PWR" part="AT25SF161B_MHB">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AT25SF161B_MHB</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="CS_N" type="input"/>
+        <pin num="2" name="SO" type="tri_state"/>
+        <pin num="3" name="WP_N" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="SI" type="input"/>
+        <pin num="6" name="SCK" type="input"/>
+        <pin num="7" name="HOLD_N" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+        <pin num="9" name="EP_NOT_ELECTRICALLY_CONNECTED" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="C">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="CC1352_MCU_RF_BOUNDARY">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CC1352_MCU_RF_BOUNDARY</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SYS_3V3" type="power_in"/>
+        <pin num="2" name="GND_USB" type="power_in"/>
+        <pin num="3" name="MCU_DMX_TX" type="output"/>
+        <pin num="4" name="MCU_DMX_RX" type="input"/>
+        <pin num="5" name="MCU_DE_REQUEST" type="output"/>
+        <pin num="6" name="MCU_RE_N" type="output"/>
+        <pin num="7" name="MCU_ISO_REQUEST" type="output"/>
+        <pin num="8" name="SPI_CS_N" type="output"/>
+        <pin num="9" name="SPI_MOSI" type="output"/>
+        <pin num="10" name="SPI_SCK" type="output"/>
+        <pin num="11" name="SPI_MISO" type="input"/>
+        <pin num="12" name="VBUS_GOOD_3V3" type="input"/>
+        <pin num="13" name="SERVICE_N_DISTINCT_GPIO" type="input"/>
+        <pin num="14" name="ROM_BOOT_STRAP" type="input"/>
+        <pin num="15" name="RESET_OK" type="input"/>
+        <pin num="16" name="TMSC" type="bidirectional"/>
+        <pin num="17" name="TCKC" type="input"/>
+        <pin num="18" name="BUCK_PG" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="D">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">D</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="FACTORY_PADS">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">FACTORY_PADS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SYS_3V3" type="passive"/>
+        <pin num="2" name="GND_USB" type="passive"/>
+        <pin num="3" name="TMSC" type="passive"/>
+        <pin num="4" name="TCKC" type="passive"/>
+        <pin num="5" name="MANUAL_RESET_N" type="passive"/>
+        <pin num="6" name="ROM_BOOT_STRAP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="ISOW1412_SHEET_BOUNDARY">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ISOW1412_SHEET_BOUNDARY</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SYS_3V3" type="power_in"/>
+        <pin num="2" name="GND_USB" type="power_in"/>
+        <pin num="3" name="MCU_DMX_TX" type="input"/>
+        <pin num="4" name="DMX_DE_SAFE" type="input"/>
+        <pin num="5" name="MCU_RE_N" type="input"/>
+        <pin num="6" name="MCU_DMX_RX" type="output"/>
+        <pin num="7" name="DMX_POWER_EN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="L">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="R">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="SN74LVC1G04DCK">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC1G04DCK</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="A" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="Y" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="SN74LVC1G74DCU">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC1G74DCU</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="CLK" type="input"/>
+        <pin num="2" name="D" type="input"/>
+        <pin num="3" name="Q_N" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="Q" type="output"/>
+        <pin num="6" name="CLR_N" type="input"/>
+        <pin num="7" name="PRE_N" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="SN74LVC2G08DCU">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC2G08DCU</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1A" type="input"/>
+        <pin num="2" name="1B" type="input"/>
+        <pin num="3" name="2Y" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="2A" type="input"/>
+        <pin num="6" name="2B" type="input"/>
+        <pin num="7" name="1Y" type="output"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="SN74LVC2G32DCU">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC2G32DCU</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1A" type="input"/>
+        <pin num="2" name="1B" type="input"/>
+        <pin num="3" name="2Y" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="2A" type="input"/>
+        <pin num="6" name="2B" type="input"/>
+        <pin num="7" name="1Y" type="output"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="SW_NO">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SW_NO</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="TLV3012BDCK">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV3012BDCK</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="output"/>
+        <pin num="2" name="V_MINUS" type="power_in"/>
+        <pin num="3" name="IN_PLUS" type="input"/>
+        <pin num="4" name="IN_MINUS" type="input"/>
+        <pin num="5" name="REF" type="output"/>
+        <pin num="6" name="V_PLUS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="TPS2116DRL">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS2116DRL</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VOUT" type="power_out"/>
+        <pin num="3" name="VIN1" type="power_in"/>
+        <pin num="4" name="PR1" type="input"/>
+        <pin num="5" name="MODE" type="input"/>
+        <pin num="6" name="VIN2" type="power_in"/>
+        <pin num="7" name="VOUT" type="passive"/>
+        <pin num="8" name="ST" type="open_collector"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="TPS2553DBV">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS2553DBV</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="FAULT_N" type="open_collector"/>
+        <pin num="5" name="ILIM" type="output"/>
+        <pin num="6" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="TPS3700DDC">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3700DDC</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUTA" type="open_collector"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="INA_PLUS" type="input"/>
+        <pin num="4" name="INB_MINUS" type="input"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="OUTB" type="open_collector"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="TPS3831DQN">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3831DQN</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="RESET_N" type="output"/>
+        <pin num="2" name="MR_N" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="EP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="TPS3839DBZ">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3839DBZ</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="RESET_N" type="output"/>
+        <pin num="3" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="TPS61094DSS">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS61094DSS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OSEL" type="input"/>
+        <pin num="2" name="MODE" type="input"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="VIN" type="power_in"/>
+        <pin num="5" name="SW" type="power_out"/>
+        <pin num="6" name="SUP" type="input"/>
+        <pin num="7" name="PGND" type="power_in"/>
+        <pin num="8" name="AGND" type="power_in"/>
+        <pin num="9" name="VOUT" type="power_out"/>
+        <pin num="10" name="VOUT" type="passive"/>
+        <pin num="11" name="ICHG" type="input"/>
+        <pin num="12" name="VCHG" type="input"/>
+        <pin num="13" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="TPS62132RGT">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS62132RGT</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SW" type="power_out"/>
+        <pin num="2" name="SW" type="passive"/>
+        <pin num="3" name="SW" type="passive"/>
+        <pin num="4" name="PG" type="open_collector"/>
+        <pin num="5" name="FB" type="input"/>
+        <pin num="6" name="AGND" type="power_in"/>
+        <pin num="7" name="FSW" type="input"/>
+        <pin num="8" name="DEF" type="input"/>
+        <pin num="9" name="SS_TR" type="input"/>
+        <pin num="10" name="AVIN" type="power_in"/>
+        <pin num="11" name="PVIN" type="power_in"/>
+        <pin num="12" name="PVIN" type="power_in"/>
+        <pin num="13" name="EN" type="input"/>
+        <pin num="14" name="VOS" type="input"/>
+        <pin num="15" name="PGND" type="power_in"/>
+        <pin num="16" name="PGND" type="power_in"/>
+        <pin num="17" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="TPS7A0225DBV">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS7A0225DBV</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="PWR" part="USB_C_POWER_ONLY_BOUNDARY">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">USB_C_POWER_ONLY_BOUNDARY</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="power_out"/>
+        <pin num="A2" name="UNUSED_DATA" type="passive"/>
+        <pin num="A3" name="UNUSED_DATA" type="passive"/>
+        <pin num="A4" name="VBUS" type="power_out"/>
+        <pin num="A5" name="CC1" type="passive"/>
+        <pin num="A6" name="UNUSED_DATA" type="passive"/>
+        <pin num="A7" name="UNUSED_DATA" type="passive"/>
+        <pin num="A8" name="UNUSED_DATA" type="passive"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A10" name="UNUSED_DATA" type="passive"/>
+        <pin num="A11" name="UNUSED_DATA" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B2" name="UNUSED_DATA" type="passive"/>
+        <pin num="B3" name="UNUSED_DATA" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="passive"/>
+        <pin num="B6" name="UNUSED_DATA" type="passive"/>
+        <pin num="B7" name="UNUSED_DATA" type="passive"/>
+        <pin num="B8" name="UNUSED_DATA" type="passive"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B10" name="UNUSED_DATA" type="passive"/>
+        <pin num="B11" name="UNUSED_DATA" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="PWR">
+      <uri>${KIPRJMOD}/power-service.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/AON_2V5" class="Default">
+      <node ref="C_AON_OUT" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_U10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_U11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_U12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_U13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_U14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_U15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_U8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_U9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_INPUT_FAULT" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_VBUS_PU" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U10" pin="5" pinfunction="VDD_5" pintype="power_in"/>
+      <node ref="U11" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="U12" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="U13" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="U14" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+      <node ref="U15" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="U7" pin="5" pinfunction="OUT_5" pintype="power_out"/>
+      <node ref="U8" pin="6" pinfunction="V_PLUS_6" pintype="power_in"/>
+      <node ref="U9" pin="3" pinfunction="VDD_3" pintype="power_in"/>
+    </net>
+    <net code="2" name="/AON_OK" class="Default">
+      <node ref="U12" pin="2" pinfunction="1B_2" pintype="input"/>
+      <node ref="U12" pin="6" pinfunction="2B_6" pintype="input"/>
+      <node ref="U15" pin="2" pinfunction="1B_2" pintype="input"/>
+      <node ref="U9" pin="2" pinfunction="RESET_N_2" pintype="output"/>
+    </net>
+    <net code="3" name="/AON_RAW" class="Default">
+      <node ref="C_AON_IN" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D_AON_BUF" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D_AON_USB" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="MODE_2" pintype="input"/>
+      <node ref="U7" pin="1" pinfunction="IN_1" pintype="power_in"/>
+      <node ref="U7" pin="3" pinfunction="EN_3" pintype="input"/>
+    </net>
+    <net code="4" name="/BACKUP_RAW" class="Default">
+      <node ref="C_BACKUP" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_BUCK_IN" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D_AON_BUF" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="VOUT_10" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="VOUT_9" pintype="power_out"/>
+      <node ref="U4" pin="10" pinfunction="AVIN_10" pintype="power_in"/>
+      <node ref="U4" pin="11" pinfunction="PVIN_11" pintype="power_in"/>
+      <node ref="U4" pin="12" pinfunction="PVIN_12" pintype="power_in"/>
+    </net>
+    <net code="5" name="/BOOST_SW" class="Default">
+      <node ref="L_BOOST" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="SW_5" pintype="power_out"/>
+    </net>
+    <net code="6" name="/BUCK_PG" class="Default">
+      <node ref="R_BUCK_PG" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="PG_4" pintype="open_collector"/>
+      <node ref="X_MCU" pin="18" pinfunction="BUCK_PG_18" pintype="input"/>
+    </net>
+    <net code="7" name="/BUCK_SS" class="Default">
+      <node ref="C_SS" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="9" pinfunction="SS_TR_9" pintype="input"/>
+    </net>
+    <net code="8" name="/BUCK_SW" class="Default">
+      <node ref="L_BUCK" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="SW_1" pintype="power_out"/>
+      <node ref="U4" pin="2" pinfunction="SW_2" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="SW_3" pintype="passive"/>
+    </net>
+    <net code="9" name="/CAP_OK" class="Default">
+      <node ref="U13" pin="1" pinfunction="1A_1" pintype="input"/>
+      <node ref="U8" pin="1" pinfunction="OUT_1" pintype="output"/>
+    </net>
+    <net code="10" name="/CAP_OR_VBUS" class="Default">
+      <node ref="U12" pin="5" pinfunction="2A_5" pintype="input"/>
+      <node ref="U13" pin="7" pinfunction="1Y_7" pintype="output"/>
+    </net>
+    <net code="11" name="/CAP_POS" class="Default">
+      <node ref="C_BUF" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="L_BOOST" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_CAP_TOP" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="SUP_6" pintype="input"/>
+    </net>
+    <net code="12" name="/CAP_REF" class="Default">
+      <node ref="C_REF" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U8" pin="4" pinfunction="IN_MINUS_4" pintype="input"/>
+      <node ref="U8" pin="5" pinfunction="REF_5" pintype="output"/>
+    </net>
+    <net code="13" name="/CAP_SENSE" class="Default">
+      <node ref="R_CAP_BOTTOM" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_CAP_TOP" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U8" pin="3" pinfunction="IN_PLUS_3" pintype="input"/>
+    </net>
+    <net code="14" name="/CC1" class="Default">
+      <node ref="J_USB" pin="A5" pinfunction="CC1_A5" pintype="passive"/>
+      <node ref="R_CC1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="15" name="/CC2" class="Default">
+      <node ref="J_USB" pin="B5" pinfunction="CC2_B5" pintype="passive"/>
+      <node ref="R_CC2" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="16" name="/DMX_DE_SAFE" class="Default">
+      <node ref="U17" pin="3" pinfunction="2Y_3" pintype="output"/>
+      <node ref="X_DMX" pin="4" pinfunction="DMX_DE_SAFE_4" pintype="input"/>
+    </net>
+    <net code="17" name="/DMX_POWER_EN" class="Default">
+      <node ref="U18" pin="7" pinfunction="1Y_7" pintype="output"/>
+      <node ref="X_DMX" pin="7" pinfunction="DMX_POWER_EN_7" pintype="input"/>
+    </net>
+    <net code="18" name="/FLASH_HOLD_N" class="Default">
+      <node ref="R_HOLD" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="HOLD_N_7" pintype="input"/>
+    </net>
+    <net code="19" name="/FLASH_WP_N" class="Default">
+      <node ref="R_WP" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="WP_N_3" pintype="input"/>
+    </net>
+    <net code="20" name="/GND_USB" class="Default">
+      <node ref="C_AON_IN" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_AON_OUT" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_BACKUP" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_BUCK_IN" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_BUF" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_FLASH" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_FLASH_BULK" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_IN" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_LIMIT" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_RAW" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_REF" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_SS" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_SYS" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_U10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_U11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_U12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_U13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_U14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_U15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_U16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_U17" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_U18" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_U19" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_U8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C_U9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J_FACTORY" pin="2" pinfunction="GND_USB_2" pintype="passive"/>
+      <node ref="J_USB" pin="A1" pinfunction="GND_A1" pintype="power_out"/>
+      <node ref="J_USB" pin="A12" pinfunction="GND_A12" pintype="passive"/>
+      <node ref="J_USB" pin="B1" pinfunction="GND_B1" pintype="passive"/>
+      <node ref="J_USB" pin="B12" pinfunction="GND_B12" pintype="passive"/>
+      <node ref="R_CAP_BOTTOM" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_CC1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_CC2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_DE" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_ICHG" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_ILIM" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_INPUT_BLEED" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_ISO" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_MOSI" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_OSEL" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_RUN_PD" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_SCK" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_VBUS_BOTTOM" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_VCHG" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="S_RESET" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="S_SERVICE" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U10" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U10" pin="4" pinfunction="INB_MINUS_4" pintype="input"/>
+      <node ref="U11" pin="1" pinfunction="CLK_1" pintype="input"/>
+      <node ref="U11" pin="2" pinfunction="D_2" pintype="input"/>
+      <node ref="U11" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U12" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U13" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U13" pin="5" pinfunction="2A_5" pintype="input"/>
+      <node ref="U13" pin="6" pinfunction="2B_6" pintype="input"/>
+      <node ref="U14" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U15" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U15" pin="5" pinfunction="2A_5" pintype="input"/>
+      <node ref="U15" pin="6" pinfunction="2B_6" pintype="input"/>
+      <node ref="U16" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U16" pin="5" pinfunction="EP_5" pintype="passive"/>
+      <node ref="U17" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U18" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U19" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U19" pin="6" pinfunction="VIN2_6" pintype="power_in"/>
+      <node ref="U2" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U2" pin="9" pinfunction="EP_NOT_ELECTRICALLY_CONNECTED_9" pintype="passive"/>
+      <node ref="U3" pin="13" pinfunction="EP_GND_13" pintype="power_in"/>
+      <node ref="U3" pin="7" pinfunction="PGND_7" pintype="power_in"/>
+      <node ref="U3" pin="8" pinfunction="AGND_8" pintype="power_in"/>
+      <node ref="U4" pin="15" pinfunction="PGND_15" pintype="power_in"/>
+      <node ref="U4" pin="16" pinfunction="PGND_16" pintype="power_in"/>
+      <node ref="U4" pin="17" pinfunction="EP_GND_17" pintype="power_in"/>
+      <node ref="U4" pin="5" pinfunction="FB_5" pintype="input"/>
+      <node ref="U4" pin="6" pinfunction="AGND_6" pintype="power_in"/>
+      <node ref="U4" pin="7" pinfunction="FSW_7" pintype="input"/>
+      <node ref="U4" pin="8" pinfunction="DEF_8" pintype="input"/>
+      <node ref="U6" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U7" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U8" pin="2" pinfunction="V_MINUS_2" pintype="power_in"/>
+      <node ref="U9" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="X_DMX" pin="2" pinfunction="GND_USB_2" pintype="power_in"/>
+      <node ref="X_MCU" pin="2" pinfunction="GND_USB_2" pintype="power_in"/>
+    </net>
+    <net code="21" name="/ICHG_SET" class="Default">
+      <node ref="R_ICHG" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="11" pinfunction="ICHG_11" pintype="input"/>
+    </net>
+    <net code="22" name="/ILIM_SET" class="Default">
+      <node ref="R_ILIM" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U6" pin="5" pinfunction="ILIM_5" pintype="output"/>
+    </net>
+    <net code="23" name="/INPUT_FAULT_N" class="Default">
+      <node ref="R_INPUT_FAULT" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U6" pin="4" pinfunction="FAULT_N_4" pintype="open_collector"/>
+    </net>
+    <net code="24" name="/LATCH_CLEAR_N" class="Default">
+      <node ref="U11" pin="6" pinfunction="CLR_N_6" pintype="input"/>
+      <node ref="U12" pin="3" pinfunction="2Y_3" pintype="output"/>
+    </net>
+    <net code="25" name="/LATCH_PRE_N" class="Default">
+      <node ref="U11" pin="7" pinfunction="PRE_N_7" pintype="input"/>
+      <node ref="U14" pin="4" pinfunction="Y_4" pintype="output"/>
+    </net>
+    <net code="26" name="/LIMITED_5V" class="Default">
+      <node ref="C_LIMIT" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_U19" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D_AON_USB" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U19" pin="3" pinfunction="VIN1_3" pintype="power_in"/>
+      <node ref="U19" pin="4" pinfunction="PR1_4" pintype="input"/>
+      <node ref="U19" pin="5" pinfunction="MODE_5" pintype="input"/>
+      <node ref="U6" pin="6" pinfunction="OUT_6" pintype="power_out"/>
+    </net>
+    <net code="27" name="/MANUAL_RESET_N" class="Default">
+      <node ref="J_FACTORY" pin="5" pinfunction="MANUAL_RESET_N_5" pintype="passive"/>
+      <node ref="R_MR" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="S_RESET" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U16" pin="2" pinfunction="MR_N_2" pintype="input"/>
+    </net>
+    <net code="28" name="/MCU_DE_REQUEST" class="Default">
+      <node ref="R_DE" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U17" pin="5" pinfunction="2A_5" pintype="input"/>
+      <node ref="X_MCU" pin="5" pinfunction="MCU_DE_REQUEST_5" pintype="output"/>
+    </net>
+    <net code="29" name="/MCU_DMX_RX" class="Default">
+      <node ref="X_DMX" pin="6" pinfunction="MCU_DMX_RX_6" pintype="output"/>
+      <node ref="X_MCU" pin="4" pinfunction="MCU_DMX_RX_4" pintype="input"/>
+    </net>
+    <net code="30" name="/MCU_DMX_TX" class="Default">
+      <node ref="X_DMX" pin="3" pinfunction="MCU_DMX_TX_3" pintype="input"/>
+      <node ref="X_MCU" pin="3" pinfunction="MCU_DMX_TX_3" pintype="output"/>
+    </net>
+    <net code="31" name="/MCU_ISO_REQUEST" class="Default">
+      <node ref="R_ISO" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U18" pin="1" pinfunction="1A_1" pintype="input"/>
+      <node ref="X_MCU" pin="7" pinfunction="MCU_ISO_REQUEST_7" pintype="output"/>
+    </net>
+    <net code="32" name="/MCU_RE_N" class="Default">
+      <node ref="R_RE" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="X_DMX" pin="5" pinfunction="MCU_RE_N_5" pintype="input"/>
+      <node ref="X_MCU" pin="6" pinfunction="MCU_RE_N_6" pintype="output"/>
+    </net>
+    <net code="33" name="/NORMAL_IN" class="Default">
+      <node ref="C_IN" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_INPUT_BLEED" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_VBUS_TOP" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U19" pin="2" pinfunction="VOUT_2" pintype="power_out"/>
+      <node ref="U19" pin="7" pinfunction="VOUT_7" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="VIN_4" pintype="power_in"/>
+    </net>
+    <net code="34" name="/OSEL_SET" class="Default">
+      <node ref="R_OSEL" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="OSEL_1" pintype="input"/>
+    </net>
+    <net code="35" name="/REARM" class="Default">
+      <node ref="U12" pin="7" pinfunction="1Y_7" pintype="output"/>
+      <node ref="U14" pin="2" pinfunction="A_2" pintype="input"/>
+    </net>
+    <net code="36" name="/RESET_OK" class="Default">
+      <node ref="U16" pin="1" pinfunction="RESET_N_1" pintype="output"/>
+      <node ref="U17" pin="2" pinfunction="1B_2" pintype="input"/>
+      <node ref="X_MCU" pin="15" pinfunction="RESET_OK_15" pintype="input"/>
+    </net>
+    <net code="37" name="/ROM_BOOT_STRAP" class="Default">
+      <node ref="J_FACTORY" pin="6" pinfunction="ROM_BOOT_STRAP_6" pintype="passive"/>
+      <node ref="R_ROM" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="X_MCU" pin="14" pinfunction="ROM_BOOT_STRAP_14" pintype="input"/>
+    </net>
+    <net code="38" name="/RUN" class="Default">
+      <node ref="R_RUN_PD" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U15" pin="7" pinfunction="1Y_7" pintype="output"/>
+      <node ref="U17" pin="1" pinfunction="1A_1" pintype="input"/>
+      <node ref="U3" pin="3" pinfunction="EN_3" pintype="input"/>
+      <node ref="U4" pin="13" pinfunction="EN_13" pintype="input"/>
+    </net>
+    <net code="39" name="/RUN_Q" class="Default">
+      <node ref="U11" pin="5" pinfunction="Q_5" pintype="output"/>
+      <node ref="U15" pin="1" pinfunction="1A_1" pintype="input"/>
+    </net>
+    <net code="40" name="/SERVICE_N_DISTINCT_GPIO" class="Default">
+      <node ref="R_SERVICE" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="S_SERVICE" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="X_MCU" pin="13" pinfunction="SERVICE_N_DISTINCT_GPIO_13" pintype="input"/>
+    </net>
+    <net code="41" name="/SPI_CS_N" class="Default">
+      <node ref="R_CS" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="CS_N_1" pintype="input"/>
+      <node ref="X_MCU" pin="8" pinfunction="SPI_CS_N_8" pintype="output"/>
+    </net>
+    <net code="42" name="/SPI_MISO" class="Default">
+      <node ref="U2" pin="2" pinfunction="SO_2" pintype="tri_state"/>
+      <node ref="X_MCU" pin="11" pinfunction="SPI_MISO_11" pintype="input"/>
+    </net>
+    <net code="43" name="/SPI_MOSI" class="Default">
+      <node ref="R_MOSI" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="SI_5" pintype="input"/>
+      <node ref="X_MCU" pin="9" pinfunction="SPI_MOSI_9" pintype="output"/>
+    </net>
+    <net code="44" name="/SPI_SCK" class="Default">
+      <node ref="R_SCK" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="SCK_6" pintype="input"/>
+      <node ref="X_MCU" pin="10" pinfunction="SPI_SCK_10" pintype="output"/>
+    </net>
+    <net code="45" name="/SYS_3V3" class="Default">
+      <node ref="C_FLASH" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_FLASH_BULK" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_SYS" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_U16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_U17" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C_U18" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J_FACTORY" pin="1" pinfunction="SYS_3V3_1" pintype="passive"/>
+      <node ref="L_BUCK" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R_BUCK_PG" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_CS" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_HOLD" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_MR" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_RE" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_ROM" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_SERVICE" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_WP" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U16" pin="4" pinfunction="VDD_4" pintype="power_in"/>
+      <node ref="U17" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="U18" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="U4" pin="14" pinfunction="VOS_14" pintype="input"/>
+      <node ref="X_DMX" pin="1" pinfunction="SYS_3V3_1" pintype="power_in"/>
+      <node ref="X_MCU" pin="1" pinfunction="SYS_3V3_1" pintype="power_in"/>
+    </net>
+    <net code="46" name="/SYS_READY" class="Default">
+      <node ref="U17" pin="6" pinfunction="2B_6" pintype="input"/>
+      <node ref="U17" pin="7" pinfunction="1Y_7" pintype="output"/>
+      <node ref="U18" pin="2" pinfunction="1B_2" pintype="input"/>
+      <node ref="U18" pin="6" pinfunction="2B_6" pintype="input"/>
+    </net>
+    <net code="47" name="/TCKC" class="Default">
+      <node ref="J_FACTORY" pin="4" pinfunction="TCKC_4" pintype="passive"/>
+      <node ref="X_MCU" pin="17" pinfunction="TCKC_17" pintype="input"/>
+    </net>
+    <net code="48" name="/TMSC" class="Default">
+      <node ref="J_FACTORY" pin="3" pinfunction="TMSC_3" pintype="passive"/>
+      <node ref="X_MCU" pin="16" pinfunction="TMSC_16" pintype="bidirectional"/>
+    </net>
+    <net code="49" name="/VBUS_GOOD_3V3" class="Default">
+      <node ref="U18" pin="3" pinfunction="2Y_3" pintype="output"/>
+      <node ref="X_MCU" pin="12" pinfunction="VBUS_GOOD_3V3_12" pintype="input"/>
+    </net>
+    <net code="50" name="/VBUS_OK" class="Default">
+      <node ref="R_VBUS_PU" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U10" pin="1" pinfunction="OUTA_1" pintype="open_collector"/>
+      <node ref="U12" pin="1" pinfunction="1A_1" pintype="input"/>
+      <node ref="U13" pin="2" pinfunction="1B_2" pintype="input"/>
+      <node ref="U18" pin="5" pinfunction="2A_5" pintype="input"/>
+    </net>
+    <net code="51" name="/VBUS_RAW" class="Default">
+      <node ref="C_RAW" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J_USB" pin="A4" pinfunction="VBUS_A4" pintype="power_out"/>
+      <node ref="J_USB" pin="A9" pinfunction="VBUS_A9" pintype="passive"/>
+      <node ref="J_USB" pin="B4" pinfunction="VBUS_B4" pintype="passive"/>
+      <node ref="J_USB" pin="B9" pinfunction="VBUS_B9" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="IN_1" pintype="power_in"/>
+      <node ref="U6" pin="3" pinfunction="EN_3" pintype="input"/>
+    </net>
+    <net code="52" name="/VBUS_SENSE" class="Default">
+      <node ref="R_VBUS_BOTTOM" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R_VBUS_TOP" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U10" pin="3" pinfunction="INA_PLUS_3" pintype="input"/>
+    </net>
+    <net code="53" name="/VCHG_SET" class="Default">
+      <node ref="R_VCHG" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="12" pinfunction="VCHG_12" pintype="input"/>
+    </net>
+    <net code="54" name="unconnected-(J_USB-UNUSED_DATA-PadA2)" class="Default">
+      <node ref="J_USB" pin="A2" pinfunction="UNUSED_DATA_A2" pintype="passive+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(J_USB-UNUSED_DATA-PadA3)" class="Default">
+      <node ref="J_USB" pin="A3" pinfunction="UNUSED_DATA_A3" pintype="passive+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(J_USB-UNUSED_DATA-PadA6)" class="Default">
+      <node ref="J_USB" pin="A6" pinfunction="UNUSED_DATA_A6" pintype="passive+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(J_USB-UNUSED_DATA-PadA7)" class="Default">
+      <node ref="J_USB" pin="A7" pinfunction="UNUSED_DATA_A7" pintype="passive+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(J_USB-UNUSED_DATA-PadA8)" class="Default">
+      <node ref="J_USB" pin="A8" pinfunction="UNUSED_DATA_A8" pintype="passive+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(J_USB-UNUSED_DATA-PadA10)" class="Default">
+      <node ref="J_USB" pin="A10" pinfunction="UNUSED_DATA_A10" pintype="passive+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(J_USB-UNUSED_DATA-PadA11)" class="Default">
+      <node ref="J_USB" pin="A11" pinfunction="UNUSED_DATA_A11" pintype="passive+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(J_USB-UNUSED_DATA-PadB2)" class="Default">
+      <node ref="J_USB" pin="B2" pinfunction="UNUSED_DATA_B2" pintype="passive+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(J_USB-UNUSED_DATA-PadB3)" class="Default">
+      <node ref="J_USB" pin="B3" pinfunction="UNUSED_DATA_B3" pintype="passive+no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(J_USB-UNUSED_DATA-PadB6)" class="Default">
+      <node ref="J_USB" pin="B6" pinfunction="UNUSED_DATA_B6" pintype="passive+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(J_USB-UNUSED_DATA-PadB7)" class="Default">
+      <node ref="J_USB" pin="B7" pinfunction="UNUSED_DATA_B7" pintype="passive+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(J_USB-UNUSED_DATA-PadB8)" class="Default">
+      <node ref="J_USB" pin="B8" pinfunction="UNUSED_DATA_B8" pintype="passive+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(J_USB-UNUSED_DATA-PadB10)" class="Default">
+      <node ref="J_USB" pin="B10" pinfunction="UNUSED_DATA_B10" pintype="passive+no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(J_USB-UNUSED_DATA-PadB11)" class="Default">
+      <node ref="J_USB" pin="B11" pinfunction="UNUSED_DATA_B11" pintype="passive+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(U7-NC-Pad4)" class="Default">
+      <node ref="U7" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(U10-OUTB-Pad6)" class="Default">
+      <node ref="U10" pin="6" pinfunction="OUTB_6" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(U11-Q_N-Pad3)" class="Default">
+      <node ref="U11" pin="3" pinfunction="Q_N_3" pintype="output+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(U13-2Y-Pad3)" class="Default">
+      <node ref="U13" pin="3" pinfunction="2Y_3" pintype="output+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(U14-NC-Pad1)" class="Default">
+      <node ref="U14" pin="1" pinfunction="NC_1" pintype="no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(U15-2Y-Pad3)" class="Default">
+      <node ref="U15" pin="3" pinfunction="2Y_3" pintype="output+no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(U19-ST-Pad8)" class="Default">
+      <node ref="U19" pin="8" pinfunction="ST_8" pintype="open_collector+no_connect"/>
+    </net>
+  </nets>
+</export>

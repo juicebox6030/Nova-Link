@@ -1,0 +1,321 @@
+{
+  "revision": "PE-R1",
+  "verdict": "NOT ESTABLISHED: neither of two screened remedies has primary maximum bounds establishing USB<=5.5V or7V absolute-limit survival for the defined fault set; no new network captured",
+  "unchanged_S12_inventory_verified": 73,
+  "S12_receipt_sha256": "51393c2a663f8cc206af64d4d0aa09d541832f1a5ac542f7a93bc06f95e2e519",
+  "protected_snapshot_count": 1245,
+  "protected_exact_matches": 1235,
+  "external_deltas_not_accepted": [
+    {
+      "path": "hardware/compact-dmx/README.md",
+      "snapshot_sha256": "efdbd2254b05fef589def3bcdef142be356da1fee2eef8811de0df9efa00242a",
+      "current_sha256": "f9ae8055b7f484d031cf4eac26fefa05493f65252973e1ca3f10511cf1336a59"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/allocation-detail.step",
+      "snapshot_sha256": "3cab6a742e58d63848a10d1207bc7e6e542a8aa55d2fd0cd0fb57c29cbd9a07e",
+      "current_sha256": "91aa9242b47ff24737d2355faf8fe2ed46cde5d2d9dc174c50b27043caa48f22"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/allocation.20261023-145512.FCBak",
+      "snapshot_sha256": "57886eb70e256b9e5558cbfaaa7b87c502ff25151a65aef0d1ab8bb5944a0d75",
+      "current_sha256": null
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/allocation.FCStd",
+      "snapshot_sha256": "4a4384ec2e85bac06e68db2e97e2529046a6bfa3494b916863e7a6d71db7930a",
+      "current_sha256": "6338731592063d571ff70172fac136b019c557ba035acd8235b7fa5aa006d1c9"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/build.py",
+      "snapshot_sha256": "2f7961735a44bc6d92c48e1b6710fd2f04ab2e4dcdf216f70e4cf63d28ade97f",
+      "current_sha256": "0e188a629b1a5804c2b6c274cd53616bc1ec230595d228929a6ddfb3ec6b64a2"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/check.log",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "5e0ad02b346e296ceb64348dc8faaf6108af4c82e109c755c5b361e1d2a0b83f"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/check.py",
+      "snapshot_sha256": "76656808a293d0f4d13e48c172d8f6305147af787a3c00fbcaec9e9cea6a9e67",
+      "current_sha256": "0bc951b1447a87fbb2aee12e87f985c1832129f75d5f0f16e89d3c9431a0c127"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/inline-assembly.step",
+      "snapshot_sha256": "333b34a89d8e96823128cb3fa66a142ec5d7dcb58903658a6efd1051e4a42c7e",
+      "current_sha256": "fde5286b21f7a020ff92b665501798ee2e4016f730ff259c4bd7e76ef895b7cc"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/screen.py",
+      "snapshot_sha256": "287cf68ff647573a1392222bca53c3362a144fce54a1cea4de04378d61968b28",
+      "current_sha256": "928002fa32830c4d4d1e6dde723517f2feb7acda8bb75f2302ad95c8cc24000e"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/wire-paths.json",
+      "snapshot_sha256": "5bf2ae69adac95d971981b506181f04859c367dd6b39cdd5072de8df642a23dc",
+      "current_sha256": "0dfa388de8d6ef162eb115bcb7bc8939ddca4b7e599a987c3026aa473c8806d9"
+    }
+  ],
+  "requirements": {
+    "healthy_port_V": [
+      4.75,
+      5.5
+    ],
+    "healthy_upper_engineering_allocation_V": 5.304424430941883,
+    "normal_stress_A": 1.92,
+    "USB_VBUS_limit_plus_VCONN_aux_A": 2.2399999999999998,
+    "USB_fault_transient_above5p5_permitted_by_examined_sources": false,
+    "TPS25810_pin_absolute_limit_V": 7,
+    "pin_survival_proven": false,
+    "cold_socket_and_CC_preserved_by_no_circuit_change": true,
+    "reverse_blocking_preserved_by_no_circuit_change": true
+  },
+  "inherited_reference_window": {
+    "C_reference_tolerance_only_F": 0.00012,
+    "latest_static_trip_V": 5.476745480961925,
+    "charge_to5p5_C": 2.7905422845690353e-06,
+    "energy_to5p5_J": 1.531553620578826e-05,
+    "flat_assumed_current_A": 3.817635270541082,
+    "flat_model_deadline_s": 7.309609448818628e-07,
+    "not_an_instantaneous_current_or_C_guarantee": true
+  },
+  "window_sensitivity": [
+    {
+      "C_assumed_F": 6e-05,
+      "ceiling_V": 5.5,
+      "charge_headroom_C": 1.3952711422845177e-06,
+      "energy_headroom_J": 7.65776810289413e-06,
+      "deadline_at_assumed3p8176A_s": 3.654804724409314e-07,
+      "scope": "Conditional constant-current illustration only. 60/180uF sensitivity is not a capacitor guarantee. 7V is absolute stress, not allowed USB operation."
+    },
+    {
+      "C_assumed_F": 6e-05,
+      "ceiling_V": 7.0,
+      "charge_headroom_C": 9.139527114228452e-05,
+      "energy_headroom_J": 0.0005701577681028942,
+      "deadline_at_assumed3p8176A_s": 2.394028362204723e-05,
+      "scope": "Conditional constant-current illustration only. 60/180uF sensitivity is not a capacitor guarantee. 7V is absolute stress, not allowed USB operation."
+    },
+    {
+      "C_assumed_F": 0.00012,
+      "ceiling_V": 5.5,
+      "charge_headroom_C": 2.7905422845690353e-06,
+      "energy_headroom_J": 1.531553620578826e-05,
+      "deadline_at_assumed3p8176A_s": 7.309609448818628e-07,
+      "scope": "Conditional constant-current illustration only. 60/180uF sensitivity is not a capacitor guarantee. 7V is absolute stress, not allowed USB operation."
+    },
+    {
+      "C_assumed_F": 0.00012,
+      "ceiling_V": 7.0,
+      "charge_headroom_C": 0.00018279054228456903,
+      "energy_headroom_J": 0.0011403155362057884,
+      "deadline_at_assumed3p8176A_s": 4.788056724409446e-05,
+      "scope": "Conditional constant-current illustration only. 60/180uF sensitivity is not a capacitor guarantee. 7V is absolute stress, not allowed USB operation."
+    },
+    {
+      "C_assumed_F": 0.00018,
+      "ceiling_V": 5.5,
+      "charge_headroom_C": 4.185813426853553e-06,
+      "energy_headroom_J": 2.2973304308682394e-05,
+      "deadline_at_assumed3p8176A_s": 1.0964414173227943e-06,
+      "scope": "Conditional constant-current illustration only. 60/180uF sensitivity is not a capacitor guarantee. 7V is absolute stress, not allowed USB operation."
+    },
+    {
+      "C_assumed_F": 0.00018,
+      "ceiling_V": 7.0,
+      "charge_headroom_C": 0.0002741858134268536,
+      "energy_headroom_J": 0.0017104733043086825,
+      "deadline_at_assumed3p8176A_s": 7.18208508661417e-05,
+      "scope": "Conditional constant-current illustration only. 60/180uF sensitivity is not a capacitor guarantee. 7V is absolute stress, not allowed USB operation."
+    }
+  ],
+  "capacitor_only_examples": [
+    {
+      "assumed_response_s": 1e-06,
+      "C_required_only_for_flat3p8176A_F": 0.00016416745770103254,
+      "scope": "No ESR/ESL/inductor/continued source or aging allowance. Does not establish an implementable remedy."
+    },
+    {
+      "assumed_response_s": 5e-06,
+      "C_required_only_for_flat3p8176A_F": 0.0008208372885051628,
+      "scope": "No ESR/ESL/inductor/continued source or aging allowance. Does not establish an implementable remedy."
+    },
+    {
+      "assumed_response_s": 2e-05,
+      "C_required_only_for_flat3p8176A_F": 0.0032833491540206513,
+      "scope": "No ESR/ESL/inductor/continued source or aging allowance. Does not establish an implementable remedy."
+    }
+  ],
+  "stored_inductor_examples": [
+    {
+      "L_assumed_H": 1.8e-06,
+      "I_assumed_A": 2.6379340942962926,
+      "E_J": 6.26282665726572e-06,
+      "V_if_entire_E_reaches120uF_start_at_latest_trip": 5.486266627454833,
+      "scope": "Conservative full transfer envelope; actual C4/U4 sharing is not modeled as an exact trajectory. None of these currents is a guaranteed fault ceiling."
+    },
+    {
+      "L_assumed_H": 1.8e-06,
+      "I_assumed_A": 6.5,
+      "E_J": 3.8025e-05,
+      "V_if_entire_E_reaches120uF_start_at_latest_trip": 5.534301316628582,
+      "scope": "Conservative full transfer envelope; actual C4/U4 sharing is not modeled as an exact trajectory. None of these currents is a guaranteed fault ceiling."
+    },
+    {
+      "L_assumed_H": 1.8e-06,
+      "I_assumed_A": 10.0,
+      "E_J": 9e-05,
+      "V_if_entire_E_reaches120uF_start_at_latest_trip": 5.612017557281593,
+      "scope": "Conservative full transfer envelope; actual C4/U4 sharing is not modeled as an exact trajectory. None of these currents is a guaranteed fault ceiling."
+    }
+  ],
+  "local_cap_energy_examples": {
+    "buck_input20uF_plus20percent_at12p59_J": 0.0019020971999999998,
+    "same_with_additional15percent_temp_allocation_J": 0.0021874117799999997,
+    "SAFE150uF_plus20percent_at_healthymax_J": 0.002532322668921581,
+    "scope": "Reference/allocated upper examples, not guaranteed life/temp/bias maxima. ESR minimum, local loopL and module internal C/peak-current waveform are unspecified. Upstream input caps can discharge through the failed buck independently of U1 trip."
+  },
+  "conditional_inductor_ramp_deadline_s": 6.224866571038223e-07,
+  "condition_for_ramp": "L1.2uH constant unsaturated, source12.59V, rail frozen at trip, initialI2.638A, no helpful load. Does not bound real saturation or direct VIN-output bridge.",
+  "fault_current_max_A": null,
+  "fault_isolation_max_s": null,
+  "L_after_saturation_min_H": null,
+  "module_internal_C_max_F": null,
+  "MLCC_or_polymer_ESR_min_ohm": null,
+  "remedies": [
+    {
+      "parts_screened": [
+        "LT4363IDE-1#PBF",
+        "CSD17577Q3A"
+      ],
+      "arrangement": "Additional active series clamp/current-limit in SAFE5 before U3; retain U4 true reverse blocking. VCC from FPC12, not clamped output. Not captured.",
+      "published_reference_test_V": [
+        1.25,
+        1.3
+      ],
+      "reference_test_condition": "VCC12V, GATE12V, OUT8V; full-temperature marked specification. Applying it at5.4V is optimistic, not a new guaranteed condition.",
+      "ideal_gain_lower_for_no_nuisance": 4.2435395447535065,
+      "ideal_gain_upper_for5p5": 4.230769230769231,
+      "earliest_possible_latest_clamp_if_min_above_healthymax_V": 5.516601408179559,
+      "unchanged_S12_DC_window": "FAIL even ideal divider/no FB bias under the retained50mV engineering allowance",
+      "published_tOFF_OV_max_s": 1e-06,
+      "tOFF_test_condition": "FB step0->1.5V, OUT0V,VCC12V; not a near-threshold5.4V ramp or total external-FET isolation deadline",
+      "published_gate_pull_down_min_A": 0.075,
+      "gate_test": "FB1.5V,GATE12V,OUT5V; cannot extend this current over the full turnoff trajectory/near-threshold condition",
+      "pass_FET_max_R25C_at10V_ohm": 0.0048,
+      "pass_FET_max_Qg_at10V_C": 3.5e-08,
+      "Qg_scope": "VDS15V,ID16A,TA25C; LT gate can reach16V over SNS, hot/full-trajectory Qg is not bounded by this35nC value. Qgd and switching times are typical only.",
+      "optional_shunt10mohm_limit_test_A": [
+        4.5,
+        5.5
+      ],
+      "optional_shunt20mohm_limit_test_A": [
+        2.25,
+        2.75
+      ],
+      "limit_scope": "LT steady test at VCC12V,OUT3..12V; not instantaneous or a guaranteed range at all actual source voltages. Resistor tolerance not included in these illustrative values.",
+      "allowed_added_R_ohm": 0.017262276447104857,
+      "conditional_port_with10m_shunt_and4p8m_FET_V": 4.754727570778441,
+      "conditional_port_with20m_shunt_alone_V": 4.744743570778441,
+      "static_retuning_could_change_window": true,
+      "retuning_closes_dynamic_gate": false,
+      "capture_permitted_by_max_energy_evidence": false
+    },
+    {
+      "parts_screened": [
+        "TL431BIDBZR",
+        "TS820-600B-TR"
+      ],
+      "arrangement": "Precision trigger with inverted gate drive fires SCR across SAFE5 after U4; existing U5/U4 interrupt persistent high pre-rail. Gate driver/pulse/holdoff not qualified and not captured.",
+      "reference25C_V": [
+        2.483,
+        2.507
+      ],
+      "max_reference_full_I_temp_deviation_V": 0.034,
+      "conservative_absolute_full_I_range_V": [
+        2.4490000000000003,
+        2.541
+      ],
+      "ideal_gain_lower_for_no_nuisance": 2.1659552596741047,
+      "ideal_gain_upper_for5p5": 2.1645021645021645,
+      "example_divider_ohm": [
+        1160,
+        1000
+      ],
+      "divider_initial_plus_TCR_fraction": 0.002,
+      "optimistic_trip25C_V": [
+        5.351781876247505,
+        5.431425071583166
+      ],
+      "optimistic_trip_full_I_temp_V": [
+        5.278499321357286,
+        5.507928947735471
+      ],
+      "reference_scope": "VKA=Vref,IKA10mA test, not every open-loop comparator/gate-driver bias. Iref25Cmax4uA plus full-temp deviation2.5uA used conservatively. Cathode-voltage/reference dependence and driver error add further requirements; not guaranteed application trips.",
+      "25C_static_window": "Fits optimistic reference/divider model only",
+      "full_I_temp_static_window": "Not established; conservative published envelope fails unchanged S12 non-nuisance and ceiling conditions",
+      "max_trigger_response_s": null,
+      "max_SCR_turnon_s": null,
+      "source_note": "TL431 comparator response curves typical; >10% reference overdrive guidance is not a maximum delay. TS820 specifies IGTmax200uA at25C,VD12V/RL140ohm, not a maximum turnon time at5.4V/fulltemp.",
+      "SCR_ratings": {
+        "I2t_A2s": 24.5,
+        "I2t_test": "10ms nonrepetitive, Tj25C; not a fuse clearing time or a hot/repetitive arbitrary-waveform grant",
+        "surge70A_test": "10ms, Tj25C",
+        "di_dt_A_per_us": 50,
+        "di_dt_test": "IG=2IGT, gate tr<=100ns, Tj125C",
+        "VTMmax_test": "1.6V at16A/380us,Tj25C",
+        "Vt0max_V": 0.85,
+        "Rdmax_ohm": 0.046,
+        "Ihold_max25C_A": 0.005,
+        "Ilatch_max25C_A": 0.006
+      },
+      "source_breaker_ceiling_A": 1.837374749498998,
+      "source1p8A_cannot_guarantee_breaker_trip": true,
+      "source_module_overload_power_ratio": [
+        1.15,
+        1.6
+      ],
+      "not_module_peak_current_bound": true,
+      "SCR_thermal_examples": [
+        {
+          "assumed_I_A": 1.8,
+          "V_at_source_Vt0_Rd_model": 0.9328,
+          "on_loss_W": 1.6790399999999999,
+          "illustrative_rise_at70K_perW": 117.5328,
+          "I2t_at1ms_A2s": 0.0032400000000000003,
+          "scope": "Not a guaranteed application I/V/duration/temperature bound; source Vt0/Rd atTj125C,70K/W at specified0.5cm2 copper. No sealed-collar inference."
+        },
+        {
+          "assumed_I_A": 3.817635270541082,
+          "V_at_source_Vt0_Rd_model": 1.0256112224448897,
+          "on_loss_W": 3.9154095766683663,
+          "illustrative_rise_at70K_perW": 274.0786703667856,
+          "I2t_at1ms_A2s": 0.01457433905887928,
+          "scope": "Not a guaranteed application I/V/duration/temperature bound; source Vt0/Rd atTj125C,70K/W at specified0.5cm2 copper. No sealed-collar inference."
+        }
+      ],
+      "capture_permitted_by_max_energy_evidence": false
+    }
+  ],
+  "negative_checks": {
+    "20us_at_test_current_can_exceed5p5": true,
+    "even_misapplied1us_at_test_current_exceeds5p5": true,
+    "missing_Imax_does_not_become_a_testpoint_ceiling": true,
+    "missing_tmax_does_not_become_typical_delay": true,
+    "missing_Cmin_does_not_become120uF_reference": true,
+    "missing_ESRmax_does_not_become_zero": true,
+    "inductor_energy_cannot_be_silently_discarded": true,
+    "source1p8A_does_not_guarantee_U1trip": true,
+    "a6V_pin_survival_result_would_still_fail_USB": true,
+    "25C_TL_fit_is_not_full_I_temp_fit": true
+  },
+  "new_network_captured": false,
+  "actual_added_parts": 0,
+  "actual_added_body_or_land_area_mm2": 0,
+  "actual_changed_board_dimensions": null,
+  "hypothetical_network_area_height_BOM": "Not qualified or allocated; zero means no implemented change, not zero cost for a hypothetical remedy. Existing32x26/24x16 allocations remain unapproved.",
+  "provisional100nF_MPN": "TMK105B7104MV-FR remains unqualified exactly as S12; no substitution or source-qualification claim",
+  "no_hardware_tests": true,
+  "manufacturing_release": false
+}

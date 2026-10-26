@@ -1,0 +1,650 @@
+{
+  "sha256": {
+    "dmx-interface.net": "80d915e33ee952604196789de514fcfda04863e59e6cd0776f08105ac31223a9",
+    "dmx-interface.kicad_sch": "ac4c59ab9f2d90d1025440bf59c3b9eafa1977e34f52411775b0b099e1c78b5e",
+    "footprints/NOVA_HW.pretty/TI_CAPC1005_Vector.kicad_mod": "ec83f10842174d609556a2112a781cf70529f865e0e12b71d9bb329ccfc76ac0",
+    "footprints/NOVA_HW.pretty/Murata_GRM21_Reflow.kicad_mod": "48afcf8985ddc51b815da206f54d12c62f1f6a8ac8e96fdbd723066380140875",
+    "footprints/NOVA_HW.pretty/Vishay_CRCW0402.kicad_mod": "1587fb889e0829e1d105a186e9265e73d5b701dbd75a423152020f58dac0faa4",
+    "footprints/NOVA_HW.pretty/Vishay_CRCW1206.kicad_mod": "616c2f45ecfd52c96585bf8785ba7a969bb614814345a22f554551891fdcb64e",
+    "footprints/NOVA_HW.pretty/PCM12_PENDING_MANUFACTURER_LAND_RECHECK.kicad_mod": "5692941cbe285a8fa8786aa2639923ab98dd260ed73417513cbbbf637de7f03f",
+    "footprints/NOVA_HW.pretty/TI_DFM0020A.kicad_mod": "d4a0b684255bf69a4916fc711bf5c0bb78a7a13414ac9f93d025f5af50f26c75",
+    "mcu-radio/mcu-radio.net": "05041900d24dbee5756dc953ab05a1eeadd24721db5f55aaad82caa18008e4bf",
+    "mcu-radio/mcu-radio.kicad_sch": "b5ffbf5e82f69581f7d4035211a068db630eaae874adcc1a13663ea1057424d4",
+    "footprints/NOVA_HW.pretty/Johanson_0900AD47_IsolatedLands.kicad_mod": "2682e405e4da8cb793f225486a6239a7f3014f3466bc907b948fcb2291d44e9c",
+    "footprints/NOVA_HW.pretty/TI_CAPC1608_Vector.kicad_mod": "f7a81b68db20a798b39b17df634ee404566b78bb673eb46e745c4f377493099d",
+    "footprints/NOVA_HW.pretty/TI_CAPC0603_Vector.kicad_mod": "7796ed2eb90ee93edac10c77534722d62475342f98eea80745c67b82259945f9",
+    "footprints/NOVA_HW.pretty/Murata_GJM155_Manufacturer.kicad_mod": "435344a45471ef2315c61a96299b397332e4f8ed061f2801df7420db510c09b4",
+    "footprints/NOVA_HW.pretty/TI_BLM18_Vector.kicad_mod": "fa6515dffbb7f74ebe875588851f289916f62eb954afe9a98568e41a0e26911e",
+    "footprints/NOVA_HW.pretty/TI_MLZ2012_Vector.kicad_mod": "e5d4a5e0686ea6673ceb333e778629f8b4eb93a1b53666fd6ccb779a754acf12",
+    "footprints/NOVA_HW.pretty/Coilcraft_0402HP_Manufacturer.kicad_mod": "da21fcae7ebba24834ea573f067a3a1bf5bd53f60e7c8524933adf14b033d182",
+    "footprints/NOVA_HW.pretty/TI_IPC1352_Vector.kicad_mod": "4de41e6ea730ec727ad061cf50f901bf2ddad5eed0108a098c0ccc9e8c512087",
+    "footprints/NOVA_HW.pretty/TI_RGZ0048A.kicad_mod": "fdaac50d3810eaca7d84dbb56a815976773fd311e905d673a0ee5e24b651063b",
+    "footprints/NOVA_HW.pretty/Epson_FC135_Manufacturer.kicad_mod": "d1f3ecb91476ea8d8bb1ca12fea092000c1a10dc20be89ad51a62e244e24230e",
+    "footprints/NOVA_HW.pretty/NDK_NX2016SA_Manufacturer.kicad_mod": "cafeae178db07ad27def7e48cc068b98e58e922273ab343c4efef1a31926ee25"
+  },
+  "stable_export_sha256": {
+    "dmx-interface.net": "9ea6364ee099018ce850fb2dc512b9b1b93cc53e277d2f773ed3bde95e986b3f",
+    "mcu-radio/mcu-radio.net": "0de8b4585bad6d758d5efc0fbd433645a06d03058bd82ccccad1f857cc1d0319"
+  },
+  "stable_export_rule": "XML parse/serialize; blank ONLY top-level design/date text; every other parsed field retained",
+  "assignments": {
+    "mcu-radio.A101": {
+      "footprint": "Johanson_0900AD47_IsolatedLands",
+      "value": "0900AD47A2450001E PROTOTYPE TUNING REQUIRED",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C101": {
+      "footprint": "TI_CAPC1608_Vector",
+      "value": "GRM188R60J226MEA0D 22uF",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C102": {
+      "footprint": "TI_CAPC1608_Vector",
+      "value": "GRM188R60J226MEA0D 22uF",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C103": {
+      "footprint": "TI_CAPC1005_Vector",
+      "value": "GRM155R61C105KA12D 1uF",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C104": {
+      "footprint": "TI_CAPC1005_Vector",
+      "value": "GRM155R71E104KE14D 100nF",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C105": {
+      "footprint": "TI_CAPC1005_Vector",
+      "value": "GRM155R71E104KE14D 100nF",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C106": {
+      "footprint": "TI_CAPC1005_Vector",
+      "value": "GRM155R71E104KE14D 100nF",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C107": {
+      "footprint": "TI_CAPC1005_Vector",
+      "value": "GRM155R71E104KE14D 100nF",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C108": {
+      "footprint": "TI_CAPC1005_Vector",
+      "value": "GRM155R71E104KE14D 100nF",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C109": {
+      "footprint": "TI_CAPC1005_Vector",
+      "value": "GRM155R71E104KE14D 100nF",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C110": {
+      "footprint": "TI_CAPC1005_Vector",
+      "value": "GRM1555C1H120JA01D 12pF",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C111": {
+      "footprint": "TI_CAPC1005_Vector",
+      "value": "GRM1555C1H120JA01D 12pF",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C112": {
+      "footprint": "TI_CAPC0603_Vector",
+      "value": "GRM0335C1H101GA01D 100pF",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C113": {
+      "footprint": "TI_CAPC0603_Vector",
+      "value": "GRM0335C1H101GA01D 100pF",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.C115": {
+      "footprint": "Murata_GJM155_Manufacturer",
+      "value": "GJM1555C1H1R0BB01D 1.0pF TUNE",
+      "status": "SOURCE_DIMENSIONED_MANUFACTURER_LAND_PROTOTYPE_RF_RETUNE"
+    },
+    "mcu-radio.C116": {
+      "footprint": "Murata_GJM155_Manufacturer",
+      "value": "GJM1555C1H8R2DB01D 8.2pF TUNE",
+      "status": "SOURCE_DIMENSIONED_MANUFACTURER_LAND_PROTOTYPE_RF_RETUNE"
+    },
+    "mcu-radio.FL101": {
+      "footprint": "TI_BLM18_Vector",
+      "value": "BLM18HE152SN1D",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.L101": {
+      "footprint": "TI_MLZ2012_Vector",
+      "value": "MLZ2012N6R8LT000 6.8uH",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.L102": {
+      "footprint": "Coilcraft_0402HP_Manufacturer",
+      "value": "0402HP-2N7XGRW 2.7nH TUNE",
+      "status": "SOURCE_DIMENSIONED_MANUFACTURER_LAND_PROTOTYPE_RF_RETUNE"
+    },
+    "mcu-radio.L103": {
+      "footprint": "Coilcraft_0402HP_Manufacturer",
+      "value": "0402HP-5N1XGRW 5.1nH TUNE",
+      "status": "SOURCE_DIMENSIONED_MANUFACTURER_LAND_PROTOTYPE_RF_RETUNE"
+    },
+    "mcu-radio.L104": {
+      "footprint": "Coilcraft_0402HP_Manufacturer",
+      "value": "0402HP-12NXGRW 12nH TUNE",
+      "status": "SOURCE_DIMENSIONED_MANUFACTURER_LAND_PROTOTYPE_RF_RETUNE"
+    },
+    "mcu-radio.TR101": {
+      "footprint": "TI_IPC1352_Vector",
+      "value": "0900PC15A0036001E",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.U1": {
+      "footprint": "TI_RGZ0048A",
+      "value": "CC1352R1F3RGZR",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.Y101": {
+      "footprint": "Epson_FC135_Manufacturer",
+      "value": "FC-135 32.7680KA-AG0",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "mcu-radio.Y102": {
+      "footprint": "NDK_NX2016SA_Manufacturer",
+      "value": "NX2016SA 48MHz EXS00A-CS05517",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "dmx.C1": {
+      "footprint": "TI_CAPC1005_Vector",
+      "value": "GRM155R71E104KE14D 100nF 25V X7R",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "dmx.C2": {
+      "footprint": "Murata_GRM21_Reflow",
+      "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "dmx.C3": {
+      "footprint": "TI_CAPC1005_Vector",
+      "value": "GRM155R71E104KE14D 100nF 25V X7R",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "dmx.C4": {
+      "footprint": "Murata_GRM21_Reflow",
+      "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "dmx.R1": {
+      "footprint": "Vishay_CRCW0402",
+      "value": "CRCW040210K0FKED 10k 1%",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "dmx.R2": {
+      "footprint": "Vishay_CRCW0402",
+      "value": "CRCW040210K0FKED 10k 1%",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "dmx.R3": {
+      "footprint": "Vishay_CRCW0402",
+      "value": "CRCW040210K0FKED 10k 1%",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "dmx.R4": {
+      "footprint": "Vishay_CRCW0402",
+      "value": "CRCW04021K00FKED 1k 1%",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "dmx.R_TERM1": {
+      "footprint": "Vishay_CRCW1206",
+      "value": "CRCW1206240RFKEA 240R 1% 0.25W",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "dmx.R_TERM2": {
+      "footprint": "Vishay_CRCW1206",
+      "value": "CRCW1206240RFKEA 240R 1% 0.25W",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    },
+    "dmx.S_TERM": {
+      "footprint": "PCM12_PENDING_MANUFACTURER_LAND_RECHECK",
+      "value": "PCM12SMTR OFF=1-2 / ON=2-3",
+      "status": "PARENT_OWNS_SWITCH_VISUAL_CHECK_LIFECYCLE_UNVERIFIED"
+    },
+    "dmx.U5": {
+      "footprint": "TI_DFM0020A",
+      "value": "ISOW1412DFMR",
+      "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+    }
+  },
+  "positions_mm": {
+    "U5": [
+      18,
+      36,
+      90
+    ],
+    "S_TERM": [
+      18,
+      26.6,
+      180
+    ],
+    "R_TERM1": [
+      6.5,
+      32.2,
+      90
+    ],
+    "R_TERM2": [
+      9.2,
+      32.2,
+      90
+    ],
+    "C3": [
+      25,
+      28,
+      90
+    ],
+    "C4": [
+      11.8,
+      26.4,
+      90
+    ],
+    "C1": [
+      18,
+      44,
+      0
+    ],
+    "C2": [
+      22,
+      44.5,
+      0
+    ],
+    "R1": [
+      12,
+      44,
+      90
+    ],
+    "R2": [
+      15,
+      44,
+      90
+    ],
+    "R3": [
+      27,
+      43,
+      90
+    ],
+    "R4": [
+      25,
+      46,
+      90
+    ],
+    "U1": [
+      67,
+      33,
+      180
+    ],
+    "TR101": [
+      73,
+      34.5,
+      -90
+    ],
+    "A101": [
+      91.6,
+      37,
+      -90
+    ],
+    "Y101": [
+      74,
+      30,
+      90
+    ],
+    "Y102": [
+      65,
+      26,
+      0
+    ],
+    "FL101": [
+      60,
+      42,
+      0
+    ],
+    "L101": [
+      66,
+      41,
+      0
+    ],
+    "C101": [
+      60,
+      45,
+      0
+    ],
+    "C102": [
+      66,
+      44,
+      0
+    ],
+    "C103": [
+      71,
+      40,
+      90
+    ],
+    "C104": [
+      70,
+      38.3,
+      0
+    ],
+    "C105": [
+      62,
+      37.5,
+      90
+    ],
+    "C106": [
+      65,
+      28,
+      0
+    ],
+    "C107": [
+      62,
+      30,
+      90
+    ],
+    "C108": [
+      67.5,
+      27.6,
+      0
+    ],
+    "C109": [
+      69.8,
+      27.6,
+      0
+    ],
+    "C110": [
+      76,
+      29,
+      90
+    ],
+    "C111": [
+      76,
+      32,
+      90
+    ],
+    "C112": [
+      77,
+      37,
+      0
+    ],
+    "C113": [
+      75,
+      38,
+      90
+    ],
+    "L102": [
+      82,
+      32.6,
+      0
+    ],
+    "C115": [
+      82.6,
+      30.5,
+      90
+    ],
+    "L104": [
+      82,
+      41.4,
+      0
+    ],
+    "L103": [
+      79,
+      39,
+      90
+    ],
+    "C116": [
+      81,
+      39,
+      90
+    ]
+  },
+  "expected_pad_nets": {
+    "C1": {
+      "1": "SYS_3V3",
+      "2": "GND_USB"
+    },
+    "C2": {
+      "1": "SYS_3V3",
+      "2": "GND_USB"
+    },
+    "C3": {
+      "1": "ISO_3V3",
+      "2": "GND_ISO"
+    },
+    "C4": {
+      "1": "ISO_3V3",
+      "2": "GND_ISO"
+    },
+    "R1": {
+      "1": "DMX_DE_SAFE",
+      "2": "GND_USB"
+    },
+    "R2": {
+      "1": "SYS_3V3",
+      "2": "MCU_RE_N"
+    },
+    "R3": {
+      "1": "DMX_POWER_EN",
+      "2": "GND_USB"
+    },
+    "R4": {
+      "1": "DMX_POWER_EN",
+      "2": "ISOW_EN_PIN"
+    },
+    "R_TERM1": {
+      "1": "TERM_SW",
+      "2": "DMX_N"
+    },
+    "R_TERM2": {
+      "1": "TERM_SW",
+      "2": "DMX_N"
+    },
+    "S_TERM": {
+      "1": "dmx_unconnected-(S_TERM-Pad1)",
+      "2": "DMX_P",
+      "3": "TERM_SW"
+    },
+    "U5": {
+      "1": "SYS_3V3",
+      "2": "MCU_DMX_TX",
+      "3": "DMX_DE_SAFE",
+      "4": "MCU_DMX_RX",
+      "5": "MCU_RE_N",
+      "6": "GND_USB",
+      "7": "dmx_unconnected-(U5-OUT-Pad7)",
+      "8": "ISOW_EN_PIN",
+      "9": "SYS_3V3",
+      "10": "GND_USB",
+      "11": "GND_ISO",
+      "12": "ISO_3V3",
+      "13": "GND_ISO",
+      "14": "GND_ISO",
+      "15": "GND_ISO",
+      "16": "ISO_3V3",
+      "17": "DMX_P",
+      "18": "DMX_N",
+      "19": "DMX_N",
+      "20": "DMX_P"
+    },
+    "A101": {
+      "1": "ANT_2G4",
+      "8": "mcu-radio_unconnected-(A101-NC_LAND_MUST_SOLDER-Pad8)",
+      "2": "mcu-radio_unconnected-(A101-NC_LAND_MUST_SOLDER-Pad2)",
+      "7": "mcu-radio_unconnected-(A101-NC_LAND_MUST_SOLDER-Pad7)",
+      "3": "mcu-radio_unconnected-(A101-NC_LAND_MUST_SOLDER-Pad3)",
+      "6": "mcu-radio_unconnected-(A101-NC_LAND_MUST_SOLDER-Pad6)",
+      "4": "ANT_915",
+      "5": "mcu-radio_unconnected-(A101-NC_LAND_MUST_SOLDER-Pad5)"
+    },
+    "C101": {
+      "1": "MCU_VDDS",
+      "2": "GND_USB"
+    },
+    "C102": {
+      "1": "MCU_VDDR",
+      "2": "GND_USB"
+    },
+    "C103": {
+      "1": "DCOUPL",
+      "2": "GND_USB"
+    },
+    "C104": {
+      "1": "MCU_VDDS",
+      "2": "GND_USB"
+    },
+    "C105": {
+      "1": "MCU_VDDS",
+      "2": "GND_USB"
+    },
+    "C106": {
+      "1": "MCU_VDDS",
+      "2": "GND_USB"
+    },
+    "C107": {
+      "1": "MCU_VDDS",
+      "2": "GND_USB"
+    },
+    "C108": {
+      "1": "MCU_VDDR",
+      "2": "GND_USB"
+    },
+    "C109": {
+      "1": "MCU_VDDR",
+      "2": "GND_USB"
+    },
+    "C110": {
+      "1": "X32K_Q1",
+      "2": "GND_USB"
+    },
+    "C111": {
+      "1": "X32K_Q2",
+      "2": "GND_USB"
+    },
+    "C112": {
+      "1": "RF_915_UNBLOCKED",
+      "2": "RF_915_50"
+    },
+    "C113": {
+      "1": "RX_TX",
+      "2": "GND_USB"
+    },
+    "C115": {
+      "1": "ANT_2G4",
+      "2": "GND_USB"
+    },
+    "C116": {
+      "1": "RF_915_50",
+      "2": "GND_USB"
+    },
+    "FL101": {
+      "1": "MCU_VDDS",
+      "2": "SYS_3V3"
+    },
+    "L101": {
+      "1": "DCDC_SW",
+      "2": "MCU_VDDR"
+    },
+    "L102": {
+      "1": "RF_2G4_50",
+      "2": "ANT_2G4"
+    },
+    "L103": {
+      "1": "RF_915_50",
+      "2": "GND_USB"
+    },
+    "L104": {
+      "1": "RF_915_50",
+      "2": "ANT_915"
+    },
+    "TR101": {
+      "1": "RF_2G4_50",
+      "2": "GND_USB",
+      "3": "GND_USB",
+      "4": "RF_915_UNBLOCKED",
+      "5": "RX_TX",
+      "6": "RF_N_SUB_1GHZ",
+      "7": "RF_P_SUB_1GHZ",
+      "8": "RF_N_2_4GHZ",
+      "9": "RF_P_2_4GHZ",
+      "10": "GND_USB"
+    },
+    "U1": {
+      "1": "RF_P_2_4GHZ",
+      "13": "MCU_VDDS",
+      "25": "TCKC",
+      "37": "mcu-radio_unconnected-(U1-DIO_24-Pad37)",
+      "2": "RF_N_2_4GHZ",
+      "14": "SPI_MISO",
+      "26": "mcu-radio_unconnected-(U1-DIO_16-Pad26)",
+      "38": "mcu-radio_unconnected-(U1-DIO_25-Pad38)",
+      "3": "RF_P_SUB_1GHZ",
+      "15": "SPI_MOSI",
+      "27": "mcu-radio_unconnected-(U1-DIO_17-Pad27)",
+      "39": "mcu-radio_unconnected-(U1-DIO_26-Pad39)",
+      "4": "RF_N_SUB_1GHZ",
+      "16": "SPI_SCK",
+      "28": "mcu-radio_unconnected-(U1-DIO_18-Pad28)",
+      "40": "mcu-radio_unconnected-(U1-DIO_27-Pad40)",
+      "5": "RX_TX",
+      "17": "SPI_CS_N",
+      "29": "mcu-radio_unconnected-(U1-DIO_19-Pad29)",
+      "41": "mcu-radio_unconnected-(U1-DIO_28-Pad41)",
+      "6": "X32K_Q1",
+      "18": "MCU_DMX_RX",
+      "30": "mcu-radio_unconnected-(U1-DIO_20-Pad30)",
+      "42": "mcu-radio_unconnected-(U1-DIO_29-Pad42)",
+      "7": "X32K_Q2",
+      "19": "MCU_DMX_TX",
+      "31": "mcu-radio_unconnected-(U1-DIO_21-Pad31)",
+      "43": "mcu-radio_unconnected-(U1-DIO_30-Pad43)",
+      "8": "ROM_BOOT_STRAP",
+      "20": "VBUS_GOOD_3V3",
+      "32": "mcu-radio_unconnected-(U1-DIO_22-Pad32)",
+      "44": "MCU_VDDS",
+      "9": "SERVICE_N_DISTINCT_GPIO",
+      "21": "BUCK_PG",
+      "33": "DCDC_SW",
+      "45": "MCU_VDDR",
+      "10": "MCU_DE_REQUEST",
+      "22": "MCU_VDDS",
+      "34": "MCU_VDDS",
+      "46": "X48M_N",
+      "11": "MCU_ISO_REQUEST",
+      "23": "DCOUPL",
+      "35": "RESET_OK",
+      "47": "X48M_P",
+      "12": "MCU_RE_N",
+      "24": "TMSC",
+      "36": "mcu-radio_unconnected-(U1-DIO_23-Pad36)",
+      "48": "MCU_VDDR",
+      "49": "GND_USB"
+    },
+    "Y101": {
+      "1": "X32K_Q1",
+      "2": "X32K_Q2"
+    },
+    "Y102": {
+      "1": "X48M_P",
+      "2": "GND_USB",
+      "3": "X48M_N",
+      "4": "GND_USB"
+    }
+  },
+  "omitted_boundary_refs": {
+    "dmx": [
+      "J1",
+      "X1"
+    ],
+    "mcu-radio": [
+      "X101"
+    ]
+  },
+  "aliases": {
+    "DMX_TX": "MCU_DMX_TX",
+    "DMX_RX": "MCU_DMX_RX",
+    "DMX_RE_N": "MCU_RE_N"
+  }
+}

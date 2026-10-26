@@ -1,0 +1,38 @@
+[
+  {
+    "source_file": "sources/pc-mate-a-drawing.pdf",
+    "url": "https://www.neutrik.com/media/17077/download/NAC3FXXA-W-S.pdf?v=1",
+    "sha256": "2f632d42fb82758d53cddb44d51b967883f2db699d038d9b3696aefd983002f5",
+    "document_id": "20003815",
+    "drawing_date": "2022-06-21",
+    "drawing_model_id": "30008899",
+    "confidence": "Title block and dimensioned page visually inspected; no installed mating datum identified"
+  },
+  {
+    "source_file": "sources/pc-mate-b-drawing.pdf",
+    "url": "https://www.neutrik.com/media/17063/download/NAC3FXXB-W-S.pdf?v=1",
+    "sha256": "609af71a3bd0e94cbf9d2de683fc4149a69232f981d701b52e671629a70af069",
+    "document_id": "20003817",
+    "drawing_date": "2022-06-21",
+    "drawing_model_id": "30009234",
+    "confidence": "Title block and dimensioned page visually inspected; no installed mating datum identified"
+  },
+  {
+    "source_file": "sources/true1-mate-f-drawing.pdf",
+    "url": "https://www.neutrik.com/media/12872/download/st-nac3fx-w-top.PDF?v=1",
+    "sha256": "ada9dfa12ef7cad132d8636a306bd07306c0f67c8b9efb561e714d67b4c719c6",
+    "document_id": "ST-NAC3FX-W-TOP",
+    "drawing_date": "2018-05-03",
+    "drawing_model_id": null,
+    "confidence": "Title block and dimensioned page visually inspected; no installed mating datum identified"
+  },
+  {
+    "source_file": "sources/true1-mate-m-drawing.pdf",
+    "url": "https://www.neutrik.com/media/12878/download/st-nac3mx-w-top.PDF?v=1",
+    "sha256": "adf463538c7a5cd8b71274b1c260bb66cdaace8e99ac0313cb1dc346775988b7",
+    "document_id": "ST-NAC3MX-W-TOP",
+    "drawing_date": "2018-05-03",
+    "drawing_model_id": null,
+    "confidence": "Title block and dimensioned page visually inspected; no installed mating datum identified"
+  }
+]

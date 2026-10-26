@@ -1,0 +1,104 @@
+{
+  "status": "PASS enumerated saved geometry/source-bound screens; mains/process/assembly qualification UNMET",
+  "valid_assembly_objects": 54,
+  "STEP_solid_count": 54,
+  "STEP_native_mass_integration_delta_mm3": 0.37630804102809634,
+  "STEP_bidirectional_edge_sample_max_surface_gap_mm": 3.730626752746095e-08,
+  "STEP_screen_limit": "Each part volume delta < max(.001mm3,10ppm native volume); bidirectional edge-to-surface samples <1e-6mm, not a Hausdorff proof",
+  "all_pair_checks": 1431,
+  "explicit_same_net_volume_joints": [
+    [
+      "Land_V_PLUS_top",
+      "Trace_PLUS",
+      0.0349999999999988
+    ],
+    [
+      "Trace_PLUS",
+      "Secondary_PLUS_via_barrel",
+      0.030705702406956522
+    ],
+    [
+      "Pigtail_land_PLUS",
+      "Secondary_PLUS_via_barrel",
+      0.004535674393620194
+    ],
+    [
+      "Pigtail_land_PLUS",
+      "Wire_PLUS_conductor",
+      0.0072440346704789275
+    ],
+    [
+      "Trace_MINUS",
+      "Pigtail_land_MINUS",
+      0.05600000000000008
+    ],
+    [
+      "Trace_MINUS",
+      "Wire_MINUS_conductor",
+      0.0033378990675654347
+    ],
+    [
+      "Pigtail_land_MINUS",
+      "Wire_MINUS_conductor",
+      0.011297504536372701
+    ],
+    [
+      "Secondary_PLUS_via_barrel",
+      "Wire_PLUS_conductor",
+      0.0002600673702727038
+    ]
+  ],
+  "unexpected_volume_intersections": 0,
+  "floating_parts": [],
+  "mechanical_contact_graph_all_new_parts_reach_core": true,
+  "original_VPLUS_maxlead_trunk_intersection_mm3": 0.5890486225480877,
+  "parent_lift_with_065_standoff_min_projection_mm": 0.08000000000000002,
+  "protected_saved_core_trunk_endcaps_equal": true,
+  "protected_hashes_verified": 422,
+  "source_hashes_verified": 4,
+  "nominal_clearance_to_trunk_mm": {
+    "Pin_V_PLUS": 2.0,
+    "Pin_V_MINUS": 2.7586228448267445,
+    "IRM20_nominal_body": 5.5,
+    "Polyester_film_allocation": 0.09999999999999964,
+    "Custom_dielectric_sled_and_clamp_brackets": 0.22499999999999964
+  },
+  "vertical_corner_cases": 32,
+  "minimum_projection_below70um_bottom_copper_mm": 0.28000000000000114,
+  "worst_maxlead_tip_Z_mm": -13.700000000000001,
+  "worst_module_top_Z_mm": 15.7,
+  "bounded_lead_to_deck_gap_mm": 0.14999999999999858,
+  "bounded_film_to_trunk_gap_mm": 0.075,
+  "bounded_body_to_nominal_bore_gap_mm": 0.4645537247245457,
+  "conservative_pin_aperture_fit_cases": 32,
+  "pin_nominal_diameter_mm": 1,
+  "conservative_diameter_range_mm": [
+    0.5,
+    1.5
+  ],
+  "pin_to_land_solder_or_PTH_process": "UNMET; broad source drawing tolerance forces large mechanical apertures, no validated solder bridge",
+  "wire_choice": "Tensility30-02075 solid20AWG mPPE",
+  "wire_maxOD_mm": 1.6,
+  "source_min_bend_radius_mm": 9,
+  "formed_radius_prototype_allocation_mm": [
+    9,
+    9.1
+  ],
+  "common_XY_path_fixture_allocation_mm": 0.02,
+  "minimum_sleeve_inner_diameter_allowance_mm": 3.65,
+  "wire_sleeve_tolerance_samples": 51264,
+  "minimum_wire_to_sleeve_screen_mm": 0.011217183673043918,
+  "minimum_wire_to_source_max_body_sampled_gap_mm": 0.3453193818078464,
+  "wire_pair_jacket_contact_at_maxOD": true,
+  "wire_length_each_including_bare_mm": 57.06150082346221,
+  "wire_pair_R20_max_DCR_based_ohm": 0.00401712965797174,
+  "wire_pair_R80_engineering_ohm": 0.004964368831321476,
+  "wire_drop_at_3A_screen_V": 0.014893106493964428,
+  "wire_heat_at_3A_screen_W": 0.044679319481893284,
+  "no_ampacity_or_faultI2t_grant": true,
+  "complete_preformed_axial_insertion_collision_mm3": 3.950481464820314,
+  "assembly_method": "Wires must be fed/formed and split sleeve assembled after sled insertion; jig/motion/forming/pull/insulation proof UNMET",
+  "retention_force_thread_friction_material_qualified": false,
+  "manufacturer_5mm_bottom_10mm_surround_guide_compliance_proven": false,
+  "full_mains_design_or_manufacturing_release": false
+}

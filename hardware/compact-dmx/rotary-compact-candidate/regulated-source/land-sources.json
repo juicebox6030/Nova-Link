@@ -1,0 +1,182 @@
+{
+  "RPW10": {
+    "source": "TI RPW0010A example, TPS25947 PDF p73,4225183/A",
+    "height_max_mm": 1,
+    "body_max_mm": [
+      2.1,
+      2.1
+    ],
+    "courtyard_mm": [
+      2.9,
+      2.9
+    ],
+    "notes": "Two same-pin primitives form each corner L. No fictional exposed pin. Full paste shown; exact RPW p74 stencil/assembly process must be reviewed",
+    "read_only_origin": "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/RPW10.kicad_mod"
+  },
+  "R0402": {
+    "source": "Vishay28950 IPC7351 reflow0402: .55x.60 lands gap.40",
+    "height_max_mm": 0.4,
+    "body_max_mm": [
+      1.05,
+      0.55
+    ],
+    "courtyard_mm": [
+      2.0,
+      1.1
+    ],
+    "notes": "",
+    "read_only_origin": "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/R0402.kicad_mod"
+  },
+  "C0402": {
+    "source": "Murata GRM15 table2 reflow .4x.6 lands gap.4; selected from source ranges",
+    "height_max_mm": 0.6,
+    "body_max_mm": [
+      1.1,
+      0.6
+    ],
+    "courtyard_mm": [
+      1.7000000000000002,
+      1.1
+    ],
+    "notes": "",
+    "read_only_origin": "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/C0402.kicad_mod"
+  },
+  "C0805": {
+    "source": "hardware/compact-dmx/eda/footprints/NOVA_HW.pretty/Murata_GRM21_Reflow.kicad_mod",
+    "notes": "Exact read-only source footprint copied; file hash in manifest",
+    "height_max_mm": 1.35,
+    "read_only_origin": "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/C0805.kicad_mod",
+    "body_max_mm": [
+      2.1,
+      1.35
+    ],
+    "courtyard_mm": [
+      3.1,
+      1.8
+    ]
+  },
+  "RNM15": {
+    "source": "TI RNM0015A4222000B:15 actual pins,0.5pitch; irregular U pads; mask-definedpowerlands per example p40. Bridge assigned duplicate same net.",
+    "body_max_mm": [
+      2.6,
+      3.1
+    ],
+    "height_max_mm": 1,
+    "courtyard_mm": [
+      3.5,
+      4.0
+    ],
+    "assembly_gate": "Prototype lands/stencil/thermal vias require assembly approval. No paste reduction or thermal routing claim."
+  },
+  "RVC20": {
+    "source": "TI RVC0020A4219150B p37:20 peripheral pads +actualEP21; no invented disconnected thermal pad",
+    "body_max_mm": [
+      3.1,
+      4.1
+    ],
+    "height_max_mm": 0.8,
+    "courtyard_mm": [
+      3.9,
+      4.9
+    ],
+    "assembly_gate": "Prototype lands/stencil/thermal vias require assembly approval. No paste reduction or thermal routing claim."
+  },
+  "DPY2": {
+    "source": "TI DPY0002A example p28:0.7pitch0.3x0.5 lands; symmetric bidirectional ESD",
+    "body_max_mm": [
+      1.05,
+      0.65
+    ],
+    "height_max_mm": 0.45,
+    "courtyard_mm": [
+      1.6,
+      1.1
+    ],
+    "assembly_gate": "Prototype lands/stencil/thermal vias require assembly approval. No paste reduction or thermal routing claim."
+  },
+  "XFL4020": {
+    "source": "Coilcraft745-3 land0.98x3.4 INNERgap2.37,centerpitch3.35;body4.0+/-.3 height2.1mounted+0.13premountallocation",
+    "body_max_mm": [
+      4.3,
+      4.3
+    ],
+    "height_max_mm": 2.23,
+    "courtyard_mm": [
+      4.83,
+      4.8
+    ],
+    "assembly_gate": "Prototype lands/stencil/thermal vias require assembly approval. No paste reduction or thermal routing claim."
+  },
+  "T520D": {
+    "source": "DERIVED conservative reflowlands fromKEMETDcase7.3+/-.3x4.3+/-.3; terminalsS1.3+/-.3,F2.4+/-.1; not manufacturer-recommendedlandpattern. Positivepad1.",
+    "body_max_mm": [
+      7.6,
+      4.6
+    ],
+    "height_max_mm": 3.1,
+    "courtyard_mm": [
+      8.2,
+      5.1
+    ],
+    "assembly_gate": "Prototype lands/stencil/thermal vias require assembly approval. No paste reduction or thermal routing claim."
+  },
+  "C0603": {
+    "source": "DERIVED0603 assembly allocation for TI specifiedTMK107BBJ106MA-T;1.6x0.8nominal,0.1body allowance; land/process gate",
+    "body_max_mm": [
+      1.7,
+      0.9
+    ],
+    "height_max_mm": 0.9,
+    "courtyard_mm": [
+      2.95,
+      1.45
+    ],
+    "assembly_gate": "Prototype lands/stencil/thermal vias require assembly approval. No paste reduction or thermal routing claim."
+  },
+  "USB4105": {
+    "source": "GCTUSB4105B4 18Dec2023:16contacts/12solderlands, four0.6wideplatedslots,2x0.65NPTH;0.95+/-.15stake. Boardedgeorigin;mate+y.",
+    "body_max_mm": [
+      9.09,
+      7.65
+    ],
+    "height_max_mm": 3.46,
+    "courtyard_mm": [
+      10.14,
+      8.65
+    ],
+    "assembly_gate": "Prototype lands/stencil/thermal vias require assembly approval. No paste reduction or thermal routing claim.",
+    "body_local_bounds_mm": [
+      -4.545,
+      -5.48,
+      4.545,
+      2.17
+    ],
+    "edge_overhang_max_mm": 2.17
+  },
+  "FPC20": {
+    "source": "DERIVED bareboard/directsolderland8mm each,1mmgap;20mmribbon. No connectorMPN/stackqualification. External clamp/coverlay/strainrelief required.",
+    "body_max_mm": [
+      20,
+      2
+    ],
+    "height_max_mm": 0.3,
+    "courtyard_mm": [
+      20.5,
+      3.0
+    ],
+    "assembly_gate": "Prototype lands/stencil/thermal vias require assembly approval. No paste reduction or thermal routing claim."
+  },
+  "TP1": {
+    "source": "DERIVED1mm exposed fault testpad; no purchased component",
+    "body_max_mm": [
+      1,
+      1
+    ],
+    "height_max_mm": 0,
+    "courtyard_mm": [
+      1.5,
+      1.5
+    ],
+    "assembly_gate": "Prototype lands/stencil/thermal vias require assembly approval. No paste reduction or thermal routing claim."
+  }
+}

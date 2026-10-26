@@ -1,0 +1,63 @@
+{
+  "sources": [
+    {
+      "file": "hardware/compact-dmx/eda/source-cache/fc135-manufacturer.pdf",
+      "url": "https://download.epsondevice.com/td/pdf/app/FC-135_en.pdf",
+      "sha256": "2804107c86105c1d6f299d59c221ad3a6612936f2894479b7831ebb7860f43a9",
+      "bytes": 450783
+    },
+    {
+      "file": "hardware/compact-dmx/eda/source-cache/nx2016-dimensions.jpg",
+      "url": "https://www.ndk.com/en/products/upload/lineup/images/d_NX2016SA_en.jpg",
+      "sha256": "4b8dde0b08ec275b6cba359c8e94bf9dbe8adf07cb53ca6ea7e00fab77b07c2a",
+      "bytes": 98018
+    },
+    {
+      "file": "hardware/compact-dmx/eda/source-cache/nx2016.html",
+      "url": "https://www.ndk.com/en/products/lineup/crystal-unit/NX2016SA-standard.html",
+      "sha256": "a48d5576651641b24dda68f94bf3cb4bc23fc21591fc6be945bd506cd812a11f",
+      "bytes": 104741
+    },
+    {
+      "file": "hardware/compact-dmx/eda/source-cache/grm21-spec.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KE51-01.pdf",
+      "sha256": "e8432c7acfa982b24eb06dd145682f78051dc4649abbeb35bbca8646b1408e4f",
+      "bytes": 824601
+    },
+    {
+      "file": "hardware/compact-dmx/eda/source-cache/dcrcwe3.pdf",
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "sha256": "f3f8ad4a0e2962b809aa20273e80a0aedcd2a2c174a66024445e9b541a3996fd",
+      "bytes": 150402
+    },
+    {
+      "file": "hardware/compact-dmx/eda/source-cache/launchxl-r1/LAUNCHXL-CC1352R1.brd.alg",
+      "url": "TI employee E2E archive; see mcu-radio/dualband-source-evidence.json",
+      "sha256": "17ce9d9ebeddeae75b48a73b08f8b52a046254ebf6e4d01a1ddbfab7b7bfe904",
+      "bytes": 17165788
+    }
+  ],
+  "TI_Gerber_sources": "ti-vector-lands.json source_sha256",
+  "prior_source_ledgers": [
+    "source-evidence.json",
+    "../mcu-radio/dualband-source-evidence.json"
+  ],
+  "bounded_failures": [
+    {
+      "gap": "Johanson tuning MPN lands",
+      "approaches": [
+        "manufacturer pad-layout guidance page accessible via web but diagram link unavailable/local403",
+        "manufacturer catalog4860 local403; specificLRC/QSCF search no dimensioned result"
+      ],
+      "result": "provisionalTI0402pattern only; request supplier-specific land applicability at procurement; no contact made"
+    },
+    {
+      "gap": "PCM12 lifecycle",
+      "approaches": [
+        "primary manufacturer indexed search returns historicalguide and2025datasheet",
+        "official product page /de/products/switches/slide-switches/pcm/pcm12smtr only iframe via reader"
+      ],
+      "result": "Feb2026EOL report remains unconfirmed; not production-approved; parent owns drawingcheck"
+    }
+  ]
+}

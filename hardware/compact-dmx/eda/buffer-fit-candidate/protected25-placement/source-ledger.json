@@ -1,0 +1,18 @@
+{
+  "hardware/compact-dmx/eda/cell-protection-candidate/sources.json": {
+    "sha256": "b0e471650e2c013447fe49ae5231057df69930ad26dea8bdd7d9c0c86db67614",
+    "basis": "Read-only existing primary-source/part ledger; exact dimensions retained; no new supplier approval"
+  },
+  "hardware/compact-dmx/eda/cell-protection-candidate/land-sources.json": {
+    "sha256": "a39f772267eda70f0d03f505a57e410bc946ec3684f6ad88efb1ed439cc824f2",
+    "basis": "Read-only existing primary-source/part ledger; exact dimensions retained; no new supplier approval"
+  },
+  "hardware/compact-dmx/eda/cell-protection-candidate/component-ledger.csv": {
+    "sha256": "0cf7bc872aa139071301fe9b80953c4cc4ee6d8920de591ff659795ee575c92d",
+    "basis": "Read-only existing primary-source/part ledger; exact dimensions retained; no new supplier approval"
+  },
+  "hardware/compact-dmx/eda/buffer-fit-candidate/integrated25/sources.json": {
+    "sha256": "4400d13bd40e15698235d2225e69d261e9dab9065dab0fea6689bc9c32fc018e",
+    "basis": "Read-only existing primary-source/part ledger; exact dimensions retained; no new supplier approval"
+  }
+}

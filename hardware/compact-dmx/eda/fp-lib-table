@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "NOVA_HW") (type "KiCad") (uri "${KIPRJMOD}/footprints/NOVA_HW.pretty") (options "") (descr "Prototype source lands; see footprints/DESIGN.md gates")))

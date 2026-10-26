@@ -1,0 +1,249 @@
+{
+  "status": "FAIL integration acceptance",
+  "positive_volumes": [
+    {
+      "a": "Carrier61x32PlanningPlate",
+      "b": "N_TrunkToCarrier",
+      "kind": "newphysical",
+      "volume": 0.564064792717862,
+      "gap": 1.507288760336424e-14,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "FAIL unintended physical interference"
+    },
+    {
+      "a": "Carrier61x32PlanningPlate",
+      "b": "Pin_N",
+      "kind": "newphysical",
+      "volume": 1.256637061435919,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "UNMET carrier interface: required pin passage/pad construction not designed"
+    },
+    {
+      "a": "Carrier61x32PlanningPlate",
+      "b": "Pin_L",
+      "kind": "newphysical",
+      "volume": 1.256637061435919,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "UNMET carrier interface: required pin passage/pad construction not designed"
+    },
+    {
+      "a": "Carrier61x32PlanningPlate",
+      "b": "Pin_LVminus",
+      "kind": "newphysical",
+      "volume": 1.2566370614359197,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "UNMET carrier interface: required pin passage/pad construction not designed"
+    },
+    {
+      "a": "Carrier61x32PlanningPlate",
+      "b": "Pin_LVplus",
+      "kind": "newphysical",
+      "volume": 1.2566370614359197,
+      "gap": 4.440892098500626e-16,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "UNMET carrier interface: required pin passage/pad construction not designed"
+    },
+    {
+      "a": "Trunk_L",
+      "b": "L_TrunkToFuse",
+      "kind": "newphysical",
+      "volume": 14.963057928260259,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "intended electrical endpoint envelope; stripping/solder/terminal construction NOT qualified"
+    },
+    {
+      "a": "Trunk_N",
+      "b": "N_TrunkToCarrier",
+      "kind": "newphysical",
+      "volume": 15.01341189418721,
+      "gap": 7.944109290391274e-15,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "intended electrical endpoint envelope; stripping/solder/terminal construction NOT qualified"
+    },
+    {
+      "a": "L_FuseToCarrier",
+      "b": "N_TrunkToCarrier",
+      "kind": "newphysical",
+      "volume": 24.141856393773107,
+      "gap": 2.5121479338940403e-15,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "FAIL unintended physical interference"
+    },
+    {
+      "a": "L_FuseToCarrier",
+      "b": "Pin_L",
+      "kind": "newphysical",
+      "volume": 0.4545608283975592,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "intended electrical endpoint envelope; stripping/solder/terminal construction NOT qualified"
+    },
+    {
+      "a": "N_TrunkToCarrier",
+      "b": "Pin_N",
+      "kind": "newphysical",
+      "volume": 0.6987595067003465,
+      "gap": 2.5121479338940403e-15,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "intended electrical endpoint envelope; stripping/solder/terminal construction NOT qualified"
+    },
+    {
+      "a": "Pin_LVminus",
+      "b": "LV_minus_underCarrier",
+      "kind": "newphysical",
+      "volume": 0.694169289283094,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "intended electrical endpoint envelope; stripping/solder/terminal construction NOT qualified"
+    },
+    {
+      "a": "Pin_LVplus",
+      "b": "LV_plus_underCarrier",
+      "kind": "newphysical",
+      "volume": 0.6941692892830942,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "intended electrical endpoint envelope; stripping/solder/terminal construction NOT qualified"
+    },
+    {
+      "a": "LV_minus_toClamp",
+      "b": "COL_FixedEarPad0",
+      "kind": "new_vs_actual_collar",
+      "volume": 0.06276824535170629,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "FAIL unintended physical interference"
+    },
+    {
+      "a": "LV_minus_toClamp",
+      "b": "COL_FixedAdhesive",
+      "kind": "new_vs_actual_collar",
+      "volume": 0.0054113083383887026,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "FAIL unintended physical interference"
+    },
+    {
+      "a": "LV_minus_toClamp",
+      "b": "COL_FixedStiffener",
+      "kind": "new_vs_actual_collar",
+      "volume": 0.10783262450416392,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "FAIL unintended physical interference"
+    },
+    {
+      "a": "LV_minus_toClamp",
+      "b": "COL_FixedStaticTail",
+      "kind": "new_vs_actual_collar",
+      "volume": 0.0007616338402926,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "intended electrical endpoint envelope; stripping/solder/terminal construction NOT qualified"
+    },
+    {
+      "a": "LV_minus_toClamp",
+      "b": "COL_StationarySpool",
+      "kind": "new_vs_actual_collar",
+      "volume": 1.5756242497467285,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "FAIL unintended physical interference"
+    },
+    {
+      "a": "LV_plus_toClamp",
+      "b": "COL_FixedScrew0",
+      "kind": "new_vs_actual_collar",
+      "volume": 0.01931651666137151,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "FAIL unintended physical interference"
+    },
+    {
+      "a": "LV_plus_toClamp",
+      "b": "COL_StationarySpool",
+      "kind": "new_vs_actual_collar",
+      "volume": 0.2559225715908092,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "FAIL unintended physical interference"
+    },
+    {
+      "a": "L_FuseToCarrier",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "electrical_interface_crossing_UNQUALIFIED",
+      "volume": 131.1931482203516,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "UNMET source reservation crossing: electrical lead construction requires approval; no distance waiver"
+    },
+    {
+      "a": "N_TrunkToCarrier",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "electrical_interface_crossing_UNQUALIFIED",
+      "volume": 176.1169999047502,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "UNMET source reservation crossing: electrical lead construction requires approval; no distance waiver"
+    },
+    {
+      "a": "LV_minus_underCarrier",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "electrical_interface_crossing_UNQUALIFIED",
+      "volume": 59.061976017879864,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "UNMET source reservation crossing: electrical lead construction requires approval; no distance waiver"
+    },
+    {
+      "a": "LV_plus_underCarrier",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "electrical_interface_crossing_UNQUALIFIED",
+      "volume": 59.061976758232795,
+      "gap": 0.0,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance",
+      "classification": "UNMET source reservation crossing: electrical lead construction requires approval; no distance waiver"
+    }
+  ],
+  "unintended_count": 8,
+  "disconnected_contacts": [
+    {
+      "a": "LV_plus_toClamp",
+      "b": "COL_FixedStaticTail",
+      "kind": "wire_contact",
+      "volume": 0.0,
+      "gap": 0.5810126319470263,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance"
+    }
+  ],
+  "USB_geometric_failures": 0,
+  "note": "All23 positive volumes are explicit. Valid solids andUSB clearance do not override failed electrical routing/interfaces."
+}

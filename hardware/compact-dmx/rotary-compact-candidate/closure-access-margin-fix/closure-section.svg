@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="650" viewBox="0 0 1050 650"><rect width="100%" height="100%" fill="white"/>
+<text x="30" y="32" font-size="21" font-family="sans-serif" fill="#14212c">CAF-R2 | installed-lid driver clearance</text>
+<text x="30" y="55" font-size="12" font-family="sans-serif" fill="#14212c">Native-derived section X=-32, positive-Y screw. Dimensions mm;10 points/mm (PDF3.528:1).</text>
+<polyline points="243.8294,470.0000 241.6177,449.0792 238.2666,428.3104 233.7860,407.7556 228.1894,387.4763 221.4934,367.5330 213.7181,347.9852 204.8866,328.8912 195.0254,310.3082 184.1639,292.2916 172.3344,274.8951 159.5724,258.1708 145.9159,242.1685 131.4057,226.9360 116.0852,212.5189 100.0000,198.9601" fill="none" stroke="#c2785b" stroke-width="0.8" stroke-dasharray="3 2"/>
+<polyline points="245.0000,500.0000 244.7072,484.9886 243.8294,470.0000" fill="none" stroke="#c2785b" stroke-width="0.8" stroke-dasharray="3 2"/>
+<polyline points="215.0000,500.0000 245.0000,500.0000" fill="none" stroke="#c2785b" stroke-width="0.8" stroke-dasharray="3 2"/>
+<polyline points="192.0000,500.0000 215.0000,500.0000" fill="none" stroke="#c2785b" stroke-width="0.8" stroke-dasharray="3 2"/>
+<polyline points="213.7301,470.0000 211.4358,449.8216 207.9914,429.8074 203.4081,410.0229 197.7010,390.5328 190.8887,371.4010 182.9935,352.6901 174.0413,334.4612 164.0613,316.7741 153.0863,299.6867 141.1521,283.2547 128.2978,267.5322 114.5654,252.5703 100.0000,238.4183" fill="none" stroke="#c2785b" stroke-width="0.8" stroke-dasharray="3 2"/>
+<polyline points="192.0000,470.0000 213.7301,470.0000" fill="none" stroke="#c2785b" stroke-width="0.8" stroke-dasharray="3 2"/>
+<polyline points="150.0000,500.0000 168.0000,500.0000" fill="none" stroke="#c2785b" stroke-width="0.8" stroke-dasharray="3 2"/>
+<polyline points="150.0000,470.0000 150.0000,500.0000" fill="none" stroke="#c2785b" stroke-width="0.8" stroke-dasharray="3 2"/>
+<polyline points="168.0000,500.0000 168.0000,470.0000" fill="none" stroke="#c2785b" stroke-width="0.8" stroke-dasharray="3 2"/>
+<polyline points="192.0000,500.0000 192.0000,470.0000" fill="none" stroke="#c2785b" stroke-width="0.8" stroke-dasharray="3 2"/>
+<polyline points="150.0000,470.0000 168.0000,470.0000" fill="none" stroke="#c2785b" stroke-width="0.8" stroke-dasharray="3 2"/>
+<polyline points="240.2959,560.0000 241.7394,550.0000" fill="none" stroke="#79878f" stroke-width="0.8"/>
+<polyline points="241.7394,550.0000 243.5497,533.3858 244.6373,516.7086 245.0000,500.0000" fill="none" stroke="#79878f" stroke-width="0.8"/>
+<polyline points="215.0000,500.0000 245.0000,500.0000" fill="none" stroke="#79878f" stroke-width="0.8"/>
+<polyline points="188.0000,500.0000 215.0000,500.0000" fill="none" stroke="#79878f" stroke-width="0.8"/>
+<polyline points="209.8928,560.0000 211.4612,550.0000" fill="none" stroke="#79878f" stroke-width="0.8"/>
+<polyline points="188.0000,550.0000 211.4612,550.0000" fill="none" stroke="#79878f" stroke-width="0.8"/>
+<polyline points="150.0000,550.0000 172.0000,550.0000" fill="none" stroke="#79878f" stroke-width="0.8"/>
+<polyline points="150.0000,500.0000 150.0000,550.0000" fill="none" stroke="#79878f" stroke-width="0.8"/>
+<polyline points="172.0000,550.0000 172.0000,500.0000" fill="none" stroke="#79878f" stroke-width="0.8"/>
+<polyline points="188.0000,550.0000 188.0000,500.0000" fill="none" stroke="#79878f" stroke-width="0.8"/>
+<polyline points="150.0000,500.0000 172.0000,500.0000" fill="none" stroke="#79878f" stroke-width="0.8"/>
+<polyline points="243.8294,470.0000 241.7296,449.9252 238.5807,429.9880 234.3911,410.2433 229.1726,390.7453 222.9393,371.5475 215.7085,352.7028 207.5000,334.2630" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="245.0000,500.0000 244.7072,484.9886 243.8294,470.0000" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="207.5000,427.4138 207.5000,334.2630" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="152.5000,249.6627 140.2928,236.0664 127.4542,223.0645 114.0132,210.6865 100.0000,198.9601" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="152.5000,298.8315 152.5000,249.6627" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="215.0000,500.0000 245.0000,500.0000" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="152.5000,298.8315 140.6766,282.6394 127.9580,267.1406 114.3847,252.3845 100.0000,238.4183" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="213.7301,470.0000 212.2282,455.7245 210.1503,441.5214 207.5000,427.4138" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="192.0000,500.0000 215.0000,500.0000" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="192.0000,470.0000 213.7301,470.0000" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="150.0000,500.0000 168.0000,500.0000" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="150.0000,470.0000 150.0000,500.0000" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="168.0000,500.0000 168.0000,470.0000" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="192.0000,500.0000 192.0000,470.0000" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="150.0000,470.0000 168.0000,470.0000" fill="none" stroke="#245c7a" stroke-width="0.8"/>
+<polyline points="170.0000,540.0000 170.0000,470.0000" fill="none" stroke="#212c35" stroke-width="0.8"/>
+<polyline points="170.0000,540.0000 190.0000,540.0000" fill="none" stroke="#212c35" stroke-width="0.8"/>
+<polyline points="160.0000,470.0000 170.0000,470.0000" fill="none" stroke="#212c35" stroke-width="0.8"/>
+<polyline points="190.0000,540.0000 190.0000,470.0000" fill="none" stroke="#212c35" stroke-width="0.8"/>
+<polyline points="190.0000,470.0000 200.0000,470.0000" fill="none" stroke="#212c35" stroke-width="0.8"/>
+<polyline points="160.0000,470.0000 160.0000,455.0000" fill="none" stroke="#212c35" stroke-width="0.8"/>
+<polyline points="200.0000,470.0000 200.0000,455.0000" fill="none" stroke="#212c35" stroke-width="0.8"/>
+<polyline points="160.0000,455.0000 200.0000,455.0000" fill="none" stroke="#212c35" stroke-width="0.8"/>
+<polyline points="155.0000,455.0000 155.0000,95.0000" fill="none" stroke="#287e52" stroke-width="0.8"/>
+<polyline points="155.0000,455.0000 205.0000,455.0000" fill="none" stroke="#287e52" stroke-width="0.8"/>
+<polyline points="155.0000,95.0000 205.0000,95.0000" fill="none" stroke="#287e52" stroke-width="0.8"/>
+<polyline points="205.0000,455.0000 205.0000,95.0000" fill="none" stroke="#287e52" stroke-width="0.8"/>
+<polyline points="152.5000,460.0000 152.5000,85.0000" fill="none" stroke="#6b9180" stroke-width="0.6" stroke-dasharray="3 2"/>
+<polyline points="207.5000,460.0000 207.5000,85.0000" fill="none" stroke="#6b9180" stroke-width="0.6" stroke-dasharray="3 2"/>
+<polyline points="152.5000,80.0000 207.5000,80.0000" fill="none" stroke="#287e52" stroke-width="1"/>
+<text x="130" y="65" font-size="10" font-family="sans-serif" fill="#14212c">Ø5.5 passage</text>
+<text x="400" y="95" font-size="12" font-family="sans-serif" fill="#14212c">Four passages: X -110/-32; Y +/-32</text>
+<text x="400" y="120" font-size="12" font-family="sans-serif" fill="#14212c">Existing driver Ø5, Z4.5..40.5; cut Ø5.5, Z4.0..41.5</text>
+<text x="400" y="145" font-size="12" font-family="sans-serif" fill="#14212c">Nominal whole-tool gap0.25; cut starts0.5 below tip</text>
+<text x="400" y="170" font-size="12" font-family="sans-serif" fill="#14212c">Allocation: radius undersize0.10 + driver0.05 + axis0.05</text>
+<text x="400" y="195" font-size="12" font-family="sans-serif" fill="#14212c">Proposed tolerance budget only; no supplier qualification</text>
+<polyline points="180.0000,285.9323 380.0000,285.9323" fill="none" stroke="#a97054" stroke-width="0.6" stroke-dasharray="3 2"/>
+<text x="400" y="289.93225371392356" font-size="12" font-family="sans-serif" fill="#14212c">Outer radius38.5: centreline exit Z21.4068</text>
+<polyline points="180.0000,346.2957 380.0000,346.2957" fill="none" stroke="#a97054" stroke-width="0.6" stroke-dasharray="3 2"/>
+<text x="400" y="350.29573851060604" font-size="12" font-family="sans-serif" fill="#14212c">Inner radius35.5: centreline entry Z15.3704</text>
+<text x="400" y="385" font-size="12" font-family="sans-serif" fill="#14212c">Original centreline blockage6.0363; red dashed = frozen original</text>
+<text x="400" y="410" font-size="12" font-family="sans-serif" fill="#14212c">Original four solid intersections127.758..127.838 mm³; repaired0</text>
+<polyline points="200.0000,455.0000 380.0000,455.0000" fill="none" stroke="#212c35" stroke-width="0.6"/>
+<text x="400" y="459" font-size="12" font-family="sans-serif" fill="#14212c">Head top/tool tip Z4.5: intentional face touch, no volume</text>
+<polyline points="200.0000,470.0000 380.0000,470.0000" fill="none" stroke="#212c35" stroke-width="0.6"/>
+<text x="400" y="486" font-size="12" font-family="sans-serif" fill="#14212c">Bearing seat Z3: Ø4 head / Ø2.4 hole; radial land0.8</text>
+<text x="400" y="511" font-size="12" font-family="sans-serif" fill="#14212c">All four8.04248 mm² bearing areas preserved; bosses remain connected</text>
+<text x="400" y="536" font-size="12" font-family="sans-serif" fill="#14212c">Through-open ports; caps/sealing/IP/strength decisions remain UNMET</text>
+<text x="30" y="590" font-size="12" font-family="sans-serif" fill="#14212c">Blue = repaired upper; gray = lower; black = screw; green = complete actual driver envelope.</text>
+<text x="30" y="615" font-size="12" font-family="sans-serif" fill="#14212c">Only UpperShellRetention changes. No other parts, screw positions, boards, envelope or rotary geometry change.</text>
+</svg>

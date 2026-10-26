@@ -1,0 +1,22 @@
+{
+  "comparison_bounds_mm": {
+    "X": [
+      -164.0,
+      111.0
+    ],
+    "Y": [
+      -35.0,
+      56.0
+    ],
+    "Z": [
+      -39.0,
+      35.0
+    ]
+  },
+  "comparison_LWH_mm": [
+    275.0,
+    91.0,
+    74.0
+  ],
+  "note": "Includes provisional24mm end blanks; NOT total product/variant acceptance; supplier spline bbox can be conservative"
+}

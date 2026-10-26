@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650"><rect width="100%" height="100%" fill="white"/>
+<text x="30" y="30" font-family="sans-serif" font-size="20" fill="#163449">25 F BUFFER / LOCAL PCB CUTOUT PROPOSAL</text>
+<text x="30" y="53" font-family="sans-serif" font-size="12" fill="#163449">Y/Z section through cell; equal axis scale 14 points/mm. Existing case 98 x 34 x 24 mm.</text>
+<rect x="50" y="432" width="476" height="28" fill="#bcc8ce"/>
+<rect x="50" y="152" width="28" height="280" fill="#bcc8ce"/>
+<rect x="498" y="152" width="28" height="280" fill="#bcc8ce"/>
+<rect x="50" y="124" width="476" height="28" fill="#bcc8ce"/>
+<rect x="92" y="376" width="35.0" height="14" fill="#449b82"/>
+<rect x="271.19999999999993" y="376" width="212.79999999999998" height="14" fill="#449b82"/>
+<circle cx="199.09999999999997" cy="276.59999999999997" r="115.5" fill="#e3b158"/>
+<text x="550" y="140" font-family="sans-serif" font-size="12" fill="#163449">Eaton HV1625-2R7256-R, 25 F / 2.7 V</text>
+<text x="550" y="164" font-family="sans-serif" font-size="12" fill="#163449">Maximum can: diameter16.5 x length28.4</text>
+<text x="550" y="188" font-family="sans-serif" font-size="12" fill="#163449">Axis X; x27..55.4, cy30.65, cz18.1</text>
+<text x="550" y="212" font-family="sans-serif" font-size="12" fill="#163449">Can bottom9.85 / top26.35</text>
+<text x="550" y="236" font-family="sans-serif" font-size="12" fill="#163449">PCB z10..11; new aperture:</text>
+<text x="550" y="260" font-family="sans-serif" font-size="12" fill="#163449">x26.5..55.9 / y25.5..35.8 (29.4 x 10.3)</text>
+<text x="550" y="284" font-family="sans-serif" font-size="12" fill="#163449">Nominal gaps: wall0.40 / lid0.65</text>
+<text x="550" y="308" font-family="sans-serif" font-size="12" fill="#163449">Allocated screen: PCB0.231 / wall0.25 / lid0.50</text>
+<text x="550" y="332" font-family="sans-serif" font-size="12" fill="#163449">Further case/lid process allowance0.10 remains.</text>
+<text x="550" y="356" font-family="sans-serif" font-size="12" fill="#163449">Two cradle saddles x28..31 and50..53</text>
+<text x="550" y="380" font-family="sans-serif" font-size="12" fill="#163449">Saddle radius8.60, .35 compliant liner TBD</text>
+<text x="550" y="404" font-family="sans-serif" font-size="12" fill="#163449">Lead forming + retainer/vent path remain open.</text>
+<text x="30" y="505" font-family="sans-serif" font-size="12" fill="#163449">Can penetrates PCB plane: this is not a drop-in substitution. Original USB tongue, supports, NOR and case are retained.</text>
+<text x="30" y="530" font-family="sans-serif" font-size="12" fill="#163449">Screened 173 finite courtyard volumes: zero overlap at allocated heights; no supplier-exact full assembly model.</text>
+<text x="30" y="555" font-family="sans-serif" font-size="12" fill="#163449">Cradles are present in FCStd/STEP, omitted here for clarity. Liner, retention, formed leads and PCB routing are NOT released.</text>
+<text x="30" y="590" font-family="sans-serif" font-size="12" fill="#163449">16.34 s conditional aged screen at 1.11 W, 80% electronics efficiency, 54 mOhm ESR; not measured or cold-qualified.</text>
+<text x="30" y="615" font-family="sans-serif" font-size="12" fill="#163449">No active PCB/CAD/BOM change; all dimensions mm. Supplier lead/temperature and protection qualification required.</text>
+</svg>

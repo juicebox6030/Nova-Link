@@ -184,11 +184,25 @@ NOVA-LINK application format; real Multiverse RF still needs captures and hardwa
 ## Proposed compact hardware
 
 The [DMX dongle and USB-C power barrel design](docs/hardware/DMX_Dongle_and_Power_Barrel.md)
-describes a TI radio/isolated-DMX dongle with a 10–30 second supercapacitor buffer,
-plus inline powerCON, TRUE1 and NEMA 5-15 barrel variants with a central USB-C
-outlet. It includes an [illustrated concept](docs/hardware/dmx-hardware-concept.html)
-and [candidate BOM](docs/hardware/dmx-hardware-bom.csv). This is preliminary
-hardware design, not released schematics, fabrication files or bench validation.
+describes a TI-only, fixture-adjacent isolated-DMX dongle requiring 2.4 GHz and
+US 915 MHz RF hardware, with a 10–30 second
+backup target, wired RDM/wireless management and DMX/RDM firmware-update provisions,
+with USB-C power only, plus inline powerCON,
+TRUE1 and NEMA 5-15 barrel variants with a rotating, positively locking USB-C
+center section. It includes an [illustrated design](docs/hardware/dmx-hardware-concept.html)
+and [candidate BOM](docs/hardware/dmx-hardware-bom.csv). The
+[manufacturer review package](hardware/compact-dmx/README.md) includes editable
+Rev B CAD/STEP comparison geometry, dimensioned drawings and a partial DMX schematic.
+The Rev C prototype captures power/buffer/cutoff/service circuitry and 2 MiB SPI
+staging flash with USB power only, plus source-backed MCU support and a dual-band
+frontend with a dual-feed antenna prototype and manual termination assembled OFF.
+Three separate captured projects pass KiCad ERC. All37 physical MCU/RF/DMX parts
+have footprint assignments:36 source-backed and one provisional switch. Cold-cap startup,
+antenna tuning/coupling, complete PCB design, mechanism details, fixture fit and qualification remain open;
+this is not released build-to-print hardware.
+The [fixture reference manifest](docs/hardware/fixture-reference-manifest.md)
+records retrieved manufacturer CAD for four fixtures across ETC, CHAUVET and GLP,
+with connector-clearance measurements and physical fit still to be verified.
 
 ## Extended protocol prototype
 

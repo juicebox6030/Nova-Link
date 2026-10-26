@@ -1,0 +1,8 @@
+{
+  "hardware/compact-dmx/eda/power-service/qualified15-candidate/DESIGN.md": "e977d5f08623fb090bf748b33200a4a5d26b619d646fd3980beb3fd0be267ce9",
+  "hardware/compact-dmx/eda/power-service/qualified15-candidate/corner-proof.py": "7be7118b48e244be26009358ada6a9554bf98b34e5b0855302d61dcc16420e26",
+  "hardware/compact-dmx/eda/power-service/qualified15-candidate/corner-proof.json": "0d94e81923764ffd33e0ef188c961a59eb924912112d331479d326db9aa5b3e6",
+  "hardware/compact-dmx/eda/power-service/qualified15-candidate/placement.json": "d3f6f2a6cda9186bb0f8c8b9509a034c5b3cef34a1ca66bc171caac8691f9e0c",
+  "hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15-placement.kicad_pcb": "2b8f12cbe7be407f6d0a351fa524ddc40295017c447c0f57ec269844c1fa035f",
+  "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/flush-prototype.FCStd": "d6a914284d2425f3d5c2564799bd614faff1cfc8a002128bb5d41d0df8ac5350"
+}

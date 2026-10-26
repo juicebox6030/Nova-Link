@@ -1,0 +1,123 @@
+{
+  "revision": "CYL-R2",
+  "source_shell_OD": 77,
+  "source_bore": 71,
+  "nominal_wall": 3,
+  "allocated_bore_radial_tolerance": 0.2,
+  "outer_radius_plus_tolerance": 38.7,
+  "minimum_source_shell_wall_allocated": 2.6,
+  "neck_lock_relief_min_nominal_wall": 0.9703703703703717,
+  "neck_lock_relief_allocated_wall_after_point3": 0.6703703703703716,
+  "film_radius": 34.92581423531884,
+  "film_worst_bore_clearance": 0.37418576468115816,
+  "whole_reservation_corner_clearance": 0.5365134084626035,
+  "neck_length": 27,
+  "two_arc_axial_run": 21.330729007701542,
+  "core_end_straight": 5.669270992298458,
+  "sampled_full_corridor_radial_gap_after_bore_allowance": 0.5492845840869869,
+  "worst_sample_surface_point": [
+    -20.03613493766136,
+    -8.67692155582973,
+    -29.906513884137652
+  ],
+  "CIR_domains": {
+    "sourcepod": 128,
+    "neck": 12,
+    "core": 87,
+    "old_end_blanks_removed": 48
+  },
+  "CYL_domains": {
+    "sourcebay": 88,
+    "neck": 27,
+    "core": 87
+  },
+  "matched_allowance_sensitivity": {
+    "classic": {
+      "0": {
+        "CIR_panel_allocation": 287.8,
+        "CYL_panel_allocation": 262.8,
+        "conditional_length_reduction": 25.0,
+        "CIR_box_volume": 1938045.2,
+        "CYL_box_volume": 1558141.2,
+        "conditional_volume_reduction_fraction": 0.19602432389089786
+      },
+      "20": {
+        "CIR_panel_allocation": 307.8,
+        "CYL_panel_allocation": 282.8,
+        "conditional_length_reduction": 25.0,
+        "CIR_box_volume": 2072725.2,
+        "CYL_box_volume": 1676721.2,
+        "conditional_volume_reduction_fraction": 0.1910547524582612
+      },
+      "40": {
+        "CIR_panel_allocation": 327.8,
+        "CYL_panel_allocation": 302.8,
+        "conditional_length_reduction": 25.0,
+        "CIR_box_volume": 2207405.1999999997,
+        "CYL_box_volume": 1795301.2,
+        "conditional_volume_reduction_fraction": 0.18669159608756913
+      }
+    },
+    "TRUE1": {
+      "0": {
+        "CIR_panel_allocation": 291,
+        "CYL_panel_allocation": 266,
+        "conditional_length_reduction": 25,
+        "CIR_box_volume": 1959594,
+        "CYL_box_volume": 1577114,
+        "conditional_volume_reduction_fraction": 0.19518328796679307
+      },
+      "20": {
+        "CIR_panel_allocation": 311,
+        "CYL_panel_allocation": 286,
+        "conditional_length_reduction": 25,
+        "CIR_box_volume": 2094274,
+        "CYL_box_volume": 1695694,
+        "conditional_volume_reduction_fraction": 0.1903189362996437
+      },
+      "40": {
+        "CIR_panel_allocation": 331,
+        "CYL_panel_allocation": 306,
+        "conditional_length_reduction": 25,
+        "CIR_box_volume": 2228954,
+        "CYL_box_volume": 1814274,
+        "conditional_volume_reduction_fraction": 0.1860424216919685
+      }
+    },
+    "NEMA_flanged_comparison_only": {
+      "0": {
+        "CIR_panel_allocation": 315.9,
+        "CYL_panel_allocation": 290.9,
+        "conditional_length_reduction": 25.0,
+        "CIR_box_volume": 2127270.5999999996,
+        "CYL_box_volume": 1724746.0999999999,
+        "conditional_volume_reduction_fraction": 0.18922110802452674
+      },
+      "20": {
+        "CIR_panel_allocation": 335.9,
+        "CYL_panel_allocation": 310.9,
+        "conditional_length_reduction": 25.0,
+        "CIR_box_volume": 2261950.5999999996,
+        "CYL_box_volume": 1843326.0999999999,
+        "conditional_volume_reduction_fraction": 0.18507234419708363
+      },
+      "40": {
+        "CIR_panel_allocation": 355.9,
+        "CYL_panel_allocation": 330.9,
+        "conditional_length_reduction": 25.0,
+        "CIR_box_volume": 2396630.5999999996,
+        "CYL_box_volume": 1961906.0999999999,
+        "conditional_volume_reduction_fraction": 0.18138986458739192
+      }
+    }
+  },
+  "access_accounting": "0/20/40mm added total sensitivity. 40 means two disjoint20mm terminal/tool regions. Existing CIRpod spareaccess may overlap; unproved, hence not a finished comparison. No access reused twice in CYL coordinates.",
+  "source_pin_translation": [
+    4.5,
+    0,
+    -2
+  ],
+  "molded_NEMA_intent_unchanged": true,
+  "no_final_mated_envelope": true,
+  "no_electrical_changes": true
+}

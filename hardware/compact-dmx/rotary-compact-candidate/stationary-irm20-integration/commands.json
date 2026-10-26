@@ -1,0 +1,50 @@
+[
+  {
+    "command": [
+      "/home/juicebox/.local/bin/freecadcmd",
+      "/home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/build.py"
+    ],
+    "cwd": "/home/juicebox/Nova-Link",
+    "QT_QPA_PLATFORM": "offscreen",
+    "exit_code": 0,
+    "seconds": 7.139,
+    "log": "build.log",
+    "exception_diagnostic_screen": "PASS"
+  },
+  {
+    "command": [
+      "/home/juicebox/.local/bin/freecadcmd",
+      "/home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/project.py"
+    ],
+    "cwd": "/home/juicebox/Nova-Link",
+    "QT_QPA_PLATFORM": "offscreen",
+    "exit_code": 0,
+    "seconds": 69.349,
+    "log": "project.log",
+    "exception_diagnostic_screen": "PASS"
+  },
+  {
+    "command": [
+      "/home/juicebox/.local/bin/freecadcmd",
+      "/home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/verify.py"
+    ],
+    "cwd": "/home/juicebox/Nova-Link",
+    "QT_QPA_PLATFORM": "offscreen",
+    "exit_code": 0,
+    "seconds": 14.112,
+    "log": "verify.log",
+    "exception_diagnostic_screen": "PASS"
+  },
+  {
+    "command": [
+      "python3",
+      "/home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/draw.py"
+    ],
+    "cwd": "/home/juicebox/Nova-Link",
+    "QT_QPA_PLATFORM": "offscreen",
+    "exit_code": 0,
+    "seconds": 0.173,
+    "log": "draw.log",
+    "exception_diagnostic_screen": "PASS"
+  }
+]

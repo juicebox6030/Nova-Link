@@ -1,0 +1,7 @@
+from pathlib import Path
+import FreeCAD as A,Part,json,hashlib,shutil
+P=Path(__file__).resolve().parent;V=A.Vector;src=P/'interface-prototype.FCStd';backup=P/'before-head-clearance.FCStd';assert not backup.exists();shutil.copyfile(src,backup);oldhash=hashlib.sha256(src.read_bytes()).hexdigest();d=A.openDocument(str(src));o=d.getObject('StationaryCoreWithSupports');old=o.Shape.copy();new=old
+for z in [-9,9]:new=new.cut(Part.makeCylinder(1.05,1.2,V(47.19,14.1,z),V(1,0,0)))
+assert new.isValid() and len(new.Solids)==1 and new.cut(old).Volume<1e-8
+o.Shape=new;d.recompute();d.saveAs(str(src));g=json.loads((P/'groups.json').read_text());Part.export([o for o in d.Objects if hasattr(o,'Shape') and not g[o.Name].endswith('_pad') and g[o.Name] not in ['collar_pose-90','collar_pose90','UNMET_INTERFACE','screen','collar_reserve','insulation','tolerance','trunk_tolerance','support','access']],str(P/'interface-prototype.step'))
+(P/'head-clearance-delta.json').write_text(json.dumps({'before_native_sha256':oldhash,'after_native_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'part':'StationaryCoreWithSupports','added_material_mm3':new.cut(old).Volume,'removed_material_mm3':old.cut(new).Volume,'bores':[{'x':47.19,'y':14.1,'z':z,'radius':1.05,'length':1.2} for z in [-9,9]],'basis':'Only removal; prior zero-intersection/motion bounds against old core are conservative. Fresh all-core pairs and access checks required.'},indent=2)+'\n');print('HEAD CLEARANCE REMOVAL',old.cut(new).Volume,flush=True)

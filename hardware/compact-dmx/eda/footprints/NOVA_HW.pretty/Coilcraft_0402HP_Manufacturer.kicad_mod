@@ -1,0 +1,4 @@
+(footprint "Coilcraft_0402HP_Manufacturer" (version 20241229) (generator "nova_source_lands") (layer "F.Cu") (attr smd) (descr "Coilcraft526-1 revised12/20/23 p1 H.66 I.36 J.51;0402HP not HPH;body max1.09x.71 height.61 before optional solder; prototype RF retune required") (fp_text reference "REF**" (at 0 -1.355) (layer "F.SilkS") (effects (font (size .8 .8) (thickness .12))))(fp_rect (start -0.545 -0.355) (end 0.545 0.355) (stroke (width .05) (type default)) (fill none) (layer "F.Fab"))(fp_rect (start -0.865 -0.605) (end 0.865 0.605) (stroke (width .05) (type default)) (fill none) (layer "F.CrtYd"))
+(pad "1" smd rect (at -0.435 0) (size 0.36 0.66) (layers "F.Cu" "F.Mask" "F.Paste"))
+(pad "2" smd rect (at 0.435 0) (size 0.36 0.66) (layers "F.Cu" "F.Mask" "F.Paste"))
+)

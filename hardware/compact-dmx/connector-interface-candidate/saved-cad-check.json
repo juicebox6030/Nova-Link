@@ -1,0 +1,239 @@
+{
+  "status": "PASS_REFERENCE_CONSISTENCY_ONLY",
+  "objects_checked": 12,
+  "chassis_checked": 6,
+  "closed_valid_solid_claim": false,
+  "assembly_fit_claim": false,
+  "mesh_is_not_a_tolerance_bound": true,
+  "items": [
+    {
+      "id": "pc-in",
+      "valid": true,
+      "solids": 1,
+      "faces": 1245,
+      "sampled_bbox_mm": [
+        -12.95,
+        -15.45,
+        -30.050000073197044,
+        12.95,
+        15.45,
+        7.050000002377793
+      ],
+      "sampled_radial_diameter_mm": 37.46905070434628,
+      "raw_source_sha256": "636e5d416ef048d16e9e42abe32c329b759ad4e4a196816179dbb25cbb7cefb4",
+      "panel_face": "Face460",
+      "panel_coordinate_mm": 0.0,
+      "sampled_bare_rear_depth_from_panel_mm": 30.050000073197044,
+      "drawing_rear_depth_mm": 30.4,
+      "cad_minus_drawing_mm": -0.3499999268029548,
+      "end_24mm_accepted": false
+    },
+    {
+      "id": "pc-out",
+      "valid": true,
+      "solids": 1,
+      "faces": 1339,
+      "sampled_bbox_mm": [
+        -12.95,
+        -15.45,
+        -29.950000073197042,
+        12.95,
+        15.45,
+        7.050000002714094
+      ],
+      "sampled_radial_diameter_mm": 37.46905070434628,
+      "raw_source_sha256": "2985ffa3b2e3306dccf65e6476c974007dffc04798e935f58abde3c33bafff63",
+      "panel_face": "Face680",
+      "panel_coordinate_mm": 0.0,
+      "sampled_bare_rear_depth_from_panel_mm": 29.950000073197042,
+      "drawing_rear_depth_mm": 30.4,
+      "cad_minus_drawing_mm": -0.4499999268029562,
+      "end_24mm_accepted": false
+    },
+    {
+      "id": "true1-in",
+      "valid": false,
+      "solids": 1,
+      "faces": 1492,
+      "sampled_bbox_mm": [
+        -13.0,
+        -31.2,
+        -15.5,
+        13.0,
+        7.0,
+        15.5
+      ],
+      "sampled_radial_diameter_mm": 37.609574923381004,
+      "raw_source_sha256": "51b7d0442112bb36f3aaa77a1a26ec9aab76682a24c99cd6baffe8e54e6988f0",
+      "panel_face": "Face178",
+      "panel_coordinate_mm": 0.0,
+      "sampled_bare_rear_depth_from_panel_mm": 31.2,
+      "drawing_rear_depth_mm": 31.2,
+      "cad_minus_drawing_mm": 0.0,
+      "end_24mm_accepted": false
+    },
+    {
+      "id": "true1-out",
+      "valid": false,
+      "solids": 1,
+      "faces": 1836,
+      "sampled_bbox_mm": [
+        -17.7,
+        -17.7,
+        -32.80000014197652,
+        17.7,
+        17.7,
+        10.2
+      ],
+      "sampled_radial_diameter_mm": 45.506810921903515,
+      "raw_source_sha256": "35c6cf7b4716bf914fce640593727a32d41d9318d98db7d985977f46cfcecca1",
+      "panel_face": "Face105",
+      "panel_coordinate_mm": 0.0,
+      "sampled_bare_rear_depth_from_panel_mm": 32.80000014197652,
+      "drawing_rear_depth_mm": 32.8,
+      "cad_minus_drawing_mm": 1.4197652120628845e-07,
+      "end_24mm_accepted": false
+    },
+    {
+      "id": "nema-in",
+      "valid": true,
+      "solids": 0,
+      "faces": 1287,
+      "sampled_bbox_mm": [
+        -21.818600000000007,
+        -31.74351501089492,
+        -31.749987500000096,
+        25.425400000000014,
+        31.74351501089495,
+        31.749987500000096
+      ],
+      "sampled_radial_diameter_mm": 63.49997500000019,
+      "raw_source_sha256": "e1bc0695fcd40393ee978d827b9ddb97aa633635ce38817b8a78a5545c98b944",
+      "panel_face": "Face4",
+      "panel_coordinate_mm": -19.83732635802925,
+      "sampled_bare_rear_depth_from_panel_mm": 45.26272635802927,
+      "drawing_rear_depth_mm": 45.3,
+      "cad_minus_drawing_mm": -0.03727364197072802,
+      "end_24mm_accepted": false
+    },
+    {
+      "id": "nema-out",
+      "valid": true,
+      "solids": 1,
+      "faces": 716,
+      "sampled_bbox_mm": [
+        -47.98053124001998,
+        -31.740119032411634,
+        -31.749987500000007,
+        1.0594580351724861e-13,
+        31.74011903241165,
+        31.7499875
+      ],
+      "sampled_radial_diameter_mm": 63.499975000001015,
+      "raw_source_sha256": "a7dbe69fe92b770157f15b3fdfb16ae645a063f75d0a2d540ac53733eb23de70",
+      "panel_face": "Face71",
+      "panel_coordinate_mm": -4.3434736419707365,
+      "sampled_bare_rear_depth_from_panel_mm": 43.63705759804924,
+      "drawing_rear_depth_mm": 43.6,
+      "cad_minus_drawing_mm": 0.03705759804923758,
+      "end_24mm_accepted": false
+    },
+    {
+      "id": "pc-mate-a",
+      "valid": true,
+      "solids": 1,
+      "faces": 2617,
+      "sampled_bbox_mm": [
+        -13.41319338554942,
+        -13.413193385469254,
+        -15.8,
+        13.413193385469254,
+        16.92571097332464,
+        63.45000000621733
+      ],
+      "sampled_radial_diameter_mm": 33.987365701187336,
+      "raw_source_sha256": "2ff3f3d0e8bd30590eb6796c1708644955572aea8d9bd911d72f491f7e4d5c24"
+    },
+    {
+      "id": "pc-mate-b",
+      "valid": true,
+      "solids": 1,
+      "faces": 2595,
+      "sampled_bbox_mm": [
+        -13.41319338554942,
+        -13.413193385469254,
+        -15.8,
+        13.413193385469254,
+        16.92571097332464,
+        63.45000000621733
+      ],
+      "sampled_radial_diameter_mm": 33.987365701187336,
+      "raw_source_sha256": "1601412b311fcd9d86fbb22939f8ca187ac1cf982442b7fc6489161051a1b950"
+    },
+    {
+      "id": "true1-mate-f",
+      "valid": true,
+      "solids": 0,
+      "faces": 2513,
+      "sampled_bbox_mm": [
+        -13.248519896149741,
+        0.0,
+        -14.415520127403314,
+        13.248519896149741,
+        77.6,
+        13.884328682046448
+      ],
+      "sampled_radial_diameter_mm": 34.14660630768491,
+      "raw_source_sha256": "fbf7264b3ea29e904193086df571ffce41bd6eab4ac84cc5aa2c5c494ae58dc0"
+    },
+    {
+      "id": "true1-mate-m",
+      "valid": true,
+      "solids": 0,
+      "faces": 2438,
+      "sampled_bbox_mm": [
+        -77.1,
+        -15.249879877835067,
+        -13.25002479428685,
+        1.5012878279529407e-08,
+        19.72571097332464,
+        13.249893681979161
+      ],
+      "sampled_radial_diameter_mm": 39.56594914301786,
+      "raw_source_sha256": "5c42933b98684d551ed63616555a9ba1fc4b4edd9f8e3ab6a2f82240f7bb46c9"
+    },
+    {
+      "id": "nema-mate-f",
+      "valid": true,
+      "solids": 0,
+      "faces": 1498,
+      "sampled_bbox_mm": [
+        -70.10400000000001,
+        -19.443699999999968,
+        -19.437656548069338,
+        1.4845515694835545e-13,
+        19.443700000000035,
+        19.437656548069214
+      ],
+      "sampled_radial_diameter_mm": 43.95916511493516,
+      "raw_source_sha256": "ebea059b9ba040ec74a3f66f8dfb1d268de5a4ae2e50ca58045fb89554264015"
+    },
+    {
+      "id": "nema-mate-m",
+      "valid": true,
+      "solids": 1,
+      "faces": 1920,
+      "sampled_bbox_mm": [
+        -21.005799999996192,
+        -19.44370000000023,
+        -19.43765654806901,
+        50.368202999999774,
+        19.443699999999744,
+        19.43765654806954
+      ],
+      "sampled_radial_diameter_mm": 43.959165114936,
+      "raw_source_sha256": "c29ec13a617d7101c08a046faec0105be6a4033bed7c191ce1de62bb59567120"
+    }
+  ],
+  "warning": "Vendor invalid and open/surface models intentionally remain unchanged. No collision/insulation/assembly validation."
+}

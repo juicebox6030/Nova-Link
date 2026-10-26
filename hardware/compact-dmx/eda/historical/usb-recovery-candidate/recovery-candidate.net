@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/juicebox/Nova-Link/hardware/compact-dmx/eda/recovery-candidate/recovery-candidate.kicad_sch</source>
+    <date>2026-10-22T14:14:30</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>NOVA USB recovery candidate - NOT integrated power circuit</title>
+        <company/>
+        <rev>B-EDA3-CANDIDATE</rev>
+        <date/>
+        <source>recovery-candidate.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C101">
+      <value>100n</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="C" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a64b9407-3448-5582-9c97-a369f5a7f20b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C102">
+      <value>4.7u effective 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="C" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e3d5b45-1641-5471-95a0-b395de74c3f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C103">
+      <value>100n</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="C" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d3113c4e-bd4b-5da7-b72d-d9e5c9789024</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C104">
+      <value>4.7u effective 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="C" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>67ae4a2f-5a0c-59d2-9e36-b3f6bce61cd8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C105">
+      <value>100n</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="C" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>97e9f681-fcc3-5701-bdca-783f769e81dd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C106">
+      <value>2.2u effective 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="C" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f7c7a99-ca8b-5646-ade1-7fd71ff9e434</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C107">
+      <value>2.2u effective 10V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="C" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e9de5668-a3b9-52a8-ada8-53555509fab0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C108">
+      <value>100n</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="C" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>db0a82c8-d63e-5be3-9abf-32b7915d3fc3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C109">
+      <value>100n</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="C" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9ab064d8-272e-5923-b876-51fcb70b1496</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C110">
+      <value>100n</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="C" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>102af696-9a5a-5a43-a8cc-a3f0a7430c67</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J101">
+      <value>USB2 INPUT BOUNDARY / CC NOT CAPTURED</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="USB2_TEST_BOUNDARY" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aac3264c-78f8-5dfd-b4e7-74106d688b3f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J102">
+      <value>MCU DOMAIN CONTRACT / NO DIRECT RAIL JOIN</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="MCU_BOUNDARY_NOT_POWER_MERGER" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>81a601c9-a5d5-594b-aab2-ef14f0d5d85b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R101">
+      <value>19.2k 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="R" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e24de4bd-1e70-5944-8974-0fa18e6d9391</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R102">
+      <value>88.7k 1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="R" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9fbad0e5-eec2-57a8-b23f-e452499fcff4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R103">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="R" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f025e3cd-abec-5565-a46b-e2639f104da1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R104">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="R" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e03d5822-6f02-5de6-a2ea-1a414ffe3496</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R105">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="R" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>317dc5fd-bb4f-5e43-b1f2-655550da5685</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R106">
+      <value>1k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="R" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d68eaf82-1c4d-5caf-94f0-bbcdcd7da7c8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R107">
+      <value>100k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="R" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92f0a75f-d2b7-5278-bf88-d044c642a087</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R108">
+      <value>100k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="R" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9b230201-6f37-517e-8d8a-fa23255580b8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R109">
+      <value>100k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="R" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39114009-4906-5d58-8ad4-9ec7e57040b2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="S101">
+      <value>RECOVERY REQUEST (HOLD)</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="SW_NO" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c637fb1a-87a8-5834-96d4-729b66c98c0a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="S102">
+      <value>FACTORY LINK OPEN / DNP</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="SW_NO" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aee903fd-c181-59be-b254-3357ff69d641</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U101">
+      <value>TPS22950YBHR (NOT C/L)</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="TPS22950YBH" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>daf740c0-bdbf-5d9b-b42c-d5c5c0abdbb8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A1"/>
+            <pin num="A2"/>
+            <pin num="B1"/>
+            <pin num="B2"/>
+            <pin num="C1"/>
+            <pin num="C2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U102">
+      <value>TPS70933DBVR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="TPS70933DBV" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9559ce96-bed7-58f1-9d6d-35507638fde8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U103">
+      <value>CP2102N-A02-GQFN20</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="CP2102N_A02_GQFN20" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cebbf29b-2997-5954-8644-0e4ddbfeeadd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U104">
+      <value>TPS2553DBVR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="TPS2553DBV" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>98d6ce20-531d-5b93-bf97-8315761f64f3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U105">
+      <value>TPS70933DBVR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="TPS70933DBV" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ff9992ed-7e9e-5888-a770-fbe848e44d8a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U106">
+      <value>SN74LVC2G08DCUR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="SN74LVC2G08DCU" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a58cfdf3-5e70-5f53-a54f-9fd4812f447a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U107">
+      <value>SN74LVC1G125DCKR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="SN74LVC1G125DCK" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2813d7d-3e13-593b-b055-9decce56258e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U108">
+      <value>SN74LVC1G125DCKR</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="REC" part="SN74LVC1G125DCK" description=""/>
+      <property name="Sheetname" value="recovery-candidate"/>
+      <property name="Sheetfile" value="recovery-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ccf542f7-571d-548c-bfd3-6917c46e3ce4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="REC" part="C">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="REC" part="CP2102N_A02_GQFN20">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CP2102N_A02_GQFN20</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GPIO1" type="bidirectional"/>
+        <pin num="2" name="GPIO0" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="D+" type="bidirectional"/>
+        <pin num="5" name="D-" type="bidirectional"/>
+        <pin num="6" name="VDD_EXTERNAL_REG_MODE" type="power_in"/>
+        <pin num="7" name="VREGIN" type="power_in"/>
+        <pin num="8" name="VBUS" type="input"/>
+        <pin num="9" name="RSTb" type="open_collector"/>
+        <pin num="10" name="NC" type="no_connect"/>
+        <pin num="11" name="SUSPENDb" type="output"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="WAKEUP" type="input"/>
+        <pin num="14" name="SUSPEND" type="output"/>
+        <pin num="15" name="CTS" type="input"/>
+        <pin num="16" name="RTS" type="output"/>
+        <pin num="17" name="RXD" type="input"/>
+        <pin num="18" name="TXD" type="output"/>
+        <pin num="19" name="GPIO3" type="bidirectional"/>
+        <pin num="20" name="GPIO2" type="bidirectional"/>
+        <pin num="21" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="REC" part="MCU_BOUNDARY_NOT_POWER_MERGER">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCU_BOUNDARY_NOT_POWER_MERGER</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="REC_3V3_OUT" type="power_in"/>
+        <pin num="2" name="GND_USB" type="power_in"/>
+        <pin num="3" name="UART_TX_FROM_MCU" type="output"/>
+        <pin num="4" name="UART_RX_TO_MCU" type="input"/>
+        <pin num="5" name="ACTUAL_MCU_SUPPLY" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="REC" part="R">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="REC" part="SN74LVC1G125DCK">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC1G125DCK</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OE_N" type="input"/>
+        <pin num="2" name="A" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="Y" type="tri_state"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="REC" part="SN74LVC2G08DCU">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC2G08DCU</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1A" type="input"/>
+        <pin num="2" name="1B" type="input"/>
+        <pin num="3" name="2Y" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="2A" type="input"/>
+        <pin num="6" name="2B" type="input"/>
+        <pin num="7" name="1Y" type="output"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="REC" part="SW_NO">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SW_NO</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="REC" part="TPS22950YBH">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS22950YBH</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="A1" name="ON" type="input"/>
+        <pin num="A2" name="FLT_N" type="open_collector"/>
+        <pin num="B1" name="VIN" type="power_in"/>
+        <pin num="B2" name="VOUT" type="power_out"/>
+        <pin num="C1" name="GND" type="power_in"/>
+        <pin num="C2" name="ILIM" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="REC" part="TPS2553DBV">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS2553DBV</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="FAULT_N" type="open_collector"/>
+        <pin num="5" name="ILIM" type="output"/>
+        <pin num="6" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="REC" part="TPS70933DBV">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS70933DBV</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="REC" part="USB2_TEST_BOUNDARY">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">USB2_TEST_BOUNDARY</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS_4V4_TO_5V5" type="power_out"/>
+        <pin num="2" name="GND_USB" type="power_out"/>
+        <pin num="3" name="D+" type="bidirectional"/>
+        <pin num="4" name="D-" type="bidirectional"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="REC">
+      <uri>${KIPRJMOD}/recovery.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/BRIDGE_3V3" class="Default">
+      <node ref="C104" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C105" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C108" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C109" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R106" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="S101" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="S102" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U102" pin="5" pinfunction="OUT_5" pintype="power_out"/>
+      <node ref="U103" pin="13" pinfunction="WAKEUP_13" pintype="input"/>
+      <node ref="U103" pin="6" pinfunction="VDD_EXTERNAL_REG_MODE_6" pintype="power_in"/>
+      <node ref="U103" pin="7" pinfunction="VREGIN_7" pintype="power_in"/>
+      <node ref="U103" pin="8" pinfunction="VBUS_8" pintype="input"/>
+      <node ref="U106" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="U107" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+    </net>
+    <net code="2" name="/BRIDGE_5V" class="Default">
+      <node ref="C102" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C103" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="B2" pinfunction="VOUT_B2" pintype="power_out"/>
+      <node ref="U102" pin="1" pinfunction="IN_1" pintype="power_in"/>
+      <node ref="U102" pin="3" pinfunction="EN_3" pintype="input"/>
+    </net>
+    <net code="3" name="/BRIDGE_ILIM" class="Default">
+      <node ref="R101" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="C2" pinfunction="ILIM_C2" pintype="output"/>
+    </net>
+    <net code="4" name="/BRIDGE_RST_N" class="Default">
+      <node ref="R106" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U103" pin="9" pinfunction="RSTb_9" pintype="open_collector"/>
+    </net>
+    <net code="5" name="/BRIDGE_RX" class="Default">
+      <node ref="U103" pin="17" pinfunction="RXD_17" pintype="input"/>
+      <node ref="U107" pin="4" pinfunction="Y_4" pintype="tri_state"/>
+    </net>
+    <net code="6" name="/BRIDGE_TX" class="Default">
+      <node ref="R108" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U103" pin="18" pinfunction="TXD_18" pintype="output"/>
+      <node ref="U108" pin="2" pinfunction="A_2" pintype="input"/>
+    </net>
+    <net code="7" name="/CONFIG_VERIFIED" class="Default">
+      <node ref="R109" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="S102" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U106" pin="6" pinfunction="2B_6" pintype="input"/>
+    </net>
+    <net code="8" name="/GND_USB" class="Default">
+      <node ref="C101" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C102" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C103" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C104" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C105" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C106" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C107" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C108" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C109" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C110" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J101" pin="2" pinfunction="GND_USB_2" pintype="power_out"/>
+      <node ref="J102" pin="2" pinfunction="GND_USB_2" pintype="power_in"/>
+      <node ref="R101" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R102" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R103" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R104" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R105" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R107" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R108" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R109" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U101" pin="C1" pinfunction="GND_C1" pintype="power_in"/>
+      <node ref="U102" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U103" pin="12" pinfunction="GND_12" pintype="power_in"/>
+      <node ref="U103" pin="15" pinfunction="CTS_15" pintype="input"/>
+      <node ref="U103" pin="21" pinfunction="EP_GND_21" pintype="power_in"/>
+      <node ref="U103" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U104" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U105" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U106" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U107" pin="1" pinfunction="OE_N_1" pintype="input"/>
+      <node ref="U107" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U108" pin="1" pinfunction="OE_N_1" pintype="input"/>
+      <node ref="U108" pin="3" pinfunction="GND_3" pintype="power_in"/>
+    </net>
+    <net code="9" name="/MCU_3V3" class="Default">
+      <node ref="C110" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J102" pin="5" pinfunction="ACTUAL_MCU_SUPPLY_5" pintype="power_out"/>
+      <node ref="U108" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+    </net>
+    <net code="10" name="/MCU_RX" class="Default">
+      <node ref="J102" pin="4" pinfunction="UART_RX_TO_MCU_4" pintype="input"/>
+      <node ref="U108" pin="4" pinfunction="Y_4" pintype="tri_state"/>
+    </net>
+    <net code="11" name="/MCU_TX" class="Default">
+      <node ref="J102" pin="3" pinfunction="UART_TX_FROM_MCU_3" pintype="output"/>
+      <node ref="R107" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U107" pin="2" pinfunction="A_2" pintype="input"/>
+    </net>
+    <net code="12" name="/REC_3V3" class="Default">
+      <node ref="C107" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J102" pin="1" pinfunction="REC_3V3_OUT_1" pintype="power_in"/>
+      <node ref="U105" pin="5" pinfunction="OUT_5" pintype="power_out"/>
+    </net>
+    <net code="13" name="/REC_5V" class="Default">
+      <node ref="C106" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U104" pin="6" pinfunction="OUT_6" pintype="power_out"/>
+      <node ref="U105" pin="1" pinfunction="IN_1" pintype="power_in"/>
+    </net>
+    <net code="14" name="/REC_EN" class="Default">
+      <node ref="R105" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U104" pin="3" pinfunction="EN_3" pintype="input"/>
+      <node ref="U105" pin="3" pinfunction="EN_3" pintype="input"/>
+      <node ref="U106" pin="3" pinfunction="2Y_3" pintype="output"/>
+    </net>
+    <net code="15" name="/REC_ILIM" class="Default">
+      <node ref="R102" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U104" pin="5" pinfunction="ILIM_5" pintype="output"/>
+    </net>
+    <net code="16" name="/REC_INTENT" class="Default">
+      <node ref="U106" pin="5" pinfunction="2A_5" pintype="input"/>
+      <node ref="U106" pin="7" pinfunction="1Y_7" pintype="output"/>
+    </net>
+    <net code="17" name="/REC_REQUEST" class="Default">
+      <node ref="R104" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="S101" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U106" pin="2" pinfunction="1B_2" pintype="input"/>
+    </net>
+    <net code="18" name="/USB_ACTIVE" class="Default">
+      <node ref="R103" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U103" pin="11" pinfunction="SUSPENDb_11" pintype="output"/>
+      <node ref="U106" pin="1" pinfunction="1A_1" pintype="input"/>
+    </net>
+    <net code="19" name="/USB_DM" class="Default">
+      <node ref="J101" pin="4" pinfunction="D-_4" pintype="bidirectional"/>
+      <node ref="U103" pin="5" pinfunction="D-_5" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="/USB_DP" class="Default">
+      <node ref="J101" pin="3" pinfunction="D+_3" pintype="bidirectional"/>
+      <node ref="U103" pin="4" pinfunction="D+_4" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/VBUS" class="Default">
+      <node ref="C101" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J101" pin="1" pinfunction="VBUS_4V4_TO_5V5_1" pintype="power_out"/>
+      <node ref="U101" pin="A1" pinfunction="ON_A1" pintype="input"/>
+      <node ref="U101" pin="B1" pinfunction="VIN_B1" pintype="power_in"/>
+      <node ref="U104" pin="1" pinfunction="IN_1" pintype="power_in"/>
+    </net>
+    <net code="22" name="unconnected-(U101-FLT_N-PadA2)" class="Default">
+      <node ref="U101" pin="A2" pinfunction="FLT_N_A2" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U102-NC-Pad4)" class="Default">
+      <node ref="U102" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(U103-GPIO0-Pad2)" class="Default">
+      <node ref="U103" pin="2" pinfunction="GPIO0_2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U103-GPIO1-Pad1)" class="Default">
+      <node ref="U103" pin="1" pinfunction="GPIO1_1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(U103-GPIO2-Pad20)" class="Default">
+      <node ref="U103" pin="20" pinfunction="GPIO2_20" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(U103-GPIO3-Pad19)" class="Default">
+      <node ref="U103" pin="19" pinfunction="GPIO3_19" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U103-NC-Pad10)" class="Default">
+      <node ref="U103" pin="10" pinfunction="NC_10" pintype="no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U103-RTS-Pad16)" class="Default">
+      <node ref="U103" pin="16" pinfunction="RTS_16" pintype="output+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(U103-SUSPEND-Pad14)" class="Default">
+      <node ref="U103" pin="14" pinfunction="SUSPEND_14" pintype="output+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(U104-FAULT_N-Pad4)" class="Default">
+      <node ref="U104" pin="4" pinfunction="FAULT_N_4" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U105-NC-Pad4)" class="Default">
+      <node ref="U105" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

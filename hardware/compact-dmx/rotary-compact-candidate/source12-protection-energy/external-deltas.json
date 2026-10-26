@@ -1,0 +1,55 @@
+{
+  "status": "Observed external changes; no baseline acceptance or refresh. This task did not write these files.",
+  "deltas": [
+    {
+      "path": "hardware/compact-dmx/README.md",
+      "snapshot_sha256": "efdbd2254b05fef589def3bcdef142be356da1fee2eef8811de0df9efa00242a",
+      "current_sha256": "f9ae8055b7f484d031cf4eac26fefa05493f65252973e1ca3f10511cf1336a59"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/allocation-detail.step",
+      "snapshot_sha256": "3cab6a742e58d63848a10d1207bc7e6e542a8aa55d2fd0cd0fb57c29cbd9a07e",
+      "current_sha256": "91aa9242b47ff24737d2355faf8fe2ed46cde5d2d9dc174c50b27043caa48f22"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/allocation.20261023-145512.FCBak",
+      "snapshot_sha256": "57886eb70e256b9e5558cbfaaa7b87c502ff25151a65aef0d1ab8bb5944a0d75",
+      "current_sha256": null
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/allocation.FCStd",
+      "snapshot_sha256": "4a4384ec2e85bac06e68db2e97e2529046a6bfa3494b916863e7a6d71db7930a",
+      "current_sha256": "6338731592063d571ff70172fac136b019c557ba035acd8235b7fa5aa006d1c9"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/build.py",
+      "snapshot_sha256": "2f7961735a44bc6d92c48e1b6710fd2f04ab2e4dcdf216f70e4cf63d28ade97f",
+      "current_sha256": "0e188a629b1a5804c2b6c274cd53616bc1ec230595d228929a6ddfb3ec6b64a2"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/check.log",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "5e0ad02b346e296ceb64348dc8faaf6108af4c82e109c755c5b361e1d2a0b83f"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/check.py",
+      "snapshot_sha256": "76656808a293d0f4d13e48c172d8f6305147af787a3c00fbcaec9e9cea6a9e67",
+      "current_sha256": "0bc951b1447a87fbb2aee12e87f985c1832129f75d5f0f16e89d3c9431a0c127"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/inline-assembly.step",
+      "snapshot_sha256": "333b34a89d8e96823128cb3fa66a142ec5d7dcb58903658a6efd1051e4a42c7e",
+      "current_sha256": "fde5286b21f7a020ff92b665501798ee2e4016f730ff259c4bd7e76ef895b7cc"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/screen.py",
+      "snapshot_sha256": "287cf68ff647573a1392222bca53c3362a144fce54a1cea4de04378d61968b28",
+      "current_sha256": "928002fa32830c4d4d1e6dde723517f2feb7acda8bb75f2302ad95c8cc24000e"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/wire-paths.json",
+      "snapshot_sha256": "5bf2ae69adac95d971981b506181f04859c367dd6b39cdd5072de8df642a23dc",
+      "current_sha256": "0dfa388de8d6ef162eb115bcb7bc8939ddca4b7e599a987c3026aa473c8806d9"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+reference,value,kind,footprint,role
+U101,TPS3700DDCR,added,DDC6,Independent cell overvoltage
+U102,TPS3808G33DBVR,added,DBV6,"Independent monitor-startup inhibit, CT open12..28ms"
+U103,TPS22963CYZPR,added,YZP6,Charger input disconnect; no quick output discharge
+U104,BQ25173DSGR,existing_context,DSG8,"Existing charger, no main path change"
+F101,045101.5MRL 1.5A non-resettable,added,Fuse451,FIRST cell positive element before charger/boost branch split
+R101,TNPW040256K5BYED 56500ohm,added,R0402,OV top0.1%10ppm
+R102,TNPW040210K0BYED 10000ohm,added,R0402,OV bottom0.1%10ppm
+R103,TNPW040282K0BYED 82000ohm,added,R0402,Hardware permit pullup
+R104,TNPW040210K0BYED 10000ohm,added,R0402,ON low-state attenuation
+R105,TNPW040256K0BYED 56000ohm,added,R0402,ON default pulldown
+R201,TNPW040222K2BYED 22200ohm,tuned_existing,R0402,"BQ feedback top changes22.5k to22.2k,0.1%10ppm"
+R202,TNPW040210K0BYED 10000ohm,tuned_existing,R0402,"BQ feedback bottom remains10k, tighten10ppm"
+R203,TNPW040211K9BEED 11900ohm,existing_context,R0402,Existing25mA nominal charge
+R204,TNPW0402100RBEED 100ohm,existing_context,R0402,Existing ISET filter
+C101,GRM155R71E104KE14D 100nF,added,C0402,U101 local bypass
+C102,GRM155R71E104KE14D 100nF,added,C0402,U102 local bypass
+C103,GRM155R61C105KA12D 1uF,added,C0402,U103 local input
+C104,GRM155R61C105KA12D 1uF,added,C0402,U103 local output
+C201,GRM155R61C105KA12D 1uF,existing_context,C0402,BQ input bypass
+C202,GRM155R61C105KA12D 1uF,added,C0402,BQ local1uF output filter; fuse separates cell and adds lead inductance
+C203,GRM155R71E104KE14D 100nF,existing_context,C0402,Existing ISET filter
+X1,"EXISTING source/control boundary, no purchased connector",boundary,,
+X2,"Eaton HV1625-2R7256-R 25F, actual cell assembly owned by Astra",boundary,,
+X3,Existing cap-only boost/UVLO/arm boundary,boundary,,
+#FLG1,Actual external source/return,flag,,
+#FLG2,Actual external source/return,flag,,
+#FLG3,Actual external source/return,flag,,

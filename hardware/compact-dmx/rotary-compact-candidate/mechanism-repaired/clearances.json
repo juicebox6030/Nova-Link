@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "distances": [
+    {
+      "a": "FixedStiffener",
+      "b": "StationarySpool",
+      "distance_mm": 0.05567462128583841,
+      "minimum_screen_mm": 0.055
+    },
+    {
+      "a": "MovingStiffener",
+      "b": "RotorHalfPositiveY",
+      "distance_mm": 0.055675095967164044,
+      "minimum_screen_mm": 0.055
+    },
+    {
+      "a": "StationaryCoreEnvelope",
+      "b": "StationarySpool",
+      "distance_mm": 0.09999999886250448,
+      "minimum_screen_mm": 0.0999
+    },
+    {
+      "a": "FixedScrew0",
+      "b": "StationaryCoreEnvelope",
+      "distance_mm": 0.1999999999999993,
+      "minimum_screen_mm": 0.1999
+    },
+    {
+      "a": "FixedScrew1",
+      "b": "StationaryCoreEnvelope",
+      "distance_mm": 0.1999999999999993,
+      "minimum_screen_mm": 0.1999
+    },
+    {
+      "a": "Components_TARGET",
+      "b": "RotorHalfPositiveY",
+      "distance_mm": 0.9567382512726285,
+      "minimum_screen_mm": 0.95
+    },
+    {
+      "a": "FrameBolt_45_25_m29_5_HeadInterior",
+      "b": "RotorHalfPositiveY",
+      "distance_mm": 0.04999999999999982,
+      "minimum_screen_mm": 0.0499
+    },
+    {
+      "a": "FrameBolt_45_25_29_5_HeadInterior",
+      "b": "RotorHalfPositiveY",
+      "distance_mm": 0.049999999999993605,
+      "minimum_screen_mm": 0.0499
+    },
+    {
+      "a": "FrameBolt_68_9_m29_5_HeadInterior",
+      "b": "RotorHalfPositiveY",
+      "distance_mm": 0.04999999999999982,
+      "minimum_screen_mm": 0.0499
+    },
+    {
+      "a": "FrameBolt_68_9_29_5_HeadInterior",
+      "b": "RotorHalfPositiveY",
+      "distance_mm": 0.049999999999993605,
+      "minimum_screen_mm": 0.0499
+    }
+  ],
+  "integral_stop_stub_volume_mm3": 3.141592653589793,
+  "source_placeholder_dimensions_verified": true,
+  "note": "Exact saved-solid distances at nominal axial datum; physical tolerances/load equilibrium remain qualified separately"
+}

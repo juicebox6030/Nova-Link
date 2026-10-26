@@ -1,0 +1,178 @@
+{
+  "revision": "INSTALLATION-GATE-R1",
+  "created_utc": "2026-10-23T19:05:29.657432+00:00",
+  "repository": "/home/juicebox/Nova-Link",
+  "branch": "main",
+  "HEAD": "b42c0e6284aac734fde851c69146abf73920f337",
+  "owned_path": "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/installation-gate/**",
+  "decision": "BLOCKED FOR PRODUCTION: existing IRM20 / \u00d843ID stationary core architecture does not meet the documented installation construction; no explicit authoritative alternative found in this bounded pass",
+  "authoritative_alternative_found": false,
+  "alternative_elsewhere_or_in_underlying_approval_report": "UNKNOWN, not proof none exists",
+  "technical_PDF_documents_reviewed": 3,
+  "sources": [
+    {
+      "document": "MEAN WELL PCB installation manual",
+      "url": "https://www.meanwell.com/Upload/PDF/IRM-01/PCB.pdf",
+      "cache": "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sources/meanwell-pcb-installation.pdf",
+      "sha256": "fa68e719a5e78a45bae42d2c01afdd3dfecd1a43b6a48768616036003f05f54a",
+      "pages": 2,
+      "read": "p1 family list and Installation(2); scope explicitly includes IRM",
+      "literal_excerpts": [
+        "5mm insulation distance on the bottom",
+        "a Mylar film should be added between the unit and the system",
+        "10mm for general type"
+      ],
+      "finding": "Requires bottom separation plus Mylar and general-type surrounding separation. No IRM exception or film-for-distance substitution stated. Applies to unit/system, not an explicitly specified 5mm pin-to-PCB mating standoff."
+    },
+    {
+      "document": "IRM-20 specification 2025-11-21",
+      "url": "https://www.meanwell.com/Upload/PDF/IRM-20-SPEC.PDF",
+      "cache": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm20.pdf",
+      "sha256": "aa1afdbcdf0bf6db796710e26bd5e258f4857ffb1c14bd1ac3d94af86f3b8789",
+      "pages": 3,
+      "read": "p1 PCB-mount intended use; p3 mechanical drawing and installation-manual referral",
+      "literal_excerpts": [
+        "ready to be soldered onto the PCB boards",
+        "3.5\u00b11mm"
+      ],
+      "finding": "Mating PCB construction is intended; pin length2.5..4.5mm and body general +/-0.5mm are explicit. Potted/ClassII/noFG/component approvals do not supply reduced unit-to-system distances. No alternative permitted tight-enclosure construction found."
+    },
+    {
+      "document": "Manufacturer-hosted E183223 UL component listing extract",
+      "url": "https://www.meanwell.com/Upload/PDF/IRM-20/E183223-UL-cer.pdf",
+      "discovered_via": "https://www.meanwell.eu/productPdf.aspx?i=682 (UL Certificate selector)",
+      "cache": "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/installation-gate/irm20-ul-certificate.pdf",
+      "sha256": "fd4547da3c9e1f79bc9ebd8d68526d4f5ef726457eeffff906c062e70e5a191c",
+      "pages": 12,
+      "read": "Whole12-page PDF via rendered pages/OCR; visually confirmed category page1 and model on page5, OCR confirms duplicate model page10 and listing date on7/12. Rendered intermediates removed; unchanged PDF and combined OCR retained.",
+      "listing_updated": "2024-01-24",
+      "finding": "Lists the model in component categories QQJQ2/QQJQ8. This file supplies no model-specific installation construction, Conditions of Acceptability, alternate insulation layout or reduced item2 clearance. It is not the underlying construction/test report. No certification of this barrel or current approval-status inference made. OCR is a derivative aid; unchanged PDF is authoritative."
+    }
+  ],
+  "applicability": {
+    "published_manual_includes_IRM": true,
+    "IRM20_spec_refers_to_installation_manual": true,
+    "pin_mating_vs_system_surfaces": "IRM20 is intended to solder to a mating PCB. Its2.5..4.5mm pins cannot span a5mm body-to-PCB standoff. This distinguishes the intended electrical mating region from external system surfaces; it is NOT permission to ignore enclosure, wiring, carrier/support or bottom insulation requirements. Exact approved construction and scope of these surfaces remain unestablished.",
+    "no_waiver_inferred_from": "Potted case, ClassII/noFG, approval marks, short pins, Mylar presence, prior nominal CAD or lack of immediate geometric collision",
+    "independent_obstruction": "10mm on both lateral sides of maximum27.7mm body requires47.7mm width; no43mm bore chord can supply that. This fails even without resolving top/bottom wording, pin/PCB mating, Mylar thickness, mount exemptions or thermal space."
+  },
+  "calculations": {
+    "source_max_body_LWH_mm": [
+      52.9,
+      27.7,
+      24.5
+    ],
+    "source_pin_length_minmax_mm": [
+      2.5,
+      4.5
+    ],
+    "necessary_lateral_width_mm": 47.7,
+    "existing_core_ID_mm": 43,
+    "width_deficit_mm": 4.700000000000003,
+    "necessary_lateral_only_OD_same_wall_mm": 52.7,
+    "rectangular_reservations": [
+      {
+        "name": "body-face-only comparison",
+        "length_width_height_mm": [
+          72.9,
+          47.7,
+          39.5
+        ],
+        "rectangular_cross_section_diagonal_mm": 61.93173661379116,
+        "same2p5wall_OD_comparison_mm": 66.93173661379116,
+        "assumption": "10mm on both X/Y sides and above,5mm below BODY face; excludes pins as clearance datum, carrier, film and tolerances. Upper10mm is an explicitly conservative interpretation of around, not a separately stated top clause."
+      },
+      {
+        "name": "max-pin-referenced module reservation",
+        "length_width_height_mm": [
+          72.9,
+          47.7,
+          44.0
+        ],
+        "rectangular_cross_section_diagonal_mm": 64.89445276755171,
+        "same2p5wall_OD_comparison_mm": 69.89445276755171,
+        "assumption": "Same side/top reservation,5mm beyond lowest maximum live pin; board/copper stay above that pin in R1. This conservative bottom datum is not asserted to be defined in the manual."
+      },
+      {
+        "name": "same reservation plus illustrative R1 film thickness",
+        "length_width_height_mm": [
+          72.9,
+          47.7,
+          44.125
+        ],
+        "rectangular_cross_section_diagonal_mm": 64.97927073305763,
+        "same2p5wall_OD_comparison_mm": 69.97927073305763,
+        "assumption": "Adds R1 unqualified .125mm film outside full5mm separation; guide specifies neither film thickness nor permission to subtract it from5mm."
+      },
+      {
+        "name": "carrier+pin assembly planning reservation",
+        "length_width_height_mm": [
+          81,
+          52,
+          44.0
+        ],
+        "rectangular_cross_section_diagonal_mm": 68.11754546370561,
+        "same2p5wall_OD_comparison_mm": 73.11754546370561,
+        "assumption": "Conservative whole carrier61x32 planning box with same allowances. Treating the carrier as part of unit assembly is an engineering reservation, not a manufacturer-specified construction or approved minimum. Retention, trunk, endcaps, leads and cooling may require more."
+      }
+    ],
+    "box_limit": "Diagonal is the bore needed to contain the stated rectangular reservation in isolation. It is not an exact minimum for every conformal insulation construction, permission to enlarge the core, or a whole-barrel pack/thermal/endcap acceptance. All examples already exceed\u00d843. No geometry revised.",
+    "R1_bounded_body_to_nominal_bore_gap_mm": 0.4645537247245457,
+    "R1_worst_maxlead_tip_to_trunk_mm": 0.7999999999999989,
+    "R1_pin_to_trunk_shortfall_if5mm_below_live_pin_applies_mm": 4.200000000000001,
+    "if_raise_to_5mm_below_pin_min_body_bottom_Z_mm": -5.0,
+    "corresponding_max_body_top_Z_mm": 19.5,
+    "corresponding_body_corner_radius_mm": 23.918037126821257,
+    "existing_bore_radius_mm": 21.5,
+    "literal5mm_standoff_minlead_projection_after1p6PCB_mm": -4.1,
+    "film": "Mylar required; no grade/thickness or distance-credit authorization supplied in the reviewed text. .125mm example is explicitly R1 allocation only."
+  },
+  "wire_assembly_prerequisites_in_order": [
+    "FIRST pass installation source gate with explicit model-specific permitted construction and all applicable external separations/materials. Current architecture is blocked: do not make jig/motion CAD against unaccepted gaps.",
+    "Release exact pin/aperture/PTH or solder termination and primary/secondary harness drawings, tolerances, materials, endcap/port/clamp interfaces and access. R1 pin-to-land process and all retention/material/thread/locking qualifications remain open.",
+    "Specify a reproducible unpowered sequence: when wires feed through\u00d84, when split sleeve fits/seats/retains, when wires terminate and clamps close, and how forming loads are kept out of solder/module pins. Both yellow leads need durable polarity identification.",
+    "Prove finite wire/tool/jig access and extraction for every assembly state with protected trunk and endcaps intact, Rmin9 and ODmax1.6 respected including fixture/springback/sleeve tolerance. Final nonintersecting solids alone are not a process. The completed preformed loop has an existing axial-insertion collision.",
+    "Only after source gate and process definition: demonstrate repeatable unpowered assembly with measured bend/edge coverage/clearances, solder inspection, polarity/continuity/isolation and approved pull/retention criteria. No such demonstration, fixture design, hardware work or new numerical acceptance limits performed here."
+  ],
+  "separate_parent_integration_blocker": {
+    "status": "Separate integration BLOCKER; supplied by parent user message in this task, no circuit changes or model re-derivation",
+    "reported_model": {
+      "source_V": 4.6375,
+      "efficiency_assumption": 0.8,
+      "VCONN_A": 0.41
+    },
+    "breaker_floor_A": 2.994611,
+    "nominal_tail_mOhm": 14.199,
+    "nominal_input_A": 3.022256,
+    "nominal_margin_mA": -27.64500000000014,
+    "allocated_tail_mOhm": 16.25,
+    "stationary_wire_mOhm": 4.964,
+    "allocated_input_A": 3.040273,
+    "allocated_margin_mA": -45.66200000000009,
+    "evidence_path": ".tools/checks/stationary-and-collar-parent/parent-receipt.json",
+    "parent_evidence_file_present_when_receipt_generated": true,
+    "limitation": "Only the displayed subtraction is independently verified; parent owns actual fanout/model/protection evidence. Source installation gate has priority.",
+    "evidence_sha256": "6e66981270daf982ad78ddf8cbc3612e6951e4157773ab4a36c46c522fcf56bc"
+  },
+  "next_supported_action": "Parent records the \u00d843ID/IRM20 production architecture as BLOCKED and stops R1 jig/motion development. A future integration pass requires either explicit authoritative model-specific construction/approval conditions permitting the proposed system distances, or an authorized stationary architecture/allocation revision that accommodates documented installation requirements. No speculative tight-gap CAD or automatic enlargement. No vendor contact performed or authorized here.",
+  "preservation": {
+    "protected_inputs": 466,
+    "R1_files": 44,
+    "all_hashes_match": true,
+    "inventory": "protected-inputs.json",
+    "inventory_sha256": "880c30d133308ce902f8c51d1da896ddfc4e29c1d81dd395eec092896f4b2451",
+    "sibling_or_R1_writes": 0
+  },
+  "actual_commands": [
+    "git branch --show-current",
+    "git rev-parse HEAD",
+    "curl --fail --location --max-time 30 https://www.meanwell.com/Upload/PDF/IRM-20/E183223-UL-cer.pdf --output hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/installation-gate/irm20-ul-certificate.pdf",
+    "pdftotext -layout <owned>/irm20-ul-certificate.pdf <owned>/irm20-ul-certificate.txt (font map unusable; temporary extraction removed)",
+    "pdftoppm -scale-to 1800 -png <owned>/irm20-ul-certificate.pdf <owned>/ul-page",
+    "tesseract <owned>/ul-page-NN.png <owned>/ul-page-NN --psm 3 (12 pages, existing binary)",
+    "python3 hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/installation-gate/verify.py",
+    "sha256sum -c SHA256SUMS (owned directory)"
+  ],
+  "no_CAD_jig_motion_hardware_firmware_children_installs_vendor_contact_git_publication": true,
+  "limits": "Bounded3-PDF source investigation and deterministic arithmetic only. Not an approval opinion, complete standards assessment, thermal proof, physical wire process demonstration or manufacturing release."
+}

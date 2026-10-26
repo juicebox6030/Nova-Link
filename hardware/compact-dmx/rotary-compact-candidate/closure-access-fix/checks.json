@@ -1,0 +1,8143 @@
+{
+  "valid_closed_single_solids": 356,
+  "other_shapes_preserved_numeric_1e12": 355,
+  "all_placements_preserved": true,
+  "changed_upper_added_volume_mm3": 0.0,
+  "unchanged_seat_region_volume_mm3": 2876.853012476626,
+  "seat_region_removed_mm3": 0.0,
+  "physical_parts_in_closed_state": 339,
+  "tool_vs_closed_physical_pairs": [
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_FixedEarPad0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_FixedScrew0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_FixedEarShoe0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_FixedEarPad1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_FixedScrew1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_FixedEarShoe1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_FixedAdhesive",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_FixedStiffener",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_FixedStaticTail",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_MovingEarPad0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_MovingScrew0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_MovingEarShoe0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_MovingEarPad1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_MovingScrew1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_MovingEarShoe1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_MovingAdhesive",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_MovingStiffener",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_MovingStaticTail",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_IndexKnob",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_IndexPin",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_IndexRearCap",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_IndexSpring",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_StationarySpool",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_CoreBondFront",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_CoreBondRear",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_FrameBolt_45_25_29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_FrameBolt_68_9_29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "COL_Flex_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "FixedTailCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "FixedTailCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "MovingTailCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "MovingTailCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "FixedFanoutCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "FixedFanoutCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "FixedFanoutDielectric0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "StationaryCoreWithSupports",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_S1_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_S2_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_S3_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_S4_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_PCB",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R10_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R10_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R10_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_TP2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R18_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R18_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R18_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_D1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_D1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_D1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R15_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R15_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R15_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C13_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C13_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C13_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R7_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R7_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R7_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R24_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R24_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R24_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U5_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U5_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U5_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U5_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U5_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U5_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U5_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad9_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad10_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad11_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad12_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad13_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad14_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad15_14",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad16_15",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad17_16",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad18_17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad19_18",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad20_19",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U3_Pad21_20",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C4_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C4_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C4_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C17_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C17_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C17_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C12_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C12_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C12_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C10_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C10_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C10_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C6_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C6_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C6_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R20_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R20_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R20_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R12_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R12_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R12_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R9_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R9_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R9_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R14_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R14_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R14_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R21_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R21_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R21_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R11_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R11_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R11_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R23_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R23_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R23_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad9_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad10_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad11_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad12_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad13_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad14_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad15_14",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad16_15",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad17_16",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad18_17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad19_18",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad20_19",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U4_Pad21_20",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R19_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R19_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R19_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C7_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C7_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C7_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_L1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_L1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_L1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C5_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C5_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C5_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C8_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C8_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C8_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C3_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_TP1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadA1_B12_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadA4_B9_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadA5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadA6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadA7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadA8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadB1_A12_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadB4_A9_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadB5_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadB6_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadB7_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadB8_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadS1_14",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadS2_15",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadS3_16",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_J1_PadS4_17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R22_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R22_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R22_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R8_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R8_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R8_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R13_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R13_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R13_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C16_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C16_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C16_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R25_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R25_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R25_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R26_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R26_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R26_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R16_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R16_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R16_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C2_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R27_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R27_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R27_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R17_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R17_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_R17_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C15_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C15_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C15_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U2_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U2_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U2_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U2_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U2_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U2_Pad7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U2_Pad8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U2_Pad9_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U2_Pad10_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_U2_Pad11_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C9_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C9_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "rotating_C9_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_PCB",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R2_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R5_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R5_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R5_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R6_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R6_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R6_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_C14_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_C14_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_C14_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_C1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_C1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_C1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_J2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_J2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R3_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_C11_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_C11_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_C11_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R4_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R4_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_R4_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_J0_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_J0_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad1_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad2_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad3_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad4_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad4_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad5_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad6_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad7_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad7_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad8_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad9_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad10_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "stationary_U1_Pad10_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "J2_Solder1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "J2_Solder2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "FixedFanoutShoe",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "StationaryCornerCapFrontp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "StationaryCornerCapRearp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "StationaryCapScrewFrontm",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "StationaryCapScrewFrontp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "StationaryCapScrewRearm",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "StationaryCapScrewRearp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "J0_Solder1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "J0_Solder1_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "J0_Solder2_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "J0_Solder2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "RotorHalfPositiveY",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "RotorHalfNegativeY",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "MovingFanoutCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "MovingFanoutCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "MovingFanoutDielectric0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "J3_Solder1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "J3_Solder2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "MovingClampScrew51_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "MovingClampScrew74_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "MovingFanoutShoe",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "SourceEndGateScrewm17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "SourceEndGateScrew17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "SourceEndGate",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "IRM20_12_maxbody",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "Pin_L",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "Pin_N",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "Pin_LVplus",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "Pin_LVminus",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "ClosureScrew_m110_m32",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "ClosureScrew_m110_32",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "ClosureScrew_m32_m32",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "ClosureScrew_m32_32",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "LowerShellPosts",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "UpperShellRetention",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "RetainedCarrier",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "CarrierScrew0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "CarrierScrew1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "CarrierScrew2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "CarrierScrew3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "SupportedFilm",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "Neck",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "TrunkL",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "TrunkN",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "TrunkPE",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "NeutralBranch",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "LineToFuse",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "FuseToLinePin",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "SourceWireCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "SourceWireInsulation1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "SourceWireCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_32",
+      "part": "SourceWireInsulation2_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_FixedEarPad0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_FixedScrew0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_FixedEarShoe0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_FixedEarPad1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_FixedScrew1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_FixedEarShoe1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_FixedAdhesive",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_FixedStiffener",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_FixedStaticTail",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_MovingEarPad0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_MovingScrew0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_MovingEarShoe0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_MovingEarPad1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_MovingScrew1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_MovingEarShoe1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_MovingAdhesive",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_MovingStiffener",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_MovingStaticTail",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_IndexKnob",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_IndexPin",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_IndexRearCap",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_IndexSpring",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_StationarySpool",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_CoreBondFront",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_CoreBondRear",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_FrameBolt_45_25_29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_FrameBolt_68_9_29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "COL_Flex_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "FixedTailCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "FixedTailCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "MovingTailCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "MovingTailCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "FixedFanoutCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "FixedFanoutCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "FixedFanoutDielectric0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "StationaryCoreWithSupports",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_S1_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_S2_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_S3_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_S4_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_PCB",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R10_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R10_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R10_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_TP2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R18_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R18_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R18_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_D1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_D1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_D1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R15_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R15_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R15_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C13_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C13_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C13_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R7_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R7_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R7_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R24_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R24_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R24_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U5_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U5_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U5_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U5_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U5_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U5_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U5_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad9_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad10_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad11_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad12_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad13_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad14_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad15_14",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad16_15",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad17_16",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad18_17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad19_18",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad20_19",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U3_Pad21_20",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C4_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C4_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C4_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C17_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C17_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C17_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C12_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C12_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C12_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C10_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C10_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C10_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C6_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C6_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C6_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R20_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R20_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R20_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R12_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R12_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R12_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R9_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R9_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R9_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R14_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R14_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R14_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R21_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R21_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R21_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R11_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R11_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R11_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R23_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R23_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R23_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad9_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad10_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad11_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad12_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad13_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad14_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad15_14",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad16_15",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad17_16",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad18_17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad19_18",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad20_19",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U4_Pad21_20",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R19_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R19_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R19_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C7_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C7_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C7_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_L1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_L1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_L1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C5_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C5_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C5_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C8_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C8_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C8_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C3_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_TP1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadA1_B12_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadA4_B9_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadA5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadA6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadA7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadA8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadB1_A12_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadB4_A9_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadB5_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadB6_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadB7_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadB8_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadS1_14",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadS2_15",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadS3_16",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_J1_PadS4_17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R22_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R22_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R22_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R8_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R8_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R8_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R13_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R13_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R13_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C16_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C16_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C16_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R25_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R25_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R25_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R26_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R26_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R26_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R16_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R16_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R16_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C2_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R27_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R27_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R27_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R17_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R17_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_R17_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C15_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C15_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C15_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U2_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U2_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U2_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U2_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U2_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U2_Pad7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U2_Pad8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U2_Pad9_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U2_Pad10_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_U2_Pad11_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C9_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C9_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "rotating_C9_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_PCB",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R2_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R5_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R5_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R5_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R6_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R6_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R6_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_C14_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_C14_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_C14_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_C1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_C1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_C1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_J2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_J2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R3_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_C11_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_C11_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_C11_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R4_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R4_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_R4_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_J0_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_J0_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad1_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad2_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad3_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad4_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad4_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad5_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad6_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad7_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad7_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad8_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad9_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad10_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "stationary_U1_Pad10_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "J2_Solder1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "J2_Solder2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "FixedFanoutShoe",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "StationaryCornerCapFrontp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "StationaryCornerCapRearp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "StationaryCapScrewFrontm",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "StationaryCapScrewFrontp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "StationaryCapScrewRearm",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "StationaryCapScrewRearp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "J0_Solder1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "J0_Solder1_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "J0_Solder2_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "J0_Solder2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "RotorHalfPositiveY",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "RotorHalfNegativeY",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "MovingFanoutCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "MovingFanoutCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "MovingFanoutDielectric0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "J3_Solder1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "J3_Solder2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "MovingClampScrew51_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "MovingClampScrew74_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "MovingFanoutShoe",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "SourceEndGateScrewm17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "SourceEndGateScrew17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "SourceEndGate",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "IRM20_12_maxbody",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "Pin_L",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "Pin_N",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "Pin_LVplus",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "Pin_LVminus",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "ClosureScrew_m110_m32",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "ClosureScrew_m110_32",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "ClosureScrew_m32_m32",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "ClosureScrew_m32_32",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "LowerShellPosts",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "UpperShellRetention",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "RetainedCarrier",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "CarrierScrew0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "CarrierScrew1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "CarrierScrew2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "CarrierScrew3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "SupportedFilm",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "Neck",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "TrunkL",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "TrunkN",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "TrunkPE",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "NeutralBranch",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "LineToFuse",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "FuseToLinePin",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "SourceWireCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "SourceWireInsulation1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "SourceWireCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "part": "SourceWireInsulation2_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_FixedEarPad0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_FixedScrew0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_FixedEarShoe0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_FixedEarPad1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_FixedScrew1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_FixedEarShoe1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_FixedAdhesive",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_FixedStiffener",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_FixedStaticTail",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_MovingEarPad0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_MovingScrew0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_MovingEarShoe0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_MovingEarPad1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_MovingScrew1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_MovingEarShoe1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_MovingAdhesive",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_MovingStiffener",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_MovingStaticTail",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_IndexKnob",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_IndexPin",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_IndexRearCap",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_IndexSpring",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_StationarySpool",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_CoreBondFront",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_CoreBondRear",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_FrameBolt_45_25_29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_FrameBolt_68_9_29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "COL_Flex_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "FixedTailCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "FixedTailCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "MovingTailCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "MovingTailCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "FixedFanoutCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "FixedFanoutCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "FixedFanoutDielectric0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "StationaryCoreWithSupports",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_S1_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_S2_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_S3_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_S4_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_PCB",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R10_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R10_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R10_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_TP2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R18_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R18_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R18_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_D1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_D1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_D1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R15_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R15_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R15_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C13_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C13_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C13_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R7_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R7_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R7_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R24_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R24_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R24_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U5_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U5_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U5_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U5_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U5_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U5_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U5_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad9_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad10_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad11_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad12_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad13_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad14_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad15_14",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad16_15",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad17_16",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad18_17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad19_18",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad20_19",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U3_Pad21_20",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C4_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C4_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C4_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C17_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C17_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C17_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C12_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C12_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C12_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C10_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C10_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C10_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C6_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C6_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C6_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R20_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R20_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R20_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R12_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R12_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R12_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R9_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R9_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R9_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R14_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R14_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R14_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R21_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R21_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R21_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R11_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R11_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R11_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R23_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R23_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R23_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad9_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad10_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad11_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad12_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad13_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad14_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad15_14",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad16_15",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad17_16",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad18_17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad19_18",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad20_19",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U4_Pad21_20",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R19_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R19_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R19_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C7_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C7_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C7_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_L1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_L1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_L1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C5_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C5_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C5_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C8_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C8_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C8_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C3_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_TP1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadA1_B12_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadA4_B9_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadA5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadA6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadA7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadA8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadB1_A12_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadB4_A9_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadB5_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadB6_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadB7_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadB8_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadS1_14",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadS2_15",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadS3_16",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_J1_PadS4_17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R22_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R22_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R22_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R8_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R8_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R8_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R13_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R13_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R13_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C16_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C16_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C16_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R25_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R25_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R25_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R26_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R26_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R26_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R16_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R16_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R16_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C2_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R27_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R27_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R27_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R17_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R17_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_R17_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C15_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C15_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C15_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U2_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U2_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U2_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U2_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U2_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U2_Pad7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U2_Pad8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U2_Pad9_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U2_Pad10_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_U2_Pad11_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C9_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C9_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "rotating_C9_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_PCB",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R2_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R5_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R5_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R5_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R6_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R6_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R6_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_C14_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_C14_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_C14_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_C1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_C1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_C1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_J2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_J2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R3_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_C11_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_C11_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_C11_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R4_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R4_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_R4_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_J0_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_J0_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad1_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad2_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad3_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad4_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad4_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad5_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad6_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad7_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad7_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad8_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad9_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad10_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "stationary_U1_Pad10_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "J2_Solder1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "J2_Solder2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "FixedFanoutShoe",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "StationaryCornerCapFrontp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "StationaryCornerCapRearp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "StationaryCapScrewFrontm",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "StationaryCapScrewFrontp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "StationaryCapScrewRearm",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "StationaryCapScrewRearp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "J0_Solder1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "J0_Solder1_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "J0_Solder2_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "J0_Solder2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "RotorHalfPositiveY",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "RotorHalfNegativeY",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "MovingFanoutCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "MovingFanoutCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "MovingFanoutDielectric0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "J3_Solder1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "J3_Solder2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "MovingClampScrew51_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "MovingClampScrew74_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "MovingFanoutShoe",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "SourceEndGateScrewm17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "SourceEndGateScrew17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "SourceEndGate",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "IRM20_12_maxbody",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "Pin_L",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "Pin_N",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "Pin_LVplus",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "Pin_LVminus",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "ClosureScrew_m110_m32",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "ClosureScrew_m110_32",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "ClosureScrew_m32_m32",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "ClosureScrew_m32_32",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "LowerShellPosts",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "UpperShellRetention",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "RetainedCarrier",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "CarrierScrew0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "CarrierScrew1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "CarrierScrew2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "CarrierScrew3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "SupportedFilm",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "Neck",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "TrunkL",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "TrunkN",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "TrunkPE",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "NeutralBranch",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "LineToFuse",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "FuseToLinePin",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "SourceWireCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "SourceWireInsulation1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "SourceWireCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "part": "SourceWireInsulation2_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_FixedEarPad0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_FixedScrew0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_FixedEarShoe0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_FixedEarPad1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_FixedScrew1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_FixedEarShoe1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_FixedAdhesive",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_FixedStiffener",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_FixedStaticTail",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_MovingEarPad0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_MovingScrew0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_MovingEarShoe0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_MovingEarPad1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_MovingScrew1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_MovingEarShoe1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_MovingAdhesive",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_MovingStiffener",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_MovingStaticTail",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_IndexKnob",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_IndexPin",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_IndexRearCap",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_IndexSpring",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_StationarySpool",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_CoreBondFront",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_CoreBondRear",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_FrameBolt_45_25_29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_FrameBolt_68_9_29_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "COL_Flex_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "FixedTailCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "FixedTailCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "MovingTailCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "MovingTailCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "FixedFanoutCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "FixedFanoutCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "FixedFanoutDielectric0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "StationaryCoreWithSupports",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_S1_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_S2_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_S3_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_S4_StakeReserve",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_PCB",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R10_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R10_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R10_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_TP2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R18_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R18_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R18_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_D1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_D1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_D1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R15_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R15_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R15_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C13_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C13_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C13_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R7_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R7_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R7_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R24_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R24_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R24_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U5_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U5_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U5_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U5_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U5_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U5_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U5_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad9_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad10_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad11_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad12_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad13_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad14_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad15_14",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad16_15",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad17_16",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad18_17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad19_18",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad20_19",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U3_Pad21_20",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C4_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C4_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C4_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C17_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C17_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C17_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C12_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C12_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C12_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C10_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C10_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C10_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C6_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C6_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C6_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R20_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R20_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R20_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R12_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R12_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R12_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R9_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R9_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R9_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R14_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R14_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R14_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R21_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R21_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R21_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R11_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R11_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R11_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R23_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R23_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R23_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad9_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad10_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad11_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad12_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad13_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad14_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad15_14",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad16_15",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad17_16",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad18_17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad19_18",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad20_19",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U4_Pad21_20",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R19_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R19_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R19_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C7_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C7_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C7_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_L1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_L1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_L1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C5_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C5_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C5_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C8_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C8_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C8_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C3_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_TP1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadA1_B12_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadA4_B9_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadA5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadA6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadA7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadA8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadB1_A12_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadB4_A9_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadB5_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadB6_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadB7_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadB8_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadS1_14",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadS2_15",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadS3_16",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_J1_PadS4_17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R22_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R22_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R22_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R8_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R8_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R8_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R13_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R13_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R13_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C16_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C16_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C16_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R25_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R25_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R25_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R26_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R26_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R26_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R16_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R16_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R16_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C2_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R27_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R27_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R27_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R17_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R17_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_R17_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C15_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C15_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C15_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U2_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U2_Pad3_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U2_Pad4_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U2_Pad5_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U2_Pad6_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U2_Pad7_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U2_Pad8_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U2_Pad9_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U2_Pad10_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_U2_Pad11_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C9_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C9_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "rotating_C9_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_PCB",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R2_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R5_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R5_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R5_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R6_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R6_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R6_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_C14_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_C14_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_C14_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_C1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_C1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_C1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_J2_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_J2_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R3_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R3_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R3_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_C11_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_C11_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_C11_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R1_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R4_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R4_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_R4_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_J0_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_J0_Pad2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Body",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad1_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad2_2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad3_3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad4_4",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad4_5",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad5_6",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad6_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad7_8",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad7_9",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad8_10",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad9_11",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad10_12",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "stationary_U1_Pad10_13",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "J2_Solder1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "J2_Solder2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "FixedFanoutShoe",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "StationaryCornerCapFrontp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "StationaryCornerCapRearp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "StationaryCapScrewFrontm",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "StationaryCapScrewFrontp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "StationaryCapScrewRearm",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "StationaryCapScrewRearp",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "J0_Solder1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "J0_Solder1_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "J0_Solder2_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "J0_Solder2_1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "RotorHalfPositiveY",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "RotorHalfNegativeY",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "MovingFanoutCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "MovingFanoutCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "MovingFanoutDielectric0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "J3_Solder1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "J3_Solder2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "MovingClampScrew51_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "MovingClampScrew74_7",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "MovingFanoutShoe",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "SourceEndGateScrewm17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "SourceEndGateScrew17",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "SourceEndGate",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "IRM20_12_maxbody",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "Pin_L",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "Pin_N",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "Pin_LVplus",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "Pin_LVminus",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "ClosureScrew_m110_m32",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "ClosureScrew_m110_32",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "ClosureScrew_m32_m32",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "ClosureScrew_m32_32",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "LowerShellPosts",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "UpperShellRetention",
+      "intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "RetainedCarrier",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "CarrierScrew0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "CarrierScrew1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "CarrierScrew2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "CarrierScrew3",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "SupportedFilm",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "Neck",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "TrunkL",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "TrunkN",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "TrunkPE",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "NeutralBranch",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "LineToFuse",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "FuseToLinePin",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "SourceWireCopper1",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "SourceWireInsulation1_0",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "SourceWireCopper2",
+      "intersection_mm3": 0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "part": "SourceWireInsulation2_0",
+      "intersection_mm3": 0
+    }
+  ],
+  "tool_volume_failures": [],
+  "upper_insertion_fixed_part_checks": [
+    {
+      "fixed_part": "COL_FixedEarPad0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_FixedScrew0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_FixedEarShoe0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_FixedEarPad1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_FixedScrew1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_FixedEarShoe1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_FixedAdhesive",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_FixedStiffener",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_FixedStaticTail",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_MovingEarPad0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_MovingScrew0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_MovingEarShoe0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_MovingEarPad1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_MovingScrew1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_MovingEarShoe1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_MovingAdhesive",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_MovingStiffener",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_MovingStaticTail",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_IndexKnob",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_IndexPin",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_IndexRearCap",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_IndexSpring",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_StationarySpool",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_CoreBondFront",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_CoreBondRear",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_FrameBolt_45_25_m29_5",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_FrameBolt_45_25_29_5",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_FrameBolt_68_9_m29_5",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_FrameBolt_68_9_29_5",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "COL_Flex_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "FixedTailCopper1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "FixedTailCopper2",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "MovingTailCopper1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "MovingTailCopper2",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "FixedFanoutCopper1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "FixedFanoutCopper2",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "FixedFanoutDielectric0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "StationaryCoreWithSupports",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_S1_StakeReserve",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_S2_StakeReserve",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_S3_StakeReserve",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_S4_StakeReserve",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_PCB",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R10_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R10_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R10_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_TP2_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R18_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R18_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R18_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_D1_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_D1_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_D1_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R15_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R15_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R15_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C13_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C13_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C13_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R7_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R7_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R7_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R24_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R24_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R24_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U5_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U5_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U5_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U5_Pad3_2",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U5_Pad4_3",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U5_Pad5_4",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U5_Pad6_5",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad3_2",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad4_3",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad5_4",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad6_5",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad7_6",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad8_7",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad9_8",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad10_9",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad11_10",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad12_11",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad13_12",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad14_13",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad15_14",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad16_15",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad17_16",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad18_17",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad19_18",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad20_19",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U3_Pad21_20",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C4_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C4_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C4_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J3_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J3_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C17_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C17_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C17_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C12_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C12_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C12_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C10_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C10_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C10_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C6_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C6_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C6_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R20_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R20_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R20_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R12_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R12_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R12_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R9_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R9_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R9_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R14_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R14_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R14_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R21_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R21_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R21_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R11_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R11_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R11_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R23_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R23_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R23_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad3_2",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad4_3",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad5_4",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad6_5",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad7_6",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad8_7",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad9_8",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad10_9",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad11_10",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad12_11",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad13_12",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad14_13",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad15_14",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad16_15",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad17_16",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad18_17",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad19_18",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad20_19",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U4_Pad21_20",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R19_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R19_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R19_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C7_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C7_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C7_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_L1_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_L1_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_L1_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C5_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C5_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C5_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C8_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C8_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C8_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C3_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C3_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C3_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_TP1_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadA1_B12_2",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadA4_B9_3",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadA5_4",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadA6_5",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadA7_6",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadA8_7",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadB1_A12_8",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadB4_A9_9",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadB5_10",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadB6_11",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadB7_12",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadB8_13",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadS1_14",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadS2_15",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadS3_16",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_J1_PadS4_17",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R22_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R22_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R22_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R8_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R8_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R8_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R13_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R13_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R13_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C16_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C16_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C16_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R25_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R25_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R25_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R26_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R26_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R26_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R16_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R16_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R16_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C2_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C2_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C2_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R27_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R27_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R27_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R17_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R17_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_R17_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C15_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C15_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C15_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U2_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U2_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U2_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U2_Pad3_2",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U2_Pad4_3",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U2_Pad5_4",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U2_Pad6_5",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U2_Pad7_6",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U2_Pad8_7",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U2_Pad9_8",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U2_Pad10_9",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_U2_Pad11_10",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C9_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C9_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "rotating_C9_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_PCB",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R2_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R2_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R2_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R5_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R5_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R5_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R6_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R6_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R6_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_C14_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_C14_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_C14_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_C1_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_C1_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_C1_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_J2_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_J2_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R3_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R3_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R3_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_C11_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_C11_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_C11_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R1_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R1_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R1_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R4_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R4_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_R4_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_J0_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_J0_Pad2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Body",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad1_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad2_2",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad3_3",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad4_4",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad4_5",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad5_6",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad6_7",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad7_8",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad7_9",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad8_10",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad9_11",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad10_12",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "stationary_U1_Pad10_13",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "J2_Solder1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "J2_Solder2",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "FixedFanoutShoe",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "StationaryCornerCapFrontp",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "StationaryCornerCapRearp",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "StationaryCapScrewFrontm",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "StationaryCapScrewFrontp",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "StationaryCapScrewRearm",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "StationaryCapScrewRearp",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "J0_Solder1_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "J0_Solder1_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "J0_Solder2_0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "J0_Solder2_1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "RotorHalfPositiveY",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "RotorHalfNegativeY",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "MovingFanoutCopper1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "MovingFanoutCopper2",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "MovingFanoutDielectric0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "J3_Solder1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "J3_Solder2",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "MovingClampScrew51_7",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "MovingClampScrew74_7",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "MovingFanoutShoe",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "SourceEndGateScrewm17",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "SourceEndGateScrew17",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "SourceEndGate",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "IRM20_12_maxbody",
+      "swept_bound_intersection_mm3": 0.0
+    },
+    {
+      "fixed_part": "Pin_L",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "Pin_N",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "Pin_LVplus",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "Pin_LVminus",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "LowerShellPosts",
+      "swept_bound_intersection_mm3": 0.0
+    },
+    {
+      "fixed_part": "RetainedCarrier",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "CarrierScrew0",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "CarrierScrew1",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "CarrierScrew2",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "CarrierScrew3",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "SupportedFilm",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "Neck",
+      "swept_bound_intersection_mm3": 0.0
+    },
+    {
+      "fixed_part": "TrunkL",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "TrunkN",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "TrunkPE",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "NeutralBranch",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "LineToFuse",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "FuseToLinePin",
+      "swept_bound_intersection_mm3": 0
+    },
+    {
+      "fixed_part": "SourceWireCopper1",
+      "swept_bound_intersection_mm3": 0.0
+    },
+    {
+      "fixed_part": "SourceWireInsulation1_0",
+      "swept_bound_intersection_mm3": 0.0
+    },
+    {
+      "fixed_part": "SourceWireCopper2",
+      "swept_bound_intersection_mm3": 0.0
+    },
+    {
+      "fixed_part": "SourceWireInsulation2_0",
+      "swept_bound_intersection_mm3": 0.0
+    }
+  ],
+  "insertion_absent_parts": [
+    "ClosureScrew_m110_m32",
+    "ClosureScrew_m110_32",
+    "ClosureScrew_m32_m32",
+    "ClosureScrew_m32_32"
+  ],
+  "continuous_insertion_travel_mm": 60,
+  "insertion_bound": "Exact containment in three vertically upwardclosed boxes; translations0..60, closure screws absent until lidseated",
+  "nominal_radial_driver_clearance_mm": 0.25,
+  "allocated_radial_clearance_mm": 0.05,
+  "passage_starts_above_bearing_seat_mm": 1.5,
+  "tip_head_contact": "Z4.5 face touch, no positivevolume",
+  "proof_reuse": "Only fixed upper changed, strict subset; original unrelated pair/motion/corridor proofs preserved, NOT rerun"
+}

@@ -1,0 +1,440 @@
+{
+  "status": "PROPOSAL_ARITHMETIC_AND_STATE_INVARIANTS_PASS; NO_NEW_CIRCUIT_CAPTURE",
+  "implementation": "Current25mA TPS61094/500mA-choice hardware remains unchanged; D-B still UNMET in that capture",
+  "owner_requirement_correction": "500mA compatibility was an engineering choice, not an explicit owner requirement; 1.5A-only behavior requires product selection",
+  "existing_500mA_design": {
+    "limiter_min_mA": 389.8002075527674,
+    "limiter_max_mA": 488.20996219811474,
+    "normal_VIN_V": 4.304799057371368,
+    "qualified_floor_VIN_V": 3.9125015286378924,
+    "charge_setting_corners": [
+      {
+        "nominal_charge_mA": 25,
+        "TPS61094_ICHG_resistor_kohm": 9.53,
+        "valid_resistor_code": true,
+        "maximum_charge_mA_assuming20percent": 30.0,
+        "whole_normal_input_required_mA": 325.7242037285186,
+        "qualified_floor_required_mA": 358.1832850053821,
+        "normal_margin_to_MIN_limiter_mA": 64.0760038242488,
+        "qualified_floor_margin_to_MIN_limiter_mA": 31.616922547385286,
+        "retains25mA_engineering_current_reserve_at_qualified_floor": true,
+        "ideal_nominal_charge_s": 1560.0,
+        "ideal_plus30pctC_plus2pctV_minus20pctI_s": 2585.7,
+        "current_accuracy_off5V_test_condition_qualified": false
+      },
+      {
+        "nominal_charge_mA": 40,
+        "TPS61094_ICHG_resistor_kohm": null,
+        "valid_resistor_code": false,
+        "maximum_charge_mA_assuming20percent": 48.0,
+        "whole_normal_input_required_mA": 339.5854779029364,
+        "qualified_floor_required_mA": 373.4343972575411,
+        "normal_margin_to_MIN_limiter_mA": 50.214729649830986,
+        "qualified_floor_margin_to_MIN_limiter_mA": 16.36581029522631,
+        "retains25mA_engineering_current_reserve_at_qualified_floor": false,
+        "ideal_nominal_charge_s": 975.0,
+        "ideal_plus30pctC_plus2pctV_minus20pctI_s": 1616.0625000000002,
+        "current_accuracy_off5V_test_condition_qualified": false
+      },
+      {
+        "nominal_charge_mA": 50,
+        "TPS61094_ICHG_resistor_kohm": 13.0,
+        "valid_resistor_code": true,
+        "maximum_charge_mA_assuming20percent": 60.0,
+        "whole_normal_input_required_mA": 348.8263273525484,
+        "qualified_floor_required_mA": 383.60180542564706,
+        "normal_margin_to_MIN_limiter_mA": 40.973880200219014,
+        "qualified_floor_margin_to_MIN_limiter_mA": 6.198402127120346,
+        "retains25mA_engineering_current_reserve_at_qualified_floor": false,
+        "ideal_nominal_charge_s": 780.0,
+        "ideal_plus30pctC_plus2pctV_minus20pctI_s": 1292.85,
+        "current_accuracy_off5V_test_condition_qualified": false
+      },
+      {
+        "nominal_charge_mA": 75,
+        "TPS61094_ICHG_resistor_kohm": 17.4,
+        "valid_resistor_code": true,
+        "maximum_charge_mA_assuming20percent": 90.0,
+        "whole_normal_input_required_mA": 371.92845097657806,
+        "qualified_floor_required_mA": 409.0203258459119,
+        "normal_margin_to_MIN_limiter_mA": 17.87175657618934,
+        "qualified_floor_margin_to_MIN_limiter_mA": -19.22011829314448,
+        "retains25mA_engineering_current_reserve_at_qualified_floor": false,
+        "ideal_nominal_charge_s": 520.0,
+        "ideal_plus30pctC_plus2pctV_minus20pctI_s": 861.9000000000001,
+        "current_accuracy_off5V_test_condition_qualified": false
+      },
+      {
+        "nominal_charge_mA": 100,
+        "TPS61094_ICHG_resistor_kohm": 22.1,
+        "valid_resistor_code": true,
+        "maximum_charge_mA_assuming20percent": 120.0,
+        "whole_normal_input_required_mA": 395.03057460060774,
+        "qualified_floor_required_mA": 434.4388462661768,
+        "normal_margin_to_MIN_limiter_mA": -5.230367047840332,
+        "qualified_floor_margin_to_MIN_limiter_mA": -44.63863871340942,
+        "retains25mA_engineering_current_reserve_at_qualified_floor": false,
+        "ideal_nominal_charge_s": 390.0,
+        "ideal_plus30pctC_plus2pctV_minus20pctI_s": 646.425,
+        "current_accuracy_off5V_test_condition_qualified": false
+      }
+    ]
+  },
+  "path1_retained500mA": {
+    "source_bound_closed": false,
+    "proposed_precharge_R_ILIM_kohm": 210,
+    "precharge_switch_min_mA": 109.9007844178141,
+    "precharge_switch_max_mA": 151.3196131861762,
+    "upper_cap_ALLOCATION_F": 5.5e-05,
+    "constant_current_charge_time_scale_s": 0.0028035013983647946,
+    "TPS2553_turnon_max_s": 0.003,
+    "TPS3808_open_CT_delay_min_s": 0.012,
+    "scale_comparison_is_startup_guarantee": false,
+    "blockers": [
+      "TPS61094 does not explicitly guarantee externally prebiased EN/MODE handoff or its delay/current maximum",
+      "Cap upper/leakage/ESR and switched bypass PG/sequence/SOA must be closed",
+      "TPS2553 min/max limit equations are DC bounds, not a peak hot-plug guarantee"
+    ]
+  },
+  "path2_CC_qualified1p5A": {
+    "selection": "PROPOSED_ONLY; changes compatibility contract",
+    "main_R_ILIM_kohm": 22.1,
+    "limiter_min_mA": 1082.6125209149834,
+    "limiter_max_mA": 1256.1821625133896,
+    "upstream_auxiliary_current_ALLOCATION_mA": 10,
+    "whole_static_USB_current_with_aux_ALLOCATION_mA": 1266.3221625133897,
+    "current_safety_margin_to1p5A_mA": 233.67783748661043,
+    "static_main_input_floor_using_worst_limiter_drop_V": 4.15504447830989,
+    "main_load_plus_aux_at_floor_mA": 321.4569901271479,
+    "with_hard_limited_charge_branch_max_mA": 472.77660331332413,
+    "margin_to_MAIN_MIN_limit_even_at_branch_limit_mA": 609.8359176016593,
+    "BQ25173_nominal_charge_mA": 100,
+    "BQ25173_ISET_kohm": 3,
+    "KISET_based_charge_min_mA": 89.68609865470852,
+    "KISET_based_charge_max_mA": 110.38635223281486,
+    "charge_branch_TPS2553_R_ILIM_kohm": 210,
+    "charge_branch_hard_DC_limit_max_mA": 151.3196131861762,
+    "ideal_nominal_full_charge_s": 390.0,
+    "ideal_corner_charge_s_before_CV_and_thermal": 576.17625,
+    "charge_target_and_FB_bias_closed": false,
+    "cold_linear_charger_dissipation_unthrottled_W": 0.6071249372804817,
+    "JEDEC75p2CperW_temperature_rise_C_INDICATION_ONLY": 45.655795283492225,
+    "TPS62132_proposed_CSS_nF": 100,
+    "CSS_min_based_ramp_time_s": 0.037037037037037035,
+    "output_cap_ALLOCATION_F": 4.4e-05,
+    "derived_output_cap_ramp_current_A": 0.003920399999999999,
+    "ramp_math_is_peak_input_current_guarantee": false,
+    "proposed_USB_side_UV_top_kohm": 89.8,
+    "proposed_USB_side_UV_bottom_kohm": 10,
+    "USB_UV_detector_corners": 32,
+    "USB_UV_rising_max_V": 4.059657493726794,
+    "USB_UV_falling_min_V": 3.8357808844058305,
+    "USB_qualified_buck_floor_with50mV_sag_and_max_mux_drop_V": 3.7104099546550273,
+    "USB_side_UV_is_peak_transient_guarantee": false,
+    "mux_Ron60mohm_test_conditions": "IOUT200mA at VIN3.3V/5V; applying at1.256A is an unqualified allocation",
+    "input_floor_is_guaranteed_full_current_bound": false,
+    "TPS61023_unknown_startup_current_is_USB_input_current": false,
+    "TPS61023_unknown_startup_current_location": "CAP_POS15F -> boost-only output capacitor; primary mux stays on USB",
+    "CC_truth_cases": 32,
+    "proposal_state_cases": 256,
+    "all_startup_bounds_closed": false,
+    "manufacturing_release": false
+  },
+  "CC_truth_table": [
+    {
+      "advertisement": "unattached",
+      "OUT1": 1,
+      "OUT2": 1,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "unattached",
+      "OUT1": 1,
+      "OUT2": 1,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "unattached",
+      "OUT1": 1,
+      "OUT2": 1,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "unattached",
+      "OUT1": 1,
+      "OUT2": 1,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "unattached",
+      "OUT1": 1,
+      "OUT2": 1,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "unattached",
+      "OUT1": 1,
+      "OUT2": 1,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "unattached",
+      "OUT1": 1,
+      "OUT2": 1,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "unattached",
+      "OUT1": 1,
+      "OUT2": 1,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "default",
+      "OUT1": 1,
+      "OUT2": 0,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "default",
+      "OUT1": 1,
+      "OUT2": 0,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "default",
+      "OUT1": 1,
+      "OUT2": 0,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "default",
+      "OUT1": 1,
+      "OUT2": 0,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "default",
+      "OUT1": 1,
+      "OUT2": 0,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "default",
+      "OUT1": 1,
+      "OUT2": 0,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "default",
+      "OUT1": 1,
+      "OUT2": 0,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "default",
+      "OUT1": 1,
+      "OUT2": 0,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "1p5A",
+      "OUT1": 0,
+      "OUT2": 1,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "1p5A",
+      "OUT1": 0,
+      "OUT2": 1,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "1p5A",
+      "OUT1": 0,
+      "OUT2": 1,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "1p5A",
+      "OUT1": 0,
+      "OUT2": 1,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "1p5A",
+      "OUT1": 0,
+      "OUT2": 1,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "1p5A",
+      "OUT1": 0,
+      "OUT2": 1,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "1p5A",
+      "OUT1": 0,
+      "OUT2": 1,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "1p5A",
+      "OUT1": 0,
+      "OUT2": 1,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": true
+    },
+    {
+      "advertisement": "3A",
+      "OUT1": 0,
+      "OUT2": 0,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "3A",
+      "OUT1": 0,
+      "OUT2": 0,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "3A",
+      "OUT1": 0,
+      "OUT2": 0,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "3A",
+      "OUT1": 0,
+      "OUT2": 0,
+      "OUT3_audio_absent": false,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "3A",
+      "OUT1": 0,
+      "OUT2": 0,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "3A",
+      "OUT1": 0,
+      "OUT2": 0,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": false,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "3A",
+      "OUT1": 0,
+      "OUT2": 0,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": false,
+      "SOURCE_ALLOW": false
+    },
+    {
+      "advertisement": "3A",
+      "OUT1": 0,
+      "OUT2": 0,
+      "OUT3_audio_absent": true,
+      "CC_POR_OK": true,
+      "RAW_UV_OK": true,
+      "SOURCE_ALLOW": true
+    }
+  ],
+  "unresolved_source_gates": [
+    "TPS61094 prebias transition guarantee for path1",
+    "TPS61023 minimum switch limit test at VIN3.6V/VOUT5V vs required1.7V/3.6V and no PFM maximum/peak startup current/time; cannot infer absent limits",
+    "BQ25173 zero-volt start supported in text, but tabulated current-accuracy examples use3.8V/7.6V; obtain0..2.65V accuracy/FB input-bias limits",
+    "Output capacitance/ESR, buck startup load/efficiency, branch transient limit response and actual system load need qualification",
+    "TUSB320LAI GPIO/UV/POR propagation/current withdrawal timing and source-side CC advertisement must be closed; no arbitrary-step guarantee"
+  ]
+}

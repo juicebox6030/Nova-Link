@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/juicebox/Nova-Link/hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_sch</source>
+    <date>2026-10-22T20:26:26</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>NOVA R1 dual-feed antenna prototype</title>
+        <company/>
+        <rev>C-MCU-RF2</rev>
+        <date/>
+        <source>mcu-radio.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="A101">
+      <value>0900AD47A2450001E PROTOTYPE TUNING REQUIRED</value>
+      <footprint>NOVA_HW:Johanson_0900AD47_IsolatedLands</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Johanson_0900AD47_IsolatedLands</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="JTI0900AD47" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a4aa0e0-f3eb-5ce9-bd16-b5b9473c1a7c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C101">
+      <value>GRM188R60J226MEA0D 22uF</value>
+      <footprint>NOVA_HW:TI_CAPC1608_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC1608_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>481b17c7-b296-58cb-87e0-e22bead87adf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C102">
+      <value>GRM188R60J226MEA0D 22uF</value>
+      <footprint>NOVA_HW:TI_CAPC1608_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC1608_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>029c5d1d-875f-5196-b33e-241a3c15cb2b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C103">
+      <value>GRM155R61C105KA12D 1uF</value>
+      <footprint>NOVA_HW:TI_CAPC1005_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC1005_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e22b9ed-bdbf-5665-8acc-7cfc30a8b6f1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C104">
+      <value>GRM155R71E104KE14D 100nF</value>
+      <footprint>NOVA_HW:TI_CAPC1005_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC1005_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>81017329-851f-54f2-b407-4c3e75f88621</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C105">
+      <value>GRM155R71E104KE14D 100nF</value>
+      <footprint>NOVA_HW:TI_CAPC1005_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC1005_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eb501e0a-31c9-5159-88a5-d151a635d9ef</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C106">
+      <value>GRM155R71E104KE14D 100nF</value>
+      <footprint>NOVA_HW:TI_CAPC1005_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC1005_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>231cb0b0-8186-5301-af59-7824be4da1cd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C107">
+      <value>GRM155R71E104KE14D 100nF</value>
+      <footprint>NOVA_HW:TI_CAPC1005_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC1005_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f3c116c6-69f1-5d7b-a0ea-901f146f4439</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C108">
+      <value>GRM155R71E104KE14D 100nF</value>
+      <footprint>NOVA_HW:TI_CAPC1005_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC1005_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>66d43122-3aae-5fa9-820b-c78b6117b58e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C109">
+      <value>GRM155R71E104KE14D 100nF</value>
+      <footprint>NOVA_HW:TI_CAPC1005_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC1005_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e7bc45f-d3b6-5942-b3d8-9fb4c8fbcd4f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C110">
+      <value>GRM1555C1H120JA01D 12pF</value>
+      <footprint>NOVA_HW:TI_CAPC1005_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC1005_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>15e7058e-83e7-5e39-920e-c8cda203f03d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C111">
+      <value>GRM1555C1H120JA01D 12pF</value>
+      <footprint>NOVA_HW:TI_CAPC1005_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC1005_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9356b0f9-f01d-5b13-a8f6-3e1da0f82425</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C112">
+      <value>GRM0335C1H101GA01D 100pF</value>
+      <footprint>NOVA_HW:TI_CAPC0603_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC0603_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eedf0400-6271-5de9-87f3-517c04bbb7c9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C113">
+      <value>GRM0335C1H101GA01D 100pF</value>
+      <footprint>NOVA_HW:TI_CAPC0603_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_CAPC0603_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bae546ff-2f17-56cb-bbdf-f525eaa14313</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C115">
+      <value>GJM1555C1H1R0BB01D 1.0pF TUNE</value>
+      <footprint>NOVA_HW:Murata_GJM155_Manufacturer</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Murata_GJM155_Manufacturer</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8a50706f-2e2e-5aca-ae82-fe35c2ec779d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C116">
+      <value>GJM1555C1H8R2DB01D 8.2pF TUNE</value>
+      <footprint>NOVA_HW:Murata_GJM155_Manufacturer</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Murata_GJM155_Manufacturer</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="C" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3acd2f77-0d93-5656-8e08-762e5c10f943</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="FL101">
+      <value>BLM18HE152SN1D</value>
+      <footprint>NOVA_HW:TI_BLM18_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_BLM18_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="FB" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>97f79c11-e471-562e-b11b-440277b04109</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L101">
+      <value>MLZ2012N6R8LT000 6.8uH</value>
+      <footprint>NOVA_HW:TI_MLZ2012_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_MLZ2012_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="L" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1270b255-3637-5375-9204-93483e236c5d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L102">
+      <value>0402HP-2N7XGRW 2.7nH TUNE</value>
+      <footprint>NOVA_HW:Coilcraft_0402HP_Manufacturer</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Coilcraft_0402HP_Manufacturer</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="L" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9ee9871e-06e0-578b-9921-dd0211c9e9b1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L103">
+      <value>0402HP-5N1XGRW 5.1nH TUNE</value>
+      <footprint>NOVA_HW:Coilcraft_0402HP_Manufacturer</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Coilcraft_0402HP_Manufacturer</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="L" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>49455fdc-7ed9-5529-b02e-5aacae90cd56</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L104">
+      <value>0402HP-12NXGRW 12nH TUNE</value>
+      <footprint>NOVA_HW:Coilcraft_0402HP_Manufacturer</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Coilcraft_0402HP_Manufacturer</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="L" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b632602a-7615-5f38-8298-5dadedec3082</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TR101">
+      <value>0900PC15A0036001E</value>
+      <footprint>NOVA_HW:TI_IPC1352_Vector</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_IPC1352_Vector</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="JTI0900PC15A0036001E" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>242ac42f-a0b1-5292-8cb9-4715038a3265</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>CC1352R1F3RGZR</value>
+      <footprint>NOVA_HW:TI_RGZ0048A</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:TI_RGZ0048A</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="CC1352R1F3RGZ" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>960e4fcf-3e56-50e5-bf58-fd5274374984</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="39"/>
+            <pin num="40"/>
+            <pin num="41"/>
+            <pin num="42"/>
+            <pin num="43"/>
+            <pin num="44"/>
+            <pin num="45"/>
+            <pin num="46"/>
+            <pin num="47"/>
+            <pin num="48"/>
+            <pin num="49"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="X101">
+      <value>EXISTING power-service X_MCU / net contract</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="POWER_SERVICE_CONTRACT" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e5496777-9375-5c85-90b0-3cb53bacd429</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Y101">
+      <value>FC-135 32.7680KA-AG0</value>
+      <footprint>NOVA_HW:Epson_FC135_Manufacturer</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:Epson_FC135_Manufacturer</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="XTAL2" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b142a9c2-f3fd-5138-9f52-8b1b9d3a54b8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Y102">
+      <value>NX2016SA 48MHz EXS00A-CS05517</value>
+      <footprint>NOVA_HW:NDK_NX2016SA_Manufacturer</footprint>
+      <fields>
+        <field name="Footprint">NOVA_HW:NDK_NX2016SA_Manufacturer</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MCU" part="XTAL4" description=""/>
+      <property name="Sheetname" value="mcu-radio"/>
+      <property name="Sheetfile" value="mcu-radio.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2dabbdc6-ffc7-593f-9dcc-1f172d65d0fb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="MCU" part="C">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU" part="CC1352R1F3RGZ">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CC1352R1F3RGZ</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="RF_P_2_4GHZ" type="passive"/>
+        <pin num="2" name="RF_N_2_4GHZ" type="passive"/>
+        <pin num="3" name="RF_P_SUB_1GHZ" type="passive"/>
+        <pin num="4" name="RF_N_SUB_1GHZ" type="passive"/>
+        <pin num="5" name="RX_TX" type="passive"/>
+        <pin num="6" name="X32K_Q1" type="passive"/>
+        <pin num="7" name="X32K_Q2" type="passive"/>
+        <pin num="8" name="DIO_3" type="input"/>
+        <pin num="9" name="DIO_4" type="input"/>
+        <pin num="10" name="DIO_5" type="output"/>
+        <pin num="11" name="DIO_6" type="output"/>
+        <pin num="12" name="DIO_7" type="output"/>
+        <pin num="13" name="VDDS2" type="power_in"/>
+        <pin num="14" name="DIO_8" type="input"/>
+        <pin num="15" name="DIO_9" type="output"/>
+        <pin num="16" name="DIO_10" type="output"/>
+        <pin num="17" name="DIO_11" type="output"/>
+        <pin num="18" name="DIO_12" type="input"/>
+        <pin num="19" name="DIO_13" type="output"/>
+        <pin num="20" name="DIO_14" type="input"/>
+        <pin num="21" name="DIO_15" type="input"/>
+        <pin num="22" name="VDDS3" type="power_in"/>
+        <pin num="23" name="DCOUPL" type="power_out"/>
+        <pin num="24" name="JTAG_TMSC" type="bidirectional"/>
+        <pin num="25" name="JTAG_TCKC" type="input"/>
+        <pin num="26" name="DIO_16" type="bidirectional"/>
+        <pin num="27" name="DIO_17" type="bidirectional"/>
+        <pin num="28" name="DIO_18" type="bidirectional"/>
+        <pin num="29" name="DIO_19" type="bidirectional"/>
+        <pin num="30" name="DIO_20" type="bidirectional"/>
+        <pin num="31" name="DIO_21" type="bidirectional"/>
+        <pin num="32" name="DIO_22" type="bidirectional"/>
+        <pin num="33" name="DCDC_SW" type="power_out"/>
+        <pin num="34" name="VDDS_DCDC" type="power_in"/>
+        <pin num="35" name="RESET_N" type="input"/>
+        <pin num="36" name="DIO_23" type="bidirectional"/>
+        <pin num="37" name="DIO_24" type="bidirectional"/>
+        <pin num="38" name="DIO_25" type="bidirectional"/>
+        <pin num="39" name="DIO_26" type="bidirectional"/>
+        <pin num="40" name="DIO_27" type="bidirectional"/>
+        <pin num="41" name="DIO_28" type="bidirectional"/>
+        <pin num="42" name="DIO_29" type="bidirectional"/>
+        <pin num="43" name="DIO_30" type="bidirectional"/>
+        <pin num="44" name="VDDS" type="power_in"/>
+        <pin num="45" name="VDDR" type="power_in"/>
+        <pin num="46" name="X48M_N" type="passive"/>
+        <pin num="47" name="X48M_P" type="passive"/>
+        <pin num="48" name="VDDR_RF" type="power_in"/>
+        <pin num="49" name="EGP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU" part="FB">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">FB</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU" part="JTI0900AD47">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">JTI0900AD47</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="FEED_2G4" type="passive"/>
+        <pin num="2" name="NC_LAND_MUST_SOLDER" type="passive"/>
+        <pin num="3" name="NC_LAND_MUST_SOLDER" type="passive"/>
+        <pin num="4" name="FEED_915" type="passive"/>
+        <pin num="5" name="NC_LAND_MUST_SOLDER" type="passive"/>
+        <pin num="6" name="NC_LAND_MUST_SOLDER" type="passive"/>
+        <pin num="7" name="NC_LAND_MUST_SOLDER" type="passive"/>
+        <pin num="8" name="NC_LAND_MUST_SOLDER" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU" part="JTI0900PC15A0036001E">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">JTI0900PC15A0036001E</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="UNBAL_2G4" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="GND" type="passive"/>
+        <pin num="4" name="UNBAL_SUB1" type="passive"/>
+        <pin num="5" name="RX_TX" type="passive"/>
+        <pin num="6" name="RF_N_SUB1" type="passive"/>
+        <pin num="7" name="RF_P_SUB1" type="passive"/>
+        <pin num="8" name="RF_N_2G4" type="passive"/>
+        <pin num="9" name="RF_P_2G4" type="passive"/>
+        <pin num="10" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU" part="L">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU" part="POWER_SERVICE_CONTRACT">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">POWER_SERVICE_CONTRACT</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SYS_3V3" type="power_out"/>
+        <pin num="2" name="GND_USB" type="power_out"/>
+        <pin num="3" name="ROM_BOOT_STRAP" type="output"/>
+        <pin num="4" name="SERVICE_N_DISTINCT_GPIO" type="output"/>
+        <pin num="5" name="MCU_DE_REQUEST" type="input"/>
+        <pin num="6" name="MCU_ISO_REQUEST" type="input"/>
+        <pin num="7" name="MCU_RE_N" type="input"/>
+        <pin num="8" name="SPI_MISO" type="output"/>
+        <pin num="9" name="SPI_MOSI" type="input"/>
+        <pin num="10" name="SPI_SCK" type="input"/>
+        <pin num="11" name="SPI_CS_N" type="input"/>
+        <pin num="12" name="MCU_DMX_RX" type="output"/>
+        <pin num="13" name="MCU_DMX_TX" type="input"/>
+        <pin num="14" name="VBUS_GOOD_3V3" type="output"/>
+        <pin num="15" name="BUCK_PG" type="output"/>
+        <pin num="16" name="TMSC" type="bidirectional"/>
+        <pin num="17" name="TCKC" type="output"/>
+        <pin num="18" name="RESET_OK" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU" part="XTAL2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">XTAL2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="X1" type="passive"/>
+        <pin num="2" name="X2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU" part="XTAL4">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">XTAL4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="X1" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="X2" type="passive"/>
+        <pin num="4" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="MCU">
+      <uri>${KIPRJMOD}/mcu-radio.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/ANT_2G4" class="Default">
+      <node ref="A101" pin="1" pinfunction="FEED_2G4_1" pintype="passive"/>
+      <node ref="C115" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="L102" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="2" name="/ANT_915" class="Default">
+      <node ref="A101" pin="4" pinfunction="FEED_915_4" pintype="passive"/>
+      <node ref="L104" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="3" name="/BUCK_PG" class="Default">
+      <node ref="U1" pin="21" pinfunction="DIO_15_21" pintype="input"/>
+      <node ref="X101" pin="15" pinfunction="BUCK_PG_15" pintype="output"/>
+    </net>
+    <net code="4" name="/DCDC_SW" class="Default">
+      <node ref="L101" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="33" pinfunction="DCDC_SW_33" pintype="power_out"/>
+    </net>
+    <net code="5" name="/DCOUPL" class="Default">
+      <node ref="C103" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="DCOUPL_23" pintype="power_out"/>
+    </net>
+    <net code="6" name="/GND_USB" class="Default">
+      <node ref="C101" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C102" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C103" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C104" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C105" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C106" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C107" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C108" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C109" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C110" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C111" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C113" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C115" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C116" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="L103" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TR101" pin="10" pinfunction="GND_10" pintype="passive"/>
+      <node ref="TR101" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="TR101" pin="3" pinfunction="GND_3" pintype="passive"/>
+      <node ref="U1" pin="49" pinfunction="EGP_49" pintype="power_in"/>
+      <node ref="X101" pin="2" pinfunction="GND_USB_2" pintype="power_out"/>
+      <node ref="Y102" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="Y102" pin="4" pinfunction="GND_4" pintype="passive"/>
+    </net>
+    <net code="7" name="/MCU_DE_REQUEST" class="Default">
+      <node ref="U1" pin="10" pinfunction="DIO_5_10" pintype="output"/>
+      <node ref="X101" pin="5" pinfunction="MCU_DE_REQUEST_5" pintype="input"/>
+    </net>
+    <net code="8" name="/MCU_DMX_RX" class="Default">
+      <node ref="U1" pin="18" pinfunction="DIO_12_18" pintype="input"/>
+      <node ref="X101" pin="12" pinfunction="MCU_DMX_RX_12" pintype="output"/>
+    </net>
+    <net code="9" name="/MCU_DMX_TX" class="Default">
+      <node ref="U1" pin="19" pinfunction="DIO_13_19" pintype="output"/>
+      <node ref="X101" pin="13" pinfunction="MCU_DMX_TX_13" pintype="input"/>
+    </net>
+    <net code="10" name="/MCU_ISO_REQUEST" class="Default">
+      <node ref="U1" pin="11" pinfunction="DIO_6_11" pintype="output"/>
+      <node ref="X101" pin="6" pinfunction="MCU_ISO_REQUEST_6" pintype="input"/>
+    </net>
+    <net code="11" name="/MCU_RE_N" class="Default">
+      <node ref="U1" pin="12" pinfunction="DIO_7_12" pintype="output"/>
+      <node ref="X101" pin="7" pinfunction="MCU_RE_N_7" pintype="input"/>
+    </net>
+    <net code="12" name="/MCU_VDDR" class="Default">
+      <node ref="C102" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C108" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C109" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="L101" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="45" pinfunction="VDDR_45" pintype="power_in"/>
+      <node ref="U1" pin="48" pinfunction="VDDR_RF_48" pintype="power_in"/>
+    </net>
+    <net code="13" name="/MCU_VDDS" class="Default">
+      <node ref="C101" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C104" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C105" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C106" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C107" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="FL101" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="VDDS2_13" pintype="power_in"/>
+      <node ref="U1" pin="22" pinfunction="VDDS3_22" pintype="power_in"/>
+      <node ref="U1" pin="34" pinfunction="VDDS_DCDC_34" pintype="power_in"/>
+      <node ref="U1" pin="44" pinfunction="VDDS_44" pintype="power_in"/>
+    </net>
+    <net code="14" name="/RESET_OK" class="Default">
+      <node ref="U1" pin="35" pinfunction="RESET_N_35" pintype="input"/>
+      <node ref="X101" pin="18" pinfunction="RESET_OK_18" pintype="output"/>
+    </net>
+    <net code="15" name="/RF_2G4_50" class="Default">
+      <node ref="L102" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TR101" pin="1" pinfunction="UNBAL_2G4_1" pintype="passive"/>
+    </net>
+    <net code="16" name="/RF_915_50" class="Default">
+      <node ref="C112" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C116" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="L103" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="L104" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="17" name="/RF_915_UNBLOCKED" class="Default">
+      <node ref="C112" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TR101" pin="4" pinfunction="UNBAL_SUB1_4" pintype="passive"/>
+    </net>
+    <net code="18" name="/RF_N_2_4GHZ" class="Default">
+      <node ref="TR101" pin="8" pinfunction="RF_N_2G4_8" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="RF_N_2_4GHZ_2" pintype="passive"/>
+    </net>
+    <net code="19" name="/RF_N_SUB_1GHZ" class="Default">
+      <node ref="TR101" pin="6" pinfunction="RF_N_SUB1_6" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="RF_N_SUB_1GHZ_4" pintype="passive"/>
+    </net>
+    <net code="20" name="/RF_P_2_4GHZ" class="Default">
+      <node ref="TR101" pin="9" pinfunction="RF_P_2G4_9" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="RF_P_2_4GHZ_1" pintype="passive"/>
+    </net>
+    <net code="21" name="/RF_P_SUB_1GHZ" class="Default">
+      <node ref="TR101" pin="7" pinfunction="RF_P_SUB1_7" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="RF_P_SUB_1GHZ_3" pintype="passive"/>
+    </net>
+    <net code="22" name="/ROM_BOOT_STRAP" class="Default">
+      <node ref="U1" pin="8" pinfunction="DIO_3_8" pintype="input"/>
+      <node ref="X101" pin="3" pinfunction="ROM_BOOT_STRAP_3" pintype="output"/>
+    </net>
+    <net code="23" name="/RX_TX" class="Default">
+      <node ref="C113" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TR101" pin="5" pinfunction="RX_TX_5" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="RX_TX_5" pintype="passive"/>
+    </net>
+    <net code="24" name="/SERVICE_N_DISTINCT_GPIO" class="Default">
+      <node ref="U1" pin="9" pinfunction="DIO_4_9" pintype="input"/>
+      <node ref="X101" pin="4" pinfunction="SERVICE_N_DISTINCT_GPIO_4" pintype="output"/>
+    </net>
+    <net code="25" name="/SPI_CS_N" class="Default">
+      <node ref="U1" pin="17" pinfunction="DIO_11_17" pintype="output"/>
+      <node ref="X101" pin="11" pinfunction="SPI_CS_N_11" pintype="input"/>
+    </net>
+    <net code="26" name="/SPI_MISO" class="Default">
+      <node ref="U1" pin="14" pinfunction="DIO_8_14" pintype="input"/>
+      <node ref="X101" pin="8" pinfunction="SPI_MISO_8" pintype="output"/>
+    </net>
+    <net code="27" name="/SPI_MOSI" class="Default">
+      <node ref="U1" pin="15" pinfunction="DIO_9_15" pintype="output"/>
+      <node ref="X101" pin="9" pinfunction="SPI_MOSI_9" pintype="input"/>
+    </net>
+    <net code="28" name="/SPI_SCK" class="Default">
+      <node ref="U1" pin="16" pinfunction="DIO_10_16" pintype="output"/>
+      <node ref="X101" pin="10" pinfunction="SPI_SCK_10" pintype="input"/>
+    </net>
+    <net code="29" name="/SYS_3V3" class="Default">
+      <node ref="FL101" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="X101" pin="1" pinfunction="SYS_3V3_1" pintype="power_out"/>
+    </net>
+    <net code="30" name="/TCKC" class="Default">
+      <node ref="U1" pin="25" pinfunction="JTAG_TCKC_25" pintype="input"/>
+      <node ref="X101" pin="17" pinfunction="TCKC_17" pintype="output"/>
+    </net>
+    <net code="31" name="/TMSC" class="Default">
+      <node ref="U1" pin="24" pinfunction="JTAG_TMSC_24" pintype="bidirectional"/>
+      <node ref="X101" pin="16" pinfunction="TMSC_16" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="/VBUS_GOOD_3V3" class="Default">
+      <node ref="U1" pin="20" pinfunction="DIO_14_20" pintype="input"/>
+      <node ref="X101" pin="14" pinfunction="VBUS_GOOD_3V3_14" pintype="output"/>
+    </net>
+    <net code="33" name="/X32K_Q1" class="Default">
+      <node ref="C110" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="X32K_Q1_6" pintype="passive"/>
+      <node ref="Y101" pin="1" pinfunction="X1_1" pintype="passive"/>
+    </net>
+    <net code="34" name="/X32K_Q2" class="Default">
+      <node ref="C111" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="X32K_Q2_7" pintype="passive"/>
+      <node ref="Y101" pin="2" pinfunction="X2_2" pintype="passive"/>
+    </net>
+    <net code="35" name="/X48M_N" class="Default">
+      <node ref="U1" pin="46" pinfunction="X48M_N_46" pintype="passive"/>
+      <node ref="Y102" pin="3" pinfunction="X2_3" pintype="passive"/>
+    </net>
+    <net code="36" name="/X48M_P" class="Default">
+      <node ref="U1" pin="47" pinfunction="X48M_P_47" pintype="passive"/>
+      <node ref="Y102" pin="1" pinfunction="X1_1" pintype="passive"/>
+    </net>
+    <net code="37" name="unconnected-(A101-NC_LAND_MUST_SOLDER-Pad2)" class="Default">
+      <node ref="A101" pin="2" pinfunction="NC_LAND_MUST_SOLDER_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(A101-NC_LAND_MUST_SOLDER-Pad3)" class="Default">
+      <node ref="A101" pin="3" pinfunction="NC_LAND_MUST_SOLDER_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(A101-NC_LAND_MUST_SOLDER-Pad5)" class="Default">
+      <node ref="A101" pin="5" pinfunction="NC_LAND_MUST_SOLDER_5" pintype="passive+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(A101-NC_LAND_MUST_SOLDER-Pad6)" class="Default">
+      <node ref="A101" pin="6" pinfunction="NC_LAND_MUST_SOLDER_6" pintype="passive+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(A101-NC_LAND_MUST_SOLDER-Pad7)" class="Default">
+      <node ref="A101" pin="7" pinfunction="NC_LAND_MUST_SOLDER_7" pintype="passive+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(A101-NC_LAND_MUST_SOLDER-Pad8)" class="Default">
+      <node ref="A101" pin="8" pinfunction="NC_LAND_MUST_SOLDER_8" pintype="passive+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(U1-DIO_16-Pad26)" class="Default">
+      <node ref="U1" pin="26" pinfunction="DIO_16_26" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(U1-DIO_17-Pad27)" class="Default">
+      <node ref="U1" pin="27" pinfunction="DIO_17_27" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(U1-DIO_18-Pad28)" class="Default">
+      <node ref="U1" pin="28" pinfunction="DIO_18_28" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(U1-DIO_19-Pad29)" class="Default">
+      <node ref="U1" pin="29" pinfunction="DIO_19_29" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U1-DIO_20-Pad30)" class="Default">
+      <node ref="U1" pin="30" pinfunction="DIO_20_30" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(U1-DIO_21-Pad31)" class="Default">
+      <node ref="U1" pin="31" pinfunction="DIO_21_31" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(U1-DIO_22-Pad32)" class="Default">
+      <node ref="U1" pin="32" pinfunction="DIO_22_32" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U1-DIO_23-Pad36)" class="Default">
+      <node ref="U1" pin="36" pinfunction="DIO_23_36" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U1-DIO_24-Pad37)" class="Default">
+      <node ref="U1" pin="37" pinfunction="DIO_24_37" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U1-DIO_25-Pad38)" class="Default">
+      <node ref="U1" pin="38" pinfunction="DIO_25_38" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U1-DIO_26-Pad39)" class="Default">
+      <node ref="U1" pin="39" pinfunction="DIO_26_39" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U1-DIO_27-Pad40)" class="Default">
+      <node ref="U1" pin="40" pinfunction="DIO_27_40" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U1-DIO_28-Pad41)" class="Default">
+      <node ref="U1" pin="41" pinfunction="DIO_28_41" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U1-DIO_29-Pad42)" class="Default">
+      <node ref="U1" pin="42" pinfunction="DIO_29_42" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U1-DIO_30-Pad43)" class="Default">
+      <node ref="U1" pin="43" pinfunction="DIO_30_43" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,174 @@
+{
+  "PodShell_allocation": {
+    "group": "housing",
+    "note": "Engineering3mm nominal shell; split/fasteners/flame/strength/ventilation not designed"
+  },
+  "PodLid_allocation": {
+    "group": "housing",
+    "note": "Closed thermal allocation, not demonstrated sealed operation; attachment unresolved"
+  },
+  "InputEndcapBlank": {
+    "group": "housing",
+    "note": "Offset axisY32 Z-15; \u00d848x24 planning blank only, none of3 connector variants approved"
+  },
+  "OutputEndcapBlank": {
+    "group": "housing",
+    "note": "Coaxial\u00d848x24 planning blank; actual keying, latch, connector/plug/strain-relief geometry remains open"
+  },
+  "StationaryNeck_allocation": {
+    "group": "housing",
+    "note": "One loft allocation; continuous terminal passage, shell joins not a released molding"
+  },
+  "StationaryCoreTube": {
+    "group": "housing",
+    "note": "Module removed; only fixed trunk/LV route. Retains\u00d848x142 comparison datum; not restored blocked module architecture"
+  },
+  "WholeCarrierInsulationReservation": {
+    "group": "insulation",
+    "note": "81x52x44 planning reservation:10mm about61x32 carrier;5mm below maximum pin; conservative10mm above maxbody"
+  },
+  "ReservationToleranceEnvelope": {
+    "group": "tolerance",
+    "note": "Engineering+/-0.5mm assembly/enclosure allocation beyond planning reservation; not vendor waiver"
+  },
+  "FilmAllocation": {
+    "group": "film",
+    "note": "Mylar required by source;0.25mm thickness and footprint proposed only; grade/flame/retention approval OPEN"
+  },
+  "IRM20_12_maxbody": {
+    "group": "module",
+    "note": "IRM20 family2025-11-21 maximum body from\u00b1.5;12V selection by parent, not powered"
+  },
+  "MaximumPinProjectionReservation": {
+    "group": "pin_reserve",
+    "note": "Worst4.5mm projection bounding prism, NOT actual pins or solder construction"
+  },
+  "Carrier61x32PlanningPlate": {
+    "group": "carrier",
+    "note": "Old61x32 carrier planning datum only; no pads/traces/holes released; module1mm above proposed top-11.5"
+  },
+  "SupportZone__123__23": {
+    "group": "support",
+    "note": "Outside insulation/tolerance/film; support and carrier bridging/retention not designed, no clearance waiver"
+  },
+  "SupportZone__123_19": {
+    "group": "support",
+    "note": "Outside insulation/tolerance/film; support and carrier bridging/retention not designed, no clearance waiver"
+  },
+  "SupportZone__33__23": {
+    "group": "support",
+    "note": "Outside insulation/tolerance/film; support and carrier bridging/retention not designed, no clearance waiver"
+  },
+  "SupportZone__33_19": {
+    "group": "support",
+    "note": "Outside insulation/tolerance/film; support and carrier bridging/retention not designed, no clearance waiver"
+  },
+  "Trunk_L": {
+    "group": "trunk",
+    "note": "Stationary continuous insulated envelope\u00d84.5,R12; ampacity/PE construction, stripping/terminals and strain relief unqualified"
+  },
+  "TrunkTolerance_L": {
+    "group": "trunk_tolerance",
+    "note": "Engineering+0.5 radial installation allowance beyond\u00d84.5 wire envelope; no supplier limit"
+  },
+  "InputJoint_L": {
+    "group": "joint",
+    "note": "Finite unselected input terminal/joint reserve; wire meets face atX-145; no pin-map/connector construction claimed"
+  },
+  "OutputJoint_L": {
+    "group": "joint",
+    "note": "Finite unselected output joint reserve; not a released mains termination"
+  },
+  "Trunk_N": {
+    "group": "trunk",
+    "note": "Stationary continuous insulated envelope\u00d84.5,R12; ampacity/PE construction, stripping/terminals and strain relief unqualified"
+  },
+  "TrunkTolerance_N": {
+    "group": "trunk_tolerance",
+    "note": "Engineering+0.5 radial installation allowance beyond\u00d84.5 wire envelope; no supplier limit"
+  },
+  "InputJoint_N": {
+    "group": "joint",
+    "note": "Finite unselected input terminal/joint reserve; wire meets face atX-145; no pin-map/connector construction claimed"
+  },
+  "OutputJoint_N": {
+    "group": "joint",
+    "note": "Finite unselected output joint reserve; not a released mains termination"
+  },
+  "Trunk_PE": {
+    "group": "trunk",
+    "note": "Stationary continuous insulated envelope\u00d84.5,R12; ampacity/PE construction, stripping/terminals and strain relief unqualified"
+  },
+  "TrunkTolerance_PE": {
+    "group": "trunk_tolerance",
+    "note": "Engineering+0.5 radial installation allowance beyond\u00d84.5 wire envelope; no supplier limit"
+  },
+  "InputJoint_PE": {
+    "group": "joint",
+    "note": "Finite unselected input terminal/joint reserve; wire meets face atX-145; no pin-map/connector construction claimed"
+  },
+  "OutputJoint_PE": {
+    "group": "joint",
+    "note": "Finite unselected output joint reserve; not a released mains termination"
+  },
+  "PrimaryFuseBranchBay": {
+    "group": "primary_bay",
+    "note": "Unselected local primary fuse/holder and two-pole branch interface reserve; no rating or coordinated fuse invented"
+  },
+  "PrimaryBranchEntryL": {
+    "group": "primary_path",
+    "note": "Finite15mm branch/joint approach from L trunk to fuse bay; branching hardware and bend/strain relief require design"
+  },
+  "PrimaryBranchEntryN": {
+    "group": "primary_path",
+    "note": "Finite15mm N local branch approach; trunk remains stationary and uninterrupted PE"
+  },
+  "PrimaryBendBayL": {
+    "group": "primary_bend",
+    "note": "Bounds reserve R8 branch bends with\u00d83 engineering wire space and solder/tool approach; no released wire route, finite terminal gap explicitly recorded"
+  },
+  "PrimaryTerminalInterface": {
+    "group": "terminal_gap",
+    "note": "Ends atX-116.5 tolerance boundary.10.5mm to carrier edgeX-106 remains unimplemented/approval-gated; do not bridge insulation by assumption"
+  },
+  "SecondaryTerminalInterface": {
+    "group": "secondary_gap",
+    "note": "Starts at outer tolerance face;10.5mm from carrier edgeX-45 to-34.5 remains unimplemented carrier/terminal construction"
+  },
+  "SecondaryLeadoutBendBay": {
+    "group": "secondary_path",
+    "note": "R8 static isolated lead bend/access allocation; no selected insulation or actual solder joint"
+  },
+  "SecondaryCoreRouteReserve": {
+    "group": "secondary_path",
+    "note": "Only isolatedLV inside fixed core; endsX39, proposed final6mm plus radial interface to fixed clamp not designed"
+  },
+  "SecondaryClampInterfaceGap": {
+    "group": "secondary_gap",
+    "note": "Finite unimplemented fixed-clamp handoff; actual clamp nearY24,Z-7 requires separate radial exit/retention design; not connected wire"
+  },
+  "CarrierLiftAccess": {
+    "group": "access",
+    "note": "Lid removed: vertical service/lift volume; support attachments and hot-mains service not authorized"
+  },
+  "CollarComparisonSweep": {
+    "group": "comparison",
+    "note": "Conservative\u00d866 x26.8..104.17 locked/released comparison; preserves13detents/\u00b190, no new mechanism or circuit acceptance"
+  },
+  "USBPlugScreenNeutral": {
+    "group": "usb_comparison",
+    "note": "Frozen actual source allocation; bodyX104.17 is not exact mating plane; no12V board fit claim"
+  },
+  "USBBodyComparisonNeutral": {
+    "group": "usb_comparison",
+    "note": "Frozen actual source allocation; bodyX104.17 is not exact mating plane; no12V board fit claim"
+  },
+  "USBReliefScreenNeutral": {
+    "group": "usb_screen",
+    "note": "Engineering finite18mm overmold/relief reservation; not a universal cable"
+  },
+  "USBCableScreenNeutral": {
+    "group": "usb_screen",
+    "note": "Engineering\u00d86 cable,80mm axial approach, no supplier min bend or cable qualification"
+  }
+}

@@ -1,0 +1,6 @@
+PASS: all 5 measurement scripts parsed.
+PASS: source-native GLP feature IDs and dimensions checked against generated numeric receipts.
+PASS: GLP 4519 faces, zero solids; source shell ID joins present.
+PASS: CHAUVET conversion exit 0, 82 modelspace solids with empty SAT/SAB, zero ACDSDATA.
+PASS: all seven pinned cache assets plus extracted GLP STEP match original SHA-256 values.
+Scope: numeric source geometry only, no socket mating datum, overlay, hardware or installed-fit verification.

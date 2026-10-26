@@ -1,0 +1,47 @@
+{
+  "status": "FAIL assembled stress-current screen; arithmetic regression reproduced",
+  "source_artifact_hashes": {
+    "regulated-source/verify.py": "b2eadac60f0a2009fc8a0fefd2f831606c820dbe26f8749483d176e92c85b525",
+    "collar-source-integrated/fanout-proof.json": "fbac43c12980ac9e4a700de46abbf62e5882b3bab3066602ef6d985dd5322b5a",
+    "stationary-irm20-integration/checks.json": "26fd2929329ed40eb954a6fd2adcadcba55831e5e9acef7df17707f890fe40a5"
+  },
+  "cases": [
+    {
+      "case": "original",
+      "loop_ohm": 0.15708361747042737,
+      "current_A": 2.9871410745684353,
+      "converter_input_V": 4.168269074112291,
+      "breaker_floor_A": 2.994610778443114,
+      "breaker_margin_A": 0.007469703874678935,
+      "passes": true
+    },
+    {
+      "case": "added_tail_nominal_hot",
+      "loop_ohm": 0.17128286125090683,
+      "current_A": 3.022255606352828,
+      "converter_input_V": 4.1198394123122934,
+      "breaker_floor_A": 2.994610778443114,
+      "breaker_margin_A": -0.027644827909713676,
+      "passes": false
+    },
+    {
+      "case": "added_tail_engineering_corner",
+      "loop_ohm": 0.17333386313030943,
+      "current_A": 3.027475599127373,
+      "converter_input_V": 4.112735958870505,
+      "breaker_floor_A": 2.994610778443114,
+      "breaker_margin_A": -0.03286482068425878,
+      "passes": false
+    },
+    {
+      "case": "added_tail_and_stationary_wires",
+      "loop_ohm": 0.17829823196163092,
+      "current_A": 3.0402726127474913,
+      "converter_input_V": 4.0954247684657545,
+      "breaker_floor_A": 2.994610778443114,
+      "breaker_margin_A": -0.04566183430437709,
+      "passes": false
+    }
+  ],
+  "scope": "Existing unmeasured source-model allocations retained. Tail85C and stationary-wire80C allocations are screening temperatures, not a coherent measured thermal corner. Joint losses omitted. No changed circuit or manufacturing acceptance."
+}

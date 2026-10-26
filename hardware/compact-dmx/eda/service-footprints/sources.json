@@ -1,0 +1,17 @@
+{
+  "nor.pdf": {
+    "url": "https://www.renesas.com/us/en/document/dst/at25sf161b-datasheet",
+    "sha256": "f969d1a82b18de2fd33b01ef1b8b8a636a31b8c29a5094193d295fafe1fe581b",
+    "bytes": 1763634
+  },
+  "usb.pdf": {
+    "url": "https://www.hirose.com/en/product/p/CL0480-0304-0-00/documents?path=/api/v1/products/CL0480-0304-0-00/documents/drawing_2d/content?lang%3DEN",
+    "sha256": "ff0f719b5ac0eac943395fe345336757e6b74fb7059455cf2bb8ecaa0011611f",
+    "bytes": 312703
+  },
+  "usb-guide.pdf": {
+    "url": "https://www.hirose.com/en/product/p/CL0480-0304-0-00/documents?path=/api/v1/products/CL0480-0304-0-00/documents/items/31c81d98-a8f4-4aff-9d89-481804a310c7/content?lang%3DEN",
+    "sha256": "2e3bc8227b4c50255e13daeec3473593739c7acfb4fb3fbe66dc18a93f78efe4",
+    "bytes": 644943
+  }
+}

@@ -1,0 +1,1678 @@
+{
+  "rows": [
+    {
+      "a": "PodShell_allocation",
+      "b": "PodLid_allocation",
+      "kind": "physical_allocation_pair",
+      "volume": 0.0,
+      "gap": 0.0
+    },
+    {
+      "a": "PodShell_allocation",
+      "b": "InputEndcapBlank",
+      "kind": "physical_allocation_pair",
+      "volume": 0.0,
+      "gap": 0.0
+    },
+    {
+      "a": "PodShell_allocation",
+      "b": "OutputEndcapBlank",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 154.0
+    },
+    {
+      "a": "PodShell_allocation",
+      "b": "StationaryNeck_allocation",
+      "kind": "physical_allocation_pair",
+      "volume": 0.0,
+      "gap": 0.0
+    },
+    {
+      "a": "PodShell_allocation",
+      "b": "StationaryCoreTube",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 12.0
+    },
+    {
+      "a": "PodShell_allocation",
+      "b": "FilmAllocation",
+      "kind": "physical_allocation_pair",
+      "volume": 0.0,
+      "gap": 1.5
+    },
+    {
+      "a": "PodShell_allocation",
+      "b": "IRM20_12_maxbody",
+      "kind": "physical_allocation_pair",
+      "volume": 0.0,
+      "gap": 14.15
+    },
+    {
+      "a": "PodShell_allocation",
+      "b": "Carrier61x32PlanningPlate",
+      "kind": "physical_allocation_pair",
+      "volume": 0.0,
+      "gap": 12.0
+    },
+    {
+      "a": "PodLid_allocation",
+      "b": "InputEndcapBlank",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 17.0
+    },
+    {
+      "a": "PodLid_allocation",
+      "b": "OutputEndcapBlank",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 154.01298646542764
+    },
+    {
+      "a": "PodLid_allocation",
+      "b": "StationaryNeck_allocation",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 2.0
+    },
+    {
+      "a": "PodLid_allocation",
+      "b": "StationaryCoreTube",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 12.165525060596439
+    },
+    {
+      "a": "PodLid_allocation",
+      "b": "FilmAllocation",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 46.5
+    },
+    {
+      "a": "PodLid_allocation",
+      "b": "IRM20_12_maxbody",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 12.0
+    },
+    {
+      "a": "PodLid_allocation",
+      "b": "Carrier61x32PlanningPlate",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 37.5
+    },
+    {
+      "a": "InputEndcapBlank",
+      "b": "OutputEndcapBlank",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 282.0
+    },
+    {
+      "a": "InputEndcapBlank",
+      "b": "StationaryNeck_allocation",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 128.0
+    },
+    {
+      "a": "InputEndcapBlank",
+      "b": "StationaryCoreTube",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 140.0
+    },
+    {
+      "a": "InputEndcapBlank",
+      "b": "FilmAllocation",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 23.5
+    },
+    {
+      "a": "InputEndcapBlank",
+      "b": "IRM20_12_maxbody",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 38.05
+    },
+    {
+      "a": "InputEndcapBlank",
+      "b": "Carrier61x32PlanningPlate",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 34.0
+    },
+    {
+      "a": "OutputEndcapBlank",
+      "b": "StationaryNeck_allocation",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 142.0
+    },
+    {
+      "a": "OutputEndcapBlank",
+      "b": "StationaryCoreTube",
+      "kind": "physical_allocation_pair",
+      "volume": 0.0,
+      "gap": 0.0
+    },
+    {
+      "a": "OutputEndcapBlank",
+      "b": "FilmAllocation",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 176.5
+    },
+    {
+      "a": "OutputEndcapBlank",
+      "b": "IRM20_12_maxbody",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 191.0585433628881
+    },
+    {
+      "a": "OutputEndcapBlank",
+      "b": "Carrier61x32PlanningPlate",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 187.00180341222682
+    },
+    {
+      "a": "StationaryNeck_allocation",
+      "b": "StationaryCoreTube",
+      "kind": "physical_allocation_pair",
+      "volume": 0.0,
+      "gap": 0.0
+    },
+    {
+      "a": "StationaryNeck_allocation",
+      "b": "FilmAllocation",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 22.5
+    },
+    {
+      "a": "StationaryNeck_allocation",
+      "b": "IRM20_12_maxbody",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 37.05570131572199
+    },
+    {
+      "a": "StationaryNeck_allocation",
+      "b": "Carrier61x32PlanningPlate",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 33.0
+    },
+    {
+      "a": "StationaryCoreTube",
+      "b": "FilmAllocation",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 34.5
+    },
+    {
+      "a": "StationaryCoreTube",
+      "b": "IRM20_12_maxbody",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 49.08326590548543
+    },
+    {
+      "a": "StationaryCoreTube",
+      "b": "Carrier61x32PlanningPlate",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 45.00749359190235
+    },
+    {
+      "a": "FilmAllocation",
+      "b": "IRM20_12_maxbody",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 10.0
+    },
+    {
+      "a": "FilmAllocation",
+      "b": "Carrier61x32PlanningPlate",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 7.4
+    },
+    {
+      "a": "IRM20_12_maxbody",
+      "b": "Carrier61x32PlanningPlate",
+      "kind": "physical_allocation_pair",
+      "volume": 0,
+      "gap": 1.0
+    },
+    {
+      "a": "SupportZone__123__23",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 2.23606797749979
+    },
+    {
+      "a": "SupportZone__123__23",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 1.5811388300841898
+    },
+    {
+      "a": "SupportZone__123__23",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 5.0
+    },
+    {
+      "a": "SupportZone__123__23",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 48.0
+    },
+    {
+      "a": "SupportZone__123__23",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 32.31174347142413
+    },
+    {
+      "a": "SupportZone__123__23",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 259.0495967610066
+    },
+    {
+      "a": "SupportZone__123__23",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 105.01904589168576
+    },
+    {
+      "a": "SupportZone__123__23",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 117.10975015787598
+    },
+    {
+      "a": "SupportZone__123_19",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 2.23606797749979
+    },
+    {
+      "a": "SupportZone__123_19",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 1.5811388300841898
+    },
+    {
+      "a": "SupportZone__123_19",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 5.0
+    },
+    {
+      "a": "SupportZone__123_19",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 48.0
+    },
+    {
+      "a": "SupportZone__123_19",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 17.748170692360404
+    },
+    {
+      "a": "SupportZone__123_19",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 259.0495967610066
+    },
+    {
+      "a": "SupportZone__123_19",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 105.01904589168576
+    },
+    {
+      "a": "SupportZone__123_19",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 117.10975015787598
+    },
+    {
+      "a": "SupportZone__33__23",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 2.8284271247461903
+    },
+    {
+      "a": "SupportZone__33__23",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 2.1213203435596424
+    },
+    {
+      "a": "SupportZone__33__23",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 5.0
+    },
+    {
+      "a": "SupportZone__33__23",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 48.0
+    },
+    {
+      "a": "SupportZone__33__23",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 110.471936554779
+    },
+    {
+      "a": "SupportZone__33__23",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 169.07599942641218
+    },
+    {
+      "a": "SupportZone__33__23",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 15.132745950421556
+    },
+    {
+      "a": "SupportZone__33__23",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 27.471686916535198
+    },
+    {
+      "a": "SupportZone__33_19",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 2.8284271247461903
+    },
+    {
+      "a": "SupportZone__33_19",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 2.1213203435596424
+    },
+    {
+      "a": "SupportZone__33_19",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 5.0
+    },
+    {
+      "a": "SupportZone__33_19",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 48.0
+    },
+    {
+      "a": "SupportZone__33_19",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 107.12141505285095
+    },
+    {
+      "a": "SupportZone__33_19",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 169.07599942641218
+    },
+    {
+      "a": "SupportZone__33_19",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 15.132745950421556
+    },
+    {
+      "a": "SupportZone__33_19",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 27.471686916535198
+    },
+    {
+      "a": "Trunk_L",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0.0,
+      "gap": 2.75
+    },
+    {
+      "a": "Trunk_L",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0.0,
+      "gap": 2.25
+    },
+    {
+      "a": "Trunk_L",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 2.75
+    },
+    {
+      "a": "Trunk_L",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 40.16838057233342
+    },
+    {
+      "a": "Trunk_L",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 9.25
+    },
+    {
+      "a": "Trunk_L",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 1.3614561800016816
+    },
+    {
+      "a": "Trunk_L",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 1.3614561800016811
+    },
+    {
+      "a": "Trunk_L",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 1.3614561800016798
+    },
+    {
+      "a": "TrunkTolerance_L",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0.0,
+      "gap": 2.25
+    },
+    {
+      "a": "TrunkTolerance_L",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0.0,
+      "gap": 1.75
+    },
+    {
+      "a": "TrunkTolerance_L",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 2.25
+    },
+    {
+      "a": "TrunkTolerance_L",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 39.668380572333426
+    },
+    {
+      "a": "TrunkTolerance_L",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 8.75
+    },
+    {
+      "a": "TrunkTolerance_L",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 0.8614561800016842
+    },
+    {
+      "a": "TrunkTolerance_L",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 0.8614561800016811
+    },
+    {
+      "a": "TrunkTolerance_L",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 0.8614561800016813
+    },
+    {
+      "a": "InputJoint_L",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 29.317230428538096
+    },
+    {
+      "a": "InputJoint_L",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 28.72716484444645
+    },
+    {
+      "a": "InputJoint_L",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 9.340770846134703
+    },
+    {
+      "a": "InputJoint_L",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 48.75705077217038
+    },
+    {
+      "a": "InputJoint_L",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 8.752451216018034
+    },
+    {
+      "a": "InputJoint_L",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 287.2988718737465
+    },
+    {
+      "a": "InputJoint_L",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 133.58611454788254
+    },
+    {
+      "a": "InputJoint_L",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 145.59066515380525
+    },
+    {
+      "a": "OutputJoint_L",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 185.0
+    },
+    {
+      "a": "OutputJoint_L",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 184.5
+    },
+    {
+      "a": "OutputJoint_L",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 162.04937519163718
+    },
+    {
+      "a": "OutputJoint_L",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 166.746064421323
+    },
+    {
+      "a": "OutputJoint_L",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 290.31405408626017
+    },
+    {
+      "a": "OutputJoint_L",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 0.22795261381735235
+    },
+    {
+      "a": "OutputJoint_L",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 150.00017320788047
+    },
+    {
+      "a": "OutputJoint_L",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 8.003246990699848
+    },
+    {
+      "a": "Trunk_N",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0.0,
+      "gap": 2.75
+    },
+    {
+      "a": "Trunk_N",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0.0,
+      "gap": 2.25
+    },
+    {
+      "a": "Trunk_N",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 2.75
+    },
+    {
+      "a": "Trunk_N",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 40.16838057233342
+    },
+    {
+      "a": "Trunk_N",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 7.5880962103093985
+    },
+    {
+      "a": "Trunk_N",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 3.25
+    },
+    {
+      "a": "Trunk_N",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 3.25
+    },
+    {
+      "a": "Trunk_N",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 3.25
+    },
+    {
+      "a": "TrunkTolerance_N",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0.0,
+      "gap": 2.25
+    },
+    {
+      "a": "TrunkTolerance_N",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0.0,
+      "gap": 1.75
+    },
+    {
+      "a": "TrunkTolerance_N",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 2.25
+    },
+    {
+      "a": "TrunkTolerance_N",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 39.668380572333426
+    },
+    {
+      "a": "TrunkTolerance_N",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 7.0880962103093985
+    },
+    {
+      "a": "TrunkTolerance_N",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 2.75
+    },
+    {
+      "a": "TrunkTolerance_N",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 2.75
+    },
+    {
+      "a": "TrunkTolerance_N",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 2.75
+    },
+    {
+      "a": "InputJoint_N",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 30.618621784789728
+    },
+    {
+      "a": "InputJoint_N",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 29.95413160150032
+    },
+    {
+      "a": "InputJoint_N",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 8.108803383562096
+    },
+    {
+      "a": "InputJoint_N",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 48.75705077217038
+    },
+    {
+      "a": "InputJoint_N",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 6.383783542169024
+    },
+    {
+      "a": "InputJoint_N",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 287.5657697542736
+    },
+    {
+      "a": "InputJoint_N",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 134.28049001995785
+    },
+    {
+      "a": "InputJoint_N",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 146.11663811615676
+    },
+    {
+      "a": "OutputJoint_N",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 185.0
+    },
+    {
+      "a": "OutputJoint_N",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 184.5
+    },
+    {
+      "a": "OutputJoint_N",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 162.30834852218786
+    },
+    {
+      "a": "OutputJoint_N",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 166.746064421323
+    },
+    {
+      "a": "OutputJoint_N",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 290.0521504833226
+    },
+    {
+      "a": "OutputJoint_N",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 2.8318452974055295
+    },
+    {
+      "a": "OutputJoint_N",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 150.02672877786955
+    },
+    {
+      "a": "OutputJoint_N",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 8.486421377025643
+    },
+    {
+      "a": "Trunk_PE",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0.0,
+      "gap": 2.75
+    },
+    {
+      "a": "Trunk_PE",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0.0,
+      "gap": 2.25
+    },
+    {
+      "a": "Trunk_PE",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 1.75
+    },
+    {
+      "a": "Trunk_PE",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 40.16838057233342
+    },
+    {
+      "a": "Trunk_PE",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 3.629500648186691
+    },
+    {
+      "a": "Trunk_PE",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 1.3614561800016816
+    },
+    {
+      "a": "Trunk_PE",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 1.3614561800016811
+    },
+    {
+      "a": "Trunk_PE",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 1.361456180001681
+    },
+    {
+      "a": "TrunkTolerance_PE",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0.0,
+      "gap": 2.25
+    },
+    {
+      "a": "TrunkTolerance_PE",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0.0,
+      "gap": 1.75
+    },
+    {
+      "a": "TrunkTolerance_PE",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 1.25
+    },
+    {
+      "a": "TrunkTolerance_PE",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 39.668380572333426
+    },
+    {
+      "a": "TrunkTolerance_PE",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 3.129500648186691
+    },
+    {
+      "a": "TrunkTolerance_PE",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 0.8614561800016816
+    },
+    {
+      "a": "TrunkTolerance_PE",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 0.8614561800016811
+    },
+    {
+      "a": "TrunkTolerance_PE",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 0.8614561800016816
+    },
+    {
+      "a": "InputJoint_PE",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 32.977264895682296
+    },
+    {
+      "a": "InputJoint_PE",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 32.26840560052511
+    },
+    {
+      "a": "InputJoint_PE",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 5.527191156428748
+    },
+    {
+      "a": "InputJoint_PE",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 48.75705077217038
+    },
+    {
+      "a": "InputJoint_PE",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 2.3558102809233525
+    },
+    {
+      "a": "InputJoint_PE",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 287.93673685660696
+    },
+    {
+      "a": "InputJoint_PE",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 135.2377536045316
+    },
+    {
+      "a": "InputJoint_PE",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 146.845375928665
+    },
+    {
+      "a": "OutputJoint_PE",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 185.0
+    },
+    {
+      "a": "OutputJoint_PE",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 184.5
+    },
+    {
+      "a": "OutputJoint_PE",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 162.04937519163718
+    },
+    {
+      "a": "OutputJoint_PE",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 166.746064421323
+    },
+    {
+      "a": "OutputJoint_PE",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 290.0
+    },
+    {
+      "a": "OutputJoint_PE",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 0.22795261381735282
+    },
+    {
+      "a": "OutputJoint_PE",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 150.00017320788047
+    },
+    {
+      "a": "OutputJoint_PE",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 8.003246990699848
+    },
+    {
+      "a": "PrimaryFuseBranchBay",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 4.242640687119285
+    },
+    {
+      "a": "PrimaryFuseBranchBay",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 3.5355339059327378
+    },
+    {
+      "a": "PrimaryFuseBranchBay",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 3.0
+    },
+    {
+      "a": "PrimaryFuseBranchBay",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 16.0
+    },
+    {
+      "a": "PrimaryFuseBranchBay",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 11.0
+    },
+    {
+      "a": "PrimaryFuseBranchBay",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 261.04788832702707
+    },
+    {
+      "a": "PrimaryFuseBranchBay",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 107.67079455451233
+    },
+    {
+      "a": "PrimaryFuseBranchBay",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 119.10499569707393
+    },
+    {
+      "a": "PrimaryBranchEntryL",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 8.54400374531753
+    },
+    {
+      "a": "PrimaryBranchEntryL",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 7.905694150420948
+    },
+    {
+      "a": "PrimaryBranchEntryL",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 5.0
+    },
+    {
+      "a": "PrimaryBranchEntryL",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 36.0
+    },
+    {
+      "a": "PrimaryBranchEntryL",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 15.598615967990444
+    },
+    {
+      "a": "PrimaryBranchEntryL",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 266.08375614002244
+    },
+    {
+      "a": "PrimaryBranchEntryL",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 112.64102272262978
+    },
+    {
+      "a": "PrimaryBranchEntryL",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 124.17956869623487
+    },
+    {
+      "a": "PrimaryBranchEntryN",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 9.055385138137417
+    },
+    {
+      "a": "PrimaryBranchEntryN",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 8.514693182963201
+    },
+    {
+      "a": "PrimaryBranchEntryN",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 5.0
+    },
+    {
+      "a": "PrimaryBranchEntryN",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 36.0
+    },
+    {
+      "a": "PrimaryBranchEntryN",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 19.71659620664354
+    },
+    {
+      "a": "PrimaryBranchEntryN",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 259.29669035021
+    },
+    {
+      "a": "PrimaryBranchEntryN",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 106.53168542738823
+    },
+    {
+      "a": "PrimaryBranchEntryN",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 117.65531703485685
+    },
+    {
+      "a": "PrimaryBendBayL",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 1.0
+    },
+    {
+      "a": "PrimaryBendBayL",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 0.5
+    },
+    {
+      "a": "PrimaryBendBayL",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 1.0
+    },
+    {
+      "a": "PrimaryBendBayL",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 12.0
+    },
+    {
+      "a": "PrimaryBendBayL",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 4.0
+    },
+    {
+      "a": "PrimaryBendBayL",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 259.0
+    },
+    {
+      "a": "PrimaryBendBayL",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 105.0
+    },
+    {
+      "a": "PrimaryBendBayL",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 117.0
+    },
+    {
+      "a": "PrimaryTerminalInterface",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 0.5
+    },
+    {
+      "a": "PrimaryTerminalInterface",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0.0,
+      "gap": 0.0
+    },
+    {
+      "a": "PrimaryTerminalInterface",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 10.0
+    },
+    {
+      "a": "PrimaryTerminalInterface",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 34.0
+    },
+    {
+      "a": "PrimaryTerminalInterface",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 22.0
+    },
+    {
+      "a": "PrimaryTerminalInterface",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 258.5
+    },
+    {
+      "a": "PrimaryTerminalInterface",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 104.5
+    },
+    {
+      "a": "PrimaryTerminalInterface",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 116.5
+    },
+    {
+      "a": "SecondaryTerminalInterface",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 0.5
+    },
+    {
+      "a": "SecondaryTerminalInterface",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0.0,
+      "gap": 0.0
+    },
+    {
+      "a": "SecondaryTerminalInterface",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 7.0
+    },
+    {
+      "a": "SecondaryTerminalInterface",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 21.0
+    },
+    {
+      "a": "SecondaryTerminalInterface",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 107.78942123534065
+    },
+    {
+      "a": "SecondaryTerminalInterface",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 172.5
+    },
+    {
+      "a": "SecondaryTerminalInterface",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 18.5
+    },
+    {
+      "a": "SecondaryTerminalInterface",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 30.5
+    },
+    {
+      "a": "SecondaryLeadoutBendBay",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 4.5
+    },
+    {
+      "a": "SecondaryLeadoutBendBay",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 4.0
+    },
+    {
+      "a": "SecondaryLeadoutBendBay",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 0.5
+    },
+    {
+      "a": "SecondaryLeadoutBendBay",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 14.0
+    },
+    {
+      "a": "SecondaryLeadoutBendBay",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 109.71130072662552
+    },
+    {
+      "a": "SecondaryLeadoutBendBay",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 157.5
+    },
+    {
+      "a": "SecondaryLeadoutBendBay",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 3.5
+    },
+    {
+      "a": "SecondaryLeadoutBendBay",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 15.5
+    },
+    {
+      "a": "SecondaryCoreRouteReserve",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 20.5
+    },
+    {
+      "a": "SecondaryCoreRouteReserve",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 20.0
+    },
+    {
+      "a": "SecondaryCoreRouteReserve",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 0.5
+    },
+    {
+      "a": "SecondaryCoreRouteReserve",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 18.0
+    },
+    {
+      "a": "SecondaryCoreRouteReserve",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 125.50229413559963
+    },
+    {
+      "a": "SecondaryCoreRouteReserve",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 103.14017565258615
+    },
+    {
+      "a": "SecondaryCoreRouteReserve",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 0.5
+    },
+    {
+      "a": "SecondaryCoreRouteReserve",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 5.375484503402901
+    },
+    {
+      "a": "SecondaryClampInterfaceGap",
+      "b": "WholeCarrierInsulationReservation",
+      "kind": "external_vs_insulation",
+      "volume": 0,
+      "gap": 74.0
+    },
+    {
+      "a": "SecondaryClampInterfaceGap",
+      "b": "ReservationToleranceEnvelope",
+      "kind": "external_vs_tolerance",
+      "volume": 0,
+      "gap": 73.5
+    },
+    {
+      "a": "SecondaryClampInterfaceGap",
+      "b": "PodShell_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 51.00245092149984
+    },
+    {
+      "a": "SecondaryClampInterfaceGap",
+      "b": "PodLid_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 54.08326913195984
+    },
+    {
+      "a": "SecondaryClampInterfaceGap",
+      "b": "InputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 179.0016084656743
+    },
+    {
+      "a": "SecondaryClampInterfaceGap",
+      "b": "OutputEndcapBlank",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 97.14883341371797
+    },
+    {
+      "a": "SecondaryClampInterfaceGap",
+      "b": "StationaryNeck_allocation",
+      "kind": "external_vs_housing",
+      "volume": 0,
+      "gap": 39.368716433817404
+    },
+    {
+      "a": "SecondaryClampInterfaceGap",
+      "b": "StationaryCoreTube",
+      "kind": "external_vs_housing",
+      "volume": 0.0,
+      "gap": 5.375484503402901
+    },
+    {
+      "a": "TrunkTolerance_L",
+      "b": "TrunkTolerance_N",
+      "kind": "separate_trunk_envelopes",
+      "volume": 0.0,
+      "gap": 0.5
+    },
+    {
+      "a": "TrunkTolerance_L",
+      "b": "TrunkTolerance_PE",
+      "kind": "separate_trunk_envelopes",
+      "volume": 0.0,
+      "gap": 6.5
+    },
+    {
+      "a": "TrunkTolerance_N",
+      "b": "TrunkTolerance_PE",
+      "kind": "separate_trunk_envelopes",
+      "volume": 0.0,
+      "gap": 0.5
+    }
+  ],
+  "failures": []
+}

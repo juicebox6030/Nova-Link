@@ -1,0 +1,41 @@
+{
+  "status": "TYPICAL_ONLY_NO_GUARANTEED_MARGIN",
+  "source": "Johanson antenna Rev3.1 p4; TI SWRS196I section8.1",
+  "subGHz_sampled_S21_dB": [
+    -15.927,
+    -14.992,
+    -16.553
+  ],
+  "twoG4_sampled_S21_dB": [
+    -44.254,
+    -43.149,
+    -42.394
+  ],
+  "MCU_advertised_ceiling_dBm_not_selected_operating_power": {
+    "subGHz": 14,
+    "twoG4": 5
+  },
+  "worst_case_coupling_bound": null,
+  "IPC_attenuation_credited_dB": 0,
+  "sampled_subGHz_coupled_dBm": -0.9920000000000009,
+  "sampled_twoG4_coupled_dBm": -37.394,
+  "difference_to_other_band_absmax_dB_not_guaranteed_margin": [
+    5.992000000000001,
+    47.394
+  ],
+  "reference_board_mm": [
+    50,
+    30
+  ],
+  "candidate_board_mm": [
+    90,
+    28
+  ],
+  "width_reduction_percent": 6.666666666666667,
+  "release_gates": [
+    "Inactive powered/unpowered port impedance and stress",
+    "Full-band worst-case S parameters on actual PCB/enclosure",
+    "Match tuning and efficiency across fixtures",
+    "PCB stackup and land-pattern verification"
+  ]
+}

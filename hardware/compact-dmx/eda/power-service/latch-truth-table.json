@@ -1,0 +1,114 @@
+[
+  {
+    "AON_OK": false,
+    "VBUS_OK": false,
+    "CAP_OK": false,
+    "previous_Q": false,
+    "RUN": false
+  },
+  {
+    "AON_OK": false,
+    "VBUS_OK": false,
+    "CAP_OK": false,
+    "previous_Q": true,
+    "RUN": false
+  },
+  {
+    "AON_OK": false,
+    "VBUS_OK": false,
+    "CAP_OK": true,
+    "previous_Q": false,
+    "RUN": false
+  },
+  {
+    "AON_OK": false,
+    "VBUS_OK": false,
+    "CAP_OK": true,
+    "previous_Q": true,
+    "RUN": false
+  },
+  {
+    "AON_OK": false,
+    "VBUS_OK": true,
+    "CAP_OK": false,
+    "previous_Q": false,
+    "RUN": false
+  },
+  {
+    "AON_OK": false,
+    "VBUS_OK": true,
+    "CAP_OK": false,
+    "previous_Q": true,
+    "RUN": false
+  },
+  {
+    "AON_OK": false,
+    "VBUS_OK": true,
+    "CAP_OK": true,
+    "previous_Q": false,
+    "RUN": false
+  },
+  {
+    "AON_OK": false,
+    "VBUS_OK": true,
+    "CAP_OK": true,
+    "previous_Q": true,
+    "RUN": false
+  },
+  {
+    "AON_OK": true,
+    "VBUS_OK": false,
+    "CAP_OK": false,
+    "previous_Q": false,
+    "RUN": false
+  },
+  {
+    "AON_OK": true,
+    "VBUS_OK": false,
+    "CAP_OK": false,
+    "previous_Q": true,
+    "RUN": false
+  },
+  {
+    "AON_OK": true,
+    "VBUS_OK": false,
+    "CAP_OK": true,
+    "previous_Q": false,
+    "RUN": false
+  },
+  {
+    "AON_OK": true,
+    "VBUS_OK": false,
+    "CAP_OK": true,
+    "previous_Q": true,
+    "RUN": true
+  },
+  {
+    "AON_OK": true,
+    "VBUS_OK": true,
+    "CAP_OK": false,
+    "previous_Q": false,
+    "RUN": true
+  },
+  {
+    "AON_OK": true,
+    "VBUS_OK": true,
+    "CAP_OK": false,
+    "previous_Q": true,
+    "RUN": true
+  },
+  {
+    "AON_OK": true,
+    "VBUS_OK": true,
+    "CAP_OK": true,
+    "previous_Q": false,
+    "RUN": true
+  },
+  {
+    "AON_OK": true,
+    "VBUS_OK": true,
+    "CAP_OK": true,
+    "previous_Q": true,
+    "RUN": true
+  }
+]

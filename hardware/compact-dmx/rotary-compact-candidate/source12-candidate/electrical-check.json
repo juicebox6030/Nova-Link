@@ -1,0 +1,940 @@
+{
+  "revision": "S12-R1",
+  "status": "PASS exported literal/static/conditional checks; transient OVP protection and manufacturing qualification UNMET",
+  "protected_inputs_verified": 1122,
+  "unaccepted_external_preservation_deltas": [
+    "hardware/compact-dmx/README.md"
+  ],
+  "physical_components": 57,
+  "purchased_components": 52,
+  "IC_pins_literal": 69,
+  "USB_physical_lands": 16,
+  "all_exported_nodes_checked": 185,
+  "resistors_checked": 27,
+  "capacitors_checked": 17,
+  "regulation": {
+    "nominal_V": 5.18,
+    "reference_divider_bias_corners_V": [
+      5.106023570778442,
+      5.254424430941883
+    ],
+    "resistor_fractional_allocation": 0.002,
+    "one_sided_line_load_ripple_transient_alloc_V": 0.05,
+    "conditional_port_V": [
+      4.783143570778441,
+      5.304424430941883
+    ],
+    "conditional_OVP_nonnuisance_margin_V": 0.019320090016200983,
+    "output_aux_alloc_A": 0.01,
+    "input_aux_alloc_A": 0.002,
+    "healthy_stress_A": 1.92,
+    "VBUS_limit_fault_stress_A": 2.2399999999999998,
+    "current_rating_healthy_VCONN_recommended_A": 0.25,
+    "VCONN_0p410_is_fault_stress_not_healthy_entitlement": true,
+    "line_load_ripple_efficiency_or_connector_R_guaranteed": false
+  },
+  "thresholds_V": {
+    "source_UV_rise": [
+      9.200273021197605,
+      9.59183490256513
+    ],
+    "source_UV_fall": [
+      8.367511883473053,
+      8.753244381523048
+    ],
+    "source_OV_rise": [
+      14.135368131020687,
+      14.741290666746035
+    ],
+    "source_OV_fall": [
+      12.855949491951192,
+      13.452455048314453
+    ],
+    "buck_UV_rise": [
+      4.732549682911405,
+      4.8687628490313966
+    ],
+    "buck_UV_fall": [
+      4.624935031027055,
+      4.820582078248908
+    ],
+    "buck_OV_rise": [
+      5.323744520958084,
+      5.476745480961925
+    ],
+    "buck_OV_fall": [
+      5.2026936227544915,
+      5.422545080160321
+    ],
+    "output_internal_OVP_backstop": [
+      5.79065872255489,
+      6.090260480961924
+    ],
+    "safe_PG_rise": [
+      4.579585244471057,
+      4.806287359759519
+    ],
+    "TPS3700_input_bias_scope": "25nA both inputs is a conservative engineering allocation from INA6.5V max25nA and INB0.1V max15nA testpoints. Full bias behavior at0.4V needs confirmation; not an invented guaranteed full-bias limit."
+  },
+  "current_paths": {
+    "source_breaker_formula_A": [
+      1.4973053892215569,
+      1.837374749498998
+    ],
+    "output_overload_test_A": [
+      3.243512974051896,
+      3.817635270541082
+    ],
+    "output_short_test_A": [
+      3.2035928143712575,
+      3.7775551102204408
+    ],
+    "full_path_R_ohm": 0.17829823196163092,
+    "flex_loop_R_ohm": 0.09208361747042736,
+    "tail_R_ohm": 0.01625024565988206,
+    "stationary_wire_R_ohm": 0.00496436883132149,
+    "source_healthy_screen_V": [
+      11.41,
+      12.589999999999998
+    ],
+    "corners": [
+      {
+        "source_V": 11.41,
+        "efficiency_assumption": 0.8,
+        "buck_output_A": 1.92,
+        "FPC_A": 1.1270389250537374,
+        "buck_input_V": 11.209050952310982,
+        "breaker_floor_margin_A": 0.3702664641678195,
+        "module1p8A_margin_A": 0.6729610749462627,
+        "flex_copper_W": 0.1169661522605132,
+        "full_path_W": 0.22647739869800354,
+        "buck_loss_alloc_W": 2.522123726852104,
+        "inductor_peak_engineering_A": 2.6379340942962926
+      },
+      {
+        "source_V": 11.41,
+        "efficiency_assumption": 0.8,
+        "buck_output_A": 2.2399999999999998,
+        "FPC_A": 1.31855616123965,
+        "buck_input_V": 11.174903767708855,
+        "breaker_floor_margin_A": 0.17874922798190696,
+        "module1p8A_margin_A": 0.48144383876035013,
+        "flex_copper_W": 0.16009568875876493,
+        "full_path_W": 0.3099875855717168,
+        "buck_loss_alloc_W": 2.9424776813274542,
+        "inductor_peak_engineering_A": 2.955998268326774
+      },
+      {
+        "source_V": 11.41,
+        "efficiency_assumption": 0.85,
+        "buck_output_A": 1.92,
+        "FPC_A": 1.0597276606016546,
+        "buck_input_V": 11.22105243175389,
+        "breaker_floor_margin_A": 0.4375777286199023,
+        "module1p8A_margin_A": 0.7402723393983455,
+        "flex_copper_W": 0.10341199406590253,
+        "full_path_W": 0.2002329644738219,
+        "buck_loss_alloc_W": 1.7803226307191327,
+        "inductor_peak_engineering_A": 2.6386116677694624
+      },
+      {
+        "source_V": 11.41,
+        "efficiency_assumption": 0.85,
+        "buck_output_A": 2.2399999999999998,
+        "FPC_A": 1.239551704185216,
+        "buck_input_V": 11.18899012271875,
+        "breaker_floor_margin_A": 0.2577536850363409,
+        "module1p8A_margin_A": 0.5604482958147841,
+        "flex_copper_W": 0.1414854125916953,
+        "full_path_W": 0.27395317002573955,
+        "buck_loss_alloc_W": 2.077043069172321,
+        "inductor_peak_engineering_A": 2.956798264651186
+      },
+      {
+        "source_V": 11.41,
+        "efficiency_assumption": 0.9,
+        "buck_output_A": 1.92,
+        "FPC_A": 1.0000181315283914,
+        "buck_input_V": 11.231698535218914,
+        "breaker_floor_margin_A": 0.4972872576931655,
+        "module1p8A_margin_A": 0.7999818684716087,
+        "flex_copper_W": 0.09208695673414916,
+        "full_path_W": 0.17830469765915677,
+        "buck_loss_alloc_W": 1.1209438786009356,
+        "inductor_peak_engineering_A": 2.6392115081481
+      },
+      {
+        "source_V": 11.41,
+        "efficiency_assumption": 0.9,
+        "buck_output_A": 2.2399999999999998,
+        "FPC_A": 1.1694954908506892,
+        "buck_input_V": 11.201481021694223,
+        "breaker_floor_margin_A": 0.3278098983708677,
+        "module1p8A_margin_A": 0.6305045091493109,
+        "flex_copper_W": 0.12594457794887723,
+        "full_path_W": 0.24386200488539955,
+        "buck_loss_alloc_W": 1.307767858367758,
+        "inductor_peak_engineering_A": 2.957505968247481
+      },
+      {
+        "source_V": 12.589999999999998,
+        "efficiency_assumption": 0.8,
+        "buck_output_A": 1.92,
+        "FPC_A": 1.0182936346713831,
+        "buck_input_V": 12.408440045320308,
+        "breaker_floor_margin_A": 0.47901175455017375,
+        "module1p8A_margin_A": 0.7817063653286169,
+        "flex_copper_W": 0.09548352201844483,
+        "full_path_W": 0.18488134616155363,
+        "buck_loss_alloc_W": 2.522123726852104,
+        "inductor_peak_engineering_A": 2.6991688669444955
+      },
+      {
+        "source_V": 12.589999999999998,
+        "efficiency_assumption": 0.8,
+        "buck_output_A": 2.2399999999999998,
+        "FPC_A": 1.1906191227402052,
+        "buck_input_V": 12.377714715475712,
+        "breaker_floor_margin_A": 0.30668626648135167,
+        "module1p8A_margin_A": 0.6093808772597948,
+        "flex_copper_W": 0.13053533232326842,
+        "full_path_W": 0.252750919230961,
+        "buck_loss_alloc_W": 2.9424776813274542,
+        "inductor_peak_engineering_A": 3.0177482959496644
+      },
+      {
+        "source_V": 12.589999999999998,
+        "efficiency_assumption": 0.85,
+        "buck_output_A": 1.92,
+        "FPC_A": 0.9576792841312279,
+        "buck_input_V": 12.41924747685312,
+        "breaker_floor_margin_A": 0.5396261050903289,
+        "module1p8A_margin_A": 0.8423207158687721,
+        "flex_copper_W": 0.08445445396587381,
+        "full_path_W": 0.16352615413090335,
+        "buck_loss_alloc_W": 1.7803226307191327,
+        "inductor_peak_engineering_A": 2.699666872364603
+      },
+      {
+        "source_V": 12.589999999999998,
+        "efficiency_assumption": 0.85,
+        "buck_output_A": 2.2399999999999998,
+        "FPC_A": 1.119556371893717,
+        "buck_input_V": 12.39038507830997,
+        "breaker_floor_margin_A": 0.37774901732783994,
+        "module1p8A_margin_A": 0.6804436281062831,
+        "flex_copper_W": 0.11541820190442564,
+        "full_path_W": 0.22348015750313605,
+        "buck_loss_alloc_W": 2.077043069172321,
+        "inductor_peak_engineering_A": 3.018334957767451
+      },
+      {
+        "source_V": 12.589999999999998,
+        "efficiency_assumption": 0.9,
+        "buck_output_A": 1.92,
+        "FPC_A": 0.9038895168065839,
+        "buck_input_V": 12.428838097264732,
+        "breaker_floor_margin_A": 0.593415872414973,
+        "module1p8A_margin_A": 0.8961104831934161,
+        "flex_copper_W": 0.07523381262338281,
+        "full_path_W": 0.14567255439100998,
+        "buck_loss_alloc_W": 1.1209438786009356,
+        "inductor_peak_engineering_A": 2.700108081945706
+      },
+      {
+        "source_V": 12.589999999999998,
+        "efficiency_assumption": 0.9,
+        "buck_output_A": 2.2399999999999998,
+        "FPC_A": 1.0565132593243776,
+        "buck_input_V": 12.401625553818441,
+        "breaker_floor_margin_A": 0.4407921298971793,
+        "module1p8A_margin_A": 0.7434867406756225,
+        "flex_copper_W": 0.1027856000909732,
+        "full_path_W": 0.19902010010870091,
+        "buck_loss_alloc_W": 1.307767858367758,
+        "inductor_peak_engineering_A": 3.018854409632462
+      }
+    ],
+    "worst": {
+      "source_V": 11.41,
+      "efficiency_assumption": 0.8,
+      "buck_output_A": 2.2399999999999998,
+      "FPC_A": 1.31855616123965,
+      "buck_input_V": 11.174903767708855,
+      "breaker_floor_margin_A": 0.17874922798190696,
+      "module1p8A_margin_A": 0.48144383876035013,
+      "flex_copper_W": 0.16009568875876493,
+      "full_path_W": 0.3099875855717168,
+      "buck_loss_alloc_W": 2.9424776813274542,
+      "inductor_peak_engineering_A": 2.955998268326774
+    },
+    "breaker_neither_instantaneous_nor_FPC_I2t_proof": true
+  },
+  "state_rows": [
+    {
+      "source_V": 0,
+      "buck_forced_V": 0,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 0,
+      "buck_forced_V": 0,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 0,
+      "buck_forced_V": 5.18,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 0,
+      "buck_forced_V": 5.18,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 0,
+      "buck_forced_V": 5.6,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 0,
+      "buck_forced_V": 5.6,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 0,
+      "buck_forced_V": 12,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 0,
+      "buck_forced_V": 12,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 0,
+      "buck_forced_V": 16.2,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 0,
+      "buck_forced_V": 16.2,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 5,
+      "buck_forced_V": 0,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 5,
+      "buck_forced_V": 0,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 5,
+      "buck_forced_V": 5.18,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 5,
+      "buck_forced_V": 5.18,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 5,
+      "buck_forced_V": 5.6,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 5,
+      "buck_forced_V": 5.6,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 5,
+      "buck_forced_V": 12,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 5,
+      "buck_forced_V": 12,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 5,
+      "buck_forced_V": 16.2,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 5,
+      "buck_forced_V": 16.2,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 11.41,
+      "buck_forced_V": 0,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 11.41,
+      "buck_forced_V": 0,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "OFF",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 11.41,
+      "buck_forced_V": 5.18,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 11.41,
+      "buck_forced_V": 5.18,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "ON",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 11.41,
+      "buck_forced_V": 5.6,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 11.41,
+      "buck_forced_V": 5.6,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "OFF",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 11.41,
+      "buck_forced_V": 12,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 11.41,
+      "buck_forced_V": 12,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 11.41,
+      "buck_forced_V": 16.2,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 11.41,
+      "buck_forced_V": 16.2,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 12.59,
+      "buck_forced_V": 0,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 12.59,
+      "buck_forced_V": 0,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "OFF",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 12.59,
+      "buck_forced_V": 5.18,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 12.59,
+      "buck_forced_V": 5.18,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "ON",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 12.59,
+      "buck_forced_V": 5.6,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 12.59,
+      "buck_forced_V": 5.6,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "OFF",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 12.59,
+      "buck_forced_V": 12,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 12.59,
+      "buck_forced_V": 12,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 12.59,
+      "buck_forced_V": 16.2,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 12.59,
+      "buck_forced_V": 16.2,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": true,
+      "monitor_powered_in_steady_state": true,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 16.2,
+      "buck_forced_V": 0,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 16.2,
+      "buck_forced_V": 0,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 16.2,
+      "buck_forced_V": 5.18,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 16.2,
+      "buck_forced_V": 5.18,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 16.2,
+      "buck_forced_V": 5.6,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 16.2,
+      "buck_forced_V": 5.6,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "UNKNOWN monitor unpowered/starting; no5p5V startup claim",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 16.2,
+      "buck_forced_V": 12,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 16.2,
+      "buck_forced_V": 12,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 16.2,
+      "buck_forced_V": 16.2,
+      "monitor_settled": false,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    },
+    {
+      "source_V": 16.2,
+      "buck_forced_V": 16.2,
+      "monitor_settled": true,
+      "input_path_healthy_DC_enabled": false,
+      "monitor_powered_in_steady_state": false,
+      "output_barrier": "OFF internal OVP, independent of monitor",
+      "external_source_good_exported": false
+    }
+  ],
+  "CC_rows": [
+    {
+      "enable": false,
+      "CC1": "open",
+      "CC2": "open",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": null
+    },
+    {
+      "enable": false,
+      "CC1": "Rd",
+      "CC2": "open",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": null
+    },
+    {
+      "enable": false,
+      "CC1": "open",
+      "CC2": "Rd",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": null
+    },
+    {
+      "enable": false,
+      "CC1": "Rd",
+      "CC2": "Ra",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": null
+    },
+    {
+      "enable": false,
+      "CC1": "Ra",
+      "CC2": "Rd",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": null
+    },
+    {
+      "enable": false,
+      "CC1": "open",
+      "CC2": "Ra",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": null
+    },
+    {
+      "enable": false,
+      "CC1": "Ra",
+      "CC2": "open",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": null
+    },
+    {
+      "enable": false,
+      "CC1": "Rd",
+      "CC2": "Rd",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": null
+    },
+    {
+      "enable": false,
+      "CC1": "Ra",
+      "CC2": "Ra",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": null
+    },
+    {
+      "enable": true,
+      "CC1": "open",
+      "CC2": "open",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": 1.5
+    },
+    {
+      "enable": true,
+      "CC1": "Rd",
+      "CC2": "open",
+      "VBUS": true,
+      "VCONN": null,
+      "advert_A": 1.5
+    },
+    {
+      "enable": true,
+      "CC1": "open",
+      "CC2": "Rd",
+      "VBUS": true,
+      "VCONN": null,
+      "advert_A": 1.5
+    },
+    {
+      "enable": true,
+      "CC1": "Rd",
+      "CC2": "Ra",
+      "VBUS": true,
+      "VCONN": "CC2",
+      "advert_A": 1.5
+    },
+    {
+      "enable": true,
+      "CC1": "Ra",
+      "CC2": "Rd",
+      "VBUS": true,
+      "VCONN": "CC1",
+      "advert_A": 1.5
+    },
+    {
+      "enable": true,
+      "CC1": "open",
+      "CC2": "Ra",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": 1.5
+    },
+    {
+      "enable": true,
+      "CC1": "Ra",
+      "CC2": "open",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": 1.5
+    },
+    {
+      "enable": true,
+      "CC1": "Rd",
+      "CC2": "Rd",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": 1.5
+    },
+    {
+      "enable": true,
+      "CC1": "Ra",
+      "CC2": "Ra",
+      "VBUS": false,
+      "VCONN": null,
+      "advert_A": 1.5
+    }
+  ],
+  "negative_tests": {
+    "no_series_barrier_12V_fault_exceeds_USB_abs7V": true,
+    "static_trip_below5p5_does_not_prove20us_fault_below5p5": true,
+    "PG_threshold_not_source_valid": true,
+    "unsettled_monitor_not_promoted_to_valid": true
+  },
+  "pin_operating_limit_screen": {
+    "U1_EN_at16p2_max_V": 2.0815092365337415,
+    "U1_OVLO_at16p2_max_V": 1.3548340996975619,
+    "U5_INA_at16p2_max_V": 1.3548340996975619,
+    "U5_INB_at16p2_max_V": 1.2044520293833938,
+    "SAFE5_healthy_min_V": 4.933143570778442,
+    "SAFE5_healthy_max_V": 5.304424430941883,
+    "U4_EN_low_max_V": 0.25,
+    "U4_EN_high_min_V": 2.5128357618184425,
+    "buck_EN_healthy_min_V": 1.0112121946064112
+  },
+  "port_enable_V": [
+    0.4,
+    2.451518641818442
+  ],
+  "recommended_EN_limits_V": [
+    0.63,
+    1.17
+  ],
+  "output_fault_energy": {
+    "min_polymer_C_25C_tolerance_only_F": 0.00011999999999999999,
+    "headroom_at_latest_static_trip_to5p5_V": 0.023254519038075294,
+    "remaining_charge_C": 2.790542284569035e-06,
+    "time_if_current_at_overload_max_s": 7.309609448818627e-07,
+    "illustrative20us_at_testlimit_deltaV": 0.6362725450901805,
+    "max_response_spec_s": null,
+    "overshoot_or_USB_pin_survival_guaranteed": false,
+    "source_note": "TPS3700 propagation18/29us typical only; TPS25940 OVP2us typical to FLT, not isolation. Current limits also have delays. 20us illustration is not a bound."
+  },
+  "startup": {
+    "U5_correct_output_startup_max_s": 0.00045,
+    "buck_SS_nominal_s": 0.0027999999999999995,
+    "buck_SS_current_minmax_guaranteed": false,
+    "output_slew_gain_spec": [
+      11.65,
+      12.05
+    ],
+    "output_dvdt_I_A": [
+      8.5e-07,
+      1.15e-06
+    ],
+    "output_slew_max_model_V_per_s": 769.8611111111112,
+    "output_polymer_only_inrush_max_model_A": 0.13857500000000003,
+    "healthy_cold_start_transient_proven": false
+  },
+  "effective_caps": {
+    "input_nominal_uF": 20,
+    "input3uF_min_required": true,
+    "input_effective_uF_if80percent_total_bias_temp_loss_after_tol": 3.2,
+    "output_direct_effective_uF_same_assumption": 7.040000000000001,
+    "vendor_guaranteed_bias_temp_minimum": false,
+    "polymer_and_switched_bank_loop_stability_proven": false
+  },
+  "gates": [
+    "OVP response/injected energy into USB must be bounded by additional evidence; static barrier is not5.5V transient qualification",
+    "Effective ceramic capacitance at bias/temp, inductor hot saturation, compensation/stability and distributed load capacitance",
+    "Startup/inrush/hotplug/brownout/detach/rebound/reverse and unloaded forcedPWM energy, including USB backdrive",
+    "FPC/clamps/trace I2t/current capability, module transient/overload coordination; latch reset behavior",
+    "Routing, hot-loop/Kelvin/thermal copper, sealed collar thermal, EMI/ESD and USB electrical/compliance",
+    "Supplier land/stencil/component heights and connector PCB1mm/stake/NPTH process; allocation is not integrated fit",
+    "Stationary sourcepod insulation, mains/PE/endcaps/install guidance and line/temperature derating"
+  ],
+  "manufacturing_release": false
+}

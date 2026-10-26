@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.kicad_sch</source>
+    <date>2026-10-23T12:02:47</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>NOVA rotating regulated 5V 1.5A source prototype</title>
+        <company/>
+        <rev>RS-1</rev>
+        <date/>
+        <source>regulated-source.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>GRM21BC71E106ME11L 10uF</value>
+      <footprint>RS:C0805</footprint>
+      <fields>
+        <field name="Role">Reg input</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="C" description=""/>
+      <property name="Role" value="Reg input"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>779a8ba7-4681-56ef-acb3-f6a408aaf552</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>GRM21BC71E106ME11L 10uF</value>
+      <footprint>RS:C0805</footprint>
+      <fields>
+        <field name="Role">Reg input</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="C" description=""/>
+      <property name="Role" value="Reg input"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e4c810f2-b4f2-5aac-bcf9-b9e74d939c5f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>TMK107BBJ106MA-T 10uF</value>
+      <footprint>RS:C0603</footprint>
+      <fields>
+        <field name="Role">Reg close input</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:C0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="C" description=""/>
+      <property name="Role" value="Reg close input"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>52a3774f-2b41-583e-9af6-0d7f385ce118</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>GRM21BC81C226ME44L 22uF</value>
+      <footprint>RS:C0805</footprint>
+      <fields>
+        <field name="Role">Reg output</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="C" description=""/>
+      <property name="Role" value="Reg output"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3d3488ab-246a-5b37-ad66-3d7341553ed6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>GRM21BC81C226ME44L 22uF</value>
+      <footprint>RS:C0805</footprint>
+      <fields>
+        <field name="Role">Reg output</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="C" description=""/>
+      <property name="Role" value="Reg output"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>481d2ebf-2f11-53bf-b078-7be47c1abc7e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>GRM21BC81C226ME44L 22uF</value>
+      <footprint>RS:C0805</footprint>
+      <fields>
+        <field name="Role">Reg output</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="C" description=""/>
+      <property name="Role" value="Reg output"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9dd2cebb-1860-5d98-8428-148af6f33efd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>TMK107BBJ106MA-T 10uF</value>
+      <footprint>RS:C0603</footprint>
+      <fields>
+        <field name="Role">Reg close output</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:C0603</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="C" description=""/>
+      <property name="Role" value="Reg close output"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2b712dba-e2b4-5176-8a4a-de5b21ffea34</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>T520D157M010ATE055 150uF</value>
+      <footprint>RS:T520D</footprint>
+      <fields>
+        <field name="Role">Positive pad1;120uF min25C bulk before cold-socket switch</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:T520D</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="C" description=""/>
+      <property name="Role" value="Positive pad1;120uF min25C bulk before cold-socket switch"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95c8cdf9-8ff7-560f-b862-6463556877a5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>GRM21BC71E106ME11L 10uF</value>
+      <footprint>RS:C0805</footprint>
+      <fields>
+        <field name="Role">Port output bypass</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:C0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="C" description=""/>
+      <property name="Role" value="Port output bypass"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>899659bf-3dcd-5206-bd87-e77e269ffa7f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>TMK105B7104MV-FR 100nF</value>
+      <footprint>RS:C0402</footprint>
+      <fields>
+        <field name="Role">U3 close bypass</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="C" description=""/>
+      <property name="Role" value="U3 close bypass"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>56916906-5622-5d31-9764-9236db8691f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>TMK105B7104MV-FR 100nF</value>
+      <footprint>RS:C0402</footprint>
+      <fields>
+        <field name="Role">Do not load VAUX</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="C" description=""/>
+      <property name="Role" value="Do not load VAUX"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a7c97408-253d-5554-906b-eea45e78d928</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>GRM155R71E103KA01D 10nF</value>
+      <footprint>RS:C0402</footprint>
+      <fields>
+        <field name="Role">Efuse slew setting; max inrush still bounded by physical circuit tests</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="C" description=""/>
+      <property name="Role" value="Efuse slew setting; max inrush still bounded by physical circuit tests"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>587b5a2b-e317-59b0-91fc-cff40be25a0a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>TMK105B7104MV-FR 100nF</value>
+      <footprint>RS:C0402</footprint>
+      <fields>
+        <field name="Role">FPC local bypass</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="C" description=""/>
+      <property name="Role" value="FPC local bypass"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9882fc33-1702-5fce-ab76-1859e00e8470</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>TPD1E10B06DPYR</value>
+      <footprint>RS:DPY2</footprint>
+      <fields>
+        <field name="Role">VBUS IEC transient suppressor; not DC overvoltage protection</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:DPY2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="ESD" description=""/>
+      <property name="Role" value="VBUS IEC transient suppressor; not DC overvoltage protection"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b3386091-1f19-5f99-86c4-5a628fa159d4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J0">
+      <value>FABRICATED_FPC20_SOLDER_LANDS</value>
+      <footprint>RS:FPC20</footprint>
+      <fields>
+        <field name="Role">20mm ribbon direct solder lands, supplier/process unqualified, external clamp required</field>
+        <field name="Scope">land_only</field>
+        <field name="Footprint">RS:FPC20</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="FPC_LANDS" description=""/>
+      <property name="Role" value="20mm ribbon direct solder lands, supplier/process unqualified, external clamp required"/>
+      <property name="Scope" value="land_only"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c547d3e5-cf91-54d5-b019-5c754230077c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>USB4105-GF-A</value>
+      <footprint>RS:USB4105</footprint>
+      <fields>
+        <field name="Role">16 contacts /12 shared electrical lands +4 shellstakes, actual primaryB4 drawing</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:USB4105</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="USB4105" description=""/>
+      <property name="Role" value="16 contacts /12 shared electrical lands +4 shellstakes, actual primaryB4 drawing"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bf212bf0-ed41-5863-8d92-b8eaa2a6751f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A1_B12"/>
+            <pin num="A4_B9"/>
+            <pin num="B8"/>
+            <pin num="A5"/>
+            <pin num="B7"/>
+            <pin num="A6"/>
+            <pin num="A7"/>
+            <pin num="B6"/>
+            <pin num="A8"/>
+            <pin num="B5"/>
+            <pin num="B4_A9"/>
+            <pin num="B1_A12"/>
+            <pin num="S1"/>
+            <pin num="S2"/>
+            <pin num="S3"/>
+            <pin num="S4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>XFL4020-152MEC 1.5uH</value>
+      <footprint>RS:XFL4020</footprint>
+      <fields>
+        <field name="Role">Exact TI typical application magnetics, NRND sourcing gate</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:XFL4020</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="L" description=""/>
+      <property name="Role" value="Exact TI typical application magnetics, NRND sourcing gate"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0a50a677-4c95-528c-945d-1e16ee7a5433</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>TNPW040224K9BYED 24900ohm</value>
+      <footprint>RS:R0402</footprint>
+      <fields>
+        <field name="Role">UVLO top</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="R" description=""/>
+      <property name="Role" value="UVLO top"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>771228f7-9879-5bc0-b260-f28cb788bb8e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>TNPW040210K0BYED 10000ohm</value>
+      <footprint>RS:R0402</footprint>
+      <fields>
+        <field name="Role">UVLO bottom</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="R" description=""/>
+      <property name="Role" value="UVLO bottom"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c12e51a7-2561-512a-ac5b-aa48b459fe99</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>TNPW040237K4BYED 37400ohm</value>
+      <footprint>RS:R0402</footprint>
+      <fields>
+        <field name="Role">OVLO top</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="R" description=""/>
+      <property name="Role" value="OVLO top"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3c907c2d-3154-5463-aec0-5ff83363eb58</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>TNPW040210K0BYED 10000ohm</value>
+      <footprint>RS:R0402</footprint>
+      <fields>
+        <field name="Role">OVLO bottom</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="R" description=""/>
+      <property name="Role" value="OVLO bottom"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>91ea979c-7689-5be8-bd31-5de520fd7aa2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>TNPW04021K00BYED 1000ohm</value>
+      <footprint>RS:R0402</footprint>
+      <fields>
+        <field name="Role">3.334A nominal breaker, +/-10% plus resistor tolerance</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="R" description=""/>
+      <property name="Role" value="3.334A nominal breaker, +/-10% plus resistor tolerance"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>56bcc38e-0638-5e1e-9d63-d5bef8457dcf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>TNPW040254K2BYED 54200ohm</value>
+      <footprint>RS:R0402</footprint>
+      <fields>
+        <field name="Role">Reg top0.1%10ppm</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="R" description=""/>
+      <property name="Role" value="Reg top0.1%10ppm"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>19e7e11c-ffb7-56e2-8f79-7cf14d35fa36</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>TNPW040210K0BYED 10000ohm</value>
+      <footprint>RS:R0402</footprint>
+      <fields>
+        <field name="Role">Reg bottom0.1%10ppm</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="R" description=""/>
+      <property name="Role" value="Reg bottom0.1%10ppm"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a8bfc17b-6b57-5c96-baf2-7cc277fc34f2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>RS:R0402</footprint>
+      <fields>
+        <field name="Role">PG and U3 EN pullup</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="R" description=""/>
+      <property name="Role" value="PG and U3 EN pullup"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b0d250cd-8273-5ba6-8ffe-68ff4028b800</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>RS:R0402</footprint>
+      <fields>
+        <field name="Role">U3 EN default pulldown</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="R" description=""/>
+      <property name="Role" value="U3 EN default pulldown"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>72c4f877-80bc-58e9-99ca-7b00ef144d29</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>RS:R0402</footprint>
+      <fields>
+        <field name="Role">Controller precision reference, return NOT ground</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="R" description=""/>
+      <property name="Role" value="Controller precision reference, return NOT ground"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>87287b58-f336-5c88-a660-afcdd36be375</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>TNPW0402100KBYED 100000ohm</value>
+      <footprint>RS:R0402</footprint>
+      <fields>
+        <field name="Role">Fault OD pullup, diagnostic only</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="R" description=""/>
+      <property name="Role" value="Fault OD pullup, diagnostic only"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5938db58-91b9-5813-9a16-87568ccefb2f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>FAB_FAULT_PROBE</value>
+      <footprint>RS:TP1</footprint>
+      <fields>
+        <field name="Role">Bare1mm fault probe; no MCU/software dependency</field>
+        <field name="Scope">land_only</field>
+        <field name="Footprint">RS:TP1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="TP" description=""/>
+      <property name="Role" value="Bare1mm fault probe; no MCU/software dependency"/>
+      <property name="Scope" value="land_only"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d42a300e-3f0d-5044-be71-3243ef782089</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>TPS259474LRPWR</value>
+      <footprint>RS:RPW10</footprint>
+      <fields>
+        <field name="Role">True reverse blocking, latched circuitbreaker; not instantaneous current limiter</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:RPW10</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="TPS259474" description=""/>
+      <property name="Role" value="True reverse blocking, latched circuitbreaker; not instantaneous current limiter"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6f5f5114-4f98-56d6-8729-2194682d0d63</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>TPS63070RNMR</value>
+      <footprint>RS:RNM15</footprint>
+      <fields>
+        <field name="Role">ForcedPWM5.136V; startup unloaded until PG enables U3</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:RNM15</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="TPS63070" description=""/>
+      <property name="Role" value="ForcedPWM5.136V; startup unloaded until PG enables U3"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>04b27691-a388-5844-9493-d5f1490a1bca</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>TPS25810RVCR</value>
+      <footprint>RS:RVC20</footprint>
+      <fields>
+        <field name="Role">1.5A Rp/currentlimit, CC orientation, VCONN and detach discharge</field>
+        <field name="Scope">purchased</field>
+        <field name="Footprint">RS:RVC20</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RS" part="TPS25810" description=""/>
+      <property name="Role" value="1.5A Rp/currentlimit, CC orientation, VCONN and detach discharge"/>
+      <property name="Scope" value="purchased"/>
+      <property name="Sheetname" value="regulated-source"/>
+      <property name="Sheetfile" value="regulated-source.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a6ab8654-1514-5c55-b78c-626820c40a60</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="RS" part="C">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RS" part="ESD">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESD</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RS" part="FPC_LANDS">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">FPC_LANDS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="STATIONARY_IRM20_PLUS_VIA_FPC" type="passive"/>
+        <pin num="2" name="ISOLATED_RETURN_VIA_FPC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RS" part="L">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RS" part="R">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RS" part="TP">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TP</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="FAULT_PROBE" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RS" part="TPS25810">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS25810</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="FAULT_N" type="open_collector"/>
+        <pin num="2" name="IN1" type="power_in"/>
+        <pin num="3" name="IN1" type="passive"/>
+        <pin num="4" name="IN2" type="power_in"/>
+        <pin num="5" name="AUX" type="power_in"/>
+        <pin num="6" name="EN" type="input"/>
+        <pin num="7" name="CHG_HIGH" type="input"/>
+        <pin num="8" name="CHG_HI_LOW" type="input"/>
+        <pin num="9" name="REF_RTN" type="passive"/>
+        <pin num="10" name="REF" type="passive"/>
+        <pin num="11" name="CC1" type="bidirectional"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="CC2" type="bidirectional"/>
+        <pin num="14" name="OUT" type="power_out"/>
+        <pin num="15" name="OUT" type="passive"/>
+        <pin num="16" name="DEBUG_N_UNUSED" type="open_collector"/>
+        <pin num="17" name="AUDIO_N_UNUSED" type="open_collector"/>
+        <pin num="18" name="POL_N_UNUSED" type="open_collector"/>
+        <pin num="19" name="UFP_N_UNUSED" type="open_collector"/>
+        <pin num="20" name="LD_DET_UNUSED" type="open_collector"/>
+        <pin num="21" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="RS" part="TPS259474">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS259474</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="EN_UVLO" type="input"/>
+        <pin num="2" name="OVLO" type="input"/>
+        <pin num="3" name="PG_UNUSED" type="open_collector"/>
+        <pin num="4" name="PGTH_UNUSED" type="input"/>
+        <pin num="5" name="IN" type="power_in"/>
+        <pin num="6" name="OUT" type="power_out"/>
+        <pin num="7" name="DVDT" type="input"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="ILM" type="input"/>
+        <pin num="10" name="ITIMER_OPEN_FASTEST" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="RS" part="TPS63070">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS63070</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PS_SYNC_LOW_FORCED_PWM" type="input"/>
+        <pin num="2" name="PG" type="open_collector"/>
+        <pin num="3" name="VAUX_NO_EXTERNAL_LOAD" type="power_out"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="FB" type="input"/>
+        <pin num="6" name="FB2_UNUSED" type="open_collector"/>
+        <pin num="7" name="VOUT" type="power_out"/>
+        <pin num="8" name="VOUT" type="passive"/>
+        <pin num="9" name="L2" type="passive"/>
+        <pin num="10" name="PGND" type="power_in"/>
+        <pin num="11" name="L1" type="passive"/>
+        <pin num="12" name="VIN" type="power_in"/>
+        <pin num="13" name="VIN" type="passive"/>
+        <pin num="14" name="EN" type="input"/>
+        <pin num="15" name="VSEL_LOW" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="RS" part="USB4105">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">USB4105</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="A1_B12" name="GND_shared_land" type="passive"/>
+        <pin num="A4_B9" name="VBUS_shared_land" type="passive"/>
+        <pin num="A5" name="CC1" type="passive"/>
+        <pin num="A6" name="D_PLUS" type="passive"/>
+        <pin num="A7" name="D_MINUS" type="passive"/>
+        <pin num="A8" name="SBU1_NC" type="passive"/>
+        <pin num="B1_A12" name="GND_shared_land" type="passive"/>
+        <pin num="B4_A9" name="VBUS_shared_land" type="passive"/>
+        <pin num="B5" name="CC2" type="passive"/>
+        <pin num="B6" name="D_PLUS" type="passive"/>
+        <pin num="B7" name="D_MINUS" type="passive"/>
+        <pin num="B8" name="SBU2_NC" type="passive"/>
+        <pin num="S1" name="SHELL" type="passive"/>
+        <pin num="S2" name="SHELL" type="passive"/>
+        <pin num="S3" name="SHELL" type="passive"/>
+        <pin num="S4" name="SHELL" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="RS">
+      <uri>${KIPRJMOD}/regulated-source.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/FPC_5V" class="Default">
+      <node ref="C13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J0" pin="1" pinfunction="STATIONARY_IRM20_PLUS_VIA_FPC_1" pintype="passive"/>
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="IN_5" pintype="power_in"/>
+    </net>
+    <net code="2" name="/GND_ISO" class="Default">
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J0" pin="2" pinfunction="ISOLATED_RETURN_VIA_FPC_2" pintype="passive"/>
+      <node ref="J1" pin="A1_B12" pinfunction="GND_shared_land_A1_B12" pintype="passive"/>
+      <node ref="J1" pin="B1_A12" pinfunction="GND_shared_land_B1_A12" pintype="passive"/>
+      <node ref="J1" pin="S1" pinfunction="SHELL_S1" pintype="passive"/>
+      <node ref="J1" pin="S2" pinfunction="SHELL_S2" pintype="passive"/>
+      <node ref="J1" pin="S3" pinfunction="SHELL_S3" pintype="passive"/>
+      <node ref="J1" pin="S4" pinfunction="SHELL_S4" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="PGTH_UNUSED_4" pintype="input"/>
+      <node ref="U1" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="PS_SYNC_LOW_FORCED_PWM_1" pintype="input"/>
+      <node ref="U2" pin="10" pinfunction="PGND_10" pintype="power_in"/>
+      <node ref="U2" pin="15" pinfunction="VSEL_LOW_15" pintype="input"/>
+      <node ref="U2" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U3" pin="12" pinfunction="GND_12" pintype="power_in"/>
+      <node ref="U3" pin="21" pinfunction="EP_GND_21" pintype="power_in"/>
+      <node ref="U3" pin="8" pinfunction="CHG_HI_LOW_8" pintype="input"/>
+    </net>
+    <net code="3" name="/INPUT_DVDT" class="Default">
+      <node ref="C12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="DVDT_7" pintype="input"/>
+    </net>
+    <net code="4" name="/INPUT_ILM" class="Default">
+      <node ref="R5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="ILM_9" pintype="input"/>
+    </net>
+    <net code="5" name="/INPUT_OVLO" class="Default">
+      <node ref="R3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="OVLO_2" pintype="input"/>
+    </net>
+    <net code="6" name="/INPUT_UVLO" class="Default">
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="EN_UVLO_1" pintype="input"/>
+    </net>
+    <net code="7" name="/PORT_FAULT_OD" class="Default">
+      <node ref="R11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="FAULT_PROBE_1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="FAULT_N_1" pintype="open_collector"/>
+    </net>
+    <net code="8" name="/PROTECTED_IN" class="Default">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="OUT_6" pintype="power_out"/>
+      <node ref="U2" pin="12" pinfunction="VIN_12" pintype="power_in"/>
+      <node ref="U2" pin="13" pinfunction="VIN_13" pintype="passive"/>
+      <node ref="U2" pin="14" pinfunction="EN_14" pintype="input"/>
+    </net>
+    <net code="9" name="/REF" class="Default">
+      <node ref="R10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="REF_10" pintype="passive"/>
+    </net>
+    <net code="10" name="/REF_RTN" class="Default">
+      <node ref="R10" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="REF_RTN_9" pintype="passive"/>
+    </net>
+    <net code="11" name="/REG_5V136" class="Default">
+      <node ref="C10" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="VOUT_7" pintype="power_out"/>
+      <node ref="U2" pin="8" pinfunction="VOUT_8" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="IN1_2" pintype="power_in"/>
+      <node ref="U3" pin="3" pinfunction="IN1_3" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="IN2_4" pintype="power_in"/>
+      <node ref="U3" pin="5" pinfunction="AUX_5" pintype="power_in"/>
+      <node ref="U3" pin="7" pinfunction="CHG_HIGH_7" pintype="input"/>
+    </net>
+    <net code="12" name="/REG_FB" class="Default">
+      <node ref="R6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="FB_5" pintype="input"/>
+    </net>
+    <net code="13" name="/REG_READY_OD" class="Default">
+      <node ref="R8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="PG_2" pintype="open_collector"/>
+      <node ref="U3" pin="6" pinfunction="EN_6" pintype="input"/>
+    </net>
+    <net code="14" name="/REG_VAUX" class="Default">
+      <node ref="C11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="VAUX_NO_EXTERNAL_LOAD_3" pintype="power_out"/>
+    </net>
+    <net code="15" name="/SW_L1" class="Default">
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U2" pin="11" pinfunction="L1_11" pintype="passive"/>
+    </net>
+    <net code="16" name="/SW_L2" class="Default">
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="L2_9" pintype="passive"/>
+    </net>
+    <net code="17" name="/USB_CC1" class="Default">
+      <node ref="J1" pin="A5" pinfunction="CC1_A5" pintype="passive"/>
+      <node ref="U3" pin="11" pinfunction="CC1_11" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/USB_CC2" class="Default">
+      <node ref="J1" pin="B5" pinfunction="CC2_B5" pintype="passive"/>
+      <node ref="U3" pin="13" pinfunction="CC2_13" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="/USB_D_SHORT" class="Default">
+      <node ref="J1" pin="A6" pinfunction="D_PLUS_A6" pintype="passive"/>
+      <node ref="J1" pin="A7" pinfunction="D_MINUS_A7" pintype="passive"/>
+      <node ref="J1" pin="B6" pinfunction="D_PLUS_B6" pintype="passive"/>
+      <node ref="J1" pin="B7" pinfunction="D_MINUS_B7" pintype="passive"/>
+    </net>
+    <net code="20" name="/USB_VBUS" class="Default">
+      <node ref="C9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J1" pin="A4_B9" pinfunction="VBUS_shared_land_A4_B9" pintype="passive"/>
+      <node ref="J1" pin="B4_A9" pinfunction="VBUS_shared_land_B4_A9" pintype="passive"/>
+      <node ref="U3" pin="14" pinfunction="OUT_14" pintype="power_out"/>
+      <node ref="U3" pin="15" pinfunction="OUT_15" pintype="passive"/>
+    </net>
+    <net code="21" name="unconnected-(J1-SBU1_NC-PadA8)" class="Default">
+      <node ref="J1" pin="A8" pinfunction="SBU1_NC_A8" pintype="passive+no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(J1-SBU2_NC-PadB8)" class="Default">
+      <node ref="J1" pin="B8" pinfunction="SBU2_NC_B8" pintype="passive+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U1-ITIMER_OPEN_FASTEST-Pad10)" class="Default">
+      <node ref="U1" pin="10" pinfunction="ITIMER_OPEN_FASTEST_10" pintype="input+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(U1-PG_UNUSED-Pad3)" class="Default">
+      <node ref="U1" pin="3" pinfunction="PG_UNUSED_3" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U2-FB2_UNUSED-Pad6)" class="Default">
+      <node ref="U2" pin="6" pinfunction="FB2_UNUSED_6" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(U3-AUDIO_N_UNUSED-Pad17)" class="Default">
+      <node ref="U3" pin="17" pinfunction="AUDIO_N_UNUSED_17" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(U3-DEBUG_N_UNUSED-Pad16)" class="Default">
+      <node ref="U3" pin="16" pinfunction="DEBUG_N_UNUSED_16" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U3-LD_DET_UNUSED-Pad20)" class="Default">
+      <node ref="U3" pin="20" pinfunction="LD_DET_UNUSED_20" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U3-POL_N_UNUSED-Pad18)" class="Default">
+      <node ref="U3" pin="18" pinfunction="POL_N_UNUSED_18" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(U3-UFP_N_UNUSED-Pad19)" class="Default">
+      <node ref="U3" pin="19" pinfunction="UFP_N_UNUSED_19" pintype="open_collector+no_connect"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,425 @@
+{
+  "status": "PASS",
+  "native": [
+    {
+      "name": "StationaryCoreEnvelope",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 256957.14632241635
+    },
+    {
+      "name": "FixedEarPad0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.0078452550178119
+    },
+    {
+      "name": "FixedScrew0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.784424627239001
+    },
+    {
+      "name": "FixedEarShoe0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 4.378622393114376
+    },
+    {
+      "name": "FixedEarPad1",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.007845219003697
+    },
+    {
+      "name": "FixedScrew1",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.7844246272390036
+    },
+    {
+      "name": "FixedEarShoe1",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 4.3786223931143615
+    },
+    {
+      "name": "FixedAdhesive",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 7.669817340496294
+    },
+    {
+      "name": "FixedStiffener",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 30.53133410099386
+    },
+    {
+      "name": "FixedStaticTail",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 28.487571844360055
+    },
+    {
+      "name": "MovingEarPad0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.2744714186571324
+    },
+    {
+      "name": "MovingScrew0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.784424627239001
+    },
+    {
+      "name": "MovingEarShoe0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 5.298247717012141
+    },
+    {
+      "name": "MovingEarPad1",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.2744714186570905
+    },
+    {
+      "name": "MovingScrew1",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.7844246272390039
+    },
+    {
+      "name": "MovingEarShoe1",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 5.2982477170121545
+    },
+    {
+      "name": "MovingAdhesive",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 9.455500031420028
+    },
+    {
+      "name": "MovingStiffener",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 37.96993509080606
+    },
+    {
+      "name": "MovingStaticTail",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 34.84004656268887
+    },
+    {
+      "name": "IndexKnob",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 17.496092595723653
+    },
+    {
+      "name": "IndexPin",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 41.954788519933345
+    },
+    {
+      "name": "IndexRearCap",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 42.9392883892653
+    },
+    {
+      "name": "IndexSpring",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 10.93274243449249
+    },
+    {
+      "name": "PowerBoard_TARGET",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 448.55999999999995
+    },
+    {
+      "name": "Components_TARGET",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1117.656
+    },
+    {
+      "name": "USB4105ShellEnvelope",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 240.60321000000022
+    },
+    {
+      "name": "USBStake0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.1080000000000007
+    },
+    {
+      "name": "USBStake1",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.1080000000000007
+    },
+    {
+      "name": "USBStake2",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.1080000000000007
+    },
+    {
+      "name": "USBStake3",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.1080000000000007
+    },
+    {
+      "name": "USBPlugScreen",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 936.0
+    },
+    {
+      "name": "StationarySpool",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3794.108481699925
+    },
+    {
+      "name": "CoreBondFront",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 30.22212132753475
+    },
+    {
+      "name": "CoreBondRear",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 30.22212132753475
+    },
+    {
+      "name": "FrameBolt_45_25_m29_5",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 5.475795995207006
+    },
+    {
+      "name": "FrameBolt_45_25_29_5",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 5.475795995207006
+    },
+    {
+      "name": "FrameBolt_68_9_m29_5",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 5.475795995207019
+    },
+    {
+      "name": "FrameBolt_68_9_29_5",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 5.475795995207019
+    },
+    {
+      "name": "RotorHalfPositiveY",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 10050.9799907281
+    },
+    {
+      "name": "RotorHalfNegativeY",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 10541.19234838319
+    },
+    {
+      "name": "Flex_minus90",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3347.5628477673895
+    },
+    {
+      "name": "Flex_0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3347.5474286690405
+    },
+    {
+      "name": "Flex_90",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3347.531339721763
+    }
+  ],
+  "thread_regions": [
+    {
+      "parts": [
+        "FixedScrew0",
+        "StationarySpool"
+      ],
+      "volume_mm3": 0.13202107443061162,
+      "bounded_region_check": true
+    },
+    {
+      "parts": [
+        "FixedScrew1",
+        "StationarySpool"
+      ],
+      "volume_mm3": 0.1320210744306128,
+      "bounded_region_check": true
+    },
+    {
+      "parts": [
+        "MovingScrew0",
+        "RotorHalfPositiveY"
+      ],
+      "volume_mm3": 0.09952565526572504,
+      "bounded_region_check": true
+    },
+    {
+      "parts": [
+        "MovingScrew1",
+        "RotorHalfPositiveY"
+      ],
+      "volume_mm3": 0.09952565526572621,
+      "bounded_region_check": true
+    },
+    {
+      "parts": [
+        "FrameBolt_45_25_m29_5",
+        "RotorHalfNegativeY"
+      ],
+      "volume_mm3": 0.9952565526572447,
+      "bounded_region_check": true
+    },
+    {
+      "parts": [
+        "FrameBolt_45_25_29_5",
+        "RotorHalfNegativeY"
+      ],
+      "volume_mm3": 0.9952565526572447,
+      "bounded_region_check": true
+    },
+    {
+      "parts": [
+        "FrameBolt_68_9_m29_5",
+        "RotorHalfNegativeY"
+      ],
+      "volume_mm3": 0.9952565526572568,
+      "bounded_region_check": true
+    },
+    {
+      "parts": [
+        "FrameBolt_68_9_29_5",
+        "RotorHalfNegativeY"
+      ],
+      "volume_mm3": 0.9952565526572568,
+      "bounded_region_check": true
+    },
+    {
+      "parts": [
+        "IndexRearCap",
+        "StationarySpool"
+      ],
+      "volume_mm3": 3.1415926535897665,
+      "bounded_region_check": true
+    },
+    {
+      "parts": [
+        "IndexKnob",
+        "IndexPin"
+      ],
+      "volume_mm3": 0.2764601535159007,
+      "bounded_region_check": true
+    }
+  ],
+  "STEP": [
+    {
+      "path": "locked/pose--90.step",
+      "solids": 39,
+      "each_solid_valid_closed": true
+    },
+    {
+      "path": "locked/pose-0.step",
+      "solids": 39,
+      "each_solid_valid_closed": true
+    },
+    {
+      "path": "locked/pose-90.step",
+      "solids": 39,
+      "each_solid_valid_closed": true
+    },
+    {
+      "path": "released/pose--90.step",
+      "solids": 39,
+      "each_solid_valid_closed": true
+    },
+    {
+      "path": "released/pose-0.step",
+      "solids": 39,
+      "each_solid_valid_closed": true
+    },
+    {
+      "path": "released/pose-90.step",
+      "solids": 39,
+      "each_solid_valid_closed": true
+    },
+    {
+      "path": "exploded.step",
+      "solids": 38,
+      "each_solid_valid_closed": true
+    }
+  ]
+}

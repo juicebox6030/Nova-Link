@@ -1,0 +1,1312 @@
+{
+  "source_sha256": "25fed40decfcf0a511e4f6f78657a2386962d98e7a1f58fcea01bb32823af8e3",
+  "source_revision": {
+    "archive": "CAD_Rev20240202-1",
+    "member": "GLP impression X5 3D Shell Rev20211111-1.stp",
+    "STEP_FILE_NAME": "HUELLE_SW0001",
+    "STEP_timestamp": "2021-11-02T12:58:24"
+  },
+  "units": "mm",
+  "datum": {
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "axes": "source XYZ unchanged; Y approximately vertical in coherent display orientation; not a connector installation datum",
+    "transform": "identity; no shell repositioning"
+  },
+  "error_limits": {
+    "STEP_connectivity_uncertainty_mm": 0.0586981016375,
+    "arithmetic_tolerance_mm": 1e-06,
+    "published_measurement_rounding_mm": 0.01,
+    "render_tessellation_deflection_mm": 0.4,
+    "selected_faces_tessellation_deflection_mm": 0.05,
+    "physical_manufacturing_tolerance_mm": null,
+    "note": "STEP uncertainty is asserted connectivity accuracy, not a manufacturing tolerance or guaranteed coordinate error bound. Surface parameters are exact nominal values in this export; connector identity and mating-depth uncertainty are unbounded."
+  },
+  "source_topology_counts": {
+    "OPEN_SHELL": 62,
+    "ADVANCED_FACE": 4519,
+    "PRODUCT": 1,
+    "NEXT_ASSEMBLY_USAGE_OCCURRENCE": 0,
+    "CONTEXT_DEPENDENT_SHAPE_REPRESENTATION": 0
+  },
+  "source_analytic_features": [
+    {
+      "surface_entity": 9977,
+      "surface_text": "CYLINDRICAL_SURFACE('',#9976,1.19E1)",
+      "placement_entity": 9976,
+      "center_mm": [
+        6.75,
+        -17.75,
+        -77.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "radius_mm": 11.9,
+      "diameter_mm": 23.8,
+      "advanced_face_entities": [
+        9987
+      ],
+      "source_shell_entities": [
+        10015
+      ],
+      "interpretation": "opposite central mounting feature"
+    },
+    {
+      "surface_entity": 9999,
+      "surface_text": "CYLINDRICAL_SURFACE('',#9998,1.19E1)",
+      "placement_entity": 9998,
+      "center_mm": [
+        6.75,
+        -17.75,
+        -77.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "radius_mm": 11.9,
+      "diameter_mm": 23.8,
+      "advanced_face_entities": [
+        10007
+      ],
+      "source_shell_entities": [
+        10015
+      ],
+      "interpretation": "opposite central mounting feature"
+    },
+    {
+      "surface_entity": 14257,
+      "surface_text": "CYLINDRICAL_SURFACE('',#14256,1.11E1)",
+      "placement_entity": 14256,
+      "center_mm": [
+        -43.0,
+        -17.75,
+        57.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_mm": 11.1,
+      "diameter_mm": 22.2,
+      "advanced_face_entities": [
+        14269
+      ],
+      "source_shell_entities": [
+        15060
+      ],
+      "interpretation": "paired mounting feature"
+    },
+    {
+      "surface_entity": 14274,
+      "surface_text": "CYLINDRICAL_SURFACE('',#14273,1.11E1)",
+      "placement_entity": 14273,
+      "center_mm": [
+        -43.0,
+        -17.75,
+        57.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_mm": 11.1,
+      "diameter_mm": 22.2,
+      "advanced_face_entities": [
+        14285
+      ],
+      "source_shell_entities": [
+        15060
+      ],
+      "interpretation": "paired mounting feature"
+    },
+    {
+      "surface_entity": 14320,
+      "surface_text": "CYLINDRICAL_SURFACE('',#14319,1.6E0)",
+      "placement_entity": 14319,
+      "center_mm": [
+        -33.1,
+        -7.85,
+        57.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_mm": 1.6,
+      "diameter_mm": 3.2,
+      "advanced_face_entities": [
+        14330
+      ],
+      "source_shell_entities": [
+        15060
+      ],
+      "interpretation": "small adjacent mounting feature"
+    },
+    {
+      "surface_entity": 14335,
+      "surface_text": "CYLINDRICAL_SURFACE('',#14334,1.6E0)",
+      "placement_entity": 14334,
+      "center_mm": [
+        -33.1,
+        -7.85,
+        57.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_mm": 1.6,
+      "diameter_mm": 3.2,
+      "advanced_face_entities": [
+        14343
+      ],
+      "source_shell_entities": [
+        15060
+      ],
+      "interpretation": "small adjacent mounting feature"
+    },
+    {
+      "surface_entity": 14348,
+      "surface_text": "CYLINDRICAL_SURFACE('',#14347,1.6E0)",
+      "placement_entity": 14347,
+      "center_mm": [
+        -52.9,
+        -27.65,
+        57.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_mm": 1.6,
+      "diameter_mm": 3.2,
+      "advanced_face_entities": [
+        14358
+      ],
+      "source_shell_entities": [
+        15060
+      ],
+      "interpretation": "small adjacent mounting feature"
+    },
+    {
+      "surface_entity": 14363,
+      "surface_text": "CYLINDRICAL_SURFACE('',#14362,1.6E0)",
+      "placement_entity": 14362,
+      "center_mm": [
+        -52.9,
+        -27.65,
+        57.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_mm": 1.6,
+      "diameter_mm": 3.2,
+      "advanced_face_entities": [
+        14371
+      ],
+      "source_shell_entities": [
+        15060
+      ],
+      "interpretation": "small adjacent mounting feature"
+    },
+    {
+      "surface_entity": 14409,
+      "surface_text": "CYLINDRICAL_SURFACE('',#14408,1.11E1)",
+      "placement_entity": 14408,
+      "center_mm": [
+        43.0,
+        -17.75,
+        57.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_mm": 11.1,
+      "diameter_mm": 22.2,
+      "advanced_face_entities": [
+        14421
+      ],
+      "source_shell_entities": [
+        15060
+      ],
+      "interpretation": "paired mounting feature"
+    },
+    {
+      "surface_entity": 14426,
+      "surface_text": "CYLINDRICAL_SURFACE('',#14425,1.11E1)",
+      "placement_entity": 14425,
+      "center_mm": [
+        43.0,
+        -17.75,
+        57.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_mm": 11.1,
+      "diameter_mm": 22.2,
+      "advanced_face_entities": [
+        14437
+      ],
+      "source_shell_entities": [
+        15060
+      ],
+      "interpretation": "paired mounting feature"
+    },
+    {
+      "surface_entity": 14472,
+      "surface_text": "CYLINDRICAL_SURFACE('',#14471,1.6E0)",
+      "placement_entity": 14471,
+      "center_mm": [
+        33.1,
+        -27.65,
+        57.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_mm": 1.6,
+      "diameter_mm": 3.2,
+      "advanced_face_entities": [
+        14482
+      ],
+      "source_shell_entities": [
+        15060
+      ],
+      "interpretation": "small adjacent mounting feature"
+    },
+    {
+      "surface_entity": 14487,
+      "surface_text": "CYLINDRICAL_SURFACE('',#14486,1.6E0)",
+      "placement_entity": 14486,
+      "center_mm": [
+        33.1,
+        -27.65,
+        57.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_mm": 1.6,
+      "diameter_mm": 3.2,
+      "advanced_face_entities": [
+        14495
+      ],
+      "source_shell_entities": [
+        15060
+      ],
+      "interpretation": "small adjacent mounting feature"
+    },
+    {
+      "surface_entity": 14500,
+      "surface_text": "CYLINDRICAL_SURFACE('',#14499,1.6E0)",
+      "placement_entity": 14499,
+      "center_mm": [
+        52.9,
+        -7.85,
+        57.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_mm": 1.6,
+      "diameter_mm": 3.2,
+      "advanced_face_entities": [
+        14510
+      ],
+      "source_shell_entities": [
+        15060
+      ],
+      "interpretation": "small adjacent mounting feature"
+    },
+    {
+      "surface_entity": 14515,
+      "surface_text": "CYLINDRICAL_SURFACE('',#14514,1.6E0)",
+      "placement_entity": 14514,
+      "center_mm": [
+        52.9,
+        -7.85,
+        57.0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "radius_mm": 1.6,
+      "diameter_mm": 3.2,
+      "advanced_face_entities": [
+        14523
+      ],
+      "source_shell_entities": [
+        15060
+      ],
+      "interpretation": "small adjacent mounting feature"
+    }
+  ],
+  "imported_local_face_measurements": [
+    {
+      "face": 160,
+      "type": "Plane",
+      "area_mm2": 929.5712706384253,
+      "bounds_mm": {
+        "min": [
+          -58.62015949613,
+          -34.999999999236735,
+          -58.00000010413
+        ],
+        "max": [
+          -26.662772650469996,
+          -0.5000000000008278,
+          -57.9999999595
+        ],
+        "size": [
+          31.957386845660004,
+          34.49999999923591,
+          1.446300004204204e-07
+        ]
+      },
+      "center_of_mass_mm": [
+        -42.21640979431224,
+        -17.749997910894642,
+        -58.0
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "Position": [
+        0.0,
+        -17.75,
+        -58.0
+      ]
+    },
+    {
+      "face": 161,
+      "type": "Plane",
+      "area_mm2": 929.5712728824027,
+      "bounds_mm": {
+        "min": [
+          26.662772650469996,
+          -34.999999999999176,
+          -58.0000001366
+        ],
+        "max": [
+          58.62015979693,
+          -0.5000000026265,
+          -57.9999999848
+        ],
+        "size": [
+          31.95738714646,
+          34.499999997372676,
+          1.5180000190184728e-07
+        ]
+      },
+      "center_of_mass_mm": [
+        42.21640947807052,
+        -17.750004190678013,
+        -58.0
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "Position": [
+        0.0,
+        -17.75,
+        -58.0
+      ]
+    },
+    {
+      "face": 165,
+      "type": "Plane",
+      "area_mm2": 996.6507911699115,
+      "bounds_mm": {
+        "min": [
+          -25.99666891882,
+          -35.00000000743964,
+          -77.0
+        ],
+        "max": [
+          25.99666891882,
+          -0.4999999990752,
+          -77.0
+        ],
+        "size": [
+          51.99333783764,
+          34.50000000836444,
+          0.0
+        ]
+      },
+      "center_of_mass_mm": [
+        -3.748886808552843,
+        -17.750106844641028,
+        -77.0
+      ],
+      "wires": 1,
+      "edges": 14,
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Position": [
+        -100.8,
+        0.0,
+        -77.0
+      ]
+    },
+    {
+      "face": 187,
+      "type": "Cylinder",
+      "area_mm2": 74.76990515484754,
+      "bounds_mm": {
+        "min": [
+          -5.15,
+          -17.750000000000462,
+          -76.5
+        ],
+        "max": [
+          18.65,
+          -5.85,
+          -74.5
+        ],
+        "size": [
+          23.799999999999997,
+          11.900000000000462,
+          2.0
+        ]
+      },
+      "center_of_mass_mm": [
+        6.7500000000938245,
+        -10.174224708766047,
+        -75.49999999999737
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Radius": 11.9,
+      "Center": [
+        6.75,
+        -17.75,
+        -77.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "face": 188,
+      "type": "Cylinder",
+      "area_mm2": 74.76990515602661,
+      "bounds_mm": {
+        "min": [
+          -5.15,
+          -29.65,
+          -76.5
+        ],
+        "max": [
+          18.65,
+          -17.749999999410004,
+          -74.5
+        ],
+        "size": [
+          23.799999999999997,
+          11.900000000589994,
+          2.0
+        ]
+      },
+      "center_of_mass_mm": [
+        6.749999999906173,
+        -25.325775291114486,
+        -75.50000000000263
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Radius": 11.9,
+      "Center": [
+        6.75,
+        -17.75,
+        -77.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "face": 215,
+      "type": "Plane",
+      "area_mm2": 495.7807119484779,
+      "bounds_mm": {
+        "min": [
+          -58.62015979779,
+          -35.00000000000259,
+          57.99999966241
+        ],
+        "max": [
+          -26.336237303939996,
+          -0.5000000037522,
+          58.00000015667
+        ],
+        "size": [
+          32.28392249385001,
+          34.499999996250395,
+          4.942600000390485e-07
+        ]
+      },
+      "center_of_mass_mm": [
+        -41.1957272461019,
+        -17.764292048943105,
+        58.0
+      ],
+      "wires": 1,
+      "edges": 15,
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Position": [
+        0.0,
+        -17.75,
+        58.0
+      ]
+    },
+    {
+      "face": 216,
+      "type": "Plane",
+      "area_mm2": 495.779351783003,
+      "bounds_mm": {
+        "min": [
+          26.336237303939996,
+          -34.99999999625,
+          57.99999993676
+        ],
+        "max": [
+          58.62015949852,
+          -0.4999999999974065,
+          58.00000010418196
+        ],
+        "size": [
+          32.28392219458001,
+          34.49999999625259,
+          1.6742195896313206e-07
+        ]
+      },
+      "center_of_mass_mm": [
+        41.195724216204695,
+        -17.735702641858385,
+        58.0
+      ],
+      "wires": 1,
+      "edges": 15,
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Position": [
+        0.0,
+        -17.75,
+        58.0
+      ]
+    },
+    {
+      "face": 229,
+      "type": "Plane",
+      "area_mm2": 1297.796662345686,
+      "bounds_mm": {
+        "min": [
+          -21.91466472441,
+          -35.00000000035513,
+          77.0
+        ],
+        "max": [
+          21.91466472441,
+          -0.5000000000011688,
+          77.0
+        ],
+        "size": [
+          43.82932944882,
+          34.500000000353964,
+          0.0
+        ]
+      },
+      "center_of_mass_mm": [
+        -6.307191683758582e-15,
+        -17.74999999999959,
+        77.0
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "Position": [
+        100.8,
+        0.0,
+        77.0
+      ]
+    },
+    {
+      "face": 243,
+      "type": "Cylinder",
+      "area_mm2": 86.92216135177036,
+      "bounds_mm": {
+        "min": [
+          -54.1,
+          -28.85,
+          55.5
+        ],
+        "max": [
+          -31.9,
+          -17.75,
+          58.0
+        ],
+        "size": [
+          22.200000000000003,
+          11.100000000000001,
+          2.5
+        ]
+      },
+      "center_of_mass_mm": [
+        -42.97680803467172,
+        -24.814183566780734,
+        56.74653871245717
+      ],
+      "wires": 1,
+      "edges": 6,
+      "Radius": 11.1,
+      "Center": [
+        -43.0,
+        -17.75,
+        57.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "face": 244,
+      "type": "Cylinder",
+      "area_mm2": 86.92216135177027,
+      "bounds_mm": {
+        "min": [
+          -54.1,
+          -17.75,
+          55.5
+        ],
+        "max": [
+          -31.9,
+          -6.65,
+          58.0
+        ],
+        "size": [
+          22.200000000000003,
+          11.1,
+          2.5
+        ]
+      },
+      "center_of_mass_mm": [
+        -43.02319196532829,
+        -10.68581643321927,
+        56.746538712457166
+      ],
+      "wires": 1,
+      "edges": 6,
+      "Radius": 11.1,
+      "Center": [
+        -43.0,
+        -17.75,
+        57.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "face": 247,
+      "type": "Cylinder",
+      "area_mm2": 5.026523033205519,
+      "bounds_mm": {
+        "min": [
+          -34.7,
+          -7.850000047784999,
+          55.5
+        ],
+        "max": [
+          -31.5,
+          -6.25,
+          56.5
+        ],
+        "size": [
+          3.200000000000003,
+          1.6000000477849987,
+          1.0
+        ]
+      },
+      "center_of_mass_mm": [
+        -33.10000804065091,
+        -6.831403255142297,
+        55.99999916401663
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Radius": 1.6,
+      "Center": [
+        -33.1,
+        -7.85,
+        57.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "face": 248,
+      "type": "Cylinder",
+      "area_mm2": 5.026573448792983,
+      "bounds_mm": {
+        "min": [
+          -34.7,
+          -9.45,
+          55.5
+        ],
+        "max": [
+          -31.5,
+          -7.84994952713863,
+          56.5
+        ],
+        "size": [
+          3.200000000000003,
+          1.6000504728613691,
+          1.0
+        ]
+      },
+      "center_of_mass_mm": [
+        -33.09999195942974,
+        -8.868586526600865,
+        56.000000835031116
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Radius": 1.6,
+      "Center": [
+        -33.1,
+        -7.85,
+        57.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "face": 249,
+      "type": "Cylinder",
+      "area_mm2": 5.026573448791212,
+      "bounds_mm": {
+        "min": [
+          -54.5,
+          -27.65005047285822,
+          55.49999999910738
+        ],
+        "max": [
+          -51.3,
+          -26.049999999999997,
+          56.5
+        ],
+        "size": [
+          3.200000000000003,
+          1.6000504728582214,
+          1.0000000008926193
+        ]
+      },
+      "center_of_mass_mm": [
+        -52.90000804056982,
+        -26.631413473398773,
+        56.00000083413844
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Radius": 1.6,
+      "Center": [
+        -52.9,
+        -27.65,
+        57.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "face": 250,
+      "type": "Cylinder",
+      "area_mm2": 5.026523033207289,
+      "bounds_mm": {
+        "min": [
+          -54.5,
+          -29.25,
+          55.49999999910738
+        ],
+        "max": [
+          -51.3,
+          -27.649999952214653,
+          56.5
+        ],
+        "size": [
+          3.200000000000003,
+          1.6000000477853469,
+          1.0000000008926193
+        ]
+      },
+      "center_of_mass_mm": [
+        -52.899991959349535,
+        -28.66859674485734,
+        55.999999164016685
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Radius": 1.6,
+      "Center": [
+        -52.9,
+        -27.65,
+        57.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "face": 253,
+      "type": "Cylinder",
+      "area_mm2": 86.92216135177027,
+      "bounds_mm": {
+        "min": [
+          31.9,
+          -17.75,
+          55.5
+        ],
+        "max": [
+          54.1,
+          -6.65,
+          58.0
+        ],
+        "size": [
+          22.200000000000003,
+          11.1,
+          2.5
+        ]
+      },
+      "center_of_mass_mm": [
+        42.97680803467171,
+        -10.68581643321927,
+        56.746538712457166
+      ],
+      "wires": 1,
+      "edges": 6,
+      "Radius": 11.1,
+      "Center": [
+        43.0,
+        -17.75,
+        57.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "face": 254,
+      "type": "Cylinder",
+      "area_mm2": 86.92216135177034,
+      "bounds_mm": {
+        "min": [
+          31.9,
+          -28.85,
+          55.5
+        ],
+        "max": [
+          54.1,
+          -17.75,
+          58.0
+        ],
+        "size": [
+          22.200000000000003,
+          11.100000000000001,
+          2.5
+        ]
+      },
+      "center_of_mass_mm": [
+        43.02319196532828,
+        -24.814183566780738,
+        56.746538712457166
+      ],
+      "wires": 1,
+      "edges": 6,
+      "Radius": 11.1,
+      "Center": [
+        43.0,
+        -17.75,
+        57.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "face": 257,
+      "type": "Cylinder",
+      "area_mm2": 5.026523033207294,
+      "bounds_mm": {
+        "min": [
+          31.5,
+          -29.25,
+          55.49999999910738
+        ],
+        "max": [
+          34.7,
+          -27.649999952214646,
+          56.5
+        ],
+        "size": [
+          3.200000000000003,
+          1.600000047785354,
+          1.0000000008926193
+        ]
+      },
+      "center_of_mass_mm": [
+        33.100008040650465,
+        -28.668596744857343,
+        55.99999916401669
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Radius": 1.6,
+      "Center": [
+        33.1,
+        -27.65,
+        57.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "face": 258,
+      "type": "Cylinder",
+      "area_mm2": 5.026573448791209,
+      "bounds_mm": {
+        "min": [
+          31.5,
+          -27.65005047285822,
+          55.49999999910738
+        ],
+        "max": [
+          34.7,
+          -26.049999999999997,
+          56.5
+        ],
+        "size": [
+          3.200000000000003,
+          1.6000504728582214,
+          1.0000000008926193
+        ]
+      },
+      "center_of_mass_mm": [
+        33.099991959430184,
+        -26.631413473398776,
+        56.00000083413844
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Radius": 1.6,
+      "Center": [
+        33.1,
+        -27.65,
+        57.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "face": 259,
+      "type": "Cylinder",
+      "area_mm2": 5.026573448792983,
+      "bounds_mm": {
+        "min": [
+          51.3,
+          -9.45,
+          55.5
+        ],
+        "max": [
+          54.5,
+          -7.849949527138631,
+          56.5
+        ],
+        "size": [
+          3.200000000000003,
+          1.6000504728613683,
+          1.0
+        ]
+      },
+      "center_of_mass_mm": [
+        52.900008040570256,
+        -8.868586526600865,
+        56.000000835031116
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Radius": 1.6,
+      "Center": [
+        52.9,
+        -7.85,
+        57.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "face": 260,
+      "type": "Cylinder",
+      "area_mm2": 5.026523033205519,
+      "bounds_mm": {
+        "min": [
+          51.3,
+          -7.850000047784999,
+          55.5
+        ],
+        "max": [
+          54.5,
+          -6.25,
+          56.5
+        ],
+        "size": [
+          3.200000000000003,
+          1.6000000477849987,
+          1.0
+        ]
+      },
+      "center_of_mass_mm": [
+        52.89999195934909,
+        -6.831403255142297,
+        55.99999916401663
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Radius": 1.6,
+      "Center": [
+        52.9,
+        -7.85,
+        57.0
+      ],
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "face": 273,
+      "type": "Plane",
+      "area_mm2": 1013.9546670568529,
+      "bounds_mm": {
+        "min": [
+          26.8218253805,
+          -35.5,
+          55.5
+        ],
+        "max": [
+          56.4,
+          0.0,
+          55.5
+        ],
+        "size": [
+          29.578174619499997,
+          35.5,
+          0.0
+        ]
+      },
+      "center_of_mass_mm": [
+        41.142671848279505,
+        -17.75000000000014,
+        55.5
+      ],
+      "wires": 1,
+      "edges": 8,
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Position": [
+        -19.0,
+        -35.5,
+        55.5
+      ]
+    },
+    {
+      "face": 274,
+      "type": "Plane",
+      "area_mm2": 1013.9546670567387,
+      "bounds_mm": {
+        "min": [
+          -56.4,
+          -35.5,
+          55.5
+        ],
+        "max": [
+          -26.8218253805,
+          0.0,
+          55.5
+        ],
+        "size": [
+          29.578174619499997,
+          35.5,
+          0.0
+        ]
+      },
+      "center_of_mass_mm": [
+        -41.14267184827945,
+        -17.74999999999897,
+        55.5
+      ],
+      "wires": 1,
+      "edges": 8,
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Position": [
+        -19.0,
+        -35.5,
+        55.5
+      ]
+    },
+    {
+      "face": 280,
+      "type": "Plane",
+      "area_mm2": 1278.0,
+      "bounds_mm": {
+        "min": [
+          -18.0,
+          -35.5,
+          71.3
+        ],
+        "max": [
+          18.0,
+          0.0,
+          71.3
+        ],
+        "size": [
+          36.0,
+          35.5,
+          0.0
+        ]
+      },
+      "center_of_mass_mm": [
+        8.326672684688674e-17,
+        -17.75,
+        71.3
+      ],
+      "wires": 1,
+      "edges": 4,
+      "Axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "Position": [
+        19.0,
+        -35.5,
+        71.3
+      ]
+    }
+  ],
+  "derived_nominal_dimensions_mm": {
+    "paired_axis_pitch": 86.0,
+    "paired_feature_diameter": 22.2,
+    "between_cylindrical_envelopes_in_X": 63.8,
+    "small_feature_diameter": 3.2,
+    "small_feature_X_offset_from_large_axis": 9.899999999999999,
+    "small_feature_Y_offset_from_large_axis": 9.9,
+    "small_feature_diagonal_pitch": 28.00142853498728,
+    "paired_land_plane_Z": 58.0,
+    "paired_feature_axial_limits_Z": [
+      55.5,
+      58.0
+    ],
+    "modeled_axial_span": 2.5,
+    "paired_land_Y_limits": [
+      -35.00000000000259,
+      -0.5000000037522
+    ],
+    "paired_land_height": 34.499999996250395,
+    "opposite_feature_diameter": 23.8,
+    "opposite_feature_axis_XY": [
+      6.75,
+      -17.75
+    ]
+  },
+  "fit_conclusion": "No compactDMX fit conclusion. Local mounting features only; no connector mating face, latch envelope, installed connector protrusion, verified DMX/power assignment, or installed shell transform is established. No comparative overlay performed."
+}

@@ -1,0 +1,218 @@
+{
+  "Protected_core_OD48_ID43_x2_140": {
+    "role": "reference",
+    "notes": ""
+  },
+  "Protected_input_endcap_x0_2": {
+    "role": "reference",
+    "notes": ""
+  },
+  "Protected_output_endcap_x140_142": {
+    "role": "reference",
+    "notes": ""
+  },
+  "Protected_L_N_PE_trunk": {
+    "role": "keepout",
+    "notes": "Unchanged envelope; no conductor relocation, branch or certification modeled"
+  },
+  "IRM20_nominal_body": {
+    "role": "module",
+    "notes": "Primary source 2025-11-21; no heatsink/airflow claim"
+  },
+  "Carrier_PCB_61x32x1p6": {
+    "role": "PCB",
+    "notes": "Large apertures cover conservative drawing tolerance; NOT a released solder/PTH pattern"
+  },
+  "Pin_AC_N": {
+    "role": "primary_pin",
+    "notes": ""
+  },
+  "Land_AC_N_top": {
+    "role": "primary_copper",
+    "notes": "70um allocation; termination/PTH and solder bridge explicitly unqualified"
+  },
+  "Land_AC_N_bottom": {
+    "role": "primary_copper",
+    "notes": "70um allocation; termination/PTH and solder bridge explicitly unqualified"
+  },
+  "Pin_AC_L": {
+    "role": "primary_pin",
+    "notes": ""
+  },
+  "Land_AC_L_top": {
+    "role": "primary_copper",
+    "notes": "70um allocation; termination/PTH and solder bridge explicitly unqualified"
+  },
+  "Land_AC_L_bottom": {
+    "role": "primary_copper",
+    "notes": "70um allocation; termination/PTH and solder bridge explicitly unqualified"
+  },
+  "Pin_V_MINUS": {
+    "role": "secondary_pin",
+    "notes": ""
+  },
+  "Land_V_MINUS_top": {
+    "role": "secondary_copper",
+    "notes": "70um allocation; termination/PTH and solder bridge explicitly unqualified"
+  },
+  "Land_V_MINUS_bottom": {
+    "role": "secondary_copper",
+    "notes": "70um allocation; termination/PTH and solder bridge explicitly unqualified"
+  },
+  "Pin_V_PLUS": {
+    "role": "secondary_pin",
+    "notes": ""
+  },
+  "Land_V_PLUS_top": {
+    "role": "secondary_copper",
+    "notes": "70um allocation; termination/PTH and solder bridge explicitly unqualified"
+  },
+  "Land_V_PLUS_bottom": {
+    "role": "secondary_copper",
+    "notes": "70um allocation; termination/PTH and solder bridge explicitly unqualified"
+  },
+  "Trace_PLUS": {
+    "role": "secondary_copper",
+    "notes": "Top PLUS / bottom MINUS,1mm x70um; real KiCad DRC, ampacity and solder release UNMET"
+  },
+  "Pigtail_land_PLUS": {
+    "role": "secondary_copper",
+    "notes": ""
+  },
+  "Trace_MINUS": {
+    "role": "secondary_copper",
+    "notes": "Top PLUS / bottom MINUS,1mm x70um; real KiCad DRC, ampacity and solder release UNMET"
+  },
+  "Pigtail_land_MINUS": {
+    "role": "secondary_copper",
+    "notes": ""
+  },
+  "Secondary_PLUS_via_barrel": {
+    "role": "secondary_copper",
+    "notes": "Allocated25um platedwall/.8mm finished drill; process not qualified"
+  },
+  "Polyester_film_allocation": {
+    "role": "insulation",
+    "notes": "Unqualified film grade/flammability/dielectric/edge retention; no certified mains barrier claim"
+  },
+  "Core_compression_shoe_40_m1": {
+    "role": "retention",
+    "notes": "Captured installed envelope R21.25..21.5; free R21.6 proposal. Material/creep/preload/friction/bond or keyed retention UNMET"
+  },
+  "Core_compression_shoe_40_1": {
+    "role": "retention",
+    "notes": "Captured installed envelope R21.25..21.5; free R21.6 proposal. Material/creep/preload/friction/bond or keyed retention UNMET"
+  },
+  "Core_compression_shoe_100_m1": {
+    "role": "retention",
+    "notes": "Captured installed envelope R21.25..21.5; free R21.6 proposal. Material/creep/preload/friction/bond or keyed retention UNMET"
+  },
+  "Core_compression_shoe_100_1": {
+    "role": "retention",
+    "notes": "Captured installed envelope R21.25..21.5; free R21.6 proposal. Material/creep/preload/friction/bond or keyed retention UNMET"
+  },
+  "Custom_dielectric_sled_and_clamp_brackets": {
+    "role": "retention",
+    "notes": "Material/flammability/CTI/temp and friction shoe retention unqualified; positive module jaws, no drilled core"
+  },
+  "Standoff_0": {
+    "role": "retention",
+    "notes": ".40+/- .05 allocated; independent from PCB1.60+/-.10"
+  },
+  "Standoff_1": {
+    "role": "retention",
+    "notes": ".40+/- .05 allocated; independent from PCB1.60+/-.10"
+  },
+  "Standoff_2": {
+    "role": "retention",
+    "notes": ".40+/- .05 allocated; independent from PCB1.60+/-.10"
+  },
+  "Standoff_3": {
+    "role": "retention",
+    "notes": ".40+/- .05 allocated; independent from PCB1.60+/-.10"
+  },
+  "Pressure_jaw_Lm": {
+    "role": "retention",
+    "notes": "Nominal contact; individually adjustable to source-height corner. Pressure/thermal/locking test UNMET"
+  },
+  "M2_adjuster_Lm": {
+    "role": "fastener",
+    "notes": "Smooth thread envelope; mating thread/locking/torque/process not modeled/qualified"
+  },
+  "Pressure_jaw_Lp": {
+    "role": "retention",
+    "notes": "Nominal contact; individually adjustable to source-height corner. Pressure/thermal/locking test UNMET"
+  },
+  "M2_adjuster_Lp": {
+    "role": "fastener",
+    "notes": "Smooth thread envelope; mating thread/locking/torque/process not modeled/qualified"
+  },
+  "Pressure_jaw_Rm": {
+    "role": "retention",
+    "notes": "Nominal contact; individually adjustable to source-height corner. Pressure/thermal/locking test UNMET"
+  },
+  "M2_adjuster_Rm": {
+    "role": "fastener",
+    "notes": "Smooth thread envelope; mating thread/locking/torque/process not modeled/qualified"
+  },
+  "Pressure_jaw_Rp": {
+    "role": "retention",
+    "notes": "Nominal contact; individually adjustable to source-height corner. Pressure/thermal/locking test UNMET"
+  },
+  "M2_adjuster_Rp": {
+    "role": "fastener",
+    "notes": "Smooth thread envelope; mating thread/locking/torque/process not modeled/qualified"
+  },
+  "Wire_PLUS_conductor": {
+    "role": "secondary_wire",
+    "notes": "Tensility30-02075 solid20AWG; current/I2t/termination/temperature not qualified"
+  },
+  "Wire_PLUS_maximum_OD_insulation": {
+    "role": "secondary_insulation",
+    "notes": "SourceOD1.5+/-.1, actual minbendR9; stationary formed wire only, no dynamic qualification"
+  },
+  "Pigtail_solder_PLUS": {
+    "role": "joint",
+    "notes": "Allocation, not qualified solder fillet/strain relief"
+  },
+  "Wire_MINUS_conductor": {
+    "role": "secondary_wire",
+    "notes": "Tensility30-02075 solid20AWG; current/I2t/termination/temperature not qualified"
+  },
+  "Wire_MINUS_maximum_OD_insulation": {
+    "role": "secondary_insulation",
+    "notes": "SourceOD1.5+/-.1, actual minbendR9; stationary formed wire only, no dynamic qualification"
+  },
+  "Pigtail_solder_MINUS": {
+    "role": "joint",
+    "notes": "Allocation, not qualified solder fillet/strain relief"
+  },
+  "Bellmouth_sleeve_half_m": {
+    "role": "secondary_insulation",
+    "notes": "Curved core seat, split joint/retention, .1mm tube wall and creep unqualified; not a primary isolation barrier"
+  },
+  "Bellmouth_sleeve_half_p": {
+    "role": "secondary_insulation",
+    "notes": "Curved core seat, split joint/retention, .1mm tube wall and creep unqualified; not a primary isolation barrier"
+  },
+  "Secondary_pigtail_clamp_lower": {
+    "role": "retention",
+    "notes": "Material/torque/retention to sled/locking UNMET"
+  },
+  "Secondary_pigtail_clamp_cap": {
+    "role": "retention",
+    "notes": "Split cap, smooth thread envelopes; no demonstrated pull/creep capability"
+  },
+  "Dual_wire_strain_liner": {
+    "role": "retention",
+    "notes": "Dual-wire clearance insert, .005mm maximum-jacket radial clearance; material/compression/minwire holding UNMET"
+  },
+  "Clamp_M2_m": {
+    "role": "fastener",
+    "notes": "Thread inserts/torque/locking unqualified; no fastener crosses core"
+  },
+  "Clamp_M2_p": {
+    "role": "fastener",
+    "notes": "Thread inserts/torque/locking unqualified; no fastener crosses core"
+  }
+}

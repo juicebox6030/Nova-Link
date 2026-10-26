@@ -1,0 +1,98 @@
+{
+  "DDC6": {
+    "source": "TI DDC0006A example in TPS3702-Q1 appendix; same package code TPS3700",
+    "height_max_mm": 1.1,
+    "body_max_mm": [
+      1.75,
+      3.05
+    ],
+    "courtyard_mm": [
+      4.300000000000001,
+      3.55
+    ],
+    "notes": "",
+    "read_only_origin": "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DDC6.kicad_mod"
+  },
+  "DBV6": {
+    "source": "TI DBV0006A example in TPS3808 appendix",
+    "height_max_mm": 1.45,
+    "body_max_mm": [
+      1.75,
+      3.05
+    ],
+    "courtyard_mm": [
+      4.2,
+      3.55
+    ],
+    "notes": "",
+    "read_only_origin": "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DBV6.kicad_mod"
+  },
+  "DSG8": {
+    "source": "TI DSG0008A example in BQ25173 appendix",
+    "height_max_mm": 0.8,
+    "body_max_mm": [
+      2.1,
+      2.1
+    ],
+    "courtyard_mm": [
+      2.9,
+      2.6
+    ],
+    "notes": "EP full paste in prototype; thermal vias and stencil windowing remain assembly/layout gate",
+    "read_only_origin": "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DSG8.kicad_mod"
+  },
+  "R0402": {
+    "source": "Vishay28950 IPC7351 reflow0402: .55x.60 lands gap.40",
+    "height_max_mm": 0.4,
+    "body_max_mm": [
+      1.05,
+      0.55
+    ],
+    "courtyard_mm": [
+      2.0,
+      1.1
+    ],
+    "notes": "",
+    "read_only_origin": "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/R0402.kicad_mod"
+  },
+  "C0402": {
+    "source": "Murata GRM15 table2 reflow .4x.6 lands gap.4; selected from source ranges",
+    "height_max_mm": 0.6,
+    "body_max_mm": [
+      1.1,
+      0.6
+    ],
+    "courtyard_mm": [
+      1.7000000000000002,
+      1.1
+    ],
+    "notes": "",
+    "read_only_origin": "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/C0402.kicad_mod"
+  },
+  "YZP6": {
+    "source": "TI TPS22963C YZP0006 outline4219524-A and land example:0.5pitch,0.225round land; maxdie0.972x1.472",
+    "body_max_mm": [
+      0.972,
+      1.472
+    ],
+    "height_max_mm": 0.5,
+    "courtyard_mm": [
+      1.472,
+      1.972
+    ],
+    "prototype_process": "NSMD +25um radial mask; full pad paste, reflow/stencil approval required"
+  },
+  "Fuse451": {
+    "source": "Littelfuse451-453 dimensions/padlayout:span6.86,land1.96x3.15; maxbody6.30x2.94x2.94",
+    "body_max_mm": [
+      6.3,
+      2.94
+    ],
+    "height_max_mm": 2.94,
+    "courtyard_mm": [
+      7.36,
+      3.65
+    ],
+    "prototype_process": "NSMD +25um radial mask; full pad paste, reflow/stencil approval required"
+  }
+}

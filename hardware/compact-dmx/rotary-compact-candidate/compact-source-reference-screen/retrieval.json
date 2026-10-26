@@ -1,0 +1,140 @@
+{
+  "pmp-page.html": {
+    "url": "https://www.ti.com/tool/PMP11295",
+    "resolved_url": "https://www.ti.com/tool/PMP11295",
+    "http": 200,
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 48526,
+    "sha256": "1c604ebc85ed9743f20a31fb776511a4c30691e975749833e230284ac586d47e",
+    "expected_format_valid": true
+  },
+  "tida-page.html": {
+    "url": "https://www.ti.com/tool/TIDA-01560",
+    "resolved_url": "https://www.ti.com/tool/TIDA-01560",
+    "http": 200,
+    "content_type": "text/html;charset=UTF-8",
+    "bytes": 51496,
+    "sha256": "74e0b864a01e703e0dde0e6855fd0bc354ae2488388d7b8f3bbbe5c35366c5ed",
+    "expected_format_valid": true
+  },
+  "notice.html": {
+    "url": "https://www.ti.com/legal/important-notice-and-disclaimer.html",
+    "resolved_url": "https://www.ti.com/legal/important-notice-and-disclaimer.html",
+    "http": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 9993,
+    "sha256": "d1a3e6518897c706b8548ba709146f89e79ecdacff75005d155af2e7794def71",
+    "expected_format_valid": true
+  },
+  "pmp-report.pdf": {
+    "url": "https://www.ti.com/lit/pdf/tidubh4",
+    "resolved_url": "https://www.ti.com/lit/ug/tidubh4/tidubh4.pdf?ts=1792857698997",
+    "http": 200,
+    "content_type": "application/pdf",
+    "bytes": 3513944,
+    "sha256": "5367fc2d9d8b3e69c21fcca09cff7951fd5eaf4816ebdbb5b514a9f02c59c2da",
+    "expected_format_valid": true
+  },
+  "pmp-assembly.pdf": {
+    "url": "https://www.ti.com/lit/pdf/tidrkg9",
+    "resolved_url": "https://www.ti.com/lit/df/tidrkg9/tidrkg9.pdf?ts=1792857701452",
+    "http": 200,
+    "content_type": "application/pdf",
+    "bytes": 60370,
+    "sha256": "f6b38bf59776212254b310982b4bf2a067faa03ec641fda10afddabd03a30956",
+    "expected_format_valid": true
+  },
+  "pmp-bom.pdf": {
+    "url": "https://www.ti.com/lit/pdf/tidrkg8",
+    "resolved_url": "https://www.ti.com/lit/df/tidrkg8/tidrkg8.pdf?ts=1792857701996",
+    "http": 200,
+    "content_type": "application/pdf",
+    "bytes": 81973,
+    "sha256": "3a1125f817bd0b33f91fc95158924fc10e9c2555f6e66565f30453b8b93b672f",
+    "expected_format_valid": true
+  },
+  "pmp-schematic.pdf": {
+    "url": "https://www.ti.com/lit/pdf/tidrkg7",
+    "resolved_url": "https://www.ti.com/lit/df/tidrkg7/tidrkg7.pdf?ts=1792857702449",
+    "http": 200,
+    "content_type": "application/pdf",
+    "bytes": 147735,
+    "sha256": "8cbda96eb9070619383f11a73c4ce14f1d07ce95cad8ea503e5119992214f9bd",
+    "expected_format_valid": true
+  },
+  "pmp-gerber.zip": {
+    "url": "https://www.ti.com/lit/zip/tidcbt5",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  "tida-guide.pdf": {
+    "url": "https://www.ti.com/lit/pdf/tiduds3",
+    "resolved_url": "https://www.ti.com/lit/ug/tiduds3/tiduds3.pdf?ts=1792857703005",
+    "http": 200,
+    "content_type": "application/pdf",
+    "bytes": 1124578,
+    "sha256": "66e01903881a666a08751f227d70e853b43a55c78d08d2735eaf6316280a7451",
+    "expected_format_valid": true
+  },
+  "tida-assembly.pdf": {
+    "url": "https://www.ti.com/lit/pdf/tidrvx1",
+    "resolved_url": "https://www.ti.com/lit/df/tidrvx1/tidrvx1.pdf?ts=1792857703526",
+    "http": 200,
+    "content_type": "application/pdf",
+    "bytes": 91098,
+    "sha256": "70c21eb50c5401a970140171cbbb5cc357a5c082b32c1b3b495530deb2e14299",
+    "expected_format_valid": true
+  },
+  "tida-bom.pdf": {
+    "url": "https://www.ti.com/lit/pdf/tidrvx0",
+    "resolved_url": "https://www.ti.com/lit/df/tidrvx0/tidrvx0.pdf?ts=1792857704361",
+    "http": 200,
+    "content_type": "application/pdf",
+    "bytes": 80552,
+    "sha256": "92ff796d1f9f94cb5b3f2b42d00d7af6dadf1c6944c2c18f4651b38de9121528",
+    "expected_format_valid": true
+  },
+  "tida-layout.pdf": {
+    "url": "https://www.ti.com/lit/pdf/tidrvx2",
+    "resolved_url": "https://www.ti.com/lit/df/tidrvx2/tidrvx2.pdf?ts=1792857705164",
+    "http": 200,
+    "content_type": "application/pdf",
+    "bytes": 577631,
+    "sha256": "7de0aa149cface3b6869d804fd06be2adb8b3b846e12b31abb6bded1a7292b12",
+    "expected_format_valid": true
+  },
+  "tida-schematic.pdf": {
+    "url": "https://www.ti.com/lit/pdf/tidrvw9",
+    "resolved_url": "https://www.ti.com/lit/df/tidrvw9/tidrvw9.pdf?ts=1792857705661",
+    "http": 200,
+    "content_type": "application/pdf",
+    "bytes": 212131,
+    "sha256": "9593c8223a702c97c3a3e2d45190b2cfd1c5808165b0e7f2f57b36c0f4a85170",
+    "expected_format_valid": true
+  },
+  "tida-cad.zip": {
+    "url": "https://www.ti.com/lit/zip/tidrvx3",
+    "resolved_url": "https://www.ti.com/lit/df/tidrvx3/tidrvx3.zip?ts=1792857705966",
+    "http": 200,
+    "content_type": "application/zip",
+    "bytes": 644451,
+    "sha256": "26c17f3fe8e0d8a6bbe1450607c4ac71167ffcec411e54d96d99e29b4ac6a7fc",
+    "expected_format_valid": true,
+    "members": [
+      "TIDA-01560.PrjPcb",
+      "TIDA-01560_AssemblyRelease.OutJob",
+      "TIDA-01560_BlankSheet.SchDoc",
+      "TIDA-01560_Common Documentation.OutJob",
+      "TIDA-01560_CoverSheet.SchDoc",
+      "TIDA-01560_EVM_Hardware.SchDoc",
+      "TIDA-01560_FabricationRelease.OutJob",
+      "TIDA-01560_Other BOM Reports.OutJob",
+      "TIDA-01560_PCB.PcbDoc",
+      "TIDA-01560_Validation.OutJob",
+      "IMPORTANT NOTICE FOR TI DESIGN INFORMATION AND RESOURCES.pdf"
+    ]
+  },
+  "tida-gerber.zip": {
+    "url": "https://www.ti.com/lit/zip/tidcek6",
+    "error": "HTTP Error 401: Unauthorized"
+  }
+}

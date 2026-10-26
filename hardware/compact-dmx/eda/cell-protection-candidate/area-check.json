@@ -1,0 +1,19 @@
+{
+  "status": "PASS21 actual saved footprints/padnets and nonoverlapping courtyards on32x16mm coupon; no sidecar fit/routing claim",
+  "physical_footprints": 21,
+  "numbered_pads": 61,
+  "added_protection_parts": 14,
+  "added_body_sum_mm2": 36.815284,
+  "added_courtyard_sum_mm2": 85.76504400000002,
+  "highest_added_part_mm": 2.94,
+  "all_context_courtyard_sum_mm2": 108.01674400000003,
+  "coupon_outline_mm": [
+    32,
+    16
+  ],
+  "all_on_F_Cu": true,
+  "tracks": 0,
+  "external_ports": "No invented physical connector/cell lands. Actual cell/short-tab/fuse placement and integration owned by parent/Astra. Coupon remains unrouted.",
+  "main_board_fit": null,
+  "manufacturing_release": false
+}

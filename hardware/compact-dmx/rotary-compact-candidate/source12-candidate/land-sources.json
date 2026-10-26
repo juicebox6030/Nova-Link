@@ -1,0 +1,195 @@
+{
+  "RPW10": {
+    "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/RPW10.kicad_mod",
+    "body_allocation_mm": [
+      2.1,
+      2.1
+    ],
+    "height_allocation_mm": 0.8,
+    "courtyard_mm": [
+      3.1,
+      2.6
+    ],
+    "source": "TI RPW0010A; copied lands",
+    "manufacturing_land_height_thermal_acceptance": false
+  },
+  "RVC20": {
+    "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/RVC20.kicad_mod",
+    "body_allocation_mm": [
+      3.1,
+      4.1
+    ],
+    "height_allocation_mm": 1.0,
+    "courtyard_mm": [
+      3.9,
+      4.9
+    ],
+    "source": "TI RVC0020A common TPS25810/TPS25940; realEP21 ground",
+    "manufacturing_land_height_thermal_acceptance": false
+  },
+  "USB4105": {
+    "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/USB4105.kicad_mod",
+    "body_allocation_mm": [
+      9.09,
+      7.65
+    ],
+    "height_allocation_mm": 3.46,
+    "courtyard_mm": [
+      10.14,
+      8.65
+    ],
+    "source": "GCT B4 unchanged16contacts/12signal lands+4shell+2NPTH",
+    "manufacturing_land_height_thermal_acceptance": false
+  },
+  "FPC20": {
+    "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/FPC20.kicad_mod",
+    "body_allocation_mm": [
+      20,
+      2
+    ],
+    "height_allocation_mm": 0.3,
+    "courtyard_mm": [
+      20.5,
+      3.0
+    ],
+    "source": "Derived actual20mm ribbon solder lands; external clamp volume additional",
+    "manufacturing_land_height_thermal_acceptance": false
+  },
+  "R0402": {
+    "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+    "body_allocation_mm": [
+      1.1,
+      0.6
+    ],
+    "height_allocation_mm": 0.45,
+    "courtyard_mm": [
+      1.8,
+      1.0
+    ],
+    "source": "Vishay28758/derived assembly courtyard",
+    "manufacturing_land_height_thermal_acceptance": false
+  },
+  "C0402": {
+    "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0402.kicad_mod",
+    "body_allocation_mm": [
+      1.1,
+      0.6
+    ],
+    "height_allocation_mm": 0.6,
+    "courtyard_mm": [
+      1.8,
+      1.0
+    ],
+    "source": "Derived0402 envelope and lands; exact vendor height/bias/stencil gate",
+    "manufacturing_land_height_thermal_acceptance": false
+  },
+  "C0805": {
+    "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0805.kicad_mod",
+    "body_allocation_mm": [
+      2.2,
+      1.45
+    ],
+    "height_allocation_mm": 1.45,
+    "courtyard_mm": [
+      3.1,
+      2.0
+    ],
+    "source": "Taiyo official preferred-current HTML maxbody2.2x1.45x1.45; DERIVED lands/stencil/bias gate",
+    "manufacturing_land_height_thermal_acceptance": false
+  },
+  "T520D": {
+    "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/T520D.kicad_mod",
+    "body_allocation_mm": [
+      7.6,
+      4.6
+    ],
+    "height_allocation_mm": 3.1,
+    "courtyard_mm": [
+      8.2,
+      5.1
+    ],
+    "source": "KEMET Dcase source drawing;120uF minimum only at tolerance reference",
+    "manufacturing_land_height_thermal_acceptance": false
+  },
+  "DPY2": {
+    "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/DPY2.kicad_mod",
+    "body_allocation_mm": [
+      1.05,
+      0.65
+    ],
+    "height_allocation_mm": 0.5,
+    "courtyard_mm": [
+      1.65,
+      1.3
+    ],
+    "source": "TI DPY0002A source lands",
+    "manufacturing_land_height_thermal_acceptance": false
+  },
+  "TP1": {
+    "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/TP1.kicad_mod",
+    "body_allocation_mm": [
+      1,
+      1
+    ],
+    "height_allocation_mm": 0,
+    "courtyard_mm": [
+      1.5,
+      1.5
+    ],
+    "source": "Fabricated probe land",
+    "manufacturing_land_height_thermal_acceptance": false
+  },
+  "DDC6": {
+    "copied_readonly_from": "hardware/compact-dmx/eda/cell-protection-candidate/CellProtection.pretty/DDC6.kicad_mod",
+    "body_allocation_mm": [
+      1.75,
+      3.05
+    ],
+    "height_allocation_mm": 1.1,
+    "courtyard_mm": [
+      4.3,
+      3.55
+    ],
+    "source": "TI DDC0006A; body allocation includes terminal span separately in courtyard",
+    "manufacturing_land_height_thermal_acceptance": false
+  },
+  "RGX11": {
+    "body_allocation_mm": [
+      2.1,
+      3.1
+    ],
+    "height_allocation_mm": 1.0,
+    "courtyard_mm": [
+      3.2,
+      4.0
+    ],
+    "source": "TI RGX0011A source-dimensioned; GND is actualpad3, not extraEP",
+    "manufacturing_land_height_thermal_acceptance": false
+  },
+  "XAL4020": {
+    "body_allocation_mm": [
+      4.3,
+      4.3
+    ],
+    "height_allocation_mm": 2.1,
+    "courtyard_mm": [
+      4.9,
+      4.9
+    ],
+    "source": "Coilcraft806-4 dimensions and lands",
+    "manufacturing_land_height_thermal_acceptance": false
+  },
+  "Wire2": {
+    "body_allocation_mm": [
+      7,
+      4.5
+    ],
+    "height_allocation_mm": 2.5,
+    "courtyard_mm": [
+      8,
+      5.5
+    ],
+    "source": "Derived source-wire/solder allowance; exact harness OD/process gate",
+    "manufacturing_land_height_thermal_acceptance": false
+  }
+}

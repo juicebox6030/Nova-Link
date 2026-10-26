@@ -1,0 +1,937 @@
+{
+  "task": "Correct only confirmed qualified15 U40 D-1 and add independent source-mode/netlist/saved-pad regressions",
+  "timestamp_UTC": "2026-10-23T15:51:11.881548+00:00",
+  "repository": "/home/juicebox/Nova-Link",
+  "branch": "main",
+  "HEAD": "b42c0e6284aac734fde851c69146abf73920f337",
+  "owned_path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/**",
+  "status": "U40 mode defect corrected and candidate-only validation PASS; all prior release gates remain UNMET",
+  "owner_requirement": "Normal operation requires 5 V USB-C advertising 1.5 A or3 A, including barrel. No default/500 mA compatibility claim. NoUSBdata/PD escalation.",
+  "selected_architecture": {
+    "main": "TUSB320LAI raw-onlyCC +TPS3808G33 directenable \u2192TPS259474L latchbreaker \u2192TPS2116 \u2192TPS62132 fixed3.3V",
+    "charger": "BQ25173 separate25mA nominal branch fromprotectedUSB to15F cell",
+    "backup": "TPS61023 cap-only3.939V boost; loadedUVLO/nearfullarm/readyrails andphysicalNANDlatch",
+    "AON": "U40 TPS2116 priority MODE=VIN1=AON_USB_LIMITED, raw330ohm feed orcapboost ->TPS7A0225; no external/self-powered MODE bias",
+    "status": "ActualrawUV &protectedUSBUV &eFusePG &CCqualified &AON_OK; TPS3808G01 addsactualbuckPG and12..28ms continuousvalid assertion",
+    "fault": "Main protection latchesoff independentofitsownPG/output; retentionassumesrawCCsupplyremainsvalid. Cellside/FB/programmingfaultexceptionsseparatelylisted."
+  },
+  "boundaries": {
+    "MCU_DMX_factory": "18/7/6 logical mapping preserved",
+    "USB": "GCT USB4125-GF-A actualsixcontacts +fourphysicalSHslots; no old24phantompins",
+    "INPUT_FAULT_N": "Translator not implemented; no connection toreservedDIO18/pin28",
+    "SERVICE": "Distinct from ROM DIO3; no firmwareimplementation"
+  },
+  "acceptance_evidence": {
+    "KiCad": "10.0.7, actualexistingflatpakCLI",
+    "ERC": {
+      "errors": 0,
+      "warnings": 0,
+      "exclusions": 0,
+      "actual_command_exit": 0,
+      "inherited_default_ignored_categories": [
+        {
+          "description": "Global label only appears once in the schematic",
+          "key": "single_global_label"
+        },
+        {
+          "description": "Four connection points are joined together",
+          "key": "four_way_junction"
+        },
+        {
+          "description": "SPICE model issue",
+          "key": "simulation_model_issue"
+        },
+        {
+          "description": "Assigned footprint doesn't match footprint filters",
+          "key": "footprint_filter"
+        }
+      ]
+    },
+    "literal_ICs": 30,
+    "literal_IC_pins": 212,
+    "two_terminal_checks": 105,
+    "stable_logic_cases": 1536,
+    "CC_orientation_mode_static_cases": 12,
+    "threshold_corners": 192,
+    "fault_states": 10,
+    "complete_candidate_footprints": 137,
+    "saved_board_numbered_pad_checks": 443,
+    "reserve_checks": 828,
+    "DRC_geometric_violations": 0,
+    "DRC_unconnected_items": 452,
+    "DRC_ignored_default_categories": [
+      {
+        "description": "Footprint has no courtyard defined",
+        "key": "missing_courtyard"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      },
+      {
+        "description": "Footprint component type doesn't match footprint pads",
+        "key": "footprint_type_mismatch"
+      }
+    ],
+    "tracks": 0,
+    "all_onboard": true,
+    "original37_plus4holes_unchanged": 41,
+    "source_pad_geometry_USB_NOR_preserved": true,
+    "candidate_validate_sh_exit": 0,
+    "new_U40_regression": {
+      "table_rows": 7,
+      "qualified_corner_cases": 48,
+      "raw_boost_cases": 24,
+      "old_wiring_failures_demonstrated": 2,
+      "AON_dependent_gate_cases": 5,
+      "all_nominal_footprint_geometries_preserved": 178
+    }
+  },
+  "comparison": {
+    "old_500mA": {
+      "purchased_excluding_USB_including_cell": 170,
+      "ICs": 44,
+      "body_estimate_excluding_USB_cell_mm2": 343.745,
+      "complete_courtyards": "not captured; no invented comparison"
+    },
+    "new_qualified15": {
+      "purchased_excluding_USB_including_cell": 133,
+      "purchased_including_USB_cell": 134,
+      "PCB_factory_service_reset_features": 3,
+      "ICs": 30,
+      "body_estimate_excluding_USB_cell_mm2": 253.17999999999998,
+      "core_complete_courtyard_sum_mm2": 749.9554999999999,
+      "core_top_mm2": 572.2838999999999,
+      "core_bottom_mm2": 177.67159999999996,
+      "USB_courtyard_mm2": 80.98720000000007,
+      "cell_leads_courtyard_mm2": 15.746099999999979,
+      "combined37pluscandidate_electrical_courtyard_sum_mm2": 1313.14962,
+      "top_bottom_parts": [
+        86,
+        51
+      ],
+      "minimum_new_to_any_same_side_courtyard_gap_mm": 0.2049999999999983
+    }
+  },
+  "requirement_dispositions": {
+    "CC_qualification": "Captured and checked DC GPIO truth, bothorientations/default/1.5/3/detach. ActualCCcomparatordetection/timing/supplyrampremainphysicaltests. DirectsupervisorpullnetworkincludeslowV/offleakproofwithpublishedrampcondition.",
+    "compactness": "150mm2 reservation FAIL: corecourtyards749.956mm2, ~599.956mm2 excess; bodyestimate253.18mm2. Nominaltwo-sidedpackingcomplete inprovidedtonguebranch, no routingfit/releasedcaseclaim.",
+    "source_current": "UNMET unchanged:1.208783A conditionalDCscreen;12V ILIM/IQ table applicability at5V and instantaneous/fault current gates remain open.",
+    "startup": "UNMET. U40 static priority configuration corrected, not a guaranteed transient startup proof. U19 can select VIN1 early at low MODE;11uF-only initial load assumption conditional,31uFnominal possible. Unknown mux softstart/handoff maximums, AON load/ramp/sub1.65V/SR behavior, source foldback, protection and thermal gates remain.",
+    "runtime": "UNMET unchanged:10.49734s conditional combined80%eta,9.72955s aged60mohm beforeESR accountingexample; no healthy10s minimum.",
+    "charge": "25mAnominal,26minnominalbeforetail/38.44minconditionalcorner. GeneralKISETbounds andaccuracyrowconditions distinguished; emptycell/FBbias/filterstability/thermal/tail remainunclosed. No fastercharge selected.",
+    "fault_shutdown": "Maincharger-input/loadfault latchoff captured; rawCCcollapsecanresetasinputcycle. ChargerOUT/boostVINinternalshort can dischargecellbypassingU6. FBfaultcanoverchargeat25mA belowtrip. No independentcellfuse/OVPcaptured; hardware/protection-policy disposition requiredbeforemanufacturingacceptance.",
+    "thermal_USB_physical": "Unmeasured: rawfeedfaultresistorheating, eFuse/BQ/boost/buck thermals, lowVINcurrent/PFMuppervoltage, capESR/aging/cold/actualbootandsharedRF+DMXload, AONsub1.65/SRtransients, lateMUXhandoff, CCdowngrade, USBcompliance. Completeassembly/thermalvia/stencil/DFM/sourcePCBthickness/stake/cellleadforming/stop-pad-shimstrength/cables remainopen.",
+    "manufacturing_release": false,
+    "U40_D1": "CORRECTED: MODE=VIN1 per source table; old coldboot/hotattach negative regressions bothHi-Z, corrected bothVIN1. Priority margin251.9mV conditional on totalAON2mA allocation; no startup/loadmaximum guarantee."
+  },
+  "geometry": {
+    "branch": "Frozen proposedGCTtongue/support branch, not baseline",
+    "USB_origin": [
+      42.7,
+      47.6
+    ],
+    "NOR_origin": [
+      32,
+      41.2
+    ],
+    "main_board_mm": [
+      90,
+      28
+    ],
+    "tongue_mm": [
+      12.4,
+      2.3
+    ],
+    "case_mm": [
+      98,
+      34,
+      24
+    ],
+    "component_height_reserves": "Actualstop/pad/rails/shims, platedstakes, bosses, cell, antenna andisolation checked. Bottomparts<=1.45mm;3mm nominalfloorheight. Not tolerance-qualified.",
+    "source_board_sha256": "9d199805cb6153b60b46d6027ff0544c402f59536bb5f8b17889015254a0aec1"
+  },
+  "preservation": {
+    "protected_hashes_verified": 69,
+    "changed_protected_files": [],
+    "no_changes_to": "activeBOM/CAD/powerbudget/contracts, parent/Astraownedpaths, oldbaseline/candidates/startupartifacts",
+    "git_mutations": false,
+    "hardware_or_firmware_or_installations": false,
+    "children_threads_reviews": false,
+    "primary_source_hashes_verified": 33,
+    "immutable_review_snapshot": ".tools/reviews/qualified15-20261023",
+    "immutable_review_manifest_sha256": "ffa0d335367e6153d67c67c0c2c1162d818f89f9185bc562fd7bf2fdb5827938",
+    "immutable_review_files_rehashed": 197,
+    "original_history_matches_review": true
+  },
+  "primary_sources": {
+    "manifest": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-manifest.json",
+    "manifest_sha256": "b7fe084c53a8409b938ae6ede10d0baa4cab7d17c5adb6c15dedb9d95aeeee9b",
+    "hashed_inputs_verified": 33,
+    "web_only_originals": "CoilcraftXGL/XFL andEatonHV readfromoriginalmanufacturerPDF viaweb; directcachefailed403/timeout, no inventedhashes",
+    "core_source_hashes": [
+      {
+        "path": "hardware/compact-dmx/eda/source-cache/tps25947.pdf",
+        "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4"
+      },
+      {
+        "path": "hardware/compact-dmx/eda/source-cache/tusb320lai.pdf",
+        "sha256": "62f7b3f65338e25ebd6fd46ef04474ba806b06b1cc04bc0b3d7b8191b01ca87d"
+      },
+      {
+        "path": "hardware/compact-dmx/eda/power-service/startup-source-cache/bq25173.pdf",
+        "sha256": "75869a03b40472ff587ffa5223dc5e5314f3b76478c6582119cf5a204d6e777e"
+      },
+      {
+        "path": "hardware/compact-dmx/eda/power-service/startup-source-cache/tps61023.pdf",
+        "sha256": "f61135a93053e9e875a67ec9fbf51a3dda13194ae8d6e1fdd817af6e8590fae5"
+      },
+      {
+        "path": "hardware/compact-dmx/eda/source-cache/grm21-spec.pdf",
+        "sha256": "e8432c7acfa982b24eb06dd145682f78051dc4649abbeb35bbca8646b1408e4f"
+      },
+      {
+        "path": "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/sources/drawing.pdf",
+        "sha256": "ea33e0b40545e545bf698cbac3bb1c0f5a3fc7ca6b5b7fda83a63134d4affaa7"
+      },
+      {
+        "path": "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/sources/spec.pdf",
+        "sha256": "adeaf1f264b8999c4b40bfd7fd202543201a60246297be6906a83e08a59259a2"
+      }
+    ],
+    "new_or_modified_source_cache_files": [],
+    "TPS2116_pdf_sha256": "5babd88afb84e2e65c9c0da23b75f85758c0c730e34102a0fb746ac9573ed1d5",
+    "TPS2116_text_sha256": "941acfc2eb600223e615a5d823cd6dc44e7f3186a29141890965bc9fc3e2ecd8"
+  },
+  "actual_commands": [
+    "bash hardware/compact-dmx/eda/power-service/qualified15-candidate/validate.sh > hardware/compact-dmx/eda/power-service/qualified15-candidate/cli-checks.log 2>&1  # exit0",
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/lands.py",
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/generate.py",
+    "flatpak run --command=kicad-cli org.kicad.KiCad version",
+    "flatpak run --command=kicad-cli org.kicad.KiCad sch export netlist --format kicadxml -o /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15.net /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15.kicad_sch",
+    "flatpak run --command=kicad-cli org.kicad.KiCad sch erc --format json --severity-all --exit-code-violations -o /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/erc.json /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15.kicad_sch",
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/verify.py",
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/corner-proof.py",
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/fault-budget.py",
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/refresh-u40-placement.py",
+    "flatpak run --command=kicad-cli org.kicad.KiCad pcb drc --format json --severity-all -o /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/drc.json /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15-placement.kicad_pcb",
+    "flatpak run --command=python3 org.kicad.KiCad /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/verify-placement.py",
+    "flatpak run --command=kicad-cli org.kicad.KiCad sch export pdf -o /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15.kicad_sch",
+    "flatpak run --command=kicad-cli org.kicad.KiCad pcb export svg --mode-single --layers F.Cu,F.Fab,F.CrtYd,Edge.Cuts,Dwgs.User --page-size-mode 2 --exclude-drawing-sheet -o /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-top.svg /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15-placement.kicad_pcb",
+    "flatpak run --command=kicad-cli org.kicad.KiCad pcb export svg --mode-single --layers B.Cu,B.Fab,B.CrtYd,Edge.Cuts,Dwgs.User --page-size-mode 2 --exclude-drawing-sheet -o /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-bottom.svg /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15-placement.kicad_pcb",
+    "flatpak run --command=kicad-cli org.kicad.KiCad pcb export pdf --mode-single --layers F.Cu,F.Fab,F.CrtYd,Edge.Cuts,Dwgs.User --scale 3 -o /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-top.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15-placement.kicad_pcb",
+    "flatpak run --command=kicad-cli org.kicad.KiCad pcb export pdf --mode-single --layers B.Cu,B.Fab,B.CrtYd,Edge.Cuts,Dwgs.User --scale 3 -o /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-bottom.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15-placement.kicad_pcb",
+    "pdftoppm -f 1 -l 1 -scale-to 1800 -singlefile -png /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/schematic-overview",
+    "pdftoppm -f 2 -l 2 -scale-to 1800 -singlefile -png /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/control-overview",
+    "pdftoppm -f 1 -l 1 -scale-to 1800 -singlefile -png /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-top.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-top",
+    "pdftoppm -f 1 -l 1 -scale-to 1800 -singlefile -png /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-bottom.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-bottom",
+    "pdftotext -f 10 -l 10 -layout hardware/compact-dmx/eda/source-cache/tps2116.pdf -",
+    "git branch --show-current",
+    "git rev-parse HEAD",
+    "sha256sum -c SHA256SUMS  # executed in owned candidate below"
+  ],
+  "artifacts": [
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/BRIEF.md",
+      "sha256": "7cc3ef52f87e3911f537f40349228644f1be75c22d91ee00ad96a150b6ca71f0",
+      "bytes": 3698
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/DESIGN.md",
+      "sha256": "afc9364f995964889ca97082a24a6d7c2867bae9de4c3ce5f15d320d766c9c07",
+      "bytes": 27865
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/C0402.kicad_mod",
+      "sha256": "5d2d2bd39642d210476925a435a0e4f69132644526d0bd418d7ad91e6c8bf809",
+      "bytes": 800
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/C0805.kicad_mod",
+      "sha256": "48afcf8985ddc51b815da206f54d12c62f1f6a8ac8e96fdbd723066380140875",
+      "bytes": 743
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/Cell_leads.kicad_mod",
+      "sha256": "ef9b1b519894dbbd484b6fa005929ec8e4391ec57914b376e30088048c39de3e",
+      "bytes": 523
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/Contact2.kicad_mod",
+      "sha256": "9fb4adda0558adc4ebeb03484a8ce5875267f2a6297dca30519c44f30531c125",
+      "bytes": 802
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DBV5.kicad_mod",
+      "sha256": "0163dd5aac3a9aa9a1c5625c090be6e61f21be4d47906b3b4b6670f68372b917",
+      "bytes": 1236
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DBV6.kicad_mod",
+      "sha256": "8ff90acb1bc4d2d486f08c790d1e4b6f0365ed24bb17de7a5add15ee114f4be6",
+      "bytes": 1391
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DBZ3.kicad_mod",
+      "sha256": "fb0dd1d1af37571b2d55664526ddf9875754ea2324341b25008ba40ad262ccf6",
+      "bytes": 954
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DCK5.kicad_mod",
+      "sha256": "c4648ccbcb7680cf4072759621ae26c978549938f355bc216a0aa7d7f199dbc6",
+      "bytes": 1253
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DCK6.kicad_mod",
+      "sha256": "246fbb2dc4fb7881c2f3831247e86f5fcce12082b338bc9a7b7f76b8108e34c7",
+      "bytes": 1307
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DCU8.kicad_mod",
+      "sha256": "53291cb3259f6acb6b8d18fd7a3d960999f635d6f72c7329568b0801dd0606e5",
+      "bytes": 1718
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DDC6.kicad_mod",
+      "sha256": "6384ff62da7a169534fadc99b8c15d4542050851e38fbbe312b1ffa3fcea0301",
+      "bytes": 1457
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DQN4.kicad_mod",
+      "sha256": "21a4ff5e1b9874ed646ca09094490bd2036c9515502e8a4951a49e342a5839a8",
+      "bytes": 2592
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DRL6.kicad_mod",
+      "sha256": "6e24a29ee30483c5b41bf901757b68b5ee6cebd17ab30f479753aac696d65efc",
+      "bytes": 1396
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DRL8.kicad_mod",
+      "sha256": "49b7a8601d0443cee228af9141d5fcc7f5acc3c1a1053533f8b9bc6ced04f3be",
+      "bytes": 1714
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/DSG8.kicad_mod",
+      "sha256": "e6fc022790bdd4d69e9c62ec2c4da44b0f560e68e7f2987c5b776f2b72756e40",
+      "bytes": 1822
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/Factory6.kicad_mod",
+      "sha256": "25c476e84b946933465b5c46f44f189c2dea4fd448467a0fcb86d9ad0c14ec2b",
+      "bytes": 1308
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/L4020.kicad_mod",
+      "sha256": "7ff3126ac1a401d117d674976c48b34279f1e94e04caf9d32def967436059a5d",
+      "bytes": 903
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/NOR8.kicad_mod",
+      "sha256": "f52a1fc88a1c17325135c27e3c68693037b56130849b50a00c4d2fe47af419aa",
+      "bytes": 1599
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/R0402.kicad_mod",
+      "sha256": "a288d3b4c50e0d590f3cdacc1d920c15c0b00a8789c9861d20fa01c23ad3e575",
+      "bytes": 789
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/R0805.kicad_mod",
+      "sha256": "888757616cbc15173a74a9a699295e13c7a6f3a4ca49fb958578d371db329924",
+      "bytes": 784
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/R1206.kicad_mod",
+      "sha256": "3867fe0dea7c13e378937e334408135053859864a5025f8b108b4c16d7a07850",
+      "bytes": 790
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/RGT16.kicad_mod",
+      "sha256": "cf836187ac484cd24dd3cb4d11a7228361c32cdcee4fafef914b07477de7235b",
+      "bytes": 3195
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/RPW10.kicad_mod",
+      "sha256": "03e05108f15b9aec1978b7891b481cc8bfac45d4c6da4aad25597f7dbd591d85",
+      "bytes": 2667
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/RWB12.kicad_mod",
+      "sha256": "74df9f6c609a20370377471f262055e6a097cda32a76f9fc8594fc2e1ddd068b",
+      "bytes": 2225
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/USB_GCT.kicad_mod",
+      "sha256": "94f1add52e7b9b4a741df10d6c3bd0faee4a95596e5ee4d0ca3dbaad9fa15303",
+      "bytes": 1450
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/cli-checks.log",
+      "sha256": "8c9b22222f92658bb8880a3f43c603259842cf3d2b93ee300d7af30dd09ac269",
+      "bytes": 19028
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/component-ledger.csv",
+      "sha256": "c72e9be578e40738afc2e67d8385e33bbeb63de1836ce60d916de7c5f67a003b",
+      "bytes": 10741
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/control-overview.png",
+      "sha256": "027f7081e4c116e9e6640708230f6cb5f89ec8463435a47d06bc861d50f2fe81",
+      "bytes": 58542
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/control.kicad_sch",
+      "sha256": "d88ae3b3b793da4f39d3d02403dcab26e4fa2a9c73ea6c103aeb84306685d13c",
+      "bytes": 106375
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/corner-proof.json",
+      "sha256": "ed3e53b90c9799ef48ccf309836de38aac36923740c1fefe469936ae797a6fa5",
+      "bytes": 6217
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/corner-proof.py",
+      "sha256": "7dfa8520b50ac589628e93a47c1930f839cfd984d69aca080ebab539f7e50370",
+      "bytes": 13978
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/drc.json",
+      "sha256": "9f3f5f07d34d1f634ddd0dc8c3ddd10636dff45b1c5c3cd9a518814dbbc7502a",
+      "bytes": 357902
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/erc.json",
+      "sha256": "702e39a355fbd6efd20af17a2d2ae5e2503770d2b40384b918c7c297aa76d9ba",
+      "bytes": 1208
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/fault-budget.json",
+      "sha256": "433874182e38743bcc9d99e2d8a01c728d8f6c9c16dd0b7600325199d6a84284",
+      "bytes": 4741
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/fault-budget.py",
+      "sha256": "ec0916ccbd4bd416a55b44f470bdb2f01fd592f25e8f734148a47f436a9212c6",
+      "bytes": 4985
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/final-numeric-check.log",
+      "sha256": "ed3e53b90c9799ef48ccf309836de38aac36923740c1fefe469936ae797a6fa5",
+      "bytes": 6217
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/fp-lib-table",
+      "sha256": "8be8fe5ba7b2a1aa1099387fe6aed43cfa27e8ca40cb213fb9ba5af3cd12c015",
+      "bytes": 180
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/generate.py",
+      "sha256": "c368e6446674088bd26a7bb8dba0acf00dc862bb8b168ce2a0c3243bc23238e4",
+      "bytes": 24350
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/history/README.md",
+      "sha256": "905ca450701f0a04b13c7c51563cd2257eb301a65cf78928e3c0e9d8a93628ea",
+      "bytes": 937
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/history/pre-u40-fix-SHA256SUMS",
+      "sha256": "abb7f013ccc581200c556dfff6dd8ca1434ed01b3a011853c34d297ecca0ddd3",
+      "bytes": 8719
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/history/pre-u40-fix-file-hashes.json",
+      "sha256": "5e3ad91788a4c1e9d2889c1d6a22b998a10d3c7bbab8190b03e985f091aba98d",
+      "bytes": 9478
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/history/pre-u40-fix-qualified15-placement.kicad_pcb",
+      "sha256": "2b8f12cbe7be407f6d0a351fa524ddc40295017c447c0f57ec269844c1fa035f",
+      "bytes": 517369
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/history/pre-u40-fix-qualified15.net",
+      "sha256": "b9f7a1eb1f70d6bb59f7b79fd784a91332503c5162241ea8630fd02e5648e184",
+      "bytes": 178874
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/history/pre-u40-fix-receipt.json",
+      "sha256": "a89c9a7da09171b4c17dfa4a873900383490bff1fcea075453fd1f93a8645e53",
+      "bytes": 33939
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/land-sources.json",
+      "sha256": "a45315dd65f3a3b787d1c024ea16c61198fb89273cb66fc4b7886918fbbf49cb",
+      "bytes": 6619
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/lands.py",
+      "sha256": "f3405cefc98ec832919a806b2cd9cea36ab422615c1c6e4ad68677914b2e3b7d",
+      "bytes": 8484
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/mux-mode-proof.json",
+      "sha256": "b100178e803efa5d839f43cde0fa89d194dfa0395c9ea666eed0a020505d7b73",
+      "bytes": 6019
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/mux-mode-proof.py",
+      "sha256": "5e2c51340242c182fdfbcdfb04abefc3ef0375895ec6b75aa865054193993a99",
+      "bytes": 8827
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/place.py",
+      "sha256": "ca341e18e97457532bb320727ce93726fe0a5e716912357b951b72bc10f20a3d",
+      "bytes": 12734
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-bottom.pdf",
+      "sha256": "89d2084ce563dded12f0e0a116de8f0056aa52bd436ef2b4b0d39f05128bc0ad",
+      "bytes": 127443
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-bottom.png",
+      "sha256": "32e36f7f850c1907f4cc7157d0a9540da4025dd44cf9c85b41ac2df3820b98f6",
+      "bytes": 74946
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-bottom.svg",
+      "sha256": "f0141139996a0ce8649991870e92a01fdb9e44f6a55750c229f779fb577ae2f7",
+      "bytes": 285221
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-check.json",
+      "sha256": "01b825fc8ad29fdfc74b0dfcd241540400540b81b43a0125495e3d57aa72b80d",
+      "bytes": 2204
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-context.kicad_pcb",
+      "sha256": "a69a6f4a90c136e7cd191a3009cb0e8e80b68cfe7df9e5f62d51d3f17973ea69",
+      "bytes": 214074
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-ledger.csv",
+      "sha256": "509fc941148040e3cfc0326448933ec0aa483a5d6174b8cf7823662ee6d2fb73",
+      "bytes": 10872
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-top.pdf",
+      "sha256": "e0fd2cdb515d5d750fc0cad6ea334129fff90a43a56de9a274f47de0d27d6c7b",
+      "bytes": 174750
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-top.png",
+      "sha256": "7b1269ede0b1102007b13a0b9db8372c46a0af39cd3c761892895ebf8591b944",
+      "bytes": 114743
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-top.svg",
+      "sha256": "5d303b003bc049b7adeb31f0e777ee7bd8eee1bbd27331c7a7cbe2c082202d27",
+      "bytes": 492282
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/placement.json",
+      "sha256": "d3f6f2a6cda9186bb0f8c8b9509a034c5b3cef34a1ca66bc171caac8691f9e0c",
+      "bytes": 34857
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/preservation-check.json",
+      "sha256": "0bf07c138d6e2f63ac7bea588f1d28c6d3e47fde89d5f0061d3bc4816d05cbed",
+      "bytes": 206
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/preserved-inputs.json",
+      "sha256": "ca9b7b246dc656caf1f3482334e5168a8f596f15776322684216d424bb56f7b7",
+      "bytes": 9865
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15-placement.kicad_pcb",
+      "sha256": "fc0785cdaaf874002b2362835070f29f00b187e4054dd3ab093c43e177ea035f",
+      "bytes": 517377
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15-placement.kicad_prl",
+      "sha256": "f7551c77cdf419d06108757731fa4213d0f47ac3dbfe7fead7925eda6d9ff3f8",
+      "bytes": 2308
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15-placement.kicad_pro",
+      "sha256": "ab82bf812fde80dc716c5efe97ac122ad319c743ba7c39d1898ace9e2f4d1160",
+      "bytes": 9704
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15.kicad_pro",
+      "sha256": "f2ccd6711929c9c4979d8228d86be854b19e55451e9d18eee76c57c5dd75cc00",
+      "bytes": 58
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15.kicad_sch",
+      "sha256": "3d7db8ae08755e6222d6c0a83aa8b46dfcce00a602a056948f963b3b869b5459",
+      "bytes": 218656
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15.kicad_sym",
+      "sha256": "cea8d1335aa68181cb9f77824809dfe891b9f1bff3f12bccf6406d48a326a00c",
+      "bytes": 40909
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15.net",
+      "sha256": "8b31016ab12c3cc03a1830063ac3d4ff0737949482ad871f6f9a0d5b610fb46d",
+      "bytes": 178874
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15.pdf",
+      "sha256": "478dfbfca02523fd0dea1ba0a574f8b6ad86c03aada6b798338ebb8b5902908c",
+      "bytes": 446919
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/refresh-u40-placement.py",
+      "sha256": "52a70aae16cf251d10759288e4dfde8f6e021e176fa4db547dc504391a9b46b1",
+      "bytes": 945
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/schematic-overview.png",
+      "sha256": "be0db02e49dbce76865f47115b37a3bb0caf3650128a48a0101fc7dd9004dcf7",
+      "bytes": 129372
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/RPW-land.png",
+      "sha256": "0a03bac36cc81e67347c1f708b7779e36996ffcef57738655eee95a7257179a6",
+      "bytes": 136223
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/bq25173.txt",
+      "sha256": "b91f3db89b9901336ad630d5338daec59fa3ade45b923cebe89af84e454580ce",
+      "bytes": 91890
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/dqn.png",
+      "sha256": "4141e1b56f56c7822a6dc04ceb0611d5a94123b2bb53c691ebf1979350a2aeff",
+      "bytes": 96811
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/grm10n.pdf",
+      "sha256": "7f6df06f2f3de797c5a8a1a78e9554288f39d4eb167f0cc86fea91ac178960ab",
+      "bytes": 1953748
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/grm10n.txt",
+      "sha256": "2f74c8ce62914ebb85b7eac6dbfc6c000cf1c1af9153ebabce0278d6e762fc7f",
+      "bytes": 88038
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/rwb.png",
+      "sha256": "eb31b4b31e31271ce521409ec7cc60c28c1f1f18e385e0ad657e99d65ce262f0",
+      "bytes": 100278
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc1g0832.pdf",
+      "sha256": "349fe4169b78f5428f4eaa9aff3573683632d30686d089bce2dc0130273b09d3",
+      "bytes": 800687
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc1g0832.txt",
+      "sha256": "9c90f25e38ced859321d19f06bc21a99255045aa4f5af2536a8dd997ed487c73",
+      "bytes": 77614
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc1g11.pdf",
+      "sha256": "ffd953703273b43844eae23cfbf31cfc801a3b9443f2c863d49dde62f5a9232b",
+      "bytes": 2242255
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc1g11.txt",
+      "sha256": "1b2c91b4b87f1de828292f087593a9393fcb8fb7ba007eb468661950c7b6f1a3",
+      "bytes": 113008
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc1g14.pdf",
+      "sha256": "c21067b4f4119d0981fb2e8d73b987b0e661c86f7bb0ed161f23a4b599fd68a7",
+      "bytes": 3094243
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc1g14.txt",
+      "sha256": "73b9ce997e9bcd5628c440d21f9c9de4196c6a0347b6c7bc4e5a6da969eb3b73",
+      "bytes": 161231
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc1g3208.pdf",
+      "sha256": "6fe29a86acaaa4e8782c789ba6bbea6be9626d2a1141b5d5bdd93fa6b5a9a041",
+      "bytes": 769886
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc1g3208.txt",
+      "sha256": "b8d15ba847db3ebd034325bda661e43b14c27c9756787cff5b1b15e1dbcf1330",
+      "bytes": 81323
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc2g132.pdf",
+      "sha256": "3e01a5de607f9fea78978a21f050ffa6218a241b5baecc66ab4f4fe4895a3744",
+      "bytes": 803617
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc2g132.txt",
+      "sha256": "9a955fd6f29e25f0c302eb8dd79999488bd0723cac941680a893fed27fd73cc5",
+      "bytes": 81261
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc2g14.pdf",
+      "sha256": "de3f4670541e131ca412cb2cb83dd2c91bb5f23806e1442a156cc17c1543710d",
+      "bytes": 880354
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc2g14.txt",
+      "sha256": "bc8d564f54ef43fcd91907e9496c3a2e82efaadb9d193cab7eb0ad3c7fef2df3",
+      "bytes": 94257
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/tps3700.txt",
+      "sha256": "999ca9a432d9b8239afdc69daac7105953e569e0652807d8cc81cc75fc6bfda8",
+      "bytes": 107495
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/tps3702-q1-land-reference.pdf",
+      "sha256": "5bb4e737d2a425afba7780118e8c1281817ea204a68d8a619e92fdee921a1165",
+      "bytes": 1757946
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/tps3702-q1-land-reference.txt",
+      "sha256": "31b7f4e01af241a82440fbb2441946b05b042e2ec8cb76b0086c9ab5a391fa77",
+      "bytes": 102962
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/tps3808.txt",
+      "sha256": "c549b4bd508eeadacbe8a1bb064a967d72d01f49fccb1928fbfd5972b1df21a0",
+      "bytes": 139328
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/tps61023.txt",
+      "sha256": "10a515c8502b95e6fd07c2f0d643d2af3db19573592c1a1b7791de5d5609b08b",
+      "bytes": 105804
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/vishay-28950.pdf",
+      "sha256": "9e2b145c937da3be1e926b8afc2856959754eeb4d1103241d838038f7308144e",
+      "bytes": 83913
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/vishay-28950.txt",
+      "sha256": "d932cc30fe5f619ad8ff9537411ba1b38559cbe5628a080e5ac587266b0c87bc",
+      "bytes": 9014
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-manifest.json",
+      "sha256": "b7fe084c53a8409b938ae6ede10d0baa4cab7d17c5adb6c15dedb9d95aeeee9b",
+      "bytes": 13738
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/sym-lib-table",
+      "sha256": "53f0c71adac1c121432984e6285863d0b6d74a70f0b9606d09d2c8f4879f1bdf",
+      "bytes": 153
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/validate.sh",
+      "sha256": "299064089eefb6cb9e2883f0ef5dd3b8d6fa3edcd847edd8132882723852a771",
+      "bytes": 2563
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/validation.json",
+      "sha256": "85023259fdbdc242ced1d8299f4ee572d6b6a028a208a932d5e8fa67e8456c21",
+      "bytes": 4835
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/verify-placement.py",
+      "sha256": "84489a35d9488a585f7c811290e530d523c7c07ea1595653271246d1dc43f90c",
+      "bytes": 6933
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/verify.py",
+      "sha256": "92eea81a78f12cafa3d8b3261006431e347b379fd5d98013cbcc59557cb9d961",
+      "bytes": 19407
+    }
+  ],
+  "next_action": "STOP after this correction receipt. Parent independently verifies/integrates; no new architecture, buffers, component values, repack, release or publication.",
+  "correction": {
+    "finding": "GLM nova-qualified15-targeted-glm-review-20261023-r1 D-1, independently confirmed in original cached TI PDF page10",
+    "root_cause": "External MODE<=.35V/PR1 HIGH commands Hi-Z in TPS2116 7.3.1. Original pin checker matched wrong wire; numerical proof incorrectly assumed priority mode from PR1.",
+    "only_exported_pin_change": [
+      [
+        "U40.5",
+        "GND_USB",
+        "AON_USB_LIMITED"
+      ]
+    ],
+    "only_saved_pad_change": [
+      [
+        "U40",
+        "5",
+        "GND_USB",
+        "AON_USB_LIMITED"
+      ]
+    ],
+    "historical_receipt": {
+      "path": "history/pre-u40-fix-receipt.json",
+      "sha256": "a89c9a7da09171b4c17dfa4a873900383490bff1fcea075453fd1f93a8645e53"
+    },
+    "historical_all_file_hashes": "history/pre-u40-fix-file-hashes.json",
+    "no_component_value_buffer_architecture_boundary_change": true,
+    "old_grounded_MODE_negative_regressions": [
+      {
+        "scenario": "valid-source empty-cap coldboot",
+        "old_before": "unpowered",
+        "old_after": "Hi-Z",
+        "fixed_after": "VIN1",
+        "old_guaranteed_AON_path": false
+      },
+      {
+        "scenario": "valid-source hotattach",
+        "old_before": "VIN2",
+        "old_after": "Hi-Z",
+        "fixed_after": "VIN1",
+        "old_guaranteed_AON_path": false
+      }
+    ],
+    "truth_rows_tested": 7,
+    "qualified_corner_cases": 48,
+    "raw_boost_cases": 24,
+    "AON_physical_supply_gate_cases": [
+      {
+        "scenario": "cold source",
+        "U40_selection": "VIN1",
+        "conditional_AON_input_V": 3.73769,
+        "SOURCE_VALID": true,
+        "CAP_ARM": false,
+        "BUCK_EN": true
+      },
+      {
+        "scenario": "default source",
+        "U40_selection": "VIN1",
+        "conditional_AON_input_V": 3.73769,
+        "SOURCE_VALID": false,
+        "CAP_ARM": false,
+        "BUCK_EN": false
+      },
+      {
+        "scenario": "hot attach",
+        "U40_selection": "VIN1",
+        "conditional_AON_input_V": 3.73769,
+        "SOURCE_VALID": true,
+        "CAP_ARM": true,
+        "BUCK_EN": true
+      },
+      {
+        "scenario": "backup after detach",
+        "U40_selection": "VIN2",
+        "conditional_AON_input_V": 3.9,
+        "SOURCE_VALID": false,
+        "CAP_ARM": true,
+        "BUCK_EN": true
+      },
+      {
+        "scenario": "source-free cap rebound",
+        "U40_selection": "VIN2",
+        "conditional_AON_input_V": 3.9,
+        "SOURCE_VALID": false,
+        "CAP_ARM": false,
+        "BUCK_EN": false
+      }
+    ],
+    "independent_model": "mux-mode-proof.py/json reads actual exported topology; seven documented rows plus unspecified/unpowered cases; not generator logic",
+    "limits": {
+      "document": "TI SLVSFG1A May2021",
+      "pdf": "hardware/compact-dmx/eda/source-cache/tps2116.pdf",
+      "pdf_sha256": "5babd88afb84e2e65c9c0da23b75f85758c0c730e34102a0fb746ac9573ed1d5",
+      "text_sha256": "941acfc2eb600223e615a5d823cd6dc44e7f3186a29141890965bc9fc3e2ecd8",
+      "sections": "6.1 absolute controls -0.3..6V; 6.3 inputs1.6..5.5V controls0..5.5V; 6.5 leakage/IQ/VREF; 7.3.1 seven truth rows; 7.3.2 softstart; 7.4 collapse",
+      "cached_text_line_ranges": {
+        "absolute": [
+          116,
+          125
+        ],
+        "operating": [
+          153,
+          164
+        ],
+        "truth_table": [
+          583,
+          603
+        ]
+      }
+    },
+    "conditional_AON_feed": {
+      "total_AON_feed_allocation_A": 0.002,
+      "AON_VIN1_min_under_allocation_V": 3.73769,
+      "PR1_min_under_allocation_V": 1.1580976848526943,
+      "priority_input_threshold_max_V": 3.4857840169869547,
+      "priority_load_at_threshold_max_A": 0.0027606890519939167,
+      "divider_max_A": 0.00017194135861809166,
+      "conservative_mux_IQ_standby_control_sum_A": 1.12e-05,
+      "remaining_2mA_allocation_for_LDO_logic_pullups_A": 0.0018168586413819083
+    },
+    "main_U19": "External MODE<=.35/PR1low can select higher input early; .35..1V unspecified. AtMODE>=1V manual selection. Initial11uF screen conditional; early main common connection can total31uFnominal /39.215uF allocated. No bounded peak/timing claim.",
+    "unchanged_geometry": {
+      "reviewed_board": "history/pre-u40-fix-qualified15-placement.kicad_pcb",
+      "all_footprint_positions_rotations_sides_values_preserved": 178,
+      "all_actual_pad_geometry_preserved": true,
+      "only_pad_net_changes": [
+        [
+          "U40",
+          "5",
+          "GND_USB",
+          "AON_USB_LIMITED"
+        ]
+      ],
+      "repacked": false
+    },
+    "entire_saved_board_other_bytes_unchanged": true
+  },
+  "changed_paths_relative_to_owned_directory": [
+    "BRIEF.md",
+    "DESIGN.md",
+    "SHA256SUMS",
+    "cli-checks.log",
+    "component-ledger.csv",
+    "corner-proof.json",
+    "corner-proof.py",
+    "drc.json",
+    "erc.json",
+    "final-numeric-check.log",
+    "generate.py",
+    "history/README.md",
+    "history/pre-u40-fix-SHA256SUMS",
+    "history/pre-u40-fix-file-hashes.json",
+    "history/pre-u40-fix-qualified15-placement.kicad_pcb",
+    "history/pre-u40-fix-qualified15.net",
+    "history/pre-u40-fix-receipt.json",
+    "mux-mode-proof.json",
+    "mux-mode-proof.py",
+    "placement-bottom.pdf",
+    "placement-bottom.png",
+    "placement-bottom.svg",
+    "placement-check.json",
+    "placement-top.pdf",
+    "placement-top.svg",
+    "qualified15-placement.kicad_pcb",
+    "qualified15.kicad_sch",
+    "qualified15.net",
+    "qualified15.pdf",
+    "receipt.json",
+    "refresh-u40-placement.py",
+    "schematic-overview.png",
+    "validate.sh",
+    "validation.json",
+    "verify-placement.py",
+    "verify.py"
+  ],
+  "artifact_inventory_convention": "Current hashes below exclude this receipt and SHA256SUMS to avoid recursion; current SHA256SUMS also covers receipt. Historical hashes in history are explicitly pre-fix."
+}

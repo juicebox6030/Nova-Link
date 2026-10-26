@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="720" viewBox="0 0 1060 720">
+<rect width="1060" height="720" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#172b3c}.small{font-size:13px}.part{font-size:17px;font-weight:bold}</style>
+<text x="28" y="34" font-size="24">CI-R1 — nominal bare rear depth versus 24 mm allocation</text>
+<text x="28" y="59" class="small">Source-dimensioned allocation diagram only. Not CAD, not installed plug depth, not an assembly release.</text>
+<text x="28" y="110" class="part">NAC3MPXXA</text>
+<text x="28" y="131" class="small">male contacts; blue/A input key</text>
+<rect x="235" y="92" width="240" height="29" fill="#dae8f1"/>
+<rect x="235" y="98" width="304.0" height="17" fill="#d78632"/>
+<line x1="475" y1="87" x2="475" y2="127" stroke="#205c85" stroke-width="2"/>
+<text x="710" y="110" class="part">30.4 mm rear; +6.4 mm</text>
+<text x="710" y="132" class="small">Flange 26 × 31 mm; wires / terminals / tools additional</text>
+<text x="28" y="198" class="part">NAC3MPXXB</text>
+<text x="28" y="219" class="small">male contacts; gray/B output key</text>
+<rect x="235" y="180" width="240" height="29" fill="#dae8f1"/>
+<rect x="235" y="186" width="304.0" height="17" fill="#d78632"/>
+<line x1="475" y1="175" x2="475" y2="215" stroke="#205c85" stroke-width="2"/>
+<text x="710" y="198" class="part">30.4 mm rear; +6.4 mm</text>
+<text x="710" y="220" class="small">Flange 26 × 31 mm; wires / terminals / tools additional</text>
+<text x="28" y="286" class="part">NAC3MPX-TOP</text>
+<text x="28" y="307" class="small">male; TRUE1 input</text>
+<rect x="235" y="268" width="240" height="29" fill="#dae8f1"/>
+<rect x="235" y="274" width="312.0" height="17" fill="#d78632"/>
+<line x1="475" y1="263" x2="475" y2="303" stroke="#205c85" stroke-width="2"/>
+<text x="710" y="286" class="part">31.2 mm rear; +7.2 mm</text>
+<text x="710" y="308" class="small">Flange 26 × 31 mm; wires / terminals / tools additional</text>
+<text x="28" y="374" class="part">NAC3FPX-TOP</text>
+<text x="28" y="395" class="small">female; TRUE1 output</text>
+<rect x="235" y="356" width="240" height="29" fill="#dae8f1"/>
+<rect x="235" y="362" width="328.0" height="17" fill="#d78632"/>
+<line x1="475" y1="351" x2="475" y2="391" stroke="#205c85" stroke-width="2"/>
+<text x="710" y="374" class="part">32.8 mm rear; +8.8 mm</text>
+<text x="710" y="396" class="small">Flange 35.4 × 35.4 mm; wires / terminals / tools additional</text>
+<text x="28" y="462" class="part">5278-C</text>
+<text x="28" y="483" class="small">male NEMA 5-15P</text>
+<rect x="235" y="444" width="240" height="29" fill="#dae8f1"/>
+<rect x="235" y="450" width="453.0" height="17" fill="#d78632"/>
+<line x1="475" y1="439" x2="475" y2="479" stroke="#205c85" stroke-width="2"/>
+<text x="710" y="462" class="part">45.3 mm rear; +21.3 mm</text>
+<text x="710" y="484" class="small">Flange Ø63.5 mm; wires / terminals / tools additional</text>
+<text x="28" y="550" class="part">5279-C</text>
+<text x="28" y="571" class="small">female NEMA 5-15R</text>
+<rect x="235" y="532" width="240" height="29" fill="#dae8f1"/>
+<rect x="235" y="538" width="436.0" height="17" fill="#d78632"/>
+<line x1="475" y1="527" x2="475" y2="567" stroke="#205c85" stroke-width="2"/>
+<text x="710" y="550" class="part">43.6 mm rear; +19.6 mm</text>
+<text x="710" y="572" class="small">Flange Ø63.5 mm; wires / terminals / tools additional</text>
+<text x="28" y="651" class="small">Blue line = 24 mm allocation. Drawing depths start at the rear flange/panel shoulder.</text>
+<text x="28" y="677" class="small">All six fail a standalone 24 mm rear allocation. NEMA flanges additionally exceed Ø48 by 15.5 mm.</text>
+<text x="28" y="702" class="small">Original STEP and independent orthographic CAD projections are separate files; no mated assembly datum was invented.</text>
+</svg>

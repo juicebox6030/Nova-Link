@@ -1,0 +1,364 @@
+{
+  "revision": "S12-R1",
+  "one_pass_allocation": [
+    {
+      "zone": "rotating",
+      "PCB_LWH_mm": [
+        32.0,
+        26.0,
+        1
+      ],
+      "board_area_mm2": 832.0,
+      "footprints": 45,
+      "saved_numbered_pad_checks": 153,
+      "min_courtyard_gap_mm": 0.10999999999999988,
+      "closest_pair": [
+        "C12",
+        "C13"
+      ],
+      "max_component_height_allocation_mm": 3.46,
+      "body_area_sum_mm2": 238.02849999999998,
+      "actual_courtyard_BBox_area_sum_mm2": 399.88710000000015,
+      "tracks": 0,
+      "vias": 0,
+      "routing_or_thermal_or_collar_acceptance": false,
+      "positions": {
+        "U2": [
+          6.0,
+          5.5,
+          0.0
+        ],
+        "U3": [
+          22.5,
+          13.0,
+          0.0
+        ],
+        "U4": [
+          17.4,
+          9.5,
+          180.0
+        ],
+        "U5": [
+          6.0,
+          13.0,
+          0.0
+        ],
+        "J1": [
+          32.0,
+          13.0,
+          90.0
+        ],
+        "J3": [
+          11.0,
+          23.5,
+          0.0
+        ],
+        "L1": [
+          11.5,
+          4.2,
+          0.0
+        ],
+        "D1": [
+          25.7,
+          20.8,
+          90.0
+        ],
+        "C2": [
+          2.25,
+          4.2,
+          0.0
+        ],
+        "C3": [
+          6.0,
+          2.0,
+          0.0
+        ],
+        "C4": [
+          15.9,
+          3.0,
+          0.0
+        ],
+        "C5": [
+          15.9,
+          5.3,
+          0.0
+        ],
+        "C6": [
+          15.9,
+          16.6,
+          0.0
+        ],
+        "C7": [
+          28.8,
+          21.0,
+          0.0
+        ],
+        "C8": [
+          22.5,
+          18.0,
+          0.0
+        ],
+        "C9": [
+          2.5,
+          13.0,
+          0.0
+        ],
+        "C10": [
+          7.5,
+          9.0,
+          0.0
+        ],
+        "C12": [
+          20.0,
+          3.0,
+          0.0
+        ],
+        "C13": [
+          20.0,
+          4.3,
+          0.0
+        ],
+        "C15": [
+          3.0,
+          6.8,
+          0.0
+        ],
+        "C16": [
+          20.5,
+          6.0,
+          0.0
+        ],
+        "C17": [
+          20.5,
+          7.3,
+          0.0
+        ],
+        "TP1": [
+          30.0,
+          24.0,
+          0.0
+        ],
+        "TP2": [
+          26.5,
+          24.0,
+          0.0
+        ],
+        "R7": [
+          9.0,
+          7.5,
+          0.0
+        ],
+        "R8": [
+          10.0,
+          9.5,
+          0.0
+        ],
+        "R9": [
+          3.0,
+          9.0,
+          0.0
+        ],
+        "R10": [
+          2.5,
+          10.5,
+          0.0
+        ],
+        "R11": [
+          9.5,
+          12.0,
+          0.0
+        ],
+        "R12": [
+          9.5,
+          13.5,
+          0.0
+        ],
+        "R13": [
+          9.5,
+          15.0,
+          0.0
+        ],
+        "R14": [
+          9.0,
+          16.5,
+          0.0
+        ],
+        "R15": [
+          12.5,
+          10.0,
+          0.0
+        ],
+        "R16": [
+          12.0,
+          11.5,
+          0.0
+        ],
+        "R17": [
+          17.0,
+          13.0,
+          0.0
+        ],
+        "R18": [
+          20.75,
+          9.5,
+          0.0
+        ],
+        "R19": [
+          13.0,
+          8.5,
+          0.0
+        ],
+        "R20": [
+          23.25,
+          9.5,
+          0.0
+        ],
+        "R21": [
+          22.75,
+          8.0,
+          0.0
+        ],
+        "R22": [
+          24.0,
+          16.5,
+          0.0
+        ],
+        "R23": [
+          24.75,
+          18.5,
+          0.0
+        ],
+        "R24": [
+          23.0,
+          6.5,
+          0.0
+        ],
+        "R25": [
+          28.0,
+          5.0,
+          0.0
+        ],
+        "R26": [
+          25.0,
+          3.0,
+          0.0
+        ],
+        "R27": [
+          23.0,
+          21.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "zone": "stationary",
+      "PCB_LWH_mm": [
+        24.0,
+        16.0,
+        1
+      ],
+      "board_area_mm2": 384.0,
+      "footprints": 12,
+      "saved_numbered_pad_checks": 36,
+      "min_courtyard_gap_mm": 0.3099999999999987,
+      "closest_pair": [
+        "C11",
+        "R6"
+      ],
+      "max_component_height_allocation_mm": 2.5,
+      "body_area_sum_mm2": 84.38,
+      "actual_courtyard_BBox_area_sum_mm2": 143.6362,
+      "tracks": 0,
+      "vias": 0,
+      "routing_or_thermal_or_collar_acceptance": false,
+      "positions": {
+        "U1": [
+          14.0,
+          4.0,
+          0.0
+        ],
+        "J0": [
+          5.0,
+          3.5,
+          0.0
+        ],
+        "J2": [
+          12.0,
+          13.8,
+          0.0
+        ],
+        "C1": [
+          5.0,
+          8.3,
+          0.0
+        ],
+        "C11": [
+          17.0,
+          7.0,
+          0.0
+        ],
+        "C14": [
+          9.5,
+          8.0,
+          0.0
+        ],
+        "R1": [
+          11.0,
+          6.0,
+          0.0
+        ],
+        "R2": [
+          11.75,
+          7.5,
+          0.0
+        ],
+        "R3": [
+          14.25,
+          7.5,
+          0.0
+        ],
+        "R4": [
+          14.0,
+          9.0,
+          0.0
+        ],
+        "R5": [
+          17.0,
+          4.0,
+          0.0
+        ],
+        "R6": [
+          19.25,
+          7.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "port_datum": {
+    "rotating_board_mm": [
+      32,
+      26,
+      1
+    ],
+    "connector_origin_mm": [
+      32,
+      13
+    ],
+    "angle_deg": 90,
+    "mate_direction": "+X",
+    "conservative_body_X_max_mm": 34.17,
+    "exact_supplier_matingface_alignment": "UNMET; this body-envelope edge is not an asserted mating plane",
+    "max_component_height_above_top_mm": 3.46,
+    "PCB_thickness_and_GCT_stake_assembly_gate": "1mm nominal; retain original supplier stake/NPTH geometry, fabrication and solder process not accepted"
+  },
+  "external_FPC_clamp_allocation": {
+    "each_end_width_depth_height_mm": [
+      20.5,
+      5,
+      2
+    ],
+    "status": "Engineering reserve only, outside back edge, not manufactured clamp or bend/strain-relief proof"
+  },
+  "scope": "Complete component lands/net allocation, unrouted two-zone prototype. No integrated sourcepod/collar fit, safety or thermal acceptance."
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "file": "cc1352r.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/cc1352r.pdf",
+    "status": "PDF fetched; SWRS196I pp9-10/35/81",
+    "bytes": 3175767,
+    "sha256": "d477d5873939ff66ad61baa58af71a8985305b1684be8b085348633d7cf98b93",
+    "is_zip": false
+  },
+  {
+    "file": "swra640.pdf",
+    "url": "https://www.ti.com/lit/an/swra640h/swra640h.pdf",
+    "status": "PDF fetched; Figure3-2 is CC1312R1, not exact R1 reference",
+    "bytes": 1976415,
+    "sha256": "a2fcd2c4cb2074ea4e6eaac63f14c53d50b107d4fa2b2d0e60cfb452837ee6f6",
+    "is_zip": false
+  },
+  {
+    "file": "isow1412.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/isow1412.pdf",
+    "status": "PDF fetched; SLLSF86D p6 bus absmax",
+    "bytes": 3995213,
+    "sha256": "3e46deca77909a2aab205ffae1ea0df4630a888126ef6dd60caaa08d6e4fa4b4",
+    "is_zip": false
+  },
+  {
+    "file": "dcrcwe3.pdf",
+    "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+    "status": "PDF fetched; candidate resistor only",
+    "bytes": 150402,
+    "sha256": "f3f8ad4a0e2962b809aa20273e80a0aedcd2a2c174a66024445e9b541a3996fd",
+    "is_zip": false
+  },
+  {
+    "file": "swrc345a.zip",
+    "url": "https://www.ti.com/lit/zip/SWRC345",
+    "status": "FAILED: login HTML, not ZIP",
+    "bytes": 55571,
+    "sha256": "494d6c486827a132e1b79cd84aae4372d77ee433eeb81a27bb3ac1281019a426",
+    "is_zip": false
+  },
+  {
+    "file": "swrc361.zip",
+    "url": "https://www.ti.com/lit/zip/SWRC361",
+    "status": "FAILED: login HTML, not ZIP",
+    "bytes": 55571,
+    "sha256": "cfef5f1fd3eb9f586c2a4c5617eb786dd04dbc945f91bfa55036d313f51c4ee3",
+    "is_zip": false
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "file": "swrc354.zip",
+    "url": "https://www.ti.com/lit/zip/swrc354",
+    "status": "TI CC1352EM-IPC Rev1.1.0 2018-03-15; valid ZIP",
+    "bytes": 2613900,
+    "sha256": "a3b8ce4f6735f003f41a98de4de631adc64121c11c1a4db85789a5d78a185678"
+  },
+  {
+    "file": "launchxl-r1-revb-e2e.zip",
+    "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/156/LAUNCHXL_2D00_CC1352R1.zip",
+    "status": "TI employee RevB layout attachment; valid ZIP",
+    "bytes": 1320658,
+    "sha256": "10e9f26c0bf5dfb53c52871b79dfa6b82bb412bf524a8f1321934e9643a200be"
+  },
+  {
+    "file": "swra629.pdf",
+    "url": "https://www.ti.com/lit/an/swra629a/swra629a.pdf",
+    "status": "SWRA629A June2019",
+    "bytes": 5397751,
+    "sha256": "41900fe9210c8bd8dded4162336aa9acd071452604df5ad6ba7fb05e4fb4dd52"
+  },
+  {
+    "file": "swru525.pdf",
+    "url": "https://www.ti.com/lit/ml/swru525e/swru525e.pdf",
+    "status": "SWRU525E quickstart; no schematic appendix",
+    "bytes": 21715446,
+    "sha256": "5566ce29a092644fef90c7c797f821a32abadb716ded76f382b43195b25615c7"
+  },
+  {
+    "file": "johanson0900.pdf",
+    "url": "https://www.johansontechnology.com/docs/800/0900PC15A0036001E_J3eS4Zu.pdf",
+    "status": "0900PC15A0036001E Revision2.0",
+    "bytes": 644974,
+    "sha256": "563b68f6e467fcf147581b7a18ee3beac1c3e0b682cf86b0e08d2d4d41e2d0ce"
+  },
+  {
+    "file": "xm054.pdf",
+    "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/156/SPDT_5F00_XM054_2D00_STD_2D00_E_2D00_-mid-power-20-dBm.pdf",
+    "status": "Murata XM054-02 PRELIMINARY; lifecycle gate",
+    "bytes": 371334,
+    "sha256": "1086bcec834c88ff3583fb33e3811741f8f808d771554b7ad21ec7224f6c1a6a"
+  },
+  {
+    "file": "swra227.pdf",
+    "url": "https://www.ti.com/lit/an/swra227e/swra227e.pdf",
+    "status": "SWRA227E antenna envelope; example match is868 not915",
+    "bytes": 1040975,
+    "sha256": "288e6eafff9d52f33d9b6493d40e88ad9498a9a10b612ceee050a92fd357fa9a"
+  },
+  {
+    "file": "swra351.pdf",
+    "url": "https://www.ti.com/lit/an/swra351b/swra351b.pdf",
+    "status": "Antenna selection quickguide",
+    "bytes": 376730,
+    "sha256": "ae19e15a683868b55d170a6aef711f1a64267e2895fe0e9bffa3c04a5a126b72"
+  },
+  {
+    "file": "swrc354/docs/SCHEMATIC - CC1352EM IPC Rev1_1.pdf",
+    "archive": "swrc354.zip",
+    "bytes": 32696,
+    "sha256": "3af75cb1361ff3f483d1d11dccc45e666bf2547923b6069978d3234f0e5a3af6"
+  },
+  {
+    "file": "swrc354/docs/BOM and PnP - CC1352EM IPC Rev1_1.xlsx",
+    "archive": "swrc354.zip",
+    "bytes": 12626,
+    "sha256": "92ac705ec14c80a035e1fb3c86465af3564c6e1e0ef768eb6896df1c4a41b22f"
+  },
+  {
+    "file": "swrc354/cadence/pstxnet.dat",
+    "archive": "swrc354.zip",
+    "bytes": 24133,
+    "sha256": "758c781b72dd321a406aa6c4980ee9eb09390ab74180421f495f986e11174849"
+  },
+  {
+    "file": "swrc354/docs/DRILL and STACKUP - CC1352EM IPC Rev1_1.pdf",
+    "archive": "swrc354.zip",
+    "bytes": 193966,
+    "sha256": "85354ca17e288f38d9cd8f4079c4eb26170165515eb49e05e9dd9ae326b43c7b"
+  }
+]

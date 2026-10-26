@@ -1,0 +1,27 @@
+reference,value,scope
+A101,0900AD47A2450001E PROTOTYPE TUNING REQUIRED,Captured prototype component; qualification open
+C101,GRM188R60J226MEA0D 22uF,Captured prototype component; qualification open
+C102,GRM188R60J226MEA0D 22uF,Captured prototype component; qualification open
+C103,GRM155R61C105KA12D 1uF,Captured prototype component; qualification open
+C104,GRM155R71E104KE14D 100nF,Captured prototype component; qualification open
+C105,GRM155R71E104KE14D 100nF,Captured prototype component; qualification open
+C106,GRM155R71E104KE14D 100nF,Captured prototype component; qualification open
+C107,GRM155R71E104KE14D 100nF,Captured prototype component; qualification open
+C108,GRM155R71E104KE14D 100nF,Captured prototype component; qualification open
+C109,GRM155R71E104KE14D 100nF,Captured prototype component; qualification open
+C110,GRM1555C1H120JA01D 12pF,Captured prototype component; qualification open
+C111,GRM1555C1H120JA01D 12pF,Captured prototype component; qualification open
+C112,GRM0335C1H101GA01D 100pF,Captured prototype component; qualification open
+C113,GRM0335C1H101GA01D 100pF,Captured prototype component; qualification open
+C115,GJM1555C1H1R0BB01D 1.0pF TUNE,Captured prototype component; qualification open
+C116,GJM1555C1H8R2DB01D 8.2pF TUNE,Captured prototype component; qualification open
+FL101,BLM18HE152SN1D,Captured prototype component; qualification open
+L101,MLZ2012N6R8LT000 6.8uH,Captured prototype component; qualification open
+L102,0402HP-2N7XGRW 2.7nH TUNE,Captured prototype component; qualification open
+L103,0402HP-5N1XGRW 5.1nH TUNE,Captured prototype component; qualification open
+L104,0402HP-12NXGRW 12nH TUNE,Captured prototype component; qualification open
+TR101,0900PC15A0036001E,Captured prototype component; qualification open
+U1,CC1352R1F3RGZR,Captured prototype component; qualification open
+X101,EXISTING power-service X_MCU / net contract,BOUNDARY NOT PHYSICAL
+Y101,FC-135 32.7680KA-AG0,Captured prototype component; qualification open
+Y102,NX2016SA 48MHz EXS00A-CS05517,Captured prototype component; qualification open

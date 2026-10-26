@@ -1,0 +1,3644 @@
+[
+  {
+    "ref": "C38",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      80.75,
+      29.0
+    ],
+    "side": "F",
+    "bounds": [
+      80.155,
+      28.105,
+      81.345,
+      29.895
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R11",
+    "value": "TNPW04023K32BEED 3320ohm 0.1% 25ppm",
+    "xy": [
+      49.25,
+      49.0
+    ],
+    "side": "F",
+    "bounds": [
+      48.205,
+      48.405,
+      50.295,
+      49.595
+    ],
+    "pads": {
+      "1": "EFUSE_ILM",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "H3",
+    "value": "Mechanical NPTH 2.2",
+    "xy": [
+      7.0,
+      48.0
+    ],
+    "side": "F",
+    "bounds": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pads": {
+      "": ""
+    }
+  },
+  {
+    "ref": "U7",
+    "value": "TPS7A0225PDBVR",
+    "xy": [
+      31.75,
+      48.0
+    ],
+    "side": "F",
+    "bounds": [
+      29.93,
+      45.855,
+      33.57,
+      50.145
+    ],
+    "pads": {
+      "1": "AON_RAW",
+      "2": "GND_USB",
+      "3": "AON_RAW",
+      "4": "unconnected-(U7-NC-Pad4)",
+      "5": "AON_2V5"
+    }
+  },
+  {
+    "ref": "BASE_C110",
+    "value": "GRM1555C1H120JA01D 12pF",
+    "xy": [
+      76.0,
+      29.0
+    ],
+    "side": "F",
+    "bounds": [
+      75.455,
+      27.981,
+      76.545,
+      30.019
+    ],
+    "pads": {
+      "": "",
+      "1": "X32K_Q1",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "U30",
+    "value": "SN74LVC1G11DCKR",
+    "xy": [
+      79.5,
+      43.0
+    ],
+    "side": "F",
+    "bounds": [
+      78.13,
+      41.155,
+      80.87,
+      44.845
+    ],
+    "pads": {
+      "1": "SOURCE_SENSE",
+      "2": "GND_USB",
+      "3": "CC_ALLOW",
+      "4": "SOURCE_VALID",
+      "5": "AON_2V5",
+      "6": "AON_OK"
+    }
+  },
+  {
+    "ref": "C3",
+    "value": "GRM155R71H103KA88D 10nF 50V X7R",
+    "xy": [
+      60.25,
+      40.0
+    ],
+    "side": "F",
+    "bounds": [
+      59.655,
+      39.105,
+      60.845,
+      40.895
+    ],
+    "pads": {
+      "1": "EFUSE_TIMER",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_R4",
+    "value": "CRCW04021K00FKED 1k 1%",
+    "xy": [
+      25.0,
+      46.0
+    ],
+    "side": "F",
+    "bounds": [
+      24.405,
+      44.88,
+      25.595,
+      47.12
+    ],
+    "pads": {
+      "1": "DMX_POWER_EN",
+      "2": "ISOW_EN_PIN"
+    }
+  },
+  {
+    "ref": "BASE_C111",
+    "value": "GRM1555C1H120JA01D 12pF",
+    "xy": [
+      76.0,
+      32.0
+    ],
+    "side": "F",
+    "bounds": [
+      75.455,
+      30.981,
+      76.545,
+      33.019
+    ],
+    "pads": {
+      "": "",
+      "1": "X32K_Q2",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R23",
+    "value": "TNPW0402100KBEED 100000ohm 0.1% 25ppm",
+    "xy": [
+      72.0,
+      31.25
+    ],
+    "side": "F",
+    "bounds": [
+      71.405,
+      30.205,
+      72.595,
+      32.295
+    ],
+    "pads": {
+      "1": "BOOST_FB",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_Y102",
+    "value": "NX2016SA 48MHz EXS00A-CS05517",
+    "xy": [
+      65.0,
+      26.0
+    ],
+    "side": "F",
+    "bounds": [
+      63.605,
+      24.805,
+      66.395,
+      27.195
+    ],
+    "pads": {
+      "1": "X48M_P",
+      "2": "GND_USB",
+      "3": "X48M_N",
+      "4": "GND_USB"
+    }
+  },
+  {
+    "ref": "H1",
+    "value": "Mechanical NPTH 2.2",
+    "xy": [
+      7.0,
+      26.0
+    ],
+    "side": "F",
+    "bounds": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pads": {
+      "": ""
+    }
+  },
+  {
+    "ref": "R21",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      62.25,
+      24.5
+    ],
+    "side": "F",
+    "bounds": [
+      61.205,
+      23.905,
+      63.295,
+      25.095
+    ],
+    "pads": {
+      "1": "VCHG_FB",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_R1",
+    "value": "CRCW040210K0FKED 10k 1%",
+    "xy": [
+      12.0,
+      44.0
+    ],
+    "side": "F",
+    "bounds": [
+      11.405,
+      42.88,
+      12.595,
+      45.12
+    ],
+    "pads": {
+      "1": "DMX_DE_SAFE",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R27",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      81.5,
+      49.25
+    ],
+    "side": "F",
+    "bounds": [
+      80.455,
+      48.655,
+      82.545,
+      49.845
+    ],
+    "pads": {
+      "1": "CAP_START_SENSE",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_C113",
+    "value": "GRM0335C1H101GA01D 100pF",
+    "xy": [
+      75.0,
+      38.0
+    ],
+    "side": "F",
+    "bounds": [
+      74.505,
+      37.25,
+      75.495,
+      38.75
+    ],
+    "pads": {
+      "": "",
+      "1": "RX_TX",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C45",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      63.5,
+      44.25
+    ],
+    "side": "F",
+    "bounds": [
+      62.605,
+      43.655,
+      64.395,
+      44.845
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "U26",
+    "value": "TPS3808G33DBVR",
+    "xy": [
+      45.0,
+      39.0
+    ],
+    "side": "F",
+    "bounds": [
+      42.855,
+      37.18,
+      47.145,
+      40.82
+    ],
+    "pads": {
+      "1": "CC_ALLOW",
+      "2": "GND_USB",
+      "3": "CC_ADVERT_OK",
+      "4": "unconnected-(U26-CT-Pad4)",
+      "5": "CC_3V3",
+      "6": "CC_3V3"
+    }
+  },
+  {
+    "ref": "BASE_L102",
+    "value": "0402HP-2N7XGRW 2.7nH TUNE",
+    "xy": [
+      82.0,
+      32.6
+    ],
+    "side": "F",
+    "bounds": [
+      81.09,
+      31.95,
+      82.91,
+      33.25
+    ],
+    "pads": {
+      "1": "RF_2G4_50",
+      "2": "ANT_2G4"
+    }
+  },
+  {
+    "ref": "R25",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      75.0,
+      39.75
+    ],
+    "side": "F",
+    "bounds": [
+      73.955,
+      39.155,
+      76.045,
+      40.345
+    ],
+    "pads": {
+      "1": "CAP_SENSE",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C9",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "xy": [
+      67.75,
+      25.25
+    ],
+    "side": "F",
+    "bounds": [
+      66.805,
+      23.655,
+      68.695,
+      26.845
+    ],
+    "pads": {
+      "1": "BACKUP_RAW",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_C3",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      25.0,
+      28.0
+    ],
+    "side": "F",
+    "bounds": [
+      24.455,
+      26.981,
+      25.545,
+      29.019
+    ],
+    "pads": {
+      "": "",
+      "1": "ISO_3V3",
+      "2": "GND_ISO"
+    }
+  },
+  {
+    "ref": "U27",
+    "value": "TPS3808G01DBVR",
+    "xy": [
+      78.0,
+      48.5
+    ],
+    "side": "F",
+    "bounds": [
+      75.855,
+      46.68,
+      80.145,
+      50.32
+    ],
+    "pads": {
+      "1": "VBUS_GOOD_3V3",
+      "2": "GND_USB",
+      "3": "BUCK_PG_BUF",
+      "4": "unconnected-(U27-CT-Pad4)",
+      "5": "SOURCE_VALID",
+      "6": "AON_2V5"
+    }
+  },
+  {
+    "ref": "U8",
+    "value": "TPS3700DDCR",
+    "xy": [
+      22.25,
+      48.25
+    ],
+    "side": "F",
+    "bounds": [
+      20.43,
+      46.055,
+      24.07,
+      50.445
+    ],
+    "pads": {
+      "1": "CAP_OK_OD",
+      "2": "GND_USB",
+      "3": "CAP_SENSE",
+      "4": "CAP_START_SENSE",
+      "5": "AON_2V5",
+      "6": "CAP_START_N_OD"
+    }
+  },
+  {
+    "ref": "BASE_U1",
+    "value": "CC1352R1F3RGZR",
+    "xy": [
+      67.0,
+      33.0
+    ],
+    "side": "F",
+    "bounds": [
+      62.955,
+      28.955,
+      71.045,
+      37.045
+    ],
+    "pads": {
+      "": "",
+      "1": "RF_P_2_4GHZ",
+      "2": "RF_N_2_4GHZ",
+      "3": "RF_P_SUB_1GHZ",
+      "4": "RF_N_SUB_1GHZ",
+      "5": "RX_TX",
+      "6": "X32K_Q1",
+      "7": "X32K_Q2",
+      "8": "ROM_BOOT_STRAP",
+      "9": "SERVICE_N_DISTINCT_GPIO",
+      "10": "MCU_DE_REQUEST",
+      "11": "MCU_ISO_REQUEST",
+      "12": "MCU_RE_N",
+      "13": "MCU_VDDS",
+      "14": "SPI_MISO",
+      "15": "SPI_MOSI",
+      "16": "SPI_SCK",
+      "17": "SPI_CS_N",
+      "18": "MCU_DMX_RX",
+      "19": "MCU_DMX_TX",
+      "20": "VBUS_GOOD_3V3",
+      "21": "BUCK_PG",
+      "22": "MCU_VDDS",
+      "23": "DCOUPL",
+      "24": "TMSC",
+      "25": "TCKC",
+      "26": "mcu-radio_unconnected-(U1-DIO_16-Pad26)",
+      "27": "mcu-radio_unconnected-(U1-DIO_17-Pad27)",
+      "28": "mcu-radio_unconnected-(U1-DIO_18-Pad28)",
+      "29": "mcu-radio_unconnected-(U1-DIO_19-Pad29)",
+      "30": "mcu-radio_unconnected-(U1-DIO_20-Pad30)",
+      "31": "mcu-radio_unconnected-(U1-DIO_21-Pad31)",
+      "32": "mcu-radio_unconnected-(U1-DIO_22-Pad32)",
+      "33": "DCDC_SW",
+      "34": "MCU_VDDS",
+      "35": "RESET_OK",
+      "36": "mcu-radio_unconnected-(U1-DIO_23-Pad36)",
+      "37": "mcu-radio_unconnected-(U1-DIO_24-Pad37)",
+      "38": "mcu-radio_unconnected-(U1-DIO_25-Pad38)",
+      "39": "mcu-radio_unconnected-(U1-DIO_26-Pad39)",
+      "40": "mcu-radio_unconnected-(U1-DIO_27-Pad40)",
+      "41": "mcu-radio_unconnected-(U1-DIO_28-Pad41)",
+      "42": "mcu-radio_unconnected-(U1-DIO_29-Pad42)",
+      "43": "mcu-radio_unconnected-(U1-DIO_30-Pad43)",
+      "44": "MCU_VDDS",
+      "45": "MCU_VDDR",
+      "46": "X48M_N",
+      "47": "X48M_P",
+      "48": "MCU_VDDR",
+      "49": "GND_USB"
+    }
+  },
+  {
+    "ref": "R5",
+    "value": "TNPW0805909KBEEA 909000ohm 0.1% 25ppm",
+    "xy": [
+      40.0,
+      42.75
+    ],
+    "side": "F",
+    "bounds": [
+      38.98,
+      41.055,
+      41.02,
+      44.445
+    ],
+    "pads": {
+      "1": "VBUS_RAW",
+      "2": "CC_VBUS_DET"
+    }
+  },
+  {
+    "ref": "U17",
+    "value": "SN74LVC2G08DCUR",
+    "xy": [
+      56.25,
+      40.75
+    ],
+    "side": "F",
+    "bounds": [
+      54.755,
+      38.48,
+      57.745,
+      43.02
+    ],
+    "pads": {
+      "1": "BUCK_EN",
+      "2": "RESET_OK",
+      "3": "DMX_DE_SAFE",
+      "4": "GND_USB",
+      "5": "MCU_DE_REQUEST",
+      "6": "SYS_READY",
+      "7": "SYS_READY",
+      "8": "SYS_3V3"
+    }
+  },
+  {
+    "ref": "J1",
+    "value": "USB4125-GF-A",
+    "xy": [
+      42.7,
+      47.6
+    ],
+    "side": "F",
+    "bounds": [
+      37.535,
+      46.455,
+      47.865,
+      54.295
+    ],
+    "pads": {
+      "A5": "CC1",
+      "A9": "VBUS_RAW",
+      "A12": "GND_USB",
+      "B5": "CC2",
+      "B9": "VBUS_RAW",
+      "B12": "GND_USB",
+      "SH": "GND_USB"
+    }
+  },
+  {
+    "ref": "U9",
+    "value": "TPS3839G25DBZR",
+    "xy": [
+      16.75,
+      47.5
+    ],
+    "side": "F",
+    "bounds": [
+      14.935,
+      45.505,
+      18.565,
+      49.495
+    ],
+    "pads": {
+      "1": "GND_USB",
+      "2": "AON_OK",
+      "3": "AON_2V5"
+    }
+  },
+  {
+    "ref": "C2",
+    "value": "GRM155R71H103KA88D 10nF 50V X7R",
+    "xy": [
+      14.0,
+      49.5
+    ],
+    "side": "F",
+    "bounds": [
+      13.405,
+      48.605,
+      14.595,
+      50.395
+    ],
+    "pads": {
+      "1": "EFUSE_DVDT_C",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R9",
+    "value": "TNPW0805249KBEEA 249000ohm 0.1% 25ppm",
+    "xy": [
+      49.25,
+      46.5
+    ],
+    "side": "F",
+    "bounds": [
+      48.23,
+      44.805,
+      50.27,
+      48.195
+    ],
+    "pads": {
+      "1": "CC_ALLOW",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R3",
+    "value": "TNPW040222K1BEED 22100ohm 0.1% 25ppm",
+    "xy": [
+      29.0,
+      48.5
+    ],
+    "side": "F",
+    "bounds": [
+      28.405,
+      47.455,
+      29.595,
+      49.545
+    ],
+    "pads": {
+      "1": "AON_USB_LIMITED",
+      "2": "AON_PRIORITY"
+    }
+  },
+  {
+    "ref": "R16",
+    "value": "TNPW0402100KBEED 100000ohm 0.1% 25ppm",
+    "xy": [
+      7.0,
+      44.0
+    ],
+    "side": "F",
+    "bounds": [
+      6.405,
+      42.955,
+      7.595,
+      45.045
+    ],
+    "pads": {
+      "1": "LIMITED_5V",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R8",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      19.5,
+      46.0
+    ],
+    "side": "F",
+    "bounds": [
+      18.905,
+      44.955,
+      20.095,
+      47.045
+    ],
+    "pads": {
+      "1": "CC_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "L2",
+    "value": "XFL4020-222MEC 2.2uH 20%",
+    "xy": [
+      55.75,
+      45.75
+    ],
+    "side": "F",
+    "bounds": [
+      53.29,
+      43.305,
+      58.21,
+      48.195
+    ],
+    "pads": {
+      "1": "BUCK_SW",
+      "2": "SYS_3V3"
+    }
+  },
+  {
+    "ref": "C35",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      80.25,
+      33.0
+    ],
+    "side": "F",
+    "bounds": [
+      79.655,
+      32.105,
+      80.845,
+      33.895
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_A101",
+    "value": "0900AD47A2450001E PROTOTYPE TUNING REQUIRED",
+    "xy": [
+      91.6,
+      37.0
+    ],
+    "side": "F",
+    "bounds": [
+      89.455,
+      31.455,
+      93.745,
+      42.545
+    ],
+    "pads": {
+      "1": "ANT_2G4",
+      "2": "mcu-radio_unconnected-(A101-NC_LAND_MUST_SOLDER-Pad2)",
+      "3": "mcu-radio_unconnected-(A101-NC_LAND_MUST_SOLDER-Pad3)",
+      "4": "ANT_915",
+      "5": "mcu-radio_unconnected-(A101-NC_LAND_MUST_SOLDER-Pad5)",
+      "6": "mcu-radio_unconnected-(A101-NC_LAND_MUST_SOLDER-Pad6)",
+      "7": "mcu-radio_unconnected-(A101-NC_LAND_MUST_SOLDER-Pad7)",
+      "8": "mcu-radio_unconnected-(A101-NC_LAND_MUST_SOLDER-Pad8)"
+    }
+  },
+  {
+    "ref": "C30",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      78.0,
+      45.75
+    ],
+    "side": "F",
+    "bounds": [
+      77.105,
+      45.155,
+      78.895,
+      46.345
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_C2",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "xy": [
+      22.0,
+      44.5
+    ],
+    "side": "F",
+    "bounds": [
+      20.405,
+      43.555,
+      23.595,
+      45.445
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "U2",
+    "value": "AT25SF161B-MHB-T",
+    "xy": [
+      32.0,
+      41.2
+    ],
+    "side": "F",
+    "bounds": [
+      28.405,
+      38.355,
+      35.595,
+      44.045
+    ],
+    "pads": {
+      "": "",
+      "1": "SPI_CS_N",
+      "2": "SPI_MISO",
+      "3": "FLASH_WP_N",
+      "4": "GND_USB",
+      "5": "SPI_MOSI",
+      "6": "SPI_SCK",
+      "7": "FLASH_HOLD_N",
+      "8": "SYS_3V3",
+      "9": "GND_USB"
+    }
+  },
+  {
+    "ref": "C32",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      32.0,
+      45.0
+    ],
+    "side": "F",
+    "bounds": [
+      31.105,
+      44.405,
+      32.895,
+      45.595
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C36",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      80.5,
+      25.0
+    ],
+    "side": "F",
+    "bounds": [
+      79.905,
+      24.105,
+      81.095,
+      25.895
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_R3",
+    "value": "CRCW040210K0FKED 10k 1%",
+    "xy": [
+      27.0,
+      43.0
+    ],
+    "side": "F",
+    "bounds": [
+      26.405,
+      41.88,
+      27.595,
+      44.12
+    ],
+    "pads": {
+      "1": "DMX_POWER_EN",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_C101",
+    "value": "GRM188R60J226MEA0D 22uF",
+    "xy": [
+      60.0,
+      45.0
+    ],
+    "side": "F",
+    "bounds": [
+      58.63,
+      44.255,
+      61.37,
+      45.745
+    ],
+    "pads": {
+      "": "",
+      "1": "MCU_VDDS",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R17",
+    "value": "TNPW0402100KBEED 100000ohm 0.1% 25ppm",
+    "xy": [
+      59.0,
+      38.25
+    ],
+    "side": "F",
+    "bounds": [
+      57.955,
+      37.655,
+      60.045,
+      38.845
+    ],
+    "pads": {
+      "1": "BOOST_3V9",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R6",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      37.0,
+      38.75
+    ],
+    "side": "F",
+    "bounds": [
+      35.955,
+      38.155,
+      38.045,
+      39.345
+    ],
+    "pads": {
+      "1": "CC_3V3",
+      "2": "CC_OUT1"
+    }
+  },
+  {
+    "ref": "BASE_C105",
+    "value": "GRM155R71E104KE14D 100nF",
+    "xy": [
+      62.0,
+      37.5
+    ],
+    "side": "F",
+    "bounds": [
+      61.455,
+      36.481,
+      62.545,
+      38.519
+    ],
+    "pads": {
+      "": "",
+      "1": "MCU_VDDS",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_C107",
+    "value": "GRM155R71E104KE14D 100nF",
+    "xy": [
+      62.0,
+      30.0
+    ],
+    "side": "F",
+    "bounds": [
+      61.455,
+      28.981,
+      62.545,
+      31.019
+    ],
+    "pads": {
+      "": "",
+      "1": "MCU_VDDS",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C34",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      81.75,
+      43.25
+    ],
+    "side": "F",
+    "bounds": [
+      81.155,
+      42.355,
+      82.345,
+      44.145
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "U28",
+    "value": "SN74LVC1G14DCKR",
+    "xy": [
+      60.0,
+      48.0
+    ],
+    "side": "F",
+    "bounds": [
+      58.63,
+      46.13,
+      61.37,
+      49.87
+    ],
+    "pads": {
+      "1": "unconnected-(U28-NC-Pad1)",
+      "2": "CC_OUT1",
+      "3": "GND_USB",
+      "4": "CC_ADVERT_OK",
+      "5": "CC_3V3"
+    }
+  },
+  {
+    "ref": "U10",
+    "value": "TPS3700DDCR",
+    "xy": [
+      70.25,
+      43.25
+    ],
+    "side": "F",
+    "bounds": [
+      68.055,
+      41.43,
+      72.445,
+      45.07
+    ],
+    "pads": {
+      "1": "SOURCE_SENSE_OD",
+      "2": "GND_USB",
+      "3": "USB_SENSE",
+      "4": "MAIN_SENSE",
+      "5": "AON_2V5",
+      "6": "MAIN_NOT_READY_OD"
+    }
+  },
+  {
+    "ref": "R19",
+    "value": "TNPW040211K9BEED 11900ohm 0.1% 25ppm",
+    "xy": [
+      61.75,
+      35.0
+    ],
+    "side": "F",
+    "bounds": [
+      61.155,
+      33.955,
+      62.345,
+      36.045
+    ],
+    "pads": {
+      "1": "ICHG_FILTER",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "S1",
+    "value": "PCB normally-open SERVICE contact",
+    "xy": [
+      9.5,
+      44.25
+    ],
+    "side": "F",
+    "bounds": [
+      7.955,
+      43.455,
+      11.045,
+      45.045
+    ],
+    "pads": {
+      "1": "SERVICE_N_DISTINCT_GPIO",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_U5",
+    "value": "ISOW1412DFMR",
+    "xy": [
+      18.0,
+      36.0
+    ],
+    "side": "F",
+    "bounds": [
+      11.04,
+      29.805,
+      24.96,
+      42.195
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "MCU_DMX_TX",
+      "3": "DMX_DE_SAFE",
+      "4": "MCU_DMX_RX",
+      "5": "MCU_RE_N",
+      "6": "GND_USB",
+      "7": "dmx_unconnected-(U5-OUT-Pad7)",
+      "8": "ISOW_EN_PIN",
+      "9": "SYS_3V3",
+      "10": "GND_USB",
+      "11": "GND_ISO",
+      "12": "ISO_3V3",
+      "13": "GND_ISO",
+      "14": "GND_ISO",
+      "15": "GND_ISO",
+      "16": "ISO_3V3",
+      "17": "DMX_P",
+      "18": "DMX_N",
+      "19": "DMX_N",
+      "20": "DMX_P"
+    }
+  },
+  {
+    "ref": "U33",
+    "value": "SN74LVC2G132DCUR",
+    "xy": [
+      77.0,
+      34.75
+    ],
+    "side": "F",
+    "bounds": [
+      74.73,
+      33.255,
+      79.27,
+      36.245
+    ],
+    "pads": {
+      "1": "SOURCE_VALID",
+      "2": "CAP_START_OK",
+      "3": "CHARGE_DISABLE",
+      "4": "GND_USB",
+      "5": "SOURCE_VALID",
+      "6": "BUCK_PG",
+      "7": "CAP_SET_N",
+      "8": "AON_2V5"
+    }
+  },
+  {
+    "ref": "R22",
+    "value": "TNPW0805562KBEEA 562000ohm 0.1% 25ppm",
+    "xy": [
+      62.25,
+      27.0
+    ],
+    "side": "F",
+    "bounds": [
+      61.23,
+      25.305,
+      63.27,
+      28.695
+    ],
+    "pads": {
+      "1": "BOOST_3V9",
+      "2": "BOOST_FB"
+    }
+  },
+  {
+    "ref": "J4",
+    "value": "Fabricated six-pad cJTAG/reset/ROM; VREF sense only",
+    "xy": [
+      11.5,
+      48.0
+    ],
+    "side": "F",
+    "bounds": [
+      9.955,
+      45.705,
+      13.045,
+      50.295
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "GND_USB",
+      "3": "TMSC",
+      "4": "TCKC",
+      "5": "MANUAL_RESET_N",
+      "6": "ROM_BOOT_STRAP"
+    }
+  },
+  {
+    "ref": "BASE_C115",
+    "value": "GJM1555C1H1R0BB01D 1.0pF TUNE",
+    "xy": [
+      82.6,
+      30.5
+    ],
+    "side": "F",
+    "bounds": [
+      82.03,
+      29.605,
+      83.17,
+      31.395
+    ],
+    "pads": {
+      "1": "ANT_2G4",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_C4",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "xy": [
+      11.8,
+      26.4
+    ],
+    "side": "F",
+    "bounds": [
+      10.855,
+      24.805,
+      12.745,
+      27.995
+    ],
+    "pads": {
+      "1": "ISO_3V3",
+      "2": "GND_ISO"
+    }
+  },
+  {
+    "ref": "U40",
+    "value": "TPS2116DRLR",
+    "xy": [
+      45.5,
+      43.0
+    ],
+    "side": "F",
+    "bounds": [
+      44.13,
+      41.605,
+      46.87,
+      44.395
+    ],
+    "pads": {
+      "1": "GND_USB",
+      "2": "AON_RAW",
+      "3": "AON_USB_LIMITED",
+      "4": "AON_PRIORITY",
+      "5": "AON_USB_LIMITED",
+      "6": "BOOST_3V9",
+      "7": "AON_RAW",
+      "8": "unconnected-(U40-ST-Pad8)"
+    }
+  },
+  {
+    "ref": "BASE_R_TERM1",
+    "value": "CRCW1206240RFKEA 240R 1% 0.25W",
+    "xy": [
+      6.5,
+      32.2
+    ],
+    "side": "F",
+    "bounds": [
+      5.305,
+      30.105,
+      7.695,
+      34.295
+    ],
+    "pads": {
+      "1": "TERM_SW",
+      "2": "DMX_N"
+    }
+  },
+  {
+    "ref": "BASE_FL101",
+    "value": "BLM18HE152SN1D",
+    "xy": [
+      60.0,
+      42.0
+    ],
+    "side": "F",
+    "bounds": [
+      58.63,
+      41.255,
+      61.37,
+      42.745
+    ],
+    "pads": {
+      "": "",
+      "1": "MCU_VDDS",
+      "2": "SYS_3V3"
+    }
+  },
+  {
+    "ref": "BASE_R2",
+    "value": "CRCW040210K0FKED 10k 1%",
+    "xy": [
+      15.0,
+      44.0
+    ],
+    "side": "F",
+    "bounds": [
+      14.405,
+      42.88,
+      15.595,
+      45.12
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "MCU_RE_N"
+    }
+  },
+  {
+    "ref": "U3",
+    "value": "BQ25173DSGR",
+    "xy": [
+      28.0,
+      45.75
+    ],
+    "side": "F",
+    "bounds": [
+      26.505,
+      44.405,
+      29.495,
+      47.095
+    ],
+    "pads": {
+      "1": "LIMITED_5V",
+      "2": "ICHG_PIN",
+      "3": "CHARGE_DISABLE",
+      "4": "GND_USB",
+      "5": "unconnected-(U3-STAT-Pad5)",
+      "6": "unconnected-(U3-PG-Pad6)",
+      "7": "VCHG_FB",
+      "8": "CAP_POS",
+      "9": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_C109",
+    "value": "GRM155R71E104KE14D 100nF",
+    "xy": [
+      69.8,
+      27.6
+    ],
+    "side": "F",
+    "bounds": [
+      68.781,
+      27.055,
+      70.819,
+      28.145
+    ],
+    "pads": {
+      "": "",
+      "1": "MCU_VDDR",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C24",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      14.0,
+      47.5
+    ],
+    "side": "F",
+    "bounds": [
+      13.405,
+      46.605,
+      14.595,
+      48.395
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "H2",
+    "value": "Mechanical NPTH 2.2",
+    "xy": [
+      73.0,
+      26.0
+    ],
+    "side": "F",
+    "bounds": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pads": {
+      "": ""
+    }
+  },
+  {
+    "ref": "R12",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      51.25,
+      44.25
+    ],
+    "side": "F",
+    "bounds": [
+      50.655,
+      43.205,
+      51.845,
+      45.295
+    ],
+    "pads": {
+      "1": "LIMITED_5V",
+      "2": "EFUSE_PGTH"
+    }
+  },
+  {
+    "ref": "BASE_C1",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      18.0,
+      44.0
+    ],
+    "side": "F",
+    "bounds": [
+      16.981,
+      43.455,
+      19.019,
+      44.545
+    ],
+    "pads": {
+      "": "",
+      "1": "SYS_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_C103",
+    "value": "GRM155R61C105KA12D 1uF",
+    "xy": [
+      71.0,
+      40.0
+    ],
+    "side": "F",
+    "bounds": [
+      70.455,
+      38.981,
+      71.545,
+      41.019
+    ],
+    "pads": {
+      "": "",
+      "1": "DCOUPL",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "H4",
+    "value": "Mechanical NPTH 2.2",
+    "xy": [
+      73.0,
+      48.0
+    ],
+    "side": "F",
+    "bounds": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pads": {
+      "": ""
+    }
+  },
+  {
+    "ref": "C29",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      77.25,
+      42.75
+    ],
+    "side": "F",
+    "bounds": [
+      76.655,
+      41.855,
+      77.845,
+      43.645
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R13",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      51.75,
+      49.25
+    ],
+    "side": "F",
+    "bounds": [
+      50.705,
+      48.655,
+      52.795,
+      49.845
+    ],
+    "pads": {
+      "1": "EFUSE_PGTH",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C44",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      58.75,
+      40.0
+    ],
+    "side": "F",
+    "bounds": [
+      58.155,
+      39.105,
+      59.345,
+      40.895
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "U18",
+    "value": "SN74LVC2G08DCUR",
+    "xy": [
+      68.5,
+      47.75
+    ],
+    "side": "F",
+    "bounds": [
+      67.005,
+      45.48,
+      69.995,
+      50.02
+    ],
+    "pads": {
+      "1": "MCU_ISO_REQUEST",
+      "2": "SYS_READY",
+      "3": "unconnected-(U18-2Y-Pad3)",
+      "4": "GND_USB",
+      "5": "GND_USB",
+      "6": "GND_USB",
+      "7": "DMX_POWER_EN",
+      "8": "SYS_3V3"
+    }
+  },
+  {
+    "ref": "BASE_C102",
+    "value": "GRM188R60J226MEA0D 22uF",
+    "xy": [
+      66.0,
+      44.0
+    ],
+    "side": "F",
+    "bounds": [
+      64.63,
+      43.255,
+      67.37,
+      44.745
+    ],
+    "pads": {
+      "": "",
+      "1": "MCU_VDDR",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C28",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      69.25,
+      40.5
+    ],
+    "side": "F",
+    "bounds": [
+      68.355,
+      39.905,
+      70.145,
+      41.095
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R1",
+    "value": "TNPW1206150RBEEA 150ohm 0.1% 25ppm",
+    "xy": [
+      65.25,
+      38.5
+    ],
+    "side": "F",
+    "bounds": [
+      62.93,
+      37.305,
+      67.57,
+      39.695
+    ],
+    "pads": {
+      "1": "VBUS_RAW",
+      "2": "CC_RAW"
+    }
+  },
+  {
+    "ref": "R24",
+    "value": "TNPW040232K4BEED 32400ohm 0.1% 25ppm",
+    "xy": [
+      69.5,
+      25.75
+    ],
+    "side": "F",
+    "bounds": [
+      68.905,
+      24.705,
+      70.095,
+      26.795
+    ],
+    "pads": {
+      "1": "CAP_POS",
+      "2": "CAP_SENSE"
+    }
+  },
+  {
+    "ref": "C25",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      37.25,
+      40.25
+    ],
+    "side": "F",
+    "bounds": [
+      36.355,
+      39.655,
+      38.145,
+      40.845
+    ],
+    "pads": {
+      "1": "CC_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_C104",
+    "value": "GRM155R71E104KE14D 100nF",
+    "xy": [
+      70.0,
+      38.3
+    ],
+    "side": "F",
+    "bounds": [
+      68.981,
+      37.755,
+      71.019,
+      38.845
+    ],
+    "pads": {
+      "": "",
+      "1": "MCU_VDDS",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C27",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      19.5,
+      48.25
+    ],
+    "side": "F",
+    "bounds": [
+      18.905,
+      47.355,
+      20.095,
+      49.145
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R20",
+    "value": "TNPW040222K5BEED 22500ohm 0.1% 25ppm",
+    "xy": [
+      61.75,
+      32.5
+    ],
+    "side": "F",
+    "bounds": [
+      61.155,
+      31.455,
+      62.345,
+      33.545
+    ],
+    "pads": {
+      "1": "CAP_POS",
+      "2": "VCHG_FB"
+    }
+  },
+  {
+    "ref": "C8",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "xy": [
+      27.25,
+      39.5
+    ],
+    "side": "F",
+    "bounds": [
+      26.305,
+      37.905,
+      28.195,
+      41.095
+    ],
+    "pads": {
+      "1": "BACKUP_RAW",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C33",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      57.5,
+      49.0
+    ],
+    "side": "F",
+    "bounds": [
+      56.605,
+      48.405,
+      58.395,
+      49.595
+    ],
+    "pads": {
+      "1": "CC_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_Y101",
+    "value": "FC-135 32.7680KA-AG0",
+    "xy": [
+      74.0,
+      30.0
+    ],
+    "side": "F",
+    "bounds": [
+      72.805,
+      27.955,
+      75.195,
+      32.045
+    ],
+    "pads": {
+      "1": "X32K_Q1",
+      "2": "X32K_Q2"
+    }
+  },
+  {
+    "ref": "C11",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "xy": [
+      81.5,
+      46.75
+    ],
+    "side": "F",
+    "bounds": [
+      80.555,
+      45.155,
+      82.445,
+      48.345
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_L104",
+    "value": "0402HP-12NXGRW 12nH TUNE",
+    "xy": [
+      82.0,
+      41.4
+    ],
+    "side": "F",
+    "bounds": [
+      81.09,
+      40.75,
+      82.91,
+      42.05
+    ],
+    "pads": {
+      "1": "RF_915_50",
+      "2": "ANT_915"
+    }
+  },
+  {
+    "ref": "BASE_C108",
+    "value": "GRM155R71E104KE14D 100nF",
+    "xy": [
+      67.5,
+      27.6
+    ],
+    "side": "F",
+    "bounds": [
+      66.481,
+      27.055,
+      68.519,
+      28.145
+    ],
+    "pads": {
+      "": "",
+      "1": "MCU_VDDR",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C26",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      43.0,
+      41.75
+    ],
+    "side": "F",
+    "bounds": [
+      42.105,
+      41.155,
+      43.895,
+      42.345
+    ],
+    "pads": {
+      "1": "CC_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C6",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "xy": [
+      54.75,
+      49.5
+    ],
+    "side": "F",
+    "bounds": [
+      53.155,
+      48.555,
+      56.345,
+      50.445
+    ],
+    "pads": {
+      "1": "LIMITED_5V",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R18",
+    "value": "TNPW0402100RBEED 100ohm 0.1% 25ppm",
+    "xy": [
+      5.5,
+      44.0
+    ],
+    "side": "F",
+    "bounds": [
+      4.905,
+      42.955,
+      6.095,
+      45.045
+    ],
+    "pads": {
+      "1": "ICHG_PIN",
+      "2": "ICHG_FILTER"
+    }
+  },
+  {
+    "ref": "BASE_L101",
+    "value": "MLZ2012N6R8LT000 6.8uH",
+    "xy": [
+      66.0,
+      41.0
+    ],
+    "side": "F",
+    "bounds": [
+      64.23,
+      39.98,
+      67.77,
+      42.02
+    ],
+    "pads": {
+      "": "",
+      "1": "DCDC_SW",
+      "2": "MCU_VDDR"
+    }
+  },
+  {
+    "ref": "U34",
+    "value": "SN74LVC2G132DCUR",
+    "xy": [
+      78.25,
+      29.0
+    ],
+    "side": "F",
+    "bounds": [
+      76.755,
+      26.73,
+      79.745,
+      31.27
+    ],
+    "pads": {
+      "1": "CAP_SET_N",
+      "2": "CAP_BAR",
+      "3": "CAP_BAR",
+      "4": "GND_USB",
+      "5": "CAP_RESET_N",
+      "6": "CAP_ARM",
+      "7": "CAP_ARM",
+      "8": "AON_2V5"
+    }
+  },
+  {
+    "ref": "R29",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      82.0,
+      25.25
+    ],
+    "side": "F",
+    "bounds": [
+      81.405,
+      24.205,
+      82.595,
+      26.295
+    ],
+    "pads": {
+      "1": "USB_SENSE",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_R_TERM2",
+    "value": "CRCW1206240RFKEA 240R 1% 0.25W",
+    "xy": [
+      9.2,
+      32.2
+    ],
+    "side": "F",
+    "bounds": [
+      8.005,
+      30.105,
+      10.395,
+      34.295
+    ],
+    "pads": {
+      "1": "TERM_SW",
+      "2": "DMX_N"
+    }
+  },
+  {
+    "ref": "R4",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      25.0,
+      44.0
+    ],
+    "side": "F",
+    "bounds": [
+      23.955,
+      43.405,
+      26.045,
+      44.595
+    ],
+    "pads": {
+      "1": "AON_PRIORITY",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "U32",
+    "value": "SN74LVC1G11DCKR",
+    "xy": [
+      77.75,
+      25.0
+    ],
+    "side": "F",
+    "bounds": [
+      75.905,
+      23.63,
+      79.595,
+      26.37
+    ],
+    "pads": {
+      "1": "CAP_OK",
+      "2": "GND_USB",
+      "3": "AON_OK",
+      "4": "CAP_RESET_N",
+      "5": "AON_2V5",
+      "6": "CAP_SAFE_PATH"
+    }
+  },
+  {
+    "ref": "BASE_S_TERM",
+    "value": "PCM12SMTR OFF=1-2 / ON=2-3",
+    "xy": [
+      18.0,
+      26.6
+    ],
+    "side": "F",
+    "bounds": [
+      13.555,
+      23.155,
+      22.445,
+      29.095
+    ],
+    "pads": {
+      "": "",
+      "1": "dmx_unconnected-(S_TERM-Pad1)",
+      "2": "DMX_P",
+      "3": "TERM_SW"
+    }
+  },
+  {
+    "ref": "BASE_L103",
+    "value": "0402HP-5N1XGRW 5.1nH TUNE",
+    "xy": [
+      79.0,
+      39.0
+    ],
+    "side": "F",
+    "bounds": [
+      78.35,
+      38.09,
+      79.65,
+      39.91
+    ],
+    "pads": {
+      "1": "RF_915_50",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "BASE_TR101",
+    "value": "0900PC15A0036001E",
+    "xy": [
+      73.0,
+      34.5
+    ],
+    "side": "F",
+    "bounds": [
+      71.525,
+      32.65,
+      74.475,
+      36.35
+    ],
+    "pads": {
+      "": "",
+      "1": "RF_2G4_50",
+      "2": "GND_USB",
+      "3": "GND_USB",
+      "4": "RF_915_UNBLOCKED",
+      "5": "RX_TX",
+      "6": "RF_N_SUB_1GHZ",
+      "7": "RF_P_SUB_1GHZ",
+      "8": "RF_N_2_4GHZ",
+      "9": "RF_P_2_4GHZ",
+      "10": "GND_USB"
+    }
+  },
+  {
+    "ref": "R7",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      42.5,
+      43.75
+    ],
+    "side": "F",
+    "bounds": [
+      41.455,
+      43.155,
+      43.545,
+      44.345
+    ],
+    "pads": {
+      "1": "CC_3V3",
+      "2": "CC_OUT2"
+    }
+  },
+  {
+    "ref": "BASE_C116",
+    "value": "GJM1555C1H8R2DB01D 8.2pF TUNE",
+    "xy": [
+      81.0,
+      39.0
+    ],
+    "side": "F",
+    "bounds": [
+      80.43,
+      38.105,
+      81.57,
+      39.895
+    ],
+    "pads": {
+      "1": "RF_915_50",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "U19",
+    "value": "TPS2116DRLR",
+    "xy": [
+      48.75,
+      39.5
+    ],
+    "side": "F",
+    "bounds": [
+      47.38,
+      38.105,
+      50.12,
+      40.895
+    ],
+    "pads": {
+      "1": "GND_USB",
+      "2": "BACKUP_RAW",
+      "3": "LIMITED_5V",
+      "4": "SOURCE_VALID",
+      "5": "AON_2V5",
+      "6": "BOOST_3V9",
+      "7": "BACKUP_RAW",
+      "8": "unconnected-(U19-ST-Pad8)"
+    }
+  },
+  {
+    "ref": "U5",
+    "value": "TPS61023DRLR",
+    "xy": [
+      51.75,
+      47.0
+    ],
+    "side": "F",
+    "bounds": [
+      50.605,
+      45.63,
+      52.895,
+      48.37
+    ],
+    "pads": {
+      "1": "BOOST_FB",
+      "2": "CAP_BOOST_EN",
+      "3": "CAP_POS",
+      "4": "GND_USB",
+      "5": "BOOST_SW",
+      "6": "BOOST_3V9"
+    }
+  },
+  {
+    "ref": "R14",
+    "value": "TNPW0402100RBEED 100ohm 0.1% 25ppm",
+    "xy": [
+      13.5,
+      44.25
+    ],
+    "side": "F",
+    "bounds": [
+      12.905,
+      43.205,
+      14.095,
+      45.295
+    ],
+    "pads": {
+      "1": "EFUSE_DVDT",
+      "2": "EFUSE_DVDT_C"
+    }
+  },
+  {
+    "ref": "U4",
+    "value": "TPS62132RGTR",
+    "xy": [
+      52.5,
+      41.0
+    ],
+    "side": "F",
+    "bounds": [
+      50.505,
+      39.005,
+      54.495,
+      42.995
+    ],
+    "pads": {
+      "1": "BUCK_SW",
+      "2": "BUCK_SW",
+      "3": "BUCK_SW",
+      "4": "BUCK_PG",
+      "5": "GND_USB",
+      "6": "GND_USB",
+      "7": "GND_USB",
+      "8": "GND_USB",
+      "9": "BUCK_SS",
+      "10": "BACKUP_RAW",
+      "11": "BACKUP_RAW",
+      "12": "BACKUP_RAW",
+      "13": "BUCK_EN",
+      "14": "SYS_3V3",
+      "15": "GND_USB",
+      "16": "GND_USB",
+      "17": "GND_USB"
+    }
+  },
+  {
+    "ref": "S2",
+    "value": "PCB normally-open RESET contact",
+    "xy": [
+      26.0,
+      48.5
+    ],
+    "side": "F",
+    "bounds": [
+      24.455,
+      47.705,
+      27.545,
+      49.295
+    ],
+    "pads": {
+      "1": "MANUAL_RESET_N",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R28",
+    "value": "TNPW040289K8BEED 89800ohm 0.1% 25ppm",
+    "xy": [
+      81.0,
+      27.25
+    ],
+    "side": "F",
+    "bounds": [
+      79.955,
+      26.655,
+      82.045,
+      27.845
+    ],
+    "pads": {
+      "1": "LIMITED_5V",
+      "2": "USB_SENSE"
+    }
+  },
+  {
+    "ref": "C37",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      77.75,
+      32.25
+    ],
+    "side": "F",
+    "bounds": [
+      76.855,
+      31.655,
+      78.645,
+      32.845
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R26",
+    "value": "TNPW040252K3BEED 52300ohm 0.1% 25ppm",
+    "xy": [
+      77.0,
+      39.25
+    ],
+    "side": "F",
+    "bounds": [
+      76.405,
+      38.205,
+      77.595,
+      40.295
+    ],
+    "pads": {
+      "1": "CAP_POS",
+      "2": "CAP_START_SENSE"
+    }
+  },
+  {
+    "ref": "R2",
+    "value": "TNPW0805330RBEEA 330ohm 0.1% 25ppm",
+    "xy": [
+      35.5,
+      48.75
+    ],
+    "side": "F",
+    "bounds": [
+      33.805,
+      47.73,
+      37.195,
+      49.77
+    ],
+    "pads": {
+      "1": "VBUS_RAW",
+      "2": "AON_USB_LIMITED"
+    }
+  },
+  {
+    "ref": "U16",
+    "value": "TPS3831K33DQNR",
+    "xy": [
+      34.75,
+      46.5
+    ],
+    "side": "F",
+    "bounds": [
+      33.93,
+      45.68,
+      35.57,
+      47.32
+    ],
+    "pads": {
+      "1": "RESET_OK",
+      "2": "MANUAL_RESET_N",
+      "3": "GND_USB",
+      "4": "SYS_3V3",
+      "5": "GND_USB"
+    }
+  },
+  {
+    "ref": "R15",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      51.5,
+      38.0
+    ],
+    "side": "F",
+    "bounds": [
+      50.455,
+      37.405,
+      52.545,
+      38.595
+    ],
+    "pads": {
+      "1": "VBUS_RAW",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "U20",
+    "value": "TPS3700DDCR",
+    "xy": [
+      74.5,
+      42.75
+    ],
+    "side": "F",
+    "bounds": [
+      72.68,
+      40.555,
+      76.32,
+      44.945
+    ],
+    "pads": {
+      "1": "SOURCE_SENSE_OD",
+      "2": "GND_USB",
+      "3": "RAW_SENSE",
+      "4": "BOOST_SENSE",
+      "5": "AON_2V5",
+      "6": "BOOST_NOT_READY_OD"
+    }
+  },
+  {
+    "ref": "L1",
+    "value": "XGL4020-222MEC 2.2uH 20%",
+    "xy": [
+      64.25,
+      47.5
+    ],
+    "side": "F",
+    "bounds": [
+      61.79,
+      45.055,
+      66.71,
+      49.945
+    ],
+    "pads": {
+      "1": "BOOST_SW",
+      "2": "CAP_POS"
+    }
+  },
+  {
+    "ref": "BASE_C106",
+    "value": "GRM155R71E104KE14D 100nF",
+    "xy": [
+      65.0,
+      28.0
+    ],
+    "side": "F",
+    "bounds": [
+      63.981,
+      27.455,
+      66.019,
+      28.545
+    ],
+    "pads": {
+      "": "",
+      "1": "MCU_VDDS",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C31",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      36.5,
+      46.5
+    ],
+    "side": "F",
+    "bounds": [
+      35.905,
+      45.605,
+      37.095,
+      47.395
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "U24",
+    "value": "TPS70933DBVR",
+    "xy": [
+      40.5,
+      39.0
+    ],
+    "side": "F",
+    "bounds": [
+      38.355,
+      37.18,
+      42.645,
+      40.82
+    ],
+    "pads": {
+      "1": "CC_RAW",
+      "2": "GND_USB",
+      "3": "CC_RAW",
+      "4": "unconnected-(U24-NC-Pad4)",
+      "5": "CC_3V3"
+    }
+  },
+  {
+    "ref": "U6",
+    "value": "TPS259474LRPWR",
+    "xy": [
+      48.75,
+      42.75
+    ],
+    "side": "F",
+    "bounds": [
+      47.255,
+      41.255,
+      50.245,
+      44.245
+    ],
+    "pads": {
+      "1": "CC_ALLOW",
+      "2": "GND_USB",
+      "3": "SOURCE_SENSE_OD",
+      "4": "EFUSE_PGTH",
+      "5": "VBUS_RAW",
+      "6": "LIMITED_5V",
+      "7": "EFUSE_DVDT",
+      "8": "GND_USB",
+      "9": "EFUSE_ILM",
+      "10": "EFUSE_TIMER"
+    }
+  },
+  {
+    "ref": "BASE_C112",
+    "value": "GRM0335C1H101GA01D 100pF",
+    "xy": [
+      77.0,
+      37.0
+    ],
+    "side": "F",
+    "bounds": [
+      76.25,
+      36.505,
+      77.75,
+      37.495
+    ],
+    "pads": {
+      "": "",
+      "1": "RF_915_UNBLOCKED",
+      "2": "RF_915_50"
+    }
+  },
+  {
+    "ref": "U25",
+    "value": "TUSB320LAIRWBR",
+    "xy": [
+      37.25,
+      42.5
+    ],
+    "side": "F",
+    "bounds": [
+      35.955,
+      41.205,
+      38.545,
+      43.795
+    ],
+    "pads": {
+      "1": "CC1",
+      "2": "CC2",
+      "3": "GND_USB",
+      "4": "CC_VBUS_DET",
+      "5": "unconnected-(U25-ADDR_GPIO_FLOAT-Pad5)",
+      "6": "unconnected-(U25-OUT3_AUDIO-Pad6)",
+      "7": "CC_OUT1",
+      "8": "CC_OUT2",
+      "9": "unconnected-(U25-ID-Pad9)",
+      "10": "GND_USB",
+      "11": "GND_USB",
+      "12": "CC_3V3"
+    }
+  },
+  {
+    "ref": "R10",
+    "value": "TNPW0805115KBEEA 115000ohm 0.1% 25ppm",
+    "xy": [
+      62.75,
+      41.75
+    ],
+    "side": "F",
+    "bounds": [
+      61.73,
+      40.055,
+      63.77,
+      43.445
+    ],
+    "pads": {
+      "1": "CC_3V3",
+      "2": "CC_ALLOW"
+    }
+  },
+  {
+    "ref": "U31",
+    "value": "SN74LVC1G0832DCKR",
+    "xy": [
+      81.0,
+      36.0
+    ],
+    "side": "F",
+    "bounds": [
+      79.63,
+      34.155,
+      82.37,
+      37.845
+    ],
+    "pads": {
+      "1": "MAIN_READY",
+      "2": "GND_USB",
+      "3": "BOOST_READY",
+      "4": "CAP_SAFE_PATH",
+      "5": "AON_2V5",
+      "6": "SOURCE_VALID"
+    }
+  },
+  {
+    "ref": "C23",
+    "value": "HV1625-2R7256-R 25F 2.7V",
+    "xy": [
+      57.9,
+      30.65
+    ],
+    "side": "F",
+    "bounds": [
+      56.855,
+      25.355,
+      58.945,
+      35.945
+    ],
+    "pads": {
+      "1": "CAP_POS",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C10",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "xy": [
+      72.75,
+      38.75
+    ],
+    "side": "F",
+    "bounds": [
+      71.805,
+      37.155,
+      73.695,
+      40.345
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C1",
+    "value": "GRM155R61C105KA12D 1uF 16V X5R",
+    "xy": [
+      36.75,
+      44.75
+    ],
+    "side": "F",
+    "bounds": [
+      35.855,
+      44.155,
+      37.645,
+      45.345
+    ],
+    "pads": {
+      "1": "AON_USB_LIMITED",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R53",
+    "value": "TNPW040247K0BEED 47000ohm 0.1% 25ppm",
+    "xy": [
+      42.25,
+      43.25
+    ],
+    "side": "B",
+    "bounds": [
+      41.655,
+      42.205,
+      42.845,
+      44.295
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "BOOST_NOT_READY_OD"
+    }
+  },
+  {
+    "ref": "R35",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      38.75,
+      49.5
+    ],
+    "side": "B",
+    "bounds": [
+      37.705,
+      48.905,
+      39.795,
+      50.095
+    ],
+    "pads": {
+      "1": "BOOST_SENSE",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C22",
+    "value": "GRM155R71H103KA88D 10nF 50V X7R",
+    "xy": [
+      43.5,
+      49.5
+    ],
+    "side": "B",
+    "bounds": [
+      42.605,
+      48.905,
+      44.395,
+      50.095
+    ],
+    "pads": {
+      "1": "BUCK_SS",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C15",
+    "value": "GRM155R61C105KA12D 1uF 16V X5R",
+    "xy": [
+      21.5,
+      48.75
+    ],
+    "side": "B",
+    "bounds": [
+      20.905,
+      47.855,
+      22.095,
+      49.645
+    ],
+    "pads": {
+      "1": "AON_RAW",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R39",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      29.75,
+      39.75
+    ],
+    "side": "B",
+    "bounds": [
+      28.705,
+      39.155,
+      30.795,
+      40.345
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "SERVICE_N_DISTINCT_GPIO"
+    }
+  },
+  {
+    "ref": "U35",
+    "value": "SN74LVC1G3208DCKR",
+    "xy": [
+      33.0,
+      46.5
+    ],
+    "side": "B",
+    "bounds": [
+      31.155,
+      45.13,
+      34.845,
+      47.87
+    ],
+    "pads": {
+      "1": "SOURCE_VALID",
+      "2": "GND_USB",
+      "3": "CAP_ARM",
+      "4": "BUCK_EN",
+      "5": "AON_2V5",
+      "6": "MAIN_READY"
+    }
+  },
+  {
+    "ref": "C39",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      33.0,
+      44.25
+    ],
+    "side": "B",
+    "bounds": [
+      32.105,
+      43.655,
+      33.895,
+      44.845
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R52",
+    "value": "TNPW040247K0BEED 47000ohm 0.1% 25ppm",
+    "xy": [
+      41.25,
+      41.25
+    ],
+    "side": "B",
+    "bounds": [
+      40.205,
+      40.655,
+      42.295,
+      41.845
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "MAIN_NOT_READY_OD"
+    }
+  },
+  {
+    "ref": "C40",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      27.25,
+      46.5
+    ],
+    "side": "B",
+    "bounds": [
+      26.655,
+      45.605,
+      27.845,
+      47.395
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C19",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "xy": [
+      40.5,
+      39.0
+    ],
+    "side": "B",
+    "bounds": [
+      38.905,
+      38.055,
+      42.095,
+      39.945
+    ],
+    "pads": {
+      "1": "CC_RAW",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C18",
+    "value": "GRM155R61C105KA12D 1uF 16V X5R",
+    "xy": [
+      20.0,
+      48.75
+    ],
+    "side": "B",
+    "bounds": [
+      19.405,
+      47.855,
+      20.595,
+      49.645
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C20",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "xy": [
+      39.0,
+      42.5
+    ],
+    "side": "B",
+    "bounds": [
+      38.055,
+      40.905,
+      39.945,
+      44.095
+    ],
+    "pads": {
+      "1": "CC_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R43",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      40.75,
+      43.25
+    ],
+    "side": "B",
+    "bounds": [
+      40.155,
+      42.205,
+      41.345,
+      44.295
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "MCU_RE_N"
+    }
+  },
+  {
+    "ref": "R31",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      35.75,
+      46.5
+    ],
+    "side": "B",
+    "bounds": [
+      35.155,
+      45.455,
+      36.345,
+      47.545
+    ],
+    "pads": {
+      "1": "MAIN_SENSE",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R49",
+    "value": "TNPW040233K0BEED 33000ohm 0.1% 25ppm",
+    "xy": [
+      24.5,
+      49.0
+    ],
+    "side": "B",
+    "bounds": [
+      23.905,
+      47.955,
+      25.095,
+      50.045
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "SOURCE_SENSE_OD"
+    }
+  },
+  {
+    "ref": "R30",
+    "value": "TNPW040280K6BEED 80600ohm 0.1% 25ppm",
+    "xy": [
+      33.0,
+      48.75
+    ],
+    "side": "B",
+    "bounds": [
+      31.955,
+      48.155,
+      34.045,
+      49.345
+    ],
+    "pads": {
+      "1": "BACKUP_RAW",
+      "2": "MAIN_SENSE"
+    }
+  },
+  {
+    "ref": "R48",
+    "value": "TNPW0402100KBEED 100000ohm 0.1% 25ppm",
+    "xy": [
+      41.25,
+      49.5
+    ],
+    "side": "B",
+    "bounds": [
+      40.205,
+      48.905,
+      42.295,
+      50.095
+    ],
+    "pads": {
+      "1": "SPI_MOSI",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R42",
+    "value": "TNPW0402100KBEED 100000ohm 0.1% 25ppm",
+    "xy": [
+      33.0,
+      38.25
+    ],
+    "side": "B",
+    "bounds": [
+      31.955,
+      37.655,
+      34.045,
+      38.845
+    ],
+    "pads": {
+      "1": "MCU_ISO_REQUEST",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R41",
+    "value": "TNPW0402100KBEED 100000ohm 0.1% 25ppm",
+    "xy": [
+      36.75,
+      39.75
+    ],
+    "side": "B",
+    "bounds": [
+      35.705,
+      39.155,
+      37.795,
+      40.345
+    ],
+    "pads": {
+      "1": "MCU_DE_REQUEST",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C16",
+    "value": "GRM155R61C105KA12D 1uF 16V X5R",
+    "xy": [
+      21.25,
+      46.75
+    ],
+    "side": "B",
+    "bounds": [
+      20.655,
+      45.855,
+      21.845,
+      47.645
+    ],
+    "pads": {
+      "1": "AON_RAW",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C5",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      23.0,
+      48.75
+    ],
+    "side": "B",
+    "bounds": [
+      22.405,
+      47.855,
+      23.595,
+      49.645
+    ],
+    "pads": {
+      "1": "VBUS_RAW",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C43",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      26.25,
+      43.75
+    ],
+    "side": "B",
+    "bounds": [
+      25.655,
+      42.855,
+      26.845,
+      44.645
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R50",
+    "value": "TNPW040247K0BEED 47000ohm 0.1% 25ppm",
+    "xy": [
+      27.25,
+      39.75
+    ],
+    "side": "B",
+    "bounds": [
+      26.205,
+      39.155,
+      28.295,
+      40.345
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "CAP_OK_OD"
+    }
+  },
+  {
+    "ref": "R47",
+    "value": "TNPW0402100KBEED 100000ohm 0.1% 25ppm",
+    "xy": [
+      24.25,
+      46.5
+    ],
+    "side": "B",
+    "bounds": [
+      23.655,
+      45.455,
+      24.845,
+      47.545
+    ],
+    "pads": {
+      "1": "SPI_SCK",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R33",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      30.5,
+      49.25
+    ],
+    "side": "B",
+    "bounds": [
+      29.455,
+      48.655,
+      31.545,
+      49.845
+    ],
+    "pads": {
+      "1": "RAW_SENSE",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C13",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "xy": [
+      51.75,
+      44.75
+    ],
+    "side": "B",
+    "bounds": [
+      50.155,
+      43.805,
+      53.345,
+      45.695
+    ],
+    "pads": {
+      "1": "BOOST_3V9",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R55",
+    "value": "TNPW040247K0BEED 47000ohm 0.1% 25ppm",
+    "xy": [
+      43.0,
+      48.0
+    ],
+    "side": "B",
+    "bounds": [
+      41.955,
+      47.405,
+      44.045,
+      48.595
+    ],
+    "pads": {
+      "1": "CAP_BOOST_EN",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R37",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      25.75,
+      46.5
+    ],
+    "side": "B",
+    "bounds": [
+      25.155,
+      45.455,
+      26.345,
+      47.545
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "VBUS_GOOD_3V3"
+    }
+  },
+  {
+    "ref": "C42",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      32.0,
+      39.75
+    ],
+    "side": "B",
+    "bounds": [
+      31.105,
+      39.155,
+      32.895,
+      40.345
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "U37",
+    "value": "SN74LVC2G17DCKR",
+    "xy": [
+      36.0,
+      43.5
+    ],
+    "side": "B",
+    "bounds": [
+      34.155,
+      42.13,
+      37.845,
+      44.87
+    ],
+    "pads": {
+      "1": "BUCK_PG",
+      "2": "GND_USB",
+      "3": "CAP_ARM",
+      "4": "CAP_BOOST_EN",
+      "5": "AON_2V5",
+      "6": "BUCK_PG_BUF"
+    }
+  },
+  {
+    "ref": "C41",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      36.0,
+      41.25
+    ],
+    "side": "B",
+    "bounds": [
+      35.105,
+      40.655,
+      36.895,
+      41.845
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C4",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "xy": [
+      37.75,
+      38.25
+    ],
+    "side": "B",
+    "bounds": [
+      36.855,
+      37.655,
+      38.645,
+      38.845
+    ],
+    "pads": {
+      "1": "ICHG_FILTER",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R38",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      26.0,
+      49.0
+    ],
+    "side": "B",
+    "bounds": [
+      25.405,
+      47.955,
+      26.595,
+      50.045
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "MANUAL_RESET_N"
+    }
+  },
+  {
+    "ref": "R51",
+    "value": "TNPW040247K0BEED 47000ohm 0.1% 25ppm",
+    "xy": [
+      28.0,
+      38.25
+    ],
+    "side": "B",
+    "bounds": [
+      26.955,
+      37.655,
+      29.045,
+      38.845
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "CAP_START_N_OD"
+    }
+  },
+  {
+    "ref": "C14",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "xy": [
+      51.75,
+      49.25
+    ],
+    "side": "B",
+    "bounds": [
+      50.155,
+      48.305,
+      53.345,
+      50.195
+    ],
+    "pads": {
+      "1": "CAP_POS",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C21",
+    "value": "GRM155R61C105KA12D 1uF 16V X5R",
+    "xy": [
+      52.5,
+      41.0
+    ],
+    "side": "B",
+    "bounds": [
+      51.605,
+      40.405,
+      53.395,
+      41.595
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "C7",
+    "value": "GRM155R61C105KA12D 1uF 16V X5R",
+    "xy": [
+      48.75,
+      42.75
+    ],
+    "side": "B",
+    "bounds": [
+      47.855,
+      42.155,
+      49.645,
+      43.345
+    ],
+    "pads": {
+      "1": "LIMITED_5V",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R45",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      35.5,
+      38.25
+    ],
+    "side": "B",
+    "bounds": [
+      34.455,
+      37.655,
+      36.545,
+      38.845
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "FLASH_WP_N"
+    }
+  },
+  {
+    "ref": "R32",
+    "value": "TNPW040289K8BEED 89800ohm 0.1% 25ppm",
+    "xy": [
+      35.5,
+      48.75
+    ],
+    "side": "B",
+    "bounds": [
+      34.455,
+      48.155,
+      36.545,
+      49.345
+    ],
+    "pads": {
+      "1": "VBUS_RAW",
+      "2": "RAW_SENSE"
+    }
+  },
+  {
+    "ref": "R54",
+    "value": "TNPW040247K0BEED 47000ohm 0.1% 25ppm",
+    "xy": [
+      23.25,
+      44.0
+    ],
+    "side": "B",
+    "bounds": [
+      22.655,
+      42.955,
+      23.845,
+      45.045
+    ],
+    "pads": {
+      "1": "BUCK_EN",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R44",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      30.5,
+      38.25
+    ],
+    "side": "B",
+    "bounds": [
+      29.455,
+      37.655,
+      31.545,
+      38.845
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "SPI_CS_N"
+    }
+  },
+  {
+    "ref": "R34",
+    "value": "TNPW040280K6BEED 80600ohm 0.1% 25ppm",
+    "xy": [
+      28.0,
+      49.25
+    ],
+    "side": "B",
+    "bounds": [
+      26.955,
+      48.655,
+      29.045,
+      49.845
+    ],
+    "pads": {
+      "1": "BOOST_3V9",
+      "2": "BOOST_SENSE"
+    }
+  },
+  {
+    "ref": "U39",
+    "value": "SN74LVC2G14DCKR",
+    "xy": [
+      28.5,
+      42.5
+    ],
+    "side": "B",
+    "bounds": [
+      27.13,
+      40.655,
+      29.87,
+      44.345
+    ],
+    "pads": {
+      "1": "BOOST_NOT_READY_OD",
+      "2": "GND_USB",
+      "3": "GND_USB",
+      "4": "unconnected-(U39-2Y-Pad4)",
+      "5": "AON_2V5",
+      "6": "BOOST_READY"
+    }
+  },
+  {
+    "ref": "C17",
+    "value": "GRM155R61C105KA12D 1uF 16V X5R",
+    "xy": [
+      21.75,
+      44.25
+    ],
+    "side": "B",
+    "bounds": [
+      21.155,
+      43.355,
+      22.345,
+      45.145
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R56",
+    "value": "TNPW0402100KBEED 100000ohm 0.1% 25ppm",
+    "xy": [
+      22.75,
+      46.5
+    ],
+    "side": "B",
+    "bounds": [
+      22.155,
+      45.455,
+      23.345,
+      47.545
+    ],
+    "pads": {
+      "1": "AON_2V5",
+      "2": "CHARGE_DISABLE"
+    }
+  },
+  {
+    "ref": "U36",
+    "value": "SN74LVC2G17DCKR",
+    "xy": [
+      29.5,
+      46.5
+    ],
+    "side": "B",
+    "bounds": [
+      28.13,
+      44.655,
+      30.87,
+      48.345
+    ],
+    "pads": {
+      "1": "SOURCE_SENSE_OD",
+      "2": "GND_USB",
+      "3": "CAP_OK_OD",
+      "4": "CAP_OK",
+      "5": "AON_2V5",
+      "6": "SOURCE_SENSE"
+    }
+  },
+  {
+    "ref": "C12",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "xy": [
+      51.75,
+      47.0
+    ],
+    "side": "B",
+    "bounds": [
+      50.155,
+      46.055,
+      53.345,
+      47.945
+    ],
+    "pads": {
+      "1": "BOOST_3V9",
+      "2": "GND_USB"
+    }
+  },
+  {
+    "ref": "R40",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      40.5,
+      48.0
+    ],
+    "side": "B",
+    "bounds": [
+      39.455,
+      47.405,
+      41.545,
+      48.595
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "ROM_BOOT_STRAP"
+    }
+  },
+  {
+    "ref": "R36",
+    "value": "TNPW04024K70BEED 4700ohm 0.1% 25ppm",
+    "xy": [
+      34.25,
+      39.75
+    ],
+    "side": "B",
+    "bounds": [
+      33.205,
+      39.155,
+      35.295,
+      40.345
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "BUCK_PG"
+    }
+  },
+  {
+    "ref": "U38",
+    "value": "SN74LVC2G14DCKR",
+    "xy": [
+      32.0,
+      42.0
+    ],
+    "side": "B",
+    "bounds": [
+      30.155,
+      40.63,
+      33.845,
+      43.37
+    ],
+    "pads": {
+      "1": "CAP_START_N_OD",
+      "2": "GND_USB",
+      "3": "MAIN_NOT_READY_OD",
+      "4": "MAIN_READY",
+      "5": "AON_2V5",
+      "6": "CAP_START_OK"
+    }
+  },
+  {
+    "ref": "R46",
+    "value": "TNPW040210K0BEED 10000ohm 0.1% 25ppm",
+    "xy": [
+      24.75,
+      44.0
+    ],
+    "side": "B",
+    "bounds": [
+      24.155,
+      42.955,
+      25.345,
+      45.045
+    ],
+    "pads": {
+      "1": "SYS_3V3",
+      "2": "FLASH_HOLD_N"
+    }
+  }
+]

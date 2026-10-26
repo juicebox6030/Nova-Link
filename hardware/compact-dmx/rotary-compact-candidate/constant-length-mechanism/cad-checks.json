@@ -1,0 +1,1493 @@
+{
+  "selected_mechanism_checks": [
+    {
+      "pose": -90,
+      "a": "StationaryCoreEnvelope",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "StationaryCoreEnvelope",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FrontJournal",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FrontJournal",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "RearJournal",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "RearJournal",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FixedScrew0",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FixedEarShoe0",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FixedEarShoe0",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FixedScrew1",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FixedEarShoe1",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FixedEarShoe1",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FixedStaticTail",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FixedStaticTail",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FixedBacking",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FixedBacking",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "InnerDielectricGuide",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "InnerDielectricGuide",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "IndexPin",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "IndexPin",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "IndexCarrier",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "IndexCarrier",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "StopTrack",
+      "b": "StopPeg",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "StopTrack",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "StopTrack",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FrontCoreSaddle",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FrontCoreSaddle",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "RearCoreSaddle",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "RearCoreSaddle",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FrontGuideLink",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "FrontGuideLink",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "RearGuideLink",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "RearGuideLink",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "StationaryCoreEnvelope",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "StationaryCoreEnvelope",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "FrontJournal",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "FrontJournal",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "RearJournal",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "RearJournal",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "FixedScrew0",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "FixedEarShoe0",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "FixedScrew1",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "FixedEarShoe1",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "FixedStaticTail",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "FixedBacking",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "InnerDielectricGuide",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "InnerDielectricGuide",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "IndexPin",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "IndexCarrier",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "StopTrack",
+      "b": "StopPeg",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "StopTrack",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "StopTrack",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "FrontCoreSaddle",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "FrontCoreSaddle",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "RearCoreSaddle",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "RearCoreSaddle",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "FrontGuideLink",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "FrontGuideLink",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "RearGuideLink",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "RearGuideLink",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "StationaryCoreEnvelope",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "StationaryCoreEnvelope",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FrontJournal",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FrontJournal",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "RearJournal",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "RearJournal",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FixedScrew0",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FixedEarShoe0",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FixedEarShoe0",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FixedScrew1",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FixedEarShoe1",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FixedEarShoe1",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FixedStaticTail",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FixedStaticTail",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FixedBacking",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FixedBacking",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "InnerDielectricGuide",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "InnerDielectricGuide",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "IndexPin",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "IndexPin",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "IndexCarrier",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "IndexCarrier",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "StopTrack",
+      "b": "StopPeg",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "StopTrack",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "StopTrack",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FrontCoreSaddle",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FrontCoreSaddle",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "RearCoreSaddle",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "RearCoreSaddle",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FrontGuideLink",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "FrontGuideLink",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "RearGuideLink",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "RearGuideLink",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "valid_shapes": {
+    "StationaryCoreEnvelope": {
+      "valid": true,
+      "solids": 1,
+      "volume": 256957.14632241635
+    },
+    "FrontJournal": {
+      "valid": true,
+      "solids": 1,
+      "volume": 215.0734330647565
+    },
+    "RearJournal": {
+      "valid": true,
+      "solids": 1,
+      "volume": 215.0734330647565
+    },
+    "FixedScrew0": {
+      "valid": true,
+      "solids": 1,
+      "volume": 1.5330972149518174
+    },
+    "FixedEarShoe0": {
+      "valid": true,
+      "solids": 1,
+      "volume": 4.173828735696984
+    },
+    "FixedScrew1": {
+      "valid": true,
+      "solids": 1,
+      "volume": 1.5330972149518192
+    },
+    "FixedEarShoe1": {
+      "valid": true,
+      "solids": 1,
+      "volume": 4.173828735696952
+    },
+    "FixedStaticTail": {
+      "valid": true,
+      "solids": 1,
+      "volume": 28.48757184436004
+    },
+    "FixedBacking": {
+      "valid": true,
+      "solids": 1,
+      "volume": 105.7272204451916
+    },
+    "MovingScrew0": {
+      "valid": true,
+      "solids": 1,
+      "volume": 1.5330972149518174
+    },
+    "MovingEarShoe0": {
+      "valid": true,
+      "solids": 1,
+      "volume": 5.046651465325026
+    },
+    "MovingScrew1": {
+      "valid": true,
+      "solids": 1,
+      "volume": 1.5330972149518192
+    },
+    "MovingEarShoe1": {
+      "valid": true,
+      "solids": 1,
+      "volume": 5.046651465324912
+    },
+    "MovingStaticTail": {
+      "valid": true,
+      "solids": 1,
+      "volume": 34.84004656268888
+    },
+    "InnerDielectricGuide": {
+      "valid": true,
+      "solids": 1,
+      "volume": 1581.1681845280582
+    },
+    "IndexPin": {
+      "valid": true,
+      "solids": 1,
+      "volume": 43.03981935418016
+    },
+    "IndexCarrier": {
+      "valid": true,
+      "solids": 1,
+      "volume": 127.1920373349381
+    },
+    "StopTrack": {
+      "valid": true,
+      "solids": 1,
+      "volume": 860.2230055046764
+    },
+    "StopPeg": {
+      "valid": true,
+      "solids": 1,
+      "volume": 3.1415926535897922
+    },
+    "PowerBoard_TARGET": {
+      "valid": true,
+      "solids": 1,
+      "volume": 448.55999999999995
+    },
+    "Components_TARGET": {
+      "valid": true,
+      "solids": 1,
+      "volume": 1007.9999999999998
+    },
+    "USB4105ShellEnvelope": {
+      "valid": true,
+      "solids": 1,
+      "volume": 217.49678999999975
+    },
+    "USBStake0": {
+      "valid": true,
+      "solids": 1,
+      "volume": 0.06750000000000048
+    },
+    "USBStake1": {
+      "valid": true,
+      "solids": 1,
+      "volume": 0.06750000000000048
+    },
+    "USBStake2": {
+      "valid": true,
+      "solids": 1,
+      "volume": 0.06750000000000048
+    },
+    "USBStake3": {
+      "valid": true,
+      "solids": 1,
+      "volume": 0.06750000000000048
+    },
+    "USBPlugScreen": {
+      "valid": true,
+      "solids": 1,
+      "volume": 936.0
+    },
+    "FrontCoreSaddle": {
+      "valid": true,
+      "solids": 1,
+      "volume": 324.08961865470883
+    },
+    "RearCoreSaddle": {
+      "valid": true,
+      "solids": 1,
+      "volume": 307.8760800518007
+    },
+    "FrontGuideLink": {
+      "valid": true,
+      "solids": 1,
+      "volume": 152.995562229823
+    },
+    "RearGuideLink": {
+      "valid": true,
+      "solids": 1,
+      "volume": 152.995562229823
+    },
+    "FrameBolt_45_25_m29_5": {
+      "valid": true,
+      "solids": 1,
+      "volume": 5.475795995207006
+    },
+    "FrameBolt_45_25_29_5": {
+      "valid": true,
+      "solids": 1,
+      "volume": 5.475795995207006
+    },
+    "FrameBolt_68_9_m29_5": {
+      "valid": true,
+      "solids": 1,
+      "volume": 5.475795995207019
+    },
+    "FrameBolt_68_9_29_5": {
+      "valid": true,
+      "solids": 1,
+      "volume": 5.475795995207019
+    },
+    "RotorHalfPositiveY": {
+      "valid": true,
+      "solids": 2,
+      "volume": 10219.741684865936
+    },
+    "RotorHalfNegativeY": {
+      "valid": true,
+      "solids": 1,
+      "volume": 10540.711684707205
+    },
+    "Flex_minus90": {
+      "valid": true,
+      "solids": 1,
+      "volume": 3347.5628477673968
+    },
+    "Flex_0": {
+      "valid": true,
+      "solids": 1,
+      "volume": 3347.5474286690264
+    },
+    "Flex_90": {
+      "valid": true,
+      "solids": 1,
+      "volume": 3347.531339721787
+    }
+  },
+  "active_flex_selected_pose_checks": [
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "StationaryCoreEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "FrontJournal",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "RearJournal",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "FixedScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "FixedEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "FixedScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "FixedEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "FixedStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "FixedBacking",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "MovingScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "MovingEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "MovingScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "MovingEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "MovingStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "InnerDielectricGuide",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "IndexPin",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "IndexCarrier",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "StopTrack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "StopPeg",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "PowerBoard_TARGET",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "USB4105ShellEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "USBStake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "USBStake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "USBStake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "USBStake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "FrontCoreSaddle",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "RearCoreSaddle",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "FrontGuideLink",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "RearGuideLink",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "FrameBolt_45_25_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "FrameBolt_68_9_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": -90,
+      "a": "active_flex",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "StationaryCoreEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "FrontJournal",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "RearJournal",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "FixedScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "FixedEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "FixedScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "FixedEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "FixedStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "FixedBacking",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "MovingScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "MovingEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "MovingScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "MovingEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "MovingStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "InnerDielectricGuide",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "IndexPin",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "IndexCarrier",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "StopTrack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "StopPeg",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "PowerBoard_TARGET",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "USB4105ShellEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "USBStake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "USBStake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "USBStake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "USBStake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "FrontCoreSaddle",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "RearCoreSaddle",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "FrontGuideLink",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "RearGuideLink",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "FrameBolt_45_25_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "FrameBolt_68_9_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 0,
+      "a": "active_flex",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "StationaryCoreEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "FrontJournal",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "RearJournal",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "FixedScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "FixedEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "FixedScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "FixedEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "FixedStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "FixedBacking",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "MovingScrew0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "MovingEarShoe0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "MovingScrew1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "MovingEarShoe1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "MovingStaticTail",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "InnerDielectricGuide",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "IndexPin",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "IndexCarrier",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "StopTrack",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "StopPeg",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "PowerBoard_TARGET",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "USB4105ShellEnvelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "USBStake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "USBStake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "USBStake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "USBStake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "FrontCoreSaddle",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "RearCoreSaddle",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "FrontGuideLink",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "RearGuideLink",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "FrameBolt_45_25_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "FrameBolt_45_25_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "FrameBolt_68_9_m29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "FrameBolt_68_9_29_5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "RotorHalfPositiveY",
+      "intersection_mm3": 0.0
+    },
+    {
+      "pose": 90,
+      "a": "active_flex",
+      "b": "RotorHalfNegativeY",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "neutral_positive_volume_contacts": [
+    {
+      "a": "FixedScrew0",
+      "b": "FixedBacking",
+      "volume_mm3": 0.12539386448997963
+    },
+    {
+      "a": "FixedScrew0",
+      "b": "FrontGuideLink",
+      "volume_mm3": 0.04967659570447915
+    },
+    {
+      "a": "FixedScrew1",
+      "b": "FixedBacking",
+      "volume_mm3": 0.1253938644899816
+    },
+    {
+      "a": "FixedScrew1",
+      "b": "RearGuideLink",
+      "volume_mm3": 0.04967661336210867
+    },
+    {
+      "a": "FixedBacking",
+      "b": "FrontGuideLink",
+      "volume_mm3": 2.0801917965381707
+    },
+    {
+      "a": "FixedBacking",
+      "b": "RearGuideLink",
+      "volume_mm3": 2.0801918019588097
+    },
+    {
+      "a": "MovingScrew0",
+      "b": "RotorHalfPositiveY",
+      "volume_mm3": 0.12661859915754592
+    },
+    {
+      "a": "MovingScrew1",
+      "b": "RotorHalfPositiveY",
+      "volume_mm3": 0.12661859915754792
+    },
+    {
+      "a": "StopTrack",
+      "b": "RearCoreSaddle",
+      "volume_mm3": 153.64007657827557
+    },
+    {
+      "a": "FrameBolt_45_25_m29_5",
+      "b": "RotorHalfPositiveY",
+      "volume_mm3": 0.5733406592801369
+    },
+    {
+      "a": "FrameBolt_45_25_m29_5",
+      "b": "RotorHalfNegativeY",
+      "volume_mm3": 0.9952565526572447
+    },
+    {
+      "a": "FrameBolt_45_25_29_5",
+      "b": "RotorHalfPositiveY",
+      "volume_mm3": 0.5733406592801369
+    },
+    {
+      "a": "FrameBolt_45_25_29_5",
+      "b": "RotorHalfNegativeY",
+      "volume_mm3": 0.9952565526572447
+    },
+    {
+      "a": "FrameBolt_68_9_m29_5",
+      "b": "RotorHalfPositiveY",
+      "volume_mm3": 0.5733406592801362
+    },
+    {
+      "a": "FrameBolt_68_9_m29_5",
+      "b": "RotorHalfNegativeY",
+      "volume_mm3": 0.9952565526572568
+    },
+    {
+      "a": "FrameBolt_68_9_29_5",
+      "b": "RotorHalfPositiveY",
+      "volume_mm3": 0.5733406592801363
+    },
+    {
+      "a": "FrameBolt_68_9_29_5",
+      "b": "RotorHalfNegativeY",
+      "volume_mm3": 0.9952565526572568
+    }
+  ],
+  "status": "SCREEN RESULTS, inspect every positive contact; no automatic assembly acceptance",
+  "outer_OD_mm": 66,
+  "collar_axial_extent_mm": [
+    34.5,
+    98.8
+  ],
+  "core_extent_mm": [
+    0,
+    142
+  ]
+}

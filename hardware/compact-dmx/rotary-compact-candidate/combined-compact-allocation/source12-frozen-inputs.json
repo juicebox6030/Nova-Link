@@ -1,0 +1,8 @@
+{
+  "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/receipt.json": "51393c2a663f8cc206af64d4d0aa09d541832f1a5ac542f7a93bc06f95e2e519",
+  "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/DESIGN.md": "226826651c1e1211095d53e7a873299df119af85d00cd51b52c4746d45965e8b",
+  "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/placement-check.json": "0a9bdc01efef484d300445ea3b4b348d1f0a5f85a2634a31c9ec1ca8bc473b8a",
+  "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/placement-ledger.csv": "fdc46af2af8b36cc888457258b2d90c2e86526ebe0fa0996506b478284a79c4b",
+  "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/source12-rotating.kicad_pcb": "f1931419a9a326e5db8364302c8d59cf1586a1ae810676db475f92b45bb97c30",
+  "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/source12-stationary.kicad_pcb": "d6f79be09ed5e7984f2f915d9d3b9399978f7412795d7fff4c0ef8d8caabdbdc"
+}

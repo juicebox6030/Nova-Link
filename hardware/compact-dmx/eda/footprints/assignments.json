@@ -1,0 +1,187 @@
+{
+  "mcu-radio.A101": {
+    "footprint": "Johanson_0900AD47_IsolatedLands",
+    "value": "0900AD47A2450001E PROTOTYPE TUNING REQUIRED",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C101": {
+    "footprint": "TI_CAPC1608_Vector",
+    "value": "GRM188R60J226MEA0D 22uF",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C102": {
+    "footprint": "TI_CAPC1608_Vector",
+    "value": "GRM188R60J226MEA0D 22uF",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C103": {
+    "footprint": "TI_CAPC1005_Vector",
+    "value": "GRM155R61C105KA12D 1uF",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C104": {
+    "footprint": "TI_CAPC1005_Vector",
+    "value": "GRM155R71E104KE14D 100nF",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C105": {
+    "footprint": "TI_CAPC1005_Vector",
+    "value": "GRM155R71E104KE14D 100nF",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C106": {
+    "footprint": "TI_CAPC1005_Vector",
+    "value": "GRM155R71E104KE14D 100nF",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C107": {
+    "footprint": "TI_CAPC1005_Vector",
+    "value": "GRM155R71E104KE14D 100nF",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C108": {
+    "footprint": "TI_CAPC1005_Vector",
+    "value": "GRM155R71E104KE14D 100nF",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C109": {
+    "footprint": "TI_CAPC1005_Vector",
+    "value": "GRM155R71E104KE14D 100nF",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C110": {
+    "footprint": "TI_CAPC1005_Vector",
+    "value": "GRM1555C1H120JA01D 12pF",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C111": {
+    "footprint": "TI_CAPC1005_Vector",
+    "value": "GRM1555C1H120JA01D 12pF",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C112": {
+    "footprint": "TI_CAPC0603_Vector",
+    "value": "GRM0335C1H101GA01D 100pF",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C113": {
+    "footprint": "TI_CAPC0603_Vector",
+    "value": "GRM0335C1H101GA01D 100pF",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.C115": {
+    "footprint": "Murata_GJM155_Manufacturer",
+    "value": "GJM1555C1H1R0BB01D 1.0pF TUNE",
+    "status": "SOURCE_DIMENSIONED_MANUFACTURER_LAND_PROTOTYPE_RF_RETUNE"
+  },
+  "mcu-radio.C116": {
+    "footprint": "Murata_GJM155_Manufacturer",
+    "value": "GJM1555C1H8R2DB01D 8.2pF TUNE",
+    "status": "SOURCE_DIMENSIONED_MANUFACTURER_LAND_PROTOTYPE_RF_RETUNE"
+  },
+  "mcu-radio.FL101": {
+    "footprint": "TI_BLM18_Vector",
+    "value": "BLM18HE152SN1D",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.L101": {
+    "footprint": "TI_MLZ2012_Vector",
+    "value": "MLZ2012N6R8LT000 6.8uH",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.L102": {
+    "footprint": "Coilcraft_0402HP_Manufacturer",
+    "value": "0402HP-2N7XGRW 2.7nH TUNE",
+    "status": "SOURCE_DIMENSIONED_MANUFACTURER_LAND_PROTOTYPE_RF_RETUNE"
+  },
+  "mcu-radio.L103": {
+    "footprint": "Coilcraft_0402HP_Manufacturer",
+    "value": "0402HP-5N1XGRW 5.1nH TUNE",
+    "status": "SOURCE_DIMENSIONED_MANUFACTURER_LAND_PROTOTYPE_RF_RETUNE"
+  },
+  "mcu-radio.L104": {
+    "footprint": "Coilcraft_0402HP_Manufacturer",
+    "value": "0402HP-12NXGRW 12nH TUNE",
+    "status": "SOURCE_DIMENSIONED_MANUFACTURER_LAND_PROTOTYPE_RF_RETUNE"
+  },
+  "mcu-radio.TR101": {
+    "footprint": "TI_IPC1352_Vector",
+    "value": "0900PC15A0036001E",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.U1": {
+    "footprint": "TI_RGZ0048A",
+    "value": "CC1352R1F3RGZR",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.Y101": {
+    "footprint": "Epson_FC135_Manufacturer",
+    "value": "FC-135 32.7680KA-AG0",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "mcu-radio.Y102": {
+    "footprint": "NDK_NX2016SA_Manufacturer",
+    "value": "NX2016SA 48MHz EXS00A-CS05517",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "dmx.C1": {
+    "footprint": "TI_CAPC1005_Vector",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "dmx.C2": {
+    "footprint": "Murata_GRM21_Reflow",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "dmx.C3": {
+    "footprint": "TI_CAPC1005_Vector",
+    "value": "GRM155R71E104KE14D 100nF 25V X7R",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "dmx.C4": {
+    "footprint": "Murata_GRM21_Reflow",
+    "value": "GRM21BR71A106KE51L 10uF 10V X7R",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "dmx.R1": {
+    "footprint": "Vishay_CRCW0402",
+    "value": "CRCW040210K0FKED 10k 1%",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "dmx.R2": {
+    "footprint": "Vishay_CRCW0402",
+    "value": "CRCW040210K0FKED 10k 1%",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "dmx.R3": {
+    "footprint": "Vishay_CRCW0402",
+    "value": "CRCW040210K0FKED 10k 1%",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "dmx.R4": {
+    "footprint": "Vishay_CRCW0402",
+    "value": "CRCW04021K00FKED 1k 1%",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "dmx.R_TERM1": {
+    "footprint": "Vishay_CRCW1206",
+    "value": "CRCW1206240RFKEA 240R 1% 0.25W",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "dmx.R_TERM2": {
+    "footprint": "Vishay_CRCW1206",
+    "value": "CRCW1206240RFKEA 240R 1% 0.25W",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  },
+  "dmx.S_TERM": {
+    "footprint": "PCM12_PENDING_MANUFACTURER_LAND_RECHECK",
+    "value": "PCM12SMTR OFF=1-2 / ON=2-3",
+    "status": "PARENT_OWNS_SWITCH_VISUAL_CHECK_LIFECYCLE_UNVERIFIED"
+  },
+  "dmx.U5": {
+    "footprint": "TI_DFM0020A",
+    "value": "ISOW1412DFMR",
+    "status": "SOURCE_DIMENSIONED_REFERENCE_OR_MANUFACTURER_LAND"
+  }
+}

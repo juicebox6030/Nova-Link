@@ -1,0 +1,29 @@
+{
+  "status": "PASS: independent static capture checks; not transient/hardware acceptance",
+  "components_in_export": 176,
+  "fitted_parts": 170,
+  "ICs": 44,
+  "nets": 135,
+  "source_based_IC_pin_checks": 316,
+  "all_two_terminal_checks": 128,
+  "stable_logic_cases": 36864,
+  "max_state_settle_iterations": 3,
+  "temporal_logic_scenarios": "empty-cap USB loader; input-ready charging; fault PG-loss persistence; sticky fault/external-cycle; cap backup/proven-loss/no-rearm PASS",
+  "ERC_errors": 0,
+  "ERC_warnings": 0,
+  "ERC_exclusions": 0,
+  "ILIM_IN_mode_pin_model": "U24.5 passive analogue for datasheet-supported IN strap; U6.5 remains output; hard strap independently asserted",
+  "power_flags": [
+    "external VBUS",
+    "external ground",
+    "physical diode-OR AON",
+    "buck-inductor SYS3V3"
+  ],
+  "all_active_control_is_captured": true,
+  "external_boundaries": "existing MCU18/DMX7/factory6 contact maps preserved; USB power contacts only; fault translator unimplemented and not routed",
+  "estimated_fitted_body_area_mm2": 486.884,
+  "estimated_body_area_excluding_cell_mm2": 343.745,
+  "body_area_exceeds150mm2_power_reservation_before_routing": true,
+  "footprints_routing_housing_or_USB_qualification": false,
+  "manufacturing_release": false
+}

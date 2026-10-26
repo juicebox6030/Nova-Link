@@ -1,0 +1,10 @@
+{
+  "status": "UNACCEPTED external parent-owned documentation delta; preservation baseline NOT refreshed",
+  "deltas": [
+    {
+      "path": "hardware/compact-dmx/README.md",
+      "snapshot_sha256": "3e1c79d8a8b18b075f2222a1d6fbc3d902be6ad0d2005f987d892b67a334ea27",
+      "current_sha256": "efdbd2254b05fef589def3bcdef142be356da1fee2eef8811de0df9efa00242a"
+    }
+  ]
+}

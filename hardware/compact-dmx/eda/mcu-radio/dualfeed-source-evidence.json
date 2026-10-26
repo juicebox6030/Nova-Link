@@ -1,0 +1,15 @@
+{
+  "url": "https://www.johansontechnology.com/docs/4912/Antenna-0900AD47A2450001E_4RGCp0j.pdf",
+  "revision": "3.1 / 2026 Doc36S0021B",
+  "pages": {
+    "2": "dimensions and pins",
+    "3": "match topology and reference layout",
+    "4": "typical S21",
+    "9": "alternative narrow layout; not qualification"
+  },
+  "cache": "hardware/compact-dmx/eda/source-cache/antenna0900ad47.pdf",
+  "bytes": 1222841,
+  "sha256": "426450ebeb728496304354e63ce7a39a8fcab896ac59a0b35c013ade1e8ac532",
+  "production_product_url": "https://www.johansontechnology.com/products/antennas/rf-antennas/0900ad47a2450001e/",
+  "support_sources": "dualband-source-evidence.json; retained unchanged"
+}

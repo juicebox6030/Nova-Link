@@ -1,0 +1,15 @@
+{
+  "integrity": "PASS artifacts/sources; frozen inputs except explicitly recorded canonical-doc delta",
+  "counts": {
+    "protected-inputs.json": 24,
+    "source-hashes.json": 38,
+    "artifacts.json": 17
+  },
+  "native_outline_mm": [
+    66,
+    50
+  ],
+  "native_footprints": 50,
+  "numeric_reproduction": "PASS",
+  "qualification": "NONE"
+}

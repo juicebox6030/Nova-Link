@@ -1,0 +1,1169 @@
+{
+  "valid": {
+    "Base_with_bridge": true,
+    "Lid": true,
+    "Shim0": true,
+    "Shim1": true,
+    "Rear_stop_pad": true,
+    "Connector_external_envelope": true,
+    "Stake0": true,
+    "Stake1": true,
+    "Stake2": true,
+    "Stake3": true,
+    "NOR_envelope": true,
+    "Plug_test_overmold": true,
+    "PCB_cutout_proposal": true,
+    "HV1625_max_body": true,
+    "Cradle0": true,
+    "Cradle1": true
+  },
+  "cell_pairs": [
+    {
+      "a": "cell",
+      "b": "Base_with_bridge",
+      "volume_mm3": 0.0,
+      "distance_mm": 0.3999999999999986
+    },
+    {
+      "a": "cell",
+      "b": "Lid",
+      "volume_mm3": 0.0,
+      "distance_mm": 0.6499999999999986
+    },
+    {
+      "a": "cell",
+      "b": "Shim0",
+      "volume_mm3": 0.0,
+      "distance_mm": 11.80822773826242
+    },
+    {
+      "a": "cell",
+      "b": "Shim1",
+      "volume_mm3": 0.0,
+      "distance_mm": 11.80822773826242
+    },
+    {
+      "a": "cell",
+      "b": "Rear_stop_pad",
+      "volume_mm3": 0.0,
+      "distance_mm": 8.243710922651704
+    },
+    {
+      "a": "cell",
+      "b": "Connector_external_envelope",
+      "volume_mm3": 0.0,
+      "distance_mm": 8.762527736935512
+    },
+    {
+      "a": "cell",
+      "b": "Stake0",
+      "volume_mm3": 0.0,
+      "distance_mm": 9.758678463452005
+    },
+    {
+      "a": "cell",
+      "b": "Stake1",
+      "volume_mm3": 0.0,
+      "distance_mm": 13.303016030245052
+    },
+    {
+      "a": "cell",
+      "b": "Stake2",
+      "volume_mm3": 0.0,
+      "distance_mm": 9.758678463452005
+    },
+    {
+      "a": "cell",
+      "b": "Stake3",
+      "volume_mm3": 0.0,
+      "distance_mm": 13.303016030245052
+    },
+    {
+      "a": "cell",
+      "b": "NOR_envelope",
+      "volume_mm3": 0.0,
+      "distance_mm": 2.057764064044155
+    },
+    {
+      "a": "cell",
+      "b": "Plug_test_overmold",
+      "volume_mm3": 0.0,
+      "distance_mm": 15.641891930108844
+    },
+    {
+      "a": "cell",
+      "b": "PCB_cutout_proposal",
+      "volume_mm3": 0.0,
+      "distance_mm": 0.5
+    },
+    {
+      "a": "cell",
+      "b": "Cradle0",
+      "volume_mm3": 0.0,
+      "distance_mm": 0.349999999999996
+    },
+    {
+      "a": "cell",
+      "b": "Cradle1",
+      "volume_mm3": 0.0,
+      "distance_mm": 0.349999999999996
+    }
+  ],
+  "allocated": {
+    "PCB_allocated": {
+      "volume_mm3": 0.0,
+      "distance_mm": 0.23148307071270188
+    },
+    "lid": {
+      "volume_mm3": 0.0,
+      "distance_mm": 0.5
+    },
+    "case": {
+      "volume_mm3": 0.0,
+      "distance_mm": 0.25
+    }
+  },
+  "component_screen": [
+    {
+      "ref": "C38",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R11",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U7",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_C110",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U30",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "C3",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_R4",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_C111",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R23",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_Y102",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R21",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_R1",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R27",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_C113",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "C45",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U26",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_L102",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R25",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "C9",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_C3",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U27",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U8",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_U1",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R5",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U17",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "J1",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U9",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "C2",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R9",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R3",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R16",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R8",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "L2",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C35",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_A101",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C30",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_C2",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U2",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C32",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C36",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_R3",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_C101",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R17",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R6",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_C105",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_C107",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C34",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U28",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U10",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R19",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "S1",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_U5",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U33",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R22",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "J4",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_C115",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_C4",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U40",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_R_TERM1",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_FL101",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_R2",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U3",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_C109",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C24",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R12",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_C1",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_C103",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "C29",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R13",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C44",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U18",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_C102",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "C28",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R1",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R24",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C25",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_C104",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "C27",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R20",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C8",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C33",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_Y101",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C11",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_L104",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_C108",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C26",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C6",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R18",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_L101",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U34",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R29",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_R_TERM2",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R4",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U32",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_S_TERM",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_L103",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_TR101",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R7",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_C116",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U19",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U5",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R14",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U4",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "S2",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R28",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C37",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R26",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R2",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U16",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R15",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U20",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "L1",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "BASE_C106",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C31",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U24",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U6",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "BASE_C112",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U25",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R10",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U31",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C10",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "C1",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R53",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R35",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C22",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C15",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R39",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U35",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C39",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R52",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C40",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C19",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C18",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "C20",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R43",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R31",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R49",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R30",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R48",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R42",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R41",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C16",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "C5",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "C43",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R50",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R47",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R33",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C13",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R55",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R37",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "C42",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U37",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C41",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C4",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R38",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R51",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C14",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C21",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C7",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R45",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R32",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R54",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R44",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R34",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U39",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C17",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "R56",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    },
+    {
+      "ref": "U36",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "C12",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R40",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R36",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "U38",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0.0
+    },
+    {
+      "ref": "R46",
+      "cell_volume_mm3": 0.0,
+      "cradle_volume_mm3": 0.0,
+      "cutout_projected_overlap_mm2": 0
+    }
+  ],
+  "interferences": [],
+  "allocation": "Top courtyard extrusion2.23mm, U24/U26/R15=1.45mm, bottom1.45; source maxima not independently established for every part. Existing C23 explicitly removed/requires new formed leads.",
+  "cradle_liner_retention": "Unimplemented .35 radial compliant liner and nonmetal retention; process/strength/vent clearance gates"
+}

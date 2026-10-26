@@ -1,0 +1,257 @@
+{
+  "scope": "Candidate-only source manifest. Shared source-cache-manifest untouched. Existing originalcached PDFs read independently; derivative TXT/PNG are not substituted for originalsource. No benchmeasurements.",
+  "original_cached_sources": [
+    {
+      "path": "hardware/compact-dmx/eda/source-cache/tps25947.pdf",
+      "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4",
+      "bytes": 5316794,
+      "url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+      "use": "U6RPW10:TPS259474L latchbreaker;ILIM/dVdt/PGTH/ITIMER/DC and transient qualifications"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/source-cache/tps2116.pdf",
+      "sha256": "5babd88afb84e2e65c9c0da23b75f85758c0c730e34102a0fb746ac9573ed1d5",
+      "bytes": 2924080,
+      "url": "https://www.ti.com/lit/ds/symlink/tps2116.pdf",
+      "use": "U19/U40DRL8 manualmain/autopriorityAON,RCB/IQ/timing"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/source-cache/tps62130.pdf",
+      "sha256": "f9b1af285622c0cf1a5991f9641a6e64c5e6d899e52cc0b1632808742019579f",
+      "bytes": 2536822,
+      "url": "https://www.ti.com/lit/ds/symlink/tps62130.pdf",
+      "use": "U4TPS62132RGT16 fixed3.3/SS/dropout/LC/lands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/source-cache/tps7a02.pdf",
+      "sha256": "ed213c153f1db84762558fcac2ff9752e322151a1d44672cf554988b860cebc8",
+      "bytes": 3405603,
+      "url": "https://www.ti.com/lit/ds/symlink/tps7a02.pdf",
+      "use": "U7TPS7A0225DBV5 AON supply"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/source-cache/tps3839.pdf",
+      "sha256": "a18940237afc63cf6d1a0bb5e1c8c0b2c3274e01c47fa5f27e470a005072621b",
+      "bytes": 948524,
+      "url": "https://www.ti.com/lit/ds/symlink/tps3839.pdf",
+      "use": "U9G25DBZ3/U16K33DQN4 reset/pin/lands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/source-cache/tps709.pdf",
+      "sha256": "8c14e3efae738a27b857b789aa87369de9037a8ef3616a9f71a423587cdc6949",
+      "bytes": 2271988,
+      "url": "https://www.ti.com/lit/ds/symlink/tps709.pdf",
+      "use": "U24TPS70933DBV5 raw-onlyCCLDO,ramp/dropout/outputC"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/source-cache/tusb320lai.pdf",
+      "sha256": "62f7b3f65338e25ebd6fd46ef04474ba806b06b1cc04bc0b3d7b8191b01ca87d",
+      "bytes": 1313743,
+      "url": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf",
+      "use": "U25RWB12 GPIOUFP/currentcodes/deadbattery/ramp/debounce/lands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/source-cache/sn74lvc2g08.pdf",
+      "sha256": "75dff6a7b9ba988865b776e0f7c5dd2855f13f64f05bfcda3b1baec886007199",
+      "bytes": 784167,
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g08.pdf",
+      "use": "U17/U18 dualAND/DCU8"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/source-cache/tps3700.pdf",
+      "sha256": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0",
+      "bytes": 682718,
+      "url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+      "use": "U8/U10/U20 DDC6 dualcomparators thresholds/bias/startup"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/source-cache/tps3808.pdf",
+      "sha256": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed",
+      "bytes": 2046179,
+      "url": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+      "use": "U26G33 rawCCqualifier/U27G01 actualsource+buckPG stableassert,DBV6/reset/minvoltage/delays"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/startup-source-cache/bq25173.pdf",
+      "sha256": "75869a03b40472ff587ffa5223dc5e5314f3b76478c6582119cf5a204d6e777e",
+      "bytes": 2519667,
+      "url": "https://www.ti.com/lit/ds/symlink/bq25173.pdf",
+      "use": "U3DSG8 separate nominal25mA linearcapcharger,KISET/VFB/OCP/CE/lands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/startup-source-cache/tps61023.pdf",
+      "sha256": "f61135a93053e9e875a67ec9fbf51a3dda13194ae8d6e1fdd817af6e8590fae5",
+      "bytes": 2392725,
+      "url": "https://www.ti.com/lit/ds/symlink/tps61023.pdf",
+      "use": "U5DRL6 cap-onlybooststartup/precharge/refs/L&C/lands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc1g0832.pdf",
+      "sha256": "349fe4169b78f5428f4eaa9aff3573683632d30686d089bce2dc0130273b09d3",
+      "bytes": 800687,
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g0832.pdf",
+      "use": "Selected physicallogic pin/function,DC limits and package example lands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc1g3208.pdf",
+      "sha256": "6fe29a86acaaa4e8782c789ba6bbea6be9626d2a1141b5d5bdd93fa6b5a9a041",
+      "bytes": 769886,
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g3208.pdf",
+      "use": "Selected physicallogic pin/function,DC limits and package example lands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc1g11.pdf",
+      "sha256": "ffd953703273b43844eae23cfbf31cfc801a3b9443f2c863d49dde62f5a9232b",
+      "bytes": 2242255,
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
+      "use": "Selected physicallogic pin/function,DC limits and package example lands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc1g14.pdf",
+      "sha256": "c21067b4f4119d0981fb2e8d73b987b0e661c86f7bb0ed161f23a4b599fd68a7",
+      "bytes": 3094243,
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf",
+      "use": "Selected physicallogic pin/function,DC limits and package example lands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc2g132.pdf",
+      "sha256": "3e01a5de607f9fea78978a21f050ffa6218a241b5baecc66ab4f4fe4895a3744",
+      "bytes": 803617,
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g132.pdf",
+      "use": "Selected physicallogic pin/function,DC limits and package example lands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/sn74lvc2g14.pdf",
+      "sha256": "de3f4670541e131ca412cb2cb83dd2c91bb5f23806e1442a156cc17c1543710d",
+      "bytes": 880354,
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g14.pdf",
+      "use": "Selected physicallogic pin/function,DC limits and package example lands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/separated-candidate/source-cache/sn74lvc2g17.pdf",
+      "sha256": "624dbe55679d2fed4123b0d7708cd0d295efcc78de395e71a0caf5cd13cbc216",
+      "bytes": 1888823,
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf",
+      "use": "U36/U37Schmittbuffers pins/function/Ioff"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/separated-candidate/source-cache/tnpw_e3.pdf",
+      "sha256": "6f0508c568cb355aaf2accdd33fe3a780d3ea5ef207c4c9a71839a8acadc33a5",
+      "bytes": 363615,
+      "url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+      "use": "Exact TNPW e3 codes,0.1%25ppm/ranges/power/body"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/vishay-28950.pdf",
+      "sha256": "9e2b145c937da3be1e926b8afc2856959754eeb4d1103241d838038f7308144e",
+      "bytes": 83913,
+      "url": "https://www.vishay.com/doc?28950",
+      "use": "Manufacturer IPC7351 recommended0402/0805/1206 lands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/grm10n.pdf",
+      "sha256": "7f6df06f2f3de797c5a8a1a78e9554288f39d4eb167f0cc86fea91ac178960ab",
+      "bytes": 1953748,
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71H103KA88-01A.pdf",
+      "use": "Exact10nF GRM155R71H103KA88D and Table2GRM15 selectedreflowlands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/source-cache/grm21-spec.pdf",
+      "sha256": "e8432c7acfa982b24eb06dd145682f78051dc4649abbeb35bbca8646b1408e4f",
+      "bytes": 824601,
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KE51-01.pdf",
+      "use": "GRM21 primarynominal10uF andmanufacturer reflowlands; bias remains allocation"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/tps3702-q1-land-reference.pdf",
+      "sha256": "5bb4e737d2a425afba7780118e8c1281817ea204a68d8a619e92fdee921a1165",
+      "bytes": 1757946,
+      "url": "https://www.ti.com/lit/ds/symlink/tps3702-q1.pdf",
+      "use": "Only DDC0006A mechanical/exampleland reference; NOT electricalreplacement"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/sources/drawing.pdf",
+      "sha256": "ea33e0b40545e545bf698cbac3bb1c0f5a3fc7ca6b5b7fda83a63134d4affaa7",
+      "bytes": 469688,
+      "url": "https://gct.co/download?name=USB4125.pdf&type=PDFDrawing",
+      "use": "GCT A6 exactsixcontacts/SH/pinlabels/1mmstake/externalbody/lands"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/separated-candidate/source-cache/at25sf161b.pdf",
+      "sha256": "f969d1a82b18de2fd33b01ef1b8b8a636a31b8c29a5094193d295fafe1fe581b",
+      "bytes": 1763634,
+      "url": "https://www.renesas.com/en/document/dst/at25sf161b-datasheet",
+      "use": "U2 exactMHB8+EP9 and SPI limits/protection"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/C0805.kicad_mod",
+      "sha256": "48afcf8985ddc51b815da206f54d12c62f1f6a8ac8e96fdbd723066380140875",
+      "bytes": 743,
+      "url": "local read-only manufacturer-derived footprint copied, seeland-sources.json",
+      "use": "Actual complete prototype land copied fromparent/Astra; no changedexternalownedfile"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/USB_GCT.kicad_mod",
+      "sha256": "94f1add52e7b9b4a741df10d6c3bd0faee4a95596e5ee4d0ca3dbaad9fa15303",
+      "bytes": 1450,
+      "url": "local read-only manufacturer-derived footprint copied, seeland-sources.json",
+      "use": "Actual complete prototype land copied fromparent/Astra; no changedexternalownedfile"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/Qualified.pretty/NOR8.kicad_mod",
+      "sha256": "f52a1fc88a1c17325135c27e3c68693037b56130849b50a00c4d2fe47af419aa",
+      "bytes": 1599,
+      "url": "local read-only manufacturer-derived footprint copied, seeland-sources.json",
+      "use": "Actual complete prototype land copied fromparent/Astra; no changedexternalownedfile"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/tongue.kicad_pcb",
+      "sha256": "9d199805cb6153b60b46d6027ff0544c402f59536bb5f8b17889015254a0aec1",
+      "bytes": 220678,
+      "url": "local frozen proposedmechanicalbranch",
+      "use": "Actual37+NOR+USB+4holes board used unchanged exceptlocalrefprefix/replacementwithsamenets"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/README.md",
+      "sha256": "80034f9bb95ce086cff5e3e1b1ccf2256d41bda2ad7e178d5641d0c987755487",
+      "bytes": 6991,
+      "url": "local proposedmechanicalbranch",
+      "use": "Frozen rearstop/pad/bridge/rail/tongue/reserve dimensions; no manufacturingclaim"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/sources/spec.pdf",
+      "sha256": "adeaf1f264b8999c4b40bfd7fd202543201a60246297be6906a83e08a59259a2",
+      "bytes": 395353,
+      "url": "https://gct.co/download?name=usb4125-spec.pdf&type=PDFSpecification",
+      "use": "GCT actualsource ratings/temperature/matingforce, sixcontact contract"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/source-cache/swrc354/docs/BOM and PnP - CC1352EM IPC Rev1_1.xlsx",
+      "sha256": "92ac705ec14c80a035e1fb3c86465af3564c6e1e0ef768eb6896df1c4a41b22f",
+      "bytes": 12626,
+      "url": "https://www.ti.com/lit/zip/swrc354",
+      "use": "PrimaryTI referenceBOM actualGRM155R71E104KE14D100n andGRM155R61C105KA12D1u; not bias/temperature minimumC evidence"
+    }
+  ],
+  "web_only_originals": [
+    {
+      "url": "https://www.coilcraft.com/getmedia/76c9c081-4945-4c85-9129-9356e1ad6734/xgl4020.pdf",
+      "document": "1529-1/3 revised2026-02-19",
+      "use": "XGL4020-222MEC2.2uH20%,maxDCR21.5mohm25C,10%Ldrop2.7Areference;maxbody4.3x4.3,land.98x3.4innergap2.37;shortleadswitchingend",
+      "cache": "Directdownload403; primaryoriginal readviaweb. No inventedPDFhash."
+    },
+    {
+      "url": "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/xfl4020.pdf",
+      "document": "745-1/3 revised2026-03-10",
+      "use": "XFL4020-222MEC2.2uH20%,DCRmax23.5mohm25C,10%Ldrop3.1Areference;samebody/lands. Currenttemperature references notabsolute guarantees.",
+      "cache": "Directdownload403; originalreadviaweb; no inventedhash."
+    },
+    {
+      "url": "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-hv-supercapacitors-cylindrical-cells-data-sheet.pdf",
+      "document": "TechnicalData4376 effective2020-01",
+      "use": "HV1325-2R7156-R15F\u221210/+30%,maxESR.03ohm20C,EOL70%C/200%ESR;13.5diameter/28.4length,5+/-.5pitch,.60+/-.02leads;temperature\u221240..65C withoutderating",
+      "cache": "Directdownloadtimeout; originalreadviaweb, no inventedhash."
+    }
+  ],
+  "land_notes": "TI example copper +explicitderivedprocess defaults, not approvedstencil/DFM. DQN prototypeNSMD differsfromsourceSMD; NORderivedsourcepackageandGCTsupplierlandexactclone. Allactualpins independentlymatchedtoexport."
+}

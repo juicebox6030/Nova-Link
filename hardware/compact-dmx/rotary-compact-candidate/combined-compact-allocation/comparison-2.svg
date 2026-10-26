@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190" height="842" viewBox="0 0 1190 842"><rect width="100%" height="100%" fill="white"/>
+<text x="32" y="35" font-family="sans-serif" font-size="20" fill="#183349">Two-arrangement screen and new source constraint</text>
+<text x="32" y="61" font-family="sans-serif" font-size="11" fill="#183349">Offset rejected for transverse bulk, not falsely claimed to obstruct USB. S12 geometry has NOT been integrated into the collar.</text>
+<rect x="134.8" y="110" width="345.6" height="221.4" fill="#e7edf0" stroke="#183349"/>
+<rect x="70" y="215.3" width="64.80000000000001" height="129.60000000000002" fill="#d7dfe5" stroke="#183349"/>
+<rect x="178.0" y="336.8" width="208.89900000000003" height="178.20000000000002" fill="#aed5ca" stroke="#183349"/>
+<rect x="388.6" y="361.1" width="64.80000000000001" height="129.60000000000002" fill="#d7dfe5" stroke="#183349"/>
+<text x="70" y="550" font-family="sans-serif" font-size="13" fill="#183349">Offset lower allocation: 152 x150 x72 mm /1.642 L</text>
+<text x="70" y="570" font-family="sans-serif" font-size="11" fill="#183349">Same2.7points/mm; excludes new transverse harness neck.</text>
+<text x="70" y="592" font-family="sans-serif" font-size="11" fill="#183349">68.54% wider thaninline for5.12% smaller bounding volume.</text>
+<circle cx="840" cy="280" r="132" fill="#e4efef" stroke="#183349"/>
+<circle cx="840" cy="280" r="96" fill="#ffffff" stroke="#183349"/>
+<rect x="788" y="175.6" width="104" height="4" fill="#7fa7d3" stroke="#183349"/>
+<rect x="768" y="167.6" width="20" height="8" fill="#eea38b" stroke="#183349"/>
+<text x="660" y="465" font-family="sans-serif" font-size="11" fill="#183349">S12 cross-section:4points/mm, not same viewscale.</text>
+<text x="660" y="485" font-family="sans-serif" font-size="11" fill="#183349">Board32axial x26tangential x1mm.</text>
+<text x="660" y="505" font-family="sans-serif" font-size="11" fill="#183349">Clamp outercornerR=sqrt(28.1^2+18^2)=33.371mm.</text>
+<text x="660" y="525" font-family="sans-serif" font-size="11" fill="#183349">Bare clamp exceedsR33; wall/clearance additional.</text>
+<text x="660" y="545" font-family="sans-serif" font-size="11" fill="#183349">1mm wall +.25assembly -&gt;minimum screenOD69.24.</text>
+<text x="660" y="565" font-family="sans-serif" font-size="11" fill="#183349">USB bodyends5mm fartheraxially, NOT matingplane.</text>
+<text x="660" y="585" font-family="sans-serif" font-size="11" fill="#183349">275mm length is only revised dimension screen.</text>
+<text x="70" y="665" font-family="sans-serif" font-size="12" fill="#183349">Lowerbound beforewalls/bends/tools:72.9 source-only +77.37 collar +48 connectors =198.27mm.</text>
+<text x="70" y="690" font-family="sans-serif" font-size="11" fill="#183349">Conservative81mm whole-carrier reservation gives206.37mm; neither is an achievable or approved housing minimum.</text>
+<text x="70" y="720" font-family="sans-serif" font-size="11" fill="#183349">Finite wires and residual intersections are recorded inchecks.json. No mains/thermal/fixture/endurance/manufacturing acceptance.</text>
+<text x="70" y="745" font-family="sans-serif" font-size="11" fill="#183349">New32x26 rotor and24x16 stationaryboards remain unrouted; outputprotection/startup/thermal gates stayopen.</text>
+<text x="70" y="775" font-family="sans-serif" font-size="12" fill="#183349">FAILED integration: primarybranch overlap; LVspool/clamp interference and0.581mm tail gap. NOT a complete assembly.</text>
+</svg>

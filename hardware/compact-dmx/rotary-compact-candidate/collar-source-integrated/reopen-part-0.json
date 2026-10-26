@@ -1,0 +1,739 @@
+{
+  "status": "PASS",
+  "native_sha256": "150ed97a5e852d244450ad9936259087f4423f11fc417d01aa62e1d5259a8ad1",
+  "native": [
+    {
+      "name": "StationaryCoreEnvelope",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 256957.14632241635
+    },
+    {
+      "name": "FixedEarPad0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.0078452550178119
+    },
+    {
+      "name": "FixedScrew0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.784424627239001
+    },
+    {
+      "name": "FixedEarShoe0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 4.378622393114376
+    },
+    {
+      "name": "FixedEarPad1",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.007845219003697
+    },
+    {
+      "name": "FixedScrew1",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.7844246272390036
+    },
+    {
+      "name": "FixedEarShoe1",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 4.3786223931143615
+    },
+    {
+      "name": "FixedAdhesive",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 7.669817340496294
+    },
+    {
+      "name": "FixedStiffener",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 30.53133410099386
+    },
+    {
+      "name": "FixedStaticTail",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 28.487571844360055
+    },
+    {
+      "name": "MovingEarPad0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.2744714186571324
+    },
+    {
+      "name": "MovingScrew0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.784424627239001
+    },
+    {
+      "name": "MovingEarShoe0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 5.298247717012141
+    },
+    {
+      "name": "MovingEarPad1",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.2744714186570905
+    },
+    {
+      "name": "MovingScrew1",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.7844246272390039
+    },
+    {
+      "name": "MovingEarShoe1",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 5.2982477170121545
+    },
+    {
+      "name": "MovingAdhesive",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 9.455500031420028
+    },
+    {
+      "name": "MovingStiffener",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 37.96993509080606
+    },
+    {
+      "name": "MovingStaticTail",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 34.84004656268887
+    },
+    {
+      "name": "IndexKnob",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 17.496092595723653
+    },
+    {
+      "name": "IndexPin",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 41.954788519933345
+    },
+    {
+      "name": "IndexRearCap",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 42.9392883892653
+    },
+    {
+      "name": "IndexSpring",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 10.93274243449249
+    },
+    {
+      "name": "StationarySpool",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3794.108481699925
+    },
+    {
+      "name": "CoreBondFront",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 30.22212132753475
+    },
+    {
+      "name": "CoreBondRear",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 30.22212132753475
+    },
+    {
+      "name": "FrameBolt_45_25_m29_5",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 5.475795995207006
+    },
+    {
+      "name": "FrameBolt_45_25_29_5",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 5.475795995207006
+    },
+    {
+      "name": "FrameBolt_68_9_m29_5",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 5.475795995207019
+    },
+    {
+      "name": "FrameBolt_68_9_29_5",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 5.475795995207019
+    },
+    {
+      "name": "RotorHalfPositiveY",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 10658.45721471812
+    },
+    {
+      "name": "RotorHalfNegativeY",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 10817.297369821386
+    },
+    {
+      "name": "Flex_minus90",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3347.5628477673895
+    },
+    {
+      "name": "Flex_0",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3347.5474286690405
+    },
+    {
+      "name": "Flex_90",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3347.531339721763
+    },
+    {
+      "name": "SRC_PCB_27x20x1_actual_holes_nominal",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 529.4222684037047
+    },
+    {
+      "name": "SRC_C1_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3.827249999999996
+    },
+    {
+      "name": "SRC_C10_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.395999999999999
+    },
+    {
+      "name": "SRC_C11_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.3959999999999995
+    },
+    {
+      "name": "SRC_C12_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.395999999999999
+    },
+    {
+      "name": "SRC_C13_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.3959999999999991
+    },
+    {
+      "name": "SRC_C2_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3.827249999999996
+    },
+    {
+      "name": "SRC_C3_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.3769999999999964
+    },
+    {
+      "name": "SRC_C4_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3.8272499999999985
+    },
+    {
+      "name": "SRC_C5_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3.8272499999999963
+    },
+    {
+      "name": "SRC_C6_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3.827249999999996
+    },
+    {
+      "name": "SRC_C7_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.3769999999999964
+    },
+    {
+      "name": "SRC_C8_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 108.37599999999998
+    },
+    {
+      "name": "SRC_C9_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 3.8272499999999976
+    },
+    {
+      "name": "SRC_D1_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.30712500000000076
+    },
+    {
+      "name": "SRC_J0_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 12.000000000000009
+    },
+    {
+      "name": "SRC_J1_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 240.60321000000008
+    },
+    {
+      "name": "SRC_L1_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 41.23270000000003
+    },
+    {
+      "name": "SRC_R1_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.23100000000000132
+    },
+    {
+      "name": "SRC_R10_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.23100000000000065
+    },
+    {
+      "name": "SRC_R11_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.2310000000000006
+    },
+    {
+      "name": "SRC_R12_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.23100000000000132
+    },
+    {
+      "name": "SRC_R13_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.23100000000000137
+    },
+    {
+      "name": "SRC_R2_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.23100000000000054
+    },
+    {
+      "name": "SRC_R3_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.23100000000000132
+    },
+    {
+      "name": "SRC_R4_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.23100000000000065
+    },
+    {
+      "name": "SRC_R5_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.23100000000000054
+    },
+    {
+      "name": "SRC_R6_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.23100000000000132
+    },
+    {
+      "name": "SRC_R7_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.23100000000000132
+    },
+    {
+      "name": "SRC_R8_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.23100000000000137
+    },
+    {
+      "name": "SRC_R9_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.23100000000000065
+    },
+    {
+      "name": "SRC_U1_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 4.409999999999997
+    },
+    {
+      "name": "SRC_U2_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 8.059999999999995
+    },
+    {
+      "name": "SRC_U3_maximum_body_allocation",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 10.167999999999996
+    },
+    {
+      "name": "SRC_J1_S1_stake_swept_slot_allocation_not_vendor_profile",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.0370176727053908
+    },
+    {
+      "name": "SRC_J1_S2_stake_swept_slot_allocation_not_vendor_profile",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1.0370176727053908
+    },
+    {
+      "name": "SRC_J1_S3_stake_swept_slot_allocation_not_vendor_profile",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.8390176727053881
+    },
+    {
+      "name": "SRC_J1_S4_stake_swept_slot_allocation_not_vendor_profile",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 0.8390176727053882
+    },
+    {
+      "name": "SRC_FPC_external_clamp_reserved_not_designed",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 164.40000000000003
+    },
+    {
+      "name": "SRC_FPC_solder_access_volume",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 168.8388000000001
+    },
+    {
+      "name": "SRC_Top_assembly_clearance_proposal",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 135.0
+    },
+    {
+      "name": "SRC_Bottom_assembly_clearance_proposal",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 135.0
+    },
+    {
+      "name": "BoardRetainerScrew_m11",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 2.9813714282567183
+    },
+    {
+      "name": "BoardRetainerScrew_11",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 2.981371428256718
+    },
+    {
+      "name": "BoardEndRetainer",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 18.279336444578213
+    },
+    {
+      "name": "TailClampScrew_74_4",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 2.0985838925979854
+    },
+    {
+      "name": "TailClampScrew_96_6",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 2.0985838925979854
+    },
+    {
+      "name": "TailClampShoe",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 42.58137625790354
+    },
+    {
+      "name": "StaticDevelopedFanout",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 577.0469296469491
+    },
+    {
+      "name": "StaticFanoutChannelReserve",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 1692.1901211896677
+    },
+    {
+      "name": "USBPlugApproach",
+      "valid": true,
+      "solids": 1,
+      "closed": true,
+      "volume_mm3": 936.0
+    }
+  ],
+  "bounded_thread_regions": [
+    {
+      "parts": [
+        "FixedScrew0",
+        "StationarySpool"
+      ],
+      "volume_mm3": 0.13202107443061162,
+      "region_check": true
+    },
+    {
+      "parts": [
+        "FixedScrew1",
+        "StationarySpool"
+      ],
+      "volume_mm3": 0.1320210744306128,
+      "region_check": true
+    },
+    {
+      "parts": [
+        "MovingScrew0",
+        "RotorHalfPositiveY"
+      ],
+      "volume_mm3": 0.09952565526572504,
+      "region_check": true
+    },
+    {
+      "parts": [
+        "MovingScrew1",
+        "RotorHalfPositiveY"
+      ],
+      "volume_mm3": 0.09952565526572621,
+      "region_check": true
+    },
+    {
+      "parts": [
+        "FrameBolt_45_25_m29_5",
+        "RotorHalfNegativeY"
+      ],
+      "volume_mm3": 0.9952565526572447,
+      "region_check": true
+    },
+    {
+      "parts": [
+        "FrameBolt_45_25_29_5",
+        "RotorHalfNegativeY"
+      ],
+      "volume_mm3": 0.9952565526572478,
+      "region_check": true
+    },
+    {
+      "parts": [
+        "FrameBolt_68_9_m29_5",
+        "RotorHalfNegativeY"
+      ],
+      "volume_mm3": 0.9952565526572568,
+      "region_check": true
+    },
+    {
+      "parts": [
+        "FrameBolt_68_9_29_5",
+        "RotorHalfNegativeY"
+      ],
+      "volume_mm3": 0.9952565526572603,
+      "region_check": true
+    },
+    {
+      "parts": [
+        "IndexRearCap",
+        "StationarySpool"
+      ],
+      "volume_mm3": 3.1415926535897665,
+      "region_check": true
+    },
+    {
+      "parts": [
+        "IndexKnob",
+        "IndexPin"
+      ],
+      "volume_mm3": 0.2764601535159007,
+      "region_check": true
+    },
+    {
+      "parts": [
+        "BoardRetainerScrew_m11",
+        "RotorHalfPositiveY"
+      ],
+      "volume_mm3": 0.49762827632861534,
+      "region_check": true
+    },
+    {
+      "parts": [
+        "BoardRetainerScrew_11",
+        "RotorHalfPositiveY"
+      ],
+      "volume_mm3": 0.49762827632861534,
+      "region_check": true
+    },
+    {
+      "parts": [
+        "RotorHalfPositiveY",
+        "TailClampScrew_74_4"
+      ],
+      "volume_mm3": 0.1990513105314515,
+      "region_check": true
+    },
+    {
+      "parts": [
+        "RotorHalfPositiveY",
+        "TailClampScrew_96_6"
+      ],
+      "volume_mm3": 0.1990513105314515,
+      "region_check": true
+    }
+  ],
+  "STEP": [
+    {
+      "file": "locked/pose--90.step",
+      "solids": 78,
+      "each_valid_closed": true
+    },
+    {
+      "file": "released/pose--90.step",
+      "solids": 78,
+      "each_valid_closed": true
+    },
+    {
+      "file": "exploded.step",
+      "solids": 77,
+      "each_valid_closed": true
+    }
+  ]
+}

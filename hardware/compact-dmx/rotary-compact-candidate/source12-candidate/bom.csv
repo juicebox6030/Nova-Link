@@ -1,0 +1,36 @@
+quantity,references,exact_MPN_or_fabrication_ID_and_value,kind,footprint,zone,max_body_X_mm,max_body_Y_mm,height_allocation_mm,land_and_source_qualification
+1,J3,FAB_FPC20_ROTATING,land_only,FPC20,rotating,20,2,0.3,Prototype only; see land-sources/DESIGN source and process gates
+1,J2,FAB_FPC20_STATIONARY,land_only,FPC20,stationary,20,2,0.3,Prototype only; see land-sources/DESIGN source and process gates
+1,TP1,FAB_PORT_FAULT_PROBE,land_only,TP1,rotating,1,1,0,Prototype only; see land-sources/DESIGN source and process gates
+1,TP2,FAB_PROTECT_FAULT_PROBE,land_only,TP1,rotating,1,1,0,Prototype only; see land-sources/DESIGN source and process gates
+1,J0,FAB_SOURCE12_WIRE_LANDS,land_only,Wire2,stationary,7,4.5,2.5,Prototype only; see land-sources/DESIGN source and process gates
+3,C10 C12 C13,GRM155R71E103KA01D 10nF,purchased,C0402,rotating,1.1,0.6,0.6,Prototype only; see land-sources/DESIGN source and process gates
+1,C11,GRM155R71E103KA01D 10nF,purchased,C0402,stationary,1.1,0.6,0.6,Prototype only; see land-sources/DESIGN source and process gates
+2,C4 C5,MSASE21GBB5226MTNA01 22uF,purchased,C0805,rotating,2.2,1.45,1.45,Prototype only; see land-sources/DESIGN source and process gates
+3,C2 C3 C7,MSAST21GBB5106MTNA01 10uF,purchased,C0805,rotating,2.2,1.45,1.45,Prototype only; see land-sources/DESIGN source and process gates
+1,C1,MSAST21GBB5106MTNA01 10uF,purchased,C0805,stationary,2.2,1.45,1.45,Prototype only; see land-sources/DESIGN source and process gates
+1,C6,T520D157M010ATE055 150uF,purchased,T520D,rotating,7.6,4.6,3.1,Prototype only; see land-sources/DESIGN source and process gates
+5,C8 C9 C15 C16 C17,TMK105B7104MV-FR 100nF,purchased,C0402,rotating,1.1,0.6,0.6,UNQUALIFIED provisional MPN; official lookup renamed-to-null; release requires valid source selection
+1,C14,TMK105B7104MV-FR 100nF,purchased,C0402,stationary,1.1,0.6,0.6,UNQUALIFIED provisional MPN; official lookup renamed-to-null; release requires valid source selection
+11,R9 R11 R13 R15 R16 R17 R22 R23 R24 R25 R26,TNPW0402100KBYED 100000ohm,purchased,R0402,rotating,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+1,R3,TNPW0402100KBYED 100000ohm,purchased,R0402,stationary,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+1,R6,TNPW0402100RBYED 100ohm,purchased,R0402,stationary,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+4,R8 R10 R21 R27,TNPW040210K0BYED 10000ohm,purchased,R0402,rotating,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+1,R2,TNPW040210K0BYED 10000ohm,purchased,R0402,stationary,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+1,R18,TNPW040220K0BYED 20000ohm,purchased,R0402,rotating,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+1,R19,TNPW040224K9BYED 24900ohm,purchased,R0402,rotating,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+1,R5,TNPW04022K00BYED 2000ohm,purchased,R0402,stationary,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+1,R20,TNPW040237K4BYED 37400ohm,purchased,R0402,rotating,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+1,R7,TNPW040264K0BYED 64000ohm,purchased,R0402,rotating,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+1,R1,TNPW040268K1BYED 68100ohm,purchased,R0402,stationary,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+1,R14,TNPW04028K00BYED 8000ohm,purchased,R0402,rotating,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+1,R12,TNPW04029K09BYED 9090ohm,purchased,R0402,rotating,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+1,R4,TNPW04029K09BYED 9090ohm,purchased,R0402,stationary,1.1,0.6,0.45,Prototype only; see land-sources/DESIGN source and process gates
+1,D1,TPD1E10B06DPYR,purchased,DPY2,rotating,1.05,0.65,0.5,Prototype only; see land-sources/DESIGN source and process gates
+1,U3,TPS25810RVCR,purchased,RVC20,rotating,3.1,4.1,1.0,Prototype only; see land-sources/DESIGN source and process gates
+1,U4,TPS25940LRVCR,purchased,RVC20,rotating,3.1,4.1,1.0,Prototype only; see land-sources/DESIGN source and process gates
+1,U1,TPS259474LRPWR,purchased,RPW10,stationary,2.1,2.1,0.8,Prototype only; see land-sources/DESIGN source and process gates
+1,U5,TPS3700DDCR,purchased,DDC6,rotating,1.75,3.05,1.1,Prototype only; see land-sources/DESIGN source and process gates
+1,U2,TPS62135RGXR,purchased,RGX11,rotating,2.1,3.1,1.0,Prototype only; see land-sources/DESIGN source and process gates
+1,J1,USB4105-GF-A,purchased,USB4105,rotating,9.09,7.65,3.46,Prototype only; see land-sources/DESIGN source and process gates
+1,L1,XAL4020-152MEC 1.5uH,purchased,XAL4020,rotating,4.3,4.3,2.1,Prototype only; see land-sources/DESIGN source and process gates

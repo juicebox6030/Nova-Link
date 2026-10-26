@@ -1,0 +1,97 @@
+{
+  "status": "PASS final mechanism conservatively covered by swept input",
+  "sweep_input_sha256": "bd0fec448bb6eadb2e103f55659500c57f3136c2d47c21f5af961a40ad70ba40",
+  "moving_outside_swept_input_mm3": 0.0,
+  "stationary_added_key_volume_mm3": 2.5483732216180757,
+  "added_key_XMax_mm": 41.4,
+  "rotor_XMin_mm": 42.0,
+  "pin_union_outside_original_mm3": 0.0,
+  "tip_geometry_equal": true,
+  "axial_stop_checks": [
+    {
+      "pin_displacement_mm": 0,
+      "intersection_mm3": 0.0,
+      "allowed": true
+    },
+    {
+      "pin_displacement_mm": -4.2,
+      "intersection_mm3": 0.0,
+      "allowed": true
+    },
+    {
+      "pin_displacement_mm": 0.05,
+      "intersection_mm3": 0.2986146540822821,
+      "allowed": false
+    },
+    {
+      "pin_displacement_mm": -4.25,
+      "intersection_mm3": 0.04551970482442725,
+      "allowed": false
+    }
+  ],
+  "stem_key_checks": [
+    {
+      "stem_rotation_deg": -45,
+      "key_interference_mm3": 0.07148075132314317
+    },
+    {
+      "stem_rotation_deg": 45,
+      "key_interference_mm3": 0.07148075132314179
+    }
+  ],
+  "rear_insertion_checks": [
+    {
+      "pin_displacement_mm": 0,
+      "housing_intersection_mm3": 0.0
+    },
+    {
+      "pin_displacement_mm": -1,
+      "housing_intersection_mm3": 0.0
+    },
+    {
+      "pin_displacement_mm": -2,
+      "housing_intersection_mm3": 0.0
+    },
+    {
+      "pin_displacement_mm": -3,
+      "housing_intersection_mm3": 0.0
+    },
+    {
+      "pin_displacement_mm": -4,
+      "housing_intersection_mm3": 0.0
+    },
+    {
+      "pin_displacement_mm": -5,
+      "housing_intersection_mm3": 0.0
+    },
+    {
+      "pin_displacement_mm": -6,
+      "housing_intersection_mm3": 0.0
+    },
+    {
+      "pin_displacement_mm": -7,
+      "housing_intersection_mm3": 0.0
+    },
+    {
+      "pin_displacement_mm": -8,
+      "housing_intersection_mm3": 0.0
+    },
+    {
+      "pin_displacement_mm": -9,
+      "housing_intersection_mm3": 0.0
+    },
+    {
+      "pin_displacement_mm": -10,
+      "housing_intersection_mm3": 0.0
+    },
+    {
+      "pin_displacement_mm": -11,
+      "housing_intersection_mm3": 0.0
+    },
+    {
+      "pin_displacement_mm": -12,
+      "housing_intersection_mm3": 0.0
+    }
+  ],
+  "interpretation": "Same181rigid pose proof applies; added fixed key has>=0.6mm axial separation from all rotating parts. Active flex proof unchanged."
+}

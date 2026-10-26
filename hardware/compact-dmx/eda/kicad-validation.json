@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "kicad_version": "10.0.7",
+  "exported_components": 14,
+  "intended_circuit_components": 12,
+  "explicit_boundary_components": [
+    "X1",
+    "J1"
+  ],
+  "nets_total": 15,
+  "connected_nets": 13,
+  "intentional_nc_nets": 2,
+  "erc_errors": 0,
+  "erc_warnings": 0,
+  "erc_exclusions": 0,
+  "all_U5_pins_and_passive_nodes_verified": true,
+  "scope": "PARTIAL isolated DMX sheet only. X1 specifies external power/control obligations; no full-product/ERC/PCB/hardware qualification.",
+  "sha256": {
+    "dmx-interface.kicad_sch": "ac4c59ab9f2d90d1025440bf59c3b9eafa1977e34f52411775b0b099e1c78b5e",
+    "nova-dmx.kicad_sym": "fd5699ba2e37c0b3f2b6e0c7c80c89c839d579ce4325d2eebaedc72c4c0eb418",
+    "dmx-interface.kicad_pro": "7db97587e773cca6bdaabeb2f309685e02aec80de3e5c10b58c8b991737677c6",
+    "dmx-interface.net": "00158bff76a1abbf7472e5dbd2ef9f04d81f237a739bb939c3e35fe2516af75e",
+    "dmx-erc.json": "cd638cffb05eeb94f691d689cf860c2495c50670743673b3754f6a066138f13a"
+  }
+}

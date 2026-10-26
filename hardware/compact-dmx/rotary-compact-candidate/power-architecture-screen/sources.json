@@ -1,0 +1,51 @@
+[
+  {
+    "document": "RECOM RAC20-K Rev14-2025 pp1\u20136,9",
+    "path": "hardware/compact-dmx/rotary-compact-candidate/power-architecture-screen/sources/recom-rac20-k.pdf",
+    "url": "https://recom-power.com/pdf/Powerline_AC-DC/RAC20-K.pdf",
+    "sha256": "32d5efd6e92e70e4b84b0b7be8da77ee440e9617ea81cf075f9faed62386675b",
+    "reused_readonly": false
+  },
+  {
+    "document": "TRACO TMLM Rev July1,2026 pp1\u20133,5",
+    "path": "hardware/compact-dmx/rotary-compact-candidate/power-architecture-screen/sources/traco-tmlm.pdf",
+    "url": "https://www.tracopower.com/sites/default/files/products/datasheets/tmlm_datasheet.pdf?download=1",
+    "sha256": "97872edd7582b957f006fcfa7c2e414be98c08a0d51808ba3130fce55eb40d0e",
+    "reused_readonly": false
+  },
+  {
+    "document": "MEAN WELL IRM20 specification2025-11-21 pp2\u20133",
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm20.pdf",
+    "url": "https://www.meanwell.com/Upload/PDF/IRM-20/IRM-20-SPEC.PDF",
+    "sha256": "aa1afdbcdf0bf6db796710e26bd5e258f4857ffb1c14bd1ac3d94af86f3b8789",
+    "reused_readonly": true
+  },
+  {
+    "document": "MEAN WELL PCB installation item2; explicitly includes IRM",
+    "path": "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sources/meanwell-pcb-installation.pdf",
+    "url": "https://www.meanwell.com/Upload/PDF/IRM-01/PCB.pdf",
+    "sha256": "fa68e719a5e78a45bae42d2c01afdd3dfecd1a43b6a48768616036003f05f54a",
+    "reused_readonly": true
+  },
+  {
+    "document": "TI TPS63070 SLVSC58B \u00a7\u00a77.1,7.3,7.5,9.2",
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps63070.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps63070.pdf",
+    "sha256": "a88ef66f3493156ff6e7da0849de0e0e1068647f2553d08c1844d4a90c5c65ef",
+    "reused_readonly": true
+  },
+  {
+    "document": "TI TPS25947 SLVSFC9C \u00a7\u00a76.3,7.3",
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25947.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+    "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4",
+    "reused_readonly": true
+  },
+  {
+    "document": "TI TPS25810 SLVSCR1C \u00a7\u00a76.1,6.3,7.3",
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25810.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps25810.pdf",
+    "sha256": "ccc31e3ad8b7970005e23ba8b6a165694f712e86fd337b9ba2fe117a98a2e13e",
+    "reused_readonly": true
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "status": "PROPOSED_ONLY_NOT_CAPTURED_NOT_CONNECTED",
+  "parent_Astra_owned_target": "CC1352R DIO18 package pin28 remains NC",
+  "boundary_mapping_changed": false,
+  "source_signal": "INPUT_FAULT_N, existing 100k to AON_2V5 retained in actual sheet",
+  "direct_connection": "REJECTED: unpowered GPIO >VDDS+0.3V; powered HIGH below0.8VDDS",
+  "proposed_part": "SN74LVC1G07DCKR",
+  "proposed_supply": "SYS_3V3",
+  "proposed_input": "INPUT_FAULT_N; replace AON pullup with10k to bound +/-5uA input leakage",
+  "proposed_output": "INPUT_FAULT_N_MCU (new name, requires parent/Astra interface agreement)",
+  "proposed_pins": {
+    "1": "NC",
+    "2": "INPUT_FAULT_N",
+    "3": "GND_USB",
+    "4": "INPUT_FAULT_N_MCU",
+    "5": "SYS_3V3"
+  },
+  "proposed_decoupling": "100nF local",
+  "proposed_output_pullup_ohm": 2200,
+  "proposed_output_pulldown_ohm": 15000,
+  "resistor_initial_plus_temp_fraction": 0.0125,
+  "Ioff_max_A_at_VCC0": 1e-05,
+  "off_node_max_V_under_Ioff": 0.151875,
+  "worst_powered_HIGH_divider_fraction": 0.8692781690140845,
+  "additional_sink_leakage_ALLOCATION_A_NOT_DATASHEET_TOTAL": 1e-05,
+  "high_margin_V_at3p2V_with_leak_allocation": 0.20232696963028118,
+  "extra_continuous_high_state_current_A": 0.00019186046511627906,
+  "qualifications_open": [
+    "No added circuit exists in ERC or BOM",
+    "Input off leakage and open-drain Ioff sourced; additional powered output and MCU leakage allocation needs complete component qualification",
+    "Logic undefined during SYS_3V3 ramps below1.65V; never treat fault-good as commit authority",
+    "Rail ramps, input transitions and PCB implementation must be verified",
+    "Parent/Astra must integrate output net, DIO18 connection, ownership and power budget allocation"
+  ]
+}

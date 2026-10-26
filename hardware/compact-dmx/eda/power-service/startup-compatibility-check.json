@@ -1,0 +1,112 @@
+{
+  "scope": "Clarification only; arithmetic on explicit allocations, no circuit or compatibility selection",
+  "conclusion": "1.5A is not intrinsic to separated architecture; larger engineering margin/faster charging was a design preference; source-guaranteed500mA implementation remains unresolved",
+  "main_limiter_min_mA": 389.8002075527674,
+  "main_limiter_max_mA": 488.20996219811474,
+  "upstream_aux_allowance_before_exceeding500mA_mA": 11.650037801885262,
+  "assumptions": {
+    "main_output_load_W": 1.1,
+    "buck_efficiency": 0.85,
+    "main_other_current_mA": 2,
+    "TPS2553_branch_IQ_allowance_mA": 0.14,
+    "TPS22946_IQ_allowance_mA": 0.005,
+    "BQ_ISET_ohm": 12000,
+    "BQ_current_min_mA_conditional": 22.42152466367713,
+    "BQ_current_max_mA_conditional": 27.596588058203714,
+    "BQ_enabled_IQ_max_test_value_mA": 0.6,
+    "BQ_accuracy_at0_to2p65V_and_IQ_off_test_conditions_guaranteed": false,
+    "TPS22946_60mA_guaranteed_at4p4_to5p5V": false,
+    "boot_load_or_efficiency_maximum_guaranteed": false
+  },
+  "rows": [
+    {
+      "condition": "assumed_full_source",
+      "assumed_buck_input_V": 4.304799057371368,
+      "main_base_mA": 302.6220801044889,
+      "BQ25_KISET_plus_resistor_plus_IQ_input_mA_conditional": 28.196588058203716,
+      "TPS2553_branch_healthy_total_mA_conditional": 330.9586681626926,
+      "TPS2553_branch100mA_DC_fault_total_mA": 402.76208010448886,
+      "TPS2553_fault_margin_to_MAIN_MIN_mA": -12.96187255172147,
+      "TPS22946_60mA_DC_case_total_mA_conditional": 362.62708010448887,
+      "TPS22946_DC_margin_to_MAIN_MIN_mA_conditional": 27.17312744827853
+    },
+    {
+      "condition": "old_qualified_floor",
+      "assumed_buck_input_V": 3.9125015286378924,
+      "main_base_mA": 332.7647645851172,
+      "BQ25_KISET_plus_resistor_plus_IQ_input_mA_conditional": 28.196588058203716,
+      "TPS2553_branch_healthy_total_mA_conditional": 361.1013526433209,
+      "TPS2553_branch100mA_DC_fault_total_mA": 432.90476458511716,
+      "TPS2553_fault_margin_to_MAIN_MIN_mA": -43.104557032349774,
+      "TPS22946_60mA_DC_case_total_mA_conditional": 392.7697645851172,
+      "TPS22946_DC_margin_to_MAIN_MIN_mA_conditional": -2.9695570323497735
+    }
+  ],
+  "buck_input_needed_to_fit100mA_DC_branch_fault_V": 4.4987718602734965,
+  "buck_input_needed_to_fit60mA_DC_branch_fault_V_conditional": 3.9479455990841497,
+  "TPS22946_startup_inrush_limit_mA_at3p3V_test": [
+    375,
+    685
+  ],
+  "TPS22946_8ms_startup_window_is_specified_maximum": false,
+  "net_added_IC_body_area_mm2": {
+    "separated_with_TPS2553_branch_without_CC": 4.56,
+    "separated_with_TPS22946_branch_without_CC": 1.18,
+    "previous_CC_qualified_proposal": 11.76,
+    "CC_detector_and_LDO_saved": 7.2
+  },
+  "body_area_is_PCB_fit_or_complete_circuit_area": false,
+  "sources_sha256": {
+    "hardware/compact-dmx/eda/source-cache/tps2553.pdf": "88e453700cea2b263cdb5b44fce1e883e0f6d3b975457f879ac1423eeea42071",
+    "hardware/compact-dmx/eda/source-cache/tps22946.pdf": "c3d749f1e03c88130a4d48d5af6448bb524e7d18956bbf2a391fefdc0703fa3b",
+    "hardware/compact-dmx/eda/source-cache/tps62130.pdf": "f9b1af285622c0cf1a5991f9641a6e64c5e6d899e52cc0b1632808742019579f",
+    "hardware/compact-dmx/eda/source-cache/tps2116.pdf": "5babd88afb84e2e65c9c0da23b75f85758c0c730e34102a0fb746ac9573ed1d5",
+    "hardware/compact-dmx/eda/power-service/startup-source-cache/bq25173.pdf": "75869a03b40472ff587ffa5223dc5e5314f3b76478c6582119cf5a204d6e777e"
+  },
+  "preserved_artifact_sha256": {
+    "hardware/compact-dmx/eda/power-service/generate.py": "b71ae0a68c28a79d2d103fb24ea83789d0d1c242ef835b23c5fe8aab0e797740",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_sch": "68c63044c78d65f60ffd4554e0d0021bbdd8436baec43b053ab5d7b370e15e3c",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_sym": "bf8bce3889bb8f66210ee521a42ccab34fc911f2b91508cf06a5f4339c0c0b36",
+    "hardware/compact-dmx/eda/power-service/sym-lib-table": "b9383befe06b369e2a144fd0bd686eafd5040146f14deab765e088bba491d5f0",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_pro": "56b4e566883e51bff88503f529da5fc718135c0f45fefd8596a5e0aa6bfc61c9",
+    "hardware/compact-dmx/eda/power-service/erc.json": "9803f1b5e48c3563788ac6a753ea7e939632cf81ca9a7708781452fd22657aff",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_prl": "244de5b8770b43ec630095058cf630ab882b7dc22146ae57bee7a7d7d00eabe9",
+    "hardware/compact-dmx/eda/power-service/verify.py": "d2b4fbb007316ae71d8ee3acdd1531e782bb2ffdd6cb6910c1dedda89e275f46",
+    "hardware/compact-dmx/eda/power-service/power-service.net": "4759d3e52e38a9cbbecdafcd55555b337a0e9730c7f95ca768c98d6344e0eb8c",
+    "hardware/compact-dmx/eda/power-service/power-service.pdf": "edceb8c3dc80fd99ffa1cf99f1df6f0486411fb560c4ea7ca85a0453b175e62a",
+    "hardware/compact-dmx/eda/power-service/latch-truth-table.json": "367298d650a307de365f9e2d86d72ad4a1d82a8352c40a56d95c3b162a8b1363",
+    "hardware/compact-dmx/eda/power-service/validation.json": "1b4172ea46fd986bae9a08cfa69d1b41cd1c71f2a8c51593f12a9edeb83e5af9",
+    "hardware/compact-dmx/eda/power-service/component-ledger.csv": "975ce85c1ea8963ad945ee4f97202809f2f3dc7a7846a488a34e4101f00d38e9",
+    "hardware/compact-dmx/eda/power-service/DESIGN.md": "54072853f0ec085423905b8e96d5cab2d414f9b6cc0abc9d20a32143f4cc479a",
+    "hardware/compact-dmx/eda/power-service/corner-proof.py": "f79ee146f6091348092289d46594deb76e5cc3fff477b4974a4c4dcda0cdfc24",
+    "hardware/compact-dmx/eda/power-service/corner-proof.json": "c0010fd9bd58e3d287a9807d1989868884c705b2ccc4699b5c5bd838c737bb3d",
+    "hardware/compact-dmx/eda/power-service/source-evidence.json": "7acb92d9bc426a24db6811a3863e7783ec96cf9197d1e0ed8418dd19861a3532",
+    "hardware/compact-dmx/eda/power-service/source-cache-manifest.json": "dad615f516e497325f5d87a973008493fec046564442005f0e732079c62772fd",
+    "hardware/compact-dmx/eda/power-service/fault-interface-proposal.json": "f4c2550532e7f5fed8fea11fe3379ea6e811c252aea5a69348f6999e529f88cf",
+    "hardware/compact-dmx/eda/power-service/review-fix-receipt.json": "cbc21b01fc9ad7b69e5a8f65df5395d778e021b2490e52cbd053c3edbe4dccb6",
+    "hardware/compact-dmx/eda/power-service/rendered/power-service.svg": "c931206478804feeec0952b4c6b71b988bc050c2ebcc99295436f04a1d3f9350",
+    "hardware/compact-dmx/eda/power-service/rendered/power-service.png": "ec1eb41389559c7adf0388773831225650116d4b02d090a591b2ffd590308157",
+    "hardware/compact-dmx/eda/power-service/source-cache/tps3808.pdf": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed",
+    "hardware/compact-dmx/eda/power-service/source-cache/tps3700.pdf": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0",
+    "hardware/compact-dmx/eda/power-service/source-cache/sn74lvc1g07.pdf": "1e175728fccf85295e744a60420f48b1feb23f7f0061b8c73d70f81a6903f59e",
+    "hardware/compact-dmx/eda/power_budget.py": "eeb5fa6d83642653bf38ac29b5fc05da0ab03b2605c56993c7648da6432c2504",
+    "hardware/compact-dmx/eda/power-budget.json": "93643771ab7228dcc158e72926c71a63334daa78172a20bb7f8854be5b78395f",
+    "hardware/compact-dmx/eda/power-service/startup-analysis.json": "b0afb44ec2e44c877db2d4e4da3bc88e4b086bee47e49b8468cfc47d7f61a153",
+    "hardware/compact-dmx/eda/power-service/startup-analysis.py": "6482b1826298ab3c5a01dd9b330890439102677abd0a53034b26774e89fd7bfe",
+    "hardware/compact-dmx/eda/power-service/startup-baseline.json": "b4d14df8c341a0e4836a98c8bf22228d7acbfbdfd487360faffa45ef2d738485",
+    "hardware/compact-dmx/eda/power-service/startup-capture-check.json": "ea20038056ad91eb434d5421e24fd8822b0ffe87402eef5310e317c13ef70450",
+    "hardware/compact-dmx/eda/power-service/startup-proposal.md": "848d95bd906cdfe98bc4931e95a30c0489050c5b351a0aeb7aac3fac2ebc7462",
+    "hardware/compact-dmx/eda/power-service/startup-source-manifest.json": "2030dedf918eab502e28e3838129ba9136e58fd3ced41b2f8e5dbccb4db450cb",
+    "hardware/compact-dmx/eda/power-service/startup-source-cache/bq25173.pdf": "75869a03b40472ff587ffa5223dc5e5314f3b76478c6582119cf5a204d6e777e",
+    "hardware/compact-dmx/eda/power-service/startup-source-cache/tps61023.pdf": "f61135a93053e9e875a67ec9fbf51a3dda13194ae8d6e1fdd817af6e8590fae5",
+    "hardware/compact-dmx/eda/power-service/startup-source-cache/tps61099.pdf": "922c6396085dd53bc2e7531e90f1659b529bc7e648563a10ee260e8e28439581",
+    "hardware/compact-dmx/eda/power-service/startup-receipt.json": "5f23da4d44968d9e259b2cccc5621bd86ae4e5500de4443816cb935bbe17c323"
+  },
+  "preserved_artifacts_check": "37/37 PASS after note:27 baseline +9 prior startup artifacts +startup receipt",
+  "new_ERC_or_hardware_checks": "None: no circuit changed; prior capture check is not evidence for either proposed branch",
+  "new_paths": [
+    "hardware/compact-dmx/eda/power-service/startup-compatibility-note.md",
+    "hardware/compact-dmx/eda/power-service/startup-compatibility-check.json"
+  ],
+  "note_sha256": "80c143c34335f46d7a7ea2b02f4c47320247af71d966e08f79334878db1efa6b"
+}

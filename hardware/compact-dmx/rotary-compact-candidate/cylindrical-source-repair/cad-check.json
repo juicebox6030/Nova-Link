@@ -1,0 +1,295 @@
+{
+  "valid_single_solids": 356,
+  "preserved_BRep_numeric_1e12": 317,
+  "new_physical": 28,
+  "new_vs_physical_pairs": 9086,
+  "positive_pairs": [
+    {
+      "a": "Pin_L",
+      "b": "FuseToLinePin",
+      "volume": 0.5799658165302864
+    },
+    {
+      "a": "Pin_N",
+      "b": "NeutralBranch",
+      "volume": 0.2551225991450643
+    },
+    {
+      "a": "Pin_LVplus",
+      "b": "SourceWireCopper1",
+      "volume": 0.10113536303839452
+    },
+    {
+      "a": "Pin_LVminus",
+      "b": "SourceWireCopper2",
+      "volume": 0.10116681220046328
+    },
+    {
+      "a": "ClosureScrew_m110_m32",
+      "b": "LowerShellPosts",
+      "volume": 4.523893421169314
+    },
+    {
+      "a": "ClosureScrew_m110_32",
+      "b": "LowerShellPosts",
+      "volume": 4.523893421169314
+    },
+    {
+      "a": "ClosureScrew_m32_m32",
+      "b": "LowerShellPosts",
+      "volume": 4.5238934211693005
+    },
+    {
+      "a": "ClosureScrew_m32_32",
+      "b": "LowerShellPosts",
+      "volume": 4.523893421169301
+    },
+    {
+      "a": "LowerShellPosts",
+      "b": "CarrierScrew0",
+      "volume": 4.976282763286247
+    },
+    {
+      "a": "LowerShellPosts",
+      "b": "CarrierScrew1",
+      "volume": 4.976282763286247
+    },
+    {
+      "a": "LowerShellPosts",
+      "b": "CarrierScrew2",
+      "volume": 4.976282763286246
+    },
+    {
+      "a": "LowerShellPosts",
+      "b": "CarrierScrew3",
+      "volume": 4.976282763286246
+    },
+    {
+      "a": "TrunkL",
+      "b": "LineToFuse",
+      "volume": 15.225564688491135
+    },
+    {
+      "a": "TrunkN",
+      "b": "NeutralBranch",
+      "volume": 15.20078043856614
+    }
+  ],
+  "corridors": [
+    {
+      "lane": "L",
+      "outside_worst_bore_mm3": 0.0
+    },
+    {
+      "lane": "N",
+      "outside_worst_bore_mm3": 0.0
+    },
+    {
+      "lane": "PE",
+      "outside_worst_bore_mm3": 0.0
+    }
+  ],
+  "unqualified_reservation_crossings": [
+    {
+      "part": "LowerShellPosts",
+      "reserved_volume_crossing": 732.1167519925651
+    },
+    {
+      "part": "UpperShellRetention",
+      "reserved_volume_crossing": 1638.0
+    },
+    {
+      "part": "RetainedCarrier",
+      "reserved_volume_crossing": 3790.8913211422614
+    },
+    {
+      "part": "CarrierScrew0",
+      "reserved_volume_crossing": 37.699111843077546
+    },
+    {
+      "part": "CarrierScrew1",
+      "reserved_volume_crossing": 37.699111843077546
+    },
+    {
+      "part": "CarrierScrew2",
+      "reserved_volume_crossing": 37.699111843077524
+    },
+    {
+      "part": "CarrierScrew3",
+      "reserved_volume_crossing": 37.699111843077524
+    },
+    {
+      "part": "NeutralBranch",
+      "reserved_volume_crossing": 87.11944347595163
+    },
+    {
+      "part": "LineToFuse",
+      "reserved_volume_crossing": 58.017022067208856
+    },
+    {
+      "part": "FuseToLinePin",
+      "reserved_volume_crossing": 141.1271774725333
+    },
+    {
+      "part": "SourceWireCopper1",
+      "reserved_volume_crossing": 14.777038235764383
+    },
+    {
+      "part": "SourceWireInsulation1_0",
+      "reserved_volume_crossing": 37.26268716070394
+    },
+    {
+      "part": "SourceWireCopper2",
+      "reserved_volume_crossing": 14.776009999750856
+    },
+    {
+      "part": "SourceWireInsulation2_0",
+      "reserved_volume_crossing": 37.259526497276426
+    }
+  ],
+  "motion_certificates": [
+    {
+      "part": "IRM20_12_maxbody",
+      "proof": "axial",
+      "xmax": -44.550000000000004
+    },
+    {
+      "part": "Pin_L",
+      "proof": "axial",
+      "xmax": -93.3
+    },
+    {
+      "part": "Pin_N",
+      "proof": "axial",
+      "xmax": -93.3
+    },
+    {
+      "part": "Pin_LVplus",
+      "proof": "axial",
+      "xmax": -48.3
+    },
+    {
+      "part": "Pin_LVminus",
+      "proof": "axial",
+      "xmax": -48.3
+    },
+    {
+      "part": "ClosureScrew_m110_m32",
+      "proof": "axial",
+      "xmax": -108.0
+    },
+    {
+      "part": "ClosureScrew_m110_32",
+      "proof": "axial",
+      "xmax": -108.0
+    },
+    {
+      "part": "ClosureScrew_m32_m32",
+      "proof": "axial",
+      "xmax": -30.0
+    },
+    {
+      "part": "ClosureScrew_m32_32",
+      "proof": "axial",
+      "xmax": -30.0
+    },
+    {
+      "part": "LowerShellPosts",
+      "proof": "axial",
+      "xmax": -27.0
+    },
+    {
+      "part": "UpperShellRetention",
+      "proof": "axial",
+      "xmax": -27.0
+    },
+    {
+      "part": "RetainedCarrier",
+      "proof": "axial",
+      "xmax": -39.0
+    },
+    {
+      "part": "CarrierScrew0",
+      "proof": "axial",
+      "xmax": -97.5
+    },
+    {
+      "part": "CarrierScrew1",
+      "proof": "axial",
+      "xmax": -97.5
+    },
+    {
+      "part": "CarrierScrew2",
+      "proof": "axial",
+      "xmax": -40.5
+    },
+    {
+      "part": "CarrierScrew3",
+      "proof": "axial",
+      "xmax": -40.5
+    },
+    {
+      "part": "SupportedFilm",
+      "proof": "axial",
+      "xmax": -30.0
+    },
+    {
+      "part": "Neck",
+      "proof": "axial",
+      "xmax": 3.55e-15
+    },
+    {
+      "part": "TrunkL",
+      "proof": "R24",
+      "outside_R24": 0.0
+    },
+    {
+      "part": "TrunkN",
+      "proof": "R24",
+      "outside_R24": 0.0
+    },
+    {
+      "part": "TrunkPE",
+      "proof": "R24",
+      "outside_R24": 0.0
+    },
+    {
+      "part": "NeutralBranch",
+      "proof": "axial",
+      "xmax": -92.97136519156824
+    },
+    {
+      "part": "LineToFuse",
+      "proof": "axial",
+      "xmax": -108.49954933206278
+    },
+    {
+      "part": "FuseToLinePin",
+      "proof": "axial",
+      "xmax": -93.79999999999998
+    },
+    {
+      "part": "SourceWireCopper1",
+      "proof": "R24",
+      "outside_R24": 0.0
+    },
+    {
+      "part": "SourceWireInsulation1_0",
+      "proof": "R24",
+      "outside_R24": 0.0
+    },
+    {
+      "part": "SourceWireCopper2",
+      "proof": "R24",
+      "outside_R24": 0.0
+    },
+    {
+      "part": "SourceWireInsulation2_0",
+      "proof": "R24",
+      "outside_R24": 0.0
+    }
+  ],
+  "motion_angles": 181,
+  "lock_access_collisions": [],
+  "full_assembly_acceptance": false
+}

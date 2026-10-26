@@ -1,0 +1,13 @@
+# Axial routed source candidate checkpoint
+
+2026-10-23. Main b42c0e6284aac734fde851c69146abf73920f337. Writes ONLY this new directory. No children/threads/install/hardware/firmware/vendor outreach/git publication. Parent owns integration and final transform; Astra owns collar.
+
+Objective: route the existing source circuit with USB mouth axial+X at the right PCB edge, not rotate the old25x18 board. Top parts only,4layers permitted, real complete copper connectivity, netlist equivalence, no NEW DRC violations; retain four knownGCTNPTH exceptions without rule changes. Preserve supplier lands.25x18x1 target; if not supported, report actual achieved dimensions and physical gate.
+
+Source correction: TPS63070 section11.1 explicitly requires10k in series for EN tiedVIN. Added R12 TNPW040210K0BYED between PROTECTED_IN and newinternalREG_EN_SERIES/U2.14. All original parts/values/boundaries unchanged. R13 TNPW0402100RBYED100ohm adds the parent-authorized DVDT series recommendation because C12max11nF exceeds10nF. C12.1 becomesINPUT_DVDT_C. These two source-backed internal net splits are the only electrical deltas; original values and frozen capture unchanged.
+
+Preservation: current protected inputs include root-authorized citation-only metadata corrections described in accepted-citation-metadata-delta.json. All current original circuit/numeric/footprint/mechanical hashes checked. Also accepted exactly the four parent doc/check/receipt/inventory updates in accepted-source-review-metadata-delta.json; chained preservation verifies all349currentinputs and90original reviewfiles. No reviewed-baseline writes by this task.
+
+Acceptance: saved-pad/net equivalence, actual0unconnected, endpoint/short/clearance checks, USB Dshort resistance/path screen, primary thermal/layout citations, actualrender/STEP port/frame/stake/strain-relief allocations, exact commands/hashes/receipt. Startup/efficiency/current/thermal/fault/OVP/USB functional and wholecollarfit gates remain open.
+
+Current state: routed27x20x1mm, top-only four-layer source. RealERC0; DRC4inheritedGCTNPTH/0new/0unconnected. Actual127pads/1164endpoints,582tracks/92vias and57source-landdimensionchecks pass. STEP34validbody/PCBsolids/561zero-overlapbodypairs plusactual98holes/4stakes; physical target25x18notachieved. Exact PCB portdatum(27,10,0),+X, solderrowX22.245;3.46mmmaxconnectorheight. ExternalFPCclampreserveextendsYto24mm; collartransform/fitnotaccepted. Receipt/SHA records finalcurrentstate. Bounded one circuit/placement/routing effort complete; no architecturecarousel or stationarymains/core edits. Parent owns independent verification/integration. Allsourcefunctional/thermal/startup/fault/USB/processgatesstayUNMET.

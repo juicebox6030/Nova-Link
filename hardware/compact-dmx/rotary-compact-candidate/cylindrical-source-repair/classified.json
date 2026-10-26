@@ -1,0 +1,164 @@
+{
+  "new_physical_pairs": 9086,
+  "classified_positive_pairs": [
+    {
+      "a": "Pin_L",
+      "b": "FuseToLinePin",
+      "volume": 0.5799658165302864,
+      "limit_mm3": 0.6,
+      "classification": "Named electrical endpoint envelope overlap; solder/splice process UNQUALIFIED"
+    },
+    {
+      "a": "Pin_N",
+      "b": "NeutralBranch",
+      "volume": 0.2551225991450643,
+      "limit_mm3": 0.3,
+      "classification": "Named electrical endpoint envelope overlap; solder/splice process UNQUALIFIED"
+    },
+    {
+      "a": "Pin_LVplus",
+      "b": "SourceWireCopper1",
+      "volume": 0.10113536303839452,
+      "limit_mm3": 0.11,
+      "classification": "Named electrical endpoint envelope overlap; solder/splice process UNQUALIFIED"
+    },
+    {
+      "a": "Pin_LVminus",
+      "b": "SourceWireCopper2",
+      "volume": 0.10116681220046328,
+      "limit_mm3": 0.11,
+      "classification": "Named electrical endpoint envelope overlap; solder/splice process UNQUALIFIED"
+    },
+    {
+      "a": "ClosureScrew_m110_m32",
+      "b": "LowerShellPosts",
+      "volume": 4.523893421169314,
+      "limit_mm3": 4.523894421169301,
+      "classification": "M2 shaft / diameter1.6 pilot,4mm engagement; unqualified thread"
+    },
+    {
+      "a": "ClosureScrew_m110_32",
+      "b": "LowerShellPosts",
+      "volume": 4.523893421169314,
+      "limit_mm3": 4.523894421169301,
+      "classification": "M2 shaft / diameter1.6 pilot,4mm engagement; unqualified thread"
+    },
+    {
+      "a": "ClosureScrew_m32_m32",
+      "b": "LowerShellPosts",
+      "volume": 4.5238934211693005,
+      "limit_mm3": 4.523894421169301,
+      "classification": "M2 shaft / diameter1.6 pilot,4mm engagement; unqualified thread"
+    },
+    {
+      "a": "ClosureScrew_m32_32",
+      "b": "LowerShellPosts",
+      "volume": 4.523893421169301,
+      "limit_mm3": 4.523894421169301,
+      "classification": "M2 shaft / diameter1.6 pilot,4mm engagement; unqualified thread"
+    },
+    {
+      "a": "LowerShellPosts",
+      "b": "CarrierScrew0",
+      "volume": 4.976282763286247,
+      "limit_mm3": 4.976283763286231,
+      "classification": "M2 shaft / diameter1.6 pilot,4.4mm engagement; unqualified thread"
+    },
+    {
+      "a": "LowerShellPosts",
+      "b": "CarrierScrew1",
+      "volume": 4.976282763286247,
+      "limit_mm3": 4.976283763286231,
+      "classification": "M2 shaft / diameter1.6 pilot,4.4mm engagement; unqualified thread"
+    },
+    {
+      "a": "LowerShellPosts",
+      "b": "CarrierScrew2",
+      "volume": 4.976282763286246,
+      "limit_mm3": 4.976283763286231,
+      "classification": "M2 shaft / diameter1.6 pilot,4.4mm engagement; unqualified thread"
+    },
+    {
+      "a": "LowerShellPosts",
+      "b": "CarrierScrew3",
+      "volume": 4.976282763286246,
+      "limit_mm3": 4.976283763286231,
+      "classification": "M2 shaft / diameter1.6 pilot,4.4mm engagement; unqualified thread"
+    },
+    {
+      "a": "TrunkL",
+      "b": "LineToFuse",
+      "volume": 15.225564688491135,
+      "limit_mm3": 16,
+      "classification": "Named electrical endpoint envelope overlap; solder/splice process UNQUALIFIED"
+    },
+    {
+      "a": "TrunkN",
+      "b": "NeutralBranch",
+      "volume": 15.20078043856614,
+      "limit_mm3": 16,
+      "classification": "Named electrical endpoint envelope overlap; solder/splice process UNQUALIFIED"
+    }
+  ],
+  "unintended": [],
+  "reservation_crossings_not_waived": [
+    {
+      "part": "LowerShellPosts",
+      "reserved_volume_crossing": 732.1167519925651
+    },
+    {
+      "part": "UpperShellRetention",
+      "reserved_volume_crossing": 1638.0
+    },
+    {
+      "part": "RetainedCarrier",
+      "reserved_volume_crossing": 3790.8913211422614
+    },
+    {
+      "part": "CarrierScrew0",
+      "reserved_volume_crossing": 37.699111843077546
+    },
+    {
+      "part": "CarrierScrew1",
+      "reserved_volume_crossing": 37.699111843077546
+    },
+    {
+      "part": "CarrierScrew2",
+      "reserved_volume_crossing": 37.699111843077524
+    },
+    {
+      "part": "CarrierScrew3",
+      "reserved_volume_crossing": 37.699111843077524
+    },
+    {
+      "part": "NeutralBranch",
+      "reserved_volume_crossing": 87.11944347595163
+    },
+    {
+      "part": "LineToFuse",
+      "reserved_volume_crossing": 58.017022067208856
+    },
+    {
+      "part": "FuseToLinePin",
+      "reserved_volume_crossing": 141.1271774725333
+    },
+    {
+      "part": "SourceWireCopper1",
+      "reserved_volume_crossing": 14.777038235764383
+    },
+    {
+      "part": "SourceWireInsulation1_0",
+      "reserved_volume_crossing": 37.26268716070394
+    },
+    {
+      "part": "SourceWireCopper2",
+      "reserved_volume_crossing": 14.776009999750856
+    },
+    {
+      "part": "SourceWireInsulation2_0",
+      "reserved_volume_crossing": 37.259526497276426
+    }
+  ],
+  "bounded_geometry_status": "PASS",
+  "whole_product_status": "HOLD: unbuilt joints, electrical and insulation qualification"
+}

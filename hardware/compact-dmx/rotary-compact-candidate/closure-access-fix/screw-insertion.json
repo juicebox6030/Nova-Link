@@ -1,0 +1,35 @@
+{
+  "pairs": 1352,
+  "positive": [
+    {
+      "screw": "ClosureScrew_m110_32",
+      "part": "LowerShellPosts",
+      "volume_mm3": 4.523893421169314,
+      "limit_mm3": 4.523894421169301
+    },
+    {
+      "screw": "ClosureScrew_m110_m32",
+      "part": "LowerShellPosts",
+      "volume_mm3": 4.523893421169314,
+      "limit_mm3": 4.523894421169301
+    },
+    {
+      "screw": "ClosureScrew_m32_32",
+      "part": "LowerShellPosts",
+      "volume_mm3": 4.523893421169301,
+      "limit_mm3": 4.523894421169301
+    },
+    {
+      "screw": "ClosureScrew_m32_m32",
+      "part": "LowerShellPosts",
+      "volume_mm3": 4.5238934211693005,
+      "limit_mm3": 4.523894421169301
+    }
+  ],
+  "unintended": [],
+  "upper_installed": true,
+  "translation_envelope_mm": 60,
+  "thread_engagement": "Only original four M2/diameter1.6 pilot overlaps permitted; turning/threadstrength/process unqualified",
+  "head_to_passage_nominal_radial_clearance": 0.75,
+  "shaft_to_existing_clearance_hole_radial_clearance": 0.2
+}

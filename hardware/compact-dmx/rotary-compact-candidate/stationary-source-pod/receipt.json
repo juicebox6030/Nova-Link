@@ -1,0 +1,103 @@
+{
+  "status": "One conditional stationary allocation completed; compactness and mains construction NOT accepted",
+  "head": "b42c0e6284aac734fde851c69146abf73920f337",
+  "owned_path": "hardware/compact-dmx/rotary-compact-candidate/stationary-source-pod",
+  "artifacts": {
+    "freeze.py": "77aaec13afad0dbcf48ace21f07397c2a214067792b87e87d32b1513194411c9",
+    "protected-inputs.json": "64e1e762487c49c196f89f5ebb987ff982ba1c178c083164565da48c6cf46e6f",
+    "read_source.py": "2e05d079ca674242d54d9e454f8fba290d588dff6bb397267eb6fe2c51418d7e",
+    "comparison-source.json": "92958f8ed87523794c0a54e4157f5b193a184a7013f14ff4cf802ffebab4a25f",
+    "build.py": "05e55d9d492b8aeca7b65c0fc3875b188a297d017938548ebc26e580615e6318",
+    "build.log": "5e65d8c475a6425d0c551851c94b517d72165ea636db1f39a6c8f92c2dcef298",
+    "pod-shell-module-allocation.step": "334216e73cd79833f725a99223c6c3c8e3f7d926c1c84d2d21b679bb54cda303",
+    "complete-allocation.step": "1e734c6b5bc7140d61f3a48480af7b15a9bf6e52a7cd9e789e2b082ead65b32a",
+    "reservations.step": "34420b41171a58635679c691abc914c5e1fd29805df8d6dfcdaf3e023aa82727",
+    "groups.json": "7ce4350b1f16457d08c15f320125bfbeeab08de411dea66c7389ca8229e730ae",
+    "wire-paths.json": "56bd653ea99422750fdc319bd7c1a995ff47eae15c0c4afac1a236a383c1d5cb",
+    "check.py": "e4f9f20fec633b5a033dcf6c3a544379c65845455ed61458ce1ce63465623e0f",
+    "check.log": "14f690839808388b105f4ca43648f32862a4bac53906ea3cfa09b6841f210cb8",
+    "spacing-check.json": "466ac61c8fb8c933ef8c82d84df8653963288baa19e0355a1039559249d5152d",
+    "draw.py": "eb9c27094753c872c7dc5eddedc7dde7e78ddfe0e0210aba14b318cfab5118fc",
+    "allocation-1.svg": "2acf868432911871d7610481ff23722eef9f4556ee89cefa7b58144299fcc324",
+    "allocation-2.svg": "bbbbe8db2ae29160f3fb44623aceea542ee29120740dcbb58ce9df27ea8cf586",
+    "allocation-sections.pdf": "48992e416acf91f4b43fff425dc3a5f57d419185dda496ee18ae27ddb963a29c",
+    "preview-1.png": "37566e1cd83954e1a0ea33ae88a0d85045ed478822cc2c868fd4a395ccbda113",
+    "preview-2.png": "56a4b4eefa1da3c165d04982440011037f6aa594c3ff4940c5e1f46a50335c59",
+    "run_check.py": "fa19155f8c924a7028ca07a4265fa7d384b15e45b1088528fa85255e151c65f2",
+    "checks.json": "01ee4eba08be9de10fbef410fe8e7fe9508763815d7fe64623b15bac8421cda8",
+    "README.md": "3152fc6fe2c93f05fd9549188ce6fce60c29f284a4db4dc96ac121bfe4f8efe3",
+    "stationary-source-pod.FCStd": "b4d552afb0055d26fbd4e1ac4a530b192a6d9f9d96ba8b30ed79355187736e09",
+    "receipt.py": "3e5a6b0329ace573e2e83bd4b5704f493ed6829a4d4c57d950ad0a9ae516ca89",
+    "verify_receipt.py": "3f6b5ab9a5d70c7bea1ca4be5a5a76ed2f57e97463f86e36c054a22977802123",
+    "sources.json": "ebb7beb8747e2358ed63df5740fec670e49bf844930775d64d7fe40a574bf519"
+  },
+  "protected_inputs": 166,
+  "source_files": 4,
+  "product_envelope_mm": [
+    330.0,
+    89.0,
+    72.0
+  ],
+  "pod_shell_mm": [
+    128,
+    82,
+    62
+  ],
+  "source_reservation_mm": [
+    81,
+    52,
+    44
+  ],
+  "native_closed_connected_solids": 43,
+  "STEP": {
+    "pod-shell-module-allocation.step": {
+      "solids": 9,
+      "valid": true
+    },
+    "complete-allocation.step": {
+      "solids": 42,
+      "valid": true
+    },
+    "reservations.step": {
+      "solids": 27,
+      "valid": true
+    }
+  },
+  "spacing_checks": 239,
+  "physical_allocation_pairs": 36,
+  "USB_motion_positions": 181,
+  "USB_motion_checks": 4344,
+  "detents": [
+    -90,
+    -75,
+    -60,
+    -45,
+    -30,
+    -15,
+    0,
+    15,
+    30,
+    45,
+    60,
+    75,
+    90
+  ],
+  "USB_min_screen_gap_mm": 0.5799999999999923,
+  "unchanged_sidecar": "protected25-placement entire output folder included in protected-inputs.json",
+  "not_consumed": "source12-candidate unfinished files; old5V board is spatial comparison ONLY",
+  "remaining_gates": [
+    "Carrier/support retention and terminal transitions through reserved zone NOT designed",
+    "Final radial fixed-clamp interface NOT integrated",
+    "Variant connector/strain relief/power-plug/cable actual profiles unknown",
+    "No source12board consumed; no oldboard12V approval",
+    "Thermal/fire/mains/PE/creepage/clearance/film construction not released"
+  ],
+  "commands": [
+    "FreeCAD1.1.3 offscreen build.py",
+    "FreeCAD1.1.3 offscreen run_check.py (real nonzero exit on failed assertion)",
+    "python3 draw.py",
+    "pdftoppm -scale-to 1400 -png allocation-sections.pdf preview; bothpages visually inspected",
+    "python3 verify_receipt.py"
+  ],
+  "publication": "None; allprioroutputs frozen"
+}

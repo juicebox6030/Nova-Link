@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "NOVA_SERVICE") (type "KiCad") (uri "${KIPRJMOD}/Service.pretty") (options "") (descr "Unplaced source-derived service candidates")))

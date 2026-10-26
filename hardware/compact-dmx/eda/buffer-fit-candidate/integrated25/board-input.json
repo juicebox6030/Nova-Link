@@ -1,0 +1,17 @@
+{
+  "path": "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15-placement.kicad_pcb",
+  "sha256": "fc0785cdaaf874002b2362835070f29f00b187e4054dd3ab093c43e177ea035f",
+  "C23_nets": {
+    "1": "CAP_POS",
+    "2": "GND_USB"
+  },
+  "aperture": [
+    26.5,
+    25.5,
+    55.9,
+    35.8,
+    0.5
+  ],
+  "source_footprints": 178,
+  "tracks": 0
+}

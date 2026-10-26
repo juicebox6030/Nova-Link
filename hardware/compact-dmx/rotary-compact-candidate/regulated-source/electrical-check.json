@@ -1,0 +1,492 @@
+{
+  "status": "PASS literal/static/conditionalDC checks; source/thermal/USB/fit gates UNMET",
+  "IC_pin_checks": 46,
+  "USB_physical_terminal_checks": 16,
+  "resistor_checks": 11,
+  "capacitor_checks": 13,
+  "CC_state_rows": [
+    {
+      "REG_PG": false,
+      "CC1": "open",
+      "CC2": "open",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": null
+    },
+    {
+      "REG_PG": false,
+      "CC1": "Rd",
+      "CC2": "open",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": null
+    },
+    {
+      "REG_PG": false,
+      "CC1": "open",
+      "CC2": "Rd",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": null
+    },
+    {
+      "REG_PG": false,
+      "CC1": "Rd",
+      "CC2": "Ra",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": null
+    },
+    {
+      "REG_PG": false,
+      "CC1": "Ra",
+      "CC2": "Rd",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": null
+    },
+    {
+      "REG_PG": false,
+      "CC1": "open",
+      "CC2": "Ra",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": null
+    },
+    {
+      "REG_PG": false,
+      "CC1": "Ra",
+      "CC2": "open",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": null
+    },
+    {
+      "REG_PG": false,
+      "CC1": "Rd",
+      "CC2": "Rd",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": null
+    },
+    {
+      "REG_PG": false,
+      "CC1": "Ra",
+      "CC2": "Ra",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": null
+    },
+    {
+      "REG_PG": true,
+      "CC1": "open",
+      "CC2": "open",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": 1.5
+    },
+    {
+      "REG_PG": true,
+      "CC1": "Rd",
+      "CC2": "open",
+      "VBUS_enabled": true,
+      "VCONN_on": null,
+      "advertisement_A": 1.5
+    },
+    {
+      "REG_PG": true,
+      "CC1": "open",
+      "CC2": "Rd",
+      "VBUS_enabled": true,
+      "VCONN_on": null,
+      "advertisement_A": 1.5
+    },
+    {
+      "REG_PG": true,
+      "CC1": "Rd",
+      "CC2": "Ra",
+      "VBUS_enabled": true,
+      "VCONN_on": "CC2",
+      "advertisement_A": 1.5
+    },
+    {
+      "REG_PG": true,
+      "CC1": "Ra",
+      "CC2": "Rd",
+      "VBUS_enabled": true,
+      "VCONN_on": "CC1",
+      "advertisement_A": 1.5
+    },
+    {
+      "REG_PG": true,
+      "CC1": "open",
+      "CC2": "Ra",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": 1.5
+    },
+    {
+      "REG_PG": true,
+      "CC1": "Ra",
+      "CC2": "open",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": 1.5
+    },
+    {
+      "REG_PG": true,
+      "CC1": "Rd",
+      "CC2": "Rd",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": 1.5
+    },
+    {
+      "REG_PG": true,
+      "CC1": "Ra",
+      "CC2": "Ra",
+      "VBUS_enabled": false,
+      "VCONN_on": null,
+      "advertisement_A": 1.5
+    }
+  ],
+  "regulation": {
+    "nominal_V": 5.136,
+    "DC_divider_reference_FBbias_corners_V": [
+      5.06209455257485,
+      5.21034338509018
+    ],
+    "reference_accuracy_in_forcedPWM": 0.01,
+    "feedback_leakage_max_A": 1e-07,
+    "resistor_initial_plus100K_TCR": 0.002,
+    "lifetime_drift_included": false,
+    "port_DC_corner_V": [
+      4.91209455257485,
+      5.21034338509018
+    ],
+    "connector_mated_loop_alloc_ohm": 0.025,
+    "connector_sharing_guaranteed": false,
+    "extra_line_load_allocation_V": 0.02568,
+    "ripple_transient_one_sided_allocation_V": 0.1,
+    "conditional_port_window_V": [
+      4.78641455257485,
+      5.33602338509018
+    ],
+    "not_guaranteed": "Line/load entries0.07%/V,0.2%/A typ-only. No efficiency/ripple/loadstep/headroom guarantee from typicalgraph."
+  },
+  "input_protection": {
+    "UVLO_rise_V": [
+      4.114425818323354,
+      4.282970470981964
+    ],
+    "UVLO_fall_V": [
+      3.742059411137725,
+      3.9084726152705414
+    ],
+    "OVLO_rise_V": [
+      5.586025124710579,
+      5.819100225490982
+    ],
+    "breaker_A": [
+      2.994610778443114,
+      3.6747494989979965
+    ],
+    "response_max_s": null,
+    "reverse_current_leakage_max_A": null,
+    "reset": "Externalpowercycle/ENlow for latchedbreaker. Reverseblock is hardware, not software."
+  },
+  "input_model": {
+    "path_m": 1.046167656,
+    "hot_copper_R_ohm": 0.09208361747042736,
+    "termination_R_alloc_ohm": 0.02,
+    "efuse_R_max_ohm": 0.045,
+    "module_instantaneous_voltage_screen_V": [
+      4.6375,
+      5.3625
+    ],
+    "copper_qualified": false,
+    "converter_efficiency_min_published": false,
+    "port_aux_allocation_A": 0.001,
+    "input_aux_power_alloc_W": 0.005,
+    "corners": [
+      {
+        "eta_allocation": 0.8,
+        "VCONN_A": 0,
+        "reg_output_A": 1.501,
+        "reg_output_W": 7.820725421020359,
+        "FPC_input_A": 2.2861195919490895,
+        "reg_input_V": 4.27838806452662,
+        "module_DC_current_margin_to4A": 1.7138804080509105,
+        "breaker_min_margin_A": 0.7084911864940246,
+        "inductor_peak_model_A": 2.45964789924901,
+        "RHP_zero_Hz_at1p8uH": 206947.85824790117,
+        "TI3p05A_testpoint_margin_to_average_A": 0.7638804080509103,
+        "flex_copper_loss_W": 0.48126055012337615,
+        "termination_loss_W": 0.10452685577386943,
+        "input_eFuse_loss_W": 0.2351854254912062,
+        "regulator_loss_alloc_W": 1.9551813552550898,
+        "module_output_W": 10.601879607663903
+      },
+      {
+        "eta_allocation": 0.8,
+        "VCONN_A": 0.2,
+        "reg_output_A": 1.7009999999999998,
+        "reg_output_W": 8.862794098038396,
+        "FPC_input_A": 2.6230224664935706,
+        "reg_input_V": 4.2254661422569875,
+        "module_DC_current_margin_to4A": 1.3769775335064294,
+        "breaker_min_margin_A": 0.37158831194954356,
+        "inductor_peak_model_A": 2.804136370853738,
+        "RHP_zero_Hz_at1p8uH": 178125.5502819304,
+        "TI3p05A_testpoint_margin_to_average_A": 0.4269775335064292,
+        "flex_copper_loss_W": 0.6335580199334877,
+        "termination_loss_W": 0.1376049371946003,
+        "input_eFuse_loss_W": 0.30961110868785063,
+        "regulator_loss_alloc_W": 2.215698524509599,
+        "module_output_W": 12.164266688363934
+      },
+      {
+        "eta_allocation": 0.8,
+        "VCONN_A": 0.41,
+        "reg_output_A": 1.9109999999999998,
+        "reg_output_W": 9.956966208907334,
+        "FPC_input_A": 2.9871410745684353,
+        "reg_input_V": 4.168269074112291,
+        "module_DC_current_margin_to4A": 1.0128589254315647,
+        "breaker_min_margin_A": 0.007469703874678935,
+        "inductor_peak_model_A": 3.176179242818832,
+        "RHP_zero_Hz_at1p8uH": 154287.97735000897,
+        "TI3p05A_testpoint_margin_to_average_A": 0.06285892543156457,
+        "flex_copper_loss_W": 0.8216632052176527,
+        "termination_loss_W": 0.17846023598747732,
+        "input_eFuse_loss_W": 0.40153553097182393,
+        "regulator_loss_alloc_W": 2.4892415522268334,
+        "module_output_W": 13.852866733311119
+      },
+      {
+        "eta_allocation": 0.85,
+        "VCONN_A": 0,
+        "reg_output_A": 1.501,
+        "reg_output_W": 7.820725421020359,
+        "FPC_input_A": 2.1402480543638456,
+        "reg_input_V": 4.301302093336483,
+        "module_DC_current_margin_to4A": 1.8597519456361544,
+        "breaker_min_margin_A": 0.8543627240792686,
+        "inductor_peak_model_A": 2.310416338820714,
+        "RHP_zero_Hz_at1p8uH": 209170.52138689224,
+        "TI3p05A_testpoint_margin_to_average_A": 0.9097519456361542,
+        "flex_copper_loss_W": 0.42180390289425473,
+        "termination_loss_W": 0.09161323468416453,
+        "input_eFuse_loss_W": 0.2061297780393702,
+        "regulator_loss_alloc_W": 1.3801280154741813,
+        "module_output_W": 9.925400352112334
+      },
+      {
+        "eta_allocation": 0.85,
+        "VCONN_A": 0.2,
+        "reg_output_A": 1.7009999999999998,
+        "reg_output_W": 8.862794098038396,
+        "FPC_input_A": 2.4533191381700337,
+        "reg_input_V": 4.25212375496682,
+        "module_DC_current_margin_to4A": 1.5466808618299663,
+        "breaker_min_margin_A": 0.5412916402730805,
+        "inductor_peak_model_A": 2.6306425275139866,
+        "RHP_zero_Hz_at1p8uH": 180380.15610637097,
+        "TI3p05A_testpoint_margin_to_average_A": 0.5966808618299662,
+        "flex_copper_loss_W": 0.5542305557447669,
+        "termination_loss_W": 0.12037549587422713,
+        "input_eFuse_loss_W": 0.27084486571701105,
+        "regulator_loss_alloc_W": 1.5640224878891291,
+        "module_output_W": 11.377267503263532
+      },
+      {
+        "eta_allocation": 0.85,
+        "VCONN_A": 0.41,
+        "reg_output_A": 1.9109999999999998,
+        "reg_output_W": 9.956966208907334,
+        "FPC_input_A": 2.7908528626737925,
+        "reg_input_V": 4.199102736503503,
+        "module_DC_current_margin_to4A": 1.2091471373262075,
+        "breaker_min_margin_A": 0.20375791576932167,
+        "inductor_peak_model_A": 2.975654614243087,
+        "RHP_zero_Hz_at1p8uH": 156579.02843880522,
+        "TI3p05A_testpoint_margin_to_average_A": 0.2591471373262073,
+        "flex_copper_loss_W": 0.7172263772464134,
+        "termination_loss_W": 0.15577719402189005,
+        "input_eFuse_loss_W": 0.3504986865492526,
+        "regulator_loss_alloc_W": 1.757111683924824,
+        "module_output_W": 12.942580150649713
+      },
+      {
+        "eta_allocation": 0.9,
+        "VCONN_A": 0,
+        "reg_output_A": 1.501,
+        "reg_output_W": 7.820725421020359,
+        "FPC_input_A": 2.011985523486833,
+        "reg_input_V": 4.321450035672557,
+        "module_DC_current_margin_to4A": 1.9880144765131669,
+        "breaker_min_margin_A": 0.9826252549562811,
+        "inductor_peak_model_A": 2.1791616341863476,
+        "RHP_zero_Hz_at1p8uH": 211134.68286526875,
+        "TI3p05A_testpoint_margin_to_average_A": 1.0380144765131667,
+        "flex_copper_loss_W": 0.37276237938850776,
+        "termination_loss_W": 0.08096171493441172,
+        "input_eFuse_loss_W": 0.18216385860242637,
+        "regulator_loss_alloc_W": 0.8689694912244847,
+        "module_output_W": 9.33058286517019
+      },
+      {
+        "eta_allocation": 0.9,
+        "VCONN_A": 0.2,
+        "reg_output_A": 1.7009999999999998,
+        "reg_output_W": 8.862794098038396,
+        "FPC_input_A": 2.3044124562178254,
+        "reg_input_V": 4.275514555233391,
+        "module_DC_current_margin_to4A": 1.6955875437821746,
+        "breaker_min_margin_A": 0.6901983222252888,
+        "inductor_peak_model_A": 2.4783588986816505,
+        "RHP_zero_Hz_at1p8uH": 182370.14576367135,
+        "TI3p05A_testpoint_margin_to_average_A": 0.7455875437821744,
+        "flex_copper_loss_W": 0.48899317794555136,
+        "termination_loss_W": 0.10620633536743743,
+        "input_eFuse_loss_W": 0.2389642545767342,
+        "regulator_loss_alloc_W": 0.9847548997820444,
+        "module_output_W": 10.686712765710165
+      },
+      {
+        "eta_allocation": 0.9,
+        "VCONN_A": 0.41,
+        "reg_output_A": 1.9109999999999998,
+        "reg_output_W": 9.956966208907334,
+        "FPC_input_A": 2.619038039884108,
+        "reg_input_V": 4.226092030402347,
+        "module_DC_current_margin_to4A": 1.3809619601158918,
+        "breaker_min_margin_A": 0.37557273855900597,
+        "inductor_peak_model_A": 2.8000636566665,
+        "RHP_zero_Hz_at1p8uH": 158598.2876152242,
+        "TI3p05A_testpoint_margin_to_average_A": 0.4309619601158916,
+        "flex_copper_loss_W": 0.6316347057543388,
+        "termination_loss_W": 0.13718720508719984,
+        "input_eFuse_loss_W": 0.3086712114461996,
+        "regulator_loss_alloc_W": 1.106329578767482,
+        "module_output_W": 12.145788909962553
+      }
+    ],
+    "worst_case": {
+      "eta_allocation": 0.8,
+      "VCONN_A": 0.41,
+      "reg_output_A": 1.9109999999999998,
+      "reg_output_W": 9.956966208907334,
+      "FPC_input_A": 2.9871410745684353,
+      "reg_input_V": 4.168269074112291,
+      "module_DC_current_margin_to4A": 1.0128589254315647,
+      "breaker_min_margin_A": 0.007469703874678935,
+      "inductor_peak_model_A": 3.176179242818832,
+      "RHP_zero_Hz_at1p8uH": 154287.97735000897,
+      "TI3p05A_testpoint_margin_to_average_A": 0.06285892543156457,
+      "flex_copper_loss_W": 0.8216632052176527,
+      "termination_loss_W": 0.17846023598747732,
+      "input_eFuse_loss_W": 0.40153553097182393,
+      "regulator_loss_alloc_W": 2.4892415522268334,
+      "module_output_W": 13.852866733311119
+    },
+    "quad_fixed_point_agreement": true
+  },
+  "current_limit_caveat": "TPS63070 3.05..4.15A guaranteedtabletestVIN5V,VOUT6.5V,Tj0..125; not a guaranteedlimit atactual4.17V input. Table2A is maximumrecommended under statedbuckcondition, not an allcornerdeliverability grant. XFL4.1A10%dropat25C, nohotmin granted.",
+  "startup": {
+    "converter_softstart_current_A": "1A typical only untilPG; unknownmaximum",
+    "PG_EN_max_low_V": 0.4,
+    "PG_EN_min_high_V": 2.49098532173485,
+    "switched_input_C_nom_uF": 30,
+    "bulk_output_C_nom_uF": 226.1,
+    "bulk_C_max_tol_uF": 271.32,
+    "bulk_polymer_min_25C_uF": 120,
+    "filter_effective_C_min_allocation_uF": 15.2,
+    "filter_effective_L_max_uH": 1.8,
+    "filter_ratio_pass_from_ceramics_alone": false,
+    "note": "76uFceramic at80%effective loss gives15.2uF<18uF ratio target; polymer supplements butfrequency/temperature/ESR mustbequalified. No loop/inrush prooffromtypicalsoftstart."
+  },
+  "detach": {
+    "RC_discharge_to0p8V_alloc_s": 0.015514975517883752,
+    "minimum_specified_active_discharge_s": 0.039,
+    "scope": "ConditionalRC beforeextracableC;poweredattachminimumsuppliesneeded. NotUSBtimingcompliance."
+  },
+  "faults": [
+    {
+      "fault": "USB VBUS short",
+      "behavior": "TPS25810 currentlimit1.58..1.82A, response4us max only specifiedtest; thermalcycling. Full VBUS1.82+VCONN0.410+.001=2.231A exceeds converter2A recommendedmax; continuedoperation not required. Current/faultduration/thermal benchgate."
+    },
+    {
+      "fault": "VCONN short",
+      "behavior": "TPS25810 separate300..410mA limit and3us max response atspecifiedtest. Budget includes410mA as stresscase, not promised healthy cableload."
+    },
+    {
+      "fault": "Regulator input short",
+      "behavior": "U1 circuitbreaker/latchoff,3.334A nominal+/-10%; currentmayexceed before fasttrip; no guaranteedflexI2t/thermal proof."
+    },
+    {
+      "fault": "Reg output forced by external5V/source collapse",
+      "behavior": "TPS25810 offstate reverse leakage3uA max to85C atVIN=EN=0; U1 back-to-backFET RCB blocks regulator reverse current towardflex/module. U1reverseleak andresponse typical-only; no zero-backfeed or maxinjectedcharge guarantee."
+    },
+    {
+      "fault": "Reg FBopen/bottomshort",
+      "behavior": "U2 internaloutputOVP is described but cannot guarantee USB5.5V limit; U3 AUX/IN2 operating5.5max. D1ESD is not aDCclamp. IndependentUSBoutputOVP not captured, faultvoltageacceptance UNMET."
+    },
+    {
+      "fault": "Module overvoltage",
+      "behavior": "IRM20OVP5.75..6.75; U1independentOVLOdiv5.6..5.81 cuts converterinput, response typical-only. No allsinglefault/mainsrelease."
+    },
+    {
+      "fault": "FPCpartialshort/failedtermination",
+      "behavior": "U1 is rotating-side, cannot interrupt upstreamFPCshort. Module115..160%overload hiccup not qualifiedFPCprotection. Stationaryfuse/tracefaultcoordination remainsparentintegrationgate."
+    },
+    {
+      "fault": "Detach/brownout",
+      "behavior": "U3detaches and dischargesVBUS; U2PG gatesU3EN. PG mayremainhigh down90%output and cannot be promoted to4.75Vsourcevalid. Brownout/reattachraces and actual waveforms unmeasured."
+    }
+  ],
+  "stationary_module_geometry": {
+    "part": "IRM-20-5",
+    "max_body_mm": [
+      52.9,
+      27.7,
+      24.5
+    ],
+    "baseline_core_ID_mm": 43.0,
+    "baseline_carrier_x_mm": [
+      39,
+      100
+    ],
+    "proposed_body_x_mm": [
+      45,
+      97.9
+    ],
+    "proposed_body_z_mm": [
+      -10.75,
+      13.75
+    ],
+    "body_to_bore_radial_gap_mm": 1.9837247406171272,
+    "lead_length_max_mm": 4.5,
+    "max_lead_bottom_z_mm": -15.25,
+    "gap_to_original_mains_trunk_top_mm": -0.75,
+    "full_module_carrier_harness_fit": false,
+    "objection": "Bodyfits43mmbore, but maxleads overlap existingmainskeepout by0.75mm in thiszallocation. Parent must reviseinsulation/carrier/harness withoutenlargingcore; no completepackingclaim."
+  },
+  "module_limits": {
+    "IRM20_fullpower5V_temperature_C": 45,
+    "IRM20_fullpower_line_VAC": 115,
+    "IRM10comparison": "10Wcannotcoverworstconditional11..13Wreginput+FPC; remainshistorical",
+    "proposed_study_temperature_C": [
+      0,
+      45
+    ],
+    "proposed_study_line_VAC": [
+      115,
+      305
+    ],
+    "source_standard_mains_variants": "DistinctPowerCON/TRUE1/NEMA5-15stationaryendcaps remainparent; connectorratingscapline. No routinechoicequestion.",
+    "thermal": "IRM20eff79%typ at5V only; source/inductor/flex/controller/enclosureheating stillunqualified. Freeaircurvesdonotqualifysealedbarrel."
+  },
+  "protection_frozen": true,
+  "manufacturing_release": false
+}

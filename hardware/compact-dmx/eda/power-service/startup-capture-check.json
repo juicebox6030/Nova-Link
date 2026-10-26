@@ -1,0 +1,34 @@
+{
+  "scope": "Fresh CLI export/ERC and existing pin/passive verifier on temporary copy of unchanged capture; does not validate proposed architecture",
+  "command": "python3 <temporary-copy>/verify.py",
+  "temporary_script_change": "Only add flatpak per-command --filesystem=<temporary-copy> because Flatpak private /tmp cannot see host temporary schematic",
+  "initial_attempt_error": "Schematic file does not exist or is not accessible; exit3",
+  "exit_code": 0,
+  "temporary_directory": "/tmp/nova-power-startup-check-ku3lghyj",
+  "report": {
+    "capture_check": "PASS",
+    "scope": "Power/buffer/latch/POR/SPI/service hardware captured; MCU/RF and existing DMX sheet are explicit boundaries. Not a routed or qualified product.",
+    "kicad_version": "10.0.7",
+    "components": 78,
+    "ICs": 17,
+    "nets": 74,
+    "erc_errors": 0,
+    "erc_warnings": 0,
+    "erc_exclusions": 0,
+    "critical_IC_pin_map_checks": 131,
+    "all_two_terminal_checks": 57,
+    "all_two_terminal_nodes_present": true,
+    "derived_power_flags": [
+      "AON_RAW after diode OR",
+      "CAP_POS energy reservoir",
+      "SYS_3V3 after buck inductor"
+    ],
+    "control_power_flags": 0,
+    "stable_latch_cases": 16,
+    "USB_data_pins": "NC",
+    "service_separate_from_ROM_backdoor": true,
+    "full_product_release": "NOT_RELEASED",
+    "cold_cap_startup_accepted": false,
+    "timing_transient_and_hardware_validation": false
+  }
+}

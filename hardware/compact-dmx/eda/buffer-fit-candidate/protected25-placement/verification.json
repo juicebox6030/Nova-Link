@@ -1,0 +1,20 @@
+{
+  "saved_board_total_pads": 713,
+  "status": "Electrical mapping and nominal 2D checks PASS; conditional placement with proposed local base relief; unprotected route/access/protection qualification OPEN",
+  "frozen_hashes": 194,
+  "baseline_footprints_unchanged_position": 178,
+  "baseline_pad_geometry_checks": 673,
+  "explicit_changed_padnets": 3,
+  "added_parts": 14,
+  "board_footprints": 192,
+  "actual_export_connected_pin_comparisons": 459,
+  "critical_pin_assertions": 20,
+  "spatial_pairs": 896,
+  "ERC_violations": 0,
+  "DRC_violations": 0,
+  "unconnected": 485,
+  "tracks": 0,
+  "cell_tab_to_fuse_land_straight_distance_mm": 11.73381864526634,
+  "routing_length_is_not_this_distance": true,
+  "schematic_scope": "Complete qualified power + cell protection; existing MCU/RF/DMX are retained board context, not newly captured whole product"
+}

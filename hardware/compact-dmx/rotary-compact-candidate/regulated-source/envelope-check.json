@@ -1,0 +1,28 @@
+{
+  "status": "Valid simpleenvelopes; no collar/mechanism/thermal/safetyrelease",
+  "rotating_valid_solids": 32,
+  "zero_volume_pair_checks": 496,
+  "module_body_core_collision_volume_mm3": 0.0,
+  "module_lead_mains_keepout_checks": [
+    {
+      "pin": "Module_AC_N_maxlength_nominaldiameter",
+      "mains_keepout_overlap_mm3": 0.0
+    },
+    {
+      "pin": "Module_AC_L_maxlength_nominaldiameter",
+      "mains_keepout_overlap_mm3": 0.0
+    },
+    {
+      "pin": "Module_V_MINUS_maxlength_nominaldiameter",
+      "mains_keepout_overlap_mm3": 0.0
+    },
+    {
+      "pin": "Module_V_PLUS_maxlength_nominaldiameter",
+      "mains_keepout_overlap_mm3": 0.5890486225480877
+    }
+  ],
+  "known_gate": "V_PLUS lead4.5max overlaps originalmainskeepout. Do not use as an approvedharness or silentlytrimlead.",
+  "USB_body_allocation": "Derived7.65mm long envelope aligned with12x1.15lands/4.18toPCBedge; confirm actualsupplierSTEP/matingprofile beforecollarcutout.",
+  "module_full_fit": false,
+  "vendor_detailed_models": false
+}

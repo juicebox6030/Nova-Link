@@ -1,0 +1,1278 @@
+{
+  "holes": [
+    {
+      "ref": "J1",
+      "number": "",
+      "xy": [
+        23.32,
+        12.89
+      ],
+      "size_mm": [
+        0.65,
+        0.65
+      ],
+      "NPTH": true
+    },
+    {
+      "ref": "J1",
+      "number": "",
+      "xy": [
+        23.32,
+        7.11
+      ],
+      "size_mm": [
+        0.65,
+        0.65
+      ],
+      "NPTH": true
+    },
+    {
+      "ref": "J1",
+      "number": "S1",
+      "xy": [
+        22.82,
+        14.32
+      ],
+      "size_mm": [
+        1.7,
+        0.6
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "J1",
+      "number": "S2",
+      "xy": [
+        22.82,
+        5.68
+      ],
+      "size_mm": [
+        1.7,
+        0.6
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "J1",
+      "number": "S3",
+      "xy": [
+        25.6,
+        14.32
+      ],
+      "size_mm": [
+        1.4,
+        0.6
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "J1",
+      "number": "S4",
+      "xy": [
+        25.6,
+        5.68
+      ],
+      "size_mm": [
+        1.4,
+        0.6
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        6.3,
+        18.7
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        5.7,
+        18.7
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        1.2,
+        10.775
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        5.7,
+        18.099999
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        3.3,
+        10.15
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        2.7,
+        10.15
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        1.2,
+        13.175
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        6.3,
+        18.099999
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        15.7,
+        5.25
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        11.4,
+        6.8
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        14.1,
+        14.45
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        13.5,
+        13.85
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        17.225,
+        9.2
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        13.5,
+        14.45
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        10.7,
+        6.7
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        15.8,
+        14.575
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        17.625,
+        14.325
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        18.0,
+        5.25
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        10.7,
+        6.0
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        16.649999,
+        13.0
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        14.1,
+        13.85
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        15.8,
+        12.4
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        16.649999,
+        12.0
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        12.05,
+        2.1
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        3.4,
+        14.6
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        18.2,
+        11.7
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        6.75,
+        9.45
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        11.7,
+        9.725
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        1.975,
+        8.0
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        1.975,
+        15.2
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        18.125,
+        15.15
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        22.495,
+        6.8
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        13.0,
+        5.825
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        19.875,
+        14.7
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        19.825,
+        8.45
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        14.7,
+        18.7
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        18.8,
+        12.5
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        2.0,
+        13.5
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        9.35,
+        8.7
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        3.925,
+        5.825
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        21.92,
+        13.2
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        18.8,
+        11.7
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        13.95,
+        2.1
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        21.92,
+        6.8
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        22.495,
+        13.2
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        1.8,
+        2.35
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        7.8,
+        14.45
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        14.75,
+        11.25
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        6.1,
+        15.0
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        16.875,
+        15.9
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        7.8,
+        13.85
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        8.4,
+        14.45
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        8.4,
+        13.85
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        18.8,
+        13.3
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        18.2,
+        13.3
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        4.3,
+        2.35
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        18.0,
+        3.35
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        14.7,
+        18.099999
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        3.5,
+        8.55
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        15.7,
+        3.35
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        24.25,
+        3.5
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        8.5,
+        3.7
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        6.2,
+        8.1
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        18.2,
+        12.5
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        15.3,
+        18.099999
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        8.5,
+        4.6
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        6.625,
+        10.75
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        15.3,
+        18.7
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        6.4,
+        5.0
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        1.25,
+        11.6
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        2.625,
+        9.175
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        5.45,
+        15.875
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        5.6,
+        5.9
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        4.3,
+        4.25
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        1.8,
+        4.25
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        5.3,
+        8.324999
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        6.2,
+        5.95
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        6.2,
+        6.65
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        4.3,
+        10.25
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        4.8,
+        9.8
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        22.35,
+        3.5
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        20.8,
+        11.4
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        20.8,
+        10.7
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        22.245,
+        7.6
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        22.245,
+        12.4
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        19.975,
+        9.275
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        14.675,
+        12.075
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        5.8,
+        9.2
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        19.9,
+        13.875
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        23.2,
+        11.25
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        19.825,
+        10.1
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    },
+    {
+      "ref": "via",
+      "number": "",
+      "xy": [
+        20.725,
+        13.3
+      ],
+      "size_mm": [
+        0.3,
+        0.3
+      ],
+      "NPTH": false
+    }
+  ]
+}

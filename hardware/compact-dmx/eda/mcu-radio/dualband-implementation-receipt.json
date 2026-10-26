@@ -1,0 +1,210 @@
+{
+  "status": "SUPPORT_AND_DUALBAND_FRONTEND_CAPTURE_CHECKED_ANTENNA_NOT_RELEASED",
+  "owner_correction": "2.4 GHz plus US 915 MHz",
+  "base": "b42c0e6284aac734fde851c69146abf73920f337",
+  "changed_paths": [
+    "docs/hardware/dmx-hardware-bom.csv",
+    "hardware/compact-dmx/README.md",
+    "hardware/compact-dmx/eda/mcu-radio/DESIGN.md",
+    "hardware/compact-dmx/eda/mcu-radio/component-ledger.csv",
+    "hardware/compact-dmx/eda/mcu-radio/dualband-implementation-receipt.json",
+    "hardware/compact-dmx/eda/mcu-radio/dualband-source-evidence.json",
+    "hardware/compact-dmx/eda/mcu-radio/erc.json",
+    "hardware/compact-dmx/eda/mcu-radio/generate.py",
+    "hardware/compact-dmx/eda/mcu-radio/integration-inputs/dmx.net",
+    "hardware/compact-dmx/eda/mcu-radio/integration-inputs/power.net",
+    "hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_pro",
+    "hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_sch",
+    "hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_sym",
+    "hardware/compact-dmx/eda/mcu-radio/mcu-radio.net",
+    "hardware/compact-dmx/eda/mcu-radio/mcu-radio.pdf",
+    "hardware/compact-dmx/eda/mcu-radio/pin-allocation.csv",
+    "hardware/compact-dmx/eda/mcu-radio/placement-reservations.csv",
+    "hardware/compact-dmx/eda/mcu-radio/reference-contract.json",
+    "hardware/compact-dmx/eda/mcu-radio/rendered/mcu-radio.png",
+    "hardware/compact-dmx/eda/mcu-radio/rendered/mcu-radio.svg",
+    "hardware/compact-dmx/eda/mcu-radio/sym-lib-table",
+    "hardware/compact-dmx/eda/mcu-radio/validation.json",
+    "hardware/compact-dmx/eda/mcu-radio/verify.py",
+    "hardware/compact-dmx/eda/source-cache-manifest.json",
+    "hardware/compact-dmx/validate_package.py"
+  ],
+  "checks": {
+    "status": "SUPPORT_AND_DUALBAND_FRONTEND_CAPTURE_PASS_ANTENNA_OPEN",
+    "kicad_version": "10.0.7",
+    "exported_components": 24,
+    "actual_ICs": 2,
+    "explicit_boundary_components": 2,
+    "nets_including_NC": 51,
+    "verified_physical_pins": 49,
+    "cross_sheet_endpoint_checks": [
+      {
+        "net": "SPI_CS_N",
+        "MCU_pin": 17,
+        "power_endpoint": "U2.1"
+      },
+      {
+        "net": "SPI_MISO",
+        "MCU_pin": 14,
+        "power_endpoint": "U2.2"
+      },
+      {
+        "net": "SPI_MOSI",
+        "MCU_pin": 15,
+        "power_endpoint": "U2.5"
+      },
+      {
+        "net": "SPI_SCK",
+        "MCU_pin": 16,
+        "power_endpoint": "U2.6"
+      },
+      {
+        "net": "MCU_DE_REQUEST",
+        "MCU_pin": 10,
+        "power_endpoint": "U17.5"
+      },
+      {
+        "net": "MCU_ISO_REQUEST",
+        "MCU_pin": 11,
+        "power_endpoint": "U18.1"
+      },
+      {
+        "net": "RESET_OK",
+        "MCU_pin": 35,
+        "power_endpoint": "U16.1"
+      },
+      {
+        "net": "VBUS_GOOD_3V3",
+        "MCU_pin": 20,
+        "power_endpoint": "U18.3"
+      },
+      {
+        "net": "BUCK_PG",
+        "MCU_pin": 21,
+        "power_endpoint": "U4.4"
+      },
+      {
+        "net": "SERVICE_N_DISTINCT_GPIO",
+        "MCU_pin": 9,
+        "power_endpoint": "S_SERVICE.1"
+      },
+      {
+        "net": "ROM_BOOT_STRAP",
+        "MCU_pin": 8,
+        "power_endpoint": "J_FACTORY.6"
+      },
+      {
+        "net": "TMSC",
+        "MCU_pin": 24,
+        "power_endpoint": "J_FACTORY.3"
+      },
+      {
+        "net": "TCKC",
+        "MCU_pin": 25,
+        "power_endpoint": "J_FACTORY.4"
+      }
+    ],
+    "DMX_aliases": {
+      "MCU_DMX_TX": "DMX_TX",
+      "MCU_DMX_RX": "DMX_RX",
+      "MCU_RE_N": "DMX_RE_N"
+    },
+    "factory_reset_to_MR_not_RESET_output": true,
+    "service_distinct_from_ROM": true,
+    "erc_violations": 0,
+    "complete_support_capture": true,
+    "reference_pin_connections_checked": 54,
+    "RF_frontend_capture": true,
+    "antenna_final_match_captured": false,
+    "RF_capture": false,
+    "full_product_acceptance": false,
+    "input_source_sha256": {
+      "power": "68c63044c78d65f60ffd4554e0d0021bbdd8436baec43b053ab5d7b370e15e3c",
+      "dmx": "94f88a1aceee4ff5ebad1d1b09eaea44b9b0c6e3b1ffa6217c198123e1f6f4d5"
+    },
+    "cli_log": [
+      {
+        "args": [
+          "sch",
+          "export",
+          "netlist",
+          "--format",
+          "kicadxml",
+          "-o",
+          "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/mcu-radio/mcu-radio.net",
+          "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_sch"
+        ],
+        "output": [
+          "",
+          ""
+        ]
+      },
+      {
+        "args": [
+          "sch",
+          "erc",
+          "--format",
+          "json",
+          "--severity-all",
+          "--exit-code-violations",
+          "-o",
+          "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/mcu-radio/erc.json",
+          "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_sch"
+        ],
+        "output": [
+          "Found 0 violations\nSaved ERC Report to /home/juicebox/Nova-Link/hardware/compact-dmx/eda/mcu-radio/erc.json",
+          ""
+        ]
+      },
+      {
+        "args": [
+          "sch",
+          "export",
+          "pdf",
+          "-o",
+          "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/mcu-radio/mcu-radio.pdf",
+          "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_sch"
+        ],
+        "output": [
+          "Plotted to '/home/juicebox/Nova-Link/hardware/compact-dmx/eda/mcu-radio/mcu-radio.pdf'.\nDone.",
+          ""
+        ]
+      },
+      {
+        "args": [
+          "sch",
+          "export",
+          "svg",
+          "-o",
+          "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/mcu-radio/rendered",
+          "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_sch"
+        ],
+        "output": [
+          "Plotted to '/home/juicebox/Nova-Link/hardware/compact-dmx/eda/mcu-radio/rendered/mcu-radio.svg'.\nDone.",
+          ""
+        ]
+      }
+    ]
+  },
+  "BOM_rows": 49,
+  "new_BOM_rows": 8,
+  "commands": [
+    "python3 hardware/compact-dmx/eda/mcu-radio/generate.py",
+    "python3 hardware/compact-dmx/eda/mcu-radio/verify.py"
+  ],
+  "source_result": "SWRC354 valid public ZIP recovered, CC1352EM-IPC Rev1.1.0 schematic+BOM+netlist; Johanson current Rev2.0 production IPC; TI employee R1 RevB layout ZIP recovered. SWRC345A/SWRC361 remain failed HTML.",
+  "old_allocation_receipt_sha256": "f371c4c3d1206cd17b15f98f391e88104cd48cb945d01037f5b36803b4ede845",
+  "physical_impact": "No CAD mutation.22physicalparts on this sheet; frontend maxIPC2.10x1.35x1.00mm; reference antenna38x25does not fit18x30reservation. Full packing unproved. See placement-reservations.csv.",
+  "remaining": [
+    "Antenna/final match and new clearance/groundplane solution",
+    "RF switch historical preliminary part production/lifecycle confirmation",
+    "Custom48MHz crystal sourcing/specs/tuning/errata and chosenPHYerrorbudget",
+    "Reference stackup/layout transfer and PCB DRC",
+    "Power-off-safe fault interface; DIO18pin28NC",
+    "Coordinated DMX surge protection and switchabletermination",
+    "Shared-radio arbitration and residentloader future firmware",
+    "Hardware RF/inrush/thermal/runtime/fixture testing and regulatory qualification"
+  ],
+  "whole_package_validator": "Not rerun while Sol owns concurrent power fixes. Parent must regenerate/check package-validation after integrating49rowBOM; prior package PASS is not current acceptance.",
+  "authority": "Power-service/CAD sources and prior allocation receipt unchanged; no firmware/hardware/install/auth/children/git publication."
+}

@@ -1,0 +1,30 @@
+{
+  "status": "Primary-table interpretation corrected; acceptance check tightened",
+  "before": {
+    "DESIGN.md": "d9de2b4118a5aba15ce084723156c0ee104aa1dab55c4b500d132d2e81e99a15",
+    "verify.py": "e0276c8d1ae7f8777694ede497e3572e84a760681b34c5c012ac205c783cd543",
+    "receipt.json": "36b5b48410490942cd861e242b1b0ae57730a6994e90e8f6c42d28aebeb9cbf8",
+    "SHA256SUMS": "2c035eccd30881f23aab631091f2923f172aedcbd70f67b8e0544f934fede017"
+  },
+  "after": {
+    "DESIGN.md": "10ef3ae7215440202fa269772066305f6e2c817420ea255503c81a61f40efb6c",
+    "verify.py": "b2eadac60f0a2009fc8a0fefd2f831606c820dbe26f8749483d176e92c85b525",
+    "receipt.json": "2650d571f60cbc740bd07fd65b7ecb90fc239ff84ce6d2a7ff55414fe5781b42",
+    "SHA256SUMS": "57a9b1aca731c0811086b3496a50eb41c5d1c02f53be376e1f98310209b7105a"
+  },
+  "no_circuit_numeric_or_mechanical_change": true,
+  "logic_limits_V": [
+    0.63,
+    1.17
+  ],
+  "PG_maximum_low_V": 0.4,
+  "slew_cap_initial_tolerance_upper_nF": 11,
+  "routed_successor_series_resistor_ohm": 100,
+  "manufacturing_release": false,
+  "current_inventory_entries_verified": 89,
+  "current_artifact_hashes_verified": 88,
+  "protected_inputs_verified": 257,
+  "original_review_snapshot_files_verified": 90,
+  "tightened_verify_exit_code": 0,
+  "numeric_artifact_unchanged_after_verify": true
+}

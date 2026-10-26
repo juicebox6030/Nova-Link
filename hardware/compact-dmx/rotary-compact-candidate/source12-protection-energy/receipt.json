@@ -1,0 +1,237 @@
+{
+  "revision": "PE-R1",
+  "UTC": "2026-10-23T20:10:56.110683+00:00",
+  "repo": "/home/juicebox/Nova-Link",
+  "HEAD": "b42c0e6284aac734fde851c69146abf73920f337",
+  "branch": "main",
+  "owned_writes": "hardware/compact-dmx/rotary-compact-candidate/source12-protection-energy/**",
+  "verdict": "NOT ESTABLISHED: neither of two screened remedies has primary maximum bounds establishing USB<=5.5V or7V absolute-limit survival for the defined fault set; no new network captured",
+  "scope_completed": "One bounded engineering screen of exactly two remedies; no independent review round, new regulator/module family search or circuit capture.",
+  "capture_gate": "NOT MET: primary max bounds do not establish output-fault-energy improvement. New KiCad/netlist/ERC/lands/BOM capture intentionally not made. No new CLI electrical pass claimed.",
+  "remedies": [
+    "LT4363IDE-1#PBF + CSD17577Q3A series clamp/current limiter, with U4 retained for true reverse blocking",
+    "TL431BIDBZR + TS820-600B-TR triggered crowbar, with U5/U4 shutdown retained; gate driver/coordination unqualified"
+  ],
+  "numeric_evidence": {
+    "latest_inherited_static_trip_V": 5.476745480961925,
+    "reference_C_F": 0.00012,
+    "reference_C_not_universal_minimum": true,
+    "charge_to5p5_C": 2.7905422845690353e-06,
+    "energy_to5p5_J": 1.531553620578826e-05,
+    "flat_assumed_current_deadline_s": 7.309609448818628e-07,
+    "LT_ideal_gain_bounds_no_overlap": [
+      4.2435395447535065,
+      4.230769230769231
+    ],
+    "TLBI_ideal_gain_bounds_no_overlap": [
+      2.1659552596741047,
+      2.1645021645021645
+    ],
+    "full_fault_current_max_A": null,
+    "full_fault_isolation_max_s": null,
+    "negative_regressions": {
+      "20us_at_test_current_can_exceed5p5": true,
+      "even_misapplied1us_at_test_current_exceeds5p5": true,
+      "missing_Imax_does_not_become_a_testpoint_ceiling": true,
+      "missing_tmax_does_not_become_typical_delay": true,
+      "missing_Cmin_does_not_become120uF_reference": true,
+      "missing_ESRmax_does_not_become_zero": true,
+      "inductor_energy_cannot_be_silently_discarded": true,
+      "source1p8A_does_not_guarantee_U1trip": true,
+      "a6V_pin_survival_result_would_still_fail_USB": true,
+      "25C_TL_fit_is_not_full_I_temp_fit": true
+    },
+    "scope": "Static rejection uses unchanged S12 healthy upper engineering allowance, not a newly guaranteed rail. Retuning/narrower justified temperature could alter DC result, but not create missing response/energy bounds."
+  },
+  "missing_parameters": [
+    "Full-chain maximum sensing/drive/path-isolation or trigger-to-clamp delay at actual voltage, small overdrive, ramps and temperature",
+    "Maximum initial/continuing fault current, local/module stored capacitance and minimum source/loop impedance; no instantaneous U1/U4 limit assumed",
+    "Guaranteed effective Cmin and Cmax/ESR/ESL over life/bias/temperature; saturated L(I,T) and current at fault",
+    "Hot FET SOA/charge/feedthrough or SCR peak/di-dt/I2t/thermal coordination and maximum interruption time",
+    "Exact provisional100nF MPN/source qualification"
+  ],
+  "finite_later_plan": "README numbered plan: DC/data gate first;324 electrical cases=3source x3temperature x3load x4timing x3fault,10repeats=3240shots. Separate input-GND short check. Characterize fixture and measurement uncertainty; no hardware performed or authorized by this receipt. Finite samples do not establish missing universal max bounds.",
+  "actual_new_physical_parts": 0,
+  "actual_new_land_or_body_area_mm2": 0,
+  "actual_height_change_mm": 0,
+  "changed_board_dimensions": false,
+  "zero_means_no_implemented_change_not_hypothetical_zero_cost": true,
+  "S12_inventory_entries_verified": 73,
+  "S12_receipt_sha256": "51393c2a663f8cc206af64d4d0aa09d541832f1a5ac542f7a93bc06f95e2e519",
+  "all_S12_files_unchanged": true,
+  "protected_snapshot_entries": 1245,
+  "protected_matches": 1235,
+  "unaccepted_external_deltas": [
+    {
+      "path": "hardware/compact-dmx/README.md",
+      "snapshot_sha256": "efdbd2254b05fef589def3bcdef142be356da1fee2eef8811de0df9efa00242a",
+      "current_sha256": "f9ae8055b7f484d031cf4eac26fefa05493f65252973e1ca3f10511cf1336a59"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/allocation-detail.step",
+      "snapshot_sha256": "3cab6a742e58d63848a10d1207bc7e6e542a8aa55d2fd0cd0fb57c29cbd9a07e",
+      "current_sha256": "91aa9242b47ff24737d2355faf8fe2ed46cde5d2d9dc174c50b27043caa48f22"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/allocation.20261023-145512.FCBak",
+      "snapshot_sha256": "57886eb70e256b9e5558cbfaaa7b87c502ff25151a65aef0d1ab8bb5944a0d75",
+      "current_sha256": null
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/allocation.FCStd",
+      "snapshot_sha256": "4a4384ec2e85bac06e68db2e97e2529046a6bfa3494b916863e7a6d71db7930a",
+      "current_sha256": "6338731592063d571ff70172fac136b019c557ba035acd8235b7fa5aa006d1c9"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/build.py",
+      "snapshot_sha256": "2f7961735a44bc6d92c48e1b6710fd2f04ab2e4dcdf216f70e4cf63d28ade97f",
+      "current_sha256": "0e188a629b1a5804c2b6c274cd53616bc1ec230595d228929a6ddfb3ec6b64a2"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/check.log",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "5e0ad02b346e296ceb64348dc8faaf6108af4c82e109c755c5b361e1d2a0b83f"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/check.py",
+      "snapshot_sha256": "76656808a293d0f4d13e48c172d8f6305147af787a3c00fbcaec9e9cea6a9e67",
+      "current_sha256": "0bc951b1447a87fbb2aee12e87f985c1832129f75d5f0f16e89d3c9431a0c127"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/inline-assembly.step",
+      "snapshot_sha256": "333b34a89d8e96823128cb3fa66a142ec5d7dcb58903658a6efd1051e4a42c7e",
+      "current_sha256": "fde5286b21f7a020ff92b665501798ee2e4016f730ff259c4bd7e76ef895b7cc"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/screen.py",
+      "snapshot_sha256": "287cf68ff647573a1392222bca53c3362a144fce54a1cea4de04378d61968b28",
+      "current_sha256": "928002fa32830c4d4d1e6dde723517f2feb7acda8bb75f2302ad95c8cc24000e"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation/wire-paths.json",
+      "snapshot_sha256": "5bf2ae69adac95d971981b506181f04859c367dd6b39cdd5072de8df642a23dc",
+      "current_sha256": "0dfa388de8d6ef162eb115bcb7bc8939ddca4b7e599a987c3026aa473c8806d9"
+    }
+  ],
+  "preservation_baseline_refreshed": false,
+  "source_artifacts": [
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-protection-energy/sources/tl431.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tl431.pdf",
+      "sha256": "ed2e90697de4e2c553195514adf1ee59cda42863716b6ef702b8304a5b921d22",
+      "form": "complete primary PDF"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-protection-energy/sources/csd17577q3a.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/csd17577q3a.pdf",
+      "sha256": "0326bd9ba1c034477fec0fddf0c26b27224d4976883b455388ff9bda22b5a765",
+      "form": "complete primary PDF"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-protection-energy/sources/primary-web-extract.txt",
+      "primary_urls": [
+        "https://www.analog.com/media/en/technical-documentation/data-sheets/4363fb.pdf",
+        "https://www.st.com/resource/en/datasheet/ts820.pdf"
+      ],
+      "sha256": "d51827dd1a53ffad304c1197d5a0600bc0c39235851c2ca51d5363b8af0c3d42",
+      "form": "literal primary web-extractor excerpts; NOT a complete PDF binary hash",
+      "conditions": "LT RevC Jan2024 pp3-4/15; ST DS2118 Rev9 Nov2021 pp2-3. Read source scope in README."
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-protection-energy/sources/primary-electrical-extract.txt",
+      "primary_urls": [
+        "https://www.analog.com/media/en/technical-documentation/data-sheets/4363fb.pdf",
+        "https://www.st.com/resource/en/datasheet/ts820.pdf"
+      ],
+      "sha256": "18b2f382c979fe4748191e4a0020043698bac641bd34337e3bc5457b95c5b10f",
+      "form": "literal primary web-extractor excerpts; NOT a complete PDF binary hash",
+      "conditions": "LT RevC Jan2024 pp3-4/15; ST DS2118 Rev9 Nov2021 pp2-3. Read source scope in README."
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm20.pdf",
+      "url": "https://www.meanwell.com/Upload/PDF/IRM-20/IRM-20-SPEC.PDF",
+      "sha256": "aa1afdbcdf0bf6db796710e26bd5e258f4857ffb1c14bd1ac3d94af86f3b8789",
+      "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25810.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps25810.pdf",
+      "sha256": "ccc31e3ad8b7970005e23ba8b6a165694f712e86fd337b9ba2fe117a98a2e13e",
+      "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb-type-c-r2.4.pdf",
+      "url": "https://www.usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-24",
+      "sha256": "f5407e6120db1e28137e7fee60f3125f4284e2252b1240d271ce6e40c0ba3121",
+      "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25947.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+      "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4",
+      "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/T520D157M010ATE055.pdf",
+      "url": "https://search.kemet.com/download/specsheet/T520D157M010ATE055",
+      "sha256": "3b7a59d69d920e5c7b3c87f43ec2b4db34b06335ff3d077023431cc9c6db62ee",
+      "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/tps62135.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps62135.pdf",
+      "sha256": "9b718325c5216c529eaa19730d0deba8dd72518ecb837c90dd6e839d2b8b811d",
+      "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/tps25940.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps25940.pdf",
+      "sha256": "9db4dc76b1040251f56d994041d2e6f02f1307d687aecbc5218f137a5c830adc",
+      "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/xal4000.pdf",
+      "url": "https://www.coilcraft.com/getmedia/6adcb47d-8b55-416c-976e-1e22e0d2848c/xal4000.pdf",
+      "sha256": "b26cf975bd56a807173b05665bddd49ed49323400330eb8f6fa63e24ff6d7d15",
+      "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3700.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+      "sha256": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0",
+      "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+    }
+  ],
+  "primary_source_access_limits": "ADI/ST official PDFs were read through primary web extraction; their cached excerpt hashes are not represented as full PDF hashes. Direct curl protocol errors/timeouts are in retrieval.json. TI PDFs and frozen primary PDFs are hashed normally.",
+  "commands": [
+    "python3 hardware/compact-dmx/rotary-compact-candidate/source12-protection-energy/check.py > hardware/compact-dmx/rotary-compact-candidate/source12-protection-energy/check.log",
+    "python3 hardware/compact-dmx/rotary-compact-candidate/source12-protection-energy/seal.py",
+    "sha256sum -c hardware/compact-dmx/rotary-compact-candidate/source12-protection-energy/SHA256SUMS"
+  ],
+  "artifact_hashes_excluding_receipt_and_inventory": {
+    "README.md": "4e97c21949521dd8947e232be94845a853ef5f35903037a2b4acfe5ce3a34cd3",
+    "check.log": "91a56d0d46b5511213e8fa2f5edd71dfd85413b4487160c085f97e6097bdd8f5",
+    "check.py": "2cdf8ef594755b46f63fd6957d14a8d65dc5b211b582daec35ef6c57b879cce0",
+    "external-deltas.json": "d83a1d85b808d074f73f09864f2c7d2f031e3864c2e7174874a08d935a7c78e0",
+    "numeric-check.json": "e045a01c9bb9061241c03641b2606841dfa52c41099fba494528730228fd5872",
+    "protected-inputs.json": "de6a919adc7afa72f931a1f08c6a4331ab5fe808efb5ce66e087c6c67a23719b",
+    "retrieval.json": "8203815e7bbd8b8e113af15cc5eeb5c0e2b4e4efd6928dbea178891e30d325d4",
+    "seal.py": "d3773e51b13a361a7f541280318c7a073e970122a34a450dd13fdc0feca86548",
+    "sources/csd17577q3a.pdf": "0326bd9ba1c034477fec0fddf0c26b27224d4976883b455388ff9bda22b5a765",
+    "sources/csd17577q3a.txt": "fb7f09c471ee90fa01870a5013b956aefbe753b898c1a2985b06fbfc9e3545ee",
+    "sources/primary-electrical-extract.txt": "18b2f382c979fe4748191e4a0020043698bac641bd34337e3bc5457b95c5b10f",
+    "sources/primary-web-extract.txt": "d51827dd1a53ffad304c1197d5a0600bc0c39235851c2ca51d5363b8af0c3d42",
+    "sources/tl431.pdf": "ed2e90697de4e2c553195514adf1ee59cda42863716b6ef702b8304a5b921d22",
+    "sources/tl431.txt": "c330555098e65c8b35ae577e107d0db8b623b2fe58c91434ba9e511952993a20",
+    "sources.json": "e61de8918b91abae9e03378f6b103684a112419d488efdb3a469697d1f9997e3"
+  },
+  "new_circuit_ERC": "N/A, no circuit changed or captured",
+  "hardware_measurements": false,
+  "vendor_contact": false,
+  "installs": false,
+  "firmware": false,
+  "routing": false,
+  "children_or_reviews": false,
+  "git_publication": false,
+  "manufacturing_release": false
+}

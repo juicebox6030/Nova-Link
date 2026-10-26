@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/sources/minco.pdf",
+      "url": "https://www.minco.com/wp-content/uploads/Minco-Flex-Circuits-Design-Guide-2019.pdf",
+      "basis": "2019 designguide;dynamic singlelayer/material/plating discussion",
+      "sha256": "ea0e935ae408bbb5ccfad89b0e1fb1cb6ab640a40a27c65b9faecfba3ff4ca11"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/sources/allflex.pdf",
+      "url": "https://www.allflexinc.com/wp-content/uploads/2024/03/Minimum-Bend-Radius-Considerations-in-Flexible-Circuits.pdf",
+      "basis": "Primary guidance;RA foil/dynamic vs static, thickness ratio not cycle approval",
+      "sha256": "7297fab82b554e9ee58fba4f9805eed79447f7fabecb41d85664829b54b0ffad"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/mechanism-repaired/sources/usb4105.pdf",
+      "url": "https://gct.co/files/drawings/usb4105.pdf",
+      "sha256": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5",
+      "basis": "Drawing USB4105 B4,18/12/23,sheet1;actual fetched PDF and rendered/viewed",
+      "confidence": "Manufacturer drawing; sourced envelope only, not manufacturer solid model",
+      "selected_proposal": "USB4105-GF-A; placeholder maximum envelope, source axial layout not integrated"
+    }
+  ],
+  "parent_kinematics": [
+    {
+      "path": ".tools/checks/rotary-constant-length/screen.py",
+      "copied_to": "hardware/compact-dmx/rotary-compact-candidate/mechanism-repaired/parent-screen.py",
+      "sha256": "29bda7412bf9f52cd16050207df0d23c098d184c532c8473c1b539c8cd99cc0f"
+    },
+    {
+      "path": ".tools/checks/rotary-constant-length/screen.json",
+      "copied_to": "hardware/compact-dmx/rotary-compact-candidate/mechanism-repaired/parent-screen.json",
+      "sha256": "335fc6bb9de4b9d51e70d0d5ea81128cce7fd817f65c92ac2dd53e422fb5ae6c"
+    }
+  ],
+  "retrieval_date": "2026-10-23",
+  "external_outreach": false,
+  "engineering_materials": "Stiffener, adhesive, pads, PEEK structure and spring are explicitly proposed; no supplier ratings invented.",
+  "source_height_update": "Owner2026-10-23:3.46maximum +declared assembly allowance;25x18x1 axial-port target remains placeholder."
+}

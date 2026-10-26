@@ -1,0 +1,5 @@
+(footprint "Cell_leads" (version 20241229) (generator "nova_q15_lands") (layer "F.Cu") (attr through_hole)
+(descr "Eaton HV1325 0.60+/-.02 leads5+/-.5pitch; derived .9drill/1.6land, formed horizontal leads NOT supplier qualified")
+(fp_rect (start -1.05 -3.55) (end 1.05 3.55) (stroke (width .05) (type default)) (fill none) (layer "F.CrtYd"))
+(pad "1" thru_hole circle (at 0 -2.5) (size 1.6 1.6) (drill .9) (layers "*.Cu" "*.Mask"))
+(pad "2" thru_hole circle (at 0 2.5) (size 1.6 1.6) (drill .9) (layers "*.Cu" "*.Mask")))

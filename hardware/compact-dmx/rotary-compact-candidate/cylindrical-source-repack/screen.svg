@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600"><rect width="100%" height="100%" fill="white"/>
+<text x="30" y="32" font-size="20" font-family="sans-serif" fill="#14202b">CYL-R1: one cylindrical allocation screen — HOLD</text>
+<text x="30" y="55" font-size="12" font-family="sans-serif" fill="#14202b">Not an assembly drawing; no retained carrier, qualified terminals, or final product envelope.</text>
+<circle cx="155" cy="175" r="76.2" fill="#c4d1db" stroke="#34404c"/>
+<circle cx="155" cy="175" r="70.2" fill="#ffffff" stroke="#34404c"/>
+<rect x="102.0" y="130.0" width="106" height="90" fill="#efe2ba" stroke="#34404c"/>
+<rect x="127.3" y="151" width="55.4" height="49.0" fill="#a5ccdd" stroke="#34404c"/>
+<circle cx="139" cy="233" r="5.5" fill="#cc998c" stroke="#34404c"/>
+<circle cx="155" cy="233" r="5.5" fill="#cc998c" stroke="#34404c"/>
+<circle cx="171" cy="233" r="5.5" fill="#cc998c" stroke="#34404c"/>
+<text x="265" y="115" font-size="12" font-family="sans-serif" fill="#14202b">Cross-section: 2 drawing points/mm (PDF 0.706:1)</text>
+<text x="265" y="140" font-size="12" font-family="sans-serif" fill="#14202b">OD76.2 / ID70.2; proposed 3 mm wall, bore allowance -0.2 mm</text>
+<text x="265" y="165" font-size="12" font-family="sans-serif" fill="#14202b">81 x 52 x 44 inherited reservation +0.5 mm per face (tan)</text>
+<text x="265" y="190" font-size="12" font-family="sans-serif" fill="#14202b">Maximum module 52.9 x 27.7 x 24.5; pins 4.5 mm max</text>
+<text x="265" y="215" font-size="12" font-family="sans-serif" fill="#14202b">3 x OD5.5 trunk screens; wire family/bend qualification OPEN</text>
+<text x="265" y="240" font-size="12" font-family="sans-serif" fill="#14202b">0.1365 mm allocated corner clearance; support structure NOT included</text>
+<text x="30" y="290" font-size="12" font-family="sans-serif" fill="#14202b">Axial lower planning allocation: all rectangles at the same 2 points/mm scale</text>
+<rect x="30" y="315" width="60.8" height="55" fill="#d6d6d6" stroke="#34404c"/>
+<text x="32" y="389" font-size="9" font-family="sans-serif" fill="#14202b">30.40</text>
+<text x="32" y="305" font-size="9" font-family="sans-serif" fill="#14202b">input rear</text>
+<rect x="90.8" y="315" width="40" height="55" fill="#f2ccb2" stroke="#34404c"/>
+<text x="92.8" y="389" font-size="9" font-family="sans-serif" fill="#14202b">20.00</text>
+<text x="92.8" y="305" font-size="9" font-family="sans-serif" fill="#14202b">term/tool</text>
+<rect x="130.8" y="315" width="176" height="55" fill="#b2d8e5" stroke="#34404c"/>
+<text x="132.8" y="389" font-size="9" font-family="sans-serif" fill="#14202b">88.00</text>
+<text x="132.8" y="305" font-size="9" font-family="sans-serif" fill="#14202b">source</text>
+<rect x="306.8" y="315" width="42.66145801540308" height="55" fill="#e5cca5" stroke="#34404c"/>
+<text x="308.8" y="389" font-size="9" font-family="sans-serif" fill="#14202b">21.33</text>
+<text x="308.8" y="305" font-size="9" font-family="sans-serif" fill="#14202b">bend</text>
+<rect x="349.4614580154031" y="315" width="174" height="55" fill="#bfdbba" stroke="#34404c"/>
+<text x="351.4614580154031" y="389" font-size="9" font-family="sans-serif" fill="#14202b">87.00</text>
+<text x="351.4614580154031" y="305" font-size="9" font-family="sans-serif" fill="#14202b">CIR</text>
+<rect x="523.4614580154031" y="315" width="40" height="55" fill="#f2ccb2" stroke="#34404c"/>
+<text x="525.4614580154031" y="389" font-size="9" font-family="sans-serif" fill="#14202b">20.00</text>
+<text x="525.4614580154031" y="305" font-size="9" font-family="sans-serif" fill="#14202b">term/tool</text>
+<rect x="563.4614580154031" y="315" width="60.8" height="55" fill="#d6d6d6" stroke="#34404c"/>
+<text x="565.4614580154031" y="389" font-size="9" font-family="sans-serif" fill="#14202b">30.40</text>
+<text x="565.4614580154031" y="305" font-size="9" font-family="sans-serif" fill="#14202b">output rear</text>
+<text x="30" y="420" font-size="12" font-family="sans-serif" fill="#14202b">Classic 297.13 x 76.2 x 76.2: 6.84% less box-volume but 22.13 mm longer than CIR275.</text>
+<text x="30" y="445" font-size="12" font-family="sans-serif" fill="#14202b">TRUE1 panel allocation300.33 mm. Flanged NEMA comparison325.23 mm is NOT molded-cord selection.</text>
+<text x="30" y="470" font-size="12" font-family="sans-serif" fill="#14202b">Rear depths are bare panel-shoulder dimensions. Front projections, mates, latch and hand envelopes excluded.</text>
+<text x="30" y="495" font-size="12" font-family="sans-serif" fill="#14202b">R12 continuous trunk transition: 21.3307 mm run; trial conical bore interference0.03948 mm.</text>
+<text x="30" y="520" font-size="12" font-family="sans-serif" fill="#14202b">Film corner fails -0.2 mm bore allowance by0.0258 mm; retention/branches/secondary connections OPEN.</text>
+<text x="30" y="545" font-size="12" font-family="sans-serif" fill="#14202b">No new CAD/STEP assembly issued. Frozen CIR/S12 are unchanged; this screen is not a manufacturing limit.</text>
+</svg>

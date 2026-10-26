@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "NOVA") (type "KiCad") (uri "${KIPRJMOD}/nova-dmx.kicad_sym") (options "") (descr "Local partial DMX symbols")))

@@ -1,0 +1,79 @@
+[
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps63070.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps63070.pdf",
+    "sha256": "a88ef66f3493156ff6e7da0849de0e0e1068647f2553d08c1844d4a90c5c65ef",
+    "reused_readonly": null
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm20.pdf",
+    "url": "https://www.meanwell.com/Upload/PDF/IRM-20/IRM-20-SPEC.PDF",
+    "sha256": "aa1afdbcdf0bf6db796710e26bd5e258f4857ffb1c14bd1ac3d94af86f3b8789",
+    "reused_readonly": null
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm10.pdf",
+    "url": "https://www.meanwell.com/Upload/PDF/IRM-10/IRM-10-SPEC.PDF",
+    "sha256": "1aab6b30492328818e4d0900416676891eeb1076f409d56dc2277d7119ed208a",
+    "reused_readonly": "hardware/compact-dmx/rotary-compact-candidate/sources/irm10.pdf"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25810.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps25810.pdf",
+    "sha256": "ccc31e3ad8b7970005e23ba8b6a165694f712e86fd337b9ba2fe117a98a2e13e",
+    "reused_readonly": "hardware/compact-dmx/rotary-compact-candidate/sources/tps25810.pdf"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb-type-c-r2.4.pdf",
+    "url": "https://www.usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-24",
+    "sha256": "f5407e6120db1e28137e7fee60f3125f4284e2252b1240d271ce6e40c0ba3121",
+    "reused_readonly": ".tools/references/usb-type-c-r2.4.pdf"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105.pdf",
+    "url": "https://gct.co/files/drawings/USB4105.pdf",
+    "sha256": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105-spec.pdf",
+    "url": "https://gct.co/files/specs/USB4105-spec.pdf",
+    "sha256": "372fe1bc0e0b1b4ce7e18b61514e967c7c2f883f0c7fe1f4586b567785ee9cd2"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25947.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+    "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/T520D157M010ATE055.pdf",
+    "url": "https://search.kemet.com/download/specsheet/T520D157M010ATE055",
+    "sha256": "3b7a59d69d920e5c7b3c87f43ec2b4db34b06335ff3d077023431cc9c6db62ee"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/xfl4020.pdf",
+    "url": "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/XFL4020.pdf",
+    "sha256": "6dca915ac1daa47210f7708a7540221ffef4f34a88a8621c94bd50cdf48647e6"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tpd1e10b06.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf",
+    "sha256": "77fb9c454aee5b14a220d256b7ee9fa9751572840478f80437393aeed2582f8d"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tnpw.pdf",
+    "url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+    "sha256": "6f0508c568cb355aaf2accdd33fe3a780d3ea5ef207c4c9a71839a8acadc33a5"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/vishay-28950.pdf",
+    "url": "https://www.vishay.com/doc?28950",
+    "sha256": "9e2b145c937da3be1e926b8afc2856959754eeb4d1103241d838038f7308144e",
+    "reused_readonly": "hardware/compact-dmx/eda/cell-protection-candidate/sources/vishay-28950.pdf"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/grm21-notice.pdf",
+    "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KE51-01.pdf",
+    "sha256": "e8432c7acfa982b24eb06dd145682f78051dc4649abbeb35bbca8646b1408e4f",
+    "reused_readonly": "hardware/compact-dmx/eda/source-cache/grm21-spec.pdf"
+  }
+]

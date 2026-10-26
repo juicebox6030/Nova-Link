@@ -1,0 +1,5 @@
+from pathlib import Path
+import FreeCAD as A,json,hashlib,shutil
+P=Path(__file__).resolve().parent;src=P/'interface-prototype.FCStd';assert not(P/'before-wire-radius.FCStd').exists();shutil.copyfile(src,P/'before-wire-radius.FCStd');shutil.copyfile(P/'reopen-check.json',P/'reopen-before-wire.json');d=A.openDocument(str(src));q=A.openDocument(str(P/'wire-probe.FCStd'));names=['SourceWireCopper1','SourceWireInsulation1_0','SourceWireCopper2','SourceWireInsulation2_0'];before=hashlib.sha256(src.read_bytes()).hexdigest()
+for n in names:d.getObject(n).Shape=q.getObject(n).Shape.copy()
+d.recompute();d.saveAs(str(src));(P/'wire-radius-change.json').write_text(json.dumps({'changed':names,'before_native_sha256':before,'after_native_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'reason':'Smooth terminal3D bends: positive radius>=2.347mm, return>=1.978mm; OD2 envelope; former0.629mm positive radius rejected. Supplier wire bend specification remains UNMET.'},indent=2)+'\n');print('WIRE RADIUS APPLIED',names)

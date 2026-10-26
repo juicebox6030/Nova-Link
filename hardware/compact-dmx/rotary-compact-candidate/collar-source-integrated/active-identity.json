@@ -1,0 +1,39 @@
+{
+  "status": "PASS canonical full planar-boundary identity at1e-9mm coordinate rounding",
+  "rows": [
+    {
+      "name": "Flex_minus90",
+      "plane_polygon_faces": 4100,
+      "all_edges_straight": true,
+      "all_faces_planar_single_wire": true,
+      "canonical_boundary_sha256": "1a2c2f778f224a50223dd7de3e0ea997c0506a6ab17d07d0996da7c71c496bf4",
+      "coordinate_rounding_mm": 1e-09,
+      "volume_difference_mm3": 0.0,
+      "area_difference_mm2": 0.0,
+      "equal": true
+    },
+    {
+      "name": "Flex_0",
+      "plane_polygon_faces": 4100,
+      "all_edges_straight": true,
+      "all_faces_planar_single_wire": true,
+      "canonical_boundary_sha256": "2ae9a9d955026d00267ba26a846cf1cbcaefb2f61dd4175dc189f4d6ee1a1393",
+      "coordinate_rounding_mm": 1e-09,
+      "volume_difference_mm3": 0.0,
+      "area_difference_mm2": 0.0,
+      "equal": true
+    },
+    {
+      "name": "Flex_90",
+      "plane_polygon_faces": 4100,
+      "all_edges_straight": true,
+      "all_faces_planar_single_wire": true,
+      "canonical_boundary_sha256": "c539800952e40f2876eacba45a9173731247f8c73db4fc69e00e47032320ab35",
+      "coordinate_rounding_mm": 1e-09,
+      "volume_difference_mm3": 0.0,
+      "area_difference_mm2": 0.0,
+      "equal": true
+    }
+  ],
+  "note": "Raw BRep byte strings are not canonical after save/reopen. This proof compares complete straight-edge polygon topology, not sampled points or volume alone."
+}

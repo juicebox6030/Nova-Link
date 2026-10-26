@@ -1,0 +1,93 @@
+{
+  "scope": "Five RF source-backed prototype substitutions; PCM12 datum unresolved",
+  "before_sha256": {
+    "hardware/compact-dmx/eda/footprints/generate.py": "f4463b23a32e87b1da0d64d9fa63e307fa51bf74e276489d637ebf01d537a02e",
+    "hardware/compact-dmx/eda/footprints/verify.py": "7170918485926c2eb232721dcd27f7f3a23f2e03ec94f25b40c2c4b1f7cf414b",
+    "hardware/compact-dmx/eda/footprints/termination_budget.py": "103cf46813f02b9d5838a751ab154bfb71bbc69f3413f32fb96b2e1a553a0cbe",
+    "hardware/compact-dmx/eda/footprints/extract_ti_lands.py": "90b7097d449814045d731022a2738d2b7af6d2ff9ad3654309add794b17715af",
+    "hardware/compact-dmx/eda/footprints/generate_support.py": "bcd45a9d7d4e7cd8e83e902b8be6d7dd279cd858c133b5a59b9a852b4a928ed7",
+    "hardware/compact-dmx/eda/footprints/assignments.json": "67d1a636c0654d4c5be113919e76128e9d3a5039b76d94051013e9bafe4ded5f",
+    "hardware/compact-dmx/eda/mcu-radio/generate.py": "7d92cb5c2f70aba2dae25860737bdba99ef3d5d63ff12a933b351eefc321a951",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_sch": "68c63044c78d65f60ffd4554e0d0021bbdd8436baec43b053ab5d7b370e15e3c",
+    "docs/hardware/dmx-hardware-bom.csv": "b8facedce418c120232df7bb76dee8aa79c72e7c07f020264d54115527aae3e8"
+  },
+  "after_sha256": {
+    "hardware/compact-dmx/eda/footprints/generate.py": "1a986cc5857c93d306b91cda71fac6aaf6bfa2c461de31b6744cd9d37fa62fe7",
+    "hardware/compact-dmx/eda/footprints/verify.py": "405434c3d0f034a6b3ed4ba0cdc77f1b6184dc00b07d3d9baa37f12643640eb5",
+    "hardware/compact-dmx/eda/footprints/termination_budget.py": "103cf46813f02b9d5838a751ab154bfb71bbc69f3413f32fb96b2e1a553a0cbe",
+    "hardware/compact-dmx/eda/footprints/extract_ti_lands.py": "90b7097d449814045d731022a2738d2b7af6d2ff9ad3654309add794b17715af",
+    "hardware/compact-dmx/eda/footprints/generate_support.py": "cefe4b14237ab4ccc6ba1a8afc88d7d398b3a376178b9801f95526234678004b",
+    "hardware/compact-dmx/eda/footprints/assignments.json": "a2c8520fa72fb03ac01363f195ccc709e840c8679beeb8c1ff66ac394e3e9cc4",
+    "hardware/compact-dmx/eda/mcu-radio/generate.py": "7c1db1cf6dd8a65a19d844bf891f388e89f68f74abc8d37e4cc063c3fd954acb",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_sch": "68c63044c78d65f60ffd4554e0d0021bbdd8436baec43b053ab5d7b370e15e3c",
+    "docs/hardware/dmx-hardware-bom.csv": "7efb30e305701a7a51208fa2a00b15026dcf6bc5c148db9e618d58634159c06e"
+  },
+  "power_source_unchanged": true,
+  "source_evidence": "replacement-source-evidence.json",
+  "physical_assignments": 37,
+  "source_backed_assignments": 36,
+  "provisional_assignments": [
+    "dmx.S_TERM"
+  ],
+  "parsed_footprints": 17,
+  "dimension_checked_footprints": 16,
+  "numbered_library_pads_checked": 113,
+  "MCU": {
+    "components": 26,
+    "nets": 57,
+    "ERC": 0
+  },
+  "DMX": {
+    "components": 14,
+    "nets": 15,
+    "ERC": 0
+  },
+  "placement": {
+    "physical_components": 37,
+    "mechanical_holes": 4,
+    "checked_numbered_pads": 156,
+    "nets": 67,
+    "six_antenna_NC_islands_distinct": true,
+    "source_hash_mutations": [],
+    "reserve_or_edge_conflicts": [],
+    "drc_violations": 0,
+    "unconnected_items": 89,
+    "semantic_TX_RX_RE_pairs": [
+      [
+        "U5",
+        2,
+        "U1",
+        19
+      ],
+      [
+        "U5",
+        4,
+        "U1",
+        18
+      ],
+      [
+        "U5",
+        5,
+        "U1",
+        12
+      ]
+    ],
+    "isolated_component_refs": [
+      "C3",
+      "C4",
+      "R_TERM1",
+      "R_TERM2",
+      "S_TERM"
+    ],
+    "tracks": 0,
+    "status": "PARTIAL_PLACEMENT_ONLY"
+  },
+  "whole_package_run": "Parent integration responsibility; validator count expectations updated; no power run or mutation",
+  "remaining_gates": [
+    "PCM12 mechanical row datum and 1.41 vs1.13 gap correction",
+    "RF matching/parasitics and GHz capacitor SRF/Q/current",
+    "Supplier procurement/approval sheets; custom clock suffixes",
+    "Full power/SPI/USB/service placement; routing/isolation/height/fixture fit; qualification"
+  ],
+  "manufacturing_release": false
+}

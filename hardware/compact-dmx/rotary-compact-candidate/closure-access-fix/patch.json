@@ -1,0 +1,95 @@
+{
+  "changed_part": "UpperShellRetention",
+  "source_native_sha256": "353f9fcd5e6a771725632639dbf5fb40095d77c71f9f8ced0421ec723903e58b",
+  "source_receipt_sha256": "0cc43cc3a2596b44cfa81834fe26f41583948954af58fdb4d292100895d1d61f",
+  "rows": [
+    {
+      "tool": "ClosureTool_m110_32",
+      "centre_xy": [
+        -110.0,
+        32.0
+      ],
+      "tool_diameter": 5,
+      "tool_z": [
+        4.5,
+        40.5
+      ],
+      "passage_diameter": 5.5,
+      "passage_z": [
+        4.5,
+        41.5
+      ],
+      "before_installed_upper_intersection_mm3": 127.7594698146013,
+      "after_installed_upper_intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "centre_xy": [
+        -110.0,
+        -32.0
+      ],
+      "tool_diameter": 5,
+      "tool_z": [
+        4.5,
+        40.5
+      ],
+      "passage_diameter": 5.5,
+      "passage_z": [
+        4.5,
+        41.5
+      ],
+      "before_installed_upper_intersection_mm3": 127.7579879588422,
+      "after_installed_upper_intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "centre_xy": [
+        -32.0,
+        32.0
+      ],
+      "tool_diameter": 5,
+      "tool_z": [
+        4.5,
+        40.5
+      ],
+      "passage_diameter": 5.5,
+      "passage_z": [
+        4.5,
+        41.5
+      ],
+      "before_installed_upper_intersection_mm3": 127.7648762239053,
+      "after_installed_upper_intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "centre_xy": [
+        -32.0,
+        -32.0
+      ],
+      "tool_diameter": 5,
+      "tool_z": [
+        4.5,
+        40.5
+      ],
+      "passage_diameter": 5.5,
+      "passage_z": [
+        4.5,
+        41.5
+      ],
+      "before_installed_upper_intersection_mm3": 127.83771105488091,
+      "after_installed_upper_intersection_mm3": 0.0
+    }
+  ],
+  "removed_volume_mm3": 640.5297897247947,
+  "added_volume_mm3": 0.0,
+  "unchanged_seat_below_z": 4.5,
+  "single_connected_closed_valid": true,
+  "radial_nominal_clearance": 0.25,
+  "proposed_tolerance_budget": {
+    "passage_radius_undersize": 0.1,
+    "driver_radius_oversize": 0.05,
+    "axis_position_error": 0.05,
+    "remaining_radial_clearance": 0.05
+  },
+  "ratings_or_supplier_tool_qualification": false
+}

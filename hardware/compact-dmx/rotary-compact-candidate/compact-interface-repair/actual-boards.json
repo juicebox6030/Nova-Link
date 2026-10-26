@@ -1,0 +1,4825 @@
+{
+  "rotating": {
+    "sha256": "f1931419a9a326e5db8364302c8d59cf1586a1ae810676db475f92b45bb97c30",
+    "components": [
+      {
+        "ref": "R10",
+        "value": "TNPW040210K0BYED 10000ohm",
+        "footprint": "S12:R0402",
+        "x": 2.5,
+        "y": 10.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 2.025,
+            "y": 10.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "REG_EN",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 2.975,
+            "y": 10.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "TP2",
+        "value": "FAB_PROTECT_FAULT_PROBE",
+        "footprint": "S12:TP1",
+        "x": 26.5,
+        "y": 24.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 26.5,
+            "y": 24.0,
+            "size": [
+              1.0,
+              1.0
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.1,
+            "net": "PROTECT_FAULT_N",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/TP1.kicad_mod",
+          "body_allocation_mm": [
+            1,
+            1
+          ],
+          "height_allocation_mm": 0,
+          "courtyard_mm": [
+            1.5,
+            1.5
+          ],
+          "source": "Fabricated probe land",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R18",
+        "value": "TNPW040220K0BYED 20000ohm",
+        "footprint": "S12:R0402",
+        "x": 20.75,
+        "y": 9.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 20.275,
+            "y": 9.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BACKSTOP_OVP",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 21.225,
+            "y": 9.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "D1",
+        "value": "TPD1E10B06DPYR",
+        "footprint": "S12:DPY2",
+        "x": 25.7,
+        "y": 20.8,
+        "angle": 90.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 25.7,
+            "y": 21.15,
+            "size": [
+              0.3,
+              0.5
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.03,
+            "net": "USB_VBUS",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 25.7,
+            "y": 20.45,
+            "size": [
+              0.3,
+              0.5
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.03,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/DPY2.kicad_mod",
+          "body_allocation_mm": [
+            1.05,
+            0.65
+          ],
+          "height_allocation_mm": 0.5,
+          "courtyard_mm": [
+            1.65,
+            1.3
+          ],
+          "source": "TI DPY0002A source lands",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R15",
+        "value": "TNPW0402100KBYED 100000ohm",
+        "footprint": "S12:R0402",
+        "x": 12.5,
+        "y": 10.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 12.025,
+            "y": 10.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 12.975,
+            "y": 10.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BARRIER_EN",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C13",
+        "value": "GRM155R71E103KA01D 10nF",
+        "footprint": "S12:C0402",
+        "x": 20.0,
+        "y": 4.3,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 19.6,
+            "y": 4.3,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BARRIER_DVDT",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 20.4,
+            "y": 4.3,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.6,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Derived0402 envelope and lands; exact vendor height/bias/stencil gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R7",
+        "value": "TNPW040264K0BYED 64000ohm",
+        "footprint": "S12:R0402",
+        "x": 9.0,
+        "y": 7.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 8.525,
+            "y": 7.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 9.475,
+            "y": 7.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "REG_FB",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R24",
+        "value": "TNPW0402100KBYED 100000ohm",
+        "footprint": "S12:R0402",
+        "x": 23.0,
+        "y": 6.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 22.525,
+            "y": 6.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "REF",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 23.475,
+            "y": 6.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "REF_RTN",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "U5",
+        "value": "TPS3700DDCR",
+        "footprint": "S12:DDC6",
+        "x": 6.0,
+        "y": 13.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 4.65,
+            "y": 12.05,
+            "size": [
+              1.1,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BARRIER_EN",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 4.65,
+            "y": 13.0,
+            "size": [
+              1.1,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "3",
+            "x": 4.65,
+            "y": 13.95,
+            "size": [
+              1.1,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BUCK_UV_SENSE",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "4",
+            "x": 7.35,
+            "y": 13.95,
+            "size": [
+              1.1,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BUCK_OV_SENSE",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "5",
+            "x": 7.35,
+            "y": 13.0,
+            "size": [
+              1.1,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "FPC12_PROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "6",
+            "x": 7.35,
+            "y": 12.05,
+            "size": [
+              1.1,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BARRIER_EN",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/eda/cell-protection-candidate/CellProtection.pretty/DDC6.kicad_mod",
+          "body_allocation_mm": [
+            1.75,
+            3.05
+          ],
+          "height_allocation_mm": 1.1,
+          "courtyard_mm": [
+            4.3,
+            3.55
+          ],
+          "source": "TI DDC0006A; body allocation includes terminal span separately in courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "U3",
+        "value": "TPS25810RVCR",
+        "footprint": "S12:RVC20",
+        "x": 22.5,
+        "y": 13.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 21.1,
+            "y": 11.75,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "PORT_FAULT_N",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 21.1,
+            "y": 12.25,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "3",
+            "x": 21.1,
+            "y": 12.75,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "4",
+            "x": 21.1,
+            "y": 13.25,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "5",
+            "x": 21.1,
+            "y": 13.75,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "6",
+            "x": 21.1,
+            "y": 14.25,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "PORT_ENABLE",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "7",
+            "x": 21.75,
+            "y": 14.9,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "8",
+            "x": 22.25,
+            "y": 14.9,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "9",
+            "x": 22.75,
+            "y": 14.9,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "REF_RTN",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "10",
+            "x": 23.25,
+            "y": 14.9,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "REF",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "11",
+            "x": 23.9,
+            "y": 14.25,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "USB_CC1",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "12",
+            "x": 23.9,
+            "y": 13.75,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "13",
+            "x": 23.9,
+            "y": 13.25,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "USB_CC2",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "14",
+            "x": 23.9,
+            "y": 12.75,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "USB_VBUS",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "15",
+            "x": 23.9,
+            "y": 12.25,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "USB_VBUS",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "16",
+            "x": 23.9,
+            "y": 11.75,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "unconnected-(U3-DEBUG_N_UNUSED-Pad16)",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "17",
+            "x": 23.25,
+            "y": 11.1,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "unconnected-(U3-AUDIO_N_UNUSED-Pad17)",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "18",
+            "x": 22.75,
+            "y": 11.1,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "unconnected-(U3-POL_N_UNUSED-Pad18)",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "19",
+            "x": 22.25,
+            "y": 11.1,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "unconnected-(U3-UFP_N_UNUSED-Pad19)",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "20",
+            "x": 21.75,
+            "y": 11.1,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "unconnected-(U3-LD_DET_UNUSED-Pad20)",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "21",
+            "x": 22.5,
+            "y": 13.0,
+            "size": [
+              1.6,
+              2.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.16,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/RVC20.kicad_mod",
+          "body_allocation_mm": [
+            3.1,
+            4.1
+          ],
+          "height_allocation_mm": 1.0,
+          "courtyard_mm": [
+            3.9,
+            4.9
+          ],
+          "source": "TI RVC0020A common TPS25810/TPS25940; realEP21 ground",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C4",
+        "value": "MSASE21GBB5226MTNA01 22uF",
+        "footprint": "S12:C0805",
+        "x": 15.9,
+        "y": 3.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 14.95,
+            "y": 3.0,
+            "size": [
+              0.7,
+              1.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.07,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 16.85,
+            "y": 3.0,
+            "size": [
+              0.7,
+              1.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.07,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0805.kicad_mod",
+          "body_allocation_mm": [
+            2.2,
+            1.45
+          ],
+          "height_allocation_mm": 1.45,
+          "courtyard_mm": [
+            3.1,
+            2.0
+          ],
+          "source": "Taiyo official preferred-current HTML maxbody2.2x1.45x1.45; DERIVED lands/stencil/bias gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "J3",
+        "value": "FAB_FPC20_ROTATING",
+        "footprint": "S12:FPC20",
+        "x": 11.0,
+        "y": 23.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 6.5,
+            "y": 23.5,
+            "size": [
+              8.0,
+              2.0
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.2,
+            "net": "FPC12_PROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 15.5,
+            "y": 23.5,
+            "size": [
+              8.0,
+              2.0
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.2,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/FPC20.kicad_mod",
+          "body_allocation_mm": [
+            20,
+            2
+          ],
+          "height_allocation_mm": 0.3,
+          "courtyard_mm": [
+            20.5,
+            3.0
+          ],
+          "source": "Derived actual20mm ribbon solder lands; external clamp volume additional",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C17",
+        "value": "TMK105B7104MV-FR 100nF",
+        "footprint": "S12:C0402",
+        "x": 20.5,
+        "y": 7.3,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 20.1,
+            "y": 7.3,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 20.9,
+            "y": 7.3,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.6,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Derived0402 envelope and lands; exact vendor height/bias/stencil gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C12",
+        "value": "GRM155R71E103KA01D 10nF",
+        "footprint": "S12:C0402",
+        "x": 20.0,
+        "y": 3.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 19.6,
+            "y": 3.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BARRIER_DVDT",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 20.4,
+            "y": 3.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.6,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Derived0402 envelope and lands; exact vendor height/bias/stencil gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C10",
+        "value": "GRM155R71E103KA01D 10nF",
+        "footprint": "S12:C0402",
+        "x": 7.5,
+        "y": 9.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 7.1,
+            "y": 9.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "REG_SS",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 7.9,
+            "y": 9.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.6,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Derived0402 envelope and lands; exact vendor height/bias/stencil gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C6",
+        "value": "T520D157M010ATE055 150uF",
+        "footprint": "S12:T520D",
+        "x": 15.9,
+        "y": 16.6,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 13.05,
+            "y": 16.6,
+            "size": [
+              2.0,
+              3.0
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.2,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 18.75,
+            "y": 16.6,
+            "size": [
+              2.0,
+              3.0
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.2,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/T520D.kicad_mod",
+          "body_allocation_mm": [
+            7.6,
+            4.6
+          ],
+          "height_allocation_mm": 3.1,
+          "courtyard_mm": [
+            8.2,
+            5.1
+          ],
+          "source": "KEMET Dcase source drawing;120uF minimum only at tolerance reference",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R20",
+        "value": "TNPW040237K4BYED 37400ohm",
+        "footprint": "S12:R0402",
+        "x": 23.25,
+        "y": 9.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 22.775,
+            "y": 9.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 23.725,
+            "y": 9.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SAFE_PGTH",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R12",
+        "value": "TNPW04029K09BYED 9090ohm",
+        "footprint": "S12:R0402",
+        "x": 9.5,
+        "y": 13.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 9.025,
+            "y": 13.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BUCK_UV_SENSE",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 9.975,
+            "y": 13.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R9",
+        "value": "TNPW0402100KBYED 100000ohm",
+        "footprint": "S12:R0402",
+        "x": 3.0,
+        "y": 9.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 2.525,
+            "y": 9.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "FPC12_PROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 3.475,
+            "y": 9.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "REG_EN",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R14",
+        "value": "TNPW04028K00BYED 8000ohm",
+        "footprint": "S12:R0402",
+        "x": 9.0,
+        "y": 16.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 8.525,
+            "y": 16.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BUCK_OV_SENSE",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 9.475,
+            "y": 16.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R21",
+        "value": "TNPW040210K0BYED 10000ohm",
+        "footprint": "S12:R0402",
+        "x": 22.75,
+        "y": 8.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 22.275,
+            "y": 8.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SAFE_PGTH",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 23.225,
+            "y": 8.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R11",
+        "value": "TNPW0402100KBYED 100000ohm",
+        "footprint": "S12:R0402",
+        "x": 9.5,
+        "y": 12.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 9.025,
+            "y": 12.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 9.975,
+            "y": 12.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BUCK_UV_SENSE",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R23",
+        "value": "TNPW0402100KBYED 100000ohm",
+        "footprint": "S12:R0402",
+        "x": 24.75,
+        "y": 18.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 24.275,
+            "y": 18.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "PORT_ENABLE",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 25.225,
+            "y": 18.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "U4",
+        "value": "TPS25940LRVCR",
+        "footprint": "S12:RVC20",
+        "x": 17.4,
+        "y": 9.5,
+        "angle": 180.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 18.8,
+            "y": 10.75,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 18.8,
+            "y": 10.25,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "PORT_ENABLE",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "3",
+            "x": 18.8,
+            "y": 9.75,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "SAFE_PGTH",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "4",
+            "x": 18.8,
+            "y": 9.25,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "5",
+            "x": 18.8,
+            "y": 8.75,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "6",
+            "x": 18.8,
+            "y": 8.25,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "7",
+            "x": 18.15,
+            "y": 7.6,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "8",
+            "x": 17.65,
+            "y": 7.6,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "9",
+            "x": 17.15,
+            "y": 7.6,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "10",
+            "x": 16.65,
+            "y": 7.6,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "11",
+            "x": 16.0,
+            "y": 8.25,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "12",
+            "x": 16.0,
+            "y": 8.75,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "13",
+            "x": 16.0,
+            "y": 9.25,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "14",
+            "x": 16.0,
+            "y": 9.75,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "BARRIER_EN",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "15",
+            "x": 16.0,
+            "y": 10.25,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "BACKSTOP_OVP",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "16",
+            "x": 16.0,
+            "y": 10.75,
+            "size": [
+              0.6,
+              0.2
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "17",
+            "x": 16.65,
+            "y": 11.4,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "BARRIER_ILIM",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "18",
+            "x": 17.15,
+            "y": 11.4,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "BARRIER_DVDT",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "19",
+            "x": 17.65,
+            "y": 11.4,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "unconnected-(U4-IMON_UNUSED-Pad19)",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "20",
+            "x": 18.15,
+            "y": 11.4,
+            "size": [
+              0.2,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.02,
+            "net": "PROTECT_FAULT_N",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "21",
+            "x": 17.4,
+            "y": 9.5,
+            "size": [
+              1.6,
+              2.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 180.0,
+            "shape": 4,
+            "round_radius": 0.16,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/RVC20.kicad_mod",
+          "body_allocation_mm": [
+            3.1,
+            4.1
+          ],
+          "height_allocation_mm": 1.0,
+          "courtyard_mm": [
+            3.9,
+            4.9
+          ],
+          "source": "TI RVC0020A common TPS25810/TPS25940; realEP21 ground",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R19",
+        "value": "TNPW040224K9BYED 24900ohm",
+        "footprint": "S12:R0402",
+        "x": 13.0,
+        "y": 8.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 12.525,
+            "y": 8.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BARRIER_ILIM",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 13.475,
+            "y": 8.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C7",
+        "value": "MSAST21GBB5106MTNA01 10uF",
+        "footprint": "S12:C0805",
+        "x": 28.8,
+        "y": 21.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 27.85,
+            "y": 21.0,
+            "size": [
+              0.7,
+              1.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.07,
+            "net": "USB_VBUS",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 29.75,
+            "y": 21.0,
+            "size": [
+              0.7,
+              1.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.07,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0805.kicad_mod",
+          "body_allocation_mm": [
+            2.2,
+            1.45
+          ],
+          "height_allocation_mm": 1.45,
+          "courtyard_mm": [
+            3.1,
+            2.0
+          ],
+          "source": "Taiyo official preferred-current HTML maxbody2.2x1.45x1.45; DERIVED lands/stencil/bias gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "L1",
+        "value": "XAL4020-152MEC 1.5uH",
+        "footprint": "S12:XAL4020",
+        "x": 11.5,
+        "y": 4.2,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 9.825,
+            "y": 4.2,
+            "size": [
+              0.98,
+              3.4
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.098,
+            "net": "SW",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 13.175,
+            "y": 4.2,
+            "size": [
+              0.98,
+              3.4
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.098,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "body_allocation_mm": [
+            4.3,
+            4.3
+          ],
+          "height_allocation_mm": 2.1,
+          "courtyard_mm": [
+            4.9,
+            4.9
+          ],
+          "source": "Coilcraft806-4 dimensions and lands",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C5",
+        "value": "MSASE21GBB5226MTNA01 22uF",
+        "footprint": "S12:C0805",
+        "x": 15.9,
+        "y": 5.3,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 14.95,
+            "y": 5.3,
+            "size": [
+              0.7,
+              1.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.07,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 16.85,
+            "y": 5.3,
+            "size": [
+              0.7,
+              1.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.07,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0805.kicad_mod",
+          "body_allocation_mm": [
+            2.2,
+            1.45
+          ],
+          "height_allocation_mm": 1.45,
+          "courtyard_mm": [
+            3.1,
+            2.0
+          ],
+          "source": "Taiyo official preferred-current HTML maxbody2.2x1.45x1.45; DERIVED lands/stencil/bias gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C8",
+        "value": "TMK105B7104MV-FR 100nF",
+        "footprint": "S12:C0402",
+        "x": 22.5,
+        "y": 18.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 22.1,
+            "y": 18.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 22.9,
+            "y": 18.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.6,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Derived0402 envelope and lands; exact vendor height/bias/stencil gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C3",
+        "value": "MSAST21GBB5106MTNA01 10uF",
+        "footprint": "S12:C0805",
+        "x": 6.0,
+        "y": 2.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 5.05,
+            "y": 2.0,
+            "size": [
+              0.7,
+              1.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.07,
+            "net": "FPC12_PROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 6.95,
+            "y": 2.0,
+            "size": [
+              0.7,
+              1.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.07,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0805.kicad_mod",
+          "body_allocation_mm": [
+            2.2,
+            1.45
+          ],
+          "height_allocation_mm": 1.45,
+          "courtyard_mm": [
+            3.1,
+            2.0
+          ],
+          "source": "Taiyo official preferred-current HTML maxbody2.2x1.45x1.45; DERIVED lands/stencil/bias gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "TP1",
+        "value": "FAB_PORT_FAULT_PROBE",
+        "footprint": "S12:TP1",
+        "x": 30.0,
+        "y": 24.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 30.0,
+            "y": 24.0,
+            "size": [
+              1.0,
+              1.0
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.1,
+            "net": "PORT_FAULT_N",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/TP1.kicad_mod",
+          "body_allocation_mm": [
+            1,
+            1
+          ],
+          "height_allocation_mm": 0,
+          "courtyard_mm": [
+            1.5,
+            1.5
+          ],
+          "source": "Fabricated probe land",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "J1",
+        "value": "USB4105-GF-A",
+        "footprint": "S12:USB4105",
+        "x": 32.0,
+        "y": 13.0,
+        "angle": 90.0,
+        "pads": [
+          {
+            "number": "",
+            "x": 28.32,
+            "y": 15.89,
+            "size": [
+              0.65,
+              0.65
+            ],
+            "drill": [
+              0.65,
+              0.65
+            ],
+            "angle": 90.0,
+            "shape": 0,
+            "round_radius": 0,
+            "net": "",
+            "layers": "00000000_00000000_55555555_5555555f"
+          },
+          {
+            "number": "",
+            "x": 28.32,
+            "y": 10.11,
+            "size": [
+              0.65,
+              0.65
+            ],
+            "drill": [
+              0.65,
+              0.65
+            ],
+            "angle": 90.0,
+            "shape": 0,
+            "round_radius": 0,
+            "net": "",
+            "layers": "00000000_00000000_55555555_5555555f"
+          },
+          {
+            "number": "A1_B12",
+            "x": 27.245,
+            "y": 16.2,
+            "size": [
+              0.6,
+              1.15
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.06,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "A4_B9",
+            "x": 27.245,
+            "y": 15.4,
+            "size": [
+              0.6,
+              1.15
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.06,
+            "net": "USB_VBUS",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "A5",
+            "x": 27.245,
+            "y": 14.25,
+            "size": [
+              0.3,
+              1.15
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.03,
+            "net": "USB_CC1",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "A6",
+            "x": 27.245,
+            "y": 13.25,
+            "size": [
+              0.3,
+              1.15
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.03,
+            "net": "USB_D_SHORT",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "A7",
+            "x": 27.245,
+            "y": 12.75,
+            "size": [
+              0.3,
+              1.15
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.03,
+            "net": "USB_D_SHORT",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "A8",
+            "x": 27.245,
+            "y": 11.75,
+            "size": [
+              0.3,
+              1.15
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.03,
+            "net": "unconnected-(J1-SBU1_NC-PadA8)",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "B1_A12",
+            "x": 27.245,
+            "y": 9.8,
+            "size": [
+              0.6,
+              1.15
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.06,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "B4_A9",
+            "x": 27.245,
+            "y": 10.6,
+            "size": [
+              0.6,
+              1.15
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.06,
+            "net": "USB_VBUS",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "B5",
+            "x": 27.245,
+            "y": 11.25,
+            "size": [
+              0.3,
+              1.15
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.03,
+            "net": "USB_CC2",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "B6",
+            "x": 27.245,
+            "y": 12.25,
+            "size": [
+              0.3,
+              1.15
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.03,
+            "net": "USB_D_SHORT",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "B7",
+            "x": 27.245,
+            "y": 13.75,
+            "size": [
+              0.3,
+              1.15
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.03,
+            "net": "USB_D_SHORT",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "B8",
+            "x": 27.245,
+            "y": 14.75,
+            "size": [
+              0.3,
+              1.15
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 90.0,
+            "shape": 4,
+            "round_radius": 0.03,
+            "net": "unconnected-(J1-SBU2_NC-PadB8)",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "S1",
+            "x": 27.82,
+            "y": 17.32,
+            "size": [
+              1.0,
+              2.1
+            ],
+            "drill": [
+              0.6,
+              1.7
+            ],
+            "angle": 90.0,
+            "shape": 2,
+            "round_radius": 0,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_55555555_5555555f"
+          },
+          {
+            "number": "S2",
+            "x": 27.82,
+            "y": 8.68,
+            "size": [
+              1.0,
+              2.1
+            ],
+            "drill": [
+              0.6,
+              1.7
+            ],
+            "angle": 90.0,
+            "shape": 2,
+            "round_radius": 0,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_55555555_5555555f"
+          },
+          {
+            "number": "S3",
+            "x": 30.6,
+            "y": 17.32,
+            "size": [
+              1.0,
+              1.8
+            ],
+            "drill": [
+              0.6,
+              1.4
+            ],
+            "angle": 90.0,
+            "shape": 2,
+            "round_radius": 0,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_55555555_5555555f"
+          },
+          {
+            "number": "S4",
+            "x": 30.6,
+            "y": 8.68,
+            "size": [
+              1.0,
+              1.8
+            ],
+            "drill": [
+              0.6,
+              1.4
+            ],
+            "angle": 90.0,
+            "shape": 2,
+            "round_radius": 0,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_55555555_5555555f"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/USB4105.kicad_mod",
+          "body_allocation_mm": [
+            9.09,
+            7.65
+          ],
+          "height_allocation_mm": 3.46,
+          "courtyard_mm": [
+            10.14,
+            8.65
+          ],
+          "source": "GCT B4 unchanged16contacts/12signal lands+4shell+2NPTH",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R22",
+        "value": "TNPW0402100KBYED 100000ohm",
+        "footprint": "S12:R0402",
+        "x": 24.0,
+        "y": 16.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 23.525,
+            "y": 16.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 24.475,
+            "y": 16.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "PORT_ENABLE",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R8",
+        "value": "TNPW040210K0BYED 10000ohm",
+        "footprint": "S12:R0402",
+        "x": 10.0,
+        "y": 9.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 9.525,
+            "y": 9.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "REG_FB",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 10.475,
+            "y": 9.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R13",
+        "value": "TNPW0402100KBYED 100000ohm",
+        "footprint": "S12:R0402",
+        "x": 9.5,
+        "y": 15.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 9.025,
+            "y": 15.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 9.975,
+            "y": 15.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BUCK_OV_SENSE",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C16",
+        "value": "TMK105B7104MV-FR 100nF",
+        "footprint": "S12:C0402",
+        "x": 20.5,
+        "y": 6.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 20.1,
+            "y": 6.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 20.9,
+            "y": 6.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.6,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Derived0402 envelope and lands; exact vendor height/bias/stencil gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R25",
+        "value": "TNPW0402100KBYED 100000ohm",
+        "footprint": "S12:R0402",
+        "x": 28.0,
+        "y": 5.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 27.525,
+            "y": 5.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 28.475,
+            "y": 5.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "PORT_FAULT_N",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R26",
+        "value": "TNPW0402100KBYED 100000ohm",
+        "footprint": "S12:R0402",
+        "x": 25.0,
+        "y": 3.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 24.525,
+            "y": 3.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 25.475,
+            "y": 3.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "PROTECT_FAULT_N",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R16",
+        "value": "TNPW0402100KBYED 100000ohm",
+        "footprint": "S12:R0402",
+        "x": 12.0,
+        "y": 11.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 11.525,
+            "y": 11.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BARRIER_EN",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 12.475,
+            "y": 11.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C2",
+        "value": "MSAST21GBB5106MTNA01 10uF",
+        "footprint": "S12:C0805",
+        "x": 2.25,
+        "y": 4.2,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 1.3,
+            "y": 4.2,
+            "size": [
+              0.7,
+              1.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.07,
+            "net": "FPC12_PROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 3.2,
+            "y": 4.2,
+            "size": [
+              0.7,
+              1.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.07,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0805.kicad_mod",
+          "body_allocation_mm": [
+            2.2,
+            1.45
+          ],
+          "height_allocation_mm": 1.45,
+          "courtyard_mm": [
+            3.1,
+            2.0
+          ],
+          "source": "Taiyo official preferred-current HTML maxbody2.2x1.45x1.45; DERIVED lands/stencil/bias gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R27",
+        "value": "TNPW040210K0BYED 10000ohm",
+        "footprint": "S12:R0402",
+        "x": 23.0,
+        "y": 21.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 22.525,
+            "y": 21.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SAFE5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 23.475,
+            "y": 21.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R17",
+        "value": "TNPW0402100KBYED 100000ohm",
+        "footprint": "S12:R0402",
+        "x": 17.0,
+        "y": 13.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 16.525,
+            "y": 13.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 17.475,
+            "y": 13.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "BACKSTOP_OVP",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C15",
+        "value": "TMK105B7104MV-FR 100nF",
+        "footprint": "S12:C0402",
+        "x": 3.0,
+        "y": 6.8,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 2.6,
+            "y": 6.8,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "FPC12_PROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 3.4,
+            "y": 6.8,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.6,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Derived0402 envelope and lands; exact vendor height/bias/stencil gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "U2",
+        "value": "TPS62135RGXR",
+        "footprint": "S12:RGX11",
+        "x": 6.0,
+        "y": 5.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 6.0,
+            "y": 5.0,
+            "size": [
+              2.4,
+              0.25
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.025,
+            "net": "FPC12_PROTECTED",
+            "layers": "00000000_00000000_00000000_00000003"
+          },
+          {
+            "number": "2",
+            "x": 6.0,
+            "y": 5.5,
+            "size": [
+              2.4,
+              0.25
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.025,
+            "net": "SW",
+            "layers": "00000000_00000000_00000000_00000003"
+          },
+          {
+            "number": "3",
+            "x": 6.0,
+            "y": 6.0,
+            "size": [
+              2.4,
+              0.25
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.025,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00000003"
+          },
+          {
+            "number": "4",
+            "x": 5.25,
+            "y": 6.9,
+            "size": [
+              0.25,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.025,
+            "net": "unconnected-(U2-FB2_UNUSED-Pad4)",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "5",
+            "x": 5.75,
+            "y": 6.9,
+            "size": [
+              0.25,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.025,
+            "net": "REG_FB",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "6",
+            "x": 6.25,
+            "y": 6.9,
+            "size": [
+              0.25,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.025,
+            "net": "BUCK5_18",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "7",
+            "x": 6.75,
+            "y": 6.9,
+            "size": [
+              0.25,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.025,
+            "net": "PORT_ENABLE",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "8",
+            "x": 6.75,
+            "y": 4.1,
+            "size": [
+              0.25,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.025,
+            "net": "REG_EN",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "9",
+            "x": 6.25,
+            "y": 4.1,
+            "size": [
+              0.25,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.025,
+            "net": "REG_SS",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "10",
+            "x": 5.75,
+            "y": 4.1,
+            "size": [
+              0.25,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.025,
+            "net": "FPC12_PROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "11",
+            "x": 5.25,
+            "y": 4.1,
+            "size": [
+              0.25,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.025,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "body_allocation_mm": [
+            2.1,
+            3.1
+          ],
+          "height_allocation_mm": 1.0,
+          "courtyard_mm": [
+            3.2,
+            4.0
+          ],
+          "source": "TI RGX0011A source-dimensioned; GND is actualpad3, not extraEP",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C9",
+        "value": "TMK105B7104MV-FR 100nF",
+        "footprint": "S12:C0402",
+        "x": 2.5,
+        "y": 13.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 2.1,
+            "y": 13.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "FPC12_PROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 2.9,
+            "y": 13.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.6,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Derived0402 envelope and lands; exact vendor height/bias/stencil gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      }
+    ],
+    "size": [
+      32,
+      26,
+      1
+    ]
+  },
+  "stationary": {
+    "sha256": "d6f79be09ed5e7984f2f915d9d3b9399978f7412795d7fff4c0ef8d8caabdbdc",
+    "components": [
+      {
+        "ref": "R2",
+        "value": "TNPW040210K0BYED 10000ohm",
+        "footprint": "S12:R0402",
+        "x": 11.75,
+        "y": 7.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 11.275,
+            "y": 7.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_UVLO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 12.225,
+            "y": 7.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R5",
+        "value": "TNPW04022K00BYED 2000ohm",
+        "footprint": "S12:R0402",
+        "x": 17.0,
+        "y": 4.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 16.525,
+            "y": 4.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_ILM",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 17.475,
+            "y": 4.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R6",
+        "value": "TNPW0402100RBYED 100ohm",
+        "footprint": "S12:R0402",
+        "x": 19.25,
+        "y": 7.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 18.775,
+            "y": 7.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_DVDT",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 19.725,
+            "y": 7.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_DVDT_C",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C14",
+        "value": "TMK105B7104MV-FR 100nF",
+        "footprint": "S12:C0402",
+        "x": 9.5,
+        "y": 8.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 9.1,
+            "y": 8.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "MODULE12_UNPROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 9.9,
+            "y": 8.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.6,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Derived0402 envelope and lands; exact vendor height/bias/stencil gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C1",
+        "value": "MSAST21GBB5106MTNA01 10uF",
+        "footprint": "S12:C0805",
+        "x": 5.0,
+        "y": 8.3,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 4.05,
+            "y": 8.3,
+            "size": [
+              0.7,
+              1.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.07,
+            "net": "MODULE12_UNPROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 5.95,
+            "y": 8.3,
+            "size": [
+              0.7,
+              1.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.07,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0805.kicad_mod",
+          "body_allocation_mm": [
+            2.2,
+            1.45
+          ],
+          "height_allocation_mm": 1.45,
+          "courtyard_mm": [
+            3.1,
+            2.0
+          ],
+          "source": "Taiyo official preferred-current HTML maxbody2.2x1.45x1.45; DERIVED lands/stencil/bias gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "J2",
+        "value": "FAB_FPC20_STATIONARY",
+        "footprint": "S12:FPC20",
+        "x": 12.0,
+        "y": 13.8,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 7.5,
+            "y": 13.8,
+            "size": [
+              8.0,
+              2.0
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.2,
+            "net": "FPC12_PROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 16.5,
+            "y": 13.8,
+            "size": [
+              8.0,
+              2.0
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.2,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/FPC20.kicad_mod",
+          "body_allocation_mm": [
+            20,
+            2
+          ],
+          "height_allocation_mm": 0.3,
+          "courtyard_mm": [
+            20.5,
+            3.0
+          ],
+          "source": "Derived actual20mm ribbon solder lands; external clamp volume additional",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R3",
+        "value": "TNPW0402100KBYED 100000ohm",
+        "footprint": "S12:R0402",
+        "x": 14.25,
+        "y": 7.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 13.775,
+            "y": 7.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "MODULE12_UNPROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 14.725,
+            "y": 7.5,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_OVLO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "C11",
+        "value": "GRM155R71E103KA01D 10nF",
+        "footprint": "S12:C0402",
+        "x": 17.0,
+        "y": 7.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 16.6,
+            "y": 7.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_DVDT_C",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 17.4,
+            "y": 7.0,
+            "size": [
+              0.4,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.6,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Derived0402 envelope and lands; exact vendor height/bias/stencil gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R1",
+        "value": "TNPW040268K1BYED 68100ohm",
+        "footprint": "S12:R0402",
+        "x": 11.0,
+        "y": 6.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 10.525,
+            "y": 6.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "MODULE12_UNPROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 11.475,
+            "y": 6.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_UVLO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "R4",
+        "value": "TNPW04029K09BYED 9090ohm",
+        "footprint": "S12:R0402",
+        "x": 14.0,
+        "y": 9.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 13.525,
+            "y": 9.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_OVLO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 14.475,
+            "y": 9.0,
+            "size": [
+              0.55,
+              0.6
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+          "body_allocation_mm": [
+            1.1,
+            0.6
+          ],
+          "height_allocation_mm": 0.45,
+          "courtyard_mm": [
+            1.8,
+            1.0
+          ],
+          "source": "Vishay28758/derived assembly courtyard",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "J0",
+        "value": "FAB_SOURCE12_WIRE_LANDS",
+        "footprint": "S12:Wire2",
+        "x": 5.0,
+        "y": 3.5,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 3.0,
+            "y": 3.5,
+            "size": [
+              2.5,
+              3.0
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.25,
+            "net": "MODULE12_UNPROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 7.0,
+            "y": 3.5,
+            "size": [
+              2.5,
+              3.0
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.25,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "body_allocation_mm": [
+            7,
+            4.5
+          ],
+          "height_allocation_mm": 2.5,
+          "courtyard_mm": [
+            8,
+            5.5
+          ],
+          "source": "Derived source-wire/solder allowance; exact harness OD/process gate",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      },
+      {
+        "ref": "U1",
+        "value": "TPS259474LRPWR",
+        "footprint": "S12:RPW10",
+        "x": 14.0,
+        "y": 4.0,
+        "angle": 0.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": 13.1,
+            "y": 3.3,
+            "size": [
+              0.6,
+              0.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_UVLO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "1",
+            "x": 13.275,
+            "y": 3.125,
+            "size": [
+              0.25,
+              0.65
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_UVLO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "2",
+            "x": 13.1,
+            "y": 3.775,
+            "size": [
+              0.6,
+              0.25
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_OVLO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "3",
+            "x": 13.1,
+            "y": 4.225,
+            "size": [
+              0.6,
+              0.25
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "unconnected-(U1-PG_UNUSED-Pad3)",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "4",
+            "x": 13.1,
+            "y": 4.7,
+            "size": [
+              0.6,
+              0.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "4",
+            "x": 13.275,
+            "y": 4.875,
+            "size": [
+              0.25,
+              0.65
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "5",
+            "x": 13.75,
+            "y": 4.0,
+            "size": [
+              0.3,
+              2.4
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "MODULE12_UNPROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "6",
+            "x": 14.25,
+            "y": 4.0,
+            "size": [
+              0.3,
+              2.4
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "FPC12_PROTECTED",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "7",
+            "x": 14.725,
+            "y": 4.875,
+            "size": [
+              0.25,
+              0.65
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_DVDT",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "7",
+            "x": 14.9,
+            "y": 4.7,
+            "size": [
+              0.6,
+              0.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_DVDT",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "8",
+            "x": 14.9,
+            "y": 4.225,
+            "size": [
+              0.6,
+              0.25
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "GND_ISO",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "9",
+            "x": 14.9,
+            "y": 3.775,
+            "size": [
+              0.6,
+              0.25
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "SOURCE_ILM",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "10",
+            "x": 14.725,
+            "y": 3.125,
+            "size": [
+              0.25,
+              0.65
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "unconnected-(U1-ITIMER_OPEN_FASTEST-Pad10)",
+            "layers": "00000000_00000000_00000000_00002003"
+          },
+          {
+            "number": "10",
+            "x": 14.9,
+            "y": 3.3,
+            "size": [
+              0.6,
+              0.3
+            ],
+            "drill": [
+              0.0,
+              0.0
+            ],
+            "angle": 0.0,
+            "shape": 4,
+            "round_radius": 0.05,
+            "net": "unconnected-(U1-ITIMER_OPEN_FASTEST-Pad10)",
+            "layers": "00000000_00000000_00000000_00002003"
+          }
+        ],
+        "body": {
+          "copied_readonly_from": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/RPW10.kicad_mod",
+          "body_allocation_mm": [
+            2.1,
+            2.1
+          ],
+          "height_allocation_mm": 0.8,
+          "courtyard_mm": [
+            3.1,
+            2.6
+          ],
+          "source": "TI RPW0010A; copied lands",
+          "manufacturing_land_height_thermal_acceptance": false
+        }
+      }
+    ],
+    "size": [
+      24,
+      16,
+      1
+    ]
+  }
+}

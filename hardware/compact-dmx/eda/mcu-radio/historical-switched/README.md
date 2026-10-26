@@ -1,0 +1,1 @@
+Superseded switched-antenna snapshot, retained for provenance only. Not current product acceptance. Scripts depend on their original directory context; do not run here. Current generator/verifier are one directory above. Prior dualband receipt describes this historical version.

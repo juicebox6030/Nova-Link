@@ -1,0 +1,434 @@
+[
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 6.843200024470021e-13,
+    "part": "Protected_core_OD48_ID43_x2_140",
+    "native_volume_mm3": 49283.324967774824,
+    "STEP_volume_mm3": 49283.70123896879,
+    "difference_mm3": 0.3762711939634755,
+    "bbox_max_error_mm": 2.3654421923424707e-06
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 2.07157025572446e-14,
+    "part": "Protected_input_endcap_x0_2",
+    "native_volume_mm3": 3619.114736935441,
+    "STEP_volume_mm3": 3619.114736935441,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 2.07157025572446e-14,
+    "part": "Protected_output_endcap_x140_142",
+    "native_volume_mm3": 3619.114736935441,
+    "STEP_volume_mm3": 3619.114736935441,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "Protected_L_N_PE_trunk",
+    "native_volume_mm3": 10400.0,
+    "STEP_volume_mm3": 10400.0,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "IRM20_nominal_body",
+    "native_volume_mm3": 34206.72,
+    "STEP_volume_mm3": 34206.72,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.6758116906701664e-14,
+    "part": "Carrier_PCB_61x32x1p6",
+    "native_volume_mm3": 2930.3900634069028,
+    "STEP_volume_mm3": 2930.3900634069023,
+    "difference_mm3": -4.547473508864641e-13,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "Pin_AC_N",
+    "native_volume_mm3": 2.748893571891071,
+    "STEP_volume_mm3": 2.748893571891071,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.432144669219779e-14,
+    "part": "Land_AC_N_top",
+    "native_volume_mm3": 0.7460807164993207,
+    "STEP_volume_mm3": 0.7460807164993364,
+    "difference_mm3": 1.5654144647214707e-14,
+    "bbox_max_error_mm": 3.552713678800501e-15
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.432144669219779e-14,
+    "part": "Land_AC_N_bottom",
+    "native_volume_mm3": 0.7460807164993414,
+    "STEP_volume_mm3": 0.7460807164993364,
+    "difference_mm3": -4.9960036108132044e-15,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "Pin_AC_L",
+    "native_volume_mm3": 2.748893571891072,
+    "STEP_volume_mm3": 2.748893571891072,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.432144669219779e-14,
+    "part": "Land_AC_L_top",
+    "native_volume_mm3": 0.851080716499335,
+    "STEP_volume_mm3": 0.8510807164993361,
+    "difference_mm3": 1.1102230246251565e-15,
+    "bbox_max_error_mm": 1.7763568394002505e-15
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.432144669219779e-14,
+    "part": "Land_AC_L_bottom",
+    "native_volume_mm3": 0.8510807164993348,
+    "STEP_volume_mm3": 0.8510807164993361,
+    "difference_mm3": 1.3322676295501878e-15,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "Pin_V_MINUS",
+    "native_volume_mm3": 2.748893571891073,
+    "STEP_volume_mm3": 2.748893571891073,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.7763568394002505e-14,
+    "part": "Land_V_MINUS_top",
+    "native_volume_mm3": 0.8510807164993386,
+    "STEP_volume_mm3": 0.8510807164993374,
+    "difference_mm3": -1.2212453270876722e-15,
+    "bbox_max_error_mm": 1.4210854715202004e-14
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.7763568394002505e-14,
+    "part": "Land_V_MINUS_bottom",
+    "native_volume_mm3": 0.8510807164993287,
+    "STEP_volume_mm3": 0.8510807164993374,
+    "difference_mm3": 8.659739592076221e-15,
+    "bbox_max_error_mm": 1.4210854715202004e-14
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 4.440892098500626e-16,
+    "part": "Pin_V_PLUS",
+    "native_volume_mm3": 2.748893571891073,
+    "STEP_volume_mm3": 2.748893571891073,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.724530548492318e-14,
+    "part": "Land_V_PLUS_top",
+    "native_volume_mm3": 0.9560807164993529,
+    "STEP_volume_mm3": 0.9560807164993377,
+    "difference_mm3": -1.5210055437364645e-14,
+    "bbox_max_error_mm": 1.4210854715202004e-14
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.724530548492318e-14,
+    "part": "Land_V_PLUS_bottom",
+    "native_volume_mm3": 0.9560807164993632,
+    "STEP_volume_mm3": 0.9560807164993377,
+    "difference_mm3": -2.55351295663786e-14,
+    "bbox_max_error_mm": 1.4210854715202004e-14
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 4.440892098500626e-16,
+    "part": "Trace_PLUS",
+    "native_volume_mm3": 0.41999999999999327,
+    "STEP_volume_mm3": 0.4200000000000016,
+    "difference_mm3": 8.326672684688674e-15,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.3322676295501878e-15,
+    "part": "Pigtail_land_PLUS",
+    "native_volume_mm3": 0.1650141622797953,
+    "STEP_volume_mm3": 0.16501416227979487,
+    "difference_mm3": -4.163336342344337e-16,
+    "bbox_max_error_mm": 2.220446049250313e-16
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 6.661338147750939e-16,
+    "part": "Trace_MINUS",
+    "native_volume_mm3": 0.8820000000000009,
+    "STEP_volume_mm3": 0.8820000000000032,
+    "difference_mm3": 2.3314683517128287e-15,
+    "bbox_max_error_mm": 5.551115123125783e-17
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 2.220446049250313e-16,
+    "part": "Pigtail_land_MINUS",
+    "native_volume_mm3": 0.20020000000000104,
+    "STEP_volume_mm3": 0.20020000000000104,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 2.220446049250313e-16
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.4211288389453755e-14,
+    "part": "Secondary_PLUS_via_barrel",
+    "native_volume_mm3": 0.19672260497697502,
+    "STEP_volume_mm3": 0.1967226049769616,
+    "difference_mm3": -1.3433698597964394e-14,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "Polyester_film_allocation",
+    "native_volume_mm3": 231.99999999999994,
+    "STEP_volume_mm3": 231.99999999999994,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 9.03700936943542e-12,
+    "part": "Core_compression_shoe_40_m1",
+    "native_volume_mm3": 9.946481855094763,
+    "STEP_volume_mm3": 9.946481854996136,
+    "difference_mm3": -9.86268844371807e-11,
+    "bbox_max_error_mm": 8.167688747562352e-12
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.1282383320392588e-12,
+    "part": "Core_compression_shoe_40_1",
+    "native_volume_mm3": 9.946481855094863,
+    "STEP_volume_mm3": 9.946481855101599,
+    "difference_mm3": 6.73594513500575e-12,
+    "bbox_max_error_mm": 3.552713678800501e-13
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 9.03700936943542e-12,
+    "part": "Core_compression_shoe_100_m1",
+    "native_volume_mm3": 9.946481855094763,
+    "STEP_volume_mm3": 9.946481854996136,
+    "difference_mm3": -9.86268844371807e-11,
+    "bbox_max_error_mm": 8.167688747562352e-12
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.1282383320392588e-12,
+    "part": "Core_compression_shoe_100_1",
+    "native_volume_mm3": 9.946481855094863,
+    "STEP_volume_mm3": 9.946481855101599,
+    "difference_mm3": 6.73594513500575e-12,
+    "bbox_max_error_mm": 3.552713678800501e-13
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 9.521272659185342e-12,
+    "part": "Custom_dielectric_sled_and_clamp_brackets",
+    "native_volume_mm3": 2198.6074220498945,
+    "STEP_volume_mm3": 2198.607422050419,
+    "difference_mm3": 5.243236955720931e-10,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "Standoff_0",
+    "native_volume_mm3": 1.963495408493621,
+    "STEP_volume_mm3": 1.963495408493622,
+    "difference_mm3": 1.1102230246251565e-15,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "Standoff_1",
+    "native_volume_mm3": 1.963495408493621,
+    "STEP_volume_mm3": 1.963495408493622,
+    "difference_mm3": 1.1102230246251565e-15,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "Standoff_2",
+    "native_volume_mm3": 1.9634954084936218,
+    "STEP_volume_mm3": 1.963495408493623,
+    "difference_mm3": 1.1102230246251565e-15,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "Standoff_3",
+    "native_volume_mm3": 1.9634954084936218,
+    "STEP_volume_mm3": 1.963495408493623,
+    "difference_mm3": 1.1102230246251565e-15,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "Pressure_jaw_Lm",
+    "native_volume_mm3": 2.400000000000002,
+    "STEP_volume_mm3": 2.400000000000002,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 3.972054645195637e-15,
+    "part": "M2_adjuster_Lm",
+    "native_volume_mm3": 11.912919342412483,
+    "STEP_volume_mm3": 11.912919342412513,
+    "difference_mm3": 3.019806626980426e-14,
+    "bbox_max_error_mm": 3.552713678800501e-15
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "Pressure_jaw_Lp",
+    "native_volume_mm3": 2.400000000000002,
+    "STEP_volume_mm3": 2.400000000000002,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 3.972054645195637e-15,
+    "part": "M2_adjuster_Lp",
+    "native_volume_mm3": 11.912919342412483,
+    "STEP_volume_mm3": 11.912919342412513,
+    "difference_mm3": 3.019806626980426e-14,
+    "bbox_max_error_mm": 3.552713678800501e-15
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "Pressure_jaw_Rm",
+    "native_volume_mm3": 2.400000000000002,
+    "STEP_volume_mm3": 2.400000000000002,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 3.972054645195637e-15,
+    "part": "M2_adjuster_Rm",
+    "native_volume_mm3": 11.912919342412492,
+    "STEP_volume_mm3": 11.912919342412504,
+    "difference_mm3": 1.2434497875801753e-14,
+    "bbox_max_error_mm": 3.552713678800501e-15
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 0,
+    "part": "Pressure_jaw_Rp",
+    "native_volume_mm3": 2.400000000000002,
+    "STEP_volume_mm3": 2.400000000000002,
+    "difference_mm3": 0.0,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 3.972054645195637e-15,
+    "part": "M2_adjuster_Rp",
+    "native_volume_mm3": 11.912919342412492,
+    "STEP_volume_mm3": 11.912919342412504,
+    "difference_mm3": 1.2434497875801753e-14,
+    "bbox_max_error_mm": 3.552713678800501e-15
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.4323167916492475e-14,
+    "part": "Wire_PLUS_conductor",
+    "native_volume_mm3": 29.62198534732755,
+    "STEP_volume_mm3": 29.621985347327538,
+    "difference_mm3": -1.0658141036401503e-14,
+    "bbox_max_error_mm": 1.4210854715202004e-14
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.4323167916492475e-14,
+    "part": "Wire_PLUS_maximum_OD_insulation",
+    "native_volume_mm3": 81.22908120309182,
+    "STEP_volume_mm3": 81.22908120309185,
+    "difference_mm3": 2.842170943040401e-14,
+    "bbox_max_error_mm": 1.4210854715202004e-14
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 5.240252676230739e-13,
+    "part": "Pigtail_solder_PLUS",
+    "native_volume_mm3": 0.8778250594785392,
+    "STEP_volume_mm3": 0.877825059478537,
+    "difference_mm3": -2.220446049250313e-15,
+    "bbox_max_error_mm": 1.580957587066223e-13
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.4321554274776678e-14,
+    "part": "Wire_MINUS_conductor",
+    "native_volume_mm3": 29.621985347327524,
+    "STEP_volume_mm3": 29.621985347327545,
+    "difference_mm3": 2.1316282072803006e-14,
+    "bbox_max_error_mm": 1.4210854715202004e-14
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.4321554274776678e-14,
+    "part": "Wire_MINUS_maximum_OD_insulation",
+    "native_volume_mm3": 81.2290812030918,
+    "STEP_volume_mm3": 81.22908120309185,
+    "difference_mm3": 5.684341886080802e-14,
+    "bbox_max_error_mm": 1.4210854715202004e-14
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 5.240252676230739e-13,
+    "part": "Pigtail_solder_MINUS",
+    "native_volume_mm3": 0.8778250594785391,
+    "STEP_volume_mm3": 0.877825059478537,
+    "difference_mm3": -2.1094237467877974e-15,
+    "bbox_max_error_mm": 1.580957587066223e-13
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.8347005969812167e-12,
+    "part": "Bellmouth_sleeve_half_m",
+    "native_volume_mm3": 7.037212755939983,
+    "STEP_volume_mm3": 7.037365917596402,
+    "difference_mm3": 0.0001531616564189875,
+    "bbox_max_error_mm": 6.075140390748857e-13
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.8347005969812167e-12,
+    "part": "Bellmouth_sleeve_half_p",
+    "native_volume_mm3": 7.037477866125103,
+    "STEP_volume_mm3": 7.037359289994358,
+    "difference_mm3": -0.00011857613074539586,
+    "bbox_max_error_mm": 6.075140390748857e-13
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 2.8982022669126066e-08,
+    "part": "Secondary_pigtail_clamp_lower",
+    "native_volume_mm3": 43.247351533107775,
+    "STEP_volume_mm3": 43.24735491139465,
+    "difference_mm3": 3.378286876909442e-06,
+    "bbox_max_error_mm": 0.00011760461810439438
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 3.730626752746095e-08,
+    "part": "Secondary_pigtail_clamp_cap",
+    "native_volume_mm3": 26.15498893739648,
+    "STEP_volume_mm3": 26.155002754995046,
+    "difference_mm3": 1.381759856400322e-05,
+    "bbox_max_error_mm": 0.0019086662818352806
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 4.191278435428103e-09,
+    "part": "Dual_wire_strain_liner",
+    "native_volume_mm3": 1.683957023721512,
+    "STEP_volume_mm3": 1.683942089017995,
+    "difference_mm3": -1.493470351698889e-05,
+    "bbox_max_error_mm": 0.01749820860163709
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.3322676295501878e-15,
+    "part": "Clamp_M2_m",
+    "native_volume_mm3": 16.311149057438215,
+    "STEP_volume_mm3": 16.311149057438197,
+    "difference_mm3": -1.7763568394002505e-14,
+    "bbox_max_error_mm": 0.0
+  },
+  {
+    "bidirectional_edge_sample_max_surface_gap_mm": 1.7763568394002505e-15,
+    "part": "Clamp_M2_p",
+    "native_volume_mm3": 16.311149057438215,
+    "STEP_volume_mm3": 16.311149057438197,
+    "difference_mm3": -1.7763568394002505e-14,
+    "bbox_max_error_mm": 0.0
+  }
+]

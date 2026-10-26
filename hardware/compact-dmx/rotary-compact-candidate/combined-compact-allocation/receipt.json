@@ -1,0 +1,104 @@
+{
+  "head": "b42c0e6284aac734fde851c69146abf73920f337",
+  "owned_path": "hardware/compact-dmx/rotary-compact-candidate/combined-compact-allocation",
+  "requested_model": "Astra LOW/default",
+  "status": "FAIL integration; bounded comparison only; S12 fit and eight physical interferences UNMET",
+  "artifacts": {
+    "screen.py": "928002fa32830c4d4d1e6dde723517f2feb7acda8bb75f2302ad95c8cc24000e",
+    "protected-inputs.json": "1061c7e404762d2a05f76ef4120ebe04bcfd194d4c740f5e024db7fb74d24dda",
+    "sources.json": "ebb7beb8747e2358ed63df5740fec670e49bf844930775d64d7fe40a574bf519",
+    "screen.json": "4ef69da6877cb1a0ee4d0dfe7f95d2686ea96da3e593a1b20b9eddfab42e169b",
+    "build.py": "0e188a629b1a5804c2b6c274cd53616bc1ec230595d228929a6ddfb3ec6b64a2",
+    "run.py": "6751bfd395d0189a80680c0b0be719481ade85b616282c47e9cc29608e1ccfd3",
+    "build.log": "0a9648c033f2652d4186eee1fb65c26d85111d0236f85142a46d3f2a8af7e28b",
+    "inline-assembly.step": "fde5286b21f7a020ff92b665501798ee2e4016f730ff259c4bd7e76ef895b7cc",
+    "allocation-detail.step": "91aa9242b47ff24737d2355faf8fe2ed46cde5d2d9dc174c50b27043caa48f22",
+    "groups.json": "2ee9f17dc51cb4c55a5d2279c3f8c0d6cd2cc72e5de76cf70982403571fef4ce",
+    "wire-paths.json": "0dfa388de8d6ef162eb115bcb7bc8939ddca4b7e599a987c3026aa473c8806d9",
+    "source12-frozen-inputs.json": "e55f8aa11357d59811bf7009858802781c041d57519382121690611a37f785d0",
+    "check.py": "0bc951b1447a87fbb2aee12e87f985c1832129f75d5f0f16e89d3c9431a0c127",
+    "check.log": "5e0ad02b346e296ceb64348dc8faaf6108af4c82e109c755c5b361e1d2a0b83f",
+    "comparison-1.svg": "a27db78dd22c7dcb1fa5afcdd9bcb233701d6f540239cc36332fd33e6ee01158",
+    "comparison-2.svg": "f6474179c138ab01466f71f997c0e713faf161078ead5505a25810dbd17577f8",
+    "comparison.pdf": "8f2b8307fac48f7c10998d7a6afffa487c3fd89a2be6473c99ffe41d76c2dcb6",
+    "preview-1.png": "7e0190ce43c7f36d5b3e27dd5fe152f885eacbaabb24583842e2543e6f1a4dbc",
+    "preview-2.png": "36443a60acc1bd700b4df9c89f355ab1ddf976899f273f4de71b169dd0360980",
+    "draw.py": "b67ea31dcef4cfd837e363e50faf5331af0a0b3d1e226d6ffccc6bfd3afd0e35",
+    "README.md": "468c292a4829ce1dbddcf52b7588513cc3915879423713a34557b2dcdf358dcb",
+    "receipt.py": "9bdeaa7e7f3ac356b620fcb3439f5a23f9f305f71b05d358bc1360e14a0724aa",
+    "verify_receipt.py": "7179032c463d852c09491d0544a86e7385697d38e96905e612a4a9d43b8b4dc6",
+    "source12-dimension-screen.json": "f26037307b31e2cf13d997e4210dc821909f0f28d2e2a57f59acfa997ec10897",
+    "checks.json": "dfe41e5833dee14c841c1d40fa25c190916945dceec1dace10ac36b8930c279d",
+    "motion.json": "63b13b1e005199df634d43728b7fb90dcc0303b8851389ebf79a9b1e1d67de60",
+    "build-final.log": "6da9039165eb70920b77ad3bb47167359d4cc4a4db40047c9e816bbef0645abe",
+    "checks-initial.json": "5cd4b10cc2865d52f0181e89b02b15f9450646338f31c1a5a27ef7e3c1429cf4",
+    "allocation.FCStd": "6338731592063d571ff70172fac136b019c557ba035acd8235b7fa5aa006d1c9",
+    "check-final.log": "7e32cb82b086c79290de6a93d3822036532e912db507fe7e6c4a458dba748a23",
+    "classify_findings.py": "2ccc2b83199cf00cd71f4409d858e56cc6f61fdf60338c3551b5479bcbc37272",
+    "findings.json": "44b545f30eaae9ea24f71423cfc9fb38ea4b0093c4b96a884f81fe6b8056528c"
+  },
+  "protected_hash_count": 202,
+  "primary_source_count": 4,
+  "comparison_dimensions": [
+    270,
+    89,
+    72
+  ],
+  "rejected_prior_dimensions": [
+    330,
+    89,
+    72
+  ],
+  "length_reduction_mm": 60,
+  "volume_reduction_percent": 18.1818181818,
+  "S12_receipt_sha256": "51393c2a663f8cc206af64d4d0aa09d541832f1a5ac542f7a93bc06f95e2e519",
+  "S12_dimension_screen": {
+    "bare_clamp_OD": 66.74159123065617,
+    "wall_tolerance_screen_OD": 69.24159123065617,
+    "axial_length_screen": 275,
+    "integrated": false
+  },
+  "checks": {
+    "valid_solids": 140,
+    "identity_shapes": 85,
+    "pair_checks": 2937,
+    "USB_positions": 181,
+    "USB_checks": 4344,
+    "USB_min_gap": 0.5799999999999915,
+    "offset_USB_checks": 2172,
+    "offset_USB_min_gap": 29.000000000000004,
+    "STEP": {
+      "inline-assembly.step": {
+        "solids": 108,
+        "valid": true
+      },
+      "allocation-detail.step": {
+        "solids": 27,
+        "valid": true
+      }
+    }
+  },
+  "unintended_physical_interferences": 8,
+  "positive_intersections_count": 23,
+  "wire_contact_gaps": [
+    {
+      "a": "LV_plus_toClamp",
+      "b": "COL_FixedStaticTail",
+      "kind": "wire_contact",
+      "volume": 0.0,
+      "gap": 0.5810126319470263,
+      "geometry_basis": "actual solids",
+      "gap_basis": "exact shape distance"
+    }
+  ],
+  "USB_failures": [],
+  "unmet": [
+    "Primary branch overlap24.141856mm3 andN/carrier interference0.564065mm3",
+    "Fixedtail spool/clamp interference and0.581013mm disconnectedcontact",
+    "Source12 actual integration; clamp reserve exceeds old\u00d866",
+    "Carrier retention, holes/terminals and source-insulation connection construction",
+    "New12V protection-board route and support integration",
+    "Mains/PE, all3actualconnector variants and strain relief",
+    "Protection energy/startup/thermal, flex equilibrium/endurance, actualfixturefit"
+  ]
+}

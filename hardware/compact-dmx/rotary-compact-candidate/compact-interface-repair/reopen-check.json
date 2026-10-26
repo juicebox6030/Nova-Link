@@ -1,0 +1,1844 @@
+{
+  "native_sha256": "2dd337b465d60489c4ba3bf4de568b71333bda1549f3926051ed4a69c8edbb04",
+  "native_parts": {
+    "PodShell_allocation": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "PodLid_allocation": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "InputEndcapBlank": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "StationaryNeck_allocation": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "WholeCarrierInsulationReservation": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "ReservationToleranceEnvelope": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "FilmAllocation": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "IRM20_12_maxbody": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "MaximumPinProjectionReservation": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "PrimaryFuseBranchBay": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "CarrierLiftAccess": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "SupportZone__123__23": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "SupportZone__123_19": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "SupportZone__33__23": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "SupportZone__33_19": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "InputJoint_L": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "InputJoint_N": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "InputJoint_PE": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "OutputEndcapBlank": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "Trunk_L": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "TrunkTolerance_L": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "OutputJoint_L": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "Trunk_N": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "TrunkTolerance_N": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "OutputJoint_N": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "Trunk_PE": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "TrunkTolerance_PE": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "OutputJoint_PE": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_FixedEarPad0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_FixedScrew0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_FixedEarShoe0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_FixedEarPad1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_FixedScrew1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_FixedEarShoe1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_FixedAdhesive": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_FixedStiffener": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_FixedStaticTail": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_MovingEarPad0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_MovingScrew0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_MovingEarShoe0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_MovingEarPad1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_MovingScrew1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_MovingEarShoe1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_MovingAdhesive": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_MovingStiffener": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_MovingStaticTail": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_IndexKnob": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_IndexPin": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_IndexRearCap": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_IndexSpring": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_StationarySpool": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_CoreBondFront": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_CoreBondRear": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_FrameBolt_45_25_m29_5": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_FrameBolt_45_25_29_5": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_FrameBolt_68_9_m29_5": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_FrameBolt_68_9_29_5": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_Flex_minus90": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_Flex_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "COL_Flex_90": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "L_TrunkToFuse": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "Pin_N": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "Pin_L": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "Pin_LVminus": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "Pin_LVplus": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "LockAccess": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "FixedTailCopper1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "FixedTailCopper2": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "MovingTailCopper1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "MovingTailCopper2": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "Carrier61x32PlanningPlate": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "L_FuseToCarrier": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "N_TrunkToCarrier": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "FixedFanoutCopper1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "FixedFanoutCopper2": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "FixedFanoutDielectric0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "StationaryCoreWithSupports": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_S1_StakeReserve": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_S2_StakeReserve": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_S3_StakeReserve": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_S4_StakeReserve": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_PCB": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R10_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R10_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R10_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_TP2_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R18_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R18_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R18_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_D1_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_D1_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_D1_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R15_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R15_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R15_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C13_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C13_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C13_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R7_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R7_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R7_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R24_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R24_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R24_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U5_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U5_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U5_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U5_Pad3_2": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U5_Pad4_3": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U5_Pad5_4": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U5_Pad6_5": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad3_2": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad4_3": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad5_4": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad6_5": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad7_6": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad8_7": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad9_8": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad10_9": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad11_10": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad12_11": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad13_12": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad14_13": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad15_14": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad16_15": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad17_16": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad18_17": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad19_18": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad20_19": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U3_Pad21_20": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C4_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C4_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C4_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J3_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J3_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J3_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C17_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C17_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C17_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C12_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C12_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C12_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C10_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C10_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C10_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C6_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C6_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C6_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R20_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R20_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R20_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R12_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R12_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R12_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R9_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R9_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R9_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R14_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R14_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R14_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R21_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R21_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R21_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R11_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R11_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R11_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R23_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R23_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R23_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad3_2": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad4_3": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad5_4": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad6_5": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad7_6": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad8_7": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad9_8": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad10_9": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad11_10": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad12_11": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad13_12": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad14_13": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad15_14": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad16_15": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad17_16": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad18_17": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad19_18": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad20_19": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U4_Pad21_20": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R19_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R19_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R19_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C7_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C7_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C7_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_L1_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_L1_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_L1_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C5_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C5_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C5_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C8_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C8_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C8_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C3_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C3_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C3_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_TP1_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadA1_B12_2": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadA4_B9_3": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadA5_4": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadA6_5": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadA7_6": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadA8_7": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadB1_A12_8": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadB4_A9_9": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadB5_10": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadB6_11": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadB7_12": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadB8_13": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadS1_14": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadS2_15": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadS3_16": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_J1_PadS4_17": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R22_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R22_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R22_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R8_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R8_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R8_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R13_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R13_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R13_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C16_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C16_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C16_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R25_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R25_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R25_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R26_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R26_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R26_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R16_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R16_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R16_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C2_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C2_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C2_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R27_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R27_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R27_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R17_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R17_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_R17_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C15_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C15_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C15_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U2_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U2_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U2_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U2_Pad3_2": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U2_Pad4_3": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U2_Pad5_4": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U2_Pad6_5": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U2_Pad7_6": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U2_Pad8_7": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U2_Pad9_8": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U2_Pad10_9": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_U2_Pad11_10": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C9_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C9_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "rotating_C9_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_PCB": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R2_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R2_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R2_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R5_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R5_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R5_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R6_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R6_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R6_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_C14_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_C14_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_C14_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_C1_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_C1_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_C1_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_J2_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_J2_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_J2_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R3_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R3_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R3_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_C11_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_C11_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_C11_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R1_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R1_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R1_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R4_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R4_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_R4_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_J0_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_J0_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_J0_Pad2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Body": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad1_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad2_2": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad3_3": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad4_4": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad4_5": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad5_6": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad6_7": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad7_8": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad7_9": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad8_10": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad9_11": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad10_12": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "stationary_U1_Pad10_13": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "J2_Solder1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "J2_Solder2": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "FixedFanoutShoe": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "StationaryCornerCapFrontp": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "StationaryCornerCapRearp": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "StationaryCapScrewFrontm": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "StationaryCapScrewFrontp": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "StationaryCapScrewRearm": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "StationaryCapScrewRearp": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "SourceWireCopper1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "SourceWireInsulation1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "J0_Solder1_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "J0_Solder1_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "SourceWireCopper2": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "SourceWireInsulation2_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "J0_Solder2_0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "J0_Solder2_1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "RotorHalfPositiveY": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "RotorHalfNegativeY": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "MovingFanoutCopper1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "MovingFanoutCopper2": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "MovingFanoutDielectric0": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "J3_Solder1": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "J3_Solder2": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "MovingClampScrew51_7": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "MovingClampScrew74_7": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "MovingFanoutShoe": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "SourceEndGateScrewm17": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "SourceEndGateScrew17": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "SourceEndGate": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "USBPlugApproach": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "USBRelief": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    },
+    "USBCable": {
+      "valid": true,
+      "closed": true,
+      "solids": 1
+    }
+  },
+  "STEP": [
+    {
+      "file": "interface-prototype.step",
+      "solids": 155,
+      "invalid_or_open": [],
+      "sha256": "e2263f536eb47bd9c1d38e48dc6e3ffcdc8f94a7b6f7c17c75086150090f4f09"
+    },
+    {
+      "file": "assembly-minus90-locked.step",
+      "solids": 155,
+      "invalid_or_open": [],
+      "sha256": "e30d81fd74fb290ca3c728dd4a2e907a283ef62ae163509b533a02b5260930b4"
+    },
+    {
+      "file": "assembly-90-locked.step",
+      "solids": 155,
+      "invalid_or_open": [],
+      "sha256": "251ce47bb40af5b2969bf728dd75cad34ddbaad91334a0c15d3e0a404fc7b312"
+    },
+    {
+      "file": "assembly-0-released.step",
+      "solids": 155,
+      "invalid_or_open": [],
+      "sha256": "94bc74986d39be95ac2b42b431e27b088b534545460f65dbf137d72771c8ec93"
+    },
+    {
+      "file": "actual-source-lands.step",
+      "solids": 191,
+      "invalid_or_open": [],
+      "sha256": "28d4828cc58b1dcb1cde5b55ed95bc522f4c17885c500c805c13683880f5d427"
+    },
+    {
+      "file": "assembly-exploded.step",
+      "solids": 155,
+      "invalid_or_open": [],
+      "sha256": "92b13ff76c941bfbb0ee21b953eab0ca051de5e606cb1bf4b12487a9c885106a"
+    }
+  ],
+  "status": "PASS saved geometry validity ONLY"
+}

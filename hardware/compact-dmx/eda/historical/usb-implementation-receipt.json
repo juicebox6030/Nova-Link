@@ -1,0 +1,69 @@
+{
+  "status": "PARTIAL_RECOVERY_CAPTURE_COMPLETE_FULL_POWER_ACCEPTANCE_NOT_MET",
+  "repo": "/home/juicebox/Nova-Link",
+  "branch": "main",
+  "base": "78ed438560702beb38ba36938ed613502a42a1be",
+  "changed_paths": [
+    "hardware/compact-dmx/README.md",
+    "hardware/compact-dmx/eda/.gitignore",
+    "hardware/compact-dmx/eda/POWER-DESIGN-OBJECTION.md",
+    "hardware/compact-dmx/eda/power_budget.py",
+    "hardware/compact-dmx/eda/power-budget.json",
+    "hardware/compact-dmx/eda/source-cache-manifest.json",
+    "hardware/compact-dmx/eda/recovery-candidate/erc.json",
+    "hardware/compact-dmx/eda/recovery-candidate/generate.py",
+    "hardware/compact-dmx/eda/recovery-candidate/recovery-candidate.kicad_pro",
+    "hardware/compact-dmx/eda/recovery-candidate/recovery-candidate.kicad_sch",
+    "hardware/compact-dmx/eda/recovery-candidate/recovery-candidate.net",
+    "hardware/compact-dmx/eda/recovery-candidate/recovery-candidate.pdf",
+    "hardware/compact-dmx/eda/recovery-candidate/recovery.kicad_sym",
+    "hardware/compact-dmx/eda/recovery-candidate/rendered/recovery-candidate.png",
+    "hardware/compact-dmx/eda/recovery-candidate/rendered/recovery-candidate.svg",
+    "hardware/compact-dmx/eda/recovery-candidate/sym-lib-table",
+    "hardware/compact-dmx/eda/recovery-candidate/validation.json",
+    "hardware/compact-dmx/eda/recovery-candidate/verify.py",
+    "hardware/compact-dmx/eda/implementation-receipt.json"
+  ],
+  "existing_DMX_verification_outputs_refreshed": [
+    "hardware/compact-dmx/eda/dmx-interface.net",
+    "hardware/compact-dmx/eda/dmx-erc.json",
+    "hardware/compact-dmx/eda/dmx-interface.pdf",
+    "hardware/compact-dmx/eda/rendered/dmx-interface.svg",
+    "hardware/compact-dmx/eda/kicad-validation.json"
+  ],
+  "commands": [
+    "python3 hardware/compact-dmx/eda/recovery-candidate/generate.py",
+    "python3 hardware/compact-dmx/eda/recovery-candidate/verify.py",
+    "python3 hardware/compact-dmx/eda/power_budget.py",
+    "python3 hardware/compact-dmx/eda/verify_kicad.py",
+    "pdftoppm -scale-to 1400 -png -singlefile hardware/compact-dmx/eda/recovery-candidate/recovery-candidate.pdf hardware/compact-dmx/eda/recovery-candidate/rendered/recovery-candidate"
+  ],
+  "cli": "flatpak run --command=kicad-cli org.kicad.KiCad",
+  "kicad_version": "10.0.7",
+  "recovery_validation": {
+    "capture_check": "PASS",
+    "product_power_acceptance": "NOT_MET",
+    "kicad_version": "10.0.7",
+    "components": 31,
+    "ICs": 8,
+    "boundary_connectors": 2,
+    "exported_nets": 32,
+    "erc_errors": 0,
+    "erc_warnings": 0,
+    "erc_exclusions": 0,
+    "all_component_pin_connections_checked": true,
+    "IC_pin_types_checked": true,
+    "power_flags": 0,
+    "scope": "USB recovery candidate only; normal path, CC, cap/UVLO latch, rail merger, BOOT/RESET sequencing not captured. Not an accepted product circuit."
+  },
+  "remaining": [
+    "standalone CC dynamic downgrade qualification/capture",
+    "normal input and all-voltage reverse-blocking merger",
+    "TPS61094/TPS62132 full circuit including passives",
+    "loaded-cap comparator/POR/cutoff latch/rearm capture",
+    "BOOT/RESET sequencing and hardware normal/recovery mutual exclusion",
+    "USB descriptor, inrush and suspend qualification",
+    "PCB footprints/routing and actual area allocation; 25x6mm not demonstrated"
+  ],
+  "authority": "No commit/push/stage/branch change, installs, hardware, firmware, children or CAD/canonical/BOM edits. Parent integrates."
+}

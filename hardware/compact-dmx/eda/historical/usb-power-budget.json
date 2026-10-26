@@ -1,0 +1,97 @@
+{
+  "status": "DESIGN_OBJECTION_AND_PARTIAL_CANDIDATE_NOT_PRODUCT_ACCEPTANCE",
+  "recovery_current_mA": {
+    "bridge_branch_min_est_with_0p1pct_R": 33.96358972150096,
+    "bridge_branch_max_est_with_0p1pct_R": 66.07082537420673,
+    "post_enum_recovery_min_datasheet_1pct_R": 262.1,
+    "post_enum_recovery_max_datasheet_1pct_R": 342.3,
+    "provisional_raw_CC_logic_allowance_NOT_CLOSED": 5,
+    "provisional_switch_IQ_allowance_NOT_CLOSED": 0.3,
+    "pre_enum_total_allocation": 71.37082537420673,
+    "post_enum_total_allocation": 413.67082537420674,
+    "usb_requested_post_enum_mA": 500,
+    "usb_suspend_maximum_proven": false,
+    "CP2102N_max_active_current_published": false,
+    "recovery_function_guaranteed": false
+  },
+  "buffer": {
+    "cap_F": 15,
+    "effective_aged_F": 9.45,
+    "nominal_delivered_J_at_2p6V": 27.060000000000002,
+    "aged_delivered_J_at_2p6V": 15.876,
+    "aged_delivered_J_at_low_charge_2p548V": 14.864109119999998,
+    "nominal_seconds_at_0p8W": 33.825,
+    "aged_seconds_at_1p1W": 14.432727272727272,
+    "aged_low_charge_seconds_at_1p1W": 13.51282647272727,
+    "nominal_charge_seconds_ideal": 156.0,
+    "charge_ideal_with_plus30pct_C_plus2pct_V_minus20pct_I_seconds": 258.57,
+    "charge_time_includes_termination_tail": false,
+    "efficiency_assumption": 0.8,
+    "nominal_floor_without_sag_reserve_V": 1.5,
+    "aged_floor_including_sag_reserve_V": 1.6,
+    "measured": false
+  },
+  "prospective_UVLO_not_captured": {
+    "part": "TLV3012B",
+    "divider_ohm": [
+      20000,
+      100000
+    ],
+    "resistor_tolerance": 0.001,
+    "nominal_V": 1.4904,
+    "conservative_low_V": 1.4243815224775227,
+    "conservative_high_V": 1.5552627667667667,
+    "reference_temp_drift_V": 0.01242,
+    "latched_cutoff_implemented": false
+  },
+  "required_states": [
+    {
+      "condition": "VBUS absent, cap valid and previously armed",
+      "normal": "buffer supplies normal loads",
+      "recovery": "off",
+      "implemented": false
+    },
+    {
+      "condition": "VBUS absent, cap depleted or cutoff latched",
+      "normal": "off; no cap-rebound restart",
+      "recovery": "off",
+      "implemented": false
+    },
+    {
+      "condition": "default-current PC, not configured",
+      "normal": "off, charger off",
+      "recovery": "bridge only; MCU off",
+      "implemented": "bridge candidate only; normal disable missing"
+    },
+    {
+      "condition": "default-current PC, configured 500mA, request held",
+      "normal": "off, charger off",
+      "recovery": "enabled only after factory qualification link; force ROM boot before MCU power",
+      "implemented": "supply gate captured; merger/boot/reset missing"
+    },
+    {
+      "condition": ">=1.5A advertised, no recovery request",
+      "normal": "normal enabled; charge and rearm permitted",
+      "recovery": "MCU recovery rail off",
+      "implemented": false
+    },
+    {
+      "condition": ">=1.5A advertised, recovery requested",
+      "normal": "normal and charge disabled",
+      "recovery": "same configured/suspend-qualified recovery sequence",
+      "implemented": false
+    },
+    {
+      "condition": "USB suspend",
+      "normal": "off for PC/recovery; dedicated-source policy still to close",
+      "recovery": "MCU rail off; bridge suspended; whole-device suspend-current qualification required",
+      "implemented": "SUSPENDb gate captured only"
+    },
+    {
+      "condition": "factory link open (as captured)",
+      "normal": "not captured",
+      "recovery": "MCU recovery rail always off; bridge may enumerate",
+      "implemented": true
+    }
+  ]
+}

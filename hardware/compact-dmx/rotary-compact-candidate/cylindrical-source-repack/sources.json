@@ -1,0 +1,17 @@
+{
+  "regulated-source/sources/irm20.pdf": {
+    "url": "https://www.meanwell.com/Upload/PDF/IRM-20/IRM-20-SPEC.PDF",
+    "callout": "2025-11-21, p3: nominal body52.4x27.2x24, general +/-.5; pin3.5+/-1",
+    "sha256": "aa1afdbcdf0bf6db796710e26bd5e258f4857ffb1c14bd1ac3d94af86f3b8789"
+  },
+  "stationary-irm20-integration/sources/meanwell-pcb-installation.pdf": {
+    "url": "https://www.meanwell.com/Upload/PDF/IRM-01/PCB.pdf",
+    "callout": "Installation(2), p1: 5mm bottom plusMylar;10mm around. Does not approve ourcarrier",
+    "sha256": "fa68e719a5e78a45bae42d2c01afdd3dfecd1a43b6a48768616036003f05f54a"
+  },
+  "regulated-source/sources/usb4105.pdf": {
+    "url": "https://gct.co/files/drawings/USB4105.pdf",
+    "callout": "Frozen S12 connector geometry provenance; bodyedge is not matingdatum",
+    "sha256": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5"
+  }
+}

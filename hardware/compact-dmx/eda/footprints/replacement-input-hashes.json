@@ -1,0 +1,11 @@
+{
+  "hardware/compact-dmx/eda/footprints/generate.py": "f4463b23a32e87b1da0d64d9fa63e307fa51bf74e276489d637ebf01d537a02e",
+  "hardware/compact-dmx/eda/footprints/verify.py": "7170918485926c2eb232721dcd27f7f3a23f2e03ec94f25b40c2c4b1f7cf414b",
+  "hardware/compact-dmx/eda/footprints/termination_budget.py": "103cf46813f02b9d5838a751ab154bfb71bbc69f3413f32fb96b2e1a553a0cbe",
+  "hardware/compact-dmx/eda/footprints/extract_ti_lands.py": "90b7097d449814045d731022a2738d2b7af6d2ff9ad3654309add794b17715af",
+  "hardware/compact-dmx/eda/footprints/generate_support.py": "bcd45a9d7d4e7cd8e83e902b8be6d7dd279cd858c133b5a59b9a852b4a928ed7",
+  "hardware/compact-dmx/eda/footprints/assignments.json": "67d1a636c0654d4c5be113919e76128e9d3a5039b76d94051013e9bafe4ded5f",
+  "hardware/compact-dmx/eda/mcu-radio/generate.py": "7d92cb5c2f70aba2dae25860737bdba99ef3d5d63ff12a933b351eefc321a951",
+  "hardware/compact-dmx/eda/power-service/power-service.kicad_sch": "68c63044c78d65f60ffd4554e0d0021bbdd8436baec43b053ab5d7b370e15e3c",
+  "docs/hardware/dmx-hardware-bom.csv": "b8facedce418c120232df7bb76dee8aa79c72e7c07f020264d54115527aae3e8"
+}

@@ -1,0 +1,85 @@
+{
+  "status": "PASS finite contacts without volumetric intersections; four new bounded thread regions",
+  "contacts": [
+    {
+      "parts": [
+        "StaticDevelopedFanout",
+        "MovingStaticTail"
+      ],
+      "distance_mm": 0.0,
+      "intersection_mm3": 0.0
+    },
+    {
+      "parts": [
+        "StaticDevelopedFanout",
+        "TailClampShoe"
+      ],
+      "distance_mm": 0.0,
+      "intersection_mm3": 0.0
+    },
+    {
+      "parts": [
+        "StaticDevelopedFanout",
+        "SRC_J0_maximum_body_allocation"
+      ],
+      "distance_mm": 3.972054645195637e-15,
+      "intersection_mm3": 0.0
+    },
+    {
+      "parts": [
+        "SRC_PCB_27x20x1_actual_holes_nominal",
+        "RotorHalfPositiveY"
+      ],
+      "distance_mm": 0.0,
+      "intersection_mm3": 0.0
+    },
+    {
+      "parts": [
+        "SRC_PCB_27x20x1_actual_holes_nominal",
+        "BoardEndRetainer"
+      ],
+      "distance_mm": 0.0,
+      "intersection_mm3": 0.0
+    }
+  ],
+  "new_threads": [
+    {
+      "part": "BoardRetainerScrew_m11",
+      "volume_mm3": 0.49762827632861534,
+      "bounded_thread_region": true
+    },
+    {
+      "part": "BoardRetainerScrew_11",
+      "volume_mm3": 0.49762827632861534,
+      "bounded_thread_region": true
+    },
+    {
+      "part": "TailClampScrew_74_4",
+      "volume_mm3": 0.1990513105314515,
+      "bounded_thread_region": true
+    },
+    {
+      "part": "TailClampScrew_96_6",
+      "volume_mm3": 0.1990513105314515,
+      "bounded_thread_region": true
+    }
+  ],
+  "solder_interface": "Source J0 0.3mm land/joint envelope touches exposed flex underside. Actual solder fillet/thickness/process unqualified.",
+  "support_tolerance_mm": {
+    "nominal_gap": 1.24,
+    "PCB_max_thickness": 1.1,
+    "two_surface_allowance": 0.06,
+    "remaining_normal_gap": 0.08,
+    "sidewall_clear_span": 20.2,
+    "PCB_min_width": 19.9,
+    "maximum_float": 0.15,
+    "copper_nominal_gap": 0.3005,
+    "rail_allowance": 0.03,
+    "PCB_edge_copper_allowance": 0.05,
+    "remaining_copper_gap": 0.0705
+  },
+  "source_polarity": {
+    "J0.1": "/FPC_5V: localX6 -> globalX81",
+    "J0.2": "/GND_ISO: localX15 -> globalX90"
+  }
+}

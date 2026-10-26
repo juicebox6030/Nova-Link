@@ -1,0 +1,633 @@
+{
+  "task": "One independent rotating low-voltage regulated USB-C source prototype",
+  "date": "2026-10-23",
+  "repository": "/home/juicebox/Nova-Link",
+  "branch": "main",
+  "HEAD": "b42c0e6284aac734fde851c69146abf73920f337",
+  "status": "CAPTURED bounded development prototype; source, physical fit, routing, thermal, fault and USB acceptance UNMET",
+  "owned_writes_only": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/**",
+  "publication": {
+    "stage": false,
+    "commit": false,
+    "push": false,
+    "branch_changes": false
+  },
+  "no_children_threads_installs_outreach_hardware_or_firmware": true,
+  "selected_path": [
+    "Stationary IRM-20-5",
+    "Existing1.046167656m two-conductorLV FPC",
+    "TPS259474LRPWR reverse-blocking latched input breaker",
+    "TPS63070RNMR forcedPWM5.136V",
+    "TPS25810RVCR CHGhigh/CHG_HIlow1.5A",
+    "GCTUSB4105-GF-A fullUSB2 contacts, passiveDshort"
+  ],
+  "bounded_scope": "One regulator architecture and one placement pass. IRM20 is the only alternate stationary supply family; no mains wiring, routing, barrel resizing or parent integration.",
+  "source_PDFs": [
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps63070.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps63070.pdf",
+      "sha256": "a88ef66f3493156ff6e7da0849de0e0e1068647f2553d08c1844d4a90c5c65ef",
+      "reused_readonly": null
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm20.pdf",
+      "url": "https://www.meanwell.com/Upload/PDF/IRM-20/IRM-20-SPEC.PDF",
+      "sha256": "aa1afdbcdf0bf6db796710e26bd5e258f4857ffb1c14bd1ac3d94af86f3b8789",
+      "reused_readonly": null
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm10.pdf",
+      "url": "https://www.meanwell.com/Upload/PDF/IRM-10/IRM-10-SPEC.PDF",
+      "sha256": "1aab6b30492328818e4d0900416676891eeb1076f409d56dc2277d7119ed208a",
+      "reused_readonly": "hardware/compact-dmx/rotary-compact-candidate/sources/irm10.pdf"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25810.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps25810.pdf",
+      "sha256": "ccc31e3ad8b7970005e23ba8b6a165694f712e86fd337b9ba2fe117a98a2e13e",
+      "reused_readonly": "hardware/compact-dmx/rotary-compact-candidate/sources/tps25810.pdf"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb-type-c-r2.4.pdf",
+      "url": "https://www.usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-24",
+      "sha256": "f5407e6120db1e28137e7fee60f3125f4284e2252b1240d271ce6e40c0ba3121",
+      "reused_readonly": ".tools/references/usb-type-c-r2.4.pdf"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105.pdf",
+      "url": "https://gct.co/files/drawings/USB4105.pdf",
+      "sha256": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105-spec.pdf",
+      "url": "https://gct.co/files/specs/USB4105-spec.pdf",
+      "sha256": "372fe1bc0e0b1b4ce7e18b61514e967c7c2f883f0c7fe1f4586b567785ee9cd2"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25947.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+      "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/T520D157M010ATE055.pdf",
+      "url": "https://search.kemet.com/download/specsheet/T520D157M010ATE055",
+      "sha256": "3b7a59d69d920e5c7b3c87f43ec2b4db34b06335ff3d077023431cc9c6db62ee"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/xfl4020.pdf",
+      "url": "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/XFL4020.pdf",
+      "sha256": "6dca915ac1daa47210f7708a7540221ffef4f34a88a8621c94bd50cdf48647e6"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tpd1e10b06.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf",
+      "sha256": "77fb9c454aee5b14a220d256b7ee9fa9751572840478f80437393aeed2582f8d"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tnpw.pdf",
+      "url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+      "sha256": "6f0508c568cb355aaf2accdd33fe3a780d3ea5ef207c4c9a71839a8acadc33a5"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/vishay-28950.pdf",
+      "url": "https://www.vishay.com/doc?28950",
+      "sha256": "9e2b145c937da3be1e926b8afc2856959754eeb4d1103241d838038f7308144e",
+      "reused_readonly": "hardware/compact-dmx/eda/cell-protection-candidate/sources/vishay-28950.pdf"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/grm21-notice.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KE51-01.pdf",
+      "sha256": "e8432c7acfa982b24eb06dd145682f78051dc4649abbeb35bbca8646b1408e4f",
+      "reused_readonly": "hardware/compact-dmx/eda/source-cache/grm21-spec.pdf"
+    }
+  ],
+  "sources_read": "Actual cached manufacturer and USB-IF PDFs/extracted text; key land drawings visually inspected. Exact sections and source limitations are in DESIGN.md and land-sources.json.",
+  "commands": {
+    "complete_final_run": "bash hardware/compact-dmx/rotary-compact-candidate/regulated-source/validate.sh > hardware/compact-dmx/rotary-compact-candidate/regulated-source/cli-checks.log 2>&1",
+    "final_run_exit": 0,
+    "expanded_command_log": "cli-checks.log",
+    "executed_trace": [
+      "+ candidate_dir=/home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source",
+      "+ python3 /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/lands.py",
+      "+ python3 /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/generate.py",
+      "+ flatpak run --command=kicad-cli org.kicad.KiCad version",
+      "+ flatpak run --command=kicad-cli org.kicad.KiCad sch export netlist --format kicadxml -o /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.net /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.kicad_sch",
+      "+ flatpak run --command=kicad-cli org.kicad.KiCad sch erc --format json --severity-all --exit-code-violations -o /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/erc.json /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.kicad_sch",
+      "+ python3 /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/verify.py",
+      "+ flatpak run --command=python3 org.kicad.KiCad /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/place.py",
+      "+ flatpak run --command=python3 org.kicad.KiCad /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/verify-lands.py",
+      "+ flatpak run --command=kicad-cli org.kicad.KiCad pcb drc --format json --severity-all -o /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/drc.json /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.kicad_pcb",
+      "+ flatpak run --command=kicad-cli org.kicad.KiCad sch export pdf -o /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.kicad_sch",
+      "+ flatpak run --command=kicad-cli org.kicad.KiCad pcb export pdf --mode-single --layers F.Cu,F.Fab,F.CrtYd,Edge.Cuts --scale 5 -o /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/placement.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.kicad_pcb",
+      "+ pdftoppm -f 1 -l 1 -singlefile -scale-to 2400 -png /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/schematic-overview",
+      "+ pdftoppm -f 1 -l 1 -singlefile -scale-to 2000 -png /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/placement.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/placement-overview",
+      "+ QT_QPA_PLATFORM=offscreen",
+      "+ /home/juicebox/.local/bin/freecadcmd /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/envelopes.py",
+      "+ python3 /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/regulated-source/package-check.py"
+    ],
+    "inventory_check": "cd hardware/compact-dmx/rotary-compact-candidate/regulated-source && sha256sum --status -c SHA256SUMS",
+    "git_readonly": [
+      "git branch --show-current",
+      "git rev-parse HEAD",
+      "git status --short --untracked-files=normal -- hardware/compact-dmx/rotary-compact-candidate/regulated-source"
+    ]
+  },
+  "validation": {
+    "status": "PASS bounded capture/source/preservation checks; four real geometricDRC issues and functional/fit gates retained",
+    "protected_matches": 257,
+    "changed_protected": [],
+    "source_PDF_hashes_verified": 14,
+    "mechanical_source_hash_match": true,
+    "independent_land_checks": 57,
+    "KiCad": "10.0.7",
+    "ERC_violations": 0,
+    "ERC_ignored_defaults": [
+      {
+        "description": "Global label only appears once in the schematic",
+        "key": "single_global_label"
+      },
+      {
+        "description": "Four connection points are joined together",
+        "key": "four_way_junction"
+      },
+      {
+        "description": "SPICE model issue",
+        "key": "simulation_model_issue"
+      },
+      {
+        "description": "Assigned footprint doesn't match footprint filters",
+        "key": "footprint_filter"
+      }
+    ],
+    "DRC_violations": 4,
+    "DRC_unconnected": 85,
+    "DRC_ignored_defaults": [
+      {
+        "description": "Footprint has no courtyard defined",
+        "key": "missing_courtyard"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      },
+      {
+        "description": "Footprint component type doesn't match footprint pads",
+        "key": "footprint_type_mismatch"
+      }
+    ],
+    "DRC_objection": "4USB4105primary-pattern NPTH-to-copper clearances0.1794/0.2283mm fail default0.25mm. No exemptions/rule relaxation. Fabricator/assembly qualification required.",
+    "manufacturing_release": false
+  },
+  "electrical_checks": {
+    "independent_exported_XML_literal_IC_pins": 46,
+    "USB_physical_terminals": 16,
+    "resistors": 11,
+    "capacitors": 13,
+    "CC_PG_state_rows": 18,
+    "state_scope": "Bothorientations/Rd/Ra/open/audio/debug againstTI table, with converterPG false/true; static logic only, not dynamic compliance.",
+    "independent_source_land_dimensions": 57,
+    "actual_saved_numbered_pad_net_checks": 123,
+    "quadratic_fixed_point_agreement": true,
+    "resistor_range_regression": "All exactTNPW0402 0.1%/10ppm entries47..100k perVishay28758. R9 changed before final capture from unsupported1M ordering to supported100k; R8/R9 divider ENmin2.490985V>1.15V, lowmax0.4V<0.65V. No component/footprint count increase.",
+    "fault_paths": [
+      {
+        "fault": "USB VBUS short",
+        "behavior": "TPS25810 currentlimit1.58..1.82A, response4us max only specifiedtest; thermalcycling. Full VBUS1.82+VCONN0.410+.001=2.231A exceeds converter2A recommendedmax; continuedoperation not required. Current/faultduration/thermal benchgate."
+      },
+      {
+        "fault": "VCONN short",
+        "behavior": "TPS25810 separate300..410mA limit and3us max response atspecifiedtest. Budget includes410mA as stresscase, not promised healthy cableload."
+      },
+      {
+        "fault": "Regulator input short",
+        "behavior": "U1 circuitbreaker/latchoff,3.334A nominal+/-10%; currentmayexceed before fasttrip; no guaranteedflexI2t/thermal proof."
+      },
+      {
+        "fault": "Reg output forced by external5V/source collapse",
+        "behavior": "TPS25810 offstate reverse leakage3uA max to85C atVIN=EN=0; U1 back-to-backFET RCB blocks regulator reverse current towardflex/module. U1reverseleak andresponse typical-only; no zero-backfeed or maxinjectedcharge guarantee."
+      },
+      {
+        "fault": "Reg FBopen/bottomshort",
+        "behavior": "U2 internaloutputOVP is described but cannot guarantee USB5.5V limit; U3 AUX/IN2 operating5.5max. D1ESD is not aDCclamp. IndependentUSBoutputOVP not captured, faultvoltageacceptance UNMET."
+      },
+      {
+        "fault": "Module overvoltage",
+        "behavior": "IRM20OVP5.75..6.75; U1independentOVLOdiv5.6..5.81 cuts converterinput, response typical-only. No allsinglefault/mainsrelease."
+      },
+      {
+        "fault": "FPCpartialshort/failedtermination",
+        "behavior": "U1 is rotating-side, cannot interrupt upstreamFPCshort. Module115..160%overload hiccup not qualifiedFPCprotection. Stationaryfuse/tracefaultcoordination remainsparentintegrationgate."
+      },
+      {
+        "fault": "Detach/brownout",
+        "behavior": "U3detaches and dischargesVBUS; U2PG gatesU3EN. PG mayremainhigh down90%output and cannot be promoted to4.75Vsourcevalid. Brownout/reattachraces and actual waveforms unmeasured."
+      }
+    ]
+  },
+  "numerical_results": {
+    "guaranteed_DC_components_only": [
+      5.06209455257485,
+      5.21034338509018
+    ],
+    "conditional_port_window_V": [
+      4.78641455257485,
+      5.33602338509018
+    ],
+    "guarantee_scope": "Published reference/feedback bias and resistance bounds plus declared tolerance/temperature range only. Complete source voltage uses unqualified line/load/ripple/connector sharing allocations; not guaranteed.",
+    "normal_85pct_200mA_VCONN": {
+      "eta_allocation": 0.85,
+      "VCONN_A": 0.2,
+      "reg_output_A": 1.7009999999999998,
+      "reg_output_W": 8.862794098038396,
+      "FPC_input_A": 2.4533191381700337,
+      "reg_input_V": 4.25212375496682,
+      "module_DC_current_margin_to4A": 1.5466808618299663,
+      "breaker_min_margin_A": 0.5412916402730805,
+      "inductor_peak_model_A": 2.6306425275139866,
+      "RHP_zero_Hz_at1p8uH": 180380.15610637097,
+      "TI3p05A_testpoint_margin_to_average_A": 0.5966808618299662,
+      "flex_copper_loss_W": 0.5542305557447669,
+      "termination_loss_W": 0.12037549587422713,
+      "input_eFuse_loss_W": 0.27084486571701105,
+      "regulator_loss_alloc_W": 1.5640224878891291,
+      "module_output_W": 11.377267503263532
+    },
+    "stress_80pct_410mA_VCONN": {
+      "eta_allocation": 0.8,
+      "VCONN_A": 0.41,
+      "reg_output_A": 1.9109999999999998,
+      "reg_output_W": 9.956966208907334,
+      "FPC_input_A": 2.9871410745684353,
+      "reg_input_V": 4.168269074112291,
+      "module_DC_current_margin_to4A": 1.0128589254315647,
+      "breaker_min_margin_A": 0.007469703874678935,
+      "inductor_peak_model_A": 3.176179242818832,
+      "RHP_zero_Hz_at1p8uH": 154287.97735000897,
+      "TI3p05A_testpoint_margin_to_average_A": 0.06285892543156457,
+      "flex_copper_loss_W": 0.8216632052176527,
+      "termination_loss_W": 0.17846023598747732,
+      "input_eFuse_loss_W": 0.40153553097182393,
+      "regulator_loss_alloc_W": 2.4892415522268334,
+      "module_output_W": 13.852866733311119
+    },
+    "TPS63070_min_average_current_not_guaranteed_at_actual_input": true,
+    "input_protection": {
+      "UVLO_rise_V": [
+        4.114425818323354,
+        4.282970470981964
+      ],
+      "UVLO_fall_V": [
+        3.742059411137725,
+        3.9084726152705414
+      ],
+      "OVLO_rise_V": [
+        5.586025124710579,
+        5.819100225490982
+      ],
+      "breaker_A": [
+        2.994610778443114,
+        3.6747494989979965
+      ],
+      "response_max_s": null,
+      "reverse_current_leakage_max_A": null,
+      "reset": "Externalpowercycle/ENlow for latchedbreaker. Reverseblock is hardware, not software."
+    },
+    "startup": {
+      "converter_softstart_current_A": "1A typical only untilPG; unknownmaximum",
+      "PG_EN_max_low_V": 0.4,
+      "PG_EN_min_high_V": 2.49098532173485,
+      "switched_input_C_nom_uF": 30,
+      "bulk_output_C_nom_uF": 226.1,
+      "bulk_C_max_tol_uF": 271.32,
+      "bulk_polymer_min_25C_uF": 120,
+      "filter_effective_C_min_allocation_uF": 15.2,
+      "filter_effective_L_max_uH": 1.8,
+      "filter_ratio_pass_from_ceramics_alone": false,
+      "note": "76uFceramic at80%effective loss gives15.2uF<18uF ratio target; polymer supplements butfrequency/temperature/ESR mustbequalified. No loop/inrush prooffromtypicalsoftstart."
+    },
+    "module_limits": {
+      "IRM20_fullpower5V_temperature_C": 45,
+      "IRM20_fullpower_line_VAC": 115,
+      "IRM10comparison": "10Wcannotcoverworstconditional11..13Wreginput+FPC; remainshistorical",
+      "proposed_study_temperature_C": [
+        0,
+        45
+      ],
+      "proposed_study_line_VAC": [
+        115,
+        305
+      ],
+      "source_standard_mains_variants": "DistinctPowerCON/TRUE1/NEMA5-15stationaryendcaps remainparent; connectorratingscapline. No routinechoicequestion.",
+      "thermal": "IRM20eff79%typ at5V only; source/inductor/flex/controller/enclosureheating stillunqualified. Freeaircurvesdonotqualifysealedbarrel."
+    }
+  },
+  "complete_placement": {
+    "status": "PASS actual32 fullfootprints, savedpadnet/courtyard checks; one unrouted25x18x1placement. Heighttarget FAIL.",
+    "physical_footprints": 32,
+    "purchased_parts": 30,
+    "numbered_pad_primitives_checked": 123,
+    "physical_pad_primitives_including_NPTH": 125,
+    "minimum_courtyard_gap_mm": 0.10999999999999943,
+    "body_sum_mm2": 218.9135,
+    "complete_courtyard_sum_mm2": 349.60600000000005,
+    "PCB_mm": [
+      25,
+      18,
+      1
+    ],
+    "all_components_top": true,
+    "tracks": 0,
+    "component_height_max_mm": 3.46,
+    "height_target_mm": 3.2,
+    "height_target_pass": false,
+    "connector_body_overhang_alloc_mm": 2.17,
+    "complete_front_to_back_envelope_alloc_mm": 20.17,
+    "stake_protrusion_below1mmPCB_with0p1thickness_allowance_max_mm": 0.2,
+    "FPC_clamp_and_solder_courts": "External mechanical/strainrelief unqualified; no bottom component allowance.",
+    "whole_collar_fit": false,
+    "routing_thermal_qualification": false
+  },
+  "mechanical_envelopes": {
+    "status": "Valid simpleenvelopes; no collar/mechanism/thermal/safetyrelease",
+    "rotating_valid_solids": 32,
+    "zero_volume_pair_checks": 496,
+    "module_body_core_collision_volume_mm3": 0.0,
+    "module_lead_mains_keepout_checks": [
+      {
+        "pin": "Module_AC_N_maxlength_nominaldiameter",
+        "mains_keepout_overlap_mm3": 0.0
+      },
+      {
+        "pin": "Module_AC_L_maxlength_nominaldiameter",
+        "mains_keepout_overlap_mm3": 0.0
+      },
+      {
+        "pin": "Module_V_MINUS_maxlength_nominaldiameter",
+        "mains_keepout_overlap_mm3": 0.0
+      },
+      {
+        "pin": "Module_V_PLUS_maxlength_nominaldiameter",
+        "mains_keepout_overlap_mm3": 0.5890486225480877
+      }
+    ],
+    "known_gate": "V_PLUS lead4.5max overlaps originalmainskeepout. Do not use as an approvedharness or silentlytrimlead.",
+    "USB_body_allocation": "Derived7.65mm long envelope aligned with12x1.15lands/4.18toPCBedge; confirm actualsupplierSTEP/matingprofile beforecollarcutout.",
+    "module_full_fit": false,
+    "vendor_detailed_models": false
+  },
+  "baseline_comparison": {
+    "phase0": "IRM10 plus directTPS25810 optimistic4.72575V fails4.75V source minimum; preserved unchanged.",
+    "new_conditional_screen": "4.786415..5.336023V, but no guaranteedline/load/ripple/efficiency/currentminimum atactualVIN.",
+    "IRM10_power": "Conditional11.377..13.853W moduleoutput screens exceed10W, soIRM20-5 chosen20W/4A nominal; no sealedthermal acceptance.",
+    "fit": "32footprints on25x18x1toponly board with0tracks; notroutingfit. Connector3.46max fails3.2target; stationarymaxlead clashes oldmainskeepout."
+  },
+  "open_acceptance_gates": [
+    "Input copper/process/termination allocations and FPC flexlife/coverlay/clamp construction unqualified. U1 cannot protect a short upstream on the flex; stationary I2t/fault coordination remains required.",
+    "80/85/90percent efficiency allocations are not published minima. Actual converter current delivery at4.168V, hot magnetics/saturation, nontypical load sharing and only7.47mA worst breaker margin need bench validation.",
+    "Converter startup current maximum/ramp and U1 reverse leakage/response maxima unpublished. PG statically gates source enable but is not4.75V source-valid; no bounded startup, reverse-injected-charge, brownout/rebound timing claim.",
+    "Independent USB DCOVP not captured: feedbackopen/bottomshort not proven belowU3 5.5V operating limit. ESD suppressor is notDCOVP. No allsinglefault/source-safety release.",
+    "Output filter effectiveC/L/ESR/loop stability, inrush, transient/ripple, cable capacitance, VBUS/VCONN shorts, detachdischarge and systemESD need physical testing.",
+    "Four actualGCT referencepattern holeclearance DRC errors at0.1794/0.2283 vsdefault0.25 retained; fabricator registration/assembly qualification required.85unconnected, no routedhotloops/planes/thermalvias.",
+    "Connector3.46mm maximum height exceeds3.2target. Actualvendorprofile/STEP, stake1mmboard fillets, FPCclamp and collarcutout require integration. Courtyard placement alone is notcompletefit.",
+    "IRM20maxbody fits43mmID but maximum+Vlead overlapsoriginalmainskeepout0.75mm/0.589mm3. No silentleadtrim/mainsmovement or barrel enlargement.",
+    "Sealedthermal remainsunqualified: stressscreen converterstage2.489W, flex0.822W,U1 0.402W,module3.68Wtypheat. Freeairmodulederating45C/115VACfullpower doesnotvalidate sealedbarrel.",
+    "XFL4020 currentmanufacturerNRND status/stock and derivedT520/0603 landstencil process approval outstanding.",
+    "Shell tiedisolatedGND is aproposal; stationaryPE/mains/endcap safety and distinctPowerCON/TRUE1/NEMAvariants are parentgates. NoUSBcertification, runtime/sidecarclaim or manufacturingrelease."
+  ],
+  "preservation": {
+    "protected_manifest": "protected-inputs.json",
+    "matched": 257,
+    "changed": [],
+    "includes_frozen_cell_candidate_and_its175_inputs": true,
+    "mechanical_source": "mechanical-input.json",
+    "mechanical_source_matches": true
+  },
+  "changed_paths": [
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/BRIEF.md",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/DESIGN.md",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/Regulated.pretty/C0402.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/Regulated.pretty/C0603.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/Regulated.pretty/C0805.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/Regulated.pretty/DPY2.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/Regulated.pretty/FPC20.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/Regulated.pretty/R0402.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/Regulated.pretty/RNM15.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/Regulated.pretty/RPW10.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/Regulated.pretty/RVC20.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/Regulated.pretty/T520D.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/Regulated.pretty/TP1.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/Regulated.pretty/USB4105.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/Regulated.pretty/XFL4020.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/cli-checks.log",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/component-ledger.csv",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/drc.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/electrical-check.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/envelope-check.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/envelopes.py",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/erc.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/fp-lib-table",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/generate.py",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/land-check.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/land-sources.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/lands.py",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/mechanical-input.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/package-check.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/package-check.py",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/place.py",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/placement-check.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/placement-ledger.csv",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/placement-overview.png",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/placement.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/protected-inputs.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.kicad_pcb",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.kicad_pro",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.kicad_sch",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.kicad_sym",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.net",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/regulated-source.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/rotating-source-envelopes.FCStd",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/rotating-source-envelopes.step",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/schematic-overview.png",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/T520D157M010ATE055-land.png",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/T520D157M010ATE055.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/T520D157M010ATE055.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/grm21-notice.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/grm21-notice.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm10.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm10.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm20-mechanical.png",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm20.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm20.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tnpw.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tnpw.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tpd1e10b06-land.png",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tpd1e10b06.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tpd1e10b06.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25810-land.png",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25810.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25810.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25947.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25947.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps63070-land.png",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps63070.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps63070.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb-type-c-r2.4.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb-type-c-r2.4.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105-land.png",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105-pads.png",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105-spec.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105-spec.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/vishay-28950.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/vishay-28950.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/xfl4020-land.png",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/xfl4020.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/xfl4020.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/stationary-module-envelopes.FCStd",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/stationary-module-envelopes.step",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sym-lib-table",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/validate.sh",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/verify-lands.py",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/verify.py",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/receipt.json",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/SHA256SUMS"
+  ],
+  "artifact_hashes_excluding_receipt_and_inventory": {
+    "BRIEF.md": "d2b12237a3f42b87d5a290a654ecbab2fa6765dbadbfd572e91a63e2b7c6d135",
+    "DESIGN.md": "10ef3ae7215440202fa269772066305f6e2c817420ea255503c81a61f40efb6c",
+    "Regulated.pretty/C0402.kicad_mod": "5d2d2bd39642d210476925a435a0e4f69132644526d0bd418d7ad91e6c8bf809",
+    "Regulated.pretty/C0603.kicad_mod": "54f7b0dc35f3779bcd61c7a4172fc016d3348995a4f085b639a7dcb7caf457de",
+    "Regulated.pretty/C0805.kicad_mod": "48afcf8985ddc51b815da206f54d12c62f1f6a8ac8e96fdbd723066380140875",
+    "Regulated.pretty/DPY2.kicad_mod": "6fd52b5447a17c430a7121de1fa778c8fce0af1e8e6f2b029b9788e316b9ce75",
+    "Regulated.pretty/FPC20.kicad_mod": "82e68efc7c367382aa47920a0d78f055f1b466271d1facdf8de87f2f8f9087da",
+    "Regulated.pretty/R0402.kicad_mod": "a288d3b4c50e0d590f3cdacc1d920c15c0b00a8789c9861d20fa01c23ad3e575",
+    "Regulated.pretty/RNM15.kicad_mod": "c428f01fdeaa2d10cf604c576e2315bf72d5bd114586b2eeed9d0cfb15ce587c",
+    "Regulated.pretty/RPW10.kicad_mod": "03e05108f15b9aec1978b7891b481cc8bfac45d4c6da4aad25597f7dbd591d85",
+    "Regulated.pretty/RVC20.kicad_mod": "8e44ede566b57b6e3c79831de756a724ba9f501cc6536ec7e316e443184628a8",
+    "Regulated.pretty/T520D.kicad_mod": "d1aee7a046ba37e8b7078425a9c6063661b01aa4e62a19a3b2c64910e82fd7f2",
+    "Regulated.pretty/TP1.kicad_mod": "6969e340bfd26fe4ca6237a076206a02b36fca65c73f4d96381e17c062d52e00",
+    "Regulated.pretty/USB4105.kicad_mod": "9e5ff3a0b3fc0a9e33c98c3927b49fd85a8f98ea76ca88107317cf37bb93b296",
+    "Regulated.pretty/XFL4020.kicad_mod": "5d6db15b6d92f27b373eee53c828587db3bc2edf1512d3b4308d779d6a3e3dfe",
+    "cli-checks.log": "71c7405ad1e2bd8d37172cec3bc7ae7bff85f0a206c5ec1ab528f8a2ea940b30",
+    "component-ledger.csv": "176e6ae3f4f739ff3d2ff5ccc17454181baa4d7bd5f430b88b6154d7a41c294a",
+    "drc.json": "d3cbf18ee1ed514ebd719574e7ab213fc46af5b9096352b3f5c97c0d78c391c3",
+    "electrical-check.json": "7b582dbd3a0cea0b112d662307acff9625c55ca6d3fba29e11583ad128f5facc",
+    "envelope-check.json": "fe2a1a3d8b7f4b72350bfbf92c119081fc681554de0aa6f84a2438c69e965e5b",
+    "envelopes.py": "1cadf8cdd684b7ffe982c645526502bc0db2c43bb7a0be81f3bd6e5a602f2653",
+    "erc.json": "f9f7999a5654447c467e228aca71b18af361be234e964b0571e9b62d9077a499",
+    "fp-lib-table": "d55be2c7f320cff6bb2fcc07523295149d68afd54ed5772c0167315d4ccf2aeb",
+    "generate.py": "bafc0a1421a893bd1807615ad97b9e8e306cf48f4dd1895f9cecd17ec13a9e41",
+    "land-check.json": "c48e7cad787a531e37679245dd0a7b87ce40367fa15d10aa548af554415bd31e",
+    "land-sources.json": "968cb7e33667174c0bd4bca4b13e9be1e73c9b6e169200ef89c9fb84bda55968",
+    "lands.py": "0f11a83bea860c7f9147eb2654f3fa9cb3bf187c3091d63ca446dcde047d6a17",
+    "mechanical-input.json": "29bb97a127f7ef43e4677c6d0827581ff9e50d8469f312126024a974cd2c622d",
+    "package-check.json": "1ff55dfa73b615949c0a900cf98046de91b372f826cf799c48925c15a057d9cd",
+    "package-check.py": "d31d9e2b6357519c0b5f387ccc49e46c3a32c091dbe166f873e322a3d273722e",
+    "place.py": "ff56457877936cb85a839ad352074f625ef75583afd6c46724e2ffa934a68793",
+    "placement-check.json": "18b044b62ade7bc480d87fc704ebee917a4f0f8079c0f9bcd8e2ad6f75edb8ce",
+    "placement-ledger.csv": "5bd2f01b07c3b48cbf1608727a0a77ab229378b005eff33d31948f98ce3ffaa6",
+    "placement-overview.png": "a92786faeae6fea29a2fb7702c1a13eeab1a0adf6f62c40b7d67e16baa3ce63c",
+    "placement.pdf": "6d37f9fc3ae3c8a66cb23ee7ed536dd69fdbd0f93ce6f2c1d82c4ab33d0e4841",
+    "protected-inputs.json": "48c1031a23dfb177414813f38dc4104a1e2d180bf92c8e331d676db5bdebcb07",
+    "regulated-source.kicad_pcb": "062a19308697eb0091307a33b5daafaac6a5bf68dfb6a7742bf4207b8ea2b9b4",
+    "regulated-source.kicad_pro": "35125d16e651564b8867a7ffb75ef1cf84f273c398287a6ed7ad07c728aeed8c",
+    "regulated-source.kicad_sch": "045db3b4ed2b5f2e421dbb0dc35a4d3b581052f7719f0742f5e88abbc52842d8",
+    "regulated-source.kicad_sym": "6b28ca75bd25f75a7a95c126e6b920700072deb49bf6db55d169c6ca76f44aea",
+    "regulated-source.net": "4f57359649bacc990fece6549223501bcabc0a260cd9247a056c35a86fff5f78",
+    "regulated-source.pdf": "e1e3f33f2e3106ccebf7b3d114895818a5a97846a207dbc4b9d4148cf4789997",
+    "rotating-source-envelopes.FCStd": "590884fe50952298bb7064126d9a1ee9d2e502709261c9bc2717ecc8a488aea0",
+    "rotating-source-envelopes.step": "3a177861bd6c25dcdced4aec86d085b7737b379328c2a3fcc3b972295203d6c1",
+    "schematic-overview.png": "3400c0c2b4424e2ce548d1b49e3023ab9e467ef66354808688704c6f738e2d03",
+    "sources/T520D157M010ATE055-land.png": "b042e62d1e32174aa5da1b436c6cb9de8dfebdef47c4b9653837590caf0fc6f2",
+    "sources/T520D157M010ATE055.pdf": "3b7a59d69d920e5c7b3c87f43ec2b4db34b06335ff3d077023431cc9c6db62ee",
+    "sources/T520D157M010ATE055.txt": "e63345bb5f58d48e0bb60acb87d298dfe4950ce6ec23bb315414b364d491e7df",
+    "sources/grm21-notice.pdf": "e8432c7acfa982b24eb06dd145682f78051dc4649abbeb35bbca8646b1408e4f",
+    "sources/grm21-notice.txt": "46d342c1284f8932436814904867810d51ab7275dce2769ada70e1df2243d5c3",
+    "sources/irm10.pdf": "1aab6b30492328818e4d0900416676891eeb1076f409d56dc2277d7119ed208a",
+    "sources/irm10.txt": "e516cee0a5dfaf7846dc3a7da9b17d3ca4bb7b87ea6d30371c5c37a1fc12ce48",
+    "sources/irm20-mechanical.png": "f880f9c2c5cf0c8e2e715e058b56cf21268a382b038e43c827d653c923878103",
+    "sources/irm20.pdf": "aa1afdbcdf0bf6db796710e26bd5e258f4857ffb1c14bd1ac3d94af86f3b8789",
+    "sources/irm20.txt": "36b07b4f7fa577da20b05d4b59b92c228336d034477ede91e4c8507620f8b2f2",
+    "sources/tnpw.pdf": "6f0508c568cb355aaf2accdd33fe3a780d3ea5ef207c4c9a71839a8acadc33a5",
+    "sources/tnpw.txt": "30adeaa999be3e1ba6e9f7914c4920410c6d768653adc2e96df3302be4f7e756",
+    "sources/tpd1e10b06-land.png": "9c88c5f419d96e04558e887afef83c63fff11f3e0eeffdea7389c4e6c1b3de3d",
+    "sources/tpd1e10b06.pdf": "77fb9c454aee5b14a220d256b7ee9fa9751572840478f80437393aeed2582f8d",
+    "sources/tpd1e10b06.txt": "a513d476e2b8dc56dbf720ffdb82696eda77584730afe7e6158f6240741fb831",
+    "sources/tps25810-land.png": "bb879b45a567f26a201c7477f05396c8eda86a275750773c2e5e80652da67b02",
+    "sources/tps25810.pdf": "ccc31e3ad8b7970005e23ba8b6a165694f712e86fd337b9ba2fe117a98a2e13e",
+    "sources/tps25810.txt": "2d70cfc6deda9eb54ad9477b4bf4a5d95000b8d5ac7cd094cded21b2d62ad5cd",
+    "sources/tps25947.pdf": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4",
+    "sources/tps25947.txt": "31fde9b5395eb31ceb0002016b3b8125686bde54a994debd3461d8a70ed254b0",
+    "sources/tps63070-land.png": "cc533aa81cc5517b728ca7f84ca755aaaaaaa964232837d495c01b5534f61e4f",
+    "sources/tps63070.pdf": "a88ef66f3493156ff6e7da0849de0e0e1068647f2553d08c1844d4a90c5c65ef",
+    "sources/tps63070.txt": "e174690acb74a1c02b5dadae11525a1f0fcb2c27eda166f09f732a6f358d2731",
+    "sources/usb-type-c-r2.4.pdf": "f5407e6120db1e28137e7fee60f3125f4284e2252b1240d271ce6e40c0ba3121",
+    "sources/usb-type-c-r2.4.txt": "409752caf6a434ef1340dcd10ac254391bc801e44b40905da22b47aadf819b06",
+    "sources/usb4105-land.png": "1eec56966f0680efb6fe5cb630fd4e4c9fcc24815f0f8095c0e3d98b22c10484",
+    "sources/usb4105-pads.png": "90f76ac181130ef8b263949e123db5a8300bceb4a0d4414c31e14c3e1ed15982",
+    "sources/usb4105-spec.pdf": "372fe1bc0e0b1b4ce7e18b61514e967c7c2f883f0c7fe1f4586b567785ee9cd2",
+    "sources/usb4105-spec.txt": "c8733ca448c2dffc3523245cd471e2a156e5e1ba070cc23e2218eb5b9591cc7e",
+    "sources/usb4105.pdf": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5",
+    "sources/usb4105.txt": "7b6b1a8ce2f4cb25d923ac9fb6bca93a01645371057f133c1c53964e3928845e",
+    "sources/vishay-28950.pdf": "9e2b145c937da3be1e926b8afc2856959754eeb4d1103241d838038f7308144e",
+    "sources/vishay-28950.txt": "d932cc30fe5f619ad8ff9537411ba1b38559cbe5628a080e5ac587266b0c87bc",
+    "sources/xfl4020-land.png": "0dc8b00321b80ff492a11fdec8d4b2f76efb95ef808882cdf1d388509ab383e7",
+    "sources/xfl4020.pdf": "6dca915ac1daa47210f7708a7540221ffef4f34a88a8621c94bd50cdf48647e6",
+    "sources/xfl4020.txt": "cf0d9d0f192f474bcd66b205a0d303fb464a07dfa3fa8aaef59dcac9ee9fd61d",
+    "sources.json": "114cae4c32d0dfe0e9d088659055b13f2acd5e97b3b9eaaaef628279fc29b1a9",
+    "stationary-module-envelopes.FCStd": "2f2d9a49899695c6e657d39bb7a6d901ad880f45d10b47b61f6dec6c17180b93",
+    "stationary-module-envelopes.step": "cec6340677d3d39fc1ee6409b98effc2a44e7a4c9f45e37df1c1d6d21df8b96e",
+    "sym-lib-table": "d3a0c69d20fe5c1aaa96ee76ac6565c9b445520a4dfad3cd1a389c9ebea13c25",
+    "validate.sh": "24647ae12ee5298acc4d37c059042a7e1de8d38aedba10c8cfa32bac93733166",
+    "verify-lands.py": "6acf37cd8c97b089311f366357b629bd45484ab32fe1c0288c4414bc90640897",
+    "verify.py": "b2eadac60f0a2009fc8a0fefd2f831606c820dbe26f8749483d176e92c85b525"
+  },
+  "inventory_note": "SHA256SUMS includes thisreceipt and every finalownedfile exceptSHA256SUMS itself; receipt hash cannot recursively include itself.",
+  "manufacturing_release": false,
+  "preservation_baseline_documentation_refresh": {
+    "review_task": "node:delegated-task:command%3Amcp%3Aeaab7c50-b35d-4a00-9efc-f2e54928abd4%3Adelegate-task%3Anova-cell-protection-glm-review-20261023-r1",
+    "previous_receipt_sha256": "f48599d4e5de501285f7b2a686f0b36da0f7e3ec8c07fea0b9dfee1119a653f6",
+    "changes": [
+      {
+        "path": "hardware/compact-dmx/eda/cell-protection-candidate/DESIGN.md",
+        "before": "f99c32e7a00ffd078365ff8550b0f684426a40f04a56d41d464e8470e4f68780",
+        "after": "d966ed758dd26817d6b880b044878d24e6cb1bb5aca4381436cf3337b420f13e",
+        "reason": "Verified citation-only correction and its inventory metadata"
+      },
+      {
+        "path": "hardware/compact-dmx/eda/cell-protection-candidate/receipt.json",
+        "before": "3327446d98881072921be1585e3e99701cb6a7cc10c2ded6ff4b884af204b777",
+        "after": "19b01498096e418b7eab386aab61cc359f48f3274b2e321d15dd7509bb9f1573",
+        "reason": "Verified citation-only correction and its inventory metadata"
+      },
+      {
+        "path": "hardware/compact-dmx/eda/cell-protection-candidate/SHA256SUMS",
+        "before": "3af338e763907c9697cb705191647d811bbee4e9987f140930c384c63deef9b9",
+        "after": "c4ab3c289b5e75a8e19ff74659c9b8ac3b8067940eec70d4cef75430cd8bc4dc",
+        "reason": "Verified citation-only correction and its inventory metadata"
+      }
+    ],
+    "electrical_or_mechanical_artifacts_changed": false,
+    "original_source_snapshot": ".tools/reviews/rotary-source-20261023/"
+  },
+  "source_review_disposition": {
+    "review_task": "node:delegated-task:command%3Amcp%3Aeaab7c50-b35d-4a00-9efc-f2e54928abd4%3Adelegate-task%3Anova-regulated-source-glm-review-20261023-r1",
+    "new_demonstrated_electrical_defects": 0,
+    "parent_primary_visual_check": "TPS25810 SLVSCR1C page6: falling threshold0.65MIN,0.875TYP; reviewer called0.65typical incorrectly.",
+    "acceptance_check_improvement": "Use recommended logic levels low<0.63V and high>1.17V. Actual computed0.4V and2.491V still pass.",
+    "slew_cap_tolerance": "Nominal10nF+10% can exceed TI10nF recommendation boundary.100ohm series damping to be added in routed successor; initial schematic unchanged.",
+    "electrical_or_mechanical_artifacts_changed": false,
+    "original_review_snapshot": ".tools/reviews/rotary-source-20261023/",
+    "prior_receipt_sha256": "36b5b48410490942cd861e242b1b0ae57730a6994e90e8f6c42d28aebeb9cbf8"
+  }
+}

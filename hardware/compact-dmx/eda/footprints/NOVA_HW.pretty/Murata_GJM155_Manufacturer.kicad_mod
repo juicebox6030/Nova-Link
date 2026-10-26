@@ -1,0 +1,4 @@
+(footprint "Murata_GJM155_Manufacturer" (version 20241229) (generator "nova_source_lands") (layer "F.Cu") (attr smd) (descr "Exact GJM1555C1H1R0BB01/GJM1555C1H8R2DB01 sheets Apr15/2026 p25; a.4 b.4 c.5 selected within manufacturer range; body max1.05x.55x.55; assembly and RF qualification open") (fp_text reference "REF**" (at 0 -1.275) (layer "F.SilkS") (effects (font (size .8 .8) (thickness .12))))(fp_rect (start -0.525 -0.275) (end 0.525 0.275) (stroke (width .05) (type default)) (fill none) (layer "F.Fab"))(fp_rect (start -0.85 -0.525) (end 0.85 0.525) (stroke (width .05) (type default)) (fill none) (layer "F.CrtYd"))
+(pad "1" smd rect (at -0.4 0) (size 0.4 0.5) (layers "F.Cu" "F.Mask" "F.Paste"))
+(pad "2" smd rect (at 0.4 0) (size 0.4 0.5) (layers "F.Cu" "F.Mask" "F.Paste"))
+)

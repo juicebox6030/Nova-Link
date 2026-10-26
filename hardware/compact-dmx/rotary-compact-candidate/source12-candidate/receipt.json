@@ -1,0 +1,702 @@
+{
+  "revision": "S12-R1",
+  "created_UTC": "2026-10-23T19:54:42.136815+00:00",
+  "repo": "/home/juicebox/Nova-Link",
+  "branch": "main",
+  "HEAD": "b42c0e6284aac734fde851c69146abf73920f337",
+  "owned_write_path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/**",
+  "disposition": "Captured partial prototype. Healthy static/conditional current screens PASS; independent maximum output fault surge/energy protection UNMET. Not a manufacturing release. No routing or old-board12V permission.",
+  "architecture": "Stationary TPS259474L before FPC; rotating TPS62135 forcedPWM5.18V; independent TPS3700 window controls TPS25940L output disconnector before TPS25810 fixed1.5A/full USB4105.",
+  "regulators_screened": [
+    "TPS62130 (not captured)",
+    "TPS62135RGXR (only captured buck)"
+  ],
+  "source_bus": "Isolated12V development; IRM20-12 pod allocation only. External USB stays5V>=1.5A.",
+  "commands": [
+    "bash hardware/compact-dmx/rotary-compact-candidate/source12-candidate/validate.sh",
+    "python3 hardware/compact-dmx/rotary-compact-candidate/source12-candidate/seal.py",
+    "sha256sum -c hardware/compact-dmx/rotary-compact-candidate/source12-candidate/SHA256SUMS (run from repository root)"
+  ],
+  "tool_versions": {
+    "KiCad": "10.0.7 flatpak org.kicad.KiCad",
+    "Python": "existing system3 / existing flatpak pcbnew",
+    "installs": false
+  },
+  "checks": {
+    "ERC_violations": 0,
+    "literal_IC_pins_nets_types": 69,
+    "physical_components": 57,
+    "purchased_components": 52,
+    "resistor_pairs": 27,
+    "capacitor_pairs": 17,
+    "unique_exported_pad_nodes": 185,
+    "all_saved_numbered_pad_checks": 189,
+    "state_rows": 50,
+    "CC_rows": 18,
+    "negative_tests": {
+      "no_series_barrier_12V_fault_exceeds_USB_abs7V": true,
+      "static_trip_below5p5_does_not_prove20us_fault_below5p5": true,
+      "PG_threshold_not_source_valid": true,
+      "unsettled_monitor_not_promoted_to_valid": true
+    },
+    "input_current_corners": 12,
+    "DRC": [
+      {
+        "zone": "rotating",
+        "geometric_violations_by_type": {
+          "hole_clearance": 4
+        },
+        "unconnected_items": 120,
+        "tracks": 0,
+        "vias": 0
+      },
+      {
+        "zone": "stationary",
+        "geometric_violations_by_type": {},
+        "unconnected_items": 22,
+        "tracks": 0,
+        "vias": 0
+      }
+    ]
+  },
+  "conditional_numbers": {
+    "port_V": [
+      4.783143570778441,
+      5.304424430941883
+    ],
+    "OV_trip_V": [
+      5.323744520958084,
+      5.476745480961925
+    ],
+    "healthy_to_OV_margin_V": 0.019320090016200983,
+    "normal_output_stress_A": 1.92,
+    "VBUS_limit_output_stress_A": 2.24,
+    "source_breaker_formula_A": [
+      1.4973053892215569,
+      1.837374749498998
+    ],
+    "worst_input_model": {
+      "source_V": 11.41,
+      "efficiency_assumption": 0.8,
+      "buck_output_A": 2.2399999999999998,
+      "FPC_A": 1.31855616123965,
+      "buck_input_V": 11.174903767708855,
+      "breaker_floor_margin_A": 0.17874922798190696,
+      "module1p8A_margin_A": 0.48144383876035013,
+      "flex_copper_W": 0.16009568875876493,
+      "full_path_W": 0.3099875855717168,
+      "buck_loss_alloc_W": 2.9424776813274542,
+      "inductor_peak_engineering_A": 2.955998268326774
+    },
+    "output_energy_counterexample": {
+      "min_polymer_C_25C_tolerance_only_F": 0.00011999999999999999,
+      "headroom_at_latest_static_trip_to5p5_V": 0.023254519038075294,
+      "remaining_charge_C": 2.790542284569035e-06,
+      "time_if_current_at_overload_max_s": 7.309609448818627e-07,
+      "illustrative20us_at_testlimit_deltaV": 0.6362725450901805,
+      "max_response_spec_s": null,
+      "overshoot_or_USB_pin_survival_guaranteed": false,
+      "source_note": "TPS3700 propagation18/29us typical only; TPS25940 OVP2us typical to FLT, not isolation. Current limits also have delays. 20us illustration is not a bound."
+    },
+    "assumptions": "80% efficiency is engineering assumption, not guaranteed minimum. Includes410mA VCONN limit stress,10mA output/2mA input auxiliary,50mV rail allowance,PCB/connector R,hot FPC+fanout/wire. See DESIGN for bias/current-test/timing applicability."
+  },
+  "placement": {
+    "revision": "S12-R1",
+    "one_pass_allocation": [
+      {
+        "zone": "rotating",
+        "PCB_LWH_mm": [
+          32.0,
+          26.0,
+          1
+        ],
+        "board_area_mm2": 832.0,
+        "footprints": 45,
+        "saved_numbered_pad_checks": 153,
+        "min_courtyard_gap_mm": 0.10999999999999988,
+        "closest_pair": [
+          "C12",
+          "C13"
+        ],
+        "max_component_height_allocation_mm": 3.46,
+        "body_area_sum_mm2": 238.02849999999998,
+        "actual_courtyard_BBox_area_sum_mm2": 399.88710000000015,
+        "tracks": 0,
+        "vias": 0,
+        "routing_or_thermal_or_collar_acceptance": false,
+        "positions": {
+          "U2": [
+            6.0,
+            5.5,
+            0.0
+          ],
+          "U3": [
+            22.5,
+            13.0,
+            0.0
+          ],
+          "U4": [
+            17.4,
+            9.5,
+            180.0
+          ],
+          "U5": [
+            6.0,
+            13.0,
+            0.0
+          ],
+          "J1": [
+            32.0,
+            13.0,
+            90.0
+          ],
+          "J3": [
+            11.0,
+            23.5,
+            0.0
+          ],
+          "L1": [
+            11.5,
+            4.2,
+            0.0
+          ],
+          "D1": [
+            25.7,
+            20.8,
+            90.0
+          ],
+          "C2": [
+            2.25,
+            4.2,
+            0.0
+          ],
+          "C3": [
+            6.0,
+            2.0,
+            0.0
+          ],
+          "C4": [
+            15.9,
+            3.0,
+            0.0
+          ],
+          "C5": [
+            15.9,
+            5.3,
+            0.0
+          ],
+          "C6": [
+            15.9,
+            16.6,
+            0.0
+          ],
+          "C7": [
+            28.8,
+            21.0,
+            0.0
+          ],
+          "C8": [
+            22.5,
+            18.0,
+            0.0
+          ],
+          "C9": [
+            2.5,
+            13.0,
+            0.0
+          ],
+          "C10": [
+            7.5,
+            9.0,
+            0.0
+          ],
+          "C12": [
+            20.0,
+            3.0,
+            0.0
+          ],
+          "C13": [
+            20.0,
+            4.3,
+            0.0
+          ],
+          "C15": [
+            3.0,
+            6.8,
+            0.0
+          ],
+          "C16": [
+            20.5,
+            6.0,
+            0.0
+          ],
+          "C17": [
+            20.5,
+            7.3,
+            0.0
+          ],
+          "TP1": [
+            30.0,
+            24.0,
+            0.0
+          ],
+          "TP2": [
+            26.5,
+            24.0,
+            0.0
+          ],
+          "R7": [
+            9.0,
+            7.5,
+            0.0
+          ],
+          "R8": [
+            10.0,
+            9.5,
+            0.0
+          ],
+          "R9": [
+            3.0,
+            9.0,
+            0.0
+          ],
+          "R10": [
+            2.5,
+            10.5,
+            0.0
+          ],
+          "R11": [
+            9.5,
+            12.0,
+            0.0
+          ],
+          "R12": [
+            9.5,
+            13.5,
+            0.0
+          ],
+          "R13": [
+            9.5,
+            15.0,
+            0.0
+          ],
+          "R14": [
+            9.0,
+            16.5,
+            0.0
+          ],
+          "R15": [
+            12.5,
+            10.0,
+            0.0
+          ],
+          "R16": [
+            12.0,
+            11.5,
+            0.0
+          ],
+          "R17": [
+            17.0,
+            13.0,
+            0.0
+          ],
+          "R18": [
+            20.75,
+            9.5,
+            0.0
+          ],
+          "R19": [
+            13.0,
+            8.5,
+            0.0
+          ],
+          "R20": [
+            23.25,
+            9.5,
+            0.0
+          ],
+          "R21": [
+            22.75,
+            8.0,
+            0.0
+          ],
+          "R22": [
+            24.0,
+            16.5,
+            0.0
+          ],
+          "R23": [
+            24.75,
+            18.5,
+            0.0
+          ],
+          "R24": [
+            23.0,
+            6.5,
+            0.0
+          ],
+          "R25": [
+            28.0,
+            5.0,
+            0.0
+          ],
+          "R26": [
+            25.0,
+            3.0,
+            0.0
+          ],
+          "R27": [
+            23.0,
+            21.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "zone": "stationary",
+        "PCB_LWH_mm": [
+          24.0,
+          16.0,
+          1
+        ],
+        "board_area_mm2": 384.0,
+        "footprints": 12,
+        "saved_numbered_pad_checks": 36,
+        "min_courtyard_gap_mm": 0.3099999999999987,
+        "closest_pair": [
+          "C11",
+          "R6"
+        ],
+        "max_component_height_allocation_mm": 2.5,
+        "body_area_sum_mm2": 84.38,
+        "actual_courtyard_BBox_area_sum_mm2": 143.6362,
+        "tracks": 0,
+        "vias": 0,
+        "routing_or_thermal_or_collar_acceptance": false,
+        "positions": {
+          "U1": [
+            14.0,
+            4.0,
+            0.0
+          ],
+          "J0": [
+            5.0,
+            3.5,
+            0.0
+          ],
+          "J2": [
+            12.0,
+            13.8,
+            0.0
+          ],
+          "C1": [
+            5.0,
+            8.3,
+            0.0
+          ],
+          "C11": [
+            17.0,
+            7.0,
+            0.0
+          ],
+          "C14": [
+            9.5,
+            8.0,
+            0.0
+          ],
+          "R1": [
+            11.0,
+            6.0,
+            0.0
+          ],
+          "R2": [
+            11.75,
+            7.5,
+            0.0
+          ],
+          "R3": [
+            14.25,
+            7.5,
+            0.0
+          ],
+          "R4": [
+            14.0,
+            9.0,
+            0.0
+          ],
+          "R5": [
+            17.0,
+            4.0,
+            0.0
+          ],
+          "R6": [
+            19.25,
+            7.0,
+            0.0
+          ]
+        }
+      }
+    ],
+    "port_datum": {
+      "rotating_board_mm": [
+        32,
+        26,
+        1
+      ],
+      "connector_origin_mm": [
+        32,
+        13
+      ],
+      "angle_deg": 90,
+      "mate_direction": "+X",
+      "conservative_body_X_max_mm": 34.17,
+      "exact_supplier_matingface_alignment": "UNMET; this body-envelope edge is not an asserted mating plane",
+      "max_component_height_above_top_mm": 3.46,
+      "PCB_thickness_and_GCT_stake_assembly_gate": "1mm nominal; retain original supplier stake/NPTH geometry, fabrication and solder process not accepted"
+    },
+    "external_FPC_clamp_allocation": {
+      "each_end_width_depth_height_mm": [
+        20.5,
+        5,
+        2
+      ],
+      "status": "Engineering reserve only, outside back edge, not manufactured clamp or bend/strain-relief proof"
+    },
+    "scope": "Complete component lands/net allocation, unrouted two-zone prototype. No integrated sourcepod/collar fit, safety or thermal acceptance."
+  },
+  "additional_BOM_gate": "Inherited TMK105B7104MV-FR100nF is explicitly provisional: official current lookup renamed-to-null, exact orderability/specification unresolved. No qualified-MPN assertion.",
+  "manufacturing_gates": [
+    "OVP response/injected energy into USB must be bounded by additional evidence; static barrier is not5.5V transient qualification",
+    "Effective ceramic capacitance at bias/temp, inductor hot saturation, compensation/stability and distributed load capacitance",
+    "Startup/inrush/hotplug/brownout/detach/rebound/reverse and unloaded forcedPWM energy, including USB backdrive",
+    "FPC/clamps/trace I2t/current capability, module transient/overload coordination; latch reset behavior",
+    "Routing, hot-loop/Kelvin/thermal copper, sealed collar thermal, EMI/ESD and USB electrical/compliance",
+    "Supplier land/stencil/component heights and connector PCB1mm/stake/NPTH process; allocation is not integrated fit",
+    "Stationary sourcepod insulation, mains/PE/endcaps/install guidance and line/temperature derating",
+    "Exact100nF MPN qualification/source record unresolved"
+  ],
+  "protected_snapshot_files": 1123,
+  "protected_matches": 1122,
+  "unaccepted_external_deltas": [
+    {
+      "path": "hardware/compact-dmx/README.md",
+      "snapshot_sha256": "3e1c79d8a8b18b075f2222a1d6fbc3d902be6ad0d2005f987d892b67a334ea27",
+      "current_sha256": "efdbd2254b05fef589def3bcdef142be356da1fee2eef8811de0df9efa00242a"
+    }
+  ],
+  "protected_baseline_refreshed": false,
+  "source_artifacts": [
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm20.pdf",
+      "url": "https://www.meanwell.com/Upload/PDF/IRM-20/IRM-20-SPEC.PDF",
+      "sha256": "aa1afdbcdf0bf6db796710e26bd5e258f4857ffb1c14bd1ac3d94af86f3b8789",
+      "access": "reused read-only primary cache"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25810.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps25810.pdf",
+      "sha256": "ccc31e3ad8b7970005e23ba8b6a165694f712e86fd337b9ba2fe117a98a2e13e",
+      "access": "reused read-only primary cache"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb-type-c-r2.4.pdf",
+      "url": "https://www.usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-24",
+      "sha256": "f5407e6120db1e28137e7fee60f3125f4284e2252b1240d271ce6e40c0ba3121",
+      "access": "reused read-only primary cache"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105.pdf",
+      "url": "https://gct.co/files/drawings/USB4105.pdf",
+      "sha256": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5",
+      "access": "reused read-only primary cache"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105-spec.pdf",
+      "url": "https://gct.co/files/specs/USB4105-spec.pdf",
+      "sha256": "372fe1bc0e0b1b4ce7e18b61514e967c7c2f883f0c7fe1f4586b567785ee9cd2",
+      "access": "reused read-only primary cache"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25947.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+      "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4",
+      "access": "reused read-only primary cache"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/T520D157M010ATE055.pdf",
+      "url": "https://search.kemet.com/download/specsheet/T520D157M010ATE055",
+      "sha256": "3b7a59d69d920e5c7b3c87f43ec2b4db34b06335ff3d077023431cc9c6db62ee",
+      "access": "reused read-only primary cache"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tpd1e10b06.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf",
+      "sha256": "77fb9c454aee5b14a220d256b7ee9fa9751572840478f80437393aeed2582f8d",
+      "access": "reused read-only primary cache"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tnpw.pdf",
+      "url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+      "sha256": "6f0508c568cb355aaf2accdd33fe3a780d3ea5ef207c4c9a71839a8acadc33a5",
+      "access": "reused read-only primary cache"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/tps62130.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps62130.pdf",
+      "sha256": "f9b1af285622c0cf1a5991f9641a6e64c5e6d899e52cc0b1632808742019579f",
+      "access": "downloaded official primary"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/tps62135.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps62135.pdf",
+      "sha256": "9b718325c5216c529eaa19730d0deba8dd72518ecb837c90dd6e839d2b8b811d",
+      "access": "downloaded official primary"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/tps25940.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps25940.pdf",
+      "sha256": "9db4dc76b1040251f56d994041d2e6f02f1307d687aecbc5218f137a5c830adc",
+      "access": "downloaded official primary"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/xal4000.pdf",
+      "url": "https://www.coilcraft.com/getmedia/6adcb47d-8b55-416c-976e-1e22e0d2848c/xal4000.pdf",
+      "sha256": "b26cf975bd56a807173b05665bddd49ed49323400330eb8f6fa63e24ff6d7d15",
+      "access": "downloaded official primary"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3700.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+      "sha256": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0",
+      "access": "reused read-only primary cache"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/taiyo-input.html",
+      "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=TMK212BBJ106MG-T",
+      "sha256": "f3e90936360e2b18bc0086d0022ee1b64a87dffcf34e899f3b500d751d46f542",
+      "access": "downloaded official primary HTML; dynamic curve/specSheet endpoints not cached, no guaranteed bias curve claimed"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/taiyo-output.html",
+      "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=EMK212BBJ226MG-T",
+      "sha256": "00d1dc328aa7783c0f229e5f15323dac0827acb545f3b21134f67043686292f3",
+      "access": "downloaded official primary HTML; dynamic curve/specSheet endpoints not cached, no guaranteed bias curve claimed"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/taiyo-input-current.html",
+      "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MSAST21GBB5106MTNA01&u=M",
+      "sha256": "f3590f9fe0975c52c7ba53adb0c625ea69910c41931edbf374dd503b5f798007",
+      "access": "downloaded official primary HTML; dynamic curve/specSheet endpoints not cached, no guaranteed bias curve claimed"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/taiyo-output-current.html",
+      "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MLASE21GBB5226MTNA01&u=M",
+      "sha256": "c53a2228e09fa3ccf188899f84262154ed00fe90ea5eaf462393bd91deb8c5d4",
+      "access": "downloaded official primary HTML; dynamic curve/specSheet endpoints not cached, no guaranteed bias curve claimed"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/taiyo-output-preferred.html",
+      "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MSASE21GBB5226MTNA01&u=M",
+      "sha256": "7b36c7ed8f1f7d9f0919f5b236d779b2e20f193ec77ae998d843f87691800eec",
+      "access": "downloaded official primary HTML; dynamic curve/specSheet endpoints not cached, no guaranteed bias curve claimed"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/taiyo-100n.html",
+      "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=TMK105B7104MV-FR",
+      "sha256": "8eac9aff2ed05e3451ffd0475acc8d3e1f70e69c6f7cdcb2b4a4a0b07f9d2af0",
+      "access": "downloaded official primary; see DESIGN for lookup failure/qualification scope"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/murata-10n.html",
+      "url": "https://www.murata.com/en-us/products/productdetail?partno=GRM155R71E103KA01%23",
+      "sha256": "a88005bc709a8e552247a9e7eea2c1682021cc7be95cb4507687a417c44283cf",
+      "access": "downloaded official primary; see DESIGN for lookup failure/qualification scope"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/GRM155R71E103KA01.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71E103KA01-01A.pdf",
+      "sha256": "be98b608577241b027c30a055e8818ba44464319b7e82858a7f3d74ddf566732",
+      "access": "downloaded official primary; see DESIGN for lookup failure/qualification scope"
+    }
+  ],
+  "current_artifact_count_excluding_receipt_inventory": 72,
+  "current_artifacts_sha256": {
+    "DESIGN.md": "226826651c1e1211095d53e7a873299df119af85d00cd51b52c4746d45965e8b",
+    "Source12.pretty/C0402.kicad_mod": "5d2d2bd39642d210476925a435a0e4f69132644526d0bd418d7ad91e6c8bf809",
+    "Source12.pretty/C0805.kicad_mod": "8b4bd411621e31443de2ae762dda73305df5dbf43d3884c8434f734fbec710a7",
+    "Source12.pretty/DDC6.kicad_mod": "6384ff62da7a169534fadc99b8c15d4542050851e38fbbe312b1ffa3fcea0301",
+    "Source12.pretty/DPY2.kicad_mod": "6fd52b5447a17c430a7121de1fa778c8fce0af1e8e6f2b029b9788e316b9ce75",
+    "Source12.pretty/FPC20.kicad_mod": "82e68efc7c367382aa47920a0d78f055f1b466271d1facdf8de87f2f8f9087da",
+    "Source12.pretty/R0402.kicad_mod": "a288d3b4c50e0d590f3cdacc1d920c15c0b00a8789c9861d20fa01c23ad3e575",
+    "Source12.pretty/RGX11.kicad_mod": "74462b797214994c3d4a6c2ff2a113b7b5a0549352e2ea7bbb6a079fa8a5a5f1",
+    "Source12.pretty/RPW10.kicad_mod": "03e05108f15b9aec1978b7891b481cc8bfac45d4c6da4aad25597f7dbd591d85",
+    "Source12.pretty/RVC20.kicad_mod": "8e44ede566b57b6e3c79831de756a724ba9f501cc6536ec7e316e443184628a8",
+    "Source12.pretty/T520D.kicad_mod": "d1aee7a046ba37e8b7078425a9c6063661b01aa4e62a19a3b2c64910e82fd7f2",
+    "Source12.pretty/TP1.kicad_mod": "6969e340bfd26fe4ca6237a076206a02b36fca65c73f4d96381e17c062d52e00",
+    "Source12.pretty/USB4105.kicad_mod": "9e5ff3a0b3fc0a9e33c98c3927b49fd85a8f98ea76ca88107317cf37bb93b296",
+    "Source12.pretty/Wire2.kicad_mod": "36ab45706e4ac1a3317f91a84aa24f221f90b13a7f494373973716147a3d282c",
+    "Source12.pretty/XAL4020.kicad_mod": "0391fd07cd64b2ce51e82f7c0533c0950ca280dd524047e825cfd53fe54f335e",
+    "allocation-rotating.pdf": "96ad86b78bf8f6ad9a1fd4f001d1e1d9988848da8c0484be7897a9364ccb7766",
+    "allocation-rotating.png": "7f14edd0358294112900b83aedaae36743b502c29157b688c9a62638e240909b",
+    "allocation-stationary.pdf": "e9654f45e354259a8ff680361f392289faae2d1e6d6d4e9b92b7ff51afdfc9e0",
+    "allocation-stationary.png": "e598b93b8bd404f6d10d00c2472f891909b53668134db5a422509e76024a90dc",
+    "board-check.json": "be38dc3bd02bbeb4c8e08c5f684a1d2a56cc858c93fd1d3b21c79072ae0bb5cf",
+    "bom.csv": "45fa09fdf52a1d056ab6de604cb3717bc537437914c70c058fb9cfcae25a25c3",
+    "build.py": "39912a6fe6ee991ea3d17bb5261dbbeb3b1b6e5e3553a033b205600b8fc388dd",
+    "component-ledger.csv": "c632e9d1b67e60ce72068553ab3ba584991db99d4a8edebbb53da83d30b53ac6",
+    "drc-rotating.json": "c1ad2d3b2c12ed20b7ab4f2b8796ce3b1bb6e506c046db6671ac1070a48f3046",
+    "drc-stationary.json": "ffc37b21e7626677671c3b4477ca107d3f65f6fd4dc70e825d712fa2e3f3f91d",
+    "electrical-check.json": "d137b939fd358fd66a414b6433f07235675bce7f9f1555e0fc2c16a28e60aa1b",
+    "erc.json": "78823d7685bc4c197b92d1d37c9608829723c3efa957a79d137f016009409ecc",
+    "fp-lib-table": "0ca9ea07736745d44bc9ed24eb5dcba121a10d54ce03647ad9cb28a3f95cea86",
+    "generate.py": "ff117755b3911b82c0dfbe998ab3eb83b98c59ae207651ad06d8d7a5ee147b7c",
+    "independent-check.log": "e0fd7116106e7b3dc5d76d0fa9d5c8ce8a6d3cea00b546c61dda225dbefbe3a9",
+    "land-sources.json": "37b8c868f7f363d0d1f0c5ec19703e418b7963a654ff7ee033ab50eee7292ae0",
+    "lands.py": "97491d0bf25242fcd56c77a95390686438ba0dfe8a6ec564560ec69ab37756ab",
+    "observed-external-deltas.json": "d5506f74b4a6a498bb3cc041a7b4243368f81c2e5ee22e44766aa9d1fc15b0a0",
+    "passive-retrieval.json": "20213ae97829ce070c4da5e9d1696006a4100358ca0d432a1e2df60bc284eaed",
+    "placement-check.json": "0a9bdc01efef484d300445ea3b4b348d1f0a5f85a2634a31c9ec1ca8bc473b8a",
+    "placement-ledger.csv": "fdc46af2af8b36cc888457258b2d90c2e86526ebe0fa0996506b478284a79c4b",
+    "protected-inputs.json": "df63ad7e4ef839e93be6dd5690b1b2c3e91c7a9a3d5536785ec2ea59c6974852",
+    "retrieval.json": "07d3c6108749b0b8b97095ebf7a4ba7d59e4d1134d8a7f3a8e731f6847fba122",
+    "schematic-overview.png": "05b21525e88708226c9238579f3fc48df7a979e571d989ff4e0042538c64f0c1",
+    "seal.py": "89a78dc5252a0e48f774da3e2be86aed975e7191a93ae6e7d4b59049c665e01b",
+    "source12-rotating.kicad_pcb": "f1931419a9a326e5db8364302c8d59cf1586a1ae810676db475f92b45bb97c30",
+    "source12-stationary.kicad_pcb": "d6f79be09ed5e7984f2f915d9d3b9399978f7412795d7fff4c0ef8d8caabdbdc",
+    "source12.kicad_pro": "35125d16e651564b8867a7ffb75ef1cf84f273c398287a6ed7ad07c728aeed8c",
+    "source12.kicad_sch": "80b9d05e20e6b7ce6b6e1321b0c55001d2abbaefa7b9cbaab5136ad3e1247554",
+    "source12.kicad_sym": "613b640642a3d7824a37e0cf790fd1c1e8fa0dec7d4d953f95f9315d54e41fad",
+    "source12.net": "838b243c6bd0f1f9481e34d04ee6c0d83896f47b5876ac5df1c0ad0d31c39a53",
+    "source12.pdf": "b62f45195ae7bcd9337e5fc35584940662bba4fcfe562ec3820dac475f52ffb1",
+    "sources/GRM155R71E103KA01.pdf": "be98b608577241b027c30a055e8818ba44464319b7e82858a7f3d74ddf566732",
+    "sources/GRM155R71E103KA01.txt": "75b26ecbdd0169dc6a20126edb43e93354c9e8b421e4a95737a69d966e0fbbc0",
+    "sources/murata-10n.html": "a88005bc709a8e552247a9e7eea2c1682021cc7be95cb4507687a417c44283cf",
+    "sources/rgx-layout.png": "cfc7431abc6a44e88ff1c3d4c96c88554dfd3fc9cf9dfb8a7bc582b0c5821c96",
+    "sources/taiyo-100n.html": "8eac9aff2ed05e3451ffd0475acc8d3e1f70e69c6f7cdcb2b4a4a0b07f9d2af0",
+    "sources/taiyo-input-current.html": "f3590f9fe0975c52c7ba53adb0c625ea69910c41931edbf374dd503b5f798007",
+    "sources/taiyo-input.html": "f3e90936360e2b18bc0086d0022ee1b64a87dffcf34e899f3b500d751d46f542",
+    "sources/taiyo-output-current.html": "c53a2228e09fa3ccf188899f84262154ed00fe90ea5eaf462393bd91deb8c5d4",
+    "sources/taiyo-output-preferred.html": "7b36c7ed8f1f7d9f0919f5b236d779b2e20f193ec77ae998d843f87691800eec",
+    "sources/taiyo-output.html": "00d1dc328aa7783c0f229e5f15323dac0827acb545f3b21134f67043686292f3",
+    "sources/tps25940.pdf": "9db4dc76b1040251f56d994041d2e6f02f1307d687aecbc5218f137a5c830adc",
+    "sources/tps25940.txt": "541e029c38b2ec3aa9f57fe7f9c9d860a3c80caefc874060f2be0bcd3733f738",
+    "sources/tps62130.pdf": "f9b1af285622c0cf1a5991f9641a6e64c5e6d899e52cc0b1632808742019579f",
+    "sources/tps62130.txt": "fba88ed2c7a70df9c8ba03d3eb7b7e8b974bea2ce2cd408bb8c3ed83b04d11a3",
+    "sources/tps62135.pdf": "9b718325c5216c529eaa19730d0deba8dd72518ecb837c90dd6e839d2b8b811d",
+    "sources/tps62135.txt": "3bbd5d7a87fc42070c93ad1f329ec3d67cfd89ea4c9edbd194f06dcd974b4ba5",
+    "sources/xal-layout.png": "fd12231a2c42970418712bd3134a9a4c999c6df4872943e6c10a52aec9a29105",
+    "sources/xal4000.pdf": "b26cf975bd56a807173b05665bddd49ed49323400330eb8f6fa63e24ff6d7d15",
+    "sources/xal4000.txt": "ca14a699be1313488b50d8ababc8c377d4262f4e3129d62bde745810b5ae263d",
+    "sources.json": "83dd2ac14f042e40adc9f96bb3f203d62c74953bcce5d4f15387d7afda346045",
+    "sym-lib-table": "109a86126425701d7d61a0b00f9f7a62f5d1215b7618d0f6316a491383812443",
+    "validate.sh": "6ddcd1f783969b3d7a80274135350b8007cfeb078178a5b3d2aed154df5a6d37",
+    "validation.log": "28c6d8bb2595c4f6a4ba830bf62b4d868763265563c89d24dc0c50384ce9e997",
+    "verify-board.py": "994e0ce31a3b85688cf3ec71a49cd61f75fd3cfa158769dac656ddeabf33244a",
+    "verify.py": "b55851d5d4cb48383c21790ffc7f26fa63a1686696cade046cdfeeb46be95ab4"
+  },
+  "modified_existing_task_inputs": false,
+  "hardware_measurements": false,
+  "firmware_work": false,
+  "git_publication": false,
+  "manufacturing_release": false
+}

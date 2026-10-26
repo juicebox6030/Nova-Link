@@ -1,0 +1,12 @@
+{
+  "nominal_parallel_ohm": 120,
+  "minimum_each_ohm_at_conservative85C_corner": 236.04000000000002,
+  "minimum_parallel_ohm": 118.02000000000001,
+  "current_at6V_A": 0.05083884087442806,
+  "each_power_at6V_W": 0.1525165226232842,
+  "each_power_at5V_W": 0.10591425182172512,
+  "allowed_each_W_at85C": 0.20588235294117646,
+  "switch_contact_rating_A_at6V": 0.3,
+  "normal_operation_only_no_fault_rating": true,
+  "assembly_default": "OFF position1; manual latched state retained without power"
+}

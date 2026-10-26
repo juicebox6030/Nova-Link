@@ -1,0 +1,1 @@
+PCM candidate is derived from the KiCad Libraries project SW_SPDT_PCM12 footprint, source URL in DESIGN.md, under KiCad library CC-BY-SA4.0 with library exception: https://www.kicad.org/libraries/license/ . Attribution: KiCad Libraries contributors. Other footprints are original dimension transcriptions from cited manufacturer drawings; no manufacturer endorsement.

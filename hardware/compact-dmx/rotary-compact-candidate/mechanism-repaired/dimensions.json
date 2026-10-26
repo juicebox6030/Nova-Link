@@ -1,0 +1,108 @@
+{
+  "core_OD_mm": 48,
+  "core_length_mm": 142,
+  "collar_OD_mm": 66,
+  "locked_x_mm": [
+    31,
+    98.8
+  ],
+  "locked_span_mm": 67.8,
+  "released_x_mm": [
+    26.8,
+    98.8
+  ],
+  "released_span_mm": 72,
+  "static_stack": {
+    "adhesive_mm": 0.05,
+    "stiffener_mm": 0.2,
+    "taper_radians": 0.08,
+    "fixed_taper_arc_approx_mm": 2,
+    "moving_taper_arc_approx_mm": 2.44,
+    "fixed_min_unpadded_gap_mm": 0.05567665765816798,
+    "moving_min_unpadded_gap_mm": 0.055676459100379105,
+    "ear_pads": "exact fitted compliant solids fill gap outside active width; no adhesive overlap hidden"
+  },
+  "clearances_mm": {
+    "backing_to_core": 0.1,
+    "fixed_screw_tip_to_core": 0.2,
+    "bearing_radial": 0.15,
+    "lock_nose_to_rotating_bearing": 0.2,
+    "index_hole_to_pin_radial": 0.1,
+    "pin_tip_released_to_index": 2.9,
+    "pin_tip_locked_to_hole_bottom": 0.4,
+    "rear_stop_to_board": 0.3,
+    "active_to_clamp_head_axial": 0.35,
+    "frame_driver_radial": 0.35,
+    "moving_ear_driver_radial": 0.1,
+    "spring_solid_margin": 0.2
+  },
+  "power_placeholder": {
+    "board_mm": [
+      25,
+      18,
+      1
+    ],
+    "board_x_mm": [
+      73.8,
+      98.8
+    ],
+    "board_Y_mm": [
+      25.1,
+      26.1
+    ],
+    "tangential_Z_mm": [
+      -9,
+      9
+    ],
+    "maximum_height_mm": 3.46,
+    "assembly_height_allowance_mm": 0.15,
+    "reserved_top_Y_mm": 29.71,
+    "reserved_outer_corner_radius_mm": 31.04326174872737,
+    "shell_inner_radius_mm": 32,
+    "radial_margin_mm": 0.956738251272629,
+    "connector": "USB4105-GF-A",
+    "body_max_mm": [
+      7.65,
+      9.09,
+      3.46
+    ],
+    "stake_below_board_max_mm": 0.2,
+    "actual_source_layout_integrated": false,
+    "port_requirement": "mouth at axial+X board end; source-axial-routing pending, not read"
+  },
+  "spring": {
+    "engineering_G_MPa": 77000,
+    "wire_mm": 0.2,
+    "mean_coil_diameter_mm": 3,
+    "active_turns": 5,
+    "total_turns": 7,
+    "calculated_rate_N_mm": 0.11407407407407409,
+    "target_rate_N_mm": 0.114,
+    "free_length_mm": 7,
+    "locked_length_mm": 5.8,
+    "released_length_mm": 1.6,
+    "solid_length_mm": 1.4,
+    "nominal_preload_N": 0.1368,
+    "nominal_release_force_N": 0.6156,
+    "rate_tolerance_assumed_fraction": 0.15,
+    "minimum_return_force_conditional_N": 0.10174500000000007,
+    "friction_target_max_N": 0.08,
+    "qualification": "Engineering spring envelope, no sourced spring MPN or rated life/temperature claim"
+  },
+  "tolerance_allocations_mm": {
+    "bearing_remaining_after_.03_plus_.03_plus_.05_runout": 0.04,
+    "backing_core_remaining_after_.02_plus_.02_plus_.02": 0.04,
+    "stop_board_remaining_after_.05_plus_.05_plus_.05": 0.15,
+    "nose_bearing_remaining_after_.03_plus_.03_plus_.05": 0.09,
+    "stiffener_gap_remaining_after_.01_backing_plus_.01_layer_plus_.01_adhesive": 0.025676459100379107,
+    "spring_solid_margin_after_.035_solid_plus_.10_length": 0.065
+  },
+  "lock_load_target_only": {
+    "torque_Nm": 0.5,
+    "force_N": 17.543859649122805,
+    "pin_shear_MPa": 5.584383968136678,
+    "ring_bearing_MPa": 5.847953216374268,
+    "pin_bending_MPa": 37.97381098332941,
+    "rated": false
+  }
+}

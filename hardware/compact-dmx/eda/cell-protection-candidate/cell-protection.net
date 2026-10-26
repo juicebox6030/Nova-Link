@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/cell-protection.kicad_sch</source>
+    <date>2026-10-23T11:30:21</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>NOVA 25F cell OVP + cell-local fuse prototype</title>
+        <company/>
+        <rev>CP-1</rev>
+        <date/>
+        <source>cell-protection.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C101">
+      <value>GRM155R71E104KE14D 100nF</value>
+      <footprint>CP:C0402</footprint>
+      <fields>
+        <field name="Role">U101 local bypass</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="C" description=""/>
+      <property name="Role" value="U101 local bypass"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>93d918dd-3774-53c1-b07b-b250aa5dde3d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C102">
+      <value>GRM155R71E104KE14D 100nF</value>
+      <footprint>CP:C0402</footprint>
+      <fields>
+        <field name="Role">U102 local bypass</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="C" description=""/>
+      <property name="Role" value="U102 local bypass"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ef8116dc-7b0e-5208-ade5-d2884356a1d9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C103">
+      <value>GRM155R61C105KA12D 1uF</value>
+      <footprint>CP:C0402</footprint>
+      <fields>
+        <field name="Role">U103 local input</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="C" description=""/>
+      <property name="Role" value="U103 local input"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b83ffd6c-e69f-5703-8bdf-9be2c3440fa7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C104">
+      <value>GRM155R61C105KA12D 1uF</value>
+      <footprint>CP:C0402</footprint>
+      <fields>
+        <field name="Role">U103 local output</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="C" description=""/>
+      <property name="Role" value="U103 local output"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0be638e1-75e4-5b58-b8f9-49ee598f3518</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C201">
+      <value>GRM155R61C105KA12D 1uF</value>
+      <footprint>CP:C0402</footprint>
+      <fields>
+        <field name="Role">BQ input bypass</field>
+        <field name="Scope">existing_context</field>
+        <field name="Footprint">CP:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="C" description=""/>
+      <property name="Role" value="BQ input bypass"/>
+      <property name="Scope" value="existing_context"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3d7b47ef-9e83-5a07-8f9c-7ba8bc40bf5b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C202">
+      <value>GRM155R61C105KA12D 1uF</value>
+      <footprint>CP:C0402</footprint>
+      <fields>
+        <field name="Role">BQ local1uF output filter; fuse separates cell and adds lead inductance</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="C" description=""/>
+      <property name="Role" value="BQ local1uF output filter; fuse separates cell and adds lead inductance"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83b32e49-eeea-5ada-b964-438e2f773bc3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C203">
+      <value>GRM155R71E104KE14D 100nF</value>
+      <footprint>CP:C0402</footprint>
+      <fields>
+        <field name="Role">Existing ISET filter</field>
+        <field name="Scope">existing_context</field>
+        <field name="Footprint">CP:C0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="C" description=""/>
+      <property name="Role" value="Existing ISET filter"/>
+      <property name="Scope" value="existing_context"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e5b9417d-12aa-53c6-9e02-4692a8e09a74</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F101">
+      <value>045101.5MRL 1.5A non-resettable</value>
+      <footprint>CP:Fuse451</footprint>
+      <fields>
+        <field name="Role">FIRST cell positive element before charger/boost branch split</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:Fuse451</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="F" description=""/>
+      <property name="Role" value="FIRST cell positive element before charger/boost branch split"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>edc11675-388a-5a40-b8d5-1a74292e566d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R101">
+      <value>TNPW040256K5BYED 56500ohm</value>
+      <footprint>CP:R0402</footprint>
+      <fields>
+        <field name="Role">OV top0.1%10ppm</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="R" description=""/>
+      <property name="Role" value="OV top0.1%10ppm"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7d65d682-9ae8-5b10-8d91-9927bc3a5127</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R102">
+      <value>TNPW040210K0BYED 10000ohm</value>
+      <footprint>CP:R0402</footprint>
+      <fields>
+        <field name="Role">OV bottom0.1%10ppm</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="R" description=""/>
+      <property name="Role" value="OV bottom0.1%10ppm"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46d17dd3-418f-57a0-94a8-88d0cda89a25</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R103">
+      <value>TNPW040282K0BYED 82000ohm</value>
+      <footprint>CP:R0402</footprint>
+      <fields>
+        <field name="Role">Hardware permit pullup</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="R" description=""/>
+      <property name="Role" value="Hardware permit pullup"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c788dae7-e203-5477-9e16-701a790f7de8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R104">
+      <value>TNPW040210K0BYED 10000ohm</value>
+      <footprint>CP:R0402</footprint>
+      <fields>
+        <field name="Role">ON low-state attenuation</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="R" description=""/>
+      <property name="Role" value="ON low-state attenuation"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>71b1a450-48d9-5f8e-884f-19dd26ba901c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R105">
+      <value>TNPW040256K0BYED 56000ohm</value>
+      <footprint>CP:R0402</footprint>
+      <fields>
+        <field name="Role">ON default pulldown</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="R" description=""/>
+      <property name="Role" value="ON default pulldown"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7557577e-6698-55da-a663-e269d369b25c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R201">
+      <value>TNPW040222K2BYED 22200ohm</value>
+      <footprint>CP:R0402</footprint>
+      <fields>
+        <field name="Role">BQ feedback top changes22.5k to22.2k,0.1%10ppm</field>
+        <field name="Scope">tuned_existing</field>
+        <field name="Footprint">CP:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="R" description=""/>
+      <property name="Role" value="BQ feedback top changes22.5k to22.2k,0.1%10ppm"/>
+      <property name="Scope" value="tuned_existing"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5b71965f-3ad7-5049-9688-1fda0029fb29</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R202">
+      <value>TNPW040210K0BYED 10000ohm</value>
+      <footprint>CP:R0402</footprint>
+      <fields>
+        <field name="Role">BQ feedback bottom remains10k, tighten10ppm</field>
+        <field name="Scope">tuned_existing</field>
+        <field name="Footprint">CP:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="R" description=""/>
+      <property name="Role" value="BQ feedback bottom remains10k, tighten10ppm"/>
+      <property name="Scope" value="tuned_existing"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d3e1c3a0-be48-5374-a51e-588bd742d1d5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R203">
+      <value>TNPW040211K9BEED 11900ohm</value>
+      <footprint>CP:R0402</footprint>
+      <fields>
+        <field name="Role">Existing25mA nominal charge</field>
+        <field name="Scope">existing_context</field>
+        <field name="Footprint">CP:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="R" description=""/>
+      <property name="Role" value="Existing25mA nominal charge"/>
+      <property name="Scope" value="existing_context"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b9bc9716-8197-5760-aa23-19c43ea435f8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R204">
+      <value>TNPW0402100RBEED 100ohm</value>
+      <footprint>CP:R0402</footprint>
+      <fields>
+        <field name="Role">Existing ISET filter</field>
+        <field name="Scope">existing_context</field>
+        <field name="Footprint">CP:R0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="R" description=""/>
+      <property name="Role" value="Existing ISET filter"/>
+      <property name="Scope" value="existing_context"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6480e572-c970-553a-8b5b-991328332fce</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U101">
+      <value>TPS3700DDCR</value>
+      <footprint>CP:DDC6</footprint>
+      <fields>
+        <field name="Role">Independent cell overvoltage</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:DDC6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="TPS3700" description=""/>
+      <property name="Role" value="Independent cell overvoltage"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a1d4ddb-11e9-5f76-ad4a-e091c1b7d1fc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U102">
+      <value>TPS3808G33DBVR</value>
+      <footprint>CP:DBV6</footprint>
+      <fields>
+        <field name="Role">Independent monitor-startup inhibit, CT open12..28ms</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:DBV6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="TPS3808" description=""/>
+      <property name="Role" value="Independent monitor-startup inhibit, CT open12..28ms"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>587483fc-1d74-53a5-bc39-62b3be8687b5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U103">
+      <value>TPS22963CYZPR</value>
+      <footprint>CP:YZP6</footprint>
+      <fields>
+        <field name="Role">Charger input disconnect; no quick output discharge</field>
+        <field name="Scope">added</field>
+        <field name="Footprint">CP:YZP6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="TPS22963C" description=""/>
+      <property name="Role" value="Charger input disconnect; no quick output discharge"/>
+      <property name="Scope" value="added"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>af92d69f-7044-505e-9a70-b800ac803120</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A1"/>
+            <pin num="B1"/>
+            <pin num="A2"/>
+            <pin num="B2"/>
+            <pin num="C1"/>
+            <pin num="C2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U104">
+      <value>BQ25173DSGR</value>
+      <footprint>CP:DSG8</footprint>
+      <fields>
+        <field name="Role">Existing charger, no main path change</field>
+        <field name="Scope">existing_context</field>
+        <field name="Footprint">CP:DSG8</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="BQ25173" description=""/>
+      <property name="Role" value="Existing charger, no main path change"/>
+      <property name="Scope" value="existing_context"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f3b50f42-44b5-5fb0-a6e7-2059e237587b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="X1">
+      <value>EXISTING source/control boundary, no purchased connector</value>
+      <fields>
+        <field name="Role"/>
+        <field name="Scope">boundary</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="SOURCE_BOUNDARY" description=""/>
+      <property name="Role" value=""/>
+      <property name="Scope" value="boundary"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>31c7e70b-bf7e-53a8-b4c8-85f014f6d581</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="X2">
+      <value>Eaton HV1625-2R7256-R 25F, actual cell assembly owned by Astra</value>
+      <fields>
+        <field name="Role"/>
+        <field name="Scope">boundary</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="CELL_BOUNDARY" description=""/>
+      <property name="Role" value=""/>
+      <property name="Scope" value="boundary"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6d13f634-0c83-5aed-b48f-6784cc019a29</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="X3">
+      <value>Existing cap-only boost/UVLO/arm boundary</value>
+      <fields>
+        <field name="Role"/>
+        <field name="Scope">boundary</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CP" part="BOOST_BOUNDARY" description=""/>
+      <property name="Role" value=""/>
+      <property name="Scope" value="boundary"/>
+      <property name="Sheetname" value="cell-protection"/>
+      <property name="Sheetfile" value="cell-protection.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d13fbff2-97c2-576a-b966-6c27edebdb97</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="CP" part="BOOST_BOUNDARY">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BOOST_BOUNDARY</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="EXISTING_CAP_POS_BOOST_AND_SENSE" type="passive"/>
+        <pin num="2" name="GND_USB" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CP" part="BQ25173">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BQ25173</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="ISET" type="input"/>
+        <pin num="3" name="CE_DISABLE" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="STAT_N" type="open_collector"/>
+        <pin num="6" name="PG_N" type="open_collector"/>
+        <pin num="7" name="FB" type="input"/>
+        <pin num="8" name="OUT" type="power_out"/>
+        <pin num="9" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="CP" part="C">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CP" part="CELL_BOUNDARY">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CELL_BOUNDARY</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="25F_CELL_POSITIVE_TAB" type="passive"/>
+        <pin num="2" name="25F_CELL_NEGATIVE_TAB" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CP" part="F">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">F</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CP" part="R">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CP" part="SOURCE_BOUNDARY">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SOURCE_BOUNDARY</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="LIMITED_5V_FROM_EXISTING_EFUSE" type="passive"/>
+        <pin num="2" name="GND_USB" type="passive"/>
+        <pin num="3" name="CHARGE_DISABLE_FROM_EXISTING_LOGIC" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="CP" part="TPS22963C">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS22963C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="A1" name="VOUT" type="power_out"/>
+        <pin num="A2" name="VIN" type="power_in"/>
+        <pin num="B1" name="VOUT" type="passive"/>
+        <pin num="B2" name="VIN" type="passive"/>
+        <pin num="C1" name="GND" type="power_in"/>
+        <pin num="C2" name="ON" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="CP" part="TPS3700">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3700</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUTA" type="open_collector"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="INA_PLUS" type="input"/>
+        <pin num="4" name="INB_MINUS" type="input"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="OUTB" type="open_collector"/>
+      </pins>
+    </libpart>
+    <libpart lib="CP" part="TPS3808">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3808</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="RESET_N" type="open_collector"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="MR_N" type="input"/>
+        <pin num="4" name="CT" type="input"/>
+        <pin num="5" name="SENSE" type="input"/>
+        <pin num="6" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="CP">
+      <uri>${KIPRJMOD}/cell-protection.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/CAP_POS" class="Default">
+      <node ref="C202" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="F101" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R201" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U104" pin="8" pinfunction="OUT_8" pintype="power_out"/>
+      <node ref="X3" pin="1" pinfunction="EXISTING_CAP_POS_BOOST_AND_SENSE_1" pintype="passive"/>
+    </net>
+    <net code="2" name="/CELL_OV_SENSE" class="Default">
+      <node ref="R101" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R102" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="4" pinfunction="INB_MINUS_4" pintype="input"/>
+    </net>
+    <net code="3" name="/CELL_TAB_POS" class="Default">
+      <node ref="F101" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R101" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="X2" pin="1" pinfunction="25F_CELL_POSITIVE_TAB_1" pintype="passive"/>
+    </net>
+    <net code="4" name="/CHARGER_IN_PROTECTED" class="Default">
+      <node ref="C104" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C201" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U103" pin="A1" pinfunction="VOUT_A1" pintype="power_out"/>
+      <node ref="U103" pin="B1" pinfunction="VOUT_B1" pintype="passive"/>
+      <node ref="U104" pin="1" pinfunction="IN_1" pintype="power_in"/>
+    </net>
+    <net code="5" name="/CHARGER_PERMIT_OD" class="Default">
+      <node ref="R103" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R104" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="6" pinfunction="OUTB_6" pintype="open_collector"/>
+      <node ref="U102" pin="1" pinfunction="RESET_N_1" pintype="open_collector"/>
+    </net>
+    <net code="6" name="/CHARGER_SWITCH_ON" class="Default">
+      <node ref="R104" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R105" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U103" pin="C2" pinfunction="ON_C2" pintype="input"/>
+    </net>
+    <net code="7" name="/CHARGE_DISABLE" class="Default">
+      <node ref="U104" pin="3" pinfunction="CE_DISABLE_3" pintype="input"/>
+      <node ref="X1" pin="3" pinfunction="CHARGE_DISABLE_FROM_EXISTING_LOGIC_3" pintype="output"/>
+    </net>
+    <net code="8" name="/GND_USB" class="Default">
+      <node ref="C101" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C102" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C103" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C104" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C201" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C202" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C203" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R102" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R105" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R202" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R203" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U101" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U101" pin="3" pinfunction="INA_PLUS_3" pintype="input"/>
+      <node ref="U102" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U103" pin="C1" pinfunction="GND_C1" pintype="power_in"/>
+      <node ref="U104" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U104" pin="9" pinfunction="EP_GND_9" pintype="power_in"/>
+      <node ref="X1" pin="2" pinfunction="GND_USB_2" pintype="passive"/>
+      <node ref="X2" pin="2" pinfunction="25F_CELL_NEGATIVE_TAB_2" pintype="passive"/>
+      <node ref="X3" pin="2" pinfunction="GND_USB_2" pintype="passive"/>
+    </net>
+    <net code="9" name="/ICHG_FILTER" class="Default">
+      <node ref="C203" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R203" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R204" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="10" name="/ICHG_PIN" class="Default">
+      <node ref="R204" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U104" pin="2" pinfunction="ISET_2" pintype="input"/>
+    </net>
+    <net code="11" name="/LIMITED_5V" class="Default">
+      <node ref="C101" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C102" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C103" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R103" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="5" pinfunction="VDD_5" pintype="power_in"/>
+      <node ref="U102" pin="3" pinfunction="MR_N_3" pintype="input"/>
+      <node ref="U102" pin="5" pinfunction="SENSE_5" pintype="input"/>
+      <node ref="U102" pin="6" pinfunction="VDD_6" pintype="power_in"/>
+      <node ref="U103" pin="A2" pinfunction="VIN_A2" pintype="power_in"/>
+      <node ref="U103" pin="B2" pinfunction="VIN_B2" pintype="passive"/>
+      <node ref="X1" pin="1" pinfunction="LIMITED_5V_FROM_EXISTING_EFUSE_1" pintype="passive"/>
+    </net>
+    <net code="12" name="/VCHG_FB" class="Default">
+      <node ref="R201" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R202" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U104" pin="7" pinfunction="FB_7" pintype="input"/>
+    </net>
+    <net code="13" name="unconnected-(U101-OUTA-Pad1)" class="Default">
+      <node ref="U101" pin="1" pinfunction="OUTA_1" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="14" name="unconnected-(U102-CT-Pad4)" class="Default">
+      <node ref="U102" pin="4" pinfunction="CT_4" pintype="input+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(U104-PG_N-Pad6)" class="Default">
+      <node ref="U104" pin="6" pinfunction="PG_N_6" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(U104-STAT_N-Pad5)" class="Default">
+      <node ref="U104" pin="5" pinfunction="STAT_N_5" pintype="open_collector+no_connect"/>
+    </net>
+  </nets>
+</export>

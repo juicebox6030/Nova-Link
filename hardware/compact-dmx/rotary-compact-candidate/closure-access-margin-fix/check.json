@@ -1,0 +1,76 @@
+{
+  "status": "PASS targeted parent saved-BRep checks",
+  "source_native_sha256": "abb221e397e8d4dbbed7e471869c0534b8886d4ecc45839bf942977dd2eb2599",
+  "native_sha256": "066417cd8d07541535b009c4af07e440b843ecec828b333f04a5c6d5c6b4b79b",
+  "unchanged_other_BReps": 355,
+  "byte_identical_other_BReps": 344,
+  "all_placements_preserved_numeric_1e12": true,
+  "changed_upper_valid_connected_closed": true,
+  "changed_upper_added_volume_mm3": 0.0,
+  "removed_upper_volume_mm3": 0.3493879423767794,
+  "four_driver_checks": [
+    {
+      "tool": "ClosureTool_m110_32",
+      "CAF_R1_overlap_mm3": 0.0,
+      "CAF_R2_overlap_mm3": 0.0,
+      "minimum_tool_to_upper_distance_mm": 0.2499999670640641
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "CAF_R1_overlap_mm3": 0.0,
+      "CAF_R2_overlap_mm3": 0.0,
+      "minimum_tool_to_upper_distance_mm": 0.24999995163633462
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "CAF_R1_overlap_mm3": 0.0,
+      "CAF_R2_overlap_mm3": 0.0,
+      "minimum_tool_to_upper_distance_mm": 0.24999996114375522
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "CAF_R1_overlap_mm3": 0.0,
+      "CAF_R2_overlap_mm3": 0.0,
+      "minimum_tool_to_upper_distance_mm": 0.2499999746210726
+    }
+  ],
+  "four_bearing_checks": [
+    {
+      "xy": [
+        -110,
+        -32
+      ],
+      "before_area_mm2": 8.04247719318988,
+      "after_area_mm2": 8.04247719318988
+    },
+    {
+      "xy": [
+        -110,
+        32
+      ],
+      "before_area_mm2": 8.042477193189882,
+      "after_area_mm2": 8.042477193189882
+    },
+    {
+      "xy": [
+        -32,
+        -32
+      ],
+      "before_area_mm2": 8.042477193189876,
+      "after_area_mm2": 8.042477193189876
+    },
+    {
+      "xy": [
+        -32,
+        32
+      ],
+      "before_area_mm2": 8.042477193189876,
+      "after_area_mm2": 8.042477193189876
+    }
+  ],
+  "limits": [
+    "BReps imported directly from actual saved FCStd zip; no whole-native UI or STEP import repeated",
+    "Author full tool/lid/screw insertion pair receipts retained via hashes, not independently repeated",
+    "No strength, sealing, source-construction or electrical acceptance"
+  ]
+}

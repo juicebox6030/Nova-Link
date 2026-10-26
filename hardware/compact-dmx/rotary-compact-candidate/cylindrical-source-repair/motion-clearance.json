@@ -1,0 +1,1263 @@
+{
+  "stop_positions": [
+    {
+      "angle": -90,
+      "volume": 0.0
+    },
+    {
+      "angle": -89,
+      "volume": 0.0
+    },
+    {
+      "angle": -88,
+      "volume": 0.0
+    },
+    {
+      "angle": -87,
+      "volume": 0.0
+    },
+    {
+      "angle": -86,
+      "volume": 0.0
+    },
+    {
+      "angle": -85,
+      "volume": 0.0
+    },
+    {
+      "angle": -84,
+      "volume": 0.0
+    },
+    {
+      "angle": -83,
+      "volume": 0.0
+    },
+    {
+      "angle": -82,
+      "volume": 0.0
+    },
+    {
+      "angle": -81,
+      "volume": 0.0
+    },
+    {
+      "angle": -80,
+      "volume": 0.0
+    },
+    {
+      "angle": -79,
+      "volume": 0.0
+    },
+    {
+      "angle": -78,
+      "volume": 0.0
+    },
+    {
+      "angle": -77,
+      "volume": 0.0
+    },
+    {
+      "angle": -76,
+      "volume": 0.0
+    },
+    {
+      "angle": -75,
+      "volume": 0.0
+    },
+    {
+      "angle": -74,
+      "volume": 0.0
+    },
+    {
+      "angle": -73,
+      "volume": 0.0
+    },
+    {
+      "angle": -72,
+      "volume": 0.0
+    },
+    {
+      "angle": -71,
+      "volume": 0.0
+    },
+    {
+      "angle": -70,
+      "volume": 0.0
+    },
+    {
+      "angle": -69,
+      "volume": 0.0
+    },
+    {
+      "angle": -68,
+      "volume": 0.0
+    },
+    {
+      "angle": -67,
+      "volume": 0.0
+    },
+    {
+      "angle": -66,
+      "volume": 0.0
+    },
+    {
+      "angle": -65,
+      "volume": 0.0
+    },
+    {
+      "angle": -64,
+      "volume": 0.0
+    },
+    {
+      "angle": -63,
+      "volume": 0.0
+    },
+    {
+      "angle": -62,
+      "volume": 0.0
+    },
+    {
+      "angle": -61,
+      "volume": 0.0
+    },
+    {
+      "angle": -60,
+      "volume": 0.0
+    },
+    {
+      "angle": -59,
+      "volume": 0.0
+    },
+    {
+      "angle": -58,
+      "volume": 0.0
+    },
+    {
+      "angle": -57,
+      "volume": 0.0
+    },
+    {
+      "angle": -56,
+      "volume": 0.0
+    },
+    {
+      "angle": -55,
+      "volume": 0.0
+    },
+    {
+      "angle": -54,
+      "volume": 0.0
+    },
+    {
+      "angle": -53,
+      "volume": 0.0
+    },
+    {
+      "angle": -52,
+      "volume": 0.0
+    },
+    {
+      "angle": -51,
+      "volume": 0.0
+    },
+    {
+      "angle": -50,
+      "volume": 0.0
+    },
+    {
+      "angle": -49,
+      "volume": 0.0
+    },
+    {
+      "angle": -48,
+      "volume": 0.0
+    },
+    {
+      "angle": -47,
+      "volume": 0.0
+    },
+    {
+      "angle": -46,
+      "volume": 0.0
+    },
+    {
+      "angle": -45,
+      "volume": 0.0
+    },
+    {
+      "angle": -44,
+      "volume": 0.0
+    },
+    {
+      "angle": -43,
+      "volume": 0.0
+    },
+    {
+      "angle": -42,
+      "volume": 0.0
+    },
+    {
+      "angle": -41,
+      "volume": 0.0
+    },
+    {
+      "angle": -40,
+      "volume": 0.0
+    },
+    {
+      "angle": -39,
+      "volume": 0.0
+    },
+    {
+      "angle": -38,
+      "volume": 0.0
+    },
+    {
+      "angle": -37,
+      "volume": 0.0
+    },
+    {
+      "angle": -36,
+      "volume": 0.0
+    },
+    {
+      "angle": -35,
+      "volume": 0.0
+    },
+    {
+      "angle": -34,
+      "volume": 0.0
+    },
+    {
+      "angle": -33,
+      "volume": 0.0
+    },
+    {
+      "angle": -32,
+      "volume": 0.0
+    },
+    {
+      "angle": -31,
+      "volume": 0.0
+    },
+    {
+      "angle": -30,
+      "volume": 0.0
+    },
+    {
+      "angle": -29,
+      "volume": 0.0
+    },
+    {
+      "angle": -28,
+      "volume": 0.0
+    },
+    {
+      "angle": -27,
+      "volume": 0.0
+    },
+    {
+      "angle": -26,
+      "volume": 0.0
+    },
+    {
+      "angle": -25,
+      "volume": 0.0
+    },
+    {
+      "angle": -24,
+      "volume": 0.0
+    },
+    {
+      "angle": -23,
+      "volume": 0.0
+    },
+    {
+      "angle": -22,
+      "volume": 0.0
+    },
+    {
+      "angle": -21,
+      "volume": 0.0
+    },
+    {
+      "angle": -20,
+      "volume": 0.0
+    },
+    {
+      "angle": -19,
+      "volume": 0.0
+    },
+    {
+      "angle": -18,
+      "volume": 0.0
+    },
+    {
+      "angle": -17,
+      "volume": 0.0
+    },
+    {
+      "angle": -16,
+      "volume": 0.0
+    },
+    {
+      "angle": -15,
+      "volume": 0.0
+    },
+    {
+      "angle": -14,
+      "volume": 0.0
+    },
+    {
+      "angle": -13,
+      "volume": 0.0
+    },
+    {
+      "angle": -12,
+      "volume": 0.0
+    },
+    {
+      "angle": -11,
+      "volume": 0.0
+    },
+    {
+      "angle": -10,
+      "volume": 0.0
+    },
+    {
+      "angle": -9,
+      "volume": 0.0
+    },
+    {
+      "angle": -8,
+      "volume": 0.0
+    },
+    {
+      "angle": -7,
+      "volume": 0.0
+    },
+    {
+      "angle": -6,
+      "volume": 0.0
+    },
+    {
+      "angle": -5,
+      "volume": 0.0
+    },
+    {
+      "angle": -4,
+      "volume": 0.0
+    },
+    {
+      "angle": -3,
+      "volume": 0.0
+    },
+    {
+      "angle": -2,
+      "volume": 0.0
+    },
+    {
+      "angle": -1,
+      "volume": 0.0
+    },
+    {
+      "angle": 0,
+      "volume": 0.0
+    },
+    {
+      "angle": 1,
+      "volume": 0.0
+    },
+    {
+      "angle": 2,
+      "volume": 0.0
+    },
+    {
+      "angle": 3,
+      "volume": 0.0
+    },
+    {
+      "angle": 4,
+      "volume": 0.0
+    },
+    {
+      "angle": 5,
+      "volume": 0.0
+    },
+    {
+      "angle": 6,
+      "volume": 0.0
+    },
+    {
+      "angle": 7,
+      "volume": 0.0
+    },
+    {
+      "angle": 8,
+      "volume": 0.0
+    },
+    {
+      "angle": 9,
+      "volume": 0.0
+    },
+    {
+      "angle": 10,
+      "volume": 0.0
+    },
+    {
+      "angle": 11,
+      "volume": 0.0
+    },
+    {
+      "angle": 12,
+      "volume": 0.0
+    },
+    {
+      "angle": 13,
+      "volume": 0.0
+    },
+    {
+      "angle": 14,
+      "volume": 0.0
+    },
+    {
+      "angle": 15,
+      "volume": 0.0
+    },
+    {
+      "angle": 16,
+      "volume": 0.0
+    },
+    {
+      "angle": 17,
+      "volume": 0.0
+    },
+    {
+      "angle": 18,
+      "volume": 0.0
+    },
+    {
+      "angle": 19,
+      "volume": 0.0
+    },
+    {
+      "angle": 20,
+      "volume": 0.0
+    },
+    {
+      "angle": 21,
+      "volume": 0.0
+    },
+    {
+      "angle": 22,
+      "volume": 0.0
+    },
+    {
+      "angle": 23,
+      "volume": 0.0
+    },
+    {
+      "angle": 24,
+      "volume": 0.0
+    },
+    {
+      "angle": 25,
+      "volume": 0.0
+    },
+    {
+      "angle": 26,
+      "volume": 0.0
+    },
+    {
+      "angle": 27,
+      "volume": 0.0
+    },
+    {
+      "angle": 28,
+      "volume": 0.0
+    },
+    {
+      "angle": 29,
+      "volume": 0.0
+    },
+    {
+      "angle": 30,
+      "volume": 0.0
+    },
+    {
+      "angle": 31,
+      "volume": 0.0
+    },
+    {
+      "angle": 32,
+      "volume": 0.0
+    },
+    {
+      "angle": 33,
+      "volume": 0.0
+    },
+    {
+      "angle": 34,
+      "volume": 0.0
+    },
+    {
+      "angle": 35,
+      "volume": 0.0
+    },
+    {
+      "angle": 36,
+      "volume": 0.0
+    },
+    {
+      "angle": 37,
+      "volume": 0.0
+    },
+    {
+      "angle": 38,
+      "volume": 0.0
+    },
+    {
+      "angle": 39,
+      "volume": 0.0
+    },
+    {
+      "angle": 40,
+      "volume": 0.0
+    },
+    {
+      "angle": 41,
+      "volume": 0.0
+    },
+    {
+      "angle": 42,
+      "volume": 0.0
+    },
+    {
+      "angle": 43,
+      "volume": 0.0
+    },
+    {
+      "angle": 44,
+      "volume": 0.0
+    },
+    {
+      "angle": 45,
+      "volume": 0.0
+    },
+    {
+      "angle": 46,
+      "volume": 0.0
+    },
+    {
+      "angle": 47,
+      "volume": 0.0
+    },
+    {
+      "angle": 48,
+      "volume": 0.0
+    },
+    {
+      "angle": 49,
+      "volume": 0.0
+    },
+    {
+      "angle": 50,
+      "volume": 0.0
+    },
+    {
+      "angle": 51,
+      "volume": 0.0
+    },
+    {
+      "angle": 52,
+      "volume": 0.0
+    },
+    {
+      "angle": 53,
+      "volume": 0.0
+    },
+    {
+      "angle": 54,
+      "volume": 0.0
+    },
+    {
+      "angle": 55,
+      "volume": 0.0
+    },
+    {
+      "angle": 56,
+      "volume": 0.0
+    },
+    {
+      "angle": 57,
+      "volume": 0.0
+    },
+    {
+      "angle": 58,
+      "volume": 0.0
+    },
+    {
+      "angle": 59,
+      "volume": 0.0
+    },
+    {
+      "angle": 60,
+      "volume": 0.0
+    },
+    {
+      "angle": 61,
+      "volume": 0.0
+    },
+    {
+      "angle": 62,
+      "volume": 0.0
+    },
+    {
+      "angle": 63,
+      "volume": 0.0
+    },
+    {
+      "angle": 64,
+      "volume": 0.0
+    },
+    {
+      "angle": 65,
+      "volume": 0.0
+    },
+    {
+      "angle": 66,
+      "volume": 0.0
+    },
+    {
+      "angle": 67,
+      "volume": 0.0
+    },
+    {
+      "angle": 68,
+      "volume": 0.0
+    },
+    {
+      "angle": 69,
+      "volume": 0.0
+    },
+    {
+      "angle": 70,
+      "volume": 0.0
+    },
+    {
+      "angle": 71,
+      "volume": 0.0
+    },
+    {
+      "angle": 72,
+      "volume": 0.0
+    },
+    {
+      "angle": 73,
+      "volume": 0.0
+    },
+    {
+      "angle": 74,
+      "volume": 0.0
+    },
+    {
+      "angle": 75,
+      "volume": 0.0
+    },
+    {
+      "angle": 76,
+      "volume": 0.0
+    },
+    {
+      "angle": 77,
+      "volume": 0.0
+    },
+    {
+      "angle": 78,
+      "volume": 0.0
+    },
+    {
+      "angle": 79,
+      "volume": 0.0
+    },
+    {
+      "angle": 80,
+      "volume": 0.0
+    },
+    {
+      "angle": 81,
+      "volume": 0.0
+    },
+    {
+      "angle": 82,
+      "volume": 0.0
+    },
+    {
+      "angle": 83,
+      "volume": 0.0
+    },
+    {
+      "angle": 84,
+      "volume": 0.0
+    },
+    {
+      "angle": 85,
+      "volume": 0.0
+    },
+    {
+      "angle": 86,
+      "volume": 0.0
+    },
+    {
+      "angle": 87,
+      "volume": 0.0
+    },
+    {
+      "angle": 88,
+      "volume": 0.0
+    },
+    {
+      "angle": 89,
+      "volume": 0.0
+    },
+    {
+      "angle": 90,
+      "volume": 0.0
+    }
+  ],
+  "beyond_stop_collision_mm3": {
+    "-90.5": 0.22479445602699874,
+    "90.5": 0.22479445602699927
+  },
+  "lock_positions": [
+    {
+      "angle": -90,
+      "volumes": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angle": -75,
+      "volumes": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angle": -60,
+      "volumes": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angle": -45,
+      "volumes": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angle": -30,
+      "volumes": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angle": -15,
+      "volumes": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angle": 0,
+      "volumes": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angle": 15,
+      "volumes": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angle": 30,
+      "volumes": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angle": 45,
+      "volumes": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angle": 60,
+      "volumes": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angle": 75,
+      "volumes": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "angle": 90,
+      "volumes": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "released_pin_new_part_pairs": [
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "IRM20_12_maxbody",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "Pin_L",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "Pin_N",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "Pin_LVplus",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "Pin_LVminus",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "ClosureScrew_m110_m32",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "ClosureScrew_m110_32",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "ClosureScrew_m32_m32",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "ClosureScrew_m32_32",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "LowerShellPosts",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "UpperShellRetention",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "RetainedCarrier",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "CarrierScrew0",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "CarrierScrew1",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "CarrierScrew2",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "CarrierScrew3",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "SupportedFilm",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "Neck",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "TrunkL",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "TrunkN",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "TrunkPE",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "NeutralBranch",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "LineToFuse",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "FuseToLinePin",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "SourceWireCopper1",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "SourceWireInsulation1_0",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "SourceWireCopper2",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexKnob",
+      "new_part": "SourceWireInsulation2_0",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "IRM20_12_maxbody",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "Pin_L",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "Pin_N",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "Pin_LVplus",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "Pin_LVminus",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "ClosureScrew_m110_m32",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "ClosureScrew_m110_32",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "ClosureScrew_m32_m32",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "ClosureScrew_m32_32",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "LowerShellPosts",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "UpperShellRetention",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "RetainedCarrier",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "CarrierScrew0",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "CarrierScrew1",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "CarrierScrew2",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "CarrierScrew3",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "SupportedFilm",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "Neck",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "TrunkL",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "TrunkN",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "TrunkPE",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "NeutralBranch",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "LineToFuse",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "FuseToLinePin",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "SourceWireCopper1",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "SourceWireInsulation1_0",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "SourceWireCopper2",
+      "volume": 0
+    },
+    {
+      "pin_part": "COL_IndexPin",
+      "new_part": "SourceWireInsulation2_0",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "IRM20_12_maxbody",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "Pin_L",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "Pin_N",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "Pin_LVplus",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "Pin_LVminus",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "ClosureScrew_m110_m32",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "ClosureScrew_m110_32",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "ClosureScrew_m32_m32",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "ClosureScrew_m32_32",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "LowerShellPosts",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "UpperShellRetention",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "RetainedCarrier",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "CarrierScrew0",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "CarrierScrew1",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "CarrierScrew2",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "CarrierScrew3",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "SupportedFilm",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "Neck",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "TrunkL",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "TrunkN",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "TrunkPE",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "NeutralBranch",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "LineToFuse",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "FuseToLinePin",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "SourceWireCopper1",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "SourceWireInsulation1_0",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "SourceWireCopper2",
+      "volume": 0
+    },
+    {
+      "pin_part": "ReleasedSpringEnvelope",
+      "new_part": "SourceWireInsulation2_0",
+      "volume": 0
+    }
+  ],
+  "released_pin_basis": "Stationary release parts independent of rotorangle; checked once and valid across181positions",
+  "corridor_boundary_distances": [
+    {
+      "lane": "L",
+      "minimum_BRep_boundary_distance_mm": 0.4876269892061108
+    },
+    {
+      "lane": "N",
+      "minimum_BRep_boundary_distance_mm": 1.495907925515413
+    },
+    {
+      "lane": "PE",
+      "minimum_BRep_boundary_distance_mm": 0.4876269892061069
+    }
+  ],
+  "new_rotor_motion_basis": "cad-check.json axial/R24 exactcontainment certificates, validallangles; existing activeflex family unchanged"
+}

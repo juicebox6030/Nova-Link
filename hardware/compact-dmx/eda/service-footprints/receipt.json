@@ -1,0 +1,68 @@
+{
+  "kicad": "10.0.7",
+  "parsed_footprints": 2,
+  "verified_electrical_pad_identifiers": 33,
+  "USB_contacts": 24,
+  "NOR_pads_including_local_EP9": 9,
+  "shell_physical_attachments": 6,
+  "shell_netlist_present": false,
+  "USB_data_pads_NC": true,
+  "CC_Rd": {
+    "CC1": {
+      "ref": "R_CC1",
+      "value": "5.1k 1%"
+    },
+    "CC2": {
+      "ref": "R_CC2",
+      "value": "5.1k 1%"
+    }
+  },
+  "NOR_EP9_ground_matches_recommendation": true,
+  "coordinate_checks_pass": true,
+  "source_netlist_sha256": "a33ad758114dc968396f22c2dd16fa2923f833b37bde1f5b35f5268f3c79b620",
+  "qualification": "UNPLACED_INTEGRATION_CANDIDATES_NOT_RELEASED",
+  "gates": [
+    "USB .8mm reference vs current1.0mm board; tolerance not supplied",
+    "USB shell circuit/ESD policy absent",
+    "USB paste corner shapes and mask/process allowances need manufacturing approval",
+    "NOR lands are engineering derivation from package, not manufacturer recommended lands",
+    "No product placement/height/access/DFM qualification"
+  ],
+  "source_evidence": {
+    "nor.pdf": {
+      "url": "https://www.renesas.com/us/en/document/dst/at25sf161b-datasheet",
+      "sha256": "f969d1a82b18de2fd33b01ef1b8b8a636a31b8c29a5094193d295fafe1fe581b",
+      "bytes": 1763634
+    },
+    "usb.pdf": {
+      "url": "https://www.hirose.com/en/product/p/CL0480-0304-0-00/documents?path=/api/v1/products/CL0480-0304-0-00/documents/drawing_2d/content?lang%3DEN",
+      "sha256": "ff0f719b5ac0eac943395fe345336757e6b74fb7059455cf2bb8ecaa0011611f",
+      "bytes": 312703
+    },
+    "usb-guide.pdf": {
+      "url": "https://www.hirose.com/en/product/p/CL0480-0304-0-00/documents?path=/api/v1/products/CL0480-0304-0-00/documents/items/31c81d98-a8f4-4aff-9d89-481804a310c7/content?lang%3DEN",
+      "sha256": "2e3bc8227b4c50255e13daeec3473593739c7acfb4fb3fbe66dc18a93f78efe4",
+      "bytes": 644943
+    }
+  },
+  "changed_paths": [
+    "hardware/compact-dmx/eda/service-footprints/README.md",
+    "hardware/compact-dmx/eda/service-footprints/Service.pretty/AT25SF161B_MHB_Derived.kicad_mod",
+    "hardware/compact-dmx/eda/service-footprints/Service.pretty/CX70M_24P1_IntegrationCandidate.kicad_mod",
+    "hardware/compact-dmx/eda/service-footprints/footprints.kicad_pcb",
+    "hardware/compact-dmx/eda/service-footprints/footprints.kicad_prl",
+    "hardware/compact-dmx/eda/service-footprints/footprints.pdf",
+    "hardware/compact-dmx/eda/service-footprints/footprints.svg",
+    "hardware/compact-dmx/eda/service-footprints/fp-lib-table",
+    "hardware/compact-dmx/eda/service-footprints/generate.py",
+    "hardware/compact-dmx/eda/service-footprints/sources/nor.pdf",
+    "hardware/compact-dmx/eda/service-footprints/sources/usb-guide.pdf",
+    "hardware/compact-dmx/eda/service-footprints/sources/usb-response",
+    "hardware/compact-dmx/eda/service-footprints/sources/usb.pdf",
+    "hardware/compact-dmx/eda/service-footprints/sources.json",
+    "hardware/compact-dmx/eda/service-footprints/validation.json",
+    "hardware/compact-dmx/eda/service-footprints/verify.py"
+  ],
+  "existing_37part_board_sha256": "fe577602e2891b7c78ec8fba5d71f8648076cadccff2774c96e2673c6fb15a2b",
+  "product_board_modified": false
+}

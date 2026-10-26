@@ -1,0 +1,212 @@
+{
+  "scope": "Startup proposal references only; original cached PDFs read, three new official PDFs locally cached. Shared manifest untouched. Empty page lists identify section-based citations; no guaranteed limits inferred from typical data.",
+  "sources": [
+    {
+      "part_family": "tps61094",
+      "path_relative_to_eda": "source-cache/tps61094.pdf",
+      "sha256": "a6f9aa662fe65a5f28d4a15ca35efe3e58fc3de25738ea9bdcba2aa10fd93b20",
+      "bytes": 4935827,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps61094.pdf",
+      "cached_document_header": "SLVSFH6C \u2013 JANUARY 2021 \u2013 REVISED DECEMBER 2021",
+      "printed_pages_consulted_for_key_claims": [
+        5,
+        6,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "evidence_use": "ISS minimum but no maximum; startup/EN-MODE behavior; discrete charge codes; recharge hysteresis",
+      "new_cache_this_task": false
+    },
+    {
+      "part_family": "tps2553",
+      "path_relative_to_eda": "source-cache/tps2553.pdf",
+      "sha256": "88e453700cea2b263cdb5b44fce1e883e0f6d3b975457f879ac1423eeea42071",
+      "bytes": 2091666,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+      "cached_document_header": "SLVS841F \u2013 NOVEMBER 2008 \u2013 REVISED AUGUST 2016",
+      "printed_pages_consulted_for_key_claims": [
+        4,
+        7,
+        13,
+        14,
+        15,
+        16
+      ],
+      "evidence_use": "Pinout; turn-on/Ron limits; DC ILIM equations and fault/reverse behavior; not a hot-plug peak bound",
+      "new_cache_this_task": false
+    },
+    {
+      "part_family": "tps2116",
+      "path_relative_to_eda": "source-cache/tps2116.pdf",
+      "sha256": "5babd88afb84e2e65c9c0da23b75f85758c0c730e34102a0fb746ac9573ed1d5",
+      "bytes": 2924080,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps2116.pdf",
+      "cached_document_header": "SLVSFG1A \u2013 JANUARY 2021 \u2013 REVISED MAY 2021",
+      "printed_pages_consulted_for_key_claims": [
+        3,
+        6,
+        7,
+        10,
+        11
+      ],
+      "evidence_use": "Pinout; Ron; manual mux truth table; softstart typical-only and collapse/switchover behavior",
+      "new_cache_this_task": false
+    },
+    {
+      "part_family": "tps62130",
+      "path_relative_to_eda": "source-cache/tps62130.pdf",
+      "sha256": "f9b1af285622c0cf1a5991f9641a6e64c5e6d899e52cc0b1632808742019579f",
+      "bytes": 2536822,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps62130.pdf",
+      "cached_document_header": "SLVSAG7F \u2013 NOVEMBER 2011 \u2013 REVISED NOVEMBER 2021",
+      "printed_pages_consulted_for_key_claims": [
+        7,
+        8,
+        9,
+        16
+      ],
+      "evidence_use": "TPS62132 prebiased startup support; SS current maximum and ramp equation; no input peak guarantee",
+      "new_cache_this_task": false
+    },
+    {
+      "part_family": "tps25947",
+      "path_relative_to_eda": "source-cache/tps25947.pdf",
+      "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4",
+      "bytes": 5316794,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+      "cached_document_header": "SLVSFC9C \u2013 OCTOBER 2020 \u2013 REVISED MAY 2026",
+      "printed_pages_consulted_for_key_claims": [],
+      "evidence_use": "TPS259474 reverse-blocking bypass, PG and dVdt; part selection and feature sections; not selected in capture",
+      "new_cache_this_task": false
+    },
+    {
+      "part_family": "tps3808",
+      "path_relative_to_eda": "power-service/source-cache/tps3808.pdf",
+      "sha256": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed",
+      "bytes": 2046179,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+      "cached_document_header": "SBVS050N \u2013 MAY 2004 \u2013 REVISED AUGUST 2026",
+      "printed_pages_consulted_for_key_claims": [],
+      "evidence_use": "TPS3808G01 pinout; CT-open 12..28ms delay; threshold; no max sense propagation",
+      "new_cache_this_task": false
+    },
+    {
+      "part_family": "tps3700",
+      "path_relative_to_eda": "power-service/source-cache/tps3700.pdf",
+      "sha256": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0",
+      "bytes": 682718,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+      "cached_document_header": "SBVS187G \u2013 FEBRUARY 2012 \u2013 REVISED FEBRUARY 2019",
+      "printed_pages_consulted_for_key_claims": [
+        4,
+        6,
+        10,
+        11
+      ],
+      "evidence_use": "Pinout; INA+ threshold/hysteresis/input-current bounds; INB opposite polarity",
+      "new_cache_this_task": false
+    },
+    {
+      "part_family": "tusb320lai",
+      "path_relative_to_eda": "source-cache/tusb320lai.pdf",
+      "sha256": "62f7b3f65338e25ebd6fd46ef04474ba806b06b1cc04bc0b3d7b8191b01ca87d",
+      "bytes": 1313743,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tusb320lai.pdf",
+      "cached_document_header": "SLLSEQ8D \u2013 OCTOBER 2015 \u2013 REVISED MAY 2017",
+      "printed_pages_consulted_for_key_claims": [
+        4,
+        5,
+        6,
+        7,
+        11,
+        12
+      ],
+      "evidence_use": "GPIO pinout/table3; Rd; VDD2.7..5V, <=25ms ramp; -40..85C; VBUS resistor855..920kohm; no active-Iq maximum",
+      "new_cache_this_task": false
+    },
+    {
+      "part_family": "tusb321ai",
+      "path_relative_to_eda": "source-cache/tusb321ai.pdf",
+      "sha256": "45ef0bd52c8e656a2ed297d5243007431518a5470668ef6ada883af37dee9aa8",
+      "bytes": 855642,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tusb321ai.pdf",
+      "cached_document_header": "SLLSER2A \u2013 OCTOBER 2015 \u2013 REVISED MAY 2017",
+      "printed_pages_consulted_for_key_claims": [],
+      "evidence_use": "Rejected CC detector: VDD minimum4.5V incompatible with4.4V source basis",
+      "new_cache_this_task": false
+    },
+    {
+      "part_family": "tps709",
+      "path_relative_to_eda": "source-cache/tps709.pdf",
+      "sha256": "8c14e3efae738a27b857b789aa87369de9037a8ef3616a9f71a423587cdc6949",
+      "bytes": 2271988,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps709.pdf",
+      "cached_document_header": "SBVS186H \u2013 MARCH 2012 \u2013 REVISED JULY 2021",
+      "printed_pages_consulted_for_key_claims": [],
+      "evidence_use": "TPS70933 input range/output accuracy and DBV package; source of independent CC3V3",
+      "new_cache_this_task": false
+    },
+    {
+      "part_family": "tps3839",
+      "path_relative_to_eda": "source-cache/tps3839.pdf",
+      "sha256": "a18940237afc63cf6d1a0bb5e1c8c0b2c3274e01c47fa5f27e470a005072621b",
+      "bytes": 948524,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps3839.pdf",
+      "cached_document_header": "SBVS193D \u2013 JUNE 2012 \u2013 REVISED JULY 2015",
+      "printed_pages_consulted_for_key_claims": [],
+      "evidence_use": "TPS3831K33 existing POR type reused as a candidate for independent CC supply",
+      "new_cache_this_task": false
+    },
+    {
+      "part_family": "bq25173",
+      "path_relative_to_eda": "power-service/startup-source-cache/bq25173.pdf",
+      "sha256": "75869a03b40472ff587ffa5223dc5e5314f3b76478c6582119cf5a204d6e777e",
+      "bytes": 2519667,
+      "source_url": "https://www.ti.com/lit/ds/symlink/bq25173.pdf",
+      "cached_document_header": "SLUSDY6 \u2013 NOVEMBER 2021",
+      "printed_pages_consulted_for_key_claims": [
+        1,
+        3,
+        5,
+        6,
+        10,
+        12,
+        13
+      ],
+      "evidence_use": "Pinout/low-activeCE; zero-volt charging; stage startup; KISET accuracy test conditions; FB/thermal/continuousCV",
+      "new_cache_this_task": true
+    },
+    {
+      "part_family": "tps61023",
+      "path_relative_to_eda": "power-service/startup-source-cache/tps61023.pdf",
+      "sha256": "f61135a93053e9e875a67ec9fbf51a3dda13194ae8d6e1fdd817af6e8590fae5",
+      "bytes": 2392725,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps61023.pdf",
+      "cached_document_header": "SLVSF14B \u2013 SEPTEMBER 2019 \u2013 REVISED AUGUST 2020",
+      "printed_pages_consulted_for_key_claims": [
+        1,
+        3,
+        4,
+        5,
+        9
+      ],
+      "evidence_use": "Pinout; startup1.8V, operating0.5V; valley-current test conditions; missing startup/PFM maximum bounds",
+      "new_cache_this_task": true
+    },
+    {
+      "part_family": "tps61099",
+      "path_relative_to_eda": "power-service/startup-source-cache/tps61099.pdf",
+      "sha256": "922c6396085dd53bc2e7531e90f1659b529bc7e648563a10ee260e8e28439581",
+      "bytes": 2928136,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps61099.pdf",
+      "cached_document_header": "SLVSD88M \u2013 JULY 2016 \u2013 REVISED AUGUST 2026",
+      "printed_pages_consulted_for_key_claims": [],
+      "evidence_use": "Rejected boost candidate within path2: 0.8A minimum peak cannot cover required0.816A average at1.7V before ripple",
+      "new_cache_this_task": true
+    }
+  ]
+}

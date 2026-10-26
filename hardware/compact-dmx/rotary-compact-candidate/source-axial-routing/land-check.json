@@ -1,0 +1,11 @@
+{
+  "status": "PASS independent literal primary-land geometry on savedboard",
+  "coordinate_dimension_checks": 57,
+  "USB_contacts": 16,
+  "USB_signal_solder_lands": 12,
+  "USB_shell_slots": 4,
+  "USB_NPTH": 2,
+  "inductor_inner_gap_mm": 2.37,
+  "RNM_stencil_and_mask_definition": "Prototype interpretation retained; not assemblyapproval",
+  "no_generator_import": true
+}

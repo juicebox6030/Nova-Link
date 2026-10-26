@@ -1,0 +1,179 @@
+{
+  "status": "CALCULATED_ASSUMPTIONS_NOT_HARDWARE_QUALIFICATION",
+  "architecture": "USB-C power-only PSD <=500mA design basis; one buffered domain; no USB data recovery",
+  "input": {
+    "limiter": "TPS2553DBVR",
+    "R_ILIM_kohm": 60.4,
+    "resistor_combined_fraction_allowance": 0.0035,
+    "limit_min_mA": 389.8002075527674,
+    "limit_max_mA": 488.20996219811474,
+    "switch_IQ_max_allowance_mA": 0.14,
+    "whole_VBUS_static_bound_mA": 488.3499621981147,
+    "USB_PSD_allowance_mA": 500,
+    "inrush_qualified": false,
+    "source_low_at_receptacle_V_assumed": 4.4,
+    "series_diode_drop_V_assumed": 0,
+    "reverse_barrier": "TPS2116DRLR channel1 only, channel2 grounded",
+    "reverse_barrier_Ron_ohm": 0.06,
+    "Ron_conditions": "TPS2116 table at VIN=3.3/5V, IOUT=200mA, -40..105C; load/board thermal qualification remains open",
+    "limiter_Ron_max_ohm": 0.135,
+    "normal_converter_input_V": 4.304799057371368,
+    "main_SYS_load_W_ASSUMED": 1.1,
+    "buck_efficiency_ASSUMED": 0.85,
+    "main_current_mA": 300.6220801044889,
+    "charge_input_current_mA_at_30mA_2p652V_80pct_eff": 23.10212362402973,
+    "auxiliary_allowance_mA": 2,
+    "total_required_mA": 325.7242037285186,
+    "margin_to_minimum_limit_mA": 64.0760038242488,
+    "load_measured": false,
+    "radio": "One CC1352R shared radio: 2.4GHz plus US915MHz; no independent simultaneous RF load assumed"
+  },
+  "charge": {
+    "nominal_mA": 25,
+    "tolerance_fraction": 0.2,
+    "min_mA": 20,
+    "max_mA": 30,
+    "ICHG_resistor_kohm": 9.53,
+    "VCHG_resistor_kohm": 9.53,
+    "nominal_target_V": 2.6,
+    "min_target_V": 2.548,
+    "max_target_V": 2.652,
+    "ideal_nominal_seconds": 1560.0,
+    "ideal_plus30pct_C_plus2pct_V_minus20pct_I_seconds": 2585.7000000000003,
+    "termination_tail_and_soft_start_add_time": true,
+    "datasheet_current_accuracy_conditions": "VIN=5V; SUP=0.8..4V. Off-condition charging requires measurement."
+  },
+  "cutoff": {
+    "comparator": "TLV3012BIDCKR",
+    "nominal_loaded_V": 1.4904,
+    "estimated_loaded_low_V": 1.4243815224775227,
+    "estimated_loaded_high_V": 1.5552627667667667,
+    "energy_floor_with_sag_transient_reserve_V": 1.7,
+    "latch_captured": true,
+    "POR_gated_RUN": true,
+    "rearm": "NORMAL_IN qualified by TPS3700 AND AON POR good; cap rebound alone cannot rearm",
+    "VBUS_nominal_V": 4.1240000000000006,
+    "VBUS_estimated_low_V": 3.962501528637892,
+    "VBUS_estimated_high_V": 4.193996800289137,
+    "VBUS_rising_envelope_V": [
+      4.05470704433296,
+      4.193996800289137
+    ],
+    "VBUS_falling_envelope_V": [
+      3.962501528637892,
+      4.152495204704591
+    ],
+    "VBUS_divider_combined_resistor_fraction": 0.0035,
+    "maximum_backup_voltage_for_false_rearm_check_V": 3.726
+  },
+  "source_mode_proof": {
+    "status": "STATIC_CORNERS_PASS_WITH_EXPLICIT_ENGINEERING_ALLOCATIONS; DYNAMIC_QUALIFICATION_OPEN",
+    "sense_node": "NORMAL_IN (TPS61094 VIN), after reverse barrier",
+    "OSEL_target_max_V": 3.672,
+    "boost_regulation_envelope_max_V": 3.726,
+    "VBYPASS_max_V": 0.15,
+    "conservative_bypass_entry_max_V": 3.876,
+    "specified_target_bypass_entry_max_V": 3.822,
+    "additional_sag_allocation_V": 0.05,
+    "lowest_qualified_input_after_sag_V": 3.9125015286378924,
+    "entry_margin_after_sag_V": 0.036501528637892466,
+    "source_to_highest_assert_margin_V": 0.11080225708223157,
+    "qualified_input_current_mA": 358.1832850053821,
+    "min_limiter_margin_at_qualified_input_mA": 31.616922547385286,
+    "bypass_Ron_ALLOCATION_ohm_NOT_DS_MAX": 0.3,
+    "minimum_qualified_backup_with_Ron_allocation_V": 3.8050465431362777,
+    "buck_input_required_ALLOCATION_V": 3.41,
+    "buck_headroom_normal_V": 0.3950465431362775,
+    "buck_headroom_boost_V": 0.11799999999999988,
+    "no_false_rearm_margin_V": 0.2365015286378922,
+    "no_slow_sense_filter": true,
+    "dynamic_status_is_commit_authority": false,
+    "propagation_delay_max_specified": false,
+    "arbitrary_source_steps_proven": false
+  },
+  "startup": {
+    "acceptance": "UNMET: empty-cap repeatable startup is not proven",
+    "TPS61094_ISS_min_mA_at_3p6V_VIN_1p8V_VOUT": 500,
+    "TPS61094_ISS_max_mA": null,
+    "TPS61094_ISS_over_all_startup_conditions_bounded": false,
+    "ISS_min_exceeds_limiter_max_mA": 11.790037801885262,
+    "output_precharge_effective_uF": 32,
+    "input_storage_and_filter_effective_uF": 11.1,
+    "guaranteed_max_precharge_time_s": null,
+    "converter_EN_and_buck_EN_share_RUN": true,
+    "new_barrier_softstart_fixes_output_precharge": false,
+    "needed_evidence": "Worst-case startup current or source-backed sequence redesign; waveform proof of single cold attach, no RUN cycling/sag, and USB inrush/load/temperature sweep. Eventual convergence does not pass."
+  },
+  "buffer": {
+    "cap_F": 15,
+    "effective_aged_F": 9.45,
+    "nominal_delivered_J_at_2p6V_1p5Vfloor": 27.060000000000002,
+    "nominal_seconds_at_0p8W": 33.825,
+    "nominal_after75mV_hysteresis_seconds_at_0p8W": 30.942187499999996,
+    "charge_termination_low_V": 2.548,
+    "charge_hysteresis_max_V": 0.1,
+    "minimum_full_charge_start_V_after_hysteresis": 2.448,
+    "aged_delivered_J_at_2p6V": 14.628600000000004,
+    "aged_delivered_J_at_low_charge_2p548V": 11.72822112,
+    "low_charge_energy_key_definition": "Legacy key retained for package reader: now subtracts maximum 100mV recharge hysteresis from 2.548V before integrating.",
+    "aged_low_charge_seconds_at_1p11W": 10.565964972972973,
+    "estimated_margin_over10s_seconds": 0.5659649729729725,
+    "max_total_W_for10s_with_all_assumptions": 1.172822112,
+    "minimum_combined_efficiency_for10s": 0.7571480712328181,
+    "efficiency_ASSUMED": 0.8,
+    "total_load_with_supervision_W_ASSUMED": 1.11,
+    "measured": false,
+    "runtime_guaranteed": false,
+    "whole_transfer_energy_guarantee": false
+  },
+  "states": [
+    {
+      "state": "No VBUS; cap valid; previously armed",
+      "RUN": 1,
+      "commit_permission": "NO; resident loader must defer commit",
+      "service": "RDM can operate while ride-through remains"
+    },
+    {
+      "state": "No VBUS; cap below loaded threshold",
+      "RUN": 0,
+      "commit_permission": "NO",
+      "service": "off; cutoff latch persists through cap rebound"
+    },
+    {
+      "state": "No VBUS; cap charged but never armed / AON lost",
+      "RUN": 0,
+      "commit_permission": "NO",
+      "service": "requires VBUS to start"
+    },
+    {
+      "state": "Default Type-C source; VBUS good; AON POR released",
+      "RUN": 1,
+      "commit_permission": "only future loader after stable VBUS_GOOD + BUCK_PG and integrity policy",
+      "service": "normal or resident RDM loader"
+    },
+    {
+      "state": "1.5A /3A advertised",
+      "RUN": 1,
+      "commit_permission": "same as default; no increased current drawn",
+      "service": "same circuit; no decoder required for increased draw"
+    },
+    {
+      "state": "Physical SERVICE held across RESET",
+      "RUN": "unchanged",
+      "commit_permission": "unchanged",
+      "service": "distinct GPIO to future resident loader; not ROM DIO3"
+    },
+    {
+      "state": "USB host suspended",
+      "RUN": "unchanged while valid VBUS supplied",
+      "commit_permission": "same voltage/integrity conditions",
+      "service": "PSD has no USB communication function; qualification pending"
+    },
+    {
+      "state": "AON brownout / power-on",
+      "RUN": 0,
+      "commit_permission": "NO",
+      "service": "POR holds off; stable VBUS can rearm after POR"
+    }
+  ]
+}

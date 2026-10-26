@@ -28,3 +28,6 @@ Thumbs.db
 # Python cache
 __pycache__/
 *.py[cod]
+hardware/fixture-fit/source-cache/
+.tools/
+*.kicad_prl

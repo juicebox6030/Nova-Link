@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900"><rect width="100%" height="100%" fill="white"/>
+<text x="30" y="32" fill="#17364b" font-family="sans-serif" font-size="22">SOURCE POD / Y-Z SECTION AT X-75</text>
+<text x="30" y="58" fill="#17364b" font-family="sans-serif" font-size="12">Equal scale7 drawing points/mm; hidden pin projection is a bounding reservation, not actual leads.</text>
+<rect x="70" y="110" width="574" height="434" fill="#b5c4ce" stroke="#49616d" stroke-width=".7"/>
+<rect x="91" y="131" width="532" height="392" fill="#ffffff" stroke="#49616d" stroke-width=".7"/>
+<rect x="105" y="145" width="364" height="308" fill="#fff0cc" stroke="#49616d" stroke-width=".7"/>
+<rect x="190.04999999999998" y="215" width="193.9" height="171.5" fill="#d5b16a" stroke="#49616d" stroke-width=".7"/>
+<rect x="190.04999999999998" y="386.5" width="193.9" height="31.5" fill="#eadcca" stroke="#49616d" stroke-width=".7"/>
+<rect x="175" y="393.5" width="224" height="11.200000000000001" fill="#72b29a" stroke="#49616d" stroke-width=".7"/>
+<rect x="101.5" y="456.5" width="371" height="1.75" fill="#9b6daf" stroke="#49616d" stroke-width=".7"/>
+<circle cx="511" cy="488" r="19.25" fill="#e0e8ed" stroke="#49616d"/>
+<circle cx="511" cy="488" r="15.75" fill="#93a8b8" stroke="#49616d"/>
+<circle cx="553" cy="488" r="19.25" fill="#e0e8ed" stroke="#49616d"/>
+<circle cx="553" cy="488" r="15.75" fill="#93a8b8" stroke="#49616d"/>
+<circle cx="595" cy="488" r="19.25" fill="#e0e8ed" stroke="#49616d"/>
+<circle cx="595" cy="488" r="15.75" fill="#93a8b8" stroke="#49616d"/>
+<text x="690" y="120" fill="#17364b" font-family="sans-serif" font-size="12">SOURCE REQUIREMENTS / CACHED PRIMARY</text>
+<text x="690" y="146" fill="#17364b" font-family="sans-serif" font-size="12">10mm around general unit;5mm bottom +Mylar.</text>
+<text x="690" y="172" fill="#17364b" font-family="sans-serif" font-size="12">Planning whole-carrier box81 x52 x44.</text>
+<text x="690" y="198" fill="#17364b" font-family="sans-serif" font-size="12">Maximum module52.9 x27.7 x24.5.</text>
+<text x="690" y="224" fill="#17364b" font-family="sans-serif" font-size="12">Maximum pin projection4.5 below body.</text>
+<text x="690" y="250" fill="#17364b" font-family="sans-serif" font-size="12">Actual pins/carrier/solder/retention NOT released.</text>
+<text x="690" y="276" fill="#17364b" font-family="sans-serif" font-size="12"></text>
+<text x="690" y="302" fill="#17364b" font-family="sans-serif" font-size="12">ENGINEERING ALLOCATIONS</text>
+<text x="690" y="328" fill="#17364b" font-family="sans-serif" font-size="12">+/-0.5 envelope beyond planning box.</text>
+<text x="690" y="354" fill="#17364b" font-family="sans-serif" font-size="12">Film0.25; chosen grade/retention unqualified.</text>
+<text x="690" y="380" fill="#17364b" font-family="sans-serif" font-size="12">Shell3mm nominal; material/thermal gates.</text>
+<text x="690" y="406" fill="#17364b" font-family="sans-serif" font-size="12">TrunkØ4.5, centrelineR12; +0.5 radial space.</text>
+<text x="690" y="432" fill="#17364b" font-family="sans-serif" font-size="12">Trunk below reservation, not through it.</text>
+<text x="690" y="458" fill="#17364b" font-family="sans-serif" font-size="12">Primarybranch R8 bend-space only; no fuseMPN.</text>
+<text x="60" y="600" fill="#17364b" font-family="sans-serif" font-size="12">Bottom reservation surfaceZ-20; maximum pin tipZ-15 -&gt;5mm. Film topZ-20.5 adds0.5 allocation.</text>
+<text x="60" y="626" fill="#17364b" font-family="sans-serif" font-size="12">Maximum body topZ14 -&gt; reserved topZ24:10mm. CarrierY±16 -&gt; reservationY±26:10mm.</text>
+<text x="60" y="652" fill="#17364b" font-family="sans-serif" font-size="12">L/N/PE axes atY32/38/44,Z-25 in pod; nominal upper wire surfaceZ-22.75 lies below reservation.</text>
+<text x="60" y="684" fill="#17364b" font-family="sans-serif" font-size="12">Support zones are outside the reservation. Their bridge/attachment to the carrier is NOT designed.</text>
+<text x="60" y="710" fill="#17364b" font-family="sans-serif" font-size="12">Primary interface stopsX-116.5 versus carrier edge-106:10.5mm construction gap explicitly open.</text>
+<text x="60" y="736" fill="#17364b" font-family="sans-serif" font-size="12">Secondary interface startsX-34.5 versus carrier edge-45:10.5mm construction gap explicitly open.</text>
+<text x="60" y="762" fill="#17364b" font-family="sans-serif" font-size="12">The terminal transitions cannot be treated as permission to fill the insulation space with trunk/joints.</text>
+<text x="60" y="804" fill="#17364b" font-family="sans-serif" font-size="12">Thermal, ventilation, adjacent fixture heat, film/safety construction and variant endcaps remain unqualified.</text>
+</svg>

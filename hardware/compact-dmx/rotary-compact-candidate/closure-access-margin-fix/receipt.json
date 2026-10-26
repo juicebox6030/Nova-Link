@@ -1,0 +1,62 @@
+{
+  "revision": "CAF-R2",
+  "date": "2026-10-24",
+  "author": "parent agent; targeted correction after Astra CAF-R1",
+  "repo_head": "b42c0e6284aac734fde851c69146abf73920f337",
+  "branch": "main",
+  "status": "targeted saved-geometry PASS; product HOLD",
+  "frozen_input_count": 77,
+  "source_package": "../closure-access-fix/",
+  "source_receipt_sha256": "b70050b2c840fc65894c2b8a8030de64fbb2b5927066380761b85e3b7fd38c4a",
+  "native_sha256": "066417cd8d07541535b009c4af07e440b843ecec828b333f04a5c6d5c6b4b79b",
+  "step_sha256": "2179b490fc0d72f33dbdccf7caf0724552e2df8b9810318f5860d0a5ccb1e320",
+  "commands_executed": [
+    "QT_QPA_PLATFORM=offscreen ALLOCATION_SCRIPT=build.py /home/juicebox/.local/bin/freecadcmd run.py",
+    "Parent .tools/checks/closure-access-parent/verify_caf_r2.py (same saved-geometry checks retained in check.py)",
+    "QT_QPA_PLATFORM=offscreen ALLOCATION_SCRIPT=section.py /home/juicebox/.local/bin/freecadcmd run.py",
+    "QT_QPA_PLATFORM=offscreen ALLOCATION_SCRIPT=export.py /home/juicebox/.local/bin/freecadcmd run.py",
+    "python3 draw.py",
+    "pdftoppm -scale-to 1500 -singlefile -png closure-section.pdf (parent preview path); visually inspected",
+    "python3 verify.py; sha256sum -c SHA256SUMS"
+  ],
+  "checks": {
+    "unchanged_saved_other_BReps": 355,
+    "unchanged_placements": 356,
+    "positive_tool_gaps": 4,
+    "nominal_gap_mm": 0.25,
+    "unchanged_bearing_seats": 4,
+    "reopened_STEP_valid_closed_solids": 150
+  },
+  "inherited_not_rerun": {
+    "CAF_R1_full_driver_pairs": 1356,
+    "CAF_R1_lid_insertion_pairs": 334,
+    "CAF_R1_screw_insertion_pairs": 1352,
+    "reason": "Only fixed upper loses material; saved delta and unchanged seat proofs preserve noninterference."
+  },
+  "limits": [
+    "Proposed tolerances not supplier-qualified",
+    "Open ports: sealing/access/strength unqualified",
+    "All prior source-installation, connector, electrical, thermal, flex/runtime and manufacturing gates remain open",
+    "No new review round, firmware, hardware operations or publication"
+  ],
+  "artifacts": {
+    "README.md": "e97e97486db4e32838b29d2e69c84910cabbe8db52c4f74921d9ff8d2704bd2c",
+    "build.py": "6c09ffd2e252069b520dd48a47dac59708fb194b49a908ff141a923ab745f056",
+    "check.json": "7fe819e00d1e570a1a18a6b6c61f8035b3632b7d1f279296cc784cb4b9b7def1",
+    "check.py": "d4d5e22da7eaca082493df631fb9349191a3e10f56af280f2f8cb936e7ec0f15",
+    "closure-section.pdf": "bb3d1b790f1a9bf3fe347b7a1f424ef3f84126ce58c1fe5fb439e0db71401e03",
+    "closure-section.svg": "008c83630852b453ce4e2d04910e776c6b4ac2a450eba0056dc2b0bc7c9e9b8a",
+    "draw.py": "dca2b8c65c49bd437c5f96b3b0d0e674f7b96497fa3e1d451e2f9542dfac8ed8",
+    "export-check.json": "48de17ce39ef0c0015fe3fc95644628f23d89dfd594e778f1a7e209ae333204b",
+    "export.py": "d1ef232ce8a666cd5c2acbe497367d8a510bd996d03ae14b45e3b2caaceb0616",
+    "inputs.json": "1ae641c82f44baaf34915ebcce9ff75e08652f4b36adb5ccca50c6018d0828ab",
+    "patch.json": "defe6b20e97dee8d2f363b7a43902bd0589621d8b1945df519c4b3c4ccd30913",
+    "prototype.FCStd": "066417cd8d07541535b009c4af07e440b843ecec828b333f04a5c6d5c6b4b79b",
+    "prototype.step": "2179b490fc0d72f33dbdccf7caf0724552e2df8b9810318f5860d0a5ccb1e320",
+    "run.py": "6751bfd395d0189a80680c0b0be719481ade85b616282c47e9cc29608e1ccfd3",
+    "seal.py": "de3e31b5a89daaae923b29d9ba2156b1458090636136296fd397cb8da5e24740",
+    "section.json": "58d7519bc48c1105a3ccda081a35770c0e5c51861d62a1a58cc04cd480f8d96f",
+    "section.py": "11ab8df50dfef6f45fbea3136dee56ac2e1db31778df9a25730a1414779df056",
+    "verify.py": "eea37522186e6bd0ead8ffc85e065a5553cc1b35f3d02936d2021f6415d2c2f2"
+  }
+}

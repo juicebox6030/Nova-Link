@@ -1,0 +1,390 @@
+{
+  "revision": "STATIONARY-R1",
+  "created_utc": "2026-10-23T18:54:27.271434+00:00",
+  "repository": "/home/juicebox/Nova-Link",
+  "branch": "main",
+  "HEAD": "b42c0e6284aac734fde851c69146abf73920f337",
+  "owned_path": "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/**",
+  "scope": "One stationary IRM20 carrier/retention/insulator/secondary leadout mechanical prototype; no source-family/electrical-architecture or protected geometry change",
+  "disposition": "Original maximum V_PLUS lead/trunk clash CLOSED under enumerated source and engineering allocations; manufacturing/assembly/mains qualification UNMET",
+  "commands": [
+    {
+      "command": [
+        "/home/juicebox/.local/bin/freecadcmd",
+        "/home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/build.py"
+      ],
+      "cwd": "/home/juicebox/Nova-Link",
+      "QT_QPA_PLATFORM": "offscreen",
+      "exit_code": 0,
+      "seconds": 7.139,
+      "log": "build.log",
+      "exception_diagnostic_screen": "PASS"
+    },
+    {
+      "command": [
+        "/home/juicebox/.local/bin/freecadcmd",
+        "/home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/project.py"
+      ],
+      "cwd": "/home/juicebox/Nova-Link",
+      "QT_QPA_PLATFORM": "offscreen",
+      "exit_code": 0,
+      "seconds": 69.349,
+      "log": "project.log",
+      "exception_diagnostic_screen": "PASS"
+    },
+    {
+      "command": [
+        "/home/juicebox/.local/bin/freecadcmd",
+        "/home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/verify.py"
+      ],
+      "cwd": "/home/juicebox/Nova-Link",
+      "QT_QPA_PLATFORM": "offscreen",
+      "exit_code": 0,
+      "seconds": 14.112,
+      "log": "verify.log",
+      "exception_diagnostic_screen": "PASS"
+    },
+    {
+      "command": [
+        "python3",
+        "/home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/draw.py"
+      ],
+      "cwd": "/home/juicebox/Nova-Link",
+      "QT_QPA_PLATFORM": "offscreen",
+      "exit_code": 0,
+      "seconds": 0.173,
+      "log": "draw.log",
+      "exception_diagnostic_screen": "PASS"
+    }
+  ],
+  "protected_inputs": {
+    "count": 422,
+    "inventory": "protected-inputs.json",
+    "inventory_sha256": "91656d69f0430d431501d7034b25fd416867fc4352786ee47e760a6fd298067f",
+    "all_current_hashes_match": true,
+    "baseline": "Current authoritative root metadata corrections already present when this task snapshot was made; no implicit refresh or sibling write"
+  },
+  "primary_sources": [
+    {
+      "path": "sources/meanwell-pcb-installation.pdf",
+      "url": "https://www.meanwell.com/Upload/PDF/IRM-01/PCB.pdf",
+      "sha256": "fa68e719a5e78a45bae42d2c01afdd3dfecd1a43b6a48768616036003f05f54a",
+      "read_only": false
+    },
+    {
+      "path": "../regulated-source/sources/irm20.pdf",
+      "url": "https://www.meanwell.com/Upload/PDF/IRM-20-SPEC.PDF",
+      "sha256": "aa1afdbcdf0bf6db796710e26bd5e258f4857ffb1c14bd1ac3d94af86f3b8789",
+      "read_only": true
+    },
+    {
+      "path": "sources/tensility-30-02075.pdf",
+      "url": "https://tensility.s3.us-west-2.amazonaws.com/imports/product_spec_sheets/30-02075.pdf",
+      "sha256": "8543044232363e092e159edd011735e7cec0b163df8e8f82b9f6246423b225d9",
+      "read_only": false
+    },
+    {
+      "path": "sources/tensility-30-02075-product.html",
+      "url": "https://www.tensility.com/products/30-02075",
+      "sha256": "23ae21c1039629959a2f920bcb6adc5601993333533b72959aefd437c6aa4772",
+      "read_only": false
+    }
+  ],
+  "checks": {
+    "status": "PASS enumerated saved geometry/source-bound screens; mains/process/assembly qualification UNMET",
+    "valid_assembly_objects": 54,
+    "STEP_solid_count": 54,
+    "STEP_native_mass_integration_delta_mm3": 0.37630804102809634,
+    "STEP_bidirectional_edge_sample_max_surface_gap_mm": 3.730626752746095e-08,
+    "STEP_screen_limit": "Each part volume delta < max(.001mm3,10ppm native volume); bidirectional edge-to-surface samples <1e-6mm, not a Hausdorff proof",
+    "all_pair_checks": 1431,
+    "explicit_same_net_volume_joints": [
+      [
+        "Land_V_PLUS_top",
+        "Trace_PLUS",
+        0.0349999999999988
+      ],
+      [
+        "Trace_PLUS",
+        "Secondary_PLUS_via_barrel",
+        0.030705702406956522
+      ],
+      [
+        "Pigtail_land_PLUS",
+        "Secondary_PLUS_via_barrel",
+        0.004535674393620194
+      ],
+      [
+        "Pigtail_land_PLUS",
+        "Wire_PLUS_conductor",
+        0.0072440346704789275
+      ],
+      [
+        "Trace_MINUS",
+        "Pigtail_land_MINUS",
+        0.05600000000000008
+      ],
+      [
+        "Trace_MINUS",
+        "Wire_MINUS_conductor",
+        0.0033378990675654347
+      ],
+      [
+        "Pigtail_land_MINUS",
+        "Wire_MINUS_conductor",
+        0.011297504536372701
+      ],
+      [
+        "Secondary_PLUS_via_barrel",
+        "Wire_PLUS_conductor",
+        0.0002600673702727038
+      ]
+    ],
+    "unexpected_volume_intersections": 0,
+    "floating_parts": [],
+    "mechanical_contact_graph_all_new_parts_reach_core": true,
+    "original_VPLUS_maxlead_trunk_intersection_mm3": 0.5890486225480877,
+    "parent_lift_with_065_standoff_min_projection_mm": 0.08000000000000002,
+    "protected_saved_core_trunk_endcaps_equal": true,
+    "protected_hashes_verified": 422,
+    "source_hashes_verified": 4,
+    "nominal_clearance_to_trunk_mm": {
+      "Pin_V_PLUS": 2.0,
+      "Pin_V_MINUS": 2.7586228448267445,
+      "IRM20_nominal_body": 5.5,
+      "Polyester_film_allocation": 0.09999999999999964,
+      "Custom_dielectric_sled_and_clamp_brackets": 0.22499999999999964
+    },
+    "vertical_corner_cases": 32,
+    "minimum_projection_below70um_bottom_copper_mm": 0.28000000000000114,
+    "worst_maxlead_tip_Z_mm": -13.700000000000001,
+    "worst_module_top_Z_mm": 15.7,
+    "bounded_lead_to_deck_gap_mm": 0.14999999999999858,
+    "bounded_film_to_trunk_gap_mm": 0.075,
+    "bounded_body_to_nominal_bore_gap_mm": 0.4645537247245457,
+    "conservative_pin_aperture_fit_cases": 32,
+    "pin_nominal_diameter_mm": 1,
+    "conservative_diameter_range_mm": [
+      0.5,
+      1.5
+    ],
+    "pin_to_land_solder_or_PTH_process": "UNMET; broad source drawing tolerance forces large mechanical apertures, no validated solder bridge",
+    "wire_choice": "Tensility30-02075 solid20AWG mPPE",
+    "wire_maxOD_mm": 1.6,
+    "source_min_bend_radius_mm": 9,
+    "formed_radius_prototype_allocation_mm": [
+      9,
+      9.1
+    ],
+    "common_XY_path_fixture_allocation_mm": 0.02,
+    "minimum_sleeve_inner_diameter_allowance_mm": 3.65,
+    "wire_sleeve_tolerance_samples": 51264,
+    "minimum_wire_to_sleeve_screen_mm": 0.011217183673043918,
+    "minimum_wire_to_source_max_body_sampled_gap_mm": 0.3453193818078464,
+    "wire_pair_jacket_contact_at_maxOD": true,
+    "wire_length_each_including_bare_mm": 57.06150082346221,
+    "wire_pair_R20_max_DCR_based_ohm": 0.00401712965797174,
+    "wire_pair_R80_engineering_ohm": 0.004964368831321476,
+    "wire_drop_at_3A_screen_V": 0.014893106493964428,
+    "wire_heat_at_3A_screen_W": 0.044679319481893284,
+    "no_ampacity_or_faultI2t_grant": true,
+    "complete_preformed_axial_insertion_collision_mm3": 3.950481464820314,
+    "assembly_method": "Wires must be fed/formed and split sleeve assembled after sled insertion; jig/motion/forming/pull/insulation proof UNMET",
+    "retention_force_thread_friction_material_qualified": false,
+    "manufacturer_5mm_bottom_10mm_surround_guide_compliance_proven": false,
+    "full_mains_design_or_manufacturing_release": false
+  },
+  "assembly_envelope": {
+    "core_OD_ID_length_mm": [
+      48,
+      43,
+      142
+    ],
+    "carrier_nominal_bounds_xyz_mm": [
+      [
+        39,
+        100
+      ],
+      [
+        -16,
+        16
+      ],
+      [
+        -11,
+        -9.4
+      ]
+    ],
+    "module_nominal_bounds_xyz_mm": [
+      [
+        45,
+        97.4
+      ],
+      [
+        -13.6,
+        13.6
+      ],
+      [
+        -9,
+        15
+      ]
+    ],
+    "source_and_process_body_envelope_xyz_mm": [
+      [
+        44.85,
+        98.05
+      ],
+      [
+        -14,
+        14
+      ],
+      [
+        -9.2,
+        15.7
+      ]
+    ],
+    "protected_mains_trunk_xyz_mm": [
+      [
+        6,
+        136
+      ],
+      [
+        -8,
+        8
+      ],
+      [
+        -19.5,
+        -14.5
+      ]
+    ],
+    "secondary_feedthrough_centre_XY_mm": [
+      92,
+      0
+    ],
+    "secondary_feedthrough_D_Z_mm": [
+      4,
+      20,
+      25
+    ],
+    "secondary_external_ends_xyz_mm": [
+      [
+        91.5,
+        0.8,
+        27.5
+      ],
+      [
+        91.5,
+        -0.8,
+        27.5
+      ]
+    ],
+    "external_end_tangent": "+Z",
+    "wire_max_OD_mm": 1.6,
+    "maximum_loop_outer_X_mm": 110.3,
+    "new_core_penetrations": 0,
+    "rotating_FPC_clamp_and_primary_endcaps": "External parent-owned contracts; no unfinished rotating geometry read"
+  },
+  "unmet_gates": [
+    "Module-pin to land solder/PTH process and source fabrication drawing: broad source positional tolerance means nominal pins do not contact the modeled rings. Primary branch/fuse/connectors/wiring absent; no electrical fabrication release.",
+    "Core bore/ovality/hole and all custom insulation/sleeve dimensions/materials/edge coverage/retention/CTI/flammability/dielectric and creepage qualification; generic manufacturer installation clearance guidance unqualified.",
+    "Actual in-core forming/jig/tool-access/jig removal/termination order, polarity identification, source minimum-wire holding, clamp thread/torque/locking, body stress, whole-sled friction/creep/pull/anti-rotation and vibration.",
+    "Sealed-barrel line/load/ambient derating, touch temperature, wire/PCB/joint ampacity and fault I2t, thermal ageing, primary/PE/endcap/variant safety and EMC; component approvals do not certify assembly."
+  ],
+  "limits": [
+    "No measured hardware evidence or mains safety approval. No ampacity/new current or voltage rating.",
+    "Geometry contact graph is mechanical only; pins-to-lands electrical termination explicitly open.",
+    "STEP transfer uses per-part mass and bidirectional sampled edge/surface checks, not full Hausdorff equivalence. Native FCStd plus build.py are authoritative.",
+    "A finished preformed wire loop demonstrably cannot be inserted axially through the intact core. Split sleeve and in-core forming are captured pose/proposed sequence, not motion validation."
+  ],
+  "artifact_count_excluding_receipt_and_SHA256SUMS": 42,
+  "artifacts": {
+    "BRIEF.md": "6f37240d34ac83a0732866ae9cd665ae091bddb487e73d727761366fc887828b",
+    "DESIGN.md": "36ab3b18651a1f8a427f77f86a2efc557ca97d1eb1ece52000e19ce167a706a0",
+    "README.md": "339e22c7e6c4a92b1d7487d46871e2842df26e0156f9fee4f1a4d613412151e4",
+    "build-geometry.json": "c76a88188c4790d19d62676c66fce94738645b68da8a1abdf2b6b2e797133cb3",
+    "build.log": "c779a4bcf041a8f9deb97c3e03f1c361ab39d7ab1216ea88267c861e239a0027",
+    "build.py": "7f1518212ec438aed2d8094bc7db7f705232f897e5c3f681a9d3dbd1e0fbee22",
+    "checks.json": "26fd2929329ed40eb954a6fd2adcadcba55831e5e9acef7df17707f890fe40a5",
+    "commands.json": "1668dbb480811eec4b5664e5e6acbfa10b4a7cfc0772f966270d91fac41bd0aa",
+    "contact-graph.json": "ad800d36c0106196dfc28a9ebd5ca4435914f36a998575e98d43f609cdd277b9",
+    "draw.log": "48291560fd2ec571e1947bb1367ed662fa08ae88c8ea500033a798e13c0b2734",
+    "draw.py": "78d764a4af348f2ca0e7bf31c4702f9ac7e91ece2e035ca67ba0f7e1b8a583d9",
+    "make_receipt.py": "92e49764a92ce6b5ac21edf6c4ce096ed0787bb037472c191b3d2341b67b67f6",
+    "pair-checks.json": "c60d93326324b1ca93f8801ed3c24657a152d6fac886329b631cc5ace242bfc8",
+    "parts.json": "3c3504d4df3e35dd77eb3c0633ea6ae4d4dc40b1ee5b47c23b4c9a76e029e050",
+    "project.log": "cf5331522aad2ec2b283f24391f5ffd2e8b9d165b1c041e0d11ef3417ba69ee5",
+    "project.py": "4f72cab59f023127016bef2238b2bd39a3d38f74414dd60125b473d73c82761b",
+    "protected-inputs.json": "91656d69f0430d431501d7034b25fd416867fc4352786ee47e760a6fd298067f",
+    "saved-projections.json": "6ccf35c3b252df0b25e930c778349a7416d02bfb02480d5264be9b3afd40be70",
+    "sheet-1.svg": "82c475eb6e40cc615a82d38aae3a801c1b4013151d2b1cdbdc72a99362cef4fb",
+    "sheet-2.svg": "bd3365320b39b9e083180f0cfa652e3d2308dbea72dbcd1b667ad30cd95660e0",
+    "sheet-3.svg": "467d16ce703d6c19724bdd496584c0b533e53412c6afe2900086c3067e501236",
+    "sheet-preview-1.png": "399ade1522b92f7cfd26b4c0d3658e8cd7126cd84a4ed98f3548ca3dab690d48",
+    "sheet-preview-2.png": "329b710bd6ca06185f2f31e6b6978ea169009f25edef4b6a22a0f2254813f22e",
+    "sheet-preview-3.png": "c67a0c59fd84121fdbc955c335e081a376a76a1140696777a5d60dbb0c269b58",
+    "source-lead-extremes.FCStd": "26a90c2bc31cce92c484046f72af2e2e3f5fea514ff4ede28871ddfef2916f1a",
+    "source-lead-extremes.step": "8d1b2ec5e9687e4254020f55cfc2945bce3d6c9b185f3092fe7374de2f204079",
+    "sources/meanwell-pcb-installation.pdf": "fa68e719a5e78a45bae42d2c01afdd3dfecd1a43b6a48768616036003f05f54a",
+    "sources/meanwell-pcb-installation.txt": "c3f8ba755973dfbdf4a84add7a09e2a1de122e3785e454252740ea342d7c7374",
+    "sources/tensility-30-02075-product.html": "23ae21c1039629959a2f920bcb6adc5601993333533b72959aefd437c6aa4772",
+    "sources/tensility-30-02075.pdf": "8543044232363e092e159edd011735e7cec0b163df8e8f82b9f6246423b225d9",
+    "sources/tensility-30-02075.txt": "ab956f25095da485956bdff0165f03c5c202b29e6efa23b0fd76c21de12df495",
+    "sources.json": "d7073316892251d870a49d8a297906629b08806566756787e04ad88f0c471e8f",
+    "stationary-integration.FCStd": "24153ffaa611b643797e45feb217dab69eaa2b41e2a54abb3cfd9320501a89be",
+    "stationary-integration.pdf": "4ac3a48f91f5dcf4ef0f622b79dadb3a86119bbb87da9ace3342ab8be263cfd1",
+    "stationary-integration.step": "5eded51eb26a15e8ffec7713caf102b9dd68780e01193aa9a687c43a9eaff96c",
+    "step-parts.json": "4f1d351be7647ed6a97879907f7bfaa766ad03c13d6e6adfda002b7a14a64358",
+    "step-transfer.json": "d3737d7f986104a8c3c08ee7a6347d219a7461546efe3924372ff0944268f4ff",
+    "validate.py": "f87e1daf88ecdda3c4464ab819bd1f6d1d4766e765008d7711f8fc54c5e61ab3",
+    "validate.sh": "30d6b3f11c05aaae591f27f744de2e989f4a89c4af2dc410ec7de27a0659880e",
+    "verify.log": "730a068db8b79b97ae7fd663f87ea04e6655477af734e1ab4896fd5a05051fec",
+    "verify.py": "48b8cabb0b40eac9e91fbee060a2e2fd27688424c3b75b24e7c62bc6d6205d91",
+    "vertical-corners.json": "8d98511cae97c023c8f61aabe7f7eb95d7dfb552fbdd0ce23a1107c213941a0a"
+  },
+  "changed_paths": [
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/BRIEF.md",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/DESIGN.md",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/README.md",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/build-geometry.json",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/build.log",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/build.py",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/checks.json",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/commands.json",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/contact-graph.json",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/draw.log",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/draw.py",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/make_receipt.py",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/pair-checks.json",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/parts.json",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/project.log",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/project.py",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/protected-inputs.json",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/saved-projections.json",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sheet-1.svg",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sheet-2.svg",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sheet-3.svg",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sheet-preview-1.png",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sheet-preview-2.png",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sheet-preview-3.png",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/source-lead-extremes.FCStd",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/source-lead-extremes.step",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sources/meanwell-pcb-installation.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sources/meanwell-pcb-installation.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sources/tensility-30-02075-product.html",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sources/tensility-30-02075.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sources/tensility-30-02075.txt",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sources.json",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/stationary-integration.FCStd",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/stationary-integration.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/stationary-integration.step",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/step-parts.json",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/step-transfer.json",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/validate.py",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/validate.sh",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/verify.log",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/verify.py",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/vertical-corners.json",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/receipt.json",
+    "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/SHA256SUMS"
+  ],
+  "no_hardware_firmware_installs_delegation_git_publication": true
+}

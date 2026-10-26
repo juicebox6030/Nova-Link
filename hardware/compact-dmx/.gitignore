@@ -1,0 +1,19 @@
+# Local primary-source reading cache; original manufacturer URLs remain in docs.
+references/
+exports/*.FCStd1
+exports/*.FCBak
+cad/__pycache__/
+eda/__pycache__/
+
+# Retrieved manufacturer content stays local; publish URLs/checksums and our designs.
+# Unanchored directory patterns cover every candidate revision.
+sources/
+*-sources/
+*-source-cache/
+*.FCStd1
+*.FCBak
+*-backups/
+# Full-page vendor-document previews remain in the local evidence cache.
+rotary-compact-candidate/compact-source-reference-screen/pmp-assembly-view.png
+rotary-compact-candidate/compact-source-reference-screen/tida-assembly-view.png
+rotary-compact-candidate/compact-source-reference-screen/we-transformer-view.png

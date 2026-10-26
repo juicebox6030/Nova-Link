@@ -1,0 +1,23 @@
+{
+  "hardware/compact-dmx/eda/footprints/replacement-sources/0402hp.pdf": {
+    "url": "https://www.coilcraft.com/pdfs/0402hp.pdf",
+    "sha256": "2f5c071c4face227bcdfee9d5beb22ebc63848ca5ccca1fb7b3aa39e6ecb1822",
+    "bytes": 146740
+  },
+  "hardware/compact-dmx/eda/footprints/replacement-sources/GJM1pF.pdf": {
+    "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GJM1555C1H1R0BB01-01A.pdf",
+    "sha256": "3cebcf2f4f1087814e4944d425f1ef39112034b0ad4de35096afd199c0fc6d26",
+    "bytes": 1776199
+  },
+  "hardware/compact-dmx/eda/footprints/replacement-sources/GJM8p2.pdf": {
+    "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GJM1555C1H8R2DB01-01A.pdf",
+    "sha256": "dffb133c49c12113bc96e954c29c3514d941d1da9e723d80364526f2cb45584b",
+    "bytes": 1776481
+  },
+  ".tools/references/pcm-official.pdf": {
+    "url": "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-pcm-series-datasheet?assetguid=d2f6a96c-7a9a-4c4e-a5aa-4fe3075dffe5",
+    "sha256": "6a758d151b7eee7f8cd59594bd92cfec4c9b1470e0743094f185f19e7ac2a868",
+    "bytes": 498359,
+    "remaining_gap": "mechanical pad rows vertical datum to locator centre"
+  }
+}

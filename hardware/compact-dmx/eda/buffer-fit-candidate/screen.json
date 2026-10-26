@@ -1,0 +1,168 @@
+{
+  "assumptions": {
+    "start_V": 2.448,
+    "loaded_cutoff_V": 1.705917,
+    "load_W": 1.11,
+    "electronics_efficiency": 0.8,
+    "cold_ESR_limit": null,
+    "aging_note": "Independent initial tolerance and70%retention; endurance-test limits, not field lifetime guarantee"
+  },
+  "parts": [
+    {
+      "MPN": "HV1325-2R7156-R",
+      "nominal_F": 15,
+      "initial_tolerance_factor": 0.9,
+      "aging_factor": 0.7,
+      "effective_F": 9.45,
+      "max_body_diameter_length_mm": [
+        13.5,
+        28.4
+      ],
+      "initial_ESR_ohm": 0.03,
+      "aged_ESR_ohm": 0.06,
+      "initial_ESR_aged_C_runtime_s": 10.112436699768509,
+      "aged_ESR_aged_C_runtime_s": 9.72954827111269,
+      "nominal_25mA_2p6V_charge_min": 26.0
+    },
+    {
+      "MPN": "HV1625-2R7256-R",
+      "nominal_F": 25,
+      "initial_tolerance_factor": 0.9,
+      "aging_factor": 0.7,
+      "effective_F": 15.749999999999998,
+      "max_body_diameter_length_mm": [
+        16.5,
+        28.4
+      ],
+      "initial_ESR_ohm": 0.027,
+      "aged_ESR_ohm": 0.054,
+      "initial_ESR_aged_C_runtime_s": 16.91806145990068,
+      "aged_ESR_aged_C_runtime_s": 16.343271606784583,
+      "nominal_25mA_2p6V_charge_min": 43.333333333333336
+    },
+    {
+      "MPN": "SCCT30B186SRB",
+      "nominal_F": 18,
+      "initial_tolerance_factor": 0.9,
+      "aging_factor": 0.7,
+      "effective_F": 11.339999999999998,
+      "max_body_diameter_length_mm": [
+        13.5,
+        32
+      ],
+      "initial_ESR_ohm": 0.06,
+      "aged_ESR_ohm": 0.12,
+      "initial_ESR_aged_C_runtime_s": 11.675457925335229,
+      "aged_ESR_aged_C_runtime_s": 10.76398074701905,
+      "nominal_25mA_2p6V_charge_min": 31.2
+    },
+    {
+      "MPN": "SCCT35B226SRB",
+      "nominal_F": 22,
+      "initial_tolerance_factor": 0.9,
+      "aging_factor": 0.7,
+      "effective_F": 13.86,
+      "max_body_diameter_length_mm": [
+        13.5,
+        37
+      ],
+      "initial_ESR_ohm": 0.058,
+      "aged_ESR_ohm": 0.116,
+      "initial_ESR_aged_C_runtime_s": 14.30734905427906,
+      "aged_ESR_aged_C_runtime_s": 13.229858851478566,
+      "nominal_25mA_2p6V_charge_min": 38.13333333333333
+    },
+    {
+      "MPN": "CXHP2R7206R-TW",
+      "nominal_F": 20,
+      "initial_tolerance_factor": 0.8,
+      "aging_factor": 0.7,
+      "effective_F": 11.2,
+      "max_body_diameter_length_mm": [
+        13.5,
+        26.5
+      ],
+      "initial_ESR_ohm": 0.06,
+      "aged_ESR_ohm": 0.12,
+      "initial_ESR_aged_C_runtime_s": 11.531316469466894,
+      "aged_ESR_aged_C_runtime_s": 10.631092095821282,
+      "nominal_25mA_2p6V_charge_min": 34.666666666666664
+    }
+  ],
+  "preferred_sensitivity": [
+    {
+      "eta": 0.7,
+      "ESR_ohm": 0.054,
+      "runtime_s": 14.157107104075735
+    },
+    {
+      "eta": 0.7,
+      "ESR_ohm": 0.108,
+      "runtime_s": 13.01830302407318
+    },
+    {
+      "eta": 0.7,
+      "ESR_ohm": 0.162,
+      "runtime_s": 11.89280945862304
+    },
+    {
+      "eta": 0.75,
+      "ESR_ohm": 0.054,
+      "runtime_s": 15.250162973938734
+    },
+    {
+      "eta": 0.75,
+      "ESR_ohm": 0.108,
+      "runtime_s": 14.110058991926564
+    },
+    {
+      "eta": 0.75,
+      "ESR_ohm": 0.162,
+      "runtime_s": 12.982298606099766
+    },
+    {
+      "eta": 0.8,
+      "ESR_ohm": 0.054,
+      "runtime_s": 16.343271606784583
+    },
+    {
+      "eta": 0.8,
+      "ESR_ohm": 0.108,
+      "runtime_s": 15.202035360006992
+    },
+    {
+      "eta": 0.8,
+      "ESR_ohm": 0.162,
+      "runtime_s": 14.07230689067508
+    },
+    {
+      "eta": 0.85,
+      "ESR_ohm": 0.054,
+      "runtime_s": 17.43642357659361
+    },
+    {
+      "eta": 0.85,
+      "ESR_ohm": 0.108,
+      "runtime_s": 16.294192224796078
+    },
+    {
+      "eta": 0.85,
+      "ESR_ohm": 0.162,
+      "runtime_s": 15.162738939229198
+    }
+  ],
+  "preferred_cell_current_at_cutoff_A": 0.8133455496369402,
+  "preferred_ESR_loss_at_cutoff_W": 0.03572267308816768,
+  "preferred_charge_corner_min_before_tail": 64.0679,
+  "preferred_nominal_stored_J_at2p6": 84.50000000000001,
+  "preferred_max_stored_J_at2p7_32p5F": 118.46250000000002,
+  "ideal15F_start_required_for12s_V": 2.5365256424287383,
+  "crosscheck_forward_time_s": 16.34329999997525,
+  "concurrent_input_changes": [
+    "hardware/compact-dmx/eda/power-service/qualified15-candidate/DESIGN.md",
+    "hardware/compact-dmx/eda/power-service/qualified15-candidate/corner-proof.py",
+    "hardware/compact-dmx/eda/power-service/qualified15-candidate/corner-proof.json",
+    "hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15-placement.kicad_pcb"
+  ],
+  "measured_runtime": false
+}

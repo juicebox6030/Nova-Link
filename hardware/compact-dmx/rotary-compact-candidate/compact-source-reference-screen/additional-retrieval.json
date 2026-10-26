@@ -1,0 +1,10 @@
+{
+  "we-transformer.pdf": {
+    "url": "https://www.we-online.com/components/products/datasheet/750343769.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "pmp-download-page.html": {
+    "url": "https://www.ti.com/tool/download/TIDCBT5",
+    "error": "HTTP Error 404: Not Found"
+  }
+}

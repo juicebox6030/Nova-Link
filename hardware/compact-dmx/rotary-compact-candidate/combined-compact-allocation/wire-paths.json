@@ -1,0 +1,254 @@
+{
+  "L_TrunkToFuse": {
+    "points": [
+      [
+        -126,
+        32,
+        -25
+      ],
+      [
+        -126,
+        32,
+        -19
+      ],
+      [
+        -126,
+        32,
+        -16
+      ],
+      [
+        -126,
+        32,
+        -10
+      ]
+    ],
+    "length": 15.0,
+    "radius": 1.5,
+    "sampled_min_bend_radius": null,
+    "note": "Connected trunk -> fuse bay bottom; selected fuse/holder and terminal truth UNMET"
+  },
+  "L_FuseToCarrier": {
+    "points": [
+      [
+        -124,
+        29,
+        -7
+      ],
+      [
+        -124,
+        7,
+        -18
+      ],
+      [
+        -112,
+        10.4,
+        -18
+      ],
+      [
+        -98.3,
+        10.4,
+        -14.7
+      ]
+    ],
+    "length": 40.79544055037308,
+    "radius": 1.5,
+    "sampled_min_bend_radius": 9.873676657106905,
+    "note": "Finite continuous source-pin approach; crosses insulation reservation as electrical connection, approval UNMET"
+  },
+  "N_TrunkToCarrier": {
+    "points": [
+      [
+        -132,
+        38,
+        -25
+      ],
+      [
+        -132,
+        38,
+        -8
+      ],
+      [
+        -115,
+        -10.4,
+        -14.7
+      ],
+      [
+        -98.3,
+        -10.4,
+        -14.7
+      ]
+    ],
+    "length": 66.2000552750796,
+    "radius": 1.5,
+    "sampled_min_bend_radius": 7.046162798652935,
+    "note": "Finite continuous source-pin approach; N remains continuous on bypass trunk; approval UNMET"
+  },
+  "LV_minus_underCarrier": {
+    "points": [
+      [
+        -53.3,
+        -10.4,
+        -14.2
+      ],
+      [
+        -45,
+        -10.4,
+        -14.2
+      ],
+      [
+        -38,
+        -10.4,
+        -14.2
+      ],
+      [
+        -30,
+        -10.4,
+        -14.2
+      ]
+    ],
+    "length": 23.299999999999997,
+    "radius": 1,
+    "sampled_min_bend_radius": null,
+    "note": "Under-carrier solder approach; terminal insulation and carrier construction UNMET"
+  },
+  "LV_minus_toCore": {
+    "points": [
+      [
+        -30,
+        -10.4,
+        -14.2
+      ],
+      [
+        -12,
+        -10.4,
+        -14.2
+      ],
+      [
+        -9,
+        10,
+        -5.8
+      ],
+      [
+        4,
+        10,
+        -5.8
+      ]
+    ],
+    "length": 42.099782909541105,
+    "radius": 1,
+    "sampled_min_bend_radius": 10.666697796956697,
+    "note": "Routed isolatedLV only; finite bend radius reported, supplierwire unselected"
+  },
+  "LV_minus_toClamp": {
+    "points": [
+      [
+        4,
+        10,
+        -5.8
+      ],
+      [
+        15,
+        10,
+        -5.8
+      ],
+      [
+        22.2,
+        15,
+        -5.8
+      ],
+      [
+        22.2,
+        24,
+        -5.8
+      ]
+    ],
+    "length": 25.905100155447826,
+    "radius": 1,
+    "sampled_min_bend_radius": 11.671554299491213,
+    "note": "Finite static handoff to fixedtail; solder lands/strain relief not designed; no claim wire/copper termination"
+  },
+  "LV_plus_underCarrier": {
+    "points": [
+      [
+        -53.3,
+        -2.4,
+        -14.2
+      ],
+      [
+        -45,
+        -2.4,
+        -14.2
+      ],
+      [
+        -38,
+        -2.4,
+        -14.2
+      ],
+      [
+        -30,
+        -2.4,
+        -14.2
+      ]
+    ],
+    "length": 23.299999999999997,
+    "radius": 1,
+    "sampled_min_bend_radius": null,
+    "note": "Under-carrier solder approach; terminal insulation and carrier construction UNMET"
+  },
+  "LV_plus_toCore": {
+    "points": [
+      [
+        -30,
+        -2.4,
+        -14.2
+      ],
+      [
+        -12,
+        -2.4,
+        -14.2
+      ],
+      [
+        -9,
+        10,
+        -3.0
+      ],
+      [
+        4,
+        10,
+        -3.0
+      ]
+    ],
+    "length": 38.96338175354752,
+    "radius": 1,
+    "sampled_min_bend_radius": 13.611224607637713,
+    "note": "Routed isolatedLV only; finite bend radius reported, supplierwire unselected"
+  },
+  "LV_plus_toClamp": {
+    "points": [
+      [
+        4,
+        10,
+        -3.0
+      ],
+      [
+        15,
+        10,
+        -3.0
+      ],
+      [
+        22.2,
+        15,
+        -3.0
+      ],
+      [
+        22.2,
+        24,
+        -3.0
+      ]
+    ],
+    "length": 25.905100155447826,
+    "radius": 1,
+    "sampled_min_bend_radius": 11.671554299491213,
+    "note": "Finite static handoff to fixedtail; solder lands/strain relief not designed; no claim wire/copper termination"
+  }
+}

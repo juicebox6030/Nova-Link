@@ -1,0 +1,373 @@
+{
+  "reuse_root": "hardware/compact-dmx/connector-interface-candidate",
+  "sources": [
+    {
+      "file": "sources/pc-in.html",
+      "url": "https://www.neutrik.com/en/product/nac3mpxxa",
+      "retrieved_utc": "2026-10-23T20:23:55Z",
+      "final_url": "https://www.neutrik.com/en/product/nac3mpxxa",
+      "sha256": "b827e852b9aff84585d6af3f6e7b78e65a341993183d64a00ae0e9d340602b3e",
+      "bytes": 245332,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "status": "fetched",
+      "identity_version": "Live product/news/family page snapshot; no fixed revision promised; retrieval time and hash identify captured bytes."
+    },
+    {
+      "file": "sources/pc-out.html",
+      "url": "https://www.neutrik.com/en/product/nac3mpxxb",
+      "retrieved_utc": "2026-10-23T20:23:56Z",
+      "final_url": "https://www.neutrik.com/en/product/nac3mpxxb",
+      "sha256": "7e8a49d0200f44b0e9acb415f24b6d058d54fa4c632a18d59d5271f36a9eec78",
+      "bytes": 245929,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "status": "fetched",
+      "identity_version": "Live product/news/family page snapshot; no fixed revision promised; retrieval time and hash identify captured bytes."
+    },
+    {
+      "file": "sources/true1-in.html",
+      "url": "https://www.neutrik.com/en/product/nac3mpx-top",
+      "retrieved_utc": "2026-10-23T20:23:57Z",
+      "final_url": "https://www.neutrik.com/en/product/nac3mpx-top",
+      "sha256": "f6ce790c07fa7b5a86ba72a9c50b4861676650aba077b35fb0581f44c3f0035f",
+      "bytes": 233138,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "status": "fetched",
+      "identity_version": "Live product/news/family page snapshot; no fixed revision promised; retrieval time and hash identify captured bytes."
+    },
+    {
+      "file": "sources/true1-out.html",
+      "url": "https://www.neutrik.com/en/product/nac3fpx-top",
+      "retrieved_utc": "2026-10-23T20:23:58Z",
+      "final_url": "https://www.neutrik.com/en/product/nac3fpx-top",
+      "sha256": "65ac1a92534910c0d96707d410ad830e7ca6a08b4def5ce330b5361d3ef0e3cb",
+      "bytes": 229801,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "status": "fetched",
+      "identity_version": "Live product/news/family page snapshot; no fixed revision promised; retrieval time and hash identify captured bytes."
+    },
+    {
+      "file": "sources/pc-in.step",
+      "url": "https://www.neutrik.com/media/14373/download/nac3mpxxa.stp?v=1",
+      "retrieved_utc": "2026-10-23T20:24:19Z",
+      "final_url": "https://www.neutrik.com/media/14373/download/nac3mpxxa.stp?v=1",
+      "sha256": "636e5d416ef048d16e9e42abe32c329b759ad4e4a196816179dbb25cbb7cefb4",
+      "bytes": 3722520,
+      "content_type": "text/plain; charset=UTF-8",
+      "last_modified": "Fri, 06 Nov 2020 10:59:42 GMT",
+      "status": "fetched",
+      "identity_version": {
+        "product_page_linked_part": "NAC3MPXXA",
+        "step_header": "ISO-10303-21;\nHEADER;\nFILE_DESCRIPTION((''),'2;1');\nFILE_NAME('NAC3MPXXA','2020-02-07T11:52:29',('phk'),(''),\n'CREO PARAMETRIC BY PTC INC, 2019080','CREO PARAMETRIC BY PTC INC, 2019080','');\nFILE_SCHEMA(('CONFIG_CONTROL_DESIGN'));\nENDSEC;",
+        "caveat": "File timestamp identifies model export, not dimensional interchangeability or product certification."
+      }
+    },
+    {
+      "file": "sources/pc-out.step",
+      "url": "https://www.neutrik.com/media/14380/download/30009536_-_NAC3MPXXB.stp?v=4",
+      "retrieved_utc": "2026-10-23T20:24:21Z",
+      "final_url": "https://www.neutrik.com/media/14380/download/30009536_-_NAC3MPXXB.stp?v=4",
+      "sha256": "2985ffa3b2e3306dccf65e6476c974007dffc04798e935f58abde3c33bafff63",
+      "bytes": 4215114,
+      "content_type": "text/plain; charset=UTF-8",
+      "last_modified": "Tue, 06 May 2025 09:25:22 GMT",
+      "status": "fetched",
+      "identity_version": {
+        "product_page_linked_part": "NAC3MPXXB",
+        "step_header": "ISO-10303-21;\nHEADER;\nFILE_DESCRIPTION((''),'2;1');\nFILE_NAME('30009536','2025-04-25T15:04:08',('SYSTEM'),(''),\n'CREO PARAMETRIC BY PTC INC, 2023424','CREO PARAMETRIC BY PTC INC, 2023424','');\nFILE_SCHEMA(('CONFIG_CONTROL_DESIGN'));\nENDSEC;",
+        "caveat": "File timestamp identifies model export, not dimensional interchangeability or product certification."
+      }
+    },
+    {
+      "file": "sources/pc-mount.pdf",
+      "url": "https://www.neutrik.com/media/14384/download/Assembly%20recommendation%20of%20powerCON%20chassis%20connector.pdf?v=1",
+      "retrieved_utc": "2026-10-23T20:24:24Z",
+      "final_url": "https://www.neutrik.com/media/14384/download/Assembly%20recommendation%20of%20powerCON%20chassis%20connector.pdf?v=1",
+      "sha256": "d97ca09081f985344df997b078a19f99dc46d554faef983e5522f913afd1b78c",
+      "bytes": 585998,
+      "content_type": "application/pdf",
+      "last_modified": "Fri, 06 Nov 2020 14:07:42 GMT",
+      "status": "fetched",
+      "identity_version": "BDA 592 V1; update 2020-09-02"
+    },
+    {
+      "file": "sources/true1-in.step",
+      "url": "https://www.neutrik.com/media/12884/download/nac3mpx-top.stp?v=10",
+      "retrieved_utc": "2026-10-23T20:24:26Z",
+      "final_url": "https://www.neutrik.com/media/12884/download/nac3mpx-top.stp?v=10",
+      "sha256": "51b7d0442112bb36f3aaa77a1a26ec9aab76682a24c99cd6baffe8e54e6988f0",
+      "bytes": 2717284,
+      "content_type": "text/plain; charset=UTF-8",
+      "last_modified": "Mon, 24 Jun 2024 16:23:48 GMT",
+      "status": "fetched",
+      "identity_version": {
+        "product_page_linked_part": "NAC3MPX-TOP",
+        "step_header": "ISO-10303-21;\nHEADER;\nFILE_DESCRIPTION((''),'2;1');\nFILE_NAME('NAC3MPX-TOP','2024-06-24T08:14:31',('phk'),(''),\n'CREO PARAMETRIC BY PTC INC, 2023424','CREO PARAMETRIC BY PTC INC, 2023424','');\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\nENDSEC;",
+        "caveat": "File timestamp identifies model export, not dimensional interchangeability or product certification."
+      }
+    },
+    {
+      "file": "sources/true1-out.step",
+      "url": "https://www.neutrik.com/media/12882/download/30010398_-_NAC3FPX-TOP.stp?v=3",
+      "retrieved_utc": "2026-10-23T20:24:27Z",
+      "final_url": "https://www.neutrik.com/media/12882/download/30010398_-_NAC3FPX-TOP.stp?v=3",
+      "sha256": "35c6cf7b4716bf914fce640593727a32d41d9318d98db7d985977f46cfcecca1",
+      "bytes": 4689918,
+      "content_type": "text/plain; charset=UTF-8",
+      "last_modified": "Tue, 11 Apr 2023 16:07:51 GMT",
+      "status": "fetched",
+      "identity_version": {
+        "product_page_linked_part": "NAC3FPX-TOP",
+        "step_header": "ISO-10303-21;\nHEADER;\nFILE_DESCRIPTION((''),'2;1');\nFILE_NAME('30010398','2023-04-11T14:52:23',('SYSTEM'),(''),\n'CREO PARAMETRIC BY PTC INC, 2021184','CREO PARAMETRIC BY PTC INC, 2021184','');\nFILE_SCHEMA(('CONFIG_CONTROL_DESIGN'));\nENDSEC;",
+        "caveat": "File timestamp identifies model export, not dimensional interchangeability or product certification."
+      }
+    },
+    {
+      "file": "sources/true1-in-mount.pdf",
+      "url": "https://www.neutrik.com/media/12863/download/BDA%20544%20V3%20%20-%20powerCON%20TRUE1%20TOP%20-%20NAC3MPX-TOP%20%2B%20NAC3MPX-WOT-TOP.pdf?v=12",
+      "retrieved_utc": "2026-10-23T20:24:30Z",
+      "final_url": "https://www.neutrik.com/media/12863/download/BDA%20544%20V3%20%20-%20powerCON%20TRUE1%20TOP%20-%20NAC3MPX-TOP%20%2B%20NAC3MPX-WOT-TOP.pdf?v=12",
+      "sha256": "4e8620b1b354c4b2be55ac110f267979a13e1d423e160ed7d16a924ec3c8d19e",
+      "bytes": 1256540,
+      "content_type": "application/pdf",
+      "last_modified": "Wed, 12 Jul 2023 13:00:44 GMT",
+      "status": "fetched",
+      "identity_version": "BDA 544 V3; update 2023-03-17"
+    },
+    {
+      "file": "sources/true1-out-mount.pdf",
+      "url": "https://www.neutrik.com/media/12861/download/BDA%20545%20V3%20%20-%20powerCON%20TRUE1%20TOP%20-%20NAC3FPX-TOP%20%2B%20NAC3FPX-WOT-TOP.pdf?v=9",
+      "retrieved_utc": "2026-10-23T20:24:32Z",
+      "final_url": "https://www.neutrik.com/media/12861/download/BDA%20545%20V3%20%20-%20powerCON%20TRUE1%20TOP%20-%20NAC3FPX-TOP%20%2B%20NAC3FPX-WOT-TOP.pdf?v=9",
+      "sha256": "0e7e324ebc2164dfb9ca59ef5e93654291a0369946f892e8210734798d8e250c",
+      "bytes": 1101746,
+      "content_type": "application/pdf",
+      "last_modified": "Wed, 12 Jul 2023 13:18:02 GMT",
+      "status": "fetched",
+      "identity_version": "BDA 545 V3; update 2023-03-16"
+    },
+    {
+      "file": "sources/pc-mate-a.html",
+      "url": "https://www.neutrik.com/en/product/nac3fxxa-w-s",
+      "retrieved_utc": "2026-10-23T20:24:34Z",
+      "final_url": "https://www.neutrik.com/en/product/nac3fxxa-w-s",
+      "sha256": "2b4fe69f83e254a3d10e6c9aa5bac7570c3bdf0ff09935d105993824d926f421",
+      "bytes": 234804,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "status": "fetched",
+      "identity_version": "Live product/news/family page snapshot; no fixed revision promised; retrieval time and hash identify captured bytes."
+    },
+    {
+      "file": "sources/pc-mate-b.html",
+      "url": "https://www.neutrik.com/en/product/nac3fxxb-w-s",
+      "retrieved_utc": "2026-10-23T20:24:35Z",
+      "final_url": "https://www.neutrik.com/en/product/nac3fxxb-w-s",
+      "sha256": "d1c977d2fefc3554c27c6e15b9f6e0afb9064c0c3c74c7418e2fbf94c2de1140",
+      "bytes": 234809,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "status": "fetched",
+      "identity_version": "Live product/news/family page snapshot; no fixed revision promised; retrieval time and hash identify captured bytes."
+    },
+    {
+      "file": "sources/true1-mate-f.html",
+      "url": "https://www.neutrik.com/en/product/nac3fx-w-top",
+      "retrieved_utc": "2026-10-23T20:24:36Z",
+      "final_url": "https://www.neutrik.com/en/product/nac3fx-w-top",
+      "sha256": "1cf61c3823d3b808249d7ef5f7406e042451e929c7d7414ff58c977a1c6c894d",
+      "bytes": 234826,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "status": "fetched",
+      "identity_version": "Live product/news/family page snapshot; no fixed revision promised; retrieval time and hash identify captured bytes."
+    },
+    {
+      "file": "sources/true1-mate-m.html",
+      "url": "https://www.neutrik.com/en/product/nac3mx-w-top",
+      "retrieved_utc": "2026-10-23T20:24:37Z",
+      "final_url": "https://www.neutrik.com/en/product/nac3mx-w-top",
+      "sha256": "483c12311e1e18a42301b0d1c7e4afdfd291a30bdf2d26921e75f70b782512ea",
+      "bytes": 233997,
+      "content_type": "text/html; charset=UTF-8",
+      "last_modified": null,
+      "status": "fetched",
+      "identity_version": "Live product/news/family page snapshot; no fixed revision promised; retrieval time and hash identify captured bytes."
+    },
+    {
+      "file": "sources/pc-mate-a.step",
+      "url": "https://www.neutrik.com/media/17080/download/NAC3FXXA-W-S.stp?v=1",
+      "retrieved_utc": "2026-10-23T20:26:32Z",
+      "final_url": "https://www.neutrik.com/media/17080/download/NAC3FXXA-W-S.stp?v=1",
+      "sha256": "2ff3f3d0e8bd30590eb6796c1708644955572aea8d9bd911d72f491f7e4d5c24",
+      "bytes": 8154600,
+      "content_type": "text/plain; charset=UTF-8",
+      "last_modified": "Wed, 09 Nov 2022 18:16:07 GMT",
+      "status": "fetched",
+      "identity_version": {
+        "product_page_linked_part": "NAC3FXXA-W-S",
+        "step_header": "ISO-10303-21;\nHEADER;\nFILE_DESCRIPTION((''),'2;1');\nFILE_NAME('30010047','2022-11-04T10:59:46',('thomas.schmiedl'),(''),\n'CREO PARAMETRIC BY PTC INC, 2021184','CREO PARAMETRIC BY PTC INC, 2021184','');\nFILE_SCHEMA(('CONFIG_CONTROL_DESIGN'));\nENDSEC;",
+        "caveat": "File timestamp identifies model export, not dimensional interchangeability or product certification."
+      }
+    },
+    {
+      "file": "sources/pc-mate-b.step",
+      "url": "https://www.neutrik.com/media/17066/download/NAC3FXXB-W-S.stp?v=1",
+      "retrieved_utc": "2026-10-23T20:26:34Z",
+      "final_url": "https://www.neutrik.com/media/17066/download/NAC3FXXB-W-S.stp?v=1",
+      "sha256": "1601412b311fcd9d86fbb22939f8ca187ac1cf982442b7fc6489161051a1b950",
+      "bytes": 8094653,
+      "content_type": "text/plain; charset=UTF-8",
+      "last_modified": "Wed, 09 Nov 2022 18:16:00 GMT",
+      "status": "fetched",
+      "identity_version": {
+        "product_page_linked_part": "NAC3FXXB-W-S",
+        "step_header": "ISO-10303-21;\nHEADER;\nFILE_DESCRIPTION((''),'2;1');\nFILE_NAME('30010049','2022-11-04T11:00:52',('thomas.schmiedl'),(''),\n'CREO PARAMETRIC BY PTC INC, 2021184','CREO PARAMETRIC BY PTC INC, 2021184','');\nFILE_SCHEMA(('CONFIG_CONTROL_DESIGN'));\nENDSEC;",
+        "caveat": "File timestamp identifies model export, not dimensional interchangeability or product certification."
+      }
+    },
+    {
+      "file": "sources/pc-cable-assembly.pdf",
+      "url": "https://www.neutrik.com/media/17126/download/BDA%20639%20V4%20-%20powerCON%20Cable%20Connector.pdf?v=2",
+      "retrieved_utc": "2026-10-23T20:26:36Z",
+      "final_url": "https://www.neutrik.com/media/17126/download/BDA%20639%20V4%20-%20powerCON%20Cable%20Connector.pdf?v=2",
+      "sha256": "d2fa713d7a68fb10f8e88406d9e424a8a825d69fc2a5931cdc5c5100eeff5c37",
+      "bytes": 7236595,
+      "content_type": "application/pdf",
+      "last_modified": "Tue, 17 Feb 2026 16:13:30 GMT",
+      "status": "fetched",
+      "identity_version": "Download/first pages BDA 639 V4; final document footer says V3, date 2024-05-08; internal inconsistency retained"
+    },
+    {
+      "file": "sources/true1-mate-f.step",
+      "url": "https://www.neutrik.com/media/13351/download/nac3fx-w-top.stp?v=1",
+      "retrieved_utc": "2026-10-23T20:26:37Z",
+      "final_url": "https://www.neutrik.com/media/13351/download/nac3fx-w-top.stp?v=1",
+      "sha256": "fbf7264b3ea29e904193086df571ffce41bd6eab4ac84cc5aa2c5c494ae58dc0",
+      "bytes": 7904100,
+      "content_type": "text/plain; charset=UTF-8",
+      "last_modified": "Wed, 27 Feb 2019 14:55:18 GMT",
+      "status": "fetched",
+      "identity_version": {
+        "product_page_linked_part": "NAC3FX-W-TOP",
+        "step_header": "ISO-10303-21;\nHEADER;\nFILE_DESCRIPTION((''),'2;1');\nFILE_NAME('NAC3FX-W-TOP_SW0001','2019-01-21T',('odo'),(''),\n'CREO PARAMETRIC BY PTC INC, 2017020','CREO PARAMETRIC BY PTC INC, 2017020','');\nFILE_SCHEMA(('CONFIG_CONTROL_DESIGN'));\nENDSEC;",
+        "caveat": "File timestamp identifies model export, not dimensional interchangeability or product certification."
+      }
+    },
+    {
+      "file": "sources/true1-mate-m.step",
+      "url": "https://www.neutrik.com/media/13352/download/nac3mx-w-top.stp?v=1",
+      "retrieved_utc": "2026-10-23T20:26:39Z",
+      "final_url": "https://www.neutrik.com/media/13352/download/nac3mx-w-top.stp?v=1",
+      "sha256": "5c42933b98684d551ed63616555a9ba1fc4b4edd9f8e3ab6a2f82240f7bb46c9",
+      "bytes": 9990511,
+      "content_type": "text/plain; charset=UTF-8",
+      "last_modified": "Wed, 27 Feb 2019 14:55:25 GMT",
+      "status": "fetched",
+      "identity_version": {
+        "product_page_linked_part": "NAC3MX-W-TOP",
+        "step_header": "ISO-10303-21;\nHEADER;\nFILE_DESCRIPTION((''),'2;1');\nFILE_NAME('NAC3MX-W_SW0002','2019-01-21T',('odo'),(''),\n'CREO PARAMETRIC BY PTC INC, 2017020','CREO PARAMETRIC BY PTC INC, 2017020','');\nFILE_SCHEMA(('CONFIG_CONTROL_DESIGN'));\nENDSEC;",
+        "caveat": "File timestamp identifies model export, not dimensional interchangeability or product certification."
+      }
+    },
+    {
+      "file": "sources/true1-cable-f-assembly.pdf",
+      "url": "https://www.neutrik.com/media/12859/download/BDA%20541%20V6%20-%20powerCON%20TRUE1%20TOP%20-%20NAC3FX-W-TOP.pdf?v=6",
+      "retrieved_utc": "2026-10-23T20:26:41Z",
+      "final_url": "https://www.neutrik.com/media/12859/download/BDA%20541%20V6%20-%20powerCON%20TRUE1%20TOP%20-%20NAC3FX-W-TOP.pdf?v=6",
+      "sha256": "b8cfcef480c8dd6a38bceb36b5a7680bd52ad89764555c3127dc5c1704849bef",
+      "bytes": 1493933,
+      "content_type": "application/pdf",
+      "last_modified": "Tue, 19 Aug 2025 13:26:27 GMT",
+      "status": "fetched",
+      "identity_version": "BDA 541 V6; current linked file; full original retained"
+    },
+    {
+      "file": "sources/true1-cable-m-assembly.pdf",
+      "url": "https://www.neutrik.com/media/12860/download/BDA%20542%20V6%20-%20powerCON%20TRUE%201%20TOP%20-%20NAC3MX-W-TOP.pdf?v=7",
+      "retrieved_utc": "2026-10-23T20:26:42Z",
+      "final_url": "https://www.neutrik.com/media/12860/download/BDA%20542%20V6%20-%20powerCON%20TRUE%201%20TOP%20-%20NAC3MX-W-TOP.pdf?v=7",
+      "sha256": "1aadd59a60e105b5b9330b1074ba52e0dd0ac439ccf213c30902ea9500e9dcf8",
+      "bytes": 1523477,
+      "content_type": "application/pdf",
+      "last_modified": "Tue, 19 Aug 2025 13:28:42 GMT",
+      "status": "fetched",
+      "identity_version": "BDA 542 V6; current linked file; full original retained"
+    },
+    {
+      "file": "sources/true1-safety.pdf",
+      "url": "https://www.neutrik.com/media/13212/download/BDA%20559%20V3%20-%20powerCON%20TRUE1%20TOP%20SAFETY%20NOTICE.pdf?v=2",
+      "retrieved_utc": "2026-10-23T20:26:44Z",
+      "final_url": "https://www.neutrik.com/media/13212/download/BDA%20559%20V3%20-%20powerCON%20TRUE1%20TOP%20SAFETY%20NOTICE.pdf?v=2",
+      "sha256": "400719d32bba82a04157232c349cd97c0cdbc93460782543bbba4e1df2da2079",
+      "bytes": 5296608,
+      "content_type": "application/pdf",
+      "last_modified": "Thu, 29 Jun 2023 11:54:03 GMT",
+      "status": "fetched",
+      "identity_version": "BDA 559 V3; update 2023-06-28"
+    },
+    {
+      "file": "sources/neutrik-product-guide.pdf",
+      "url": "https://www.neutrik.com/media/10093/download/Neutrik%20Product%20Guide%20-%2006%20powerCON%20and%20Circular%20Connectors%20PG%20EN%20202210-V25.pdf?v=10",
+      "retrieved_utc": "2026-10-23T20:30:21Z",
+      "final_url": "https://www.neutrik.com/media/10093/download/Neutrik%20Product%20Guide%20-%2006%20powerCON%20and%20Circular%20Connectors%20PG%20EN%20202210-V25.pdf?v=10",
+      "sha256": "50d2123b7745257d28e4467f11eb616690a596252cd42d080737a5750f840286",
+      "bytes": 7343789,
+      "content_type": "application/pdf",
+      "last_modified": "Wed, 09 Nov 2022 21:40:04 GMT",
+      "status": "fetched",
+      "identity_version": "Product Guide 06; PG EN 202210-V25; download v10"
+    },
+    {
+      "file": "sources/pc-in-drawing.pdf",
+      "url": "https://www.neutrik.com/media/14374/download/st-nac3mpxxa.PDF?v=1",
+      "retrieved_utc": "2026-10-23T20:24:22Z",
+      "final_url": "https://www.neutrik.com/media/14374/download/st-nac3mpxxa.PDF?v=1",
+      "sha256": "d546878fd0e0ff73f9008a110a472f20a88807beb87f582b813f4f39bf12ba10",
+      "bytes": 152135,
+      "content_type": "application/pdf",
+      "last_modified": "Fri, 06 Nov 2020 10:59:42 GMT",
+      "status": "fetched",
+      "identity_version": "ST-NAC3MPXXA; drawn 2019-10-24; no change/index shown"
+    },
+    {
+      "file": "sources/pc-out-drawing.pdf",
+      "url": "https://www.neutrik.com/media/14378/download/st-nac3mpxxb.PDF?v=1",
+      "retrieved_utc": "2026-10-23T20:24:23Z",
+      "final_url": "https://www.neutrik.com/media/14378/download/st-nac3mpxxb.PDF?v=1",
+      "sha256": "69f47658411fa33dd363bafd31c1bbf8336276c8010482f7a715f33874200d53",
+      "bytes": 148856,
+      "content_type": "application/pdf",
+      "last_modified": "Fri, 06 Nov 2020 10:59:52 GMT",
+      "status": "fetched",
+      "identity_version": "ST-NAC3MPXXB; drawn 2019-10-22; no change/index shown"
+    },
+    {
+      "file": "sources/true1-in-drawing.pdf",
+      "url": "https://www.neutrik.com/media/12874/download/st-nac3mpx-top.PDF?v=1",
+      "retrieved_utc": "2026-10-23T20:24:28Z",
+      "final_url": "https://www.neutrik.com/media/12874/download/st-nac3mpx-top.PDF?v=1",
+      "sha256": "e70924e40d8fdbd4d866e309365114765543c2eeda50bae56dab4a3c9014cad5",
+      "bytes": 130561,
+      "content_type": "application/pdf",
+      "last_modified": "Tue, 09 Oct 2018 08:30:51 GMT",
+      "status": "fetched",
+      "identity_version": "ST-NAC3MPX-TOP; drawn 2018-05-03"
+    },
+    {
+      "file": "sources/true1-out-drawing.pdf",
+      "url": "https://www.neutrik.com/media/12868/download/20003608_-_NAC3FPX-TOP.pdf?v=3",
+      "retrieved_utc": "2026-10-23T20:24:29Z",
+      "final_url": "https://www.neutrik.com/media/12868/download/20003608_-_NAC3FPX-TOP.pdf?v=3",
+      "sha256": "0bff8683b86e714e188ceb875133ad5e20389dbea6b82f5cde4d794200de821f",
+      "bytes": 354816,
+      "content_type": "application/pdf",
+      "last_modified": "Tue, 11 Apr 2023 16:08:21 GMT",
+      "status": "fetched",
+      "identity_version": "Drawing 20003608; approved 2023-03-02; model ID 30009221; linked STEP header 30010398"
+    }
+  ]
+}

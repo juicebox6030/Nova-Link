@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/sources/minco.pdf",
+      "url": "https://www.minco.com/wp-content/uploads/Minco-Flex-Circuits-Design-Guide-2019.pdf",
+      "basis": "2019 designguide;dynamic singlelayer/material/plating discussion",
+      "sha256": "ea0e935ae408bbb5ccfad89b0e1fb1cb6ab640a40a27c65b9faecfba3ff4ca11",
+      "integration_callout": "PDF p8: material-class and bend-to-install guidance, not approved current stack"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/sources/allflex.pdf",
+      "url": "https://www.allflexinc.com/wp-content/uploads/2024/03/Minimum-Bend-Radius-Considerations-in-Flexible-Circuits.pdf",
+      "basis": "Primary guidance;RA foil/dynamic vs static, thickness ratio not cycle approval",
+      "sha256": "7297fab82b554e9ee58fba4f9805eed79447f7fabecb41d85664829b54b0ffad",
+      "integration_callout": "PDF p1: RA foil and6x composite-thickness starting guidance, not qualification"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/mechanism-repaired/sources/usb4105.pdf",
+      "url": "https://gct.co/files/drawings/usb4105.pdf",
+      "sha256": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5",
+      "basis": "Drawing USB4105 B4,18/12/23,sheet1;actual fetched PDF and rendered/viewed",
+      "confidence": "Manufacturer drawing; sourced envelope only, not manufacturer solid model",
+      "selected_proposal": "USB4105-GF-A; placeholder maximum envelope, source axial layout not integrated"
+    }
+  ],
+  "reuse": "Fetched primary source assets reused read-only; no new supplier search",
+  "material_status": "RA70um single-layer polyimide0.16total proposed, not purchased supplier stack",
+  "source_board": "Source-axial-routing primary ledger remains governing component evidence; no part substituted"
+}

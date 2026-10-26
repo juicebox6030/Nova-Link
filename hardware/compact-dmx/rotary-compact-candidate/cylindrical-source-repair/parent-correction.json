@@ -1,0 +1,21 @@
+{
+  "CYL_R1_receipt": "51fba486eb780295c9ddf87e8d69ce0874910ce091548121cb3a9e0f33972975",
+  "expected_parent_document_change": {
+    "protected_matches": 402,
+    "protected_total": 403,
+    "intentional_parent_deltas": [
+      {
+        "path": "docs/hardware/DMX_Dongle_and_Power_Barrel.md",
+        "frozen_sha256": "b2ecbd2068c61f3ea82e183e0939ea6c3ca69cf17b1252c2fd749fb2a3e67090",
+        "current_sha256": "c5dfe6d0885817aa49b738967f70d8995975f368cb802d827f6821dfda63b654",
+        "reason": "Parent canonical checkpoint updated after the initial 403/403 verification; source candidate unchanged"
+      }
+    ],
+    "artifact_matches": 19,
+    "receipt_sha256": "51fba486eb780295c9ddf87e8d69ce0874910ce091548121cb3a9e0f33972975",
+    "frozen_manifests_refreshed": false
+  },
+  "prior_manifest_not_modified": true,
+  "comparison_correction": "Matched allowances; no numerical owner threshold",
+  "corridor_correction": "Full normal circular sections and BRep swept volumes, not radial centerline subtraction"
+}

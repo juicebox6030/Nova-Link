@@ -1,0 +1,1110 @@
+{
+  "status": "PASS rigid released mechanism181poses; pin engagement allowed only13detents",
+  "rows": [
+    {
+      "angle": -90,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.0,
+      "lock_allowed": true
+    },
+    {
+      "angle": -89,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413992,
+      "lock_allowed": false
+    },
+    {
+      "angle": -88,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.19694482390469,
+      "lock_allowed": false
+    },
+    {
+      "angle": -87,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254122186,
+      "lock_allowed": false
+    },
+    {
+      "angle": -86,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594224,
+      "lock_allowed": false
+    },
+    {
+      "angle": -85,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -84,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -83,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -82,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -81,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -80,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -79,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.0192255345942165,
+      "lock_allowed": false
+    },
+    {
+      "angle": -78,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254122026,
+      "lock_allowed": false
+    },
+    {
+      "angle": -77,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.1969448239046914,
+      "lock_allowed": false
+    },
+    {
+      "angle": -76,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413952,
+      "lock_allowed": false
+    },
+    {
+      "angle": -75,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.0,
+      "lock_allowed": true
+    },
+    {
+      "angle": -74,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413883,
+      "lock_allowed": false
+    },
+    {
+      "angle": -73,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.1969448239046785,
+      "lock_allowed": false
+    },
+    {
+      "angle": -72,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254122923,
+      "lock_allowed": false
+    },
+    {
+      "angle": -71,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594217,
+      "lock_allowed": false
+    },
+    {
+      "angle": -70,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.08407044966673,
+      "lock_allowed": false
+    },
+    {
+      "angle": -69,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -68,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.08407044966673,
+      "lock_allowed": false
+    },
+    {
+      "angle": -67,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.08407044966673,
+      "lock_allowed": false
+    },
+    {
+      "angle": -66,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -65,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -64,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594242,
+      "lock_allowed": false
+    },
+    {
+      "angle": -63,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254122514,
+      "lock_allowed": false
+    },
+    {
+      "angle": -62,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.1969448239047202,
+      "lock_allowed": false
+    },
+    {
+      "angle": -61,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413777,
+      "lock_allowed": false
+    },
+    {
+      "angle": -60,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.0,
+      "lock_allowed": true
+    },
+    {
+      "angle": -59,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413738,
+      "lock_allowed": false
+    },
+    {
+      "angle": -58,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.196944823904692,
+      "lock_allowed": false
+    },
+    {
+      "angle": -57,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254121853,
+      "lock_allowed": false
+    },
+    {
+      "angle": -56,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594209,
+      "lock_allowed": false
+    },
+    {
+      "angle": -55,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -54,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -53,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -52,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.08407044966673,
+      "lock_allowed": false
+    },
+    {
+      "angle": -51,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -50,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -49,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.0192255345942405,
+      "lock_allowed": false
+    },
+    {
+      "angle": -48,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.281133325412215,
+      "lock_allowed": false
+    },
+    {
+      "angle": -47,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.196944823904694,
+      "lock_allowed": false
+    },
+    {
+      "angle": -46,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161414376,
+      "lock_allowed": false
+    },
+    {
+      "angle": -45,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.0,
+      "lock_allowed": true
+    },
+    {
+      "angle": -44,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413421,
+      "lock_allowed": false
+    },
+    {
+      "angle": -43,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.1969448239047193,
+      "lock_allowed": false
+    },
+    {
+      "angle": -42,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254122053,
+      "lock_allowed": false
+    },
+    {
+      "angle": -41,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594217,
+      "lock_allowed": false
+    },
+    {
+      "angle": -40,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -39,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -38,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.08407044966673,
+      "lock_allowed": false
+    },
+    {
+      "angle": -37,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -36,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -35,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -34,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594238,
+      "lock_allowed": false
+    },
+    {
+      "angle": -33,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254122395,
+      "lock_allowed": false
+    },
+    {
+      "angle": -32,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.1969448239046883,
+      "lock_allowed": false
+    },
+    {
+      "angle": -31,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161414008,
+      "lock_allowed": false
+    },
+    {
+      "angle": -30,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.0,
+      "lock_allowed": true
+    },
+    {
+      "angle": -29,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413224,
+      "lock_allowed": false
+    },
+    {
+      "angle": -28,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.1969448239046225,
+      "lock_allowed": false
+    },
+    {
+      "angle": -27,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.281133325412216,
+      "lock_allowed": false
+    },
+    {
+      "angle": -26,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594221,
+      "lock_allowed": false
+    },
+    {
+      "angle": -25,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -24,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -23,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -22,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -21,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -20,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -19,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594235,
+      "lock_allowed": false
+    },
+    {
+      "angle": -18,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254122292,
+      "lock_allowed": false
+    },
+    {
+      "angle": -17,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.196944823904695,
+      "lock_allowed": false
+    },
+    {
+      "angle": -16,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413992,
+      "lock_allowed": false
+    },
+    {
+      "angle": -15,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.0,
+      "lock_allowed": true
+    },
+    {
+      "angle": -14,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413808,
+      "lock_allowed": false
+    },
+    {
+      "angle": -13,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.196944823904695,
+      "lock_allowed": false
+    },
+    {
+      "angle": -12,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254121893,
+      "lock_allowed": false
+    },
+    {
+      "angle": -11,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594194,
+      "lock_allowed": false
+    },
+    {
+      "angle": -10,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -9,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -8,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -7,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -6,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -5,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": -4,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594232,
+      "lock_allowed": false
+    },
+    {
+      "angle": -3,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.281133325412223,
+      "lock_allowed": false
+    },
+    {
+      "angle": -2,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.196944823904693,
+      "lock_allowed": false
+    },
+    {
+      "angle": -1,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.944603416141395,
+      "lock_allowed": false
+    },
+    {
+      "angle": 0,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.0,
+      "lock_allowed": true
+    },
+    {
+      "angle": 1,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413834,
+      "lock_allowed": false
+    },
+    {
+      "angle": 2,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.196944823904614,
+      "lock_allowed": false
+    },
+    {
+      "angle": 3,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254121497,
+      "lock_allowed": false
+    },
+    {
+      "angle": 4,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594217,
+      "lock_allowed": false
+    },
+    {
+      "angle": 5,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 6,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 7,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 8,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 9,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 10,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 11,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594231,
+      "lock_allowed": false
+    },
+    {
+      "angle": 12,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.281133325412224,
+      "lock_allowed": false
+    },
+    {
+      "angle": 13,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.196944823904686,
+      "lock_allowed": false
+    },
+    {
+      "angle": 14,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413939,
+      "lock_allowed": false
+    },
+    {
+      "angle": 15,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.0,
+      "lock_allowed": true
+    },
+    {
+      "angle": 16,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413862,
+      "lock_allowed": false
+    },
+    {
+      "angle": 17,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.1969448239046963,
+      "lock_allowed": false
+    },
+    {
+      "angle": 18,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.28113332541224,
+      "lock_allowed": false
+    },
+    {
+      "angle": 19,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.0192255345942005,
+      "lock_allowed": false
+    },
+    {
+      "angle": 20,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 21,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 22,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 23,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 24,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 25,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 26,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594234,
+      "lock_allowed": false
+    },
+    {
+      "angle": 27,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.281133325412216,
+      "lock_allowed": false
+    },
+    {
+      "angle": 28,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.196944823904706,
+      "lock_allowed": false
+    },
+    {
+      "angle": 29,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161414152,
+      "lock_allowed": false
+    },
+    {
+      "angle": 30,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.0,
+      "lock_allowed": true
+    },
+    {
+      "angle": 31,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.944603416141351,
+      "lock_allowed": false
+    },
+    {
+      "angle": 32,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.196944823904687,
+      "lock_allowed": false
+    },
+    {
+      "angle": 33,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.281133325412169,
+      "lock_allowed": false
+    },
+    {
+      "angle": 34,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594229,
+      "lock_allowed": false
+    },
+    {
+      "angle": 35,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 36,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 37,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 38,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 39,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 40,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 41,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594223,
+      "lock_allowed": false
+    },
+    {
+      "angle": 42,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.281133325412209,
+      "lock_allowed": false
+    },
+    {
+      "angle": 43,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.196944823904678,
+      "lock_allowed": false
+    },
+    {
+      "angle": 44,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161414271,
+      "lock_allowed": false
+    },
+    {
+      "angle": 45,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.0,
+      "lock_allowed": true
+    },
+    {
+      "angle": 46,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413881,
+      "lock_allowed": false
+    },
+    {
+      "angle": 47,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.1969448239047327,
+      "lock_allowed": false
+    },
+    {
+      "angle": 48,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.281133325412209,
+      "lock_allowed": false
+    },
+    {
+      "angle": 49,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594209,
+      "lock_allowed": false
+    },
+    {
+      "angle": 50,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.08407044966673,
+      "lock_allowed": false
+    },
+    {
+      "angle": 51,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 52,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.08407044966673,
+      "lock_allowed": false
+    },
+    {
+      "angle": 53,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 54,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 55,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 56,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594217,
+      "lock_allowed": false
+    },
+    {
+      "angle": 57,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254122355,
+      "lock_allowed": false
+    },
+    {
+      "angle": 58,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.1969448239047096,
+      "lock_allowed": false
+    },
+    {
+      "angle": 59,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.944603416141385,
+      "lock_allowed": false
+    },
+    {
+      "angle": 60,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.0,
+      "lock_allowed": true
+    },
+    {
+      "angle": 61,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161414195,
+      "lock_allowed": false
+    },
+    {
+      "angle": 62,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.196944823904749,
+      "lock_allowed": false
+    },
+    {
+      "angle": 63,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254122816,
+      "lock_allowed": false
+    },
+    {
+      "angle": 64,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594238,
+      "lock_allowed": false
+    },
+    {
+      "angle": 65,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 66,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 67,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 68,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 69,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 70,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 71,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.0192255345942405,
+      "lock_allowed": false
+    },
+    {
+      "angle": 72,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.281133325412247,
+      "lock_allowed": false
+    },
+    {
+      "angle": 73,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.1969448239046927,
+      "lock_allowed": false
+    },
+    {
+      "angle": 74,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413959,
+      "lock_allowed": false
+    },
+    {
+      "angle": 75,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.0,
+      "lock_allowed": true
+    },
+    {
+      "angle": 76,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413883,
+      "lock_allowed": false
+    },
+    {
+      "angle": 77,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.1969448239046785,
+      "lock_allowed": false
+    },
+    {
+      "angle": 78,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254121884,
+      "lock_allowed": false
+    },
+    {
+      "angle": 79,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594203,
+      "lock_allowed": false
+    },
+    {
+      "angle": 80,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 81,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 82,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 83,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 84,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 85,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.084070449666729,
+      "lock_allowed": false
+    },
+    {
+      "angle": 86,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 4.019225534594217,
+      "lock_allowed": false
+    },
+    {
+      "angle": 87,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 3.2811333254122417,
+      "lock_allowed": false
+    },
+    {
+      "angle": 88,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 2.1969448239047082,
+      "lock_allowed": false
+    },
+    {
+      "angle": 89,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.9446034161413998,
+      "lock_allowed": false
+    },
+    {
+      "angle": 90,
+      "released_intersection_mm3": 0.0,
+      "locked_pin_intersection_mm3": 0.0,
+      "lock_allowed": true
+    }
+  ],
+  "active_flex_basis": "motion.json181position finite-thickness proof + conservative guides; actual full assembly flex checked threeposes",
+  "pin_release_mm": 4.2,
+  "locked_engagement_mm": 1.3,
+  "released_tip_to_index_mm": 2.9,
+  "spring": {
+    "free_mm": 7,
+    "installed_mm": 5.8,
+    "released_mm": 1.6,
+    "solid_mm": 1.4,
+    "rate_N_per_mm": 0.114,
+    "preload_N": 0.1368,
+    "released_force_N": 0.6156,
+    "wire_mm": 0.2,
+    "mean_diameter_mm": 3,
+    "active_coils": 5,
+    "total_coils": 7,
+    "return_friction_max_engineering_target_N": 0.08,
+    "supplier_qualified": false
+  }
+}

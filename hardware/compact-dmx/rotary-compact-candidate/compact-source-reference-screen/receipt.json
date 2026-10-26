@@ -1,0 +1,36 @@
+{
+  "revision": "CSR-R1",
+  "scope": "Two official isolated offline reference boards; no circuit/CAD product edits",
+  "working_state": {
+    "branch": "main",
+    "HEAD": "b42c0e6284aac734fde851c69146abf73920f337",
+    "shared_edits_preserved": true
+  },
+  "decision": "TIDA-01560 conditional 12V reference direction; no accepted replacement or smaller finished envelope",
+  "references": [
+    "PMP11295 RevD",
+    "TIDA-01560 E1"
+  ],
+  "native_outline_mm": [
+    66,
+    50
+  ],
+  "complete_height": "UNKNOWN",
+  "frozen_inputs": 24,
+  "source_files": 38,
+  "artifact_files": 17,
+  "commands": [
+    "python3 screen.py",
+    "flatpak run --command=python3 org.kicad.KiCad <absolute-folder>/extract-cad.py",
+    "python3 verify.py",
+    "pdftotext -layout <PDF> <text>",
+    "pdftoppm -singlefile -png <PDF> <render>"
+  ],
+  "inventories": {
+    "artifacts.json": "96416a1a5561f99f3ea349b30671c2d3d1953f712e790a8826dbc76a945b6b4e",
+    "source-hashes.json": "549c2607d56db0d5192ef45382eb4af1c2cd5bc20b41adfd2e8c1cc863283be6",
+    "protected-inputs.json": "4d8c1531702acf36ce854df7371b08274240226e8004daae9cf37942fc4c9fe5"
+  },
+  "remaining": "maximum complete heights, safety spacing/mounting, primary/secondary branch/PE construction, transformer revision/sourcing, fault/current/startup/thermal/EMI and complete packaging; all previous gates retained",
+  "frozen_record_exception": "One observed canonical-doc delta, explicitly pinned separately; original frozen manifest unchanged"
+}

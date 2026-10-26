@@ -1,0 +1,26 @@
+{
+  "status": "PASS actual32 fullfootprints, savedpadnet/courtyard checks; one unrouted25x18x1placement. Heighttarget FAIL.",
+  "physical_footprints": 32,
+  "purchased_parts": 30,
+  "numbered_pad_primitives_checked": 123,
+  "physical_pad_primitives_including_NPTH": 125,
+  "minimum_courtyard_gap_mm": 0.10999999999999943,
+  "body_sum_mm2": 218.9135,
+  "complete_courtyard_sum_mm2": 349.60600000000005,
+  "PCB_mm": [
+    25,
+    18,
+    1
+  ],
+  "all_components_top": true,
+  "tracks": 0,
+  "component_height_max_mm": 3.46,
+  "height_target_mm": 3.2,
+  "height_target_pass": false,
+  "connector_body_overhang_alloc_mm": 2.17,
+  "complete_front_to_back_envelope_alloc_mm": 20.17,
+  "stake_protrusion_below1mmPCB_with0p1thickness_allowance_max_mm": 0.2,
+  "FPC_clamp_and_solder_courts": "External mechanical/strainrelief unqualified; no bottom component allowance.",
+  "whole_collar_fit": false,
+  "routing_thermal_qualification": false
+}

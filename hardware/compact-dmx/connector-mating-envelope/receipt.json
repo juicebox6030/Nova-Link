@@ -1,0 +1,159 @@
+{
+  "revision": "CME-R1",
+  "created_utc": "2026-10-23T20:58:37.056424+00:00",
+  "repo": "/home/juicebox/Nova-Link",
+  "head": "b42c0e6284aac734fde851c69146abf73920f337",
+  "branch": "main",
+  "owned_write_scope": "hardware/compact-dmx/connector-mating-envelope/**",
+  "parent_CI_R1_receipt_sha256": "58dd649c753c43b13ae55ac53ae8598ee6b020e4b91a6c35f7d42672c3014f5a",
+  "decision": "HOLD: zero of four pairs has a uniquely defended installed rigid transform. Stop each pair without an invented insertion interval or mated length.",
+  "verification": {
+    "revision": "CME-R1",
+    "status": "PASS_EVIDENCE_AND_HOLD_CONTRACTS_NOT_INSTALLED_FIT",
+    "protected_inputs_unchanged": 233,
+    "CI_R1_inherited_protection_matches": 95,
+    "CI_R1_inherited_protection_total": 96,
+    "CI_R1_inherited_doc_deltas": 1,
+    "reused_primary_sources": 28,
+    "new_exact_mate_drawings": 4,
+    "saved_unplaced_models_checked": 8,
+    "isolated_plane_probes": 8,
+    "defended_installed_pairs": 0,
+    "unclosed_pairs": 4,
+    "bare_rear_depth_exceeds_24mm_pairs": 4,
+    "whole_model_invalid_count": 2,
+    "open_surface_model_count": 2,
+    "manufacturer_pairing_and_key_checks": true,
+    "invented_installed_dimensions": 0
+  },
+  "frozen_inputs": "233 direct start hashes match, including complete CI-R1 and S12/PE directories. CI-R1 inherited list separately has95/96 matches; one parent-owned canonical document differs. Exact expected/current hashes in inherited-protection-status.json; not refreshed or edited. No unfinished Astra model read.",
+  "exact_models_checked": [
+    "NAC3MPXXA",
+    "NAC3FXXA-W-S",
+    "NAC3MPXXB",
+    "NAC3FXXB-W-S",
+    "NAC3MPX-TOP",
+    "NAC3FX-W-TOP",
+    "NAC3FPX-TOP",
+    "NAC3MX-W-TOP"
+  ],
+  "source_evidence": {
+    "reused": "source-links.json:28 primary exact-page/model/chassis-drawing/manual/guide files, with URLs/bytes/hashes/headers",
+    "new": "new-source-manifest.json:4 exact mate drawings; versions in drawing-identities.json",
+    "reused_manifest_sha256": "5e900158d943a645c6b9666d838fac6bbc294695db80a182548354cc4b8599d8",
+    "new_manifest_sha256": "72b17e7d7c869c9d74ebf543d2cee92196728633a6d0b72ccb86ae775a6c36cd",
+    "entities": "datum-inspection.json and saved-reference-check.json; face IDs apply to these exact hashes and FreeCAD1.1.3 imports, not universal maker semantic labels."
+  },
+  "actual_commands": [
+    {
+      "command": "QT_QPA_PLATFORM=offscreen /home/juicebox/.local/bin/freecadcmd /home/juicebox/Nova-Link/hardware/compact-dmx/connector-mating-envelope/inspect-datums.py",
+      "exit_code": 0,
+      "evidence": "datum-inspection.log; datum-inspection.json; private unplaced FCStd/contours"
+    },
+    {
+      "command": "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/connector-mating-envelope/build-contracts.py",
+      "exit_code": 0,
+      "evidence": "contracts.json:four HOLDs"
+    },
+    {
+      "command": "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/connector-mating-envelope/make-views.py",
+      "exit_code": 0,
+      "evidence": "views/contract-summary.pdf; views/contracts.html/svg; sixteen private equal-scale sectionSVGs"
+    },
+    {
+      "command": "/home/juicebox/Nova-Link/hardware/compact-dmx/connector-mating-envelope/validate.sh",
+      "exit_code": 0,
+      "evidence": "validation.log; saved-reference-check.log/json; verification.json; independent FreeCAD saved-reference comparison then Python hash/type/HOLD checks"
+    },
+    {
+      "command": "pdftoppm -scale-to 1200 -f 1 -singlefile -png hardware/compact-dmx/connector-mating-envelope/views/contract-summary.pdf hardware/compact-dmx/connector-mating-envelope/views/contract-summary; pdftoppm -scale-to 1200 -f 2 -singlefile -png hardware/compact-dmx/connector-mating-envelope/views/contract-summary.pdf hardware/compact-dmx/connector-mating-envelope/views/contract-summary-page2 (two separately executed commands)",
+      "exit_code": 0,
+      "evidence": "views/contract-summary.png and contract-summary-page2.png, both visually inspected"
+    },
+    {
+      "command": "git rev-parse HEAD; git branch --show-current (read-only)",
+      "exit_code": 0,
+      "evidence": "main b42c0e6284aac734fde851c69146abf73920f337"
+    }
+  ],
+  "views": {
+    "public_own_authored": "views/contract-summary.pdf, views/contracts.svg, views/contracts.html",
+    "private_editable_reference": "sources/unplaced-references.FCStd; sources/reference-atlas.html; sixteen same-scale UNPLACED SVG sections",
+    "installed_placed_CAD_or_STEP": "NOT ISSUED:zero defended transforms. Original eight manufacturer STEP files remain in ignored frozen CI-R1 cache.",
+    "inspection": "Both PDF pages visually checked; HTML preview728px/no console errors. Private atlas inspected; no view represents an installed pair."
+  },
+  "usable_contracts": "contracts.json records mating type/key, source axis, panel face and drawing bare rear depths30.4/30.4/31.2/32.8mm. All exceed24mm before termination. Standalone cable lengths79..82.5/79..82.5/77..80/77..80mm are NOT installed projections.",
+  "unclosed_data": [
+    "actual final axial stop and installed panel datum",
+    "insertion/final locked key angles, latch state/stroke and tolerance/play",
+    "verified contact overlap and continuous insertion/rotation path",
+    "exact qualified insulated rear terminal/sleeve profile and finite tool/cable-bend/hand clearance",
+    "model revision/configuration alignment where drawing and linked STEP identifiers differ"
+  ],
+  "not_claimed": [
+    "No whole-model Boolean PASS on invalid/open models",
+    "No arbitrary origin-to-origin mating, healing, locked pose, insertion interval or installed length",
+    "No new families, NEMA set, circuit, BOM or main CAD change",
+    "No mains certification, product fit or manufacturing release",
+    "No hardware, energized work, firmware, installs, outreach, children or git publication"
+  ],
+  "artifacts_sha256": {
+    ".gitignore": "df8676c5260f2e92a22d429d37486a98e74c375cf7e82d6414385e6b5df3c6eb",
+    "README.md": "8df00eb490e2a296b623b7ef4ce37ec16823db7d8ea35d724860541af83f3d3e",
+    "build-contracts.py": "daf514324377efd5bc378c8157152d2abd3a531372753795439d25b71052bccc",
+    "check-saved-references.py": "e440f4a51b94f70f91ce4f9aceb62865297b477e111cd2706aa8035dbba528a8",
+    "contracts.json": "45afed690774795f7fb7e7286bea497455b2e241ac5d4baba60a2e725e2a53e6",
+    "datum-inspection.json": "495c5f895102b05dd90d36ef934f02f832e25bfc54eb9ada7ee19009f557120f",
+    "datum-inspection.log": "ea1916218dcb6495217385ba380737d6edb1eaa32593e1f14731f1bb0b72374e",
+    "drawing-identities.json": "9b171bbf73a2f073f6c3d15ac0af13011afc0de3df8fb976a66f00c117080a09",
+    "inherited-protection-status.json": "d11dc0723852824bbd41e3f805fc0cc5f941e6a03b2285f5e5a1587d4f6ef211",
+    "inspect-datums.py": "22460fb44d180eefef62d5de8afebd8c0c4b00407b02f41809edf7d5a53f87ca",
+    "make-views.py": "b1e835d6ca74194c0aa933a6ad3b4f3f4bd22937d1a7037dccb6079a74b04a0d",
+    "new-source-manifest.json": "72b17e7d7c869c9d74ebf543d2cee92196728633a6d0b72ccb86ae775a6c36cd",
+    "protected-inputs.json": "821005cc07b5c38ca7a46aef5bb4e3d1ff6e974475dfc48febad1acc64cd06fb",
+    "saved-reference-check.json": "dc4f685d71b91a108d1e1bfbb55ee1698428af0bcb54d36ff589985e5957847b",
+    "saved-reference-check.log": "95aafb042c21c6c755967e73a4ed197368c94b83ea5ed0e7cac9de486c6ca829",
+    "seal.py": "36d2ebd880da065b1adcb9a649ba65f8f0d6d0d783dad9d35fb87af0fa0e1e4b",
+    "source-links.json": "5e900158d943a645c6b9666d838fac6bbc294695db80a182548354cc4b8599d8",
+    "sources/meridian-contours.json": "ded2222a0e315c82ab369f41a7e471a50940ddd6ef831dd880d9fe0b6e989d03",
+    "sources/pc-in-normal_axis_0.svg": "162f9815e343868e1dd5a7de28b93bd2f306ab439073b2da784000c7c967c463",
+    "sources/pc-in-normal_axis_1.svg": "85ce14600029e979d83a0d50f4ab9fc9035a4795ee443d00fc47ee8e15cdba6a",
+    "sources/pc-mate-a-drawing.pdf": "2f632d42fb82758d53cddb44d51b967883f2db699d038d9b3696aefd983002f5",
+    "sources/pc-mate-a-drawing.png": "0eb062284b9f9af4d730c6e8a61628e5dcc5c861b9ebef218df4dd5e736acf6c",
+    "sources/pc-mate-a-drawing.txt": "e213296201e208e0d381b9d2513b3b24934e16e04f15387f45a94db51a4722fe",
+    "sources/pc-mate-a-normal_axis_0.svg": "dec2c96e8274989d5f6bb9c36a5bbe626d5f7dd8a901adfd277a68c04f0ffb70",
+    "sources/pc-mate-a-normal_axis_1.svg": "def71c3360fe6484d96aa3d43f57b60af3fd87a6fe2d1222ba68d2aac372ba37",
+    "sources/pc-mate-b-drawing.pdf": "609af71a3bd0e94cbf9d2de683fc4149a69232f981d701b52e671629a70af069",
+    "sources/pc-mate-b-drawing.png": "398e15f15cabec9e917f309ad153eab8b459ff00cc31796ccb3b986af3d3e507",
+    "sources/pc-mate-b-drawing.txt": "4375bb815ee10b0ec7c0ddef1cefa38a9f502e6fd36ca8e2f90a54e318bb505c",
+    "sources/pc-mate-b-normal_axis_0.svg": "70b349c0d2bc71561a56044058fcb9ed4ddd195b8d93e2165d208a2fdabdb902",
+    "sources/pc-mate-b-normal_axis_1.svg": "4de6c72d68118512c3431c0dade9155a3d4e971428dbe74446c88c47d88da354",
+    "sources/pc-out-normal_axis_0.svg": "4a0f8079e0324d14eeafe4f2e13571e9343404dfd72bd5c4c526510a54ea418f",
+    "sources/pc-out-normal_axis_1.svg": "0bcfb7f3f7f90368a62de5aa4993e1a70849d1d468f98f171879d7cdda3fb8d6",
+    "sources/reference-atlas.html": "a149ce6d9a54165db079ce8a612d6a53581167b85f0c5612d5c1ba1db6dbc364",
+    "sources/true1-in-normal_axis_0.svg": "2e893661d6929468d0ff08625c8cc3c5284964fe4ec08151e01044a5d97586c9",
+    "sources/true1-in-normal_axis_2.svg": "774722e3d36f80dc2a922b1ea1234ba820e9f4d588c97b6873f8ed4e155dead7",
+    "sources/true1-mate-f-drawing.pdf": "ada9dfa12ef7cad132d8636a306bd07306c0f67c8b9efb561e714d67b4c719c6",
+    "sources/true1-mate-f-drawing.png": "f41295aa01665f5480909534e09373826910cbcfc91ff8bf4e23b9e8b7e2518f",
+    "sources/true1-mate-f-drawing.txt": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+    "sources/true1-mate-f-normal_axis_0.svg": "7cc9ee18baa13f1b493dd23f68582a3a08dcdb58f8f230dd0fa367be303e76bd",
+    "sources/true1-mate-f-normal_axis_2.svg": "78dc2008b3f108362f120c9520cbde646117e0a74aad80846f846a061a2ac3e4",
+    "sources/true1-mate-m-drawing.pdf": "adf463538c7a5cd8b71274b1c260bb66cdaace8e99ac0313cb1dc346775988b7",
+    "sources/true1-mate-m-drawing.png": "734da808e603cd87bef5e80ede42edf72cfdf8a22e45280ecabe8dc40f4a7bc6",
+    "sources/true1-mate-m-drawing.txt": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+    "sources/true1-mate-m-normal_axis_1.svg": "64e329a8e65e460dd98cdd8a6b51f2e8d6f35aa32edb9ddf9bdc234a409c7cc9",
+    "sources/true1-mate-m-normal_axis_2.svg": "8918ed294acb8dd99cef8473a2276a4c088d4d8cafbcf92b208d3bdb0133e737",
+    "sources/true1-out-normal_axis_0.svg": "c51699bfeae147ba393ce2618670e2da0ec87b780183ad66787b71f67e6755df",
+    "sources/true1-out-normal_axis_1.svg": "b3f73fcf428fd2615bce02448154ab01d82025d66943c4c30065dce29aaabd2f",
+    "sources/unplaced-references.FCStd": "197edddcb40393471ab7a39bfafcdaa58a8d047cc772351d8ef09fa16c1df751",
+    "validate.sh": "8de14575927acef3c07a6b63d1accb91a872eb81d53d89853bfe64c45b2a0225",
+    "validation.log": "a287f8fd2a416ae5a9f2ed41647d7f464da1d771a520fe68e721f580fa11b61f",
+    "verification.json": "a287f8fd2a416ae5a9f2ed41647d7f464da1d771a520fe68e721f580fa11b61f",
+    "verify.py": "964afbbc4328b3e53b9a2da8d900ac4223875e988b53094c7a7a07d07874f82e",
+    "views/contract-summary-page2.png": "69ccb037f04d25d3b8fb86d5dc770e0ca344bfdb02b5be176e660e3a13bdb923",
+    "views/contract-summary.pdf": "0fb20842f672fd8c5463b6040402fff74094a745fa18607c9c21acdad901b8c2",
+    "views/contract-summary.png": "71d0c5d23ba461efaf9c282570ba82a8b0e2135cbb7e909234e33880feaf0f72",
+    "views/contracts.html": "8771bb78a6779f14042e3e9f09051ebdef96bd5216737d42e9ae8a794244c967",
+    "views/contracts.svg": "b54d58d386300229c8a9a39b70279f698c5847ee27774e92985e75867e5b39ff"
+  }
+}

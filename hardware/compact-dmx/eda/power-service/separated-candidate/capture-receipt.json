@@ -1,0 +1,278 @@
+{
+  "status": "CAPTURED AND STATICALLY CHECKED; PROTOTYPE ONLY; AREA FIT FAIL; NO MANUFACTURING RELEASE",
+  "revision": {
+    "branch": "main",
+    "HEAD": "b42c0e6284aac734fde851c69146abf73920f337",
+    "date": "2026-10-22"
+  },
+  "owned_path": "hardware/compact-dmx/eda/power-service/separated-candidate/**",
+  "external_contract": "No source restriction/CC detector;500mA normal-operation and25mA nominal charging retained as prototype engineering allocations, not universal500mA compatibility. Existing MCU18/DMX7/factory6 preserved. INPUT_FAULT_N translator unimplemented/local only.",
+  "topology": "TPS2553 USB main -> TPS2116 manual mux -> TPS62132; separately TPS2553 ILIM=IN50..100mA -> BQ25173 nominal25mA -> retained15F -> TPS61023 cap-only boost -> muxVIN2; independent resistor/diode rawAON; actual source/common/boost/cap monitors; physical gates and four cross-coupled NOR SR latches; sticky fault shutdown acceptable.",
+  "artifacts": {
+    "DESIGN.md": {
+      "sha256": "3107f59ed43bd49d76d6ad038ebfe10c90b5220c62e4033fe2b2007fa62c20cd",
+      "bytes": 15530
+    },
+    "cli-checks.txt": {
+      "sha256": "0e7e3606963d163f0672e4ed6f84edc500dba003d8beed4d8ef2dba3a450592f",
+      "bytes": 1888
+    },
+    "component-ledger.csv": {
+      "sha256": "fc8002a2f0e403a522eaf3fb69cf341fb105557e0e02c81dc84779a338efaa94",
+      "bytes": 11065
+    },
+    "control.kicad_sch": {
+      "sha256": "2656b0b7f2faa695447c9cde75962e96f00b41078d6fdefdb70def9ee6777b50",
+      "bytes": 174554
+    },
+    "corner-proof.json": {
+      "sha256": "dbc7df3083d120f6131f3f95c2cc6e7e9847302dc4aa7140fbf3b2b2d444fec0",
+      "bytes": 7337
+    },
+    "corner-proof.py": {
+      "sha256": "aed23a037e461bd60d05d48793afb50753aca4e9c2ae2f2bd3171d184dbab39f",
+      "bytes": 11913
+    },
+    "erc.json": {
+      "sha256": "477ba5f85a9e39d8d664a5c2b4c61ddbf1a5599391d2cccc63e6e0f2916fc6ac",
+      "bytes": 1217
+    },
+    "generate.py": {
+      "sha256": "5fc3e4b855ba745c46ffc5f56d8f9fd1783fb679251b0076e73aedc138fd98c0",
+      "bytes": 25173
+    },
+    "preserved-inputs.json": {
+      "sha256": "be667baa164274ed7e9e205d13cdc66f6336acaf3ce9decd9cde0438c6911b78",
+      "bytes": 6494
+    },
+    "rendered/page-1.png": {
+      "sha256": "28550f998305ae8049452d50e9c13aec73941c0588195c7b16998939a17718e7",
+      "bytes": 96668
+    },
+    "rendered/page-2.png": {
+      "sha256": "48efe379a7259447ee4e793a133622ade40aff4b7c68386fca8b98cee65f365f",
+      "bytes": 72023
+    },
+    "rendered/separated-candidate-Control _ real components.svg": {
+      "sha256": "f03cf42baae365089cb797658ad664acb9503330e14ef081679ec046f692984f",
+      "bytes": 3418520
+    },
+    "rendered/separated-candidate.svg": {
+      "sha256": "01af347edcb39d5134730d257adcdd232984814235c7f38f77662a96c52eb402",
+      "bytes": 4565718
+    },
+    "separated-candidate.kicad_prl": {
+      "sha256": "40abb945b78120d5b31daec4966b0de7abd102ca1838fc4ec444b42faf9d7b0e",
+      "bytes": 2306
+    },
+    "separated-candidate.kicad_pro": {
+      "sha256": "18e6a1c9cdb99eb0d232a8ee26dc782ea21f192bd34f886fa0a7d527cb851d65",
+      "bytes": 66
+    },
+    "separated-candidate.kicad_sch": {
+      "sha256": "32370dc9cf7ba3b92a2f3ad4284e23a9bfc2ff1081ae1515c845d30a0c35378f",
+      "bytes": 190164
+    },
+    "separated-candidate.kicad_sym": {
+      "sha256": "84b624cea08ed90968b369a4c97da3202b3f51b24d29b1cf5ef5c0c2632793c7",
+      "bytes": 37023
+    },
+    "separated-candidate.net": {
+      "sha256": "fb7a33b4ebee97cac468c9774778e065a3d5dfc37ce15e8e7b2f2d2e90315150",
+      "bytes": 206024
+    },
+    "separated-candidate.pdf": {
+      "sha256": "07ee495d74f933df5bcf0418745a95a735a572c9496b91515688a8b5c5c84604",
+      "bytes": 549759
+    },
+    "source-cache/at25sf161b.pdf": {
+      "sha256": "f969d1a82b18de2fd33b01ef1b8b8a636a31b8c29a5094193d295fafe1fe581b",
+      "bytes": 1763634
+    },
+    "source-cache/at25sf161b.txt": {
+      "sha256": "04d9c86b0d5d97a5af7028e9e2dfbca77a203d748b66f1eebbd562c4f4d2c976",
+      "bytes": 210112
+    },
+    "source-cache/sn74lvc2g17.pdf": {
+      "sha256": "624dbe55679d2fed4123b0d7708cd0d295efcc78de395e71a0caf5cd13cbc216",
+      "bytes": 1888823
+    },
+    "source-cache/sn74lvc2g17.txt": {
+      "sha256": "8774dbf7572959714b09968661dc3ad5a681541ae1f625fb9b908fabcde192e4",
+      "bytes": 115782
+    },
+    "source-cache/tnpw_e3.pdf": {
+      "sha256": "6f0508c568cb355aaf2accdd33fe3a780d3ea5ef207c4c9a71839a8acadc33a5",
+      "bytes": 363615
+    },
+    "source-cache/tnpw_e3.txt": {
+      "sha256": "30adeaa999be3e1ba6e9f7914c4920410c6d768653adc2e96df3302be4f7e756",
+      "bytes": 107522
+    },
+    "source-manifest.json": {
+      "sha256": "3d6f9f13e302354472f410e4d5ea548876559f63d4002839a324b3f97ff2754e",
+      "bytes": 9553
+    },
+    "sym-lib-table": {
+      "sha256": "2c876ba726755d1877cf4b4d1ad84ed7c4fb7eba7b38608e65ca9bf96cb979b3",
+      "bytes": 183
+    },
+    "validation.json": {
+      "sha256": "10ea19597bcf2ba547b57c08d3c2d42c3de05c6ce971445b17242a880c9dfe98",
+      "bytes": 1267
+    },
+    "verify.py": {
+      "sha256": "5dead72d51374bfab6ec07eebf36b5611bcfe9d0160eba5f9eb19495c9dec266",
+      "bytes": 17921
+    }
+  },
+  "checks": {
+    "KiCad_CLI_version": "10.0.7",
+    "actual_commands": [
+      {
+        "command": "python3 generate.py",
+        "exit_code": 0
+      },
+      {
+        "command": "flatpak run --command=kicad-cli org.kicad.KiCad sch export netlist --format kicadxml -o separated-candidate.net separated-candidate.kicad_sch",
+        "exit_code": 0,
+        "warning": "Warning: schematic has annotation errors, please use the schematic editor to fix them; descriptive symbolic references; unique/complete literal refs independently checked. Final conventional annotation remains open."
+      },
+      {
+        "command": "flatpak run --command=kicad-cli org.kicad.KiCad sch erc --format json --severity-all --exit-code-violations -o erc.json separated-candidate.kicad_sch",
+        "exit_code": 0,
+        "stdout": "Found 0 violations"
+      },
+      {
+        "command": "flatpak run --command=kicad-cli org.kicad.KiCad sch export pdf -o separated-candidate.pdf separated-candidate.kicad_sch",
+        "exit_code": 0
+      },
+      {
+        "command": "flatpak run --command=kicad-cli org.kicad.KiCad sch export svg -o rendered separated-candidate.kicad_sch",
+        "exit_code": 0
+      },
+      {
+        "command": "python3 verify.py",
+        "exit_code": 0
+      },
+      {
+        "command": "python3 corner-proof.py",
+        "exit_code": 0
+      }
+    ],
+    "ERC": {
+      "errors": 0,
+      "warnings": 0,
+      "exclusions": 0,
+      "rules": "KiCad defaults; no global severity suppression; supported analogue IN strap pin-mode specialization disclosed"
+    },
+    "independent": {
+      "status": "PASS: independent static capture checks; not transient/hardware acceptance",
+      "components_in_export": 176,
+      "fitted_parts": 170,
+      "ICs": 44,
+      "nets": 135,
+      "source_based_IC_pin_checks": 316,
+      "all_two_terminal_checks": 128,
+      "stable_logic_cases": 36864,
+      "max_state_settle_iterations": 3,
+      "temporal_logic_scenarios": "empty-cap USB loader; input-ready charging; fault PG-loss persistence; sticky fault/external-cycle; cap backup/proven-loss/no-rearm PASS",
+      "ERC_errors": 0,
+      "ERC_warnings": 0,
+      "ERC_exclusions": 0,
+      "ILIM_IN_mode_pin_model": "U24.5 passive analogue for datasheet-supported IN strap; U6.5 remains output; hard strap independently asserted",
+      "power_flags": [
+        "external VBUS",
+        "external ground",
+        "physical diode-OR AON",
+        "buck-inductor SYS3V3"
+      ],
+      "all_active_control_is_captured": true,
+      "external_boundaries": "existing MCU18/DMX7/factory6 contact maps preserved; USB power contacts only; fault translator unimplemented and not routed",
+      "estimated_fitted_body_area_mm2": 486.884,
+      "estimated_body_area_excluding_cell_mm2": 343.745,
+      "body_area_exceeds150mm2_power_reservation_before_routing": true,
+      "footprints_routing_housing_or_USB_qualification": false,
+      "manufacturing_release": false
+    },
+    "numerical": {
+      "detector_corners": 256,
+      "main_limit_MIN_MAX_mA": [
+        380.20506335970583,
+        477.0810313300889
+      ],
+      "component_DC_envelope_mA": 494.8294376392786,
+      "healthy_minimum_limit_margins_mA": [
+        49.297868873168284,
+        16.567313314270052
+      ],
+      "healthy_CHGIN_precharge_qualifier_margin_V": 0.03600816943512619,
+      "conditional_runtime_s": 10.497339984609122,
+      "guaranteed_single_attach_or_runtime": false
+    },
+    "visual": "Both final PDF pages rendered with existing pdftoppm and inspected: no component/note content clipping/overlap; full labels/MPNs require PDF zoom."
+  },
+  "protected_inputs": {
+    "count": 39,
+    "equal_to_start_count": 35,
+    "all_equal_to_start": false,
+    "changed_since_start": {
+      "hardware/compact-dmx/eda/power-service/erc.json": {
+        "at_start": "8ea9f9a7d2ea67bb2175243f96b9f2a6444cc78489a7fa3eab368bbc6725b9e7",
+        "now": "ee2c4fce8f3210b36f98875e07a85d574581738839d8d11e1b32e51208a13171"
+      },
+      "hardware/compact-dmx/eda/power-service/power-service.net": {
+        "at_start": "481215fbe7d8a473830fff6b8a9468c5abeac993078a5092c3db38957eb36f97",
+        "now": "a33ad758114dc968396f22c2dd16fa2923f833b37bde1f5b35f5268f3c79b620"
+      },
+      "hardware/compact-dmx/eda/power-service/power-service.pdf": {
+        "at_start": "567ccbc1686f2863c2dcbc092f08224a98174a8b8e5dc910cbb2707f3378911a",
+        "now": "ad62f84d70b3964b3a6d514c1662d87a05dbbff85367eca7b1a891b9f7e6190d"
+      },
+      "hardware/compact-dmx/eda/power-service/rendered/power-service.svg": {
+        "at_start": "3cb93390e58dca21057a845465bdf61046a1519d9d8f731d05e51de9d7c9a670",
+        "now": "14d347ec35a00b63f0287d4b1b051f00f3c1d750bec5924a430a67c966dadf34"
+      }
+    },
+    "historical_differences_already_present_at_start": {
+      "hardware/compact-dmx/eda/power-service/erc.json": {
+        "recorded_sha256": "9803f1b5e48c3563788ac6a753ea7e939632cf81ca9a7708781452fd22657aff",
+        "current_sha256": "8ea9f9a7d2ea67bb2175243f96b9f2a6444cc78489a7fa3eab368bbc6725b9e7"
+      },
+      "hardware/compact-dmx/eda/power-service/power-service.net": {
+        "recorded_sha256": "4759d3e52e38a9cbbecdafcd55555b337a0e9730c7f95ca768c98d6344e0eb8c",
+        "current_sha256": "481215fbe7d8a473830fff6b8a9468c5abeac993078a5092c3db38957eb36f97"
+      },
+      "hardware/compact-dmx/eda/power-service/power-service.pdf": {
+        "recorded_sha256": "edceb8c3dc80fd99ffa1cf99f1df6f0486411fb560c4ea7ca85a0453b175e62a",
+        "current_sha256": "567ccbc1686f2863c2dcbc092f08224a98174a8b8e5dc910cbb2707f3378911a"
+      },
+      "hardware/compact-dmx/eda/power-service/rendered/power-service.svg": {
+        "recorded_sha256": "c931206478804feeec0952b4c6b71b988bc050c2ebcc99295436f04a1d3f9350",
+        "current_sha256": "3cb93390e58dca21057a845465bdf61046a1519d9d8f731d05e51de9d7c9a670"
+      }
+    },
+    "this_task_wrote_protected_inputs": false,
+    "note": "Four baseline generated outputs changed concurrently in shared checkout; task writes were exclusively within candidate. All35 other protected sources, budgets and prior artifacts match snapshot. Do not restore other ownership outputs."
+  },
+  "unclosed_source_and_physical_gates": [
+    "Single-attach cold/partial/full cap at source/cable/temp/load corners with all enables/source/PG/AON traces",
+    "Persistent short/failed charger: safe latched shutdown even after PG loss; external cycle only; check fault overshoot/SOA/thermal",
+    "Raw-AON startup through330ohm and actual diode/leakage overtemperature, all logic sub1.65V, Schmitt edges and SR hazards",
+    "Cap-fed boost startup/ESR, low-VIN switch-current ability and PFM/FB upper limits vs mux5.5V; loaded-cutoff/rebound/switchover",
+    "BQ ISET RC stability/current accuracy0..2.65V/FB bias/CV/thermal; no stated max if absent",
+    "Buck dropout/stability/magnetics and EN/SS VIN+0.3V during fast collapse; RF shared2.4GHz/US915 and DMX/flash peaks, measured runtime",
+    "USB Type-C power-only/current/inrush/detach and inputESD/shell; no interoperability/compliance guarantee",
+    "Area/footprints/routing/housing before integration; active BOM/validator untouched"
+  ],
+  "size": {
+    "fitted_parts": 170,
+    "ICs": 44,
+    "estimated_body_area_without_cell_mm2": 343.745,
+    "power_reservation_mm2": 150,
+    "fit": "FAIL even before routing; no replacement housing/cap silently selected; footprint/board integration not performed"
+  },
+  "source_fetch_limits": "TI/Vishay/Renesas originals cached with local manifest. Coilcraft/Nexperia PDF fetch403 and Eaton PDF timeout explicitly recorded; manufacturer web sources distinguished from locally cached documents.",
+  "firmware_hardware_install_child_thread_git_mutations": false,
+  "manufacturing_release": false
+}

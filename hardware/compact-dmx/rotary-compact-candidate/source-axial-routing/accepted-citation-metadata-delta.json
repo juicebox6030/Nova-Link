@@ -1,0 +1,36 @@
+{
+  "status": "PASS citation-only correction and dependent preservation metadata refresh",
+  "review_task": "node:delegated-task:command%3Amcp%3Aeaab7c50-b35d-4a00-9efc-f2e54928abd4%3Adelegate-task%3Anova-cell-protection-glm-review-20261023-r1",
+  "before": {
+    "hardware/compact-dmx/eda/cell-protection-candidate/DESIGN.md": "f99c32e7a00ffd078365ff8550b0f684426a40f04a56d41d464e8470e4f68780",
+    "hardware/compact-dmx/eda/cell-protection-candidate/receipt.json": "3327446d98881072921be1585e3e99701cb6a7cc10c2ded6ff4b884af204b777",
+    "hardware/compact-dmx/eda/cell-protection-candidate/SHA256SUMS": "3af338e763907c9697cb705191647d811bbee4e9987f140930c384c63deef9b9",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/protected-inputs.json": "577375901d40627fc34df4ee744aba3915c00c390ea90a31230fa8fc5fb67cae",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/receipt.json": "f48599d4e5de501285f7b2a686f0b36da0f7e3ec8c07fea0b9dfee1119a653f6",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/SHA256SUMS": "e137b3378fb9268e8db950214d2d0de91161efd16302deddef77b4e52529d51f"
+  },
+  "after": {
+    "hardware/compact-dmx/eda/cell-protection-candidate/DESIGN.md": "d966ed758dd26817d6b880b044878d24e6cb1bb5aca4381436cf3337b420f13e",
+    "hardware/compact-dmx/eda/cell-protection-candidate/receipt.json": "19b01498096e418b7eab386aab61cc359f48f3274b2e321d15dd7509bb9f1573",
+    "hardware/compact-dmx/eda/cell-protection-candidate/SHA256SUMS": "c4ab3c289b5e75a8e19ff74659c9b8ac3b8067940eec70d4cef75430cd8bc4dc",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/protected-inputs.json": "48c1031a23dfb177414813f38dc4104a1e2d180bf92c8e331d676db5bdebcb07",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/receipt.json": "36b5b48410490942cd861e242b1b0ae57730a6994e90e8f6c42d28aebeb9cbf8",
+    "hardware/compact-dmx/rotary-compact-candidate/regulated-source/SHA256SUMS": "2c035eccd30881f23aab631091f2923f172aedcbd70f67b8e0544f934fede017"
+  },
+  "cell_inventory_entries": 63,
+  "source_inventory_entries": 89,
+  "source_protected_inputs_checked": 257,
+  "all_circuit_source_numeric_and_mechanical_artifacts_unchanged": true,
+  "original_review_snapshots_unchanged": true,
+  "manufacturing_release": false,
+  "reverified_frozen_review_snapshots": {
+    "cell-protection-20261023": {
+      "files": 239,
+      "manifest_sha256": "88213168bc3450c06ed3d5f9abbf3d1a362c3f68c2ff2210cb4ce6a4024fa847"
+    },
+    "rotary-source-20261023": {
+      "files": 90,
+      "manifest_sha256": "f31d7795aedeafbda180582c806e5c4f33f6bf4eea988e42dc4ca1a1654a8afd"
+    }
+  }
+}

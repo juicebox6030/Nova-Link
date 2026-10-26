@@ -1,0 +1,62 @@
+{
+  "status": "SNAPSHOT OF CURRENT INPUTS BEFORE CAPTURE; historical differences listed, not restored",
+  "sha256": {
+    "hardware/compact-dmx/eda/power-service/generate.py": "b71ae0a68c28a79d2d103fb24ea83789d0d1c242ef835b23c5fe8aab0e797740",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_sch": "68c63044c78d65f60ffd4554e0d0021bbdd8436baec43b053ab5d7b370e15e3c",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_sym": "bf8bce3889bb8f66210ee521a42ccab34fc911f2b91508cf06a5f4339c0c0b36",
+    "hardware/compact-dmx/eda/power-service/sym-lib-table": "b9383befe06b369e2a144fd0bd686eafd5040146f14deab765e088bba491d5f0",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_pro": "56b4e566883e51bff88503f529da5fc718135c0f45fefd8596a5e0aa6bfc61c9",
+    "hardware/compact-dmx/eda/power-service/erc.json": "8ea9f9a7d2ea67bb2175243f96b9f2a6444cc78489a7fa3eab368bbc6725b9e7",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_prl": "244de5b8770b43ec630095058cf630ab882b7dc22146ae57bee7a7d7d00eabe9",
+    "hardware/compact-dmx/eda/power-service/verify.py": "d2b4fbb007316ae71d8ee3acdd1531e782bb2ffdd6cb6910c1dedda89e275f46",
+    "hardware/compact-dmx/eda/power-service/power-service.net": "481215fbe7d8a473830fff6b8a9468c5abeac993078a5092c3db38957eb36f97",
+    "hardware/compact-dmx/eda/power-service/power-service.pdf": "567ccbc1686f2863c2dcbc092f08224a98174a8b8e5dc910cbb2707f3378911a",
+    "hardware/compact-dmx/eda/power-service/latch-truth-table.json": "367298d650a307de365f9e2d86d72ad4a1d82a8352c40a56d95c3b162a8b1363",
+    "hardware/compact-dmx/eda/power-service/validation.json": "1b4172ea46fd986bae9a08cfa69d1b41cd1c71f2a8c51593f12a9edeb83e5af9",
+    "hardware/compact-dmx/eda/power-service/component-ledger.csv": "975ce85c1ea8963ad945ee4f97202809f2f3dc7a7846a488a34e4101f00d38e9",
+    "hardware/compact-dmx/eda/power-service/DESIGN.md": "54072853f0ec085423905b8e96d5cab2d414f9b6cc0abc9d20a32143f4cc479a",
+    "hardware/compact-dmx/eda/power-service/corner-proof.py": "f79ee146f6091348092289d46594deb76e5cc3fff477b4974a4c4dcda0cdfc24",
+    "hardware/compact-dmx/eda/power-service/corner-proof.json": "c0010fd9bd58e3d287a9807d1989868884c705b2ccc4699b5c5bd838c737bb3d",
+    "hardware/compact-dmx/eda/power-service/source-evidence.json": "7acb92d9bc426a24db6811a3863e7783ec96cf9197d1e0ed8418dd19861a3532",
+    "hardware/compact-dmx/eda/power-service/source-cache-manifest.json": "dad615f516e497325f5d87a973008493fec046564442005f0e732079c62772fd",
+    "hardware/compact-dmx/eda/power-service/fault-interface-proposal.json": "f4c2550532e7f5fed8fea11fe3379ea6e811c252aea5a69348f6999e529f88cf",
+    "hardware/compact-dmx/eda/power-service/review-fix-receipt.json": "cbc21b01fc9ad7b69e5a8f65df5395d778e021b2490e52cbd053c3edbe4dccb6",
+    "hardware/compact-dmx/eda/power-service/rendered/power-service.svg": "3cb93390e58dca21057a845465bdf61046a1519d9d8f731d05e51de9d7c9a670",
+    "hardware/compact-dmx/eda/power-service/rendered/power-service.png": "ec1eb41389559c7adf0388773831225650116d4b02d090a591b2ffd590308157",
+    "hardware/compact-dmx/eda/power-service/source-cache/tps3808.pdf": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed",
+    "hardware/compact-dmx/eda/power-service/source-cache/tps3700.pdf": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0",
+    "hardware/compact-dmx/eda/power-service/source-cache/sn74lvc1g07.pdf": "1e175728fccf85295e744a60420f48b1feb23f7f0061b8c73d70f81a6903f59e",
+    "hardware/compact-dmx/eda/power_budget.py": "eeb5fa6d83642653bf38ac29b5fc05da0ab03b2605c56993c7648da6432c2504",
+    "hardware/compact-dmx/eda/power-budget.json": "93643771ab7228dcc158e72926c71a63334daa78172a20bb7f8854be5b78395f",
+    "hardware/compact-dmx/eda/power-service/startup-analysis.json": "b0afb44ec2e44c877db2d4e4da3bc88e4b086bee47e49b8468cfc47d7f61a153",
+    "hardware/compact-dmx/eda/power-service/startup-analysis.py": "6482b1826298ab3c5a01dd9b330890439102677abd0a53034b26774e89fd7bfe",
+    "hardware/compact-dmx/eda/power-service/startup-baseline.json": "b4d14df8c341a0e4836a98c8bf22228d7acbfbdfd487360faffa45ef2d738485",
+    "hardware/compact-dmx/eda/power-service/startup-capture-check.json": "ea20038056ad91eb434d5421e24fd8822b0ffe87402eef5310e317c13ef70450",
+    "hardware/compact-dmx/eda/power-service/startup-proposal.md": "848d95bd906cdfe98bc4931e95a30c0489050c5b351a0aeb7aac3fac2ebc7462",
+    "hardware/compact-dmx/eda/power-service/startup-source-manifest.json": "2030dedf918eab502e28e3838129ba9136e58fd3ced41b2f8e5dbccb4db450cb",
+    "hardware/compact-dmx/eda/power-service/startup-source-cache/bq25173.pdf": "75869a03b40472ff587ffa5223dc5e5314f3b76478c6582119cf5a204d6e777e",
+    "hardware/compact-dmx/eda/power-service/startup-source-cache/tps61023.pdf": "f61135a93053e9e875a67ec9fbf51a3dda13194ae8d6e1fdd817af6e8590fae5",
+    "hardware/compact-dmx/eda/power-service/startup-source-cache/tps61099.pdf": "922c6396085dd53bc2e7531e90f1659b529bc7e648563a10ee260e8e28439581",
+    "hardware/compact-dmx/eda/power-service/startup-receipt.json": "5f23da4d44968d9e259b2cccc5621bd86ae4e5500de4443816cb935bbe17c323",
+    "hardware/compact-dmx/eda/power-service/startup-compatibility-note.md": "80c143c34335f46d7a7ea2b02f4c47320247af71d966e08f79334878db1efa6b",
+    "hardware/compact-dmx/eda/power-service/startup-compatibility-check.json": "7dc334e400c29094bf68b34fb4197ece4cc80ea32be947169811ec7e1ce3c273"
+  },
+  "historical_record_differences_at_start": {
+    "hardware/compact-dmx/eda/power-service/erc.json": {
+      "recorded_sha256": "9803f1b5e48c3563788ac6a753ea7e939632cf81ca9a7708781452fd22657aff",
+      "current_sha256": "8ea9f9a7d2ea67bb2175243f96b9f2a6444cc78489a7fa3eab368bbc6725b9e7"
+    },
+    "hardware/compact-dmx/eda/power-service/power-service.net": {
+      "recorded_sha256": "4759d3e52e38a9cbbecdafcd55555b337a0e9730c7f95ca768c98d6344e0eb8c",
+      "current_sha256": "481215fbe7d8a473830fff6b8a9468c5abeac993078a5092c3db38957eb36f97"
+    },
+    "hardware/compact-dmx/eda/power-service/power-service.pdf": {
+      "recorded_sha256": "edceb8c3dc80fd99ffa1cf99f1df6f0486411fb560c4ea7ca85a0453b175e62a",
+      "current_sha256": "567ccbc1686f2863c2dcbc092f08224a98174a8b8e5dc910cbb2707f3378911a"
+    },
+    "hardware/compact-dmx/eda/power-service/rendered/power-service.svg": {
+      "recorded_sha256": "c931206478804feeec0952b4c6b71b988bc050c2ebcc99295436f04a1d3f9350",
+      "current_sha256": "3cb93390e58dca21057a845465bdf61046a1519d9d8f731d05e51de9d7c9a670"
+    }
+  }
+}

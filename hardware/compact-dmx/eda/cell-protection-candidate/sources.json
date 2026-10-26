@@ -1,0 +1,60 @@
+[
+  {
+    "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps22963c.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps22963c.pdf",
+    "sha256": "ff3c3cd846ab23e9d9e63924adb2f1e10d9446fe2ef76fdaeb94b083613ca132"
+  },
+  {
+    "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3760.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps3760.pdf",
+    "sha256": "eb7d626587f369ade98d55b60823ed28e4b4d955b41181c4443763cf0eef5e7d"
+  },
+  {
+    "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3808.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+    "read_only_origin": "hardware/compact-dmx/eda/buffer-fit-candidate/sources/tps3808.pdf",
+    "sha256": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed"
+  },
+  {
+    "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tnpw_e3.pdf",
+    "url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+    "read_only_origin": "hardware/compact-dmx/eda/buffer-fit-candidate/sources/tnpw_e3.pdf",
+    "sha256": "6f0508c568cb355aaf2accdd33fe3a780d3ea5ef207c4c9a71839a8acadc33a5"
+  },
+  {
+    "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/eaton-hv.pdf",
+    "url": "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-hv-supercapacitors-cylindrical-cells-data-sheet.pdf",
+    "read_only_origin": "hardware/compact-dmx/eda/buffer-fit-candidate/sources/eaton-hv.pdf",
+    "sha256": "17fb1d0f56d6766f0866ecb4cc656ce603a74371183ab21ad96f648303b246f1"
+  },
+  {
+    "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3700.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+    "read_only_origin": "hardware/compact-dmx/eda/power-service/source-cache/tps3700.pdf",
+    "sha256": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0"
+  },
+  {
+    "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/bq25173.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/bq25173.pdf",
+    "read_only_origin": "hardware/compact-dmx/eda/power-service/startup-source-cache/bq25173.pdf",
+    "sha256": "75869a03b40472ff587ffa5223dc5e5314f3b76478c6582119cf5a204d6e777e"
+  },
+  {
+    "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/littelfuse451-mirror.pdf",
+    "url": "https://www.fuse-tech.com/uploads/pdf/littelfuse0451.pdf",
+    "primary_document": "Original Littelfuse manufacturer PDF mirrored by distributor. Older revision: row1.5A, dimensions and5s opening at200% crosschecked against primary2025 viaweb. No current manufacturer PDF hash claimed.",
+    "sha256": "e4f66814c90d70b283a5962080711f26554d974373a550958bda772dfdaf1bf9"
+  },
+  {
+    "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/vishay-28950.pdf",
+    "url": "https://www.vishay.com/doc?28950",
+    "read_only_origin": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/vishay-28950.pdf",
+    "sha256": "9e2b145c937da3be1e926b8afc2856959754eeb4d1103241d838038f7308144e"
+  },
+  {
+    "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3702-q1-land-reference.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps3702-q1.pdf",
+    "read_only_origin": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/tps3702-q1-land-reference.pdf",
+    "sha256": "5bb4e737d2a425afba7780118e8c1281817ea204a68d8a619e92fdee921a1165"
+  }
+]

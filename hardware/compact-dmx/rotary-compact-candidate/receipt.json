@@ -1,0 +1,54 @@
+{
+  "status": "Bounded Phase0 infeasibility disposition; unchangedsource cannot guarantee1.5A at4.75V receptacle",
+  "new_path": "hardware/compact-dmx/rotary-compact-candidate",
+  "baseline_modified": false,
+  "complete_assembly_generated": false,
+  "FreeCAD_STEP": "Not generated after Phase0 failure; no speculative shrink shell",
+  "electrical_corners_failed": 12,
+  "optimistic_1m70um_no_termination_port_V": 4.72575,
+  "diagnostic_angles": 181,
+  "diagnostic_not_motion_validation": true,
+  "neutral_spiral_mm": 1046.1648589213492,
+  "length_error_endpoints_mm": [
+    -43.58896741383296,
+    43.58901786518891
+  ],
+  "alternative": "One local5.10Vregulated compensation direction beforeTPS25810; requiresactualpart/sourcearchitecture approval andqualification;notimplemented",
+  "source_hashes": {
+    "hardware/compact-dmx/rotary-compact-candidate/sources/irm10.pdf": "1aab6b30492328818e4d0900416676891eeb1076f409d56dc2277d7119ed208a",
+    "hardware/compact-dmx/rotary-compact-candidate/sources/tps25810.pdf": "ccc31e3ad8b7970005e23ba8b6a165694f712e86fd337b9ba2fe117a98a2e13e",
+    "hardware/compact-dmx/rotary-compact-candidate/sources/minco.pdf": "ea0e935ae408bbb5ccfad89b0e1fb1cb6ab640a40a27c65b9faecfba3ff4ca11",
+    "hardware/compact-dmx/rotary-compact-candidate/sources/allflex.pdf": "7297fab82b554e9ee58fba4f9805eed79447f7fabecb41d85664829b54b0ffad",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/sources/drawing.pdf": "ea33e0b40545e545bf698cbac3bb1c0f5a3fc7ca6b5b7fda83a63134d4affaa7",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/sources/spec.pdf": "adeaf1f264b8999c4b40bfd7fd202543201a60246297be6906a83e08a59259a2",
+    ".tools/references/usb-type-c-r2.4.pdf": "f5407e6120db1e28137e7fee60f3125f4284e2252b1240d271ce6e40c0ba3121"
+  },
+  "frozen_integrated25_artifact_hashes_verified": 23,
+  "visual": "phase0-summary.pdf rendered with pdftoppm and inspected; IRM specs/derating rendered and inspected",
+  "remaining_gates": [
+    "Qualifiedvoltagecompensation/current/thermal/startup path",
+    "Power-onlysourceconnector D+/D- chargercompliance",
+    "Inextensible clockspring/contact/tangenttermination model",
+    "CompleteUSB/lock/stops/plug/pin/clearancepack andcycles"
+  ],
+  "manufacturing_release": false,
+  "hashes": {
+    "README.md": "e6f7330b5cc707c3fab0bfe9218c4fca60285cf8218d82acafcd4713cb14473f",
+    "draw.py": "b3d83ea5259d38510057747ccee884c769cf21f5a1fbb40a2bee5ad699f5f28d",
+    "inputs.json": "cb2533e113de37671c992e091ac9985860e91a12c83d9450f4aa07be53c3398d",
+    "phase0-summary.pdf": "245a2e50a29343b23120b35215dbfb210e95da06b23f897c4b1356c52e42290d",
+    "screen.json": "04641b1916873c027132284c338720206b9187e295bc5a29a1c068e5f661a2be",
+    "screen.py": "31216e3566553f0108e41b3ab2ab9eea21999a7735573cf487b5d75c568424d3",
+    "sources/allflex.pdf": "7297fab82b554e9ee58fba4f9805eed79447f7fabecb41d85664829b54b0ffad",
+    "sources/allflex.txt": "6b6266a77a0e8ba243c5bcb5a897c7f73e5dbf2b44945f69894686408a4a87ec",
+    "sources/gct-spec.txt": "fcc34d5e8059fc991378214e2f0de4c743bf3747e6197ede5b7a1f25fefc506a",
+    "sources/irm10.pdf": "1aab6b30492328818e4d0900416676891eeb1076f409d56dc2277d7119ed208a",
+    "sources/irm10.txt": "e516cee0a5dfaf7846dc3a7da9b17d3ca4bb7b87ea6d30371c5c37a1fc12ce48",
+    "sources/minco.pdf": "ea0e935ae408bbb5ccfad89b0e1fb1cb6ab640a40a27c65b9faecfba3ff4ca11",
+    "sources/minco.txt": "9e362de6dd1e6a75ab5c0a11f65b417f08026b955f24dd7cab10a224dc6adaa1",
+    "sources/tps25810.pdf": "ccc31e3ad8b7970005e23ba8b6a165694f712e86fd337b9ba2fe117a98a2e13e",
+    "sources/tps25810.txt": "2d70cfc6deda9eb54ad9477b4bf4a5d95000b8d5ac7cd094cded21b2d62ad5cd",
+    "sources.json": "d879b44a2c82b5581d0a9853c8fd56df211911e0badcce197878f439862ce085",
+    "spiral-diagnostic.csv": "0d8d293c25a0dd0d8b3b6c6c6c1bbdc51e712575747e613a4fb5f953973cf0e1"
+  }
+}

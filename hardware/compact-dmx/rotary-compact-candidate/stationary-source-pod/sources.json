@@ -1,0 +1,30 @@
+[
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm20.pdf",
+    "sha256": "aa1afdbcdf0bf6db796710e26bd5e258f4857ffb1c14bd1ac3d94af86f3b8789",
+    "url": "https://www.meanwell.com/Upload/PDF/IRM-20/IRM-20-SPEC.PDF",
+    "page": "p3;2025-11-21",
+    "basis": "52.4x27.2x24 nominal,+/-.5;3.5+/-1 projection; parent selects12V variant"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/sources/meanwell-pcb-installation.pdf",
+    "sha256": "fa68e719a5e78a45bae42d2c01afdd3dfecd1a43b6a48768616036003f05f54a",
+    "url": "https://www.meanwell.com/Upload/PDF/IRM-01/PCB.pdf",
+    "page": "p1 Installation2",
+    "basis": "5mm bottom plusMylar;10mm general surrounding; source does not approve this carrier/support construction"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm20-mechanical.png",
+    "sha256": "f880f9c2c5cf0c8e2e715e058b56cf21268a382b038e43c827d653c923878103",
+    "url": null,
+    "page": "Existing primaryPDF page rendering, visually inspected",
+    "basis": "No pixel-scaled dimensions; all nominal/tolerance numbers from labeled manufacturer drawing"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/stationary-irm20-integration/installation-gate/receipt.json",
+    "sha256": "5963621926b611d882eb862bf52a513e559ed1d99b5e9c9469ea8678f7ff8114",
+    "url": null,
+    "page": "Frozen parentaccepted construction gate",
+    "basis": "IRM20/43IDproductionBLOCKED; not superseded by this allocation"
+  }
+]

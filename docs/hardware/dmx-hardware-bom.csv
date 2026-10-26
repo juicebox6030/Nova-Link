@@ -1,38 +1,55 @@
-assembly,reference,quantity,candidate,value_or_function,status,source
-Dongle,U1,1,TI CC1352R1F3RGZ,NOVA-LINK radio 2.4 GHz base population,Preliminary exact ordering code check required,https://www.ti.com/product/CC1352R
-Dongle,U2,1,Espressif ESP32-S3-MINI-1U,Host module external antenna version host RF inactive in base design,Preliminary module memory option pending,https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf
-Dongle,U3,1,TI TPS61094,Supercapacitor charge and backup SYS_RAW 3.6 V,Preliminary supporting passives and transient design pending,https://www.ti.com/lit/ds/symlink/tps61094.pdf
-Dongle,U4,1,TI TPS62132,Fixed 3.3 V buck from SYS_RAW,Preliminary verify low-headroom transient performance,https://www.ti.com/lit/ds/symlink/tps62130.pdf
-Dongle,U5,1,TI ISOW1412,500 kbit/s isolated DMX transceiver with integrated isolated supply,Preliminary 3.3 V isolation mode half-duplex ties required,https://www.ti.com/lit/ds/symlink/isow1412.pdf
-Dongle,U6,1,TI TUSB320 family,USB-C fixed sink CC current detection GPIO mode,Exact suffix and dead-battery circuit pending,https://www.ti.com/lit/ds/symlink/tusb320.pdf
-Dongle,U7,1,TI TPS25947 family,Input OVP controlled inrush current limit and reverse blocking,Exact variant and limits pending,https://www.ti.com/product/TPS25947
-Dongle,U8,1,TBD,Independent VBUS bias LDO for CC controller,Selection pending do not tie bias rail to buffered rail,
-Dongle,U9+,TBD,TBD,Cap cutoff latch USB return rearm rail supervisor and continuous CC current monitor logic,Schematic implementation pending,
-Dongle,C_BUF,1,Eaton HV1625-2R7256-R,25 F 2.7 V cell charged to 2.6 V,Preliminary verify thermal lifetime and tolerance,https://www.eaton.com/us/en-us/skuPage.HV1625-2R7256-R.html
-Dongle,R_OSEL,1,TBD,17.4 kohm 1 percent sets backup output 3.6 V,Value from TPS61094 table 7-1,https://www.ti.com/lit/ds/symlink/tps61094.pdf
-Dongle,R_VCHG,1,TBD,9.53 kohm 1 percent sets cap target 2.6 V,Value from TPS61094 table 7-2,https://www.ti.com/lit/ds/symlink/tps61094.pdf
-Dongle,R_ICHG,1,TBD,274 kohm 1 percent sets cap charge 500 mA,Value from TPS61094 table 7-3,https://www.ti.com/lit/ds/symlink/tps61094.pdf
-Dongle,R_TERM,1,TBD,120 ohm 1 percent switched differential termination,Package power rating pending,
-Dongle,SW_TERM,1,TBD,Recessed manual termination switch,Mechanical selection pending,
-Dongle,R_DE,1,TBD,10 kohm DE pulldown,Initial schematic value,
-Dongle,R_RE,1,TBD,10 kohm receiver disable pullup,Initial schematic value,
-Dongle,L_BUF,1,TBD,2.2 uH shielded initial candidate,Peak saturation and DCR calculation required,
-Dongle,L_BUCK,1,TBD,Per TPS62132 3.3 V reference application,Select with actual load transient and PCB,https://www.ti.com/lit/ds/symlink/tps62130.pdf
-Dongle,J_DMX,1,TBD,5-pin female XLR mating face,Exact insert mounting and latch selection pending,
-Dongle,J_USB,1,TBD,USB-C sink receptacle power only,Mechanical anchoring and ESD selection pending,
-Dongle,D_DMX,1,TBD,RS-485-compatible TVS array on isolated ground,Stand-off clamp capacitance and fault selection pending,
-Dongle,RF1,1,TBD,2.4 GHz matched TI radio antenna and conducted test access,RF reference layout and antenna design pending,
-Dongle,MISC,TBD,TBD,RF crystals matching decoupling ferrites USB ESD reservoirs debug pads indicators and shell,Not a complete procurement BOM,
-Barrel common,PS1,1,MEAN WELL IRM-10-5,Isolated AC/DC 5 V 2 A 10 W,Preliminary enclosure derating and approvals review required,https://www.meanwell.com/Upload/PDF/IRM-10/IRM-10-SPEC.PDF
-Barrel common,U10,1,TI TPS25810,USB-C source controller integrated switch and discharge hardware-select 1.5 A advertisement,Exact CHG straps and limit tolerance validation pending,https://www.ti.com/lit/ds/symlink/tps25810.pdf
-Barrel common,U11,1,TI TPS25947 family or suitable equivalent,Upstream secondary OVP and reverse blocking stage before USB source controller,Exact protection variant and limit coordination pending,https://www.ti.com/product/TPS25947
-Barrel common,F1,1,TBD,PSU primary branch fuse,Value voltage breaking capacity and coordination pending,
-Barrel common,SURGE1,1,TBD,Voltage-specific coordinated thermal and surge protection,Select separately for input voltage scope,
-Barrel common,J_USB_OUT,1,TBD,Central side-facing USB-C source receptacle 5 V 1.5 A,Recessed mounting ESD and cable retention pending,
-Barrel common,MISC,TBD,TBD,Rated mains splices PE conductors wiring barriers enclosure and secondary support parts,Full assembly safety and thermal review pending,
-Barrel PC,J_IN,1,Neutrik NAC3MPXXA,Blue powerCON XX power-in chassis connector,Preliminary use manufacturer cutout and compatible mates,https://www.neutrik.com/en/product/nac3mpxxa.pdf
-Barrel PC,J_OUT,1,Neutrik NAC3MPXXB,Gray powerCON XX power-out chassis connector,Preliminary legacy mate restrictions apply,https://www.neutrik.com/en/product/nac3mpxxb.pdf
-Barrel T1,J_IN,1,Neutrik NAC3MPX-TOP,TRUE1 TOP appliance inlet,Preliminary exact mounting and ratings review pending,https://www.neutrik.co.uk/product/nac3mpx-top
-Barrel T1,J_OUT,1,Neutrik NAC3FPX-TOP,TRUE1 TOP appliance outlet,Preliminary exact mounting and ratings review pending,https://www.neutrik.com/en/product/nac3fpx-top
-Barrel US,J_IN,1,TBD,NEMA 5-15P molded input cord 125 V class,Exact recognized assembly cord and strain relief pending,
-Barrel US,J_OUT,1,TBD,NEMA 5-15R molded output cord 125 V class,Exact recognized assembly cord and strain relief pending,
+assembly,reference,quantity,manufacturer,candidate_mpn,function,package_or_envelope_mm,status,primary_source
+Dongle,U1,1,Texas Instruments,CC1352R1F3RGZR,Wireless MCU; no ESP host,7x7 RGZ nominal,Support/frontend captured; antenna PCB and qualification open,https://www.ti.com/lit/ds/symlink/cc1352r.pdf
+Dongle,U2,1,Renesas,AT25SF161B-MHB-T,16Mbit SPI staging/rollback NOR; no USB bridge,5.10x6.10x0.60 maximum DFN,Selected prototype; SPI pins captured; update loader not implemented,https://www.renesas.com/document/dst/at25sf161b-datasheet
+Dongle,U3,1,Texas Instruments,TPS61094DSSR,Supercap management 3.6V backup 2.6V charge 25mA nominal,2x3 WSON,Captured; 17.4k OSEL and9.53k ICHG/VCHG; layout/transients unqualified,https://www.ti.com/lit/ds/symlink/tps61094.pdf
+Dongle,U4,1,Texas Instruments,TPS62132RGTR,Fixed3.3V buck after backup/bypass rail,3x3 VQFN,Captured with2.2uH and22uF effective output; routing unqualified,https://www.ti.com/lit/ds/symlink/tps62130.pdf
+Dongle,U5,1,Texas Instruments,ISOW1412DFMR,500kbps isolated transceiver half-duplex,12.93x10.63x3.55 maximum,Selected; pins captured in partial EDA,https://www.ti.com/lit/ds/symlink/isow1412.pdf
+Dongle,U6,1,Texas Instruments,TPS2553DBVR,Power-only input current limit; RILIM60.4k0.1%25ppm target,SOT23-6,Captured; calculated389.8..488.2mA including resistor allowance; USB inrush unqualified,https://www.ti.com/lit/ds/symlink/tps2553.pdf
+Dongle,U7,1,Texas Instruments,TPS7A0225PDBVR,2.5V always-on control supply from diode OR,SOT23-5,Captured; dropout/current corner allocation; prototype qualification pending,https://www.ti.com/lit/ds/symlink/tps7a02.pdf
+Dongle,U8,1,Texas Instruments,TLV3012BIDCKR,Loaded-cell comparator with internal reference,SC70-6,Captured; loaded-cell reference/offset/hysteresis corner arithmetic; timing unmeasured,https://www.ti.com/lit/ds/symlink/tlv3012.pdf
+Dongle,U10,1,Texas Instruments,TPS3700DDCR,Actual NORMAL_IN source-good qualifier,DDC6 manufacturer package; lands not assigned,Captured review correction; static mode corners pass; transient response unqualified,https://www.ti.com/lit/ds/symlink/tps3700.pdf
+Dongle,U9/U16,2,Texas Instruments,TPS3839G25DBZR / TPS3831K33DQNR,AON POR and3.3V reset supervisor with manual reset,SOT23-3 / X2SON4,U9/U16 quantity2; captured; reset/cutoff timing needs bench proof,https://www.ti.com/lit/ds/symlink/tps3839.pdf
+Dongle,C_BUF,1,Eaton,HV1325-2R7156-R,15F 2.7V; charge2.6V; cradled,Diameter13.5 x28.4 maximum,Selected prototype; runtime unmeasured,https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-hv-supercapacitors-cylindrical-cells-data-sheet.pdf
+Dongle,J_DMX,1,Neutrik,NC5FRX,Intact right-angle 5-pin female XLR,72.9x20.3x41 supplier envelope,Selected; do not remove chuck/boot/latch,https://www.neutrik.us/media/8251/download/nc5frx.pdf?v=1
+Dongle,J_USB,1,Hirose,CX70M-24P1,USB-C POWER ONLY; data/SBU pins NC; dual5.1k Rd,11.4x8.35x3.66 envelope,Retained comparison candidate; official recommended PCB0.8mm versus product1.0mm NOT qualified; shell/cutout/stencil open; replacement qualification active,https://www.hirose.com/product/p/CL0480-0304-0-00
+Dongle,R_TERM1/R_TERM2,2,Vishay,CRCW1206240RFKEA,Two240R1% in parallel;120R termination,1206; each4.1x2.3 courtyard,Captured;0.25W each70C;85C thermal budget checked; physical fit OPEN,https://www.vishay.com/docs/20035/dcrcwe3.pdf
+Dongle,R1-R3,3,Vishay,CRCW040210K0FKED,DE low RE high power-enable low,0402; manufacturer reflow lands,ExactMPN/lands assigned; placement and qualification open,https://www.vishay.com/docs/20035/dcrcwe3.pdf
+Dongle,C1/C3,2,Murata,GRM155R71E104KE14D,Isolator decoupling,0402; exact TI reference vector lands,100nF25V X7R selected; effectiveC and assembly validation open,https://www.ti.com/lit/zip/swrc354
+Dongle,R4,1,Vishay,CRCW04021K00FKED,ISOW1412 EN/FLT series current limiting,0402; manufacturer reflow lands,ExactMPN/lands assigned; brownout behavior unverified,https://www.vishay.com/docs/20035/dcrcwe3.pdf
+Dongle,C2/C4,2,Murata,GRM21BR71A106KE51L,Isolator reservoirs,0805;2.0x1.25x1.25 nominal,10uF10V X7R; manufacturer reflow-range lands assigned; effectiveC verify,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KE51-01.pdf
+Dongle,A101,1,Johanson,0900AD47A2450001E,Dual-feed 2.4GHz + US915MHz prototype antenna,10.2x3.4x1.7 maximum BODY; reference board50x30,Production part;28mm PCB match coupling metal-clearance qualification OPEN,https://www.johansontechnology.com/docs/4912/Antenna-0900AD47A2450001E_4RGCp0j.pdf
+Dongle,U11-U18 logic,7,Texas Instruments,SN74LVC1G74DCUR / SN74LVC2G08DCUR / SN74LVC2G32DCUR / SN74LVC1G04DCKR,Cutoff latch and POR/DMX/VBUS logic; no application-only safety gating,DCU8 / DCK5,U11/U12/U13/U14/U15/U17/U18 quantity7; captured; no USB-data recovery,https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf
+Dongle,D01/D02,1,Custom,RevB sidecar base/lid,98x34x24 screw closed insulating shell,STEP supplied,RFQ solid; grade/draft/inserts/saddle open,
+Dongle,CRADLE/HARNESS,1,OPEN,Cap cradle + shielded short DMX cable,Independent mechanical support,Cable OD4-5 target,OPEN supplier bend/pull qualification,
+Dongle,D_AON_USB/D_AON_BUF,2,Nexperia,"BAT54H,115",Always-on supply diode OR,SOD123F,Captured; leakage/reverse paths and transient behavior unqualified,https://assets.nexperia.com/documents/data-sheet/BAT54H.pdf
+Dongle,U19,1,Texas Instruments,TPS2116DRLR,Selected VIN1 reverse barrier replacing D_MAIN; VIN2 grounded,DRL8 manufacturer package; lands not assigned,Captured review correction; static source-good/mode arithmetic passes; dynamic reverse response and thermal unqualified,https://www.ti.com/lit/ds/symlink/tps2116.pdf
+Dongle,L_BOOST/L_BUCK,2,Coilcraft,XGL4020-222MEC / XFL4020-222MEC,2.2uH boost and buck magnetics,4x4x2.1 allocation each,Selected candidate; saturation/thermal/layout validation open,https://www.coilcraft.com/en-us/products/power/shielded-inductors/molded-inductor/xfl/xfl4020/
+Dongle,POWER_PASSIVES,1,OPEN,See power-service schematic values and netlist,Rd/current-code/divider/decoupling/soft-start passive set,0603/0805/1206 procurement allocations OPEN,Values captured; exact MPNs DC-bias derating footprints and placement remain open,
+Dongle,S_SERVICE/S_RESET/J_FACTORY,1,OPEN,Two NO switches plus six factory pads,Distinct resident-loader service; reset MR; cJTAG and separate ROM strap,Placement and actuator detail OPEN,Circuit and MCU GPIO/cJTAG allocation captured; exact switches footprints access and factory CCFG policy open,
+Barrel common,PS1,1,MEAN WELL,IRM-10-5,5V 2A isolated supply; USB advertised1.5A,45.7x25.4x21.5 nominal,Selected candidate; thermal/assembly qualification open,https://www.meanwell.com/Upload/PDF/IRM-10/IRM-10-SPEC.PDF
+Barrel common,U10,1,Texas Instruments,TPS25810,USB-C source controller 1.5A advertisement,3x4 WQFN nominal,Selected candidate; source board capture/voltage budget open,https://www.ti.com/lit/ds/symlink/tps25810.pdf
+Barrel common,J_USB_OUT,1,Hirose,CX70M-24P1,Central rotating USB-C outlet,11.4x8.35x3.66 envelope,Retained candidate; manufacturer recommends0.8mmPCB; source-board thickness shell/cutout qualification open,https://www.hirose.com/product/p/CL0480-0304-0-00
+Barrel common,F1/SURGE,1,OPEN,Coordinated primary branch protection,Fuse interrupt/voltage/thermal limits,OPEN,Safety engineer selection before energized prototype,
+Barrel common,W_LV,2,OPEN,24AWG high-strand continuous-flex wire,OD<=1.2mm strand<=0.05mm dynamicR<=7mm,Active229.34 +20 tails +termination mm,OPEN AVL and10k-cycle qualification; no substitution by AWG alone,
+Barrel common,W_AC/PE,1,OPEN,Approved mains harness and strain relief,Stationary L/N/PE 15A total assessment target,OPEN,Exact cord/terminals/fuse/PE retention must be selected,
+Barrel common,B01-B08,1,Custom,Core/collar/cheeks/bushes/endcaps,OD48x142 fixed; OD84x26 collar,STEP/RFQ,Endcap cuts/grade/retainers/open mechanical details,
+Barrel common,B09,1,Custom,304 stainless index ring,2mm thick R29 holes3.20 15deg pitch,STEP and DXF,RFQ; anchors/surface finish/DFM open,
+Barrel common,B10/B19,1,Custom,17-4PH pin and metal guide sleeve,Pin diameter3.00; stroke4.2mm; sleeve OD3.80 ID3.20 L9,STEP/RFQ,Sleeve attachment and divider seals plus spring/hood/retention detail open,
+Barrel common,B11/B12,1,Custom,Steel stop peg and track,Diameter4 peg; R30 track +/-90deg,STEP,RFQ; qualify2Nm and captive overlap,
+Barrel PC,J_IN,1,Neutrik,NAC3MPXXA,Blue power-in chassis,Vendor cutout OPEN,Selected; compatible mate and flange integration required,https://www.neutrik.com/en/product/nac3mpxxa
+Barrel PC,J_OUT,1,Neutrik,NAC3MPXXB,Gray power-out chassis,Vendor cutout OPEN,Selected; gray-to-blue jumper,https://www.neutrik.com/en/product/nac3mpxxb
+Barrel T1,J_IN,1,Neutrik,NAC3MPX-TOP,TRUE1 TOP inlet,Vendor cutout OPEN,Selected; final mating/terminal model integration required,https://www.neutrik.com/en/product/nac3mpx-top
+Barrel T1,J_OUT,1,Neutrik,NAC3FPX-TOP,TRUE1 TOP outlet,Vendor cutout OPEN,Selected; final mating/terminal model integration required,https://www.neutrik.com/en/product/nac3fpx-top
+Barrel US,J_IN/J_OUT,1,OPEN,Molded NEMA5-15P /5-15R cord pair,120V nominal125V class,OPEN,Approved exact cord/strain relief procurement unresolved,https://leviton.com/products/515cv-lit
+Dongle,TR101,1,Johanson,0900PC15A0036001E,Dual-band matched filter balun,2.10x1.35x1.00 maximum,TI SWRC354 exact vector lands assigned; current Rev2.0 pin map; RF layout qualification open,https://www.johansontechnology.com/docs/800/0900PC15A0036001E_J3eS4Zu.pdf
+Dongle,Y101,1,Epson,FC-135 32.7680KA-AG0,LF crystal reference selection,3.2x1.5x0.9max-height family; manufacturer lands,FC135 manufacturer pattern assigned; AG0 electrical suffix supplier qualification open,https://www.ti.com/lit/zip/swrc354
+Dongle,Y102,1,NDK,NX2016SA 48.000MHz EXS00A-CS05517,48MHz reference custom crystal,2.0x1.6x0.5 nominal reference footprint,NX2016SA manufacturer lands assigned; customEXS suffix clock/errata/supplier qualification open,https://www.ti.com/lit/zip/swrc354
+Dongle,FL101,1,Murata,BLM18HE152SN1D,MCU supply ferrite,0603 reference footprint,Exact TI reference vector lands assigned; impedance/DCdrop/layout qualification open,https://www.ti.com/lit/zip/swrc354
+Dongle,L101,1,TDK,MLZ2012N6R8LT000,MCU internal DC-DC 6.8uH,0805 2.0x1.25x1.5 nominal reference footprint,Exact TI reference vector lands assigned; current procurement/layout qualification open,https://www.ti.com/lit/zip/swrc354
+Dongle,C101-C113,13,Murata,See mcu-radio component-ledger.csv exact MPNs,Reference supply/crystal/RF capacitors,0402/0603/0201 reference footprints,Exact selected referenceMPNs and TI vector lands assigned; effectiveC/layout/sourcing gates,https://www.ti.com/lit/zip/swrc354
+Dongle,L102,1,Coilcraft,0402HP-2N7XGRW,2.7nH series2.4,0402HP max1.09x0.71x0.61 before optional solder,Prototype substitution; manufacturer dimensioned lands captured; same nominal starting value NOT equivalent RF response; retune required,https://www.coilcraft.com/pdfs/0402hp.pdf
+Dongle,C115,1,Murata,GJM1555C1H1R0BB01D,1.0pF shunt2.4,GJM155 max1.05x0.55x0.55,Prototype substitution; manufacturer dimensioned lands captured; same nominal starting value NOT equivalent RF response; retune required,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GJM1555C1H1R0BB01-01A.pdf
+Dongle,L103,1,Coilcraft,0402HP-5N1XGRW,5.1nH shunt915,0402HP max1.09x0.71x0.61 before optional solder,Prototype substitution; manufacturer dimensioned lands captured; same nominal starting value NOT equivalent RF response; retune required,https://www.coilcraft.com/pdfs/0402hp.pdf
+Dongle,C116,1,Murata,GJM1555C1H8R2DB01D,8.2pF shunt915,GJM155 max1.05x0.55x0.55,Prototype substitution; manufacturer dimensioned lands captured; same nominal starting value NOT equivalent RF response; retune required,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GJM1555C1H8R2DB01-01A.pdf
+Dongle,L104,1,Coilcraft,0402HP-12NXGRW,12nH series915,0402HP max1.09x0.71x0.61 before optional solder,Prototype substitution; manufacturer dimensioned lands captured; same nominal starting value NOT equivalent RF response; retune required,https://www.coilcraft.com/pdfs/0402hp.pdf
+Dongle,S_TERM,1,C&K,PCM12SMTR,Manual termination; assemble OFF position1,6.7mm body;8.8x5.85 candidate courtyard plus tool access,Active on official page2026-10-22; provisional land row-gap and missing locator/body registration; fit/access OPEN,https://www.littelfuse.com/products/switches/slide-switches/pcm/pcm12smtr

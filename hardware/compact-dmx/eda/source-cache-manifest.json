@@ -1,0 +1,250 @@
+{
+  "scope": "Ignored primary-source cache; power sources in power-service/DESIGN.md, MCU/RF sources in mcu-radio/DESIGN.md and dualband-source-evidence.json. Failed HTML archive downloads explicitly identified; not usable CAD.",
+  "files": [
+    {
+      "file": "sn74lvc1g04.pdf",
+      "sha256": "8fd671cfc044958113c78e6d44a3edd5870133b28046ef1784dc50d353386683",
+      "bytes": 2748841
+    },
+    {
+      "file": "sn74lvc1g125.pdf",
+      "sha256": "1098d46e4565695e9823a08309bc581e2c9ead26b19e99a43a011a38642b27ca",
+      "bytes": 3056649
+    },
+    {
+      "file": "sn74lvc1g74.pdf",
+      "sha256": "e46a5a867fec742290000dca5ed3b291535f3c4418ef2ae267acc4ab51b26d8a",
+      "bytes": 1427201
+    },
+    {
+      "file": "sn74lvc2g02.pdf",
+      "sha256": "ba6416add62208fc2b09122a3cd9978b494b23705acedf5071e6b946beef7278",
+      "bytes": 774794
+    },
+    {
+      "file": "sn74lvc2g04.pdf",
+      "sha256": "a70afa4e4d049ffaa382fe75d22c438fe2350de13923c54cdebe7e2b08df1b6e",
+      "bytes": 1025016
+    },
+    {
+      "file": "sn74lvc2g08.pdf",
+      "sha256": "75dff6a7b9ba988865b776e0f7c5dd2855f13f64f05bfcda3b1baec886007199",
+      "bytes": 784167
+    },
+    {
+      "file": "sn74lvc2g32.pdf",
+      "sha256": "6a22b3c7445d250e3e9e4f335e5bc9cff1aee0b3d3a1184a9a4a62f32b48f71c",
+      "bytes": 771819
+    },
+    {
+      "file": "tlv3012.pdf",
+      "sha256": "02993c016420887ee4f1ab2fa640e7596c9c1324a73f4f72bee3b32adec38df3",
+      "bytes": 1624948
+    },
+    {
+      "file": "tps2116.pdf",
+      "sha256": "5babd88afb84e2e65c9c0da23b75f85758c0c730e34102a0fb746ac9573ed1d5",
+      "bytes": 2924080
+    },
+    {
+      "file": "tps22919.pdf",
+      "sha256": "743c59b01fb0891d2d0f1faba779161cd2d2b6c18edf68e6d5b3279016240c84",
+      "bytes": 1454791
+    },
+    {
+      "file": "tps22946.pdf",
+      "sha256": "c3d749f1e03c88130a4d48d5af6448bb524e7d18956bbf2a391fefdc0703fa3b",
+      "bytes": 933604
+    },
+    {
+      "file": "tps22950.pdf",
+      "sha256": "e0f4f5766ba30309af96287e20345b34b38986da59bb0e644bf5401e009c0c66",
+      "bytes": 1649886
+    },
+    {
+      "file": "tps2553.pdf",
+      "sha256": "88e453700cea2b263cdb5b44fce1e883e0f6d3b975457f879ac1423eeea42071",
+      "bytes": 2091666
+    },
+    {
+      "file": "tps25947.pdf",
+      "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4",
+      "bytes": 5316794
+    },
+    {
+      "file": "tps3839.pdf",
+      "sha256": "a18940237afc63cf6d1a0bb5e1c8c0b2c3274e01c47fa5f27e470a005072621b",
+      "bytes": 948524
+    },
+    {
+      "file": "tps61094.pdf",
+      "sha256": "a6f9aa662fe65a5f28d4a15ca35efe3e58fc3de25738ea9bdcba2aa10fd93b20",
+      "bytes": 4935827
+    },
+    {
+      "file": "tps62130.pdf",
+      "sha256": "f9b1af285622c0cf1a5991f9641a6e64c5e6d899e52cc0b1632808742019579f",
+      "bytes": 2536822
+    },
+    {
+      "file": "tps709.pdf",
+      "sha256": "8c14e3efae738a27b857b789aa87369de9037a8ef3616a9f71a423587cdc6949",
+      "bytes": 2271988
+    },
+    {
+      "file": "tps7a02.pdf",
+      "sha256": "ed213c153f1db84762558fcac2ff9752e322151a1d44672cf554988b860cebc8",
+      "bytes": 3405603
+    },
+    {
+      "file": "tusb320.pdf",
+      "sha256": "1306e448c3f3b169f3b90854710033b9a1aede1d04ba35088f3d2e3ed260d2c4",
+      "bytes": 1601733
+    },
+    {
+      "file": "tusb320lai.pdf",
+      "sha256": "62f7b3f65338e25ebd6fd46ef04474ba806b06b1cc04bc0b3d7b8191b01ca87d",
+      "bytes": 1313743
+    },
+    {
+      "file": "tusb321ai.pdf",
+      "sha256": "45ef0bd52c8e656a2ed297d5243007431518a5470668ef6ada883af37dee9aa8",
+      "bytes": 855642
+    },
+    {
+      "file": "cc1352r.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/cc1352r.pdf",
+      "status": "PDF fetched; SWRS196I pp9-10/35/81",
+      "bytes": 3175767,
+      "sha256": "d477d5873939ff66ad61baa58af71a8985305b1684be8b085348633d7cf98b93",
+      "is_zip": false
+    },
+    {
+      "file": "swra640.pdf",
+      "url": "https://www.ti.com/lit/an/swra640h/swra640h.pdf",
+      "status": "PDF fetched; Figure3-2 is CC1312R1, not exact R1 reference",
+      "bytes": 1976415,
+      "sha256": "a2fcd2c4cb2074ea4e6eaac63f14c53d50b107d4fa2b2d0e60cfb452837ee6f6",
+      "is_zip": false
+    },
+    {
+      "file": "isow1412.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/isow1412.pdf",
+      "status": "PDF fetched; SLLSF86D p6 bus absmax",
+      "bytes": 3995213,
+      "sha256": "3e46deca77909a2aab205ffae1ea0df4630a888126ef6dd60caaa08d6e4fa4b4",
+      "is_zip": false
+    },
+    {
+      "file": "dcrcwe3.pdf",
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "status": "PDF fetched; candidate resistor only",
+      "bytes": 150402,
+      "sha256": "f3f8ad4a0e2962b809aa20273e80a0aedcd2a2c174a66024445e9b541a3996fd",
+      "is_zip": false
+    },
+    {
+      "file": "swrc345a.zip",
+      "url": "https://www.ti.com/lit/zip/SWRC345",
+      "status": "FAILED: login HTML, not ZIP",
+      "bytes": 55571,
+      "sha256": "494d6c486827a132e1b79cd84aae4372d77ee433eeb81a27bb3ac1281019a426",
+      "is_zip": false
+    },
+    {
+      "file": "swrc361.zip",
+      "url": "https://www.ti.com/lit/zip/SWRC361",
+      "status": "FAILED: login HTML, not ZIP",
+      "bytes": 55571,
+      "sha256": "cfef5f1fd3eb9f586c2a4c5617eb786dd04dbc945f91bfa55036d313f51c4ee3",
+      "is_zip": false
+    },
+    {
+      "file": "swrc354.zip",
+      "url": "https://www.ti.com/lit/zip/swrc354",
+      "status": "TI CC1352EM-IPC Rev1.1.0 2018-03-15; valid ZIP",
+      "bytes": 2613900,
+      "sha256": "a3b8ce4f6735f003f41a98de4de631adc64121c11c1a4db85789a5d78a185678"
+    },
+    {
+      "file": "launchxl-r1-revb-e2e.zip",
+      "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/156/LAUNCHXL_2D00_CC1352R1.zip",
+      "status": "TI employee RevB layout attachment; valid ZIP",
+      "bytes": 1320658,
+      "sha256": "10e9f26c0bf5dfb53c52871b79dfa6b82bb412bf524a8f1321934e9643a200be"
+    },
+    {
+      "file": "swra629.pdf",
+      "url": "https://www.ti.com/lit/an/swra629a/swra629a.pdf",
+      "status": "SWRA629A June2019",
+      "bytes": 5397751,
+      "sha256": "41900fe9210c8bd8dded4162336aa9acd071452604df5ad6ba7fb05e4fb4dd52"
+    },
+    {
+      "file": "swru525.pdf",
+      "url": "https://www.ti.com/lit/ml/swru525e/swru525e.pdf",
+      "status": "SWRU525E quickstart; no schematic appendix",
+      "bytes": 21715446,
+      "sha256": "5566ce29a092644fef90c7c797f821a32abadb716ded76f382b43195b25615c7"
+    },
+    {
+      "file": "johanson0900.pdf",
+      "url": "https://www.johansontechnology.com/docs/800/0900PC15A0036001E_J3eS4Zu.pdf",
+      "status": "0900PC15A0036001E Revision2.0",
+      "bytes": 644974,
+      "sha256": "563b68f6e467fcf147581b7a18ee3beac1c3e0b682cf86b0e08d2d4d41e2d0ce"
+    },
+    {
+      "file": "xm054.pdf",
+      "url": "https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/156/SPDT_5F00_XM054_2D00_STD_2D00_E_2D00_-mid-power-20-dBm.pdf",
+      "status": "Murata XM054-02 PRELIMINARY; lifecycle gate",
+      "bytes": 371334,
+      "sha256": "1086bcec834c88ff3583fb33e3811741f8f808d771554b7ad21ec7224f6c1a6a"
+    },
+    {
+      "file": "swra227.pdf",
+      "url": "https://www.ti.com/lit/an/swra227e/swra227e.pdf",
+      "status": "SWRA227E antenna envelope; example match is868 not915",
+      "bytes": 1040975,
+      "sha256": "288e6eafff9d52f33d9b6493d40e88ad9498a9a10b612ceee050a92fd357fa9a"
+    },
+    {
+      "file": "swra351.pdf",
+      "url": "https://www.ti.com/lit/an/swra351b/swra351b.pdf",
+      "status": "Antenna selection quickguide",
+      "bytes": 376730,
+      "sha256": "ae19e15a683868b55d170a6aef711f1a64267e2895fe0e9bffa3c04a5a126b72"
+    },
+    {
+      "file": "swrc354/docs/SCHEMATIC - CC1352EM IPC Rev1_1.pdf",
+      "archive": "swrc354.zip",
+      "bytes": 32696,
+      "sha256": "3af75cb1361ff3f483d1d11dccc45e666bf2547923b6069978d3234f0e5a3af6"
+    },
+    {
+      "file": "swrc354/docs/BOM and PnP - CC1352EM IPC Rev1_1.xlsx",
+      "archive": "swrc354.zip",
+      "bytes": 12626,
+      "sha256": "92ac705ec14c80a035e1fb3c86465af3564c6e1e0ef768eb6896df1c4a41b22f"
+    },
+    {
+      "file": "swrc354/cadence/pstxnet.dat",
+      "archive": "swrc354.zip",
+      "bytes": 24133,
+      "sha256": "758c781b72dd321a406aa6c4980ee9eb09390ab74180421f495f986e11174849"
+    },
+    {
+      "file": "swrc354/docs/DRILL and STACKUP - CC1352EM IPC Rev1_1.pdf",
+      "archive": "swrc354.zip",
+      "bytes": 193966,
+      "sha256": "85354ca17e288f38d9cd8f4079c4eb26170165515eb49e05e9dd9ae326b43c7b"
+    },
+    {
+      "file": "antenna0900ad47.pdf",
+      "sha256": "426450ebeb728496304354e63ce7a39a8fcab896ac59a0b35c013ade1e8ac532",
+      "bytes": 1222841,
+      "url": "https://www.johansontechnology.com/docs/4912/Antenna-0900AD47A2450001E_4RGCp0j.pdf",
+      "status": "3.1 / 2026 Doc36S0021B"
+    }
+  ]
+}

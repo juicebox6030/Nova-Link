@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-25",
+  "purpose": "Owner-authorized hardware checkpoint commit/push; not product release",
+  "read_only_fresh_KiCad_checks": [
+    {
+      "schematic": "hardware/compact-dmx/eda/dmx-interface.kicad_sch",
+      "command": [
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--exit-code-violations",
+        "-o",
+        "/home/juicebox/Nova-Link/.tools/checks/publication-20261025/dmx-erc.json",
+        "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/dmx-interface.kicad_sch"
+      ],
+      "ERC_violations": 0,
+      "exit_code": 0
+    },
+    {
+      "schematic": "hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_sch",
+      "command": [
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--exit-code-violations",
+        "-o",
+        "/home/juicebox/Nova-Link/.tools/checks/publication-20261025/mcu-radio-erc.json",
+        "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/mcu-radio/mcu-radio.kicad_sch"
+      ],
+      "ERC_violations": 0,
+      "exit_code": 0
+    },
+    {
+      "schematic": "hardware/compact-dmx/eda/buffer-fit-candidate/protected25-placement/qualified15.kicad_sch",
+      "command": [
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--exit-code-violations",
+        "-o",
+        "/home/juicebox/Nova-Link/.tools/checks/publication-20261025/protected25-erc.json",
+        "/home/juicebox/Nova-Link/hardware/compact-dmx/eda/buffer-fit-candidate/protected25-placement/qualified15.kicad_sch"
+      ],
+      "ERC_violations": 0,
+      "exit_code": 0
+    },
+    {
+      "schematic": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/source12.kicad_sch",
+      "command": [
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--exit-code-violations",
+        "-o",
+        "/home/juicebox/Nova-Link/.tools/checks/publication-20261025/source12-erc.json",
+        "/home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source12-candidate/source12.kicad_sch"
+      ],
+      "ERC_violations": 0,
+      "exit_code": 0
+    }
+  ],
+  "board": {
+    "path": "hardware/compact-dmx/eda/buffer-fit-candidate/protected25-placement/protected25.kicad_pcb",
+    "geometric_DRC_violations": 0,
+    "unconnected_items": 485
+  },
+  "unchanged_latest_CAD": "CAF-R2 verifier:77 frozen inputs;355 other shapes/356 placements preserved;4 positive tool gaps/4 seats;150 saved STEP solids per pinned receipt",
+  "limits": [
+    "No whole-product electrical acceptance or final PCB routing",
+    "No hardware, RF, fixture-fit, runtime, thermal, mains safety or endurance validation",
+    "Manufacturing release remains HOLD",
+    "Third-party caches/backups excluded; source manifests retained"
+  ],
+  "repository": "https://github.com/juicebox6030/Nova-Link",
+  "source_base_commit": "b42c0e6284aac734fde851c69146abf73920f337",
+  "remote_main_before_publication": "4b88684",
+  "github_actions_enabled": false,
+  "publication_contents": "hardware/ plus docs/hardware/ and linked root README/decisions/ignore rules; third-party caches/backups excluded",
+  "authorization": "Owner: Please save these to a folder on main, push and commit",
+  "format_preservation": "Serializer whitespace and original frozen candidate bytes retained; generated CAD/PDF/SVG use binary Git attributes and CSV uses original line endings.",
+  "known_staged_whitespace_warnings": [
+    {
+      "path": "hardware/compact-dmx/eda/placement-candidate/verify.py",
+      "line": 32,
+      "reason": "Frozen historical verifier trailing space; no functional change."
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/compact-source-reference-screen/screen.py",
+      "line": 7,
+      "reason": "Frozen historical screen blank-line space; no functional change."
+    },
+    {
+      "path": "hardware/compact-dmx/eda/power-service/qualified15-candidate/placement-context.kicad_pcb",
+      "lines": [
+        1837,
+        6401
+      ],
+      "reason": "Pinned generated board blank-line tabs; no design change."
+    }
+  ]
+}

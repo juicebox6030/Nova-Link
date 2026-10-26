@@ -1,0 +1,88 @@
+[
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/source12-protection-energy/sources/tl431.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tl431.pdf",
+    "sha256": "ed2e90697de4e2c553195514adf1ee59cda42863716b6ef702b8304a5b921d22",
+    "form": "complete primary PDF"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/source12-protection-energy/sources/csd17577q3a.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/csd17577q3a.pdf",
+    "sha256": "0326bd9ba1c034477fec0fddf0c26b27224d4976883b455388ff9bda22b5a765",
+    "form": "complete primary PDF"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/source12-protection-energy/sources/primary-web-extract.txt",
+    "primary_urls": [
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/4363fb.pdf",
+      "https://www.st.com/resource/en/datasheet/ts820.pdf"
+    ],
+    "sha256": "d51827dd1a53ffad304c1197d5a0600bc0c39235851c2ca51d5363b8af0c3d42",
+    "form": "literal primary web-extractor excerpts; NOT a complete PDF binary hash",
+    "conditions": "LT RevC Jan2024 pp3-4/15; ST DS2118 Rev9 Nov2021 pp2-3. Read source scope in README."
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/source12-protection-energy/sources/primary-electrical-extract.txt",
+    "primary_urls": [
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/4363fb.pdf",
+      "https://www.st.com/resource/en/datasheet/ts820.pdf"
+    ],
+    "sha256": "18b2f382c979fe4748191e4a0020043698bac641bd34337e3bc5457b95c5b10f",
+    "form": "literal primary web-extractor excerpts; NOT a complete PDF binary hash",
+    "conditions": "LT RevC Jan2024 pp3-4/15; ST DS2118 Rev9 Nov2021 pp2-3. Read source scope in README."
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm20.pdf",
+    "url": "https://www.meanwell.com/Upload/PDF/IRM-20/IRM-20-SPEC.PDF",
+    "sha256": "aa1afdbcdf0bf6db796710e26bd5e258f4857ffb1c14bd1ac3d94af86f3b8789",
+    "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25810.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps25810.pdf",
+    "sha256": "ccc31e3ad8b7970005e23ba8b6a165694f712e86fd337b9ba2fe117a98a2e13e",
+    "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb-type-c-r2.4.pdf",
+    "url": "https://www.usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-24",
+    "sha256": "f5407e6120db1e28137e7fee60f3125f4284e2252b1240d271ce6e40c0ba3121",
+    "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25947.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+    "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4",
+    "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/T520D157M010ATE055.pdf",
+    "url": "https://search.kemet.com/download/specsheet/T520D157M010ATE055",
+    "sha256": "3b7a59d69d920e5c7b3c87f43ec2b4db34b06335ff3d077023431cc9c6db62ee",
+    "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/tps62135.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps62135.pdf",
+    "sha256": "9b718325c5216c529eaa19730d0deba8dd72518ecb837c90dd6e839d2b8b811d",
+    "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/tps25940.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps25940.pdf",
+    "sha256": "9db4dc76b1040251f56d994041d2e6f02f1307d687aecbc5218f137a5c830adc",
+    "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+  },
+  {
+    "path": "hardware/compact-dmx/rotary-compact-candidate/source12-candidate/sources/xal4000.pdf",
+    "url": "https://www.coilcraft.com/getmedia/6adcb47d-8b55-416c-976e-1e22e0d2848c/xal4000.pdf",
+    "sha256": "b26cf975bd56a807173b05665bddd49ed49323400330eb8f6fa63e24ff6d7d15",
+    "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+  },
+  {
+    "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3700.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+    "sha256": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0",
+    "form": "complete primary PDF reused READ ONLY from frozen candidate inputs"
+  }
+]

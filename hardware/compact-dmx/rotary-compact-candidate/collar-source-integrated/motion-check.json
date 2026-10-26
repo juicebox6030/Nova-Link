@@ -1,0 +1,1774 @@
+{
+  "status": "PASS 181 composed released states using exact additions against full360degree stationary envelope",
+  "rows": [
+    {
+      "angle": -90,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": true,
+      "locked_pin_intersection_mm3": 0.0
+    },
+    {
+      "angle": -89,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413992
+    },
+    {
+      "angle": -88,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.19694482390469
+    },
+    {
+      "angle": -87,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254122186
+    },
+    {
+      "angle": -86,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594224
+    },
+    {
+      "angle": -85,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -84,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -83,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -82,
+      "proper_rotation_determinant": 1.0000000000000002,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -81,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -80,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -79,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.0192255345942165
+    },
+    {
+      "angle": -78,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254122026
+    },
+    {
+      "angle": -77,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.1969448239046914
+    },
+    {
+      "angle": -76,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413952
+    },
+    {
+      "angle": -75,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": true,
+      "locked_pin_intersection_mm3": 0.0
+    },
+    {
+      "angle": -74,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413883
+    },
+    {
+      "angle": -73,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.1969448239046785
+    },
+    {
+      "angle": -72,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254122923
+    },
+    {
+      "angle": -71,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594217
+    },
+    {
+      "angle": -70,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.08407044966673
+    },
+    {
+      "angle": -69,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -68,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.08407044966673
+    },
+    {
+      "angle": -67,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.08407044966673
+    },
+    {
+      "angle": -66,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -65,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -64,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594242
+    },
+    {
+      "angle": -63,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254122514
+    },
+    {
+      "angle": -62,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.1969448239047202
+    },
+    {
+      "angle": -61,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413777
+    },
+    {
+      "angle": -60,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": true,
+      "locked_pin_intersection_mm3": 0.0
+    },
+    {
+      "angle": -59,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413738
+    },
+    {
+      "angle": -58,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.196944823904692
+    },
+    {
+      "angle": -57,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254121853
+    },
+    {
+      "angle": -56,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594209
+    },
+    {
+      "angle": -55,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -54,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -53,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -52,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.08407044966673
+    },
+    {
+      "angle": -51,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -50,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -49,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.0192255345942405
+    },
+    {
+      "angle": -48,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.281133325412215
+    },
+    {
+      "angle": -47,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.196944823904694
+    },
+    {
+      "angle": -46,
+      "proper_rotation_determinant": 0.9999999999999998,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161414376
+    },
+    {
+      "angle": -45,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": true,
+      "locked_pin_intersection_mm3": 0.0
+    },
+    {
+      "angle": -44,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413421
+    },
+    {
+      "angle": -43,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.1969448239047193
+    },
+    {
+      "angle": -42,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254122053
+    },
+    {
+      "angle": -41,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594217
+    },
+    {
+      "angle": -40,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -39,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -38,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.08407044966673
+    },
+    {
+      "angle": -37,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -36,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -35,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -34,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594238
+    },
+    {
+      "angle": -33,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254122395
+    },
+    {
+      "angle": -32,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.1969448239046883
+    },
+    {
+      "angle": -31,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161414008
+    },
+    {
+      "angle": -30,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": true,
+      "locked_pin_intersection_mm3": 0.0
+    },
+    {
+      "angle": -29,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413224
+    },
+    {
+      "angle": -28,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.1969448239046225
+    },
+    {
+      "angle": -27,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.281133325412216
+    },
+    {
+      "angle": -26,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594221
+    },
+    {
+      "angle": -25,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -24,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -23,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -22,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -21,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -20,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -19,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594235
+    },
+    {
+      "angle": -18,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254122292
+    },
+    {
+      "angle": -17,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.196944823904695
+    },
+    {
+      "angle": -16,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413992
+    },
+    {
+      "angle": -15,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": true,
+      "locked_pin_intersection_mm3": 0.0
+    },
+    {
+      "angle": -14,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413808
+    },
+    {
+      "angle": -13,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.196944823904695
+    },
+    {
+      "angle": -12,
+      "proper_rotation_determinant": 1.0000000000000002,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254121893
+    },
+    {
+      "angle": -11,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594194
+    },
+    {
+      "angle": -10,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -9,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -8,
+      "proper_rotation_determinant": 1.0000000000000002,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -7,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -6,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -5,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": -4,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594232
+    },
+    {
+      "angle": -3,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.281133325412223
+    },
+    {
+      "angle": -2,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.196944823904693
+    },
+    {
+      "angle": -1,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.944603416141395
+    },
+    {
+      "angle": 0,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": true,
+      "locked_pin_intersection_mm3": 0.0
+    },
+    {
+      "angle": 1,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413834
+    },
+    {
+      "angle": 2,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.196944823904614
+    },
+    {
+      "angle": 3,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254121497
+    },
+    {
+      "angle": 4,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594217
+    },
+    {
+      "angle": 5,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 6,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 7,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 8,
+      "proper_rotation_determinant": 1.0000000000000002,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 9,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 10,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 11,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594231
+    },
+    {
+      "angle": 12,
+      "proper_rotation_determinant": 1.0000000000000002,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.281133325412224
+    },
+    {
+      "angle": 13,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.196944823904686
+    },
+    {
+      "angle": 14,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413939
+    },
+    {
+      "angle": 15,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": true,
+      "locked_pin_intersection_mm3": 0.0
+    },
+    {
+      "angle": 16,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413862
+    },
+    {
+      "angle": 17,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.1969448239046963
+    },
+    {
+      "angle": 18,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.28113332541224
+    },
+    {
+      "angle": 19,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.0192255345942005
+    },
+    {
+      "angle": 20,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 21,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 22,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 23,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 24,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 25,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 26,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594234
+    },
+    {
+      "angle": 27,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.281133325412216
+    },
+    {
+      "angle": 28,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.196944823904706
+    },
+    {
+      "angle": 29,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161414152
+    },
+    {
+      "angle": 30,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": true,
+      "locked_pin_intersection_mm3": 0.0
+    },
+    {
+      "angle": 31,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.944603416141351
+    },
+    {
+      "angle": 32,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.196944823904687
+    },
+    {
+      "angle": 33,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.281133325412169
+    },
+    {
+      "angle": 34,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594229
+    },
+    {
+      "angle": 35,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 36,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 37,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 38,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 39,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 40,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 41,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594223
+    },
+    {
+      "angle": 42,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.281133325412209
+    },
+    {
+      "angle": 43,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.196944823904678
+    },
+    {
+      "angle": 44,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161414271
+    },
+    {
+      "angle": 45,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": true,
+      "locked_pin_intersection_mm3": 0.0
+    },
+    {
+      "angle": 46,
+      "proper_rotation_determinant": 0.9999999999999998,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413881
+    },
+    {
+      "angle": 47,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.1969448239047327
+    },
+    {
+      "angle": 48,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.281133325412209
+    },
+    {
+      "angle": 49,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594209
+    },
+    {
+      "angle": 50,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.08407044966673
+    },
+    {
+      "angle": 51,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 52,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.08407044966673
+    },
+    {
+      "angle": 53,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 54,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 55,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 56,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594217
+    },
+    {
+      "angle": 57,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254122355
+    },
+    {
+      "angle": 58,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.1969448239047096
+    },
+    {
+      "angle": 59,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.944603416141385
+    },
+    {
+      "angle": 60,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": true,
+      "locked_pin_intersection_mm3": 0.0
+    },
+    {
+      "angle": 61,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161414195
+    },
+    {
+      "angle": 62,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.196944823904749
+    },
+    {
+      "angle": 63,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254122816
+    },
+    {
+      "angle": 64,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594238
+    },
+    {
+      "angle": 65,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 66,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 67,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 68,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 69,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 70,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 71,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.0192255345942405
+    },
+    {
+      "angle": 72,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.281133325412247
+    },
+    {
+      "angle": 73,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.1969448239046927
+    },
+    {
+      "angle": 74,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413959
+    },
+    {
+      "angle": 75,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": true,
+      "locked_pin_intersection_mm3": 0.0
+    },
+    {
+      "angle": 76,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413883
+    },
+    {
+      "angle": 77,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.1969448239046785
+    },
+    {
+      "angle": 78,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254121884
+    },
+    {
+      "angle": 79,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594203
+    },
+    {
+      "angle": 80,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 81,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 82,
+      "proper_rotation_determinant": 1.0000000000000002,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 83,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 84,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 85,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.084070449666729
+    },
+    {
+      "angle": 86,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 4.019225534594217
+    },
+    {
+      "angle": 87,
+      "proper_rotation_determinant": 0.9999999999999999,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 3.2811333254122417
+    },
+    {
+      "angle": 88,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 2.1969448239047082
+    },
+    {
+      "angle": 89,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": false,
+      "locked_pin_intersection_mm3": 0.9446034161413998
+    },
+    {
+      "angle": 90,
+      "proper_rotation_determinant": 1.0,
+      "old_released_intersection_mm3": 0.0,
+      "added_material_full_revolution_bound_mm3": 0.0,
+      "detent": true,
+      "locked_pin_intersection_mm3": 0.0
+    }
+  ],
+  "added_solids": [
+    {
+      "name": "RotorHalfPositiveY",
+      "added_volume_mm3": 717.1062978276841,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "RotorHalfNegativeY",
+      "added_volume_mm3": 382.1904681270928,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_PCB_27x20x1_actual_holes_nominal",
+      "added_volume_mm3": 529.4222684037047,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_C1_maximum_body_allocation",
+      "added_volume_mm3": 3.827249999999996,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_C10_maximum_body_allocation",
+      "added_volume_mm3": 0.395999999999999,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_C11_maximum_body_allocation",
+      "added_volume_mm3": 0.3959999999999995,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_C12_maximum_body_allocation",
+      "added_volume_mm3": 0.395999999999999,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_C13_maximum_body_allocation",
+      "added_volume_mm3": 0.3959999999999991,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_C2_maximum_body_allocation",
+      "added_volume_mm3": 3.827249999999996,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_C3_maximum_body_allocation",
+      "added_volume_mm3": 1.3769999999999964,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_C4_maximum_body_allocation",
+      "added_volume_mm3": 3.8272499999999985,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_C5_maximum_body_allocation",
+      "added_volume_mm3": 3.8272499999999963,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_C6_maximum_body_allocation",
+      "added_volume_mm3": 3.827249999999996,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_C7_maximum_body_allocation",
+      "added_volume_mm3": 1.3769999999999964,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_C8_maximum_body_allocation",
+      "added_volume_mm3": 108.37599999999998,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_C9_maximum_body_allocation",
+      "added_volume_mm3": 3.8272499999999976,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_D1_maximum_body_allocation",
+      "added_volume_mm3": 0.30712500000000076,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_J0_maximum_body_allocation",
+      "added_volume_mm3": 12.000000000000009,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_J1_maximum_body_allocation",
+      "added_volume_mm3": 240.60321000000008,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_L1_maximum_body_allocation",
+      "added_volume_mm3": 41.23270000000003,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_R1_maximum_body_allocation",
+      "added_volume_mm3": 0.23100000000000132,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_R10_maximum_body_allocation",
+      "added_volume_mm3": 0.23100000000000065,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_R11_maximum_body_allocation",
+      "added_volume_mm3": 0.2310000000000006,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_R12_maximum_body_allocation",
+      "added_volume_mm3": 0.23100000000000132,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_R13_maximum_body_allocation",
+      "added_volume_mm3": 0.23100000000000137,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_R2_maximum_body_allocation",
+      "added_volume_mm3": 0.23100000000000054,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_R3_maximum_body_allocation",
+      "added_volume_mm3": 0.23100000000000132,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_R4_maximum_body_allocation",
+      "added_volume_mm3": 0.23100000000000065,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_R5_maximum_body_allocation",
+      "added_volume_mm3": 0.23100000000000054,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_R6_maximum_body_allocation",
+      "added_volume_mm3": 0.23100000000000132,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_R7_maximum_body_allocation",
+      "added_volume_mm3": 0.23100000000000132,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_R8_maximum_body_allocation",
+      "added_volume_mm3": 0.23100000000000137,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_R9_maximum_body_allocation",
+      "added_volume_mm3": 0.23100000000000065,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_U1_maximum_body_allocation",
+      "added_volume_mm3": 4.409999999999997,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_U2_maximum_body_allocation",
+      "added_volume_mm3": 8.059999999999995,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_U3_maximum_body_allocation",
+      "added_volume_mm3": 10.167999999999996,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_J1_S1_stake_swept_slot_allocation_not_vendor_profile",
+      "added_volume_mm3": 1.0370176727053908,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_J1_S2_stake_swept_slot_allocation_not_vendor_profile",
+      "added_volume_mm3": 1.0370176727053908,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_J1_S3_stake_swept_slot_allocation_not_vendor_profile",
+      "added_volume_mm3": 0.8390176727053881,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "SRC_J1_S4_stake_swept_slot_allocation_not_vendor_profile",
+      "added_volume_mm3": 0.8390176727053882,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "BoardRetainerScrew_m11",
+      "added_volume_mm3": 2.9813714282567183,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "BoardRetainerScrew_11",
+      "added_volume_mm3": 2.981371428256718,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "BoardEndRetainer",
+      "added_volume_mm3": 18.279336444578213,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "TailClampScrew_74_4",
+      "added_volume_mm3": 2.0985838925979854,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "TailClampScrew_96_6",
+      "added_volume_mm3": 2.0985838925979854,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "TailClampShoe",
+      "added_volume_mm3": 42.58137625790354,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    },
+    {
+      "name": "StaticDevelopedFanout",
+      "added_volume_mm3": 577.0469296469491,
+      "full_revolution_stationary_envelope_intersection_mm3": 0.0
+    }
+  ],
+  "stationary_bands_X0_X1_R_mm": [
+    [
+      0,
+      43,
+      33
+    ],
+    [
+      43,
+      70,
+      25.9
+    ],
+    [
+      70,
+      73.5,
+      30.8
+    ],
+    [
+      73.5,
+      74,
+      25
+    ],
+    [
+      74,
+      142,
+      24
+    ]
+  ],
+  "unchanged_fixed_pin_spring_parts": [
+    "StationaryCoreEnvelope",
+    "FixedEarPad0",
+    "FixedScrew0",
+    "FixedEarShoe0",
+    "FixedEarPad1",
+    "FixedScrew1",
+    "FixedEarShoe1",
+    "FixedAdhesive",
+    "FixedStiffener",
+    "FixedStaticTail",
+    "IndexKnob",
+    "IndexPin",
+    "IndexRearCap",
+    "IndexSpring",
+    "StationarySpool",
+    "CoreBondFront",
+    "CoreBondRear"
+  ],
+  "index_region_unchanged": true,
+  "active_flex": "Unchanged frozen three BReps and181numerical path; added material outside active radial envelope except static tangent continuation; full three-pose intersections independently checked",
+  "physical_elastic_equilibrium": false,
+  "unchanged_active_pose_checks": [
+    {
+      "name": "Flex_minus90",
+      "plane_polygon_faces": 4100,
+      "all_edges_straight": true,
+      "all_faces_planar_single_wire": true,
+      "canonical_boundary_sha256": "1a2c2f778f224a50223dd7de3e0ea997c0506a6ab17d07d0996da7c71c496bf4",
+      "coordinate_rounding_mm": 1e-09,
+      "volume_difference_mm3": 0.0,
+      "area_difference_mm2": 0.0,
+      "equal": true
+    },
+    {
+      "name": "Flex_0",
+      "plane_polygon_faces": 4100,
+      "all_edges_straight": true,
+      "all_faces_planar_single_wire": true,
+      "canonical_boundary_sha256": "2ae9a9d955026d00267ba26a846cf1cbcaefb2f61dd4175dc189f4d6ee1a1393",
+      "coordinate_rounding_mm": 1e-09,
+      "volume_difference_mm3": 0.0,
+      "area_difference_mm2": 0.0,
+      "equal": true
+    },
+    {
+      "name": "Flex_90",
+      "plane_polygon_faces": 4100,
+      "all_edges_straight": true,
+      "all_faces_planar_single_wire": true,
+      "canonical_boundary_sha256": "c539800952e40f2876eacba45a9173731247f8c73db4fc69e00e47032320ab35",
+      "coordinate_rounding_mm": 1e-09,
+      "volume_difference_mm3": 0.0,
+      "area_difference_mm2": 0.0,
+      "equal": true
+    }
+  ]
+}

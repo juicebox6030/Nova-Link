@@ -1,0 +1,12 @@
+{
+  "matches": 95,
+  "total": 96,
+  "deltas": [
+    {
+      "path": "docs/hardware/DMX_Dongle_and_Power_Barrel.md",
+      "CI_R1_sha256": "9c50e18146a1279c6ce93a7d80a0eb6cc20aa6edc5d591b8c388c02e05de7066",
+      "current_sha256": "65e27cdcade0b25fc49fc3d8bedb4d1daf698286cf0cb41ddf563bed8dc16bfc",
+      "disposition": "Parent-owned canonical document differs from frozen CI-R1 expectation; not edited by this pass; no automatic baseline refresh."
+    }
+  ]
+}

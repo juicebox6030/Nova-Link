@@ -1,0 +1,150 @@
+{
+  "revision": "CAF-R1",
+  "requested_model": "Astra LOW / standard",
+  "head": "b42c0e6284aac734fde851c69146abf73920f337",
+  "date_UTC": "2026-10-24T15:48:35.346114+00:00",
+  "owned_path": "hardware/compact-dmx/rotary-compact-candidate/closure-access-fix",
+  "status": "PASS local installed-lid driveraccess correction; fullproduct HOLD",
+  "artifacts": {
+    "README.md": "5e56093b5bcf6fac21d357a511516e8d78bb95351b5e5921de92890a3710b02a",
+    "__pycache__/run.cpython-311.pyc": "315122d21757c74d8b5c8bccf066913fdc2c1ff46ed3f133fcf10a7907c5b51d",
+    "build.log": "4a9bf6de59af38323b6084ab7d4f3242ba1dfd8dc9cb758d0ebd62e8db9a94f1",
+    "build.py": "0e6568f24d65a3cfe2e9a3809c1ad8a46d91227c14f402bf48bc8adae71925fa",
+    "check.log": "cba388e12f01570e46cd3a97e03eb71f7ba9a459affe92cd1f6f2033bc9f91cd",
+    "check.py": "e28609feb06bc5a2af47ea908726919a3a9133747e88ac365e56c06bde5bfb04",
+    "checks.json": "2c204774e1d471310c0fbe301682faba4df73d7d48963081266f46d3f3b36281",
+    "closure-section-preview.png": "c208d37b10e05e747a0468551ddb36e82a85c8df47154a1bf1778690e793d37e",
+    "closure-section.pdf": "b64c7fb4a48a4aee5f48fb3ef036d5937028f13096b4a0ca13783f9ea716a6a1",
+    "closure-section.svg": "8948562db2b6f997f3925f9f167c52a19b031547478853767984fb0b4a4bd1a4",
+    "draw.py": "7d58d93b5a8495988ebac22e1812e3d4d13aa829fb8fbe18cd4117467a769153",
+    "export-check.json": "98479b073332ccb0acbde031f0d5a14eea75d3f25cb161bd9eab9e0d5ca14187",
+    "export.log": "cb71d2c885a1061ba972a062823f281d4610cc318b0619c757f306f9718f81ec",
+    "export.py": "d1ef232ce8a666cd5c2acbe497367d8a510bd996d03ae14b45e3b2caaceb0616",
+    "freeze.py": "64ec58c7f8c1fcce626e6e515c18a3cf25d2e10ae6039f89543f19b0f8c2c30d",
+    "inputs.json": "febcb2f49e14b3f66d2f4189327d8b55d422796db63e2b57088961d3a8a0bb85",
+    "patch.json": "c3e0425d499f91c974c941d5f51d6d2c9cdbf26996cad141de586f2880631f68",
+    "prototype.FCStd": "abb221e397e8d4dbbed7e471869c0534b8886d4ecc45839bf942977dd2eb2599",
+    "prototype.step": "bd54cac7a1ca929714d3962d95154f434b3887033737d261b53c5d18065f848a",
+    "run.py": "6751bfd395d0189a80680c0b0be719481ade85b616282c47e9cc29608e1ccfd3",
+    "screw-insertion.json": "5d2b690fe7e1a09f91301886a0ac774d08c0af8e790ba8ffb4d2d173b001d7b4",
+    "screw-insertion.log": "24b7249d8bdd769c62bf36053e9bc686d1588390fa153df373330a6d5f087ebe",
+    "screw-insertion.py": "e8a3da658c086b1033c6fba8ef6cc4a4ff59315438ea77b2eb38ba86233bb140",
+    "section.json": "58d7519bc48c1105a3ccda081a35770c0e5c51861d62a1a58cc04cd480f8d96f",
+    "section.log": "4ad0e0ea9d6fca027d016ded9b4c8d1083d49c2852a53c05bcd77a2b8b56be69",
+    "section.py": "11ab8df50dfef6f45fbea3136dee56ac2e1db31778df9a25730a1414779df056",
+    "verify.py": "8365ad0884a33cfc098897244ec296dc337e26bde3e1639b0c7fed188e62beac"
+  },
+  "frozen_input_count": 49,
+  "source_receipt_sha256": "0cc43cc3a2596b44cfa81834fe26f41583948954af58fdb4d292100895d1d61f",
+  "source_native_sha256": "353f9fcd5e6a771725632639dbf5fb40095d77c71f9f8ced0421ec723903e58b",
+  "new_native_sha256": "abb221e397e8d4dbbed7e471869c0534b8886d4ecc45839bf942977dd2eb2599",
+  "new_STEP_sha256": "bd54cac7a1ca929714d3962d95154f434b3887033737d261b53c5d18065f848a",
+  "changed_part_only": "UpperShellRetention",
+  "four_before_after_intersections": [
+    {
+      "tool": "ClosureTool_m110_32",
+      "centre_xy": [
+        -110.0,
+        32.0
+      ],
+      "tool_diameter": 5,
+      "tool_z": [
+        4.5,
+        40.5
+      ],
+      "passage_diameter": 5.5,
+      "passage_z": [
+        4.5,
+        41.5
+      ],
+      "before_installed_upper_intersection_mm3": 127.7594698146013,
+      "after_installed_upper_intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m110_m32",
+      "centre_xy": [
+        -110.0,
+        -32.0
+      ],
+      "tool_diameter": 5,
+      "tool_z": [
+        4.5,
+        40.5
+      ],
+      "passage_diameter": 5.5,
+      "passage_z": [
+        4.5,
+        41.5
+      ],
+      "before_installed_upper_intersection_mm3": 127.7579879588422,
+      "after_installed_upper_intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m32_32",
+      "centre_xy": [
+        -32.0,
+        32.0
+      ],
+      "tool_diameter": 5,
+      "tool_z": [
+        4.5,
+        40.5
+      ],
+      "passage_diameter": 5.5,
+      "passage_z": [
+        4.5,
+        41.5
+      ],
+      "before_installed_upper_intersection_mm3": 127.7648762239053,
+      "after_installed_upper_intersection_mm3": 0.0
+    },
+    {
+      "tool": "ClosureTool_m32_m32",
+      "centre_xy": [
+        -32.0,
+        -32.0
+      ],
+      "tool_diameter": 5,
+      "tool_z": [
+        4.5,
+        40.5
+      ],
+      "passage_diameter": 5.5,
+      "passage_z": [
+        4.5,
+        41.5
+      ],
+      "before_installed_upper_intersection_mm3": 127.83771105488091,
+      "after_installed_upper_intersection_mm3": 0.0
+    }
+  ],
+  "native_valid_closed_single_solids": 356,
+  "unchanged_other_shapes": 355,
+  "placements_preserved": 356,
+  "subtractive_subset": true,
+  "bearing_seats_preserved": 4,
+  "nominal_driver_radial_clearance_mm": 0.25,
+  "allocated_driver_radial_clearance_mm": 0.05,
+  "installed_tool_vs_all_physical_pairs": 1356,
+  "upper_continuous_insertion_checks": 334,
+  "screw_insertion_checks": 1352,
+  "unchanged_thread_engagements": 4,
+  "exported_reopened_STEP_solids": 150,
+  "unrelated_proofs": "CYL-R2 pair/motion/corridor results retained by355-shape preservation and strictfixed-upper subset. Not rerun.",
+  "commands": [
+    "python3 freeze.py (once)",
+    "QT_QPA_PLATFORM=offscreen ALLOCATION_SCRIPT=build.py /home/juicebox/.local/bin/freecadcmd run.py",
+    "samewrapper: check.py, screw-insertion.py, section.py, export.py",
+    "python3 draw.py",
+    "pdftoppm -scale-to 1500 -singlefile -png closure-section.pdf closure-section-preview",
+    "python3 verify.py"
+  ],
+  "remaining_gates": [
+    "Open driverports: caps/sealing/IP/foreignobject/insulation questions",
+    "Material/process/strength/torque/physical tool qualification",
+    "Unchanged sourceinstallation exceptions,neckattachment,fuse/terminals,connector/fixturefit",
+    "Unchanged thermal,electrical,physical,flex/endurance andmanufacturing qualification"
+  ],
+  "electrical_or_board_changes": false,
+  "physical_operation_or_publication": false
+}

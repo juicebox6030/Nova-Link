@@ -1,0 +1,265 @@
+{
+  "Protected_core_OD48_ID43_x2_140": [
+    "Bellmouth_sleeve_half_m",
+    "Bellmouth_sleeve_half_p",
+    "Core_compression_shoe_100_1",
+    "Core_compression_shoe_100_m1",
+    "Core_compression_shoe_40_1",
+    "Core_compression_shoe_40_m1",
+    "Protected_input_endcap_x0_2",
+    "Protected_output_endcap_x140_142"
+  ],
+  "Protected_input_endcap_x0_2": [
+    "Protected_core_OD48_ID43_x2_140"
+  ],
+  "Protected_output_endcap_x140_142": [
+    "Protected_core_OD48_ID43_x2_140"
+  ],
+  "Protected_L_N_PE_trunk": [],
+  "IRM20_nominal_body": [
+    "Pin_AC_L",
+    "Pin_AC_N",
+    "Pin_V_MINUS",
+    "Pin_V_PLUS",
+    "Pressure_jaw_Lm",
+    "Pressure_jaw_Lp",
+    "Pressure_jaw_Rm",
+    "Pressure_jaw_Rp",
+    "Standoff_0",
+    "Standoff_1",
+    "Standoff_2",
+    "Standoff_3"
+  ],
+  "Carrier_PCB_61x32x1p6": [
+    "Custom_dielectric_sled_and_clamp_brackets",
+    "Land_AC_L_bottom",
+    "Land_AC_L_top",
+    "Land_AC_N_bottom",
+    "Land_AC_N_top",
+    "Land_V_MINUS_bottom",
+    "Land_V_MINUS_top",
+    "Land_V_PLUS_bottom",
+    "Land_V_PLUS_top",
+    "Pigtail_land_MINUS",
+    "Pigtail_land_PLUS",
+    "Secondary_PLUS_via_barrel",
+    "Standoff_0",
+    "Standoff_1",
+    "Standoff_2",
+    "Standoff_3",
+    "Trace_MINUS",
+    "Trace_PLUS"
+  ],
+  "Pin_AC_N": [
+    "IRM20_nominal_body"
+  ],
+  "Land_AC_N_top": [
+    "Carrier_PCB_61x32x1p6"
+  ],
+  "Land_AC_N_bottom": [
+    "Carrier_PCB_61x32x1p6"
+  ],
+  "Pin_AC_L": [
+    "IRM20_nominal_body"
+  ],
+  "Land_AC_L_top": [
+    "Carrier_PCB_61x32x1p6"
+  ],
+  "Land_AC_L_bottom": [
+    "Carrier_PCB_61x32x1p6"
+  ],
+  "Pin_V_MINUS": [
+    "IRM20_nominal_body"
+  ],
+  "Land_V_MINUS_top": [
+    "Carrier_PCB_61x32x1p6"
+  ],
+  "Land_V_MINUS_bottom": [
+    "Carrier_PCB_61x32x1p6",
+    "Trace_MINUS"
+  ],
+  "Pin_V_PLUS": [
+    "IRM20_nominal_body"
+  ],
+  "Land_V_PLUS_top": [
+    "Carrier_PCB_61x32x1p6",
+    "Trace_PLUS"
+  ],
+  "Land_V_PLUS_bottom": [
+    "Carrier_PCB_61x32x1p6"
+  ],
+  "Trace_PLUS": [
+    "Carrier_PCB_61x32x1p6",
+    "Land_V_PLUS_top",
+    "Secondary_PLUS_via_barrel"
+  ],
+  "Pigtail_land_PLUS": [
+    "Carrier_PCB_61x32x1p6",
+    "Pigtail_solder_PLUS",
+    "Secondary_PLUS_via_barrel",
+    "Wire_PLUS_conductor"
+  ],
+  "Trace_MINUS": [
+    "Carrier_PCB_61x32x1p6",
+    "Land_V_MINUS_bottom",
+    "Pigtail_land_MINUS",
+    "Pigtail_solder_MINUS",
+    "Wire_MINUS_conductor"
+  ],
+  "Pigtail_land_MINUS": [
+    "Carrier_PCB_61x32x1p6",
+    "Pigtail_solder_MINUS",
+    "Trace_MINUS",
+    "Wire_MINUS_conductor"
+  ],
+  "Secondary_PLUS_via_barrel": [
+    "Carrier_PCB_61x32x1p6",
+    "Pigtail_land_PLUS",
+    "Pigtail_solder_PLUS",
+    "Trace_PLUS",
+    "Wire_PLUS_conductor"
+  ],
+  "Polyester_film_allocation": [
+    "Custom_dielectric_sled_and_clamp_brackets"
+  ],
+  "Core_compression_shoe_40_m1": [
+    "Custom_dielectric_sled_and_clamp_brackets",
+    "Protected_core_OD48_ID43_x2_140"
+  ],
+  "Core_compression_shoe_40_1": [
+    "Custom_dielectric_sled_and_clamp_brackets",
+    "Protected_core_OD48_ID43_x2_140"
+  ],
+  "Core_compression_shoe_100_m1": [
+    "Custom_dielectric_sled_and_clamp_brackets",
+    "Protected_core_OD48_ID43_x2_140"
+  ],
+  "Core_compression_shoe_100_1": [
+    "Custom_dielectric_sled_and_clamp_brackets",
+    "Protected_core_OD48_ID43_x2_140"
+  ],
+  "Custom_dielectric_sled_and_clamp_brackets": [
+    "Carrier_PCB_61x32x1p6",
+    "Core_compression_shoe_100_1",
+    "Core_compression_shoe_100_m1",
+    "Core_compression_shoe_40_1",
+    "Core_compression_shoe_40_m1",
+    "M2_adjuster_Lm",
+    "M2_adjuster_Lp",
+    "M2_adjuster_Rm",
+    "M2_adjuster_Rp",
+    "Polyester_film_allocation",
+    "Secondary_pigtail_clamp_lower"
+  ],
+  "Standoff_0": [
+    "Carrier_PCB_61x32x1p6",
+    "IRM20_nominal_body"
+  ],
+  "Standoff_1": [
+    "Carrier_PCB_61x32x1p6",
+    "IRM20_nominal_body"
+  ],
+  "Standoff_2": [
+    "Carrier_PCB_61x32x1p6",
+    "IRM20_nominal_body"
+  ],
+  "Standoff_3": [
+    "Carrier_PCB_61x32x1p6",
+    "IRM20_nominal_body"
+  ],
+  "Pressure_jaw_Lm": [
+    "IRM20_nominal_body",
+    "M2_adjuster_Lm"
+  ],
+  "M2_adjuster_Lm": [
+    "Custom_dielectric_sled_and_clamp_brackets",
+    "Pressure_jaw_Lm"
+  ],
+  "Pressure_jaw_Lp": [
+    "IRM20_nominal_body",
+    "M2_adjuster_Lp"
+  ],
+  "M2_adjuster_Lp": [
+    "Custom_dielectric_sled_and_clamp_brackets",
+    "Pressure_jaw_Lp"
+  ],
+  "Pressure_jaw_Rm": [
+    "IRM20_nominal_body",
+    "M2_adjuster_Rm"
+  ],
+  "M2_adjuster_Rm": [
+    "Custom_dielectric_sled_and_clamp_brackets",
+    "Pressure_jaw_Rm"
+  ],
+  "Pressure_jaw_Rp": [
+    "IRM20_nominal_body",
+    "M2_adjuster_Rp"
+  ],
+  "M2_adjuster_Rp": [
+    "Custom_dielectric_sled_and_clamp_brackets",
+    "Pressure_jaw_Rp"
+  ],
+  "Wire_PLUS_conductor": [
+    "Pigtail_land_PLUS",
+    "Pigtail_solder_PLUS",
+    "Secondary_PLUS_via_barrel",
+    "Wire_PLUS_maximum_OD_insulation"
+  ],
+  "Wire_PLUS_maximum_OD_insulation": [
+    "Wire_MINUS_maximum_OD_insulation",
+    "Wire_PLUS_conductor"
+  ],
+  "Pigtail_solder_PLUS": [
+    "Pigtail_land_PLUS",
+    "Secondary_PLUS_via_barrel",
+    "Wire_PLUS_conductor"
+  ],
+  "Wire_MINUS_conductor": [
+    "Pigtail_land_MINUS",
+    "Pigtail_solder_MINUS",
+    "Trace_MINUS",
+    "Wire_MINUS_maximum_OD_insulation"
+  ],
+  "Wire_MINUS_maximum_OD_insulation": [
+    "Wire_MINUS_conductor",
+    "Wire_PLUS_maximum_OD_insulation"
+  ],
+  "Pigtail_solder_MINUS": [
+    "Pigtail_land_MINUS",
+    "Trace_MINUS",
+    "Wire_MINUS_conductor"
+  ],
+  "Bellmouth_sleeve_half_m": [
+    "Bellmouth_sleeve_half_p",
+    "Protected_core_OD48_ID43_x2_140"
+  ],
+  "Bellmouth_sleeve_half_p": [
+    "Bellmouth_sleeve_half_m",
+    "Protected_core_OD48_ID43_x2_140"
+  ],
+  "Secondary_pigtail_clamp_lower": [
+    "Clamp_M2_m",
+    "Clamp_M2_p",
+    "Custom_dielectric_sled_and_clamp_brackets",
+    "Dual_wire_strain_liner",
+    "Secondary_pigtail_clamp_cap"
+  ],
+  "Secondary_pigtail_clamp_cap": [
+    "Clamp_M2_m",
+    "Clamp_M2_p",
+    "Dual_wire_strain_liner",
+    "Secondary_pigtail_clamp_lower"
+  ],
+  "Dual_wire_strain_liner": [
+    "Secondary_pigtail_clamp_cap",
+    "Secondary_pigtail_clamp_lower"
+  ],
+  "Clamp_M2_m": [
+    "Secondary_pigtail_clamp_cap",
+    "Secondary_pigtail_clamp_lower"
+  ],
+  "Clamp_M2_p": [
+    "Secondary_pigtail_clamp_cap",
+    "Secondary_pigtail_clamp_lower"
+  ]
+}

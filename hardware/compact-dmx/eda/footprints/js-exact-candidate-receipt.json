@@ -1,0 +1,74 @@
+{
+  "status": "EXACT_CANDIDATE_REJECTED_FOR_INCOMPLETE_REGISTRATION_NO_ACTIVE_CHANGE",
+  "candidate": "JS102011SAQN",
+  "source_revision": "VL01/14/26 page4",
+  "source_sha256": {
+    ".tools/references/js-official.pdf": "0f35cdf47a1f93da71bb7235581f3c77915516488be930d7a3ea4f4942ff0f3b",
+    "hardware/compact-dmx/eda/footprints/js-parent-status.json": "af45dc6521550ea64086cb13ba35e5b6bd4438c664d373d1b96a05d3a7dbf0c6",
+    "hardware/compact-dmx/eda/footprints/js-parent-verification.md": "e2bb38bf00145100acec0d7de3ce69a3c8eacb142fff77e3468cc9afb247ac18",
+    "hardware/compact-dmx/eda/footprints/assignments.json": "a2c8520fa72fb03ac01363f195ccc709e840c8679beeb8c1ff66ac394e3e9cc4",
+    "hardware/compact-dmx/eda/dmx-interface.kicad_sch": "ac4c59ab9f2d90d1025440bf59c3b9eafa1977e34f52411775b0b099e1c78b5e",
+    "docs/hardware/dmx-hardware-bom.csv": "7efb30e305701a7a51208fa2a00b15026dcf6bc5c148db9e618d58634159c06e",
+    "hardware/compact-dmx/eda/placement-candidate/candidate.kicad_pcb": "fe577602e2891b7c78ec8fba5d71f8648076cadccff2774c96e2673c6fb15a2b"
+  },
+  "primary_lifecycle": "Active from parent official DOM receipt2026-10-22",
+  "source_visual_inspected": ".tools/references/js-official-page4.png",
+  "electrical_screen": {
+    "rated_A": 0.3,
+    "rated_VDC": 6,
+    "nominal_5V_120ohm_A": 0.041666666666666664,
+    "existing_conservative_6V_branch_A_approx": 0.05084,
+    "rating_margin_at_6V_approx": 5.9008654602675055,
+    "type": "maintained SPDT side-actuated gullwing SMT",
+    "common": 2,
+    "shipping_OFF": "1-2 with pin1 unused",
+    "termination_ON": "2-3"
+  },
+  "verified_dimensions_mm": {
+    "signal_land": [
+      1.2,
+      2.5
+    ],
+    "signal_pitch": 2.5,
+    "hole_diameter": 0.9,
+    "hole_spacing": 6.8,
+    "hole_row_to_far_land_edge": 4.0,
+    "body_width_top_view": 9.0,
+    "body_width_lower_view": 8.5,
+    "body_depth": 3.6,
+    "height": 3.5,
+    "actuator_travel": 2.0,
+    "locator_projection": 0.8,
+    "locator_diameter": [
+      0.7,
+      0.8
+    ]
+  },
+  "missing_dimensions": [
+    "Horizontal offset between terminal1/2/3 row and locator-hole pair; no shared dimensioned origin",
+    "Body origin relative to locator axes; 8.5/9.0 outlines and hole pair cannot be registered by assumed symmetry"
+  ],
+  "coordinate_demonstration": {
+    "locator_centres": [
+      [
+        0,
+        0
+      ],
+      [
+        6.8,
+        0
+      ]
+    ],
+    "signal_centres": "(u,-2.75),(u+2.5,-2.75),(u+5,-2.75); u is undimensioned",
+    "prohibited_assumption": "u=(6.8-5)/2=0.9 is centering inference, not an explicit dimension"
+  },
+  "active_circuit_BOM_footprint_board_modified": false,
+  "new_KiCad_ERC_DRC_claim": false,
+  "physical_assignments": 37,
+  "source_backed_assignments": 36,
+  "provisional_assignments": [
+    "dmx.S_TERM"
+  ],
+  "next_required_evidence": "Exact manufacturer land/native CAD specifying terminal-to-locator X registration and body-to-locator origin; no supplier contact performed",
+  "manufacturing_release": false
+}

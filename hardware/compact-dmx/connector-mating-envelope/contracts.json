@@ -1,0 +1,475 @@
+{
+  "revision": "CME-R1",
+  "units": "mm unless stated",
+  "scope": "Four frozen Neutrik pairs only. No NEMA/source/circuit selection.",
+  "accepted_installed_pairs": 0,
+  "installed_length_claims": 0,
+  "all_vendor_CAD_kept_private_ignored": true,
+  "pairs": [
+    {
+      "pair": "pc-in",
+      "chassis_part": "NAC3MPXXA",
+      "mate_part": "NAC3FXXA-W-S",
+      "chassis_model_key": "pc-in",
+      "mate_model_key": "pc-mate-a",
+      "status": "HOLD_NO_DEFENDED_INSTALLED_TRANSFORM",
+      "evidence_confidence": "Manufacturer mating type and standalone nominal envelope; CAD-reference axis/plane inspection; no verified locked pose.",
+      "mating_type": "blue/A inlet and matching A cable socket; not gray/B",
+      "expected_chassis_mating_axis": {
+        "source_axis_index": 2,
+        "outward_sign": 1,
+        "insertion_relative_to_chassis": "toward negative outward axis",
+        "reference_coaxial_cylinder": {
+          "id": "Face548",
+          "radius_mm": 11.20548958443,
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "center_mm": [
+            0.0,
+            0.0,
+            7.05
+          ],
+          "axial_bounds_mm": [
+            6.75,
+            7.05
+          ]
+        }
+      },
+      "mate_bodyward_axis": {
+        "source_axis_index": 2,
+        "sign": 1,
+        "reference_coaxial_cylinder": {
+          "id": "Face249",
+          "radius_mm": 13.25,
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "center_mm": [
+            0.0,
+            0.0,
+            9.7
+          ],
+          "axial_bounds_mm": [
+            8.9,
+            14.5
+          ]
+        }
+      },
+      "panel_shoulder": {
+        "source_face": "Face460",
+        "source_coordinate_mm": 0,
+        "confidence": "CI-R1 drawing shoulder-to-face identification, independently retained"
+      },
+      "bare_chassis_rear_depth_drawing_mm": 30.4,
+      "terminal_assembly_rear_depth_mm": null,
+      "installed_front_extent_from_panel_mm": null,
+      "installed_transverse_envelope_mm": null,
+      "installed_mating_plane": null,
+      "accepted_rigid_mating_transform": null,
+      "unresolved_transform_parameters": [
+        "axial seating/stop translation",
+        "keyed insertion clock angle",
+        "final locked clock angle and latch engagement state"
+      ],
+      "finite_axial_translation_interval_mm": null,
+      "standalone_mate_drawing_nominal": {
+        "length_range_mm": [
+          79,
+          82.5
+        ],
+        "body_diameter_mm": 26.5,
+        "overall_transverse_height_mm": 30.3,
+        "center_to_top_as_drawn_mm": 16.9,
+        "opposite_side_from_height_difference_mm": 13.4,
+        "source": "sources/pc-mate-a-drawing.pdf",
+        "warning": "Variable overall assembly length, not installed projection; general drawing tolerances remain. No actuation or hand clearance stated."
+      },
+      "lock_relationship": "Source body axes both +Z; axial translation and circumferential angle remain undetermined.",
+      "surface_probes": [
+        {
+          "chassis_face": "Face337",
+          "mate_face": "Face2435",
+          "establishes_lock_or_stop": false
+        },
+        {
+          "chassis_face": "Face466",
+          "mate_face": "Face247",
+          "establishes_lock_or_stop": false
+        }
+      ],
+      "continuous_insertion_rotation_verified": false,
+      "latch_stroke_envelope_mm": null,
+      "manufacturer_required_hand_clearance_mm": null,
+      "proposed_hand_clearance_mm": null,
+      "rear_terminal_contract": "NLFASTON is listed by the manufacturer for 4.75 x 0.51 tabs, but its complete insulated profile/retention/tool envelope is not in the allowed sources. No qualified terminal/sleeve assembly.",
+      "next_missing_data": [
+        "Labeled installed panel-to-mate datum or a paired sectioned assembly model identifying the actual final axial stop.",
+        "Key/latch identification and fully locked relative angle with latch state, allowable play and tolerances.",
+        "Contact engagement/overlap and a source-defined insertion/rotation path; static external model alone is insufficient.",
+        "Actuated release-latch stroke, grasp/tool/cable-bend allocation, and exact rear insulated terminal assembly."
+      ]
+    },
+    {
+      "pair": "pc-out",
+      "chassis_part": "NAC3MPXXB",
+      "mate_part": "NAC3FXXB-W-S",
+      "chassis_model_key": "pc-out",
+      "mate_model_key": "pc-mate-b",
+      "status": "HOLD_NO_DEFENDED_INSTALLED_TRANSFORM",
+      "evidence_confidence": "Manufacturer mating type and standalone nominal envelope; CAD-reference axis/plane inspection; no verified locked pose.",
+      "mating_type": "gray/B outlet and matching B cable socket; not blue/A",
+      "expected_chassis_mating_axis": {
+        "source_axis_index": 2,
+        "outward_sign": 1,
+        "insertion_relative_to_chassis": "toward negative outward axis",
+        "reference_coaxial_cylinder": {
+          "id": "Face86",
+          "radius_mm": 11.20548958443,
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "center_mm": [
+            0.0,
+            0.0,
+            7.05
+          ],
+          "axial_bounds_mm": [
+            6.75,
+            7.05
+          ]
+        }
+      },
+      "mate_bodyward_axis": {
+        "source_axis_index": 2,
+        "sign": 1,
+        "reference_coaxial_cylinder": {
+          "id": "Face249",
+          "radius_mm": 13.25,
+          "axis": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "center_mm": [
+            0.0,
+            0.0,
+            9.7
+          ],
+          "axial_bounds_mm": [
+            8.9,
+            14.5
+          ]
+        }
+      },
+      "panel_shoulder": {
+        "source_face": "Face680",
+        "source_coordinate_mm": 0,
+        "confidence": "CI-R1 drawing shoulder-to-face identification, independently retained"
+      },
+      "bare_chassis_rear_depth_drawing_mm": 30.4,
+      "terminal_assembly_rear_depth_mm": null,
+      "installed_front_extent_from_panel_mm": null,
+      "installed_transverse_envelope_mm": null,
+      "installed_mating_plane": null,
+      "accepted_rigid_mating_transform": null,
+      "unresolved_transform_parameters": [
+        "axial seating/stop translation",
+        "keyed insertion clock angle",
+        "final locked clock angle and latch engagement state"
+      ],
+      "finite_axial_translation_interval_mm": null,
+      "standalone_mate_drawing_nominal": {
+        "length_range_mm": [
+          79,
+          82.5
+        ],
+        "body_diameter_mm": 26.5,
+        "overall_transverse_height_mm": 30.3,
+        "center_to_top_as_drawn_mm": 16.9,
+        "opposite_side_from_height_difference_mm": 13.4,
+        "source": "sources/pc-mate-b-drawing.pdf",
+        "warning": "Variable overall assembly length, not installed projection; general drawing tolerances remain. No actuation or hand clearance stated."
+      },
+      "lock_relationship": "Source body axes both +Z; axial translation and circumferential angle remain undetermined.",
+      "surface_probes": [
+        {
+          "chassis_face": "Face620",
+          "mate_face": "Face2413",
+          "establishes_lock_or_stop": false
+        },
+        {
+          "chassis_face": "Face4",
+          "mate_face": "Face247",
+          "establishes_lock_or_stop": false
+        }
+      ],
+      "continuous_insertion_rotation_verified": false,
+      "latch_stroke_envelope_mm": null,
+      "manufacturer_required_hand_clearance_mm": null,
+      "proposed_hand_clearance_mm": null,
+      "rear_terminal_contract": "NLFASTON is listed by the manufacturer for 4.75 x 0.51 tabs, but its complete insulated profile/retention/tool envelope is not in the allowed sources. No qualified terminal/sleeve assembly.",
+      "next_missing_data": [
+        "Labeled installed panel-to-mate datum or a paired sectioned assembly model identifying the actual final axial stop.",
+        "Key/latch identification and fully locked relative angle with latch state, allowable play and tolerances.",
+        "Contact engagement/overlap and a source-defined insertion/rotation path; static external model alone is insufficient.",
+        "Actuated release-latch stroke, grasp/tool/cable-bend allocation, and exact rear insulated terminal assembly."
+      ]
+    },
+    {
+      "pair": "true1-in",
+      "chassis_part": "NAC3MPX-TOP",
+      "mate_part": "NAC3FX-W-TOP",
+      "chassis_model_key": "true1-in",
+      "mate_model_key": "true1-mate-f",
+      "status": "HOLD_NO_DEFENDED_INSTALLED_TRANSFORM",
+      "evidence_confidence": "Manufacturer mating type and standalone nominal envelope; CAD-reference axis/plane inspection; no verified locked pose.",
+      "mating_type": "male TRUE1 inlet / female TRUE1 cable connector",
+      "expected_chassis_mating_axis": {
+        "source_axis_index": 1,
+        "outward_sign": 1,
+        "insertion_relative_to_chassis": "toward negative outward axis",
+        "reference_coaxial_cylinder": {
+          "id": "Face99",
+          "radius_mm": 12.5,
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "center_mm": [
+            0.0,
+            2.012739941425,
+            0.0
+          ],
+          "axial_bounds_mm": [
+            0.0,
+            0.7
+          ]
+        }
+      },
+      "mate_bodyward_axis": {
+        "source_axis_index": 1,
+        "sign": 1,
+        "reference_coaxial_cylinder": {
+          "id": "Face1589",
+          "radius_mm": 13.25,
+          "axis": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "center_mm": [
+            0.0,
+            46.4,
+            0.0
+          ],
+          "axial_bounds_mm": [
+            47.2,
+            53.9
+          ]
+        }
+      },
+      "panel_shoulder": {
+        "source_face": "Face178",
+        "source_coordinate_mm": 0,
+        "confidence": "CI-R1 drawing shoulder-to-face identification, independently retained"
+      },
+      "bare_chassis_rear_depth_drawing_mm": 31.2,
+      "terminal_assembly_rear_depth_mm": null,
+      "installed_front_extent_from_panel_mm": null,
+      "installed_transverse_envelope_mm": null,
+      "installed_mating_plane": null,
+      "accepted_rigid_mating_transform": null,
+      "unresolved_transform_parameters": [
+        "axial seating/stop translation",
+        "keyed insertion clock angle",
+        "final locked clock angle and latch engagement state"
+      ],
+      "finite_axial_translation_interval_mm": null,
+      "standalone_mate_drawing_nominal": {
+        "length_range_mm": [
+          77,
+          80
+        ],
+        "body_diameter_mm": 26.5,
+        "overall_transverse_height_mm": 32,
+        "center_to_top_as_drawn_mm": 17,
+        "opposite_side_from_height_difference_mm": 15,
+        "source": "sources/true1-mate-f-drawing.pdf",
+        "warning": "Variable overall assembly length, not installed projection; general drawing tolerances remain. No actuation or hand clearance stated."
+      },
+      "lock_relationship": "Source body axes both +Y; clockwise locking as illustrated in BDA559, but no numerical source-coordinate locked angle.",
+      "surface_probes": [
+        {
+          "chassis_face": "Face203",
+          "mate_face": "Face1",
+          "establishes_lock_or_stop": false
+        },
+        {
+          "chassis_face": "Face195",
+          "mate_face": "Face499",
+          "establishes_lock_or_stop": false
+        }
+      ],
+      "continuous_insertion_rotation_verified": false,
+      "latch_stroke_envelope_mm": null,
+      "manufacturer_required_hand_clearance_mm": null,
+      "proposed_hand_clearance_mm": null,
+      "rear_terminal_contract": "6.35 x 0.8 FASTON tabs; no exact qualified insulated terminal/sleeve PN/profile established in allowed sources.",
+      "next_missing_data": [
+        "Labeled installed panel-to-mate datum or a paired sectioned assembly model identifying the actual final axial stop.",
+        "Key/latch identification and fully locked relative angle with latch state, allowable play and tolerances.",
+        "Contact engagement/overlap and a source-defined insertion/rotation path; static external model alone is insufficient.",
+        "Actuated release-latch stroke, grasp/tool/cable-bend allocation, and exact rear insulated terminal assembly."
+      ]
+    },
+    {
+      "pair": "true1-out",
+      "chassis_part": "NAC3FPX-TOP",
+      "mate_part": "NAC3MX-W-TOP",
+      "chassis_model_key": "true1-out",
+      "mate_model_key": "true1-mate-m",
+      "status": "HOLD_NO_DEFENDED_INSTALLED_TRANSFORM",
+      "evidence_confidence": "Manufacturer mating type and standalone nominal envelope; CAD-reference axis/plane inspection; no verified locked pose.",
+      "mating_type": "female TRUE1 outlet / male TRUE1 cable plug connector",
+      "expected_chassis_mating_axis": {
+        "source_axis_index": 2,
+        "outward_sign": 1,
+        "insertion_relative_to_chassis": "toward negative outward axis",
+        "reference_coaxial_cylinder": {
+          "id": "Face1093",
+          "radius_mm": 17.25,
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "center_mm": [
+            0.0,
+            0.0,
+            4.5
+          ],
+          "axial_bounds_mm": [
+            4.2,
+            4.5
+          ]
+        }
+      },
+      "mate_bodyward_axis": {
+        "source_axis_index": 0,
+        "sign": -1,
+        "reference_coaxial_cylinder": {
+          "id": "Face3",
+          "radius_mm": 12.875,
+          "axis": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "center_mm": [
+            2.895,
+            0.0,
+            0.0
+          ],
+          "axial_bounds_mm": [
+            -45.4,
+            -45.04611413576
+          ]
+        }
+      },
+      "panel_shoulder": {
+        "source_face": "Face105",
+        "source_coordinate_mm": 0,
+        "confidence": "CI-R1 drawing shoulder-to-face identification, independently retained"
+      },
+      "bare_chassis_rear_depth_drawing_mm": 32.8,
+      "terminal_assembly_rear_depth_mm": null,
+      "installed_front_extent_from_panel_mm": null,
+      "installed_transverse_envelope_mm": null,
+      "installed_mating_plane": null,
+      "accepted_rigid_mating_transform": null,
+      "unresolved_transform_parameters": [
+        "axial seating/stop translation",
+        "keyed insertion clock angle",
+        "final locked clock angle and latch engagement state"
+      ],
+      "finite_axial_translation_interval_mm": null,
+      "standalone_mate_drawing_nominal": {
+        "length_range_mm": [
+          77,
+          80
+        ],
+        "body_diameter_mm": 26.5,
+        "overall_transverse_height_mm": 35,
+        "center_to_top_as_drawn_mm": 19.7,
+        "opposite_side_from_height_difference_mm": 15.3,
+        "source": "sources/true1-mate-m-drawing.pdf",
+        "warning": "Variable overall assembly length, not installed projection; general drawing tolerances remain. No actuation or hand clearance stated."
+      },
+      "lock_relationship": "Cable bodyward -X is to be coaxial with chassis outward +Z; rotation about that axis and axial translation remain undetermined.",
+      "surface_probes": [
+        {
+          "chassis_face": "Face18",
+          "mate_face": "Face326",
+          "establishes_lock_or_stop": false
+        },
+        {
+          "chassis_face": "Face416",
+          "mate_face": "Face1386",
+          "establishes_lock_or_stop": false
+        }
+      ],
+      "continuous_insertion_rotation_verified": false,
+      "latch_stroke_envelope_mm": null,
+      "manufacturer_required_hand_clearance_mm": null,
+      "proposed_hand_clearance_mm": null,
+      "rear_terminal_contract": "6.35 x 0.8 FASTON tabs; no exact qualified insulated terminal/sleeve PN/profile established in allowed sources.",
+      "next_missing_data": [
+        "Labeled installed panel-to-mate datum or a paired sectioned assembly model identifying the actual final axial stop.",
+        "Key/latch identification and fully locked relative angle with latch state, allowable play and tolerances.",
+        "Contact engagement/overlap and a source-defined insertion/rotation path; static external model alone is insufficient.",
+        "Actuated release-latch stroke, grasp/tool/cable-bend allocation, and exact rear insulated terminal assembly."
+      ]
+    }
+  ],
+  "common_access_facts": {
+    "classic_cable_OD_mm": [
+      6,
+      12
+    ],
+    "TRUE1_cable_OD_mm": [
+      6,
+      12
+    ],
+    "classic_preparation_mm": {
+      "LN": 24,
+      "PE": 27,
+      "stripped": 9
+    },
+    "TRUE1_preparation_mm": {
+      "LN": 20,
+      "PE": 23,
+      "stripped": 8
+    },
+    "classic_tools": {
+      "terminal": "T8; 0.7 Nm",
+      "bushing": "27 mm hex; 2.5 Nm; HTLACA/HTLACB listed"
+    },
+    "TRUE1_tools": {
+      "bushing": "13 mm wrench/HTAC; 2.0 Nm",
+      "terminal": "0.7 Nm per BDA541/542; no tool sweep dimensions inferred"
+    },
+    "chassis_mounting": {
+      "classic": "BDA592 countersunk M3 or4-40 examples,50 Ncm mounting limit",
+      "TRUE1": "BDA544/545,40 Ncm"
+    },
+    "warning": "Preparation lengths are internal cable-connector facts, not additive rear-chassis or hand-access clearances; actual cable type/gauge matrix applies. No arbitrary bend radius or tool-space allowance."
+  }
+}

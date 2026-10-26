@@ -1,0 +1,19 @@
+{
+  "source_sha256": "dca73c2ab334e62814240cd0c01a24c17fa69820f151dbf55571e56febdca278",
+  "electrical_parts": 39,
+  "unchanged_nonconnector_footprints": 42,
+  "USB_shift_y_mm": 3,
+  "new_origin": [
+    42.7,
+    47.6
+  ],
+  "tongue": [
+    36.5,
+    51,
+    48.9,
+    53.3
+  ],
+  "mating_plane_y": 54,
+  "same_nets_values": true,
+  "tracks": 0
+}

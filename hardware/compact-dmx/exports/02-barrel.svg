@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 710" width="1000" height="710"><rect width="1000" height="710" fill="white"/>
+<text x="30" y="35" font-family="Arial,sans-serif" font-size="21" fill="#283849">02 / Rotary USB barrel: fixed core, lock and independent stops</text>
+<text x="30" y="57" font-family="Arial,sans-serif" font-size="11" fill="#ad452b">NOVA-LINK / B-RFQ / 2026-10-22 / mm / NOT RELEASED FOR MANUFACTURE</text>
+<path d="M30,73 L970,73" stroke="#283849" fill="none"/>
+<text x="40" y="107" font-family="Arial,sans-serif" font-size="12" fill="#283849">SIDE / x axis</text>
+<rect x="55" y="151.0" width="497.0" height="168.0" fill="#eef2f5" stroke="#283849"/>
+<rect x="258.0" y="88.0" width="91.0" height="294.0" fill="#d5f0f0" stroke="#283849"/>
+<rect x="212.5" y="197.375" width="159.95000000000002" height="75.25" fill="#f5d9a8" stroke="#283849"/>
+<text x="60" y="241" font-family="Arial,sans-serif" font-size="13" fill="#283849">FIXED</text>
+<text x="377.0" y="241" font-family="Arial,sans-serif" font-size="13" fill="#283849">FIXED</text>
+<path d="M55,415 L552.0,415" stroke="#283849" fill="none"/>
+<path d="M51,411 L59,419" stroke="#283849" fill="none"/>
+<path d="M548.0,411 L556.0,419" stroke="#283849" fill="none"/>
+<text x="278.5" y="408.0" font-family="Arial,sans-serif" font-size="11" fill="#283849">142</text>
+<path d="M258.0,85 L349.0,85" stroke="#283849" fill="none"/>
+<path d="M254.0,81 L262.0,89" stroke="#283849" fill="none"/>
+<path d="M345.0,81 L353.0,89" stroke="#283849" fill="none"/>
+<text x="278.5" y="78.0" font-family="Arial,sans-serif" font-size="11" fill="#283849">26</text>
+<text x="55" y="448" font-family="Arial,sans-serif" font-size="13" fill="#283849">Core OD48 / collar OD84 / normal USB-C output 5 V, 1.5 A</text>
+<text x="55" y="472" font-family="Arial,sans-serif" font-size="11" fill="#283849">L/N/PE and PSU do not rotate. Source / full assembly approval pending.</text>
+<circle cx="760" cy="260" r="113.4" fill="#d5f0f0" stroke="#283849"/>
+<circle cx="760" cy="260" r="64.80000000000001" fill="#ffffff" stroke="#283849"/>
+<circle cx="760.0" cy="338.3" r="4.32" fill="#6e8497" stroke="#283849"/>
+<circle cx="780.2655312315273" cy="335.6319921984341" r="4.32" fill="#6e8497" stroke="#283849"/>
+<circle cx="799.15" cy="327.80978911632155" r="4.32" fill="#6e8497" stroke="#283849"/>
+<circle cx="815.3664609669067" cy="315.3664609669067" r="4.32" fill="#6e8497" stroke="#283849"/>
+<circle cx="827.8097891163216" cy="299.15" r="4.32" fill="#6e8497" stroke="#283849"/>
+<circle cx="835.6319921984341" cy="280.26553123152735" r="4.32" fill="#6e8497" stroke="#283849"/>
+<circle cx="838.3" cy="260.0" r="4.32" fill="#6e8497" stroke="#283849"/>
+<circle cx="835.6319921984341" cy="239.73446876847262" r="4.32" fill="#6e8497" stroke="#283849"/>
+<circle cx="827.8097891163216" cy="220.85" r="4.32" fill="#6e8497" stroke="#283849"/>
+<circle cx="815.3664609669067" cy="204.6335390330933" r="4.32" fill="#6e8497" stroke="#283849"/>
+<circle cx="799.15" cy="192.19021088367845" r="4.32" fill="#6e8497" stroke="#283849"/>
+<circle cx="780.2655312315273" cy="184.36800780156594" r="4.32" fill="#6e8497" stroke="#283849"/>
+<circle cx="760.0" cy="181.7" r="4.32" fill="#6e8497" stroke="#283849"/>
+<text x="633" y="405" font-family="Arial,sans-serif" font-size="12" fill="#283849">13 index holes / 15 degree spacing</text>
+<text x="633" y="430" font-family="Arial,sans-serif" font-size="12" fill="#283849">R29; diameter 3.20 +0.05/0</text>
+<text x="633" y="455" font-family="Arial,sans-serif" font-size="12" fill="#283849">Pin diameter 3.00 -0.02/0</text>
+<text x="633" y="480" font-family="Arial,sans-serif" font-size="12" fill="#283849">Pull 4.2 mm to release; spring return</text>
+<text x="40" y="525" font-family="Arial,sans-serif" font-size="12" fill="#283849">Independent R30 stop slot: width4.30; rounded R2.15 ends; diameter4 peg through diameter4.10 cheek bore.</text>
+<text x="40" y="550" font-family="Arial,sans-serif" font-size="12" fill="#283849">Nominal stop travel180.57 degrees; acceptance180 +/-1. Lock release cannot bypass stop.</text>
+<text x="40" y="575" font-family="Arial,sans-serif" font-size="12" fill="#283849">Lock guide B19: OD3.80 / ID3.20 x9; x58..67; divider/covers seal to sleeve; attachment still open.</text>
+<text x="40" y="600" font-family="Arial,sans-serif" font-size="12" fill="#283849">USB window x65.5..78; wire-lane edge x64.8; board and receptacle lowered1 mm to clear guide.</text>
+<text x="40" y="625" font-family="Arial,sans-serif" font-size="12" fill="#283849">Target: lock1 N m, stop2 N m, axial100 N, cable40 N. Retainers/endcaps/slider and qualification open.</text>
+<text x="30" y="676" font-family="Arial,sans-serif" font-size="10" fill="#283849">Supplier components shown as envelopes. Verify actual footprints, latch approach, harness and fixture CAD before tooling.</text>
+<text x="30" y="694" font-family="Arial,sans-serif" font-size="10" fill="#283849">See canonical design for tolerances, assembly requirements, release gates and primary-source links.</text>
+</svg>

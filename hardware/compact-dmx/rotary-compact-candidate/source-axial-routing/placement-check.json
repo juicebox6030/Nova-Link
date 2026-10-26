@@ -1,0 +1,20 @@
+{
+  "PCB_mm": [
+    27.0,
+    20.0,
+    1
+  ],
+  "top_only": true,
+  "physical_footprints": 34,
+  "minimum_courtyard_gap_mm": 0.10999999999999943,
+  "connector_origin_mm": [
+    27.0,
+    10
+  ],
+  "connector_angle_deg": 90,
+  "mate_direction": "+X",
+  "supplier_lands_unchanged": true,
+  "body_height_max_mm": 3.46,
+  "25x18_target_achieved": false,
+  "routing_and_fit_acceptance_pending": true
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "file": "lt4363.pdf",
+    "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/4363fb.pdf",
+    "rc": 92,
+    "error": "t    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (92) HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR (err 2)\n"
+  },
+  {
+    "file": "tl431.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/tl431.pdf",
+    "rc": 0,
+    "error": ""
+  },
+  {
+    "file": "ts820-600.pdf",
+    "url": "https://www.st.com/resource/en/datasheet/ts820-600.pdf",
+    "rc": 92,
+    "error": "t    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (92) HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR (err 2)\n"
+  },
+  {
+    "file": "lt4363.pdf",
+    "url": "https://www.analog.com/media/en/technical-documentation/data-sheets/4363fb.pdf",
+    "transport": "HTTP1.1 retry after HTTP2 protocol failure",
+    "rc": 28,
+    "error": "-:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:29 --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:30 --:--:--     0\ncurl: (28) Operation timed out after 30001 milliseconds with 0 bytes received\n"
+  },
+  {
+    "file": "ts820-600.pdf",
+    "url": "https://www.st.com/resource/en/datasheet/ts820-600.pdf",
+    "transport": "HTTP1.1 retry after HTTP2 protocol failure",
+    "rc": 28,
+    "error": "-:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:29 --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:30 --:--:--     0\ncurl: (28) Operation timed out after 30002 milliseconds with 0 bytes received\n"
+  },
+  {
+    "file": "csd17577q3a.pdf",
+    "url": "https://www.ti.com/lit/ds/symlink/csd17577q3a.pdf",
+    "rc": 0,
+    "error": ""
+  },
+  {
+    "file": "ts820.pdf",
+    "url": "https://www.st.com/resource/en/datasheet/ts820.pdf",
+    "rc": 28,
+    "error": "-:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:19 --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:20 --:--:--     0\ncurl: (28) Operation timed out after 20002 milliseconds with 0 bytes received\n"
+  }
+]

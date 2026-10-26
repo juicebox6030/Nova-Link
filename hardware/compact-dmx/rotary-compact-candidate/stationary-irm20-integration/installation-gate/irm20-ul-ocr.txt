@@ -1,0 +1,701 @@
+=== ul-page-01.txt ===
+2024/1125 £=11:26 QQJQ2.E183223 - Power Supplies for Use with Audio/Video, Information and Communication Technology Equipment - Co...
+
+UL Product iQ° O) solutions
+
+Note: We are enhancing our systems and you may notice duplicate entries/missing/outdated data. During this interim period,
+please contact our Customer Service at https://www.ul.com/about/locations.
+
+Power Supplies for Use with Audio/Video, Information and
+Communication Technology Equipment - Component
+
+COMPANY
+
+MEAN WELL ENTERPRISES CO LTD
+No 28 Wuquan 3rd Rd
+
+Wugu District
+
+New Taipei City, 24891 Taiwan
+
+E183223
+
+Marking: Company name model designation, and the Recognized Component Mark L \¥
+Note: For additional marking information, refer to the Guide Information Page.
+
+View model for additional information
+
+Model(s): AD-155A, AD-155B, AD-155C, AD-55A, AD-55B, ADD-155A, ADD-155B, ADD-155C, ADD-55A, ADD-55B, ADS-15512,
+ADS-15512, ADS-15512SM, ADS-15524, ADS-15524, ADS-15548, CSP-3000-x, DBUF20-24, DBUF40-24, DDR-240C-48, DDR-480B-
+12, DDR-480B-24, DDR-480B-48, DDR-480C-12, DDR-480C-24, DDR-480C-48, DDR-480D-12, DDR-480D-24, DDR-480D-48, DDR-
+60G-05, DDR-60G-12, DDR-60G-15, DDR-60G-24, DDR-60L-05, DDR-60L-12, DDR-GOL-15, DDR-60L-24, DETNO1L-05, DETNO1L-
+12, DETNO1L-15, DETNOLM-05, DETNO1M-12, DETNO1M-15, DETNO1N-05, DETNO1N-12, DETNO1N-15, DRA-40-12, DRA-40-24,
+DRA-60-12, DRA-60-24, DRC-100A, DRC-100B, DRC-40A, DRC-40B, DRC-60A, DRC-60B, DRDN20-12, DRDN20-24, DRDN20-48,
+DRDN40-12, DRDN40-24, DRDN40-48, ELP-75-12, ELP-75-15, ELP-75-24, ELP-75-3.3, ELP-75-36, ELP-75-48, ELP-75-5, EPP-100-
+12, EPP-100-24KS, EPP-100-15, EPP-100-24KS, EPP-100-24, EPP-100-24KS, EPP-100-27, EPP-100-24KS, EPP-100-48, EPP-100-
+24KS, EPP-120S-12, EPP-120S-15, EPP-120S-24, EPP-120S-27, EPP-120S-48, EPP-150-12, EPP-100-24KS, EPP-150-15, EPP-100-
+24KS, EPP-150-24, EPP-100-24KS, EPP-150-27, EPP-100-24KS, EPP-150-48, EPP-100-24KS, EPP-300-12, EPP-300-12CB, EPP-300-
+15, EPP-300-24, EPP-300-27, EPP-300-48, EPP-400-12, EPP-400-15, EPP-400-18, EPP-400-24, EPP-400-27, EPP-400-36, EPP-400-
+48, EPP-500-12, EPP-500-15, EPP-500-18, EPP-500-24, EPP-500-27, EPP-500-36, EPP-500-48, EPP-500-54, EPS-120-12 ($), EPS-
+120-12 (%), EPS-120-15 ($), EPS-120-15 (%), EPS-120-24 ($), EPS-120-24 (%), EPS-120-27 ($), EPS-120-27 (%), EPS-120-48 (4), EPS-
+120-48 (%), EPS-15-12, EPS-15-15, EPS-15-24, EPS-15-27, EPS-15-3.3, EPS-15-36, EPS-15-48, EPS-15-5, EPS-15-7.5, EPS-25-12,
+EPS-25-15, EPS-25-24, EPS-25-27, EPS-25-3.3, EPS-25-36, EPS-25-48, EPS-25-5, EPS-25-7.5, EPS-35-12, EPS-35-15, EPS-35-24,
+EPS-35-27, EPS-35-3.3, EPS-35-36, EPS-35-48, EPS-35-5, EPS-35-7.5, EPS-45-127 (@), EPS-45-15z (@), EPS-45-247 (@), EPS-45-
+3.3z (@), EPS-45-36z (@), EPS-45-48z (@), EPS-45-5z (@), EPS-45-7.5z (@), EPS-45S-12, EPS-45S-15, EPS-45S-24, EPS-45S-3.3,
+EPS-45S-48, EPS-45S-5, EPS-45S-7.5, EPS-65-127 (@), EPS-65-15z (@), EPS-65-24z (@), EPS-65-3.3z (@), EPS-65-36z (@), EPS-65-
+48z (@), EPS-65-5z (@), EPS-65-7.5z (@), EPS-65S-12, EPS-65S-15, EPS-65S-24, EPS-65S-3.3, EPS-65S-48, EPS-65S-5, EPS-65S-7.5,
+ERDN20-12, ERDN20-24, ERDN20-48, ERDN20-5, ERDN40-12, ERDN40-24, ERDN40-48, ERP-350-12, ERP-350-24, ERP-350-36,
+ERP-350-48, HDP-190, HDP-240, HDR-100-12, HDR-100-12N, HDR-100-15, HDR-100-15N, HDR-100-24, HDR-100-24N, HDR-
+100-48, HDR-100-48N, HDR-150-12, HDR-150-15, HDR-150-24, HDR-150-48, HDR-15-12, HDR-15-15, HDR-15-24, HDR-15-48,
+HDR-15-5, HDR-30-12, HDR-30-15, HDR-30-24, HDR-30-48, HDR-30-5, HDR-60-12, HDR-60-15, HDR-60-24, HDR-60-48, HDR-
+60-5, HEP-1000-100Wa a can be blank, PM or CAN, HEP-1000-100WCz z can be PM or CAN, HEP-1000-100y y can be blank or
+CAN, HEP-1000-24Wa a can be blank, PM or CAN, HEP-1000-24WCz z can be PM or CAN, HEP-1000-24y y can be blank or CAN,
+HEP-1000-48Wa a can be blank, PM or CAN, HEP-1000-48WCz z can be PM or CAN, HEP-1000-48y y can be blank or CAN, HEP-
+100-12, HEP-100-12A, HEP-100-15, HEP-100-15A, HEP-100-24, HEP-100-24A, HEP-100-36, HEP-100-36A, HEP-100-48, HEP-100-
+48A, HEP-100-54, HEP-100-54A, HEP-150-12, HEP-150-12A, HEP-150-15, HEP-150-15A, HEP-150-24, HEP-150-24A, HEP-150-36,
+HEP-150-36A, HEP-150-48, HEP-150-48A, HEP-150-54, HEP-150-54A, HEP-185-12, HEP-185-12A, HEP-185-15, HEP-185-15A,
+HEP-185-24, HEP-185-24A, HEP-185-36, HEP-185-36A, HEP-185-48, HEP-185-48A, HEP-185-54, HEP-185-54A, HEP-240-12, HEP-
+
+https://iq.ulprospector.com/en/profile?e=2664329 7
+
+=== ul-page-02.txt ===
+2024/1125 £=11:26 QQJQ2.E183223 - Power Supplies for Use with Audio/Video, Information and Communication Technology Equipment - Co...
+
+240-12A, HEP-240-15, HEP-240-15A, HEP-240-24, HEP-240-24A, HEP-240-36, HEP-240-36A, HEP-240-48, HEP-240-48A, HEP-
+240-54, HEP-240-54A, HEP-320-12 or HEP-320-12A, HEP-320-15 or HEP-320-15A, HEP-320-24 or HEP-320-24A, HEP-320-36 or
+HEP-320-36A, HEP-320-48 or HEP-320-48A, HEP-320-54 or HEP-320-54A, HEP-480-24, HEP-480-24A, HEP-480-36, HEP-480-36A,
+HEP-480-48, HEP-480-48A, HEP-480-48NT, HEP-480-54, HEP-480-54A, HLG-185H-24TE10, HLG-185H-24TE11, HLG-480H-30TE10,
+HLG-480H-30TE11, HRP-100-12, HRP-100-15, HRP-100-24, HRP-100-3.3, HRP-100-36, HRP-100-48, HRP-100-5, HRP-100-7.5,
+HRP-600-60SI, HRP-75-12, HRP-75-15, HRP-75-24, HRP-75-3.3, HRP-75-36, HRP-75-48, HRP-75-5, HRP-75-7.5, HRPG-150-12,
+HRP-150-12, HRPG-150-15, HRP-150-15, HRPG-150-24, HRP-150-24, HRPG-150-3.3, HRP-150-3.3, HRPG-150-36, HRP-150-36,
+HRPG-150-48, HRP-150-48, HRPG-150-5, HRP-150-5, HRPG-150-7.5, HRP-150-7.5, HRPG-450-12, HRP-450-12, HRPG-450-15,
+HRP-450-15, HRPG-450-24, HRP-450-24, HRPG-450-3.3, HRP-450-3.3, HRPG-450-36, HRP-450-36, HRPG-450-48, HRP-450-48,
+HRPG-450-5, HRP-450-5, HRPG-450-7.5, HRP-450-7.5, HRPG-600-12, HRP-600-12, HRPG-600-15, HRP-600-15, HRPG-600-24,
+HRP-600-24, HRP-600-24GR, HRPG-600-3.3, HRP-600-3.3, HRPG-600-36, HRP-600-36, HRPG-600-48, HRP-600-48, HRP-600-
+A8UN, HRPG-600-5, HRP-600-5, HRPG-600-7.5, HRP-600-7.5, HRPX-200-12 (&), HRPX-200-15 (&), HRPX-200-24 (&), HRPX-200-
+3.3 (&), HRPX-200-36 (&), HRPX-200-48 (&), HRPX-200-5 (&), HRPX-200-7.5 (&), HRPX-300-12 , X = G or blank., HRPX-300-15 , X
+= Gor blank., HRPX-300-24 , X = G or blank., HRPX-300-3.3 , X = G or blank., HRPX-300-36 , X = G or blank., HRPX-300-48 , X = G
+or blank., HRPX-300-5 , X = G or blank., HRPX-300-7.5 , X = G or blank., IRM-01-12, IRM-01-12S, IRM-01-15, IRM-01-15S, IRM-01-
+24, IRM-01-24S, IRM-01-3.3, IRM-01-3.3S, IRM-01-5, IRM-01-5S, IRM-01-9, IRM-01-9S, IRM-02-12, IRM-02-12S, IRM-02-15, IRM-
+02-15S, IRM-02-24, IRM-02-24S, IRM-02-3.3, IRM-02-3.3S, IRM-02-5, IRM-02-5S, IRM-02-9, IRM-02-9S, IRM-03-12, IRM-03-12S,
+IRM-03-15, IRM-03-15S, IRM-03-24, IRM-03-24S, IRM-03-3.3, IRM-03-3.3S, IRM-03-5, IRM-03-5S, IRM-03-9, IRM-03-9S, IRM-05-
+12, IRM-05-15, IRM-05-24, IRM-05-3.3, IRM-05-5, IRM-10-12, IRM-10-15, IRM-10-24, IRM-10-3.3, IRM-10-5, IRM-30-12, IRM-30-
+12ST, IRM-30-15, IRM-30-15ST, IRM-30-24, IRM-30-24ST, IRM-30-48, IRM-30-48ST, IRM-30-5, IRM-30-5ST, IRM-45-12, IRM-45-
+12ST, IRM-45-15, IRM-45-15ST, IRM-45-24, IRM-45-24ST, IRM-45-48, IRM-45-48ST, IRM-45-5, IRM-45-5ST, IRM-60-12, IRM-60-
+12ST, IRM-60-15, IRM-60-15ST, IRM-60-24, IRM-60-24ST, IRM-60-48, IRM-60-48ST, IRM-60-5, IRM-60-5ST, IRM-90-12, IRM-90-
+12ST, IRM-90-15, IRM-90-15ST, IRM-90-24, IRM-90-24ST, IRM-90-48, IRM-90-48ST, LOP-400-x x=12, 15,18,24,27,36, 48 or 54,
+LOP-500-x x=12, 15,18,24,27,36, 48 or 54, LPP-100-12, LPP-100-13.5, LPP-100-15, LPP-100-24, LPP-100-27, LPP-100-3.3, LPP-100-
+48, LPP-100-5, LPP-100-7.5, LPP-150-12, LPP-150-13.5, LPP-150-15, LPP-150-24, LPP-150-27, LPP-150-3.3, LPP-150-48, LPP-150-5,
+LPP-150-7.5, LPS-100-12, LPS-100-13.5, LPS-100-15, LPS-100-24, LPS-100-27, LPS-100-3.3, LPS-100-48, LPS-100-5, LPS-100-7.5.
+LPS-50-12, LPS-50-15, LPS-50-24, LPS-50-3.3, LPS-50-48, LPS-50-5, LPS-75-12, LPS-75-15, LPS-75-24, LPS-75-24GR, LPS-75-3.3,
+LPS-75-48, LPS-75-5, LRS-100-12, LRS-100-15, LRS-100-24, LRS-100-3.3, LRS-100-36, LRS-100-48, LRS-100-5, LRS-150-12, LRS-
+150-12HP LRS-150-15, LRS-150-24, LRS-150-36, LRS-150-48, LRS-150F-12, LRS-150F-15, LRS-150F-24, LRS-150F-36, LRS-150F-48,
+LRS-150F-S, LRS-200-12, LRS-200-15, LRS-200-24, LRS-200-3.3, LRS-200-36, LRS-200-4.2, LRS-200-48, LRS-200-5, LRS-350-12
+LRS-350-15, LRS-350-24, LRS-350-3.3, LRS-350-36, LRS-350-4.2, LRS-350-48, LRS-350-5, LRS-35-12, LRS-35-15, LRS-35-24, LRS-
+35-36, LRS-35-48, LRS-35-5, LRS-450-12, LRS-450-15, LRS-450-24, LRS-450-36, LRS-450-48, LRS-450-5, LRS-50-12, LRS-50-15,
+LRS-50-24, LRS-50-3.3, LRS-50-36, LRS-50-48, LRS-50-5, LRS-600N2-12, LRS-600N2-24, LRS-600N2-36, LRS-600N2-48, LRS-75-12,
+LRS-75-15, LRS-75-24, LRS-75-36, LRS-75-48, LRS-75-5, MDR-40-12, MDR-40-24, MDR-40-48, MDR-40-5, MDR-60-12, MDR-60-
+24, MDR-60-48, MDR-60-5, MP1KO-2H#2k2k-4, MP1KO-aaaaaaad, MP1KO-aaaaab, MP1KO-aaaaabd, MP1KO-aaaaba, MP1KO-
+aaaabad, MP1KO-aaabaa, MP1KO-aaabaad, MP1KO-aaabbc, MP1KO-aabaaa, MP1K0O-aabaaad, MP1KO-aabab, MP1KO-aababd
+MP1K0-aabbac, MP1K0-abaaaa, MP1KO-abaaaad, MP1K0-abaab, MP1K0-abaabd (4), MP1KO-ababa, MP1K0-ababad, MP1K0-
+abbaac, MP1K0-abbbc, MP1K0-baaaaa, MP1KO-baaaaad, MP1K0-baaab, MP1KO-baaabd, MP1KO-baaba, MP1KO-baabad, MP1KO-
+babaa, MP1K0-babaad, MP1K0-babbc, MP1K0-bbaaac, MP1K0-bbabe, MP1K0-bbbac, MPM-05-24SC, NEL-400-2.8, NEL-400-4.2
+NEL-400-5, NSD10-12D12, NSD10-12D15, NSD10-12D5, NSD10-12S12, NSD10-12S15, NSD10-12S3, NSD10-12S5, NSD10-12S9,
+NSD10-48D12, NSD10-48D15, NSD10-48D5, NSD10-48S12, NSD10-48S15, NSD10-48S3, NSD10-48S5, NSD10-48S9, NSD15-
+12D12, NSD15-12D15, NSD15-12D5, NSD15-12S12, NSD15-12S15, NSD15-12S3, NSD15-12S5, NSD15-48D12, NSD15-48D15,
+NSD15-48D5, NSD15-48S12, NSD15-48S15, NSD15-48S3, NSD15-48S5, PB-1000-12, PB-1000-24, PB-1000-48, PB-300P-12, PB-
+300N-12, PB-300P-24, PB-300N-24, PB-360P-48, PB-360N-48, PB-360P-48ET-1, PD-2503, PD-2505, PD-2506AS, PD-2512, PD-
+2515, PD-25A, PD-25B, PD-45A, PD-45B, PD-65A, PD-65B, PHP-3500-24, PHP-3500-24CAN, PHP-3500-48, PHP-3500-48CAN, PID-
+250A, PID-250B, PID-250C, PID-250D, PPT-125AA, PS-45-12, PS-45-13.5, PS-45-15, PS-45-24, PS-45-27, PS-45-3.3, PS-45-48, PS-
+45-5, PS-45-7.5, PS-65-12, PS-65-13.5, PS-65-15, PS-65-24, PS-65-27, PS-65-3.3, PS-65-48, PS-65-5, PS-65-7.5, PSC-100A, PSC-
+100AHO, PSC-100B, PSC-160A, PSC-160A-C, PSC-160B, PSC-160B-C, PSC-35A, PSC-35A-C, PSC-35B, PSC-35B-C, PSC-60A, PSC-
+GOB, PSP-600-12, PSP-600-13.5, PSP-600-15, PSP-600-24, PSP-600-240L, PSP-600-27, PSP-600-32, PSP-600-48, PSP-600-5, PT-
+4503, PT-45A, PT-45B, PT-45C, PT-6503, PT-65A, PT-65B, PT-65C, PT-65D, QP-200-3A, QP-200-3B, QP-200-3C, QP-200-3D, QP-
+200-3E, QP-200D, QP-200F, QP-320-D, QP-320-F RCB-1600-48, RCB-1600-48CAN, RCP-1600-12, RCP-1600-12CAN, RCP-1600-24,
+RCP-1600-24CAN, RCP-1600-48, RCP-1600-48CAN, RCP-1Uz (z =I or T), RD-125-1224, RD-125-1248, RD-125-2412, RD-125-2448,
+RD-125-4812, RD-125-4824, RD-125A, RD-125B, RD-3513, RD-35A, RD-35B, RD-50A, RD-50B, RD-65A, RD-65B, RD-85A, RD-85B,
+RID-125-1205, RID-125-1224, RID-125-1248, RID-125-2405, RID-125-2412, RID-125-2448, RID-50A, RID-50B, RID-65A, RID-65B,
+RID-85A, RID-85B, RPB-1600-12, RPB-1600-12CAN, RPB-1600-24, RPB-1600-24CAN, RPB-1600-48, RPB-1600-48CAN, RPD-60A,
+RPD-60B, RPD-65C, RPD-65D, RPS-300-12-C [*r], RPS-60-12, RPS-60-12AG, RPS-60-15, RPS-60-15AG, RPS-60-24, RPS-60-3.3,
+RPS-60-48, RPS-60-5, RPS-75-15, RPS-75-SSH, RPT-6003, RPT-60A, RPT-60B, RPT-60C, RPT-60D, RPT-65E, RPT-65F, RPT-65G, RPT-
+7SCSH, RPT-75CSH-1, RQ-125B, RQ-125C, RQ-125D, RQ-50B, RQ-50C, RQ-50D, RQ-65B, RQ-65C, RQ-65D, RQ-85B, RQ-85C, RQ-
+85D, RS-100-12, RS-100-15, RS-100-24, RS-100-3.3, RS-100-48, RS-100-5, RS-150-12, RS-150-15, RS-150-19, RS-150-24, RS-150-
+3.3, RS-150-48, RS-150-5, RS-150-7.5, RS-150-9, RS-15-12, RS-15-15, RS-15-24, RS-15-3.3, RS-15-48, RS-15-5, RS-25-12, RS-25-
+15, RS-25-24, RS-25-3.3, RS-25-48, RS-25-5, RS-35-12, RS-35-15, RS-35-24, RS-35-3.3, RS-35-48, RS-35-5, RS-50-12, RS-50-15,
+
+https://iq.ulprospector.com/en/profile?e=2664329 217
+
+=== ul-page-03.txt ===
+2024/1125 £=11:26 QQJQ2.E183223 - Power Supplies for Use with Audio/Video, Information and Communication Technology Equipment - Co...
+
+RS-50-24, RS-50-3.3, RS-50-48, RS-50-5, RS-75-12, RS-75-15, RS-75-24, RS-75-3,3, RS-75-48, RS-75-5, RSD-100B-12, RSD-100B-
+24, RSD-100B-5, RSD-100C-24, RSD-100C-5, RSD-100D-12, RSD-100D-24, RSD-100D-5, RSD-300B-12, RSD-300B-24, RSD-300B-
+48, RSD-300B-5, RSD-300C-12, RSD-300C-24, RSD-300C-48, RSD-300C-5, RSD-300D-12, RSD-300D-24, RSD-300D-48, RSD-300D-
+5, RSD-300E-12, RSD-300E-24, RSD-300E-48, RSD-300E-5, RSD-300F-12, RSD-300F-24, RSD-300F-48, RSD-300F-5, RSD-30G-12,
+RSD-30G-24, RSD-30G-3.3, RSD-30G-5, RSD-30H-12, RSD-30H-24, RSD-30H-3.3, RSD-30H-5, RSD-30L-12, RSD-30L-24, RSD-30L-
+3.3, RSD-30L-5, RSD-500B-12, RSD-500B-24, RSD-500B-48, RSD-500C-12, RSD-500C-24, RSD-500C-48, RSD-500D-12, RSD-500D-
+24, RSD-500D-48, RSD-60G-12, RSD-60G-12, RSD-60G-24, RSD-60G-24, RSD-60G-3,3, RSD-60G-3,3, RSD-60G-5, RSD-60G-5,
+RSD-60H-12, RSD-60H-12, RSD-60H-24, RSD-60H-24, RSD-60H-3.3, RSD-60H-3.3, RSD-60H-5, RSD-60H-5, RSD-60L-12, RSD-6OL-
+12, RSD-60L-24, RSD-GOL-24, RSD-GOL-3.3, RSD-GOL-3.3, RSD-60L-5, RSD-GOL-5, RSP-1000-15, RSP-1000-27, RSP-1000-48ADT,
+RSP-100-12, RSP-100-13.5, RSP-100-15, RSP-100-24, RSP-100-27, RSP-100-3.3, RSP-100-48, RSP-100-5, RSP-100-7.5, RSP-150-12,
+RSP-150-12{*r], RSP-150-13,5, RSP-150-13.5[*r], RSP-150-15, RSP-150-15{*r], RSP-150-24f*r], RSP-150-27, RSP-150-27[*r], RSP-
+150-3.3, RSP-150-3.3[*r], RSP-150-48, RSP-150-48{*r], RSP-150-5, RSP-150-5[*r], RSP-150-7.5, RSP-150-7.5[*r], RSP-1600-27, RSP-
+1600-27PM, RSP-1600-36, RSP-1600-36PM, RSP-200-12, RSP-200-13.5, RSP-200-15, RSP-200-2.5, RSP-200-24, RSP-200-27, RSP-
+200-3.3, RSP-200-36, RSP-200-4, RSP-200-48, RSP-200-5, RSP-200-7.5, RSP-2400-12, RSP-2400-24, RSP-2400-48, RSP-3000-12
+RSP-3000-24, RSP-3000-30MIO, RSP-3000-48, RSP-3000-48CC, RSP-3000-48NLP RSP-320-12, RSP-320-13.5, RSP-320-15, RSP-
+320-25, RSP-320-24, RSP-320-27, RSP-320-3.3, RSP-320-36, RSP-320-36NP RSP-320-4, RSP-320-4,2, RSP-320-48, RSP-320-5,
+RSP-320-7.5, RSP-500-12, RSP-500-15, RSP-500-24, RSP-500-27, RSP-500-3.3, RSP-500-4, RSP-500-48, RSP-500-5, RSP-750-12,
+RSP-750-15, RSP-750-24, RSP-750-27, RSP-750-48, RSP-750-48KS, RSP-750-5, RSP-75-12, RSP-75-13.5, RSP-75-15, RSP-75-24,
+RSP-75-27, RSP-75-3.3, RSP-75-48, RSP-75-5, RSP-75-7.5, RST-10000-24, RST-10000-36, RST-10000-48, RST-5000-24, RST-5000-
+36, RST-5000-48, RT-125A, RT-125B, RT-125C, RT-125D, RT-5OA, RT-50B, RT-5OC, RT-5SOD, RT-65A, RT-65B, RT-65C, RT-65D, RT-
+85A, RT-85B, RT-85C, RT-85D, SBTNOLL-05, SBTNOIL-12, SBTNOIL-15, SBTNO1M-05, SBTNOLM-12, SBTNO1M-15, SBTNO1N-05,
+SBTNOIN-12, SBTNOIN-15, SCP-35-12, SCP-35-24, SCP-50-12, SCP-50-24, SD-200C-12, SD-200C-24, SD-200C-5, SDR-240-24
+SDR-240-48, SDR-240-55, SE-1000-12, SE-1000-15, SE-1000-24, SE-1000-48, SE-1000-5, SE-1000-9, SE-1500-12, SE-1500-15, SE-
+1500-24, SE-1500-27, SE-1500-48, SE-1500-5, SE-450-12, SE-450-15, SE-450-24, SE-450-3.3, SE-450-36, SE-450-48, SE-450-5, SE-
+600-12, SE-600-15, P-600-13.8, SE-600-24, SE-600-27, P-600-27, SE-600-36, SE-600-48, P-600-48, SE-600-5, SETNOIL-05,
+SFTNOIL-12, SFTNO1L-15, SETNO1M-05, SFTNO1M-12, SETNO1M-15, SFTNOIN-05, SETNOIN-12, SETNOLN-15, SP-320-24, TS-
+1000-224GPT, UHP-1000-12, UHP-1000-24, UHP-1000-36, UHP-1000-48, UHP-200-12, UHP-200R-12, UHP-200-15, UHP-200R-15
+UHP-200-24, UHP-200R-24, UHP-200-3.3, UHP-200R-3.3, UHP-200-36, UHP-200R-36, UHP-200-4.2, UHP-200R-4,2, UHP-200-48,
+UHP-200R-48, UHP-200-5, UHP-200R-5, UHP-200-55, UHP-200R-55, UHP-200A-4.2, UHP-200A-4,5, UHP-200A-5, UHP-2500-24y,
+(y=blank, PM or CAN), UHP-2500-36y (y=blank, PM or CAN), UHP-2500-48y (y=blank, PM or CAN), UHP-350-12, UHP-350R-12
+UHP-350-15, UHP-350R-15, UHP-350-24, UHP-350R-24, UHP-350-3.3, UHP-350R-3.3, UHP-350-36, UHP-350R-36, UHP-350-4.2,
+UHP-350R-4.2, UHP-350-48, UHP-350R-48, UHP-350-5, UHP-350R-5, UHP-350-55, UHP-350R-55, UHP-500-12, UHP-S00R-12
+UHP-500-15, UHP-SOOR-15, UHP-500-24, UHP-SO0R-24, UHP-500-36, UHP-500R-36, UHP-500-4.2, UHP-SOOR-4.2, UHP-500-48,
+UHP-500R-48, UHP-500-5, UHP-500R-5, UHP-500-55, UHP-SOOR-55, UHP-750-12, UHP-750-24, UHP-750-36, UHP-750-48
+Model(s): EPP-120S-x (x can be 12, 15, 15GW, 24, 27, 48)
+
+Model(s): HLG-240x-12, HLG-240x-12A, HLG-240x-12B, HLG-240x-12C
+
+Model(s): HLG-240x-15, HLG-240x-15A, HLG-240x-15B, HLG-240x-15C
+
+Model(s): HLG-240x-20, HLG-240x-20A, HLG-240x-20B, HLG-240x-20€
+
+Model(s): HLG-240x-24, HLG-240x-24A, HLG-240x-24B, HLG-240x-24C, HLG-240H-24SI
+
+Model(s): HLG-240x-30, HLG-240x-30A, HLG-240x-30B, HLG-240x-30C
+
+Model(s): HLG-240x-36, HLG-240x-36A, HLG-240x-36B, HLG-240x-36C
+
+Model(s): HLG-240x-42, HLG-240x-42A,, HLG-240x-42B, HLG-240x-42C
+
+Model(s): HLG-240x-48, HLG-240x-48A, HLG-240x-48B, HLG-240x-48C
+
+Model(s): HLG-240x-54, HLG-240x-54A, HLG-240x-54B, HLG-240x-54C
+
+Model(s): IRM-03-XY X = 3.3, 5, 9, 12, 15 or 24, Y = S or blank
+Model(s): LOP-200-x (where x can be 12, 15,18,24,27,36, 48 or 54)
+Model(s): LOP-300-x (where x can be 12, 15,18,24,27,36, 48 or 54)
+
+Model(s): LRS-600-5, LRS-600-12, LRS-600-15, LRS-600-24, LRS-600-27,LRS-600-36, LRS-600-48
+
+https://iq.ulprospector.com/en/profile?e=2664329 3i7
+
+=== ul-page-04.txt ===
+2024/1125 £=11:26 QQJQ2.E183223 - Power Supplies for Use with Audio/Video, Information and Communication Technology Equipment - Co...
+
+Model(s): MP450-aaaaa, MP450-aaab, MP450-aaba, MP450-abaa, MP450-baaa,MP450-abbc, MP450-bbac MP450-bab, MP450-
+aaabd, MP450-aabad,MP450-abaad, MP450-baaad (!)
+
+Model(s): MP650-aaaaa, MP650-aaab, MP650-aaba, MP650-abaa, MP650-baaa, MP650-abbc, MP650-bbac, MP650-bab, MP650-
+aaabd, MP650-aabad, MP650-abaad, MP650-baaad (!)
+
+Model(s): RCB-1600-12, RCB-1600-12CAN, RCB-1600-12NE
+
+Model(s): RCB-1600-24, RCB-1600-24CAN, RCB-1600-24NE
+
+Model(s): RCP-3K1Uz-12y (y= -C or blank, z=I or T)
+
+Model(s): RCP-3K1Uz-24y (y= -C or blank, z=I or T)
+
+Model(s): RCP-3K1Uz-48y (y= -C or blank, z=I or T)
+
+Model(s): RHP-1Uy-A, RHP-8K1Uy-X (X = 12, y can be | or T) (with RCB-1600-12 series)
+
+Model(s): RHP-1Uy-A, RHP-8K1Uy-X (X = 12, y can be I or T) (with RCP-1600-12 series)
+
+Model(s): RHP-1Uy-A, RHP-8K1Uy-X (X_ = 24, y can be I or T) (with RCB-1600-24 series)
+
+Model(s): RHP-1Uy-A, RHP-8K1Uy-X (X = 24, y can be I or T) (with RCP-1600-24 series)
+
+Model(s): RHP-1Uy-A, RHP-8K1Uy-X (X = 48, y can be J or T) (with RCB-1600-48 series)
+
+Model(s): RHP-1Uy-A, RHP-8K1Uy-X (X = 48, y can be I or T) (with RCP-1600-48 series)
+
+Model(s): RSP-1000-12, RCP-1000-12y (y= -C or blank)
+
+Model(s): RSP-1000-24, RCP-1000-24y (y= -C or blank)
+
+Model(s): RSP-1000-48, RSP-1000-48SI, RSP-1000-48S12, RCP-1000-48y (y= -C or blank)
+
+Model(s): RSP-1600-12, RSP-1600-12CAN, RSP-1600-12PM
+
+Model(s): RSP-1600-24, RSP-1600-24CAN, RSP-1600-24PM
+
+Model(s): RSP-1600-48, RSP-1600-48CAN, RSP-1600-48PM
+
+Model(s): SHP-10K-115yz y=L or blank z= blank, -PM or -MOD
+Model(s): SHP-10K-230yz y=L or blank z= blank, -PM or -MOD
+Model(s): SHP-10K-380yz y=L or blank z= blank, -PM or -MOD
+Model(s): SHP-10K-S5yz y=L or blank z= blank, -PM or -MOD
+
+Buffer module, Model(s): HRP-GOON-12, HRP-600N-24, HRP-600N-36, HRP-60ON-48, MP1KO-aaaaaaa, RPD-65D-FET, SCP-75-12,
+SCP-75-24, TDR-480-24, TDR-480-48
+
+DC-DC Converter, Model(s): DDR-120A-12, DDR-120A-24, DDR-120A-48, DDR-120B-12, DDR-120B-24, DDR-120B-48, DDR-
+120C-12, DDR-120C-24, DDR-120C-48, DDR-120D-12, DDR-120D-24, DDR-120D-48, DDR-480B-12, DDR-480B-24, DDR-480B-48,
+DDR-480C-12, DDR-480C-24, DDR-480C-48, DDR-480D-12, DDR-480D-24, DDR-480D-48, RQB40W12-110S05, RQB40W12-
+110S12, RQB40W12-110S24, RQB40W12-110S48, RQB40W12-110S54, RQBGOW12-110S05, RQB60W12-110S12, RQB60W12-
+110824, RQB60W12-110S48, RQBG0W12-110S54, RSD-500B-12, RSD-500B-24, RSD-500B-48, RSD-500C-12, RSD-500C-24, RSD-
+500C-48, RSD-500D-12, RSD-500D-24, RSD-500D-48
+
+DC-DC Converter, Model(s): DDR-15x-y x = G or L, y = 3.3, 5, 12, 15 or 24
+
+DC-DC Converter, Model(s): DDR-240x-y where x can be B, C or D for input voltage range, y can be 24 or 48 which denoted for
+output voltage
+
+DC-DC Converter, Model(s): DDR-30x-y , where x = G or L, y = 5, 12, 15 or 24
+
+https://iq.ulprospector.com/en/profile?e=2664329 4lT
+
+=== ul-page-05.txt ===
+2024/1/25 £25 11:26 QQJQ2.E183223 - Power Supplies for Use with Audio/Video, Information and Communication Technology Equipment - Co...
+DC-DC Converter, Model(s): DDR-60x-y , x = Gor L, y = 5, 12, 15 or 24
+
+DC-UPS Module, Model(s): DUPS20
+
+Din-Rail Switching Power Supply, Model(s): DRC-180A, DRC-180B, DRS-480-x (where x can be 24, 36, 48), DRS-480-xCAN
+(where x can be 24, 36, 48)
+
+Din-Rail Switching Power Supply, Model(s): DRS-240-x (where x can be 12, 24, 36, 48 which denoted for output voltage)
+High Reliable Battery Charger & Power Supply, Model(s): NPP-1700-X X = 12, 24, 48
+High Reliable Battery Charger & Power Supply, Model(s): NPP-450-x (where x can be 12, 24, 48 or 72)
+
+High Reliable Battery Charger & Power Supply, High Reliable Intelligent Battery Charger, Model(s): NPB-1200-x (where x
+can be 12, 24, 48), NPP-1200-x (where x can be 12, 24, 48)
+
+High Reliable Intelligent Battery Charger, Model(s): NPB-1700-X X = 12, 24, 48, NPB-750-x where "x" can be 12, 24, or 48, NPP-
+750-x where "x" can be 12, 24, or 48
+
+High Reliable Intelligent Battery Charger, Model(s): NPB-450-x (where x can be 12, 24, 48, 72, 12NFC, 24NFC, 48NFC or 72NFC)
+
+Power Module, Model(s): DBR-3200-24y y can be blank or CAN, DBR-3200-48y y can be blank or CAN, DRP-3200-24y y can be
+blank or CAN, DRP-3200-48y y can be blank or CAN, DRP-3200-48YI1, DRP-3200-48YI2, NCP-3200-24y y can be blank or CAN,
+NCP-3200-380y y can be blank or CAN, NCP-3200-48y y can be blank or CAN, RCB-1600-zNE z can be 12 or 24
+
+Power Module, Model(s): RCB-1600-xy x can be 12, 24 or 48 y can be blank or CAN
+
+Power Module, Model(s): RCP-1600-xy x can be 12, 24 or 48 y can be blank or CAN
+
+Power Supply, Model(s): EH-30
+
+Rack System, Model(s): DHB-12K1UT-24 (with DBR-3200-24y), DHB-12K1UT-48 (with DBR-3200-48y), DHP-12K1UT-24 (with
+DRP-3200-24y), DHP-12K1UT-48 (with DRP-3200-48y), DHP-1UT-A (with DBR-3200-24y), DHP-1UT-A (with DBR-3200-48y), DHP-
+
+1UT-A (with DRP-3200-24y), DHP-1UT-A (with DRP-3200-48y), DHP-1UT-B (with NCP-3200-24y), DHP-1UT-B (with NCP-3200-
+48y), DHP-1UT-BHV (with NCP-3200-380y), RHP-1Uy-A y can be I or T
+
+Rack System, Model(s): RHB-8K1Uy-X X can be 12, 24 or 48 y can be] or T
+Rack System, Model(s): RHP-8K1Uy-X X can be 12, 24 or 48 y can bel or T
+
+Switching Mode Power Supply, Model(s): DBBU-3200-24y y can be blank or CAN, DBU-3200-48y y can be blank or CAN, DPU-
+3200-247 z can be blank, PM or CAN, DPU-3200-48ADT, DPU-3200-48z z can be blank, PM or CAN, NSP-3200-24z z can be blank,
+PM or CAN, NSP-3200-48z z can be blank, PM or CAN
+
+Switching Mode Power Supply, Model(s): NSP-1600-x2z x2 can be 12, 24, 36 or 48, z can be blank, PM or CAN
+Switching Mode Power Supply, Model(s): RPB-1600-xy x can be 12, 24 or 48 y can be blank or CAN
+Switching Mode Power Supply, Model(s): RSP-1600-x1 x1 can be 12, 24, 27, 36 or 48
+
+Switching Mode Power Supply, Model(s): RSP-1600-x1CAN x1 can be 12, 24, 27, 36 or 48
+
+Switching Mode Power Supply, Model(s): RSP-1600-x1PM x1 can be 12, 24, 27, 36 or 48
+
+Switching Power Supply, Model(s): BIC-2200-12-y y=blank or CAN, BIC-2200-24y y=blank or CAN, BIC-2200-48y y=blank or
+CAN, BIC-2200-96y y=blank or CAN, EPP-200-12, EPP-200-15, EPP-200-24, EPP-200-27, EPP-200-27HOL2, EPP-200-48, EPP-200-
+S4BMD, EPP-300-12RS, EPS-120-x (x=12, 12KS, 15, 24, 27 or 48), GS60A48-CIS2, GS60A48-CIS5, GS60A48-CIS5U, HEP-150-28EC,
+HEP-185-24NT3, HEP-600-12, HEP-600-15, HEP-600-20, HEP-600-24, HEP-600-30, HEP-600-36, HEP-600-42, HEP-600-48, HEP-
+600-54, HEP-600C-12, HEP-600C-24, HEP-600C-48, HLG-600H-24AWI, HRP-150N-12, HRP-150N-24, HRP-150N-36, HRP-150N3-Y
+(Y=12, 24, 36, 48), HRP-150N-48, HRP-300N-12, HRP-300N-24, HRP-300N3-12, HRP-300N3-24, HRP-300N3-36, HRP-300N3-48,
+HRP-300N-36, HRP-300N-48, HRP-600N3-Y Y= 12, 24, 36 or 48, HRPG-1000N3-x x can be 12, 24, 36, 48, IRM-01-XY, IRM-02-XY,
+IRM-05-x (x can be 3.3, 5, 12, 15, 24), IRM-10-x (x can be 3.3, 5, 12, 15, 24), IRM-15-12, IRM-15-15, IRM-15-24, IRM-15-3.3, IRM-
+15-5, IRM-20-12, IRM-20-15, IRM-20-24, IRM-20-3.3, IRM-20-5, LAD-120x (where x can be A,B,C,D), LAD-360-xU (where x can be
+
+https://iq.ulprospector.com/en/profile?e=2664329 SIT
+
+=== ul-page-06.txt ===
+2024/1125 £=11:26 QQJQ2.E183223 - Power Supplies for Use with Audio/Video, Information and Communication Technology Equipment - Co...
+
+B, C, D), LRS-100-24GWT, LRS-100N2-x (x=12, 24, 36, 48), LRS-200N2-y y=12, 24, 36, 48, LRS-350N2-y y=12, 24, 36, 48, LSP-160-
+12T, LSP-160-12W, LSP-160-24T, LSP-160-24W, LSP-160-3.3T, LSP-160-3.3W, LSP-160-36T, LSP-160-36W, LSP-160-4.2T, LSP-160-
+4.2W, LSP-160-48T, LSP-160-48W, LSP-160-5T, LSP-160-5W, LSP-160R-3.3T, LSP-160R-3.3W, LSP-160R-4.2T, LSP-160R-4.2W, LSP-
+160R-ST, LSP-160R-5W, NMS-240-05, NMS-240-12, NMS-240-24, NMS-240-48, PHP-3500-115, PHP-3500-115CAN, PHP-3500-
+230, PHP-3500-230CAN, PHP-3500-380, PHP-3500-380CAN, PMPN4001A, PPS-125-12, PPS-125-13.5, PPS-125-15, PPS-125-24,
+PPS-125-27, PPS-125-3.3, PPS-125-48, PPS-125-5, PPT-125A, PPT-125B, PPT-125C, PPT-125D, RPT-GOCSH, RSP-1500-12, RSP-
+1500-15, RSP-1500-24, RSP-1500-27, RSP-1500-27VS, RSP-1500-48, RSP-1500-5, RSP-150-24, RSP-150-24AS, RSP-150-24MW,
+RST-15K-115, RST-15K-230, RST-15K-380, RST-7KS-115, RST-7K5-115L, RST-7K5-230, RST-7K5-230L, RST-7K5-380, RST-7KS-380L,
+RT-125CSH, SHP-30K-115y x= 55, 115, 230 or 380, SHP-30K-230y x= 55, 115, 230 or 380, SHP-30K-380y x= 55, 115, 230 or 380,
+SHP-30K-55y x= 55, 115, 230 or 380, UHP-1500-115y (y=blank, PM or CAN), UHP-1500-230y (y=blank, PM or CAN), UHP-1500-
+24y (y=blank, PM or CAN), UHP-1500-380E, UHP-1500-380y (y=blank, PM or CAN), UHP-1500-48y (y=blank, PM or CAN)
+Switching Power Supply, Model(s): CPN: 341-101267-xx Ax (where x may be any alphanumeric characters).
+
+Switching Power Supply, Model(s): CPN: 341-101359-xx Ax (where x may be any alphanumeric characters).
+Switching Power Supply, Model(s): HRPG-1000-x where x can be 12, 15, 24, 48
+
+Switching Power Supply, Model(s): LAD-600x (where x can be B,BU,C,CU,D,DU)
+
+Switching Power Supply, Model(s): LAD-xy (where x=240 y=A, B, C, D, x=360 y= B, C, D)
+
+Switching Power Supply, Model(s): LRS-100-x x=3.3, 5, 12, 15, 24, 36 or 48. To denote the different output voltage. "3.3" means
+3.3 Vdc "48" means 48 Vdc.
+
+Switching Power Supply, Model(s): LRS-200-x (x=3.3, 4.2, 5, 12, 15, 24, 36, 48)
+Switching Power Supply, Model(s): LRS-350-x (x=3.3, 4.2, 5, 12, 15, 24, 36, 48)
+
+Switching Power Supply, Model(s): NMP1K2-aaaaaa-xx a = C, D, E, H, K or # for code of different Power Module. x = 0-9 for
+marketing purpose
+
+Switching Power Supply, Model(s): NMP650-aaaa-xx a = C, D, E, H, K or # for code of different Power Module. x = 0-9 for
+marketing purpose
+
+Switching Power Supply, Model(s): NPB-120-12TB, NPB-120-12AD1-A, NPB-120-12XLR-A
+
+Switching Power Supply, Model(s): NPB-120-24TB, NPB-120-24AD1-A, NPB-120-24XLR-A
+
+Switching Power Supply, Model(s): NPB-120-48TB, NPB-120-48AD1, NPB-120-48XLR
+
+Switching Power Supply, Model(s): NPB-240-12TB, NPB-240-12AD1, NPB-240-12XLR
+
+Switching Power Supply, Model(s): NPB-240-24TB, NPB-240-24AD1, NPB-240-24XLR
+
+Switching Power Supply, Model(s): NPB-240-48TB, NPB-240-48AD1, NPB-240-48XLR
+
+Switching Power Supply, Model(s): NPB-360-12TB, NPB-360-12AD1-A, NPB-360-12XLR-A
+
+Switching Power Supply, Model(s): NPB-360-24TB, NPB-360-24AD1-A, NPB-360-24XLR-A
+
+Switching Power Supply, Model(s): NPB-360-48TB, NPB-360-48AD1, NPB-360-48XLR
+
+Switching Power Supply, Model(s): PSPA-1000-x where x can be 12, 15, 24, 48
+
+Switching Power Supply, Model(s): UMP-400-yxxx (y=24 or 48, x=A, B, C, D, E, F, G, H, I, J, K, L, M, N, 0, PQ R,S, T, U or blank,
+when y=24, x=A. B.C. E. F.G.1.J. K.M.N.O.P.Q.R.S.T.U or blank, when y=48, x=A, B, C, D, E, F, G, H, I, J, K, L, or blank)
+
+Switching Power Supply Module or Rack System or Switching Power Supply, Model(s): RCP-2000-12, RSP-2000-12, RCP-
+2000-24, RSP-2000-24, RCP-2000-48 RSP-2000-48 RSP-2000-48RS, RKP-6K1UI- CMU1-12, RKP-6K1UT- CMU1-12, RKP-6K1UI-
+CMU1-24, RKP-6KLUT- CMU1-24, RKP-6K1UI-12, RKP-6KLUT-12, RKP-6KLUI-24, RKP-6KLUT-24, RKP-6K1UI-48, RKP-6K1UT-48,
+RKP-6K1UI-CMU1-48, RKP-6K1UT-CMU1-48, RSP-2000-36, RSP-2000-36BN, RSP-2000-48ADT
+
+https://iq.ulprospector.com/en/profile?e=2664329 67
+
+=== ul-page-07.txt ===
+2024/1125 £=11:26 QQJQ2.E183223 - Power Supplies for Use with Audio/Video, Information and Communication Technology Equipment - Co...
+
+Switching Power Supply, “"HEP-2300", Model(s): HEP-2300-115yz (y=blank or W and z=blank, PM or CAN) (When y=blank,
+z=blank or PM. When y=W, z=blank, PM or CAN)
+
+Switching Power Supply, "HEP-2300", Model(s): HEP-2300-230yz (y=blank or W and z=blank, PM or CAN) (When y=blank,
+z=blank or PM. When y=W, z=blank, PM or CAN)
+
+Switching Power Supply, "HEP-2300", Model(s): HEP-2300-380yz (y=blank or W and z=blank, PM or CAN) (When y=blank,
+z=blank or PM. When y=W, z=blank, PM or CAN)
+
+Switching Power Supply, "HEP-2300", Model(s): HEP-2300-55yz (y=blank, W or H and z=blank, PM, CAN or MOD) (When
+y=blank, z=blank or PM. When y=W, z=blank, PM or CAN. When y=H, z=blank, PM or MOD)
+
+Switching Power Supply, "SE-1500-X", Model(s): SE-1500-12 (X=5, 12, 15, 24, 27, 48), SE-1500-15 (X=5, 12, 15, 24, 27, 48), SE-
+1500-24 (X=5, 12, 15, 24, 27, 48), SE-1500-27 (X=5, 12, 15, 24, 27, 48), SE-1500-48 (X=5, 12, 15, 24, 27, 48), SE-1500-5 (X=5, 12, 15,
+24, 27, 48)
+
+True Sine Wave Inverter, Model(s): NTS-1200-224GPT, NTS-1700-224GPT, NTS-2200-248TB
+
+Last Updated on 2024-01-24
+
+The appearance of a company's name or product in this database does not in itself assure that products so identified have been
+manufactured under UL Solutions’ Follow - Up Service. Only those products bearing the UL Mark should be considered to be
+Certified and covered under UL Solutions’ Follow - Up Service. Always look for the Mark on the product.
+
+UL Solutions permits the reproduction of the material contained in Product iQ subject to the following conditions: 1. The Guide
+Information, Assemblies, Constructions, Designs, Systems, and/or Certifications (files) must be presented in their entirety and in a
+non-misleading manner, without any manipulation of the data (or drawings). 2. The statement "Reprinted from Product iQ with
+permission from UL Solutions" must appear adjacent to the extracted material. In addition, the reprinted material must include a
+copyright notice in the following format: "©2024 UL LLC."
+
+https://iq.ulprospector.com/en/profile?e=2664329 77
+
+=== ul-page-08.txt ===
+2024/1/25 £=11:27 QQJQ8.E183223 - Power Supplies for Use with Audio/Video, Information and Communication Technology Equipment Cert...
+
+UL Product iQ° O) solutions
+
+Note: We are enhancing our systems and you may notice duplicate entries/missing/outdated data. During this interim period,
+please contact our Customer Service at https://www.ul.com/about/locations.
+
+Power Supplies for Use with Audio/Video, Information and
+Communication Technology Equipment Certified for Canada -
+Component
+
+COMPANY
+
+MEAN WELL ENTERPRISES CO LTD
+No 28 Wuquan 3rd Rd
+
+Wugu District
+
+New Taipei City, 24891 Taiwan
+
+£183223
+
+Marking: Company name model designation, and the Recognized Component Mark for Canada A \Y
+Note: For additional marking information, refer to the Guide Information Page.
+
+View model for additional information
+
+Model(s): AD-155A, AD-155B, AD-155C, ADD-155A, ADD-155B, ADD-155C, ADS-15512, ADS-15512SM, ADS-15524, ADS-15548,
+CSP-3000-x, DBUF20-24, DBUF40-24, DDR-240C-48, DDR-480B-12, DDR-480B-24, DDR-480B-48, DDR-480C-12, DDR-480C-24,
+DDR-480C-48, DDR-480D-12, DDR-480D-24, DDR-480D-48, DDR-60G-05, DDR-60G-12, DDR-60G-15, DDR-60G-24, DDR-60L-05
+DDR-60L-12, DDR-60L-15, DDR-60L-24, DRDN20-12, DRDN20-24, DRDN20-48, DRDN40-12, DRDN40-24, DRDN40-48, EPP-300-
+12, EPP-300-15, EPP-300-24, EPP-300-27, EPP-300-48, ERDN20-12, ERDN20-24, ERDN20-48, ERDN20-5, ERDN40-12, ERDN40-24,
+ERDN40-48, HDR-100-12, HDR-100-12N, HDR-100-15, HDR-100-15N, HDR-100-24, HDR-100-24N, HDR-100-48, HDR-100-48N,
+HDR-60-12, HDR-60-15, HDR-60-24, HDR-60-48, HDR-60-5, HEP-1000-100Wa a can be blank, PM or CAN, HEP-1000-100WCz z
+can be PM or CAN, HEP-1000-100y y can be blank or CAN, HEP-1000-24Wa a can be blank, PM or CAN, HEP-1000-24WCz z can
+be PM or CAN, HEP-1000-24y y can be blank or CAN, HEP-1000-48Wa a can be blank, PM or CAN, HEP-1000-48WCz z can be PM
+or CAN, HEP-1000-48y y can be blank or CAN, HEP-100-12, HEP-100-12A, HEP-100-15, HEP-100-15A, HEP-100-24, HEP-100-24A,
+HEP-100-36, HEP-100-36A, HEP-100-48, HEP-100-48A, HEP-100-54, HEP-100-54A, HEP-150-12, HEP-150-12A, HEP-150-15, HEP-
+150-15A, HEP-150-24, HEP-150-24A, HEP-150-36, HEP-150-36A, HEP-150-48, HEP-150-48A, HEP-150-54, HEP-150-54A, HEP-
+185-12, HEP-185-12A, HEP-185-15, HEP-185-15A, HEP-185-24, HEP-185-24A, HEP-185-36, HEP-185-36A, HEP-185-48, HEP-185-
+48A, HEP-185-54, HEP-185-54A, HLG-185H-24TE10, HLG-185H-24TE11, HRP-100-12, HRP-100-15, HRP-100-24, HRP-100-3.3
+HRP-100-36, HRP-100-48, HRP-100-5, HRP-100-7.5, HRP-75-12, HRP-75-15, HRP-75-24, HRP-75-3.3, HRP-75-36, HRP-75-48,
+HRP-75-5, HRP-75-7.5, HRPX-300-12 , X = G or blank., HRPX-300-15 , X = G or blank., HRPX-300-24 , X = G or blank., HRPX-300-
+3.3, X = Gor blank., HRPX-300-36 , X = G or blank., HRPX-300-48 , X = G or blank., HRPX-300-5 , X = G or blank., HRPX-300-7.5 ,
+X = Gor blank., IRM-01-12, IRM-01-12S, IRM-01-15, IRM-01-15S, IRM-01-24, IRM-01-24S, IRM-01-3.3, IRM-01-3.3S, IRM-01-5,
+IRM-01-5S, IRM-01-9, IRM-01-9S, IRM-02-12, IRM-02-12S, IRM-02-15, IRM-02-15S, IRM-02-24, IRM-02-24S, IRM-02-3.3, IRM-02-
+3.3S, IRM-02-5, IRM-02-5S, IRM-02-9, IRM-02-9S, IRM-03-12, IRM-03-12S, IRM-03-15, IRM-03-15S, IRM-03-24, IRM-03-24S, IRM-
+03-3.3, IRM-03-3.3S, IRM-03-5, IRM-03-5S, IRM-03-9, IRM-03-9S, IRM-05-12, IRM-05-15, IRM-05-24, IRM-05-3.3, IRM-05-5, IRM-
+10-12, IRM-10-15, IRM-10-24, IRM-10-3.3, IRM-10-5, IRM-30-12, IRM-30-12ST, IRM-30-15, IRM-30-15ST, IRM-30-24, IRM-30-
+24ST, IRM-30-48, IRM-30-48ST, IRM-30-5, IRM-30-5ST, IRM-45-12, IRM-45-12ST, IRM-45-15, IRM-45-15ST, IRM-45-24, IRM-45-
+24ST, IRM-45-48, IRM-45-48ST, IRM-45-5, IRM-45-5ST, IRM-60-12, IRM-60-12ST, IRM-60-15, IRM-60-15ST, IRM-60-24, IRM-60-
+24ST, IRM-60-48, IRM-60-48ST, IRM-60-5, IRM-60-5ST, IRM-90-12, IRM-90-12ST, IRM-90-15, IRM-90-15ST, IRM-90-24, IRM-90-
+24ST, IRM-90-48, IRM-90-48ST, LOP-400-x x=12, 15,18,24,27,36, 48 or 54, LOP-500-x x=12, 15,18,24,27,36, 48 or 54, LPS-50-12
+LPS-50-15, LPS-50-24, LPS-50-3.3, LPS-50-48, LPS-50-5, LRS-150-12, LRS-150-12HP LRS-150-15, LRS-150-24, LRS-150-36, LRS-
+150-48, LRS-150F-12, LRS-150F-15, LRS-150F-24, LRS-150F-36, LRS-150F-48, LRS-150F-5, LRS-450-12, LRS-450-15, LRS-450-24,
+LRS-450-36, LRS-450-48, LRS-450-5, LRS-600N2-12, LRS-600N2-24, LRS-GOON2-36, LRS-600N2-48, MP1KO-2H#2k2k-4, MP1KO-
+
+https://iq.ulprospector.com/en/profile?e=2767296 115
+
+=== ul-page-09.txt ===
+2024/1/25 £=11:27 QQJQ8.E183223 - Power Supplies for Use with Audio/Video, Information and Communication Technology Equipment Cert...
+
+aaaaaaad, MP1KO-aaaaab, MP1KO-aaaaabd, MP1KO-aaaaba, MP1KO-aaaabad, MP1KO-aaabaa, MP1KO-aaabaad, MP1KO-aaabbc,
+MP1K0-aabaaa, MP1KO-aabaaad, MP1KO-aabab, MP1KO-aababd, MP1KO-aabbac, MP1KO-abaaaa, MP1KO-abaaaad, MP1KO-abaab,
+MP1K0-abaabd (*), MP1K0-ababa, MP1KO-ababad, MP1KO-abbaac, MP1K0-abbbc, MP1KO-baaaaa, MP1KO-baaaaad, MP1KO-
+baaab, MP1KO-baaabd, MP1KO-baaba, MP1KO-baabad, MP1K0-babaa, MP1KO-babaad, MP1KO-babbc, MP1K0-bbaaac, MP1KO-
+bbabc, MP1K0-bbbac, PB-1000-12, PB-1000-24, PB-1000-48, PHP-3500-24, PHP-3500-24CAN, PHP-3500-48, PHP-3500-48CAN,
+RD-125-1224, RD-125-1248, RD-125-2412, RD-125-2448, RD-125-4812, RD-125-4824, RD-125A, RD-125B, RID-125-1205, RID-
+125-1224, RID-125-1248, RID-125-2405, RID-125-2412, RID-125-2448, RQ-125B, RQ-125C, RQ-125D, RS-150-12, RS-150-15, RS-
+150-19, RS-150-24, RS-150-3.3, RS-150-48, RS-150-5, RS-150-7.5, RS-150-9, RSD-100B-12, RSD-100B-24, RSD-100B-5, RSD-100C-
+24, RSD-100C-5, RSD-100D-12, RSD-100D-24, RSD-100D-5, RSD-300B-12, RSD-300B-24, RSD-300B-48, RSD-300B-5, RSD-300C-
+12, RSD-300C-24, RSD-300C-48, RSD-300C-5, RSD-300D-12, RSD-300D-24, RSD-300D-48, RSD-300D-5, RSD-300E-12, RSD-300E-
+24, RSD-300E-48, RSD-300E-5, RSD-300F-12, RSD-300F-24, RSD-300F-48, RSD-300F-5, RSD-30G-12, RSD-30G-24, RSD-30G-3.3,
+RSD-30G-5, RSD-30H-12, RSD-30H-24, RSD-30H-3.3, RSD-30H-5, RSD-30L-12, RSD-30L-24, RSD-30L-3.3, RSD-30L-5, RSD-500B-
+12, RSD-500B-24, RSD-500B-48, RSD-S00C-12, RSD-500C-24, RSD-500C-48, RSD-500D-12, RSD-500D-24, RSD-500D-48, RSD-
+60G-12, RSD-60G-12, RSD-60G-24, RSD-60G-24, RSD-60G-3.3, RSD-60G-3.3, RSD-60G-5, RSD-60G-5, RSD-60H-12, RSD-60H-12
+RSD-60H-24, RSD-60H-24, RSD-60H-3.3, RSD-60H-3.3, RSD-60H-5, RSD-60H-5, RSD-60L-12, RSD-60L-12, RSD-60L-24, RSD-60L-
+24 RSD-60L-3.3, RSD-60L-3.3, RSD-60L-5, RSD-6OL-5, RSP-150-12, RSP-150-12[*r], RSP-150-13.5, RSP-150-13.5[*r], RSP-150-15
+RSP-150-15[*r], RSP-150-24[*r], RSP-150-27, RSP-150-27[*r], RSP-150-3.3, RSP-150-3.3[*r], RSP-150-48, RSP-150-48[*r], RSP-150-
+5, RSP-150-5[*r], RSP-150-7.5, RSP-150-7.5[*r], RSP-2400-12, RSP-2400-24, RSP-2400-48, RSP-3000-12, RSP-3000-24, RSP-3000-
+30MIO, RSP-3000-48, RSP-3000-48CC, RSP-3000-48NLP, RSP-500-12, RSP-500-15, RSP-500-24, RSP-500-27, RSP-500-3.3, RSP-
+500-4, RSP-500-48, RSP-500-5, RT-125A, RT-125B, RT-125C, RT-125D, SE-450-12, SE-450-15, SE-450-24, SE-450-3.3, SE-450-36,
+SE-450-48, SE-450-5, SP-320-24, UHP-1000-12, UHP-1000-24, UHP-1000-36, UHP-1000-48, UHP-750-12, UHP-750-24, UHP-750-
+36, UHP-750-48
+
+Model(s): IRM-03-XY X = 3.3, 5, 9, 12, 15 or 24, Y = S or blank
+
+Model(s): LOP-200-x (where x can be 12, 15,18,24,27,36, 48 or 54)
+Model(s): LOP-300-x (where x can be 12, 15,18,24,27,36, 48 or 54)
+
+Model(s): LRS-600-5, LRS-600-12, LRS-600-15, LRS-600-24, LRS-600-27,LRS-600-36, LRS-600-48
+
+Model(s): SHP-10K-115yz y=L or blank z= blank, -PM or -MOD
+Model(s): SHP-10K-230yz y=L or blank z= blank, -PM or -MOD
+Model(s): SHP-10K-380yz y=L or blank z= blank, -PM or -MOD
+Model(s): SHP-10K-55yz y=L or blank z= blank, -PM or -MOD.
+
+Buffer module, Model(s): MP1KO-aaaaaaa, TDR-480-24, TDR-480-48
+
+DC-DC Converter, Model(s): DDR-120A-12, DDR-120A-24, DDR-120A-48, DDR-120B-12, DDR-120B-24, DDR-120B-48, DDR-
+120C-12, DDR-120C-24, DDR-120C-48, DDR-120D-12, DDR-120D-24, DDR-120D-48, DDR-480B-12, DDR-480B-24, DDR-480B-48,
+DDR-480C-12, DDR-480C-24, DDR-480C-48, DDR-480D-12, DDR-480D-24, DDR-480D-48, RQB40W12-110S05, RQB40W12-
+110S12, RQB40W12-110S24, RQB40W12-110S48, RQB40W12-110S54, RQB60W12-110S05, RQB60W12-110S12, RQB6OW12-
+110824, RQB60W12-110S48, RQBG0W12-110S54, RSD-500B-12, RSD-500B-24, RSD-500B-48, RSD-500C-12, RSD-500C-24, RSD-
+500C-48, RSD-500D-12, RSD-500D-24, RSD-500D-48
+
+DC-DC Converter, Model(s): DDR-15x-y x = G or L, y = 3.3, 5, 12, 15 or 24
+
+DC-DC Converter, Model(s): DDR-240x-y where x can be B, C or D for input voltage range, y can be 24 or 48 which denoted for
+output voltage
+
+DC-DC Converter, Model(s): DDR-30x-y , where x = G or L, y = 5,12, 15 or 24
+DC-DC Converter, Model(s): DDR-60x-y , x = GorL, y = 5, 12, 15 or 24
+DC-UPS Module, Model(s): DUPS20
+
+Din-Rail Switching Power Supply, Model(s): DRC-180A, DRC-180B, DRS-480-x (where x can be 24, 36, 48), DRS-480-xCAN
+(where x can be 24, 36, 48)
+
+Din-Rail Switching Power Supply, Model(s): DRS-240-x (where x can be 12, 24, 36, 48 which denoted for output voltage)
+
+https://iq.ulprospector.com/en/profile?e=2767296 215
+
+=== ul-page-10.txt ===
+2024/1/25 25 11:27 QQJQ8.E183223 - Power Supplies for Use with Audio/Video, Information and Communication Technology Equipment Cert...
+High Reliable Battery Charger & Power Supply, Model(s): NPP-1700-X X = 12, 24, 48
+
+High Reliable Battery Charger & Power Supply, Model(s): NPP-450-x (where x can be 12, 24, 48 or 72)
+
+High Reliable Battery Charger & Power Supply, High Reliable Intelligent Battery Charger, Model(s): NPB-1200-x (where x
+can be 12, 24, 48), NPP-1200-x (where x can be 12, 24, 48)
+
+High Reliable Intelligent Battery Charger, Model(s): NPB-1700-X X = 12, 24, 48, NPB-750-x where "x" can be 12, 24, or 48, NPP-
+750-x where "x" can be 12, 24, or 48
+
+High Reliable Intelligent Battery Charger, Model(s): NPB-450-x (where x can be 12, 24, 48, 72, 12NFC, 24NFC, 48NFC or 72NFC)
+
+Power Module, Model(s): DBR-3200-24y y can be blank or CAN, DBR-3200-48y y can be blank or CAN, DRP-3200-24y y can be
+blank or CAN, DRP-3200-48y y can be blank or CAN, DRP-3200-48YI1, DRP-3200-48Y12, NCP-3200-24y y can be blank or CAN,
+NCP-3200-380y y can be blank or CAN, NCP-3200-48y y can be blank or CAN, RCB-1600-ZNE z can be 12 or 24
+
+Power Module, Model(s): RCB-1600-xy x can be 12, 24 or 48 y can be blank or CAN
+Power Module, Model(s): RCP-1600-xy x can be 12, 24 or 48 y can be blank or CAN
+Power Supply, Model(s): EH-30
+
+Rack System, Model(s): DHB-12K1UT-24 (with DBR-3200-24y), DHB-12K1UT-48 (with DBR-3200-48y), DHP-12K1UT-24 (with
+DRP-3200-24y), DHP-12K1UT-48 (with DRP-3200-48y), DHP-1UT-A (with DBR-3200-24y), DHP-1UT-A (with DBR-3200-48y), DHP-
+1UT-A (with DRP-3200-24y), DHP-1UT-A (with DRP-3200-48y), DHP-1UT-B (with NCP-3200-24y), DHP-1UT-B (with NCP-3200-
+48y), DHP-1UT-BHV (with NCP-3200-380y), RHP-1Uy-A y can be I or T
+
+Rack System, Model(s): RHB-8K1Uy-X X can be 12, 24 or 48 y can be I or T
+Rack System, Model(s): RHP-8K1Uy-X X can be 12, 24 or 48 y can bel or T
+Switching Mode Power Supply, Model(s): DBU-3200-24y y can be blank or CAN, DBU-3200-48y y can be blank or CAN, DPU-
+
+3200-242 z can be blank, PM or CAN, DPU-3200-48ADT, DPU-3200-48z z can be blank, PM or CAN, NSP-3200-24z z can be blank,
+PM or CAN, NSP-3200-48z z can be blank, PM or CAN
+
+Switching Mode Power Supply, Model(s): NSP-1600-x2z x2 can be 12, 24, 36 or 48, z can be blank, PM or CAN
+Switching Mode Power Supply, Model(s): RPB-1600-xy x can be 12, 24 or 48 y can be blank or CAN
+Switching Mode Power Supply, Model(s): RSP-1600-x1 x1 can be 12, 24, 27, 36 or 48
+
+Switching Mode Power Supply, Model(s): RSP-1600-x1CAN x1 can be 12, 24, 27, 36 or 48
+
+Switching Mode Power Supply, Model(s): RSP-1600-x1PM x1 can be 12, 24, 27, 36 or 48
+
+Switching Power Supply, Model(s): BIC-2200-12-y y=blank or CAN, BIC-2200-24y y=blank or CAN, BIC-2200-48y y=blank or
+CAN, BIC-2200-96y y=blank or CAN, EPP-200-12, EPP-200-15, EPP-200-24, EPP-200-27, EPP-200-27HOL2, EPP-200-48, EPP-200-
+54BMD, EPP-300-12CB, EPP-300-12RS, EPS-120-12 ($), EPS-120-12 (%), EPS-120-15 ($), EPS-120-15 (%), EPS-120-24 ($), EPS-120-
+24 (%), EPS-120-27 ($), EPS-120-27 (%), EPS-120-48 ($), EPS-120-48 (%), EPS-120-x (x=12, 12KS, 15, 24, 27 or 48), GS60A48-CIS2
+GS60A48-CIS5, GS60A48-CISSU, HEP-150-28EC, HEP-185-24NT3, HEP-600-12, HEP-600-15, HEP-600-20, HEP-600-24, HEP-600-
+30, HEP-600-36, HEP-600-42, HEP-600-48, HEP-600-54, HEP-600C-12, HEP-600C-24, HEP-600C-48, HLG-600H-24AWI, HRP-150N-
+12, HRP-150N-24, HRP-150N-36, HRP-150N3-Y (Y=12, 24, 36, 48), HRP-150N-48, HRP-300N-12, HRP-300N-24, HRP-300N3-12
+HRP-300N3-24, HRP-300N3-36, HRP-300N3-48, HRP-300N-36, HRP-300N-48, HRP-600N3-Y Y= 12, 24, 36 or 48, HRPG-1000N3-x
+x can be 12, 24, 36, 48, IRM-01-XY, IRM-02-XY, IRM-05-x (x can be 3.3, 5, 12, 15, 24), IRM-10-x (x can be 3.3, 5, 12, 15, 24), IRM-15-
+12, IRM-15-15, IRM-15-24, IRM-15-3.3, IRM-15-5, IRM-20-12, IRM-20-15, IRM-20-24, IRM-20-3.3, IRM-20-5, LAD-120x (where x
+can be A,B,C,D), LAD-360-xU (where x can be B, C, D), LRS-100-24GWT, LRS-100N2-x (x=12, 24, 36, 48), LRS-200N2-y y=12, 24, 36,
+48, LRS-350N. 12, 24, 36, 48, LSP-160-12T, LSP-160-12W, LSP-160-24T, LSP-160-24W, LSP-160-3.3T, LSP-160-3.3W, LSP-160-
+36T, LSP-160-36W, LSP-160-4.2T, LSP-160-4.2W, LSP-160-48T, LSP-160-48W, LSP-160-5T, LSP-160-5W, LSP-160R-3.3T, LSP-160R-
+3.3W, LSP-160R-4.2T, LSP-160R-4.2W, LSP-160R-ST, LSP-160R-5W, NMS-240-05, NMS-240-12, NMS-240-24, NMS-240-48, PHP-
+3500-115, PHP-3500-115CAN, PHP-3500-230, PHP-3500-230CAN, PHP-3500-380, PHP-3500-380CAN, PMPN4001A, RPT-6GOCSH,
+RSP-1500-12, RSP-1500-15, RSP-1500-24, RSP-1500-27, RSP-1500-27VS, RSP-1500-48, RSP-1500-5, RSP-150-24, RSP-150-24AS,
+RSP-150-24MW, RST-15K-115, RST-15K-230, RST-15K-380, RST-7K5-115, RST-7KS-115L, RST-7K5-230, RST-7K5-230L, RST-7K5-
+380, RST-7K5-380L, RT-125CSH, SHP-30K-115y x= 55, 115, 230 or 380, SHP-30K-230y x= 55, 115, 230 or 380, SHP-30K-380y x=
+
+https://iq.ulprospector.com/en/profile?e=2767296 3/5
+
+=== ul-page-11.txt ===
+2024/1/25 £=11:27 QQJQ8.E183223 - Power Supplies for Use with Audio/Video, Information and Communication Technology Equipment Cert...
+
+55, 115, 230 or 380, SHP-30K-55y x= 55, 115, 230 or 380, UHP-1500-115y (y=blank, PM or CAN), UHP-1500-230y (y=blank, PM or
+CAN), UHP-1500-24y (y=blank, PM or CAN), UHP-1500-380E, UHP-1500-380y (y=blank, PM or CAN), UHP-1500-48y (y=blank,
+PM or CAN)
+
+Switching Power Supply, Model(s): CPN: 341-101267-xx Ax (where x may be any alphanumeric characters).
+
+Switching Power Supply, Model(s): CPN: 341-101359-xx Ax (where x may be any alphanumeric characters).
+Switching Power Supply, Model(s): HRPG-1000-x where x can be 12, 15, 24, 48
+
+Switching Power Supply, Model(s): LAD-600x (where x can be B,BU,C,CU,D,DU)
+
+Switching Power Supply, Model(s): LAD-xy (where x=240 y=A, B, C, D, x=360 y= B, C, D)
+
+Switching Power Supply, Model(s): LRS-100-x x=3.3, 5, 12, 15, 24, 36 or 48. To denote the different output voltage. "3.3" means
+3.3 Vde "48" means 48 Vdc.
+
+Switching Power Supply, Model(s): LRS-200-x (x=3.3, 4.2, 5, 12, 15, 24, 36, 48)
+Switching Power Supply, Model(s): LRS-350-x (x=3.3, 4.2, 5, 12, 15, 24, 36, 48)
+
+Switching Power Supply, Model(s): NMP1K2-aaaaaa-xx a = C, D, E, H, K or # for code of different Power Module. x = 0-9 for
+marketing purpose
+
+Switching Power Supply, Model(s): NMP650-aaaa-xx a = C, D, E, H, K or # for code of different Power Module. x = 0-9 for
+marketing purpose
+
+Switching Power Supply, Model(s): NPB-120-12TB, NPB-120-12AD1-A, NPB-120-12XLR-A
+
+Switching Power Supply, Model(s): NPB-120-24TB, NPB-120-24AD1-A, NPB-120-24XLR-A
+
+Switching Power Supply, Model(s): NPB-120-48TB, NPB-120-48AD1, NPB-120-48XLR
+
+Switching Power Supply, Model(s): NPB-240-12TB, NPB-240-12AD1, NPB-240-12XLR
+
+Switching Power Supply, Model(s): NPB-240-24TB, NPB-240-24AD1, NPB-240-24XLR
+
+Switching Power Supply, Model(s): NPB-240-48TB, NPB-240-48AD1, NPB-240-48XLR
+
+Switching Power Supply, Model(s): NPB-360-12TB, NPB-360-12AD1-A, NPB-360-12XLR-A
+
+Switching Power Supply, Model(s): NPB-360-24TB, NPB-360-24AD1-A, NPB-360-24XLR-A
+
+Switching Power Supply, Model(s): NPB-360-48TB, NPB-360-48AD1, NPB-360-48XLR
+
+Switching Power Supply, Model(s): PSPA-1000-x where x can be 12, 15, 24, 48
+
+Switching Power Supply, Model(s): UMP-400-yxxx (y=24 or 48, x=A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, PQ R, S, T, U or blank,
+when y=24, x=A. B.C. E. F.G.1.J. K.M.N.O.P.Q.R.S. T. U or blank, when y=48, x=A, B, C, D, E, F, G, H, I, J, K, L, or blank)
+
+Switching Power Supply Module or Rack System or Switching Power Supply, Model(s): RCP-2000-12, RSP-2000-12, RCP-
+2000-24, RSP-2000-24, RCP-2000-48 RSP-2000-48 RSP-2000-48RS, RKP-6K1UI- CMU1-12, RKP-6K1UT- CMU1-12, RKP-6K1UI-
+CMU1-24, RKP-6K1UT- CMU1-24, RKP-6K1UI-12, RKP-6K1UT-12, RKP-6K1UI-24, RKP-6K1UT-24, RKP-6K1UI-48, RKP-6K1UT-48,
+RKP-6K1UI-CMU1-48, RKP-6K1UT-CMU1-48, RSP-2000-36, RSP-2000-36BN, RSP-2000-48ADT
+
+Switching Power Supply, "HEP-2300", Model(s): HEP-2300-115yz (y=blank or W and z=blank, PM or CAN) (When y=blank,
+z=blank or PM. When y=W, z=blank, PM or CAN)
+
+Switching Power Supply, “HEP-2300", Model(s): HEP-2300-230yz (y=blank or W and z=blank, PM or CAN) (When y=blank,
+z=blank or PM. When y=W, z=blank, PM or CAN)
+
+Switching Power Supply, "HEP-2300", Model(s): HEP-2300-380yz (y=blank or W and z=blank, PM or CAN) (When y=blank,
+z=blank or PM. When y=W, z=blank, PM or CAN)
+
+https://iq.ulprospector.com/en/profile?e=2767296 4/5
+
+=== ul-page-12.txt ===
+2024/1/25 £=11:27 QQJQ8.E183223 - Power Supplies for Use with Audio/Video, Information and Communication Technology Equipment Cert...
+
+Switching Power Supply, “"HEP-2300", Model(s): HEP-2300-55yz (y=blank, W or H and z=blank, PM, CAN or MOD) (When
+y=blank, z=blank or PM. When y=W, z=blank, PM or CAN. When y=H, z=blank, PM or MOD)
+
+Switching Power Supply, “SE-1500-X", Model(s): SE-1500-12 (X=5, 12, 15, 24, 27, 48), SE=1500-15 (X=5, 12, 15, 24, 27, 48), SE-
+1500-24 (X=5, 12, 15, 24, 27, 48), SE-1500-27 (X=5, 12, 15, 24, 27, 48), SE-1500-48 (X=5, 12, 15, 24, 27, 48), SE-1500-5 (X=5, 12, 15,
+24, 27, 48)
+
+True Sine Wave Inverter, Model(s): NTS-1200-224GPT, NTS-1700-224GPT, NTS-2200-248TB
+
+Last Updated on 2024-01-24
+
+The appearance of a company's name or product in this database does not in itself assure that products so identified have been
+manufactured under UL Solutions’ Follow - Up Service. Only those products bearing the UL Mark should be considered to be
+Certified and covered under UL Solutions’ Follow - Up Service. Always look for the Mark on the product.
+
+UL Solutions permits the reproduction of the material contained in Product iQ subject to the following conditions: 1. The Guide
+Information, Assemblies, Constructions, Designs, Systems, and/or Certifications (files) must be presented in their entirety and in a
+non-misleading manner, without any manipulation of the data (or drawings). 2. The statement "Reprinted from Product iQ with
+permission from UL Solutions" must appear adjacent to the extracted material. In addition, the reprinted material must include a
+copyright notice in the following format: "©2024 UL LLC."
+
+https://iq.ulprospector.com/en/profile?e=2767296 5/5

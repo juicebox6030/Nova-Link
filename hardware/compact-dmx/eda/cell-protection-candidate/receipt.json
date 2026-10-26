@@ -1,0 +1,1004 @@
+{
+  "schema": "nova-cell-protection-candidate-receipt-v1",
+  "created_utc": "2026-10-23T16:31:24.770537+00:00",
+  "repo": "/home/juicebox/Nova-Link",
+  "branch": "main",
+  "HEAD": "b42c0e6284aac734fde851c69146abf73920f337",
+  "owned_write_root": "hardware/compact-dmx/eda/cell-protection-candidate",
+  "status": "One concrete partial protection prototype captured and validated; cell-protection acceptance UNMET",
+  "authority": "Hardware-only, no child/thread/install/hardware/firmware/stage/commit/push/branch operations; no parent/Astra integration performed.",
+  "preferred_circuit": {
+    "cell": "Eaton HV1625-2R7256-R 25F",
+    "OVP": "TPS3700DDCR independent reference/divider -> TPS22963CYZPR charger-input switch",
+    "startup_inhibit": "TPS3808G33DBVR CT open, 12..28ms",
+    "cell_short": "Littelfuse045101.5MRL before all cell-positive power branches",
+    "OVP_latched": false,
+    "OVP_behavior": "Hysteretic cutoff/retry; no continued-operation-through-fault claim",
+    "charger_nominal_V": 2.576,
+    "charger_nominal_A": 0.025,
+    "added_parts": 14
+  },
+  "integration_delta": {
+    "new_cell_node": "CELL_TAB_POS before F101; CAP_POS remains protected existing charger/boost/UVLO bus",
+    "charger_input": "Existing BQ IN reroutes from LIMITED_5V to CHARGER_IN_PROTECTED after U103",
+    "feedback": "22.5k top changes22.2k;10k bottom unchanged value, both0.1%10ppm; existing current-setting/filter shown unchanged",
+    "main_MCU_DMX_factory_CC_boundaries": "Unchanged, external context. No new source-good/loader/protection-good assertion. Existing CHARGE_DISABLE controls normal sequencing.",
+    "physical": "Unfused PCBtrace target<=2mm at actual positive landing, no unfused plane/via/branch; insulated formed lead and R101 at landing; not yet integrated."
+  },
+  "validation_command": "bash hardware/compact-dmx/eda/cell-protection-candidate/validate.sh > hardware/compact-dmx/eda/cell-protection-candidate/cli-checks.log 2>&1",
+  "validation_exit_code": 0,
+  "KiCad_version": "10.0.7",
+  "actual_commands": [
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/lands.py",
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/generate.py",
+    "flatpak run --command=kicad-cli org.kicad.KiCad version",
+    "flatpak run --command=kicad-cli org.kicad.KiCad sch export netlist --format kicadxml -o /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/cell-protection.net /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/cell-protection.kicad_sch",
+    "flatpak run --command=kicad-cli org.kicad.KiCad sch erc --format json --severity-all --exit-code-violations -o /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/erc.json /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/cell-protection.kicad_sch",
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/verify.py",
+    "flatpak run --command=python3 org.kicad.KiCad /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/coupon.py",
+    "flatpak run --command=kicad-cli org.kicad.KiCad pcb drc --format json --severity-all -o /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/drc.json /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/land-coupon.kicad_pcb",
+    "flatpak run --command=kicad-cli org.kicad.KiCad sch export pdf -o /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/cell-protection.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/cell-protection.kicad_sch",
+    "flatpak run --command=kicad-cli org.kicad.KiCad pcb export pdf --mode-single --layers F.Cu,F.Fab,F.CrtYd,Edge.Cuts --scale 4 -o /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/land-coupon.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/land-coupon.kicad_pcb",
+    "pdftoppm -f 1 -l 1 -singlefile -scale-to 2200 -png /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/cell-protection.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/schematic-overview",
+    "pdftoppm -f 1 -l 1 -singlefile -scale-to 1800 -png /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/land-coupon.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/land-coupon",
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/eda/cell-protection-candidate/package-check.py"
+  ],
+  "verification": {
+    "status": "PASS bounded capture/source/preservation/static checks; functional protection acceptance UNMET",
+    "protected_matches": 175,
+    "changed_protected_files": [],
+    "cached_original_manufacturer_PDF_hashes_verified": 10,
+    "fuse_source_caveat": "Cached Littelfuse manufacturer PDF is2011 mirror;2025 primary webcrosscheck saved separately, local currentPDF403. No invented2025PDFhash.",
+    "ERC_violations": 0,
+    "ERC_ignored_defaults": [
+      {
+        "description": "Global label only appears once in the schematic",
+        "key": "single_global_label"
+      },
+      {
+        "description": "Four connection points are joined together",
+        "key": "four_way_junction"
+      },
+      {
+        "description": "SPICE model issue",
+        "key": "simulation_model_issue"
+      },
+      {
+        "description": "Assigned footprint doesn't match footprint filters",
+        "key": "footprint_filter"
+      }
+    ],
+    "DRC_geometric_violations": 0,
+    "DRC_unconnected_items": 45,
+    "DRC_ignored_defaults": [
+      {
+        "description": "Footprint has no courtyard defined",
+        "key": "missing_courtyard"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      },
+      {
+        "description": "Footprint component type doesn't match footprint pads",
+        "key": "footprint_type_mismatch"
+      }
+    ],
+    "fitted_to_sidecar": false,
+    "routed": false,
+    "manufacturing_release": false
+  },
+  "independent_numerical_and_logic_results": {
+    "status": "PASS literal/DC/static/conditionalruntime checks; protection transient/clearing acceptance UNMET",
+    "IC_pin_checks": 27,
+    "two_terminal_checks": 17,
+    "stable_state_cases": 32,
+    "independent_references": true,
+    "software_dependency": false,
+    "OVP_latched": false,
+    "thresholds": {
+      "resistor_initial_plus100K_TCR_allowance": 0.002,
+      "OV_trip_V": [
+        2.6230585884730537,
+        2.6971640223947895
+      ],
+      "OV_release_envelope_V": [
+        2.56341158248503,
+        2.670473441232465
+      ],
+      "hysteresis": "TI5.5mV typical/12mV max at sense input; no guaranteed minimum. Separate rise/fall extrema are not one device correlated hysteresis.",
+      "charger_V": [
+        2.5426671878443114,
+        2.609505528837676
+      ],
+      "nominal_charger_V": 2.576,
+      "healthy_overshoot_alloc_V": 0.005,
+      "remaining_healthy_nuisance_margin_V": 0.008553059635377894,
+      "fault_overshoot_room_to2p7_V": 0.0028359776052107044,
+      "charge_FB_bias_A": "25nA engineering allocation, not published full-temp BQ maximum",
+      "existing_arm_max_V": 2.533074464609258,
+      "arm_min_margin_after_hot_fuse_charge_drop_V": 0.00611555313972012,
+      "resistor_lifetime_drift_included": false
+    },
+    "added_source_current": {
+      "allocated_A": 0.00025,
+      "resistor_network_max_at5p5V_A": 6.730875136147247e-05,
+      "TPS3700_IDD_max_at5V_A": 1.3e-05,
+      "TPS3808_IDD_max_at6p5V_A": 6e-06,
+      "TPS22963_IQ_max_at5V_A": 9.6e-05,
+      "full5p5V_max_proven": false,
+      "unclosed": "TPS22963 no5.5V IQ table bound; TPS3808 fixedSENSE current typical-only. 250uA is integration allocation, not guaranteed maximum. Switched2uF input inrush remains unmeasured."
+    },
+    "ON_levels": {
+      "minimum_high_V": 1.4189808933433898,
+      "maximum_prePOR_V": 0.3301510249672018,
+      "maximum_inhibited_low_V": 0.3410226412992549,
+      "POR_lowV_sink_max_A": 1.4211750272294496e-05,
+      "minimum_reset_hold_s": 0.012,
+      "TPS3700_max_startup_s": 0.00045,
+      "TPS3808_rise_max_V": 3.192799999999999,
+      "POR_ramp_requirement": "TPS3808 Trise>=15us/V perfootnote. Must measure actual independent5V ramp. BelowTPS22963 input1V no functional assertion."
+    },
+    "static_states": [
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": false,
+        "cell_OV": false,
+        "existing_CE_disable": false,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": false,
+        "cell_OV": false,
+        "existing_CE_disable": false,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": false,
+        "cell_OV": false,
+        "existing_CE_disable": true,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": false,
+        "cell_OV": false,
+        "existing_CE_disable": true,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": false,
+        "cell_OV": true,
+        "existing_CE_disable": false,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": false,
+        "cell_OV": true,
+        "existing_CE_disable": false,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": false,
+        "cell_OV": true,
+        "existing_CE_disable": true,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": false,
+        "cell_OV": true,
+        "existing_CE_disable": true,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": true,
+        "cell_OV": false,
+        "existing_CE_disable": false,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": true,
+        "cell_OV": false,
+        "existing_CE_disable": false,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": true,
+        "cell_OV": false,
+        "existing_CE_disable": true,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": true,
+        "cell_OV": false,
+        "existing_CE_disable": true,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": true,
+        "cell_OV": true,
+        "existing_CE_disable": false,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": true,
+        "cell_OV": true,
+        "existing_CE_disable": false,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": true,
+        "cell_OV": true,
+        "existing_CE_disable": true,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": false,
+        "monitor_startup_complete": true,
+        "cell_OV": true,
+        "existing_CE_disable": true,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": false,
+        "cell_OV": false,
+        "existing_CE_disable": false,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": false,
+        "cell_OV": false,
+        "existing_CE_disable": false,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": false,
+        "cell_OV": false,
+        "existing_CE_disable": true,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": false,
+        "cell_OV": false,
+        "existing_CE_disable": true,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": false,
+        "cell_OV": true,
+        "existing_CE_disable": false,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": false,
+        "cell_OV": true,
+        "existing_CE_disable": false,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": false,
+        "cell_OV": true,
+        "existing_CE_disable": true,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": false,
+        "cell_OV": true,
+        "existing_CE_disable": true,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": true,
+        "cell_OV": false,
+        "existing_CE_disable": false,
+        "fuse_intact": false,
+        "charger_switch": true,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": true,
+        "cell_OV": false,
+        "existing_CE_disable": false,
+        "fuse_intact": true,
+        "charger_switch": true,
+        "charge_path": true
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": true,
+        "cell_OV": false,
+        "existing_CE_disable": true,
+        "fuse_intact": false,
+        "charger_switch": true,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": true,
+        "cell_OV": false,
+        "existing_CE_disable": true,
+        "fuse_intact": true,
+        "charger_switch": true,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": true,
+        "cell_OV": true,
+        "existing_CE_disable": false,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": true,
+        "cell_OV": true,
+        "existing_CE_disable": false,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": true,
+        "cell_OV": true,
+        "existing_CE_disable": true,
+        "fuse_intact": false,
+        "charger_switch": false,
+        "charge_path": false
+      },
+      {
+        "LIMITED_5V_above_supervisor_release": true,
+        "monitor_startup_complete": true,
+        "cell_OV": true,
+        "existing_CE_disable": true,
+        "fuse_intact": true,
+        "charger_switch": false,
+        "charge_path": false
+      }
+    ],
+    "faults": [
+      {
+        "fault": "BQ FB topopen / bottomshort",
+        "interruption": "U101 independent cell sense -> U103 OFF -> charger input removed",
+        "residual": "Hysteretic retries after falling threshold; no latchedOVP. Max response/overshoot not specified."
+      },
+      {
+        "fault": "BQ IN-OUT short",
+        "interruption": "U103 opens upstream5V path after independent cellOV threshold",
+        "residual": "U103 disabled reverse blocking applies; leakage/turnoff current maxima not specified. Existing inputbreaker finite current envelope retained."
+      },
+      {
+        "fault": "BQ OUT-GND / boost VIN-GND short",
+        "interruption": "F101 in cell-positive power path before branch split",
+        "residual": "Clearing against decaying cell current, prospective-current interruption and thermalI2t require tests; nominalI2t not a max."
+      },
+      {
+        "fault": "U103 OUT-GND short",
+        "interruption": "Cell path through BQ can blowF101; USB path through U103 remains downstream of existinginputbreaker",
+        "residual": "No assertion about BQ reverse-current path impedance or universal fault clearing."
+      },
+      {
+        "fault": "F101 open",
+        "interruption": "Cell isolated from all power branches",
+        "residual": "No buffer; OVP divider remains cell-connected and current-limited by R101. CAP_POS may still rise on charger output capacitance; existing cap-arm cannot prove fuse continuity and may cycle backup. No protection-good MCU boundary or loader promise is added."
+      },
+      {
+        "fault": "F101 short / bypass copper",
+        "interruption": "None for cell shorts",
+        "residual": "Single protection-device fault defeats short protection; no all-single-fault claim."
+      },
+      {
+        "fault": "U103 short / ON stuckhigh / U101 wrong reference or R101 open",
+        "interruption": "Not independently protected by this singleOVP channel",
+        "residual": "BQ normally regulates but a combined charger fault is not covered. R101 short can force nuisance cutoff or stress input."
+      },
+      {
+        "fault": "Cell internalshort / exposed lead ahead ofF101",
+        "interruption": "None",
+        "residual": "Minimize and insulate tabsegment, route F101 before all branches. Cell internal energy cannot be interrupted externally."
+      },
+      {
+        "fault": "Source absent/brownout",
+        "interruption": "U102 pullspermitlow, U103 OFF; no cell-supply control requirement down to1.7V",
+        "residual": "Finite response and TPS22963 disabled reverse leakage are physical gates; no boost-fed5V control rail intended."
+      },
+      {
+        "fault": "OVP sense input unpowered/shorttoGND",
+        "interruption": "R101 limits sense-path cell current",
+        "residual": "Does not provide overvoltage detection under that protection-channel fault."
+      }
+    ],
+    "runtime": {
+      "cell": "HV1625-2R7256-R",
+      "C_F": 15.75,
+      "start_V": 2.439190017748978,
+      "requested_2p448V_start_retained": false,
+      "start_derivation": "min(2.448, newcharger_min -100mV historicalreserve -conditional maxcharge*0.126ohm fuseallocation)",
+      "loaded_cutoff_V": 1.705917,
+      "load_W": 1.11,
+      "electronics_efficiency": 0.8,
+      "cell_ESR_aged_screen_ohm": 0.054,
+      "fuse_nominal_ohm": 0.063,
+      "fuse_hot_alloc_ohm": 0.126,
+      "extra_trace_alloc_ohm": 0.01,
+      "sense_cell_current_resistor_bound_A": 4.788337737421746e-05,
+      "switch_reverse_leak_alloc_A": 1e-05,
+      "cell_self_leak_20C72h_reference_A": 4.5e-05,
+      "runtime_at_nominal_fuse_s": 14.563899257835237,
+      "runtime_at_hot_fuse_alloc_s": 13.256009692177749,
+      "independent100us_time_step_s": 13.256099999982444,
+      "conditional_fuse_resistance_limit_for10s_ohm": 0.28662224817839643,
+      "unprotected_requested_basis_s": 16.343271606784583,
+      "healthy_10s_guaranteed": false,
+      "fuse_resistance_max_specified": false
+    },
+    "fault_current": {
+      "fuse_MPN": "045101.5MRL",
+      "nominal_I2t_A2s": 0.853,
+      "DC_interrupt_primary2025_A_at32V": 300,
+      "specified_opening_max_s_at_constant3A": 5,
+      "constant1p5A_hold_min_s": 14400,
+      "nominal_fault_initial_A": 19.2755905511811,
+      "nominal_fault_tau_s": 2.00025,
+      "nominal_current_above3A_duration_s": 3.7209195938281576,
+      "interpretation": "Source5s max requires sustained3A; current decays below3A sooner. Cannot turn averageTCC or nominalI2t into a guaranteed clearing integral.",
+      "fuse_hot_power_at_cutoff_alloc_W": 0.08335290387239126,
+      "cutoff_load_A": 0.8133455496369402,
+      "minimum_temperature_rerating_factor_after_standard75percent": 0.7229738218995023,
+      "boost_start_max_A": null,
+      "boost_start_I2t_max_A2s": null,
+      "cell_fault_peak_max_A": null
+    },
+    "response": {
+      "TPS3700_typ_propagation_s": 1.8e-05,
+      "TPS3700_max_propagation_s": null,
+      "TPS22963_typ_turnoff_s_at5V": 2.5e-06,
+      "TPS22963_max_turnoff_s": null,
+      "conditional1p5A_overshoot_time_allowance_s": 0.029777764854712396,
+      "post_switch_2uF_max_alloc_uF": 2.53,
+      "post_cutoff_stored_input_charge_max_alloc_C": 7.091175023341182e-06,
+      "extra_cell_voltage_from_stored_input_charge_alloc_V": 4.5023333481531315e-07,
+      "closed": false
+    },
+    "cell_limits": "2.7V <=65C; 85C needs2.3V derating; neither cold nor full85C operation claimed.118.46J maxreference remains.",
+    "concrete_unclosed_source_objections": [
+      "TPS3700 tPHL and TPS22963 tOFF are typical-only;2.7V fault overshoot cannot be guaranteed from published maxima.",
+      "Littelfuse resistance and meltingI2t are nominal; only5s max at constant200% is published, insufficient for a decaying supercap fault proof.",
+      "TPS22963 disabled reverse current has typical-only entries. Added leakage10uA and hotfuse126mohm are test allocations.",
+      "Cell leakage45uA applies20C after72h, not fulltemperature/earlycharge maximum. BQ FB bias25nA, healthy5mVovershoot, emptycell charge curve and existing KISET applicability remain conditional. No unconditional runtime/OVP acceptance."
+    ],
+    "manufacturing_release": false,
+    "real_ERC_violations": 0,
+    "ERC_ignored_defaults": [
+      {
+        "description": "Global label only appears once in the schematic",
+        "key": "single_global_label"
+      },
+      {
+        "description": "Four connection points are joined together",
+        "key": "four_way_junction"
+      },
+      {
+        "description": "SPICE model issue",
+        "key": "simulation_model_issue"
+      },
+      {
+        "description": "Assigned footprint doesn't match footprint filters",
+        "key": "footprint_filter"
+      }
+    ]
+  },
+  "saved_board_and_area": {
+    "status": "PASS21 actual saved footprints/padnets and nonoverlapping courtyards on32x16mm coupon; no sidecar fit/routing claim",
+    "physical_footprints": 21,
+    "numbered_pads": 61,
+    "added_protection_parts": 14,
+    "added_body_sum_mm2": 36.815284,
+    "added_courtyard_sum_mm2": 85.76504400000002,
+    "highest_added_part_mm": 2.94,
+    "all_context_courtyard_sum_mm2": 108.01674400000003,
+    "coupon_outline_mm": [
+      32,
+      16
+    ],
+    "all_on_F_Cu": true,
+    "tracks": 0,
+    "external_ports": "No invented physical connector/cell lands. Actual cell/short-tab/fuse placement and integration owned by parent/Astra. Coupon remains unrouted.",
+    "main_board_fit": null,
+    "manufacturing_release": false
+  },
+  "source_hashes": [
+    {
+      "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps22963c.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps22963c.pdf",
+      "sha256": "ff3c3cd846ab23e9d9e63924adb2f1e10d9446fe2ef76fdaeb94b083613ca132"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3760.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps3760.pdf",
+      "sha256": "eb7d626587f369ade98d55b60823ed28e4b4d955b41181c4443763cf0eef5e7d"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3808.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+      "read_only_origin": "hardware/compact-dmx/eda/buffer-fit-candidate/sources/tps3808.pdf",
+      "sha256": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tnpw_e3.pdf",
+      "url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+      "read_only_origin": "hardware/compact-dmx/eda/buffer-fit-candidate/sources/tnpw_e3.pdf",
+      "sha256": "6f0508c568cb355aaf2accdd33fe3a780d3ea5ef207c4c9a71839a8acadc33a5"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/eaton-hv.pdf",
+      "url": "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-hv-supercapacitors-cylindrical-cells-data-sheet.pdf",
+      "read_only_origin": "hardware/compact-dmx/eda/buffer-fit-candidate/sources/eaton-hv.pdf",
+      "sha256": "17fb1d0f56d6766f0866ecb4cc656ce603a74371183ab21ad96f648303b246f1"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3700.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+      "read_only_origin": "hardware/compact-dmx/eda/power-service/source-cache/tps3700.pdf",
+      "sha256": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/bq25173.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/bq25173.pdf",
+      "read_only_origin": "hardware/compact-dmx/eda/power-service/startup-source-cache/bq25173.pdf",
+      "sha256": "75869a03b40472ff587ffa5223dc5e5314f3b76478c6582119cf5a204d6e777e"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/littelfuse451-mirror.pdf",
+      "url": "https://www.fuse-tech.com/uploads/pdf/littelfuse0451.pdf",
+      "primary_document": "Original Littelfuse manufacturer PDF mirrored by distributor. Older revision: row1.5A, dimensions and5s opening at200% crosschecked against primary2025 viaweb. No current manufacturer PDF hash claimed.",
+      "sha256": "e4f66814c90d70b283a5962080711f26554d974373a550958bda772dfdaf1bf9"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/vishay-28950.pdf",
+      "url": "https://www.vishay.com/doc?28950",
+      "read_only_origin": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/vishay-28950.pdf",
+      "sha256": "9e2b145c937da3be1e926b8afc2856959754eeb4d1103241d838038f7308144e"
+    },
+    {
+      "path": "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3702-q1-land-reference.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps3702-q1.pdf",
+      "read_only_origin": "hardware/compact-dmx/eda/power-service/qualified15-candidate/source-cache/tps3702-q1-land-reference.pdf",
+      "sha256": "5bb4e737d2a425afba7780118e8c1281817ea204a68d8a619e92fdee921a1165"
+    }
+  ],
+  "source_caveat": "10 original manufacturer PDFs cached with real byte hashes; Littelfuse original is2011 mirror. Current2025 primary web facts crosschecked, local currentPDF retrieval403; derived JSON distinguished from original bytes. No invented currentPDF hash.",
+  "requirements_status": {
+    "captured_source_netlist_PDF": "PASS, real ERC zero; independent literal/pad/passive/state/corner checks pass",
+    "independent_OVP_fault_rating_bound": "UNMET: maximum comparator/switch delays absent;2.836mV static headroom does not prove2.7V under fault.29.78ms only a conditional1.5A allowance, not a source-current max.",
+    "cell_short_clearing_and_thermal": "UNMET: nominalR/I2t and averageTCC not maximum clearing bounds.5s atconstant3A does not prove clearing when nominal decaying waveform falls below3A at3.72s.",
+    "healthy_10s_buffer": "UNMET as guarantee:13.256s hot-fuse conditional screen; actual max fuseR/leakage/load/ESR/temperature/efficiency unknown. No cold guarantee.",
+    "non_nuisance_OVP_and_cap_arm": "UNMET:5mV healthy overshoot and25nA BQ FBbias are engineering allocations, not fullsource maxima;6.116mV conditional arm margin.",
+    "startup_and_reverse_current": "UNMET: actualLIMITED5V rise must satisfy POR ramp condition; switched2uF inrush/charger filter/boostpulse and reverse-leakage maxima unknown.",
+    "source_current": "UNMET as updated global max:250uA added-control engineering allocation, not complete5.5V datasheet maximum; no parent budget changed.",
+    "integrated_placement": "UNMET: complete32x16 land coupon only,85.765mm2 addedcourtyard and2.94mm tallest part;45unconnected, no routedsidecar/fit claim.",
+    "cell_temperature": "UNMET physicalgate: <=65C at2.576V;85C needs2.3V, no full85C operation requirement introduced.",
+    "all_single_fault_safe": "NOT CLAIMED: pre-fuse/internalcell/protectionpartshort/bypass and multiplefaults not universally covered.",
+    "fuse_open_state": "No buffer. Charger-sideCAP_POS may rise and arm-cycleboost; existingarm cannot prove fusecontinuity; no loader safety promise added."
+  },
+  "bench_and_assembly_gates": [
+    "OVP trip-to-block and cellpeak under FB/INOUT failures, repeated retry and fault SOA",
+    "Healthy charge overshoot, BQ FBbias, filter stability and actual arm headroom",
+    "F101 peak/time/clearing-voltage/arc performance on actual cell and leadassembly; thermalI2t and remaining energy",
+    "Healthy boost inrush/pulseI2t, fuse cycling, hot resistance and assembled rerating",
+    "Source ramp/brownout/attach/detach and reverse leakage",
+    "Runtime at actual RF/DMX/boot load, age/temperature/C/ESR; cellleak versus holdtime",
+    "Complete integrated PCB/case placement and tolerance/insulation/vent/retention, assembly validation of derived lands"
+  ],
+  "protected_inputs": {
+    "matches": 175,
+    "changed": [],
+    "manifest": "protected-inputs.json"
+  },
+  "changed_paths": [
+    "hardware/compact-dmx/eda/cell-protection-candidate/BRIEF.md",
+    "hardware/compact-dmx/eda/cell-protection-candidate/CellProtection.pretty/C0402.kicad_mod",
+    "hardware/compact-dmx/eda/cell-protection-candidate/CellProtection.pretty/DBV6.kicad_mod",
+    "hardware/compact-dmx/eda/cell-protection-candidate/CellProtection.pretty/DDC6.kicad_mod",
+    "hardware/compact-dmx/eda/cell-protection-candidate/CellProtection.pretty/DSG8.kicad_mod",
+    "hardware/compact-dmx/eda/cell-protection-candidate/CellProtection.pretty/Fuse451.kicad_mod",
+    "hardware/compact-dmx/eda/cell-protection-candidate/CellProtection.pretty/R0402.kicad_mod",
+    "hardware/compact-dmx/eda/cell-protection-candidate/CellProtection.pretty/YZP6.kicad_mod",
+    "hardware/compact-dmx/eda/cell-protection-candidate/DESIGN.md",
+    "hardware/compact-dmx/eda/cell-protection-candidate/area-check.json",
+    "hardware/compact-dmx/eda/cell-protection-candidate/area-ledger.csv",
+    "hardware/compact-dmx/eda/cell-protection-candidate/cell-protection.kicad_prl",
+    "hardware/compact-dmx/eda/cell-protection-candidate/cell-protection.kicad_pro",
+    "hardware/compact-dmx/eda/cell-protection-candidate/cell-protection.kicad_sch",
+    "hardware/compact-dmx/eda/cell-protection-candidate/cell-protection.kicad_sym",
+    "hardware/compact-dmx/eda/cell-protection-candidate/cell-protection.net",
+    "hardware/compact-dmx/eda/cell-protection-candidate/cell-protection.pdf",
+    "hardware/compact-dmx/eda/cell-protection-candidate/checks.json",
+    "hardware/compact-dmx/eda/cell-protection-candidate/cli-checks.log",
+    "hardware/compact-dmx/eda/cell-protection-candidate/component-ledger.csv",
+    "hardware/compact-dmx/eda/cell-protection-candidate/coupon.py",
+    "hardware/compact-dmx/eda/cell-protection-candidate/drc.json",
+    "hardware/compact-dmx/eda/cell-protection-candidate/erc.json",
+    "hardware/compact-dmx/eda/cell-protection-candidate/fp-lib-table",
+    "hardware/compact-dmx/eda/cell-protection-candidate/generate.py",
+    "hardware/compact-dmx/eda/cell-protection-candidate/land-coupon.kicad_pcb",
+    "hardware/compact-dmx/eda/cell-protection-candidate/land-coupon.kicad_prl",
+    "hardware/compact-dmx/eda/cell-protection-candidate/land-coupon.pdf",
+    "hardware/compact-dmx/eda/cell-protection-candidate/land-coupon.png",
+    "hardware/compact-dmx/eda/cell-protection-candidate/land-sources.json",
+    "hardware/compact-dmx/eda/cell-protection-candidate/lands.py",
+    "hardware/compact-dmx/eda/cell-protection-candidate/package-check.json",
+    "hardware/compact-dmx/eda/cell-protection-candidate/package-check.py",
+    "hardware/compact-dmx/eda/cell-protection-candidate/protected-inputs.json",
+    "hardware/compact-dmx/eda/cell-protection-candidate/schematic-overview.png",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/bq25173.pdf",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/bq25173.txt",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/eaton-hv.pdf",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/eaton-hv.txt",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/fuse-land.png",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/fuse-primary-facts.json",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/littelfuse451-mirror.pdf",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/littelfuse451-mirror.txt",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/tnpw_e3.pdf",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/tnpw_e3.txt",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps22963c.pdf",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps22963c.txt",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3700.pdf",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3700.txt",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3702-q1-land-reference.pdf",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3702-q1-land-reference.txt",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3760.pdf",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3760.txt",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3808.pdf",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/tps3808.txt",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/vishay-28950.pdf",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/vishay-28950.txt",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources/yzp-land.png",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sources.json",
+    "hardware/compact-dmx/eda/cell-protection-candidate/sym-lib-table",
+    "hardware/compact-dmx/eda/cell-protection-candidate/validate.sh",
+    "hardware/compact-dmx/eda/cell-protection-candidate/verify.py",
+    "hardware/compact-dmx/eda/cell-protection-candidate/receipt.json",
+    "hardware/compact-dmx/eda/cell-protection-candidate/SHA256SUMS"
+  ],
+  "artifact_hashes_excluding_receipt_and_SHA256SUMS": [
+    {
+      "path": "BRIEF.md",
+      "sha256": "004bfd42bed7beb16c368536ca6fb9b7a5331692ec05ff8e14bcd94991f2bb9d"
+    },
+    {
+      "path": "CellProtection.pretty/C0402.kicad_mod",
+      "sha256": "5d2d2bd39642d210476925a435a0e4f69132644526d0bd418d7ad91e6c8bf809"
+    },
+    {
+      "path": "CellProtection.pretty/DBV6.kicad_mod",
+      "sha256": "8ff90acb1bc4d2d486f08c790d1e4b6f0365ed24bb17de7a5add15ee114f4be6"
+    },
+    {
+      "path": "CellProtection.pretty/DDC6.kicad_mod",
+      "sha256": "6384ff62da7a169534fadc99b8c15d4542050851e38fbbe312b1ffa3fcea0301"
+    },
+    {
+      "path": "CellProtection.pretty/DSG8.kicad_mod",
+      "sha256": "e6fc022790bdd4d69e9c62ec2c4da44b0f560e68e7f2987c5b776f2b72756e40"
+    },
+    {
+      "path": "CellProtection.pretty/Fuse451.kicad_mod",
+      "sha256": "cf9f148caa385ac2aa5e2e0605b5a351fd6768a65a00959f7955809c719cce6e"
+    },
+    {
+      "path": "CellProtection.pretty/R0402.kicad_mod",
+      "sha256": "a288d3b4c50e0d590f3cdacc1d920c15c0b00a8789c9861d20fa01c23ad3e575"
+    },
+    {
+      "path": "CellProtection.pretty/YZP6.kicad_mod",
+      "sha256": "9a60cb59b47186851201fef1153f79c402d0355cf913b09ac9ebad27031af71d"
+    },
+    {
+      "path": "DESIGN.md",
+      "sha256": "d966ed758dd26817d6b880b044878d24e6cb1bb5aca4381436cf3337b420f13e"
+    },
+    {
+      "path": "area-check.json",
+      "sha256": "74a0f85f070978550ee103eb832d2b05f1edae32503b5d8c4ae1cd8b8c9cc9b7"
+    },
+    {
+      "path": "area-ledger.csv",
+      "sha256": "6150306a72cc10002eb2b2f0a4c23c3c032c771433348812ba22021a6e6f37ec"
+    },
+    {
+      "path": "cell-protection.kicad_prl",
+      "sha256": "11b3e957301d4a688ff4bbdba7cbb560cf9400a2844e5a575aa0dbaaa8e89f28"
+    },
+    {
+      "path": "cell-protection.kicad_pro",
+      "sha256": "35125d16e651564b8867a7ffb75ef1cf84f273c398287a6ed7ad07c728aeed8c"
+    },
+    {
+      "path": "cell-protection.kicad_sch",
+      "sha256": "b5108082f089ece6b8d0ed607c4db80f635815d5a96b8275cf318f4df9d44495"
+    },
+    {
+      "path": "cell-protection.kicad_sym",
+      "sha256": "14c2f9a376f47c36ff88d47535ceb1447be4184534a129c8778a915c57fab842"
+    },
+    {
+      "path": "cell-protection.net",
+      "sha256": "1212064465a7cc8b7276566361dd1d6d0612d5157889d8e01a1a840842d9d927"
+    },
+    {
+      "path": "cell-protection.pdf",
+      "sha256": "27012225f4102940608652bca796e80664b12e8c498943158e24879af388d82c"
+    },
+    {
+      "path": "checks.json",
+      "sha256": "1a8cd1e5e3831908d784795da98845b0caea507b94d6bb07eaa682ae3a4e9f49"
+    },
+    {
+      "path": "cli-checks.log",
+      "sha256": "a3093caabccafdeabe342d75601b50292d84e076b3d4ca6264a9eb095ea486b8"
+    },
+    {
+      "path": "component-ledger.csv",
+      "sha256": "0cf7bc872aa139071301fe9b80953c4cc4ee6d8920de591ff659795ee575c92d"
+    },
+    {
+      "path": "coupon.py",
+      "sha256": "98f1b909fb66ab4d8f9363a9d18b0d8346ecc345c1bec21810e4ff5eac72f689"
+    },
+    {
+      "path": "drc.json",
+      "sha256": "0c01372c15747a309675c4606fcf9ef9bf4f76ac7302d33359b8ebda247cc6d5"
+    },
+    {
+      "path": "erc.json",
+      "sha256": "2097e6afa50fb70f838ba8eed9a8443ba5c00cc2ef5c5c974733f308f2fb6bbd"
+    },
+    {
+      "path": "fp-lib-table",
+      "sha256": "4d6b6ca4d1ead6125c1e4d74f498a3d638ba624085fdad2c8313d9b46cfa4198"
+    },
+    {
+      "path": "generate.py",
+      "sha256": "3d9dafee27805aafdc577ca941aef59dfb98c68eb0b1ce5920c04e8036080706"
+    },
+    {
+      "path": "land-coupon.kicad_pcb",
+      "sha256": "84ff7dfcb4dda022f5612d38da490879d41d6abc26cc7356914bbc66a04b711c"
+    },
+    {
+      "path": "land-coupon.kicad_prl",
+      "sha256": "15cee0ffd56886e12056937897518c6c99224dd530a90f1c0b9db4cf3dc15930"
+    },
+    {
+      "path": "land-coupon.pdf",
+      "sha256": "391be4d3490a91486a280cc95e202c1fe7289d57bc41b215f5b59584fd0e0555"
+    },
+    {
+      "path": "land-coupon.png",
+      "sha256": "0c69f1f0e1c6fa329f50248fb7c3aaee11a21af05c2712e71394b075a2be8956"
+    },
+    {
+      "path": "land-sources.json",
+      "sha256": "a39f772267eda70f0d03f505a57e410bc946ec3684f6ad88efb1ed439cc824f2"
+    },
+    {
+      "path": "lands.py",
+      "sha256": "2aa66746803594c8718c9e2e44ab5295c37254743ca197b7f0b2004529daf184"
+    },
+    {
+      "path": "package-check.json",
+      "sha256": "68955d0b2e4a841dfcda26d59350d9a14cc1c648b6a1dd8d78ee6af5f16fb1ea"
+    },
+    {
+      "path": "package-check.py",
+      "sha256": "c815641f98827c45b041ed3129d4775f430b2a315fbd822db4e1fdf9c8ff880d"
+    },
+    {
+      "path": "protected-inputs.json",
+      "sha256": "6a46cfcb8e57e9b38baa7fd4e074d6af779a6148516aeab61739681eaf7911e2"
+    },
+    {
+      "path": "schematic-overview.png",
+      "sha256": "0a4d1dc9ef04de02f75786dd8b119b7f6d4fb8e6c1617a8fdc29cbe59b40d474"
+    },
+    {
+      "path": "sources/bq25173.pdf",
+      "sha256": "75869a03b40472ff587ffa5223dc5e5314f3b76478c6582119cf5a204d6e777e"
+    },
+    {
+      "path": "sources/bq25173.txt",
+      "sha256": "b91f3db89b9901336ad630d5338daec59fa3ade45b923cebe89af84e454580ce"
+    },
+    {
+      "path": "sources/eaton-hv.pdf",
+      "sha256": "17fb1d0f56d6766f0866ecb4cc656ce603a74371183ab21ad96f648303b246f1"
+    },
+    {
+      "path": "sources/eaton-hv.txt",
+      "sha256": "8a59bc375a228d4f1d8d2e4cb732799d2b721e5a95fd4b89c36611d9cce0f7c5"
+    },
+    {
+      "path": "sources/fuse-land.png",
+      "sha256": "f05193622ef8fb8a1655e85e2700be4792a3c5b91e7229d478bbb527855b63e7"
+    },
+    {
+      "path": "sources/fuse-primary-facts.json",
+      "sha256": "d81f3ba248b7ee23f1bd3794b9a5c683dfb1c4f424c1d83e2aad9d2212b7da47"
+    },
+    {
+      "path": "sources/littelfuse451-mirror.pdf",
+      "sha256": "e4f66814c90d70b283a5962080711f26554d974373a550958bda772dfdaf1bf9"
+    },
+    {
+      "path": "sources/littelfuse451-mirror.txt",
+      "sha256": "4d16d44c132645d9b5d705a4f426307e8daa7b45f1e0552047d8c502733639ef"
+    },
+    {
+      "path": "sources/tnpw_e3.pdf",
+      "sha256": "6f0508c568cb355aaf2accdd33fe3a780d3ea5ef207c4c9a71839a8acadc33a5"
+    },
+    {
+      "path": "sources/tnpw_e3.txt",
+      "sha256": "30adeaa999be3e1ba6e9f7914c4920410c6d768653adc2e96df3302be4f7e756"
+    },
+    {
+      "path": "sources/tps22963c.pdf",
+      "sha256": "ff3c3cd846ab23e9d9e63924adb2f1e10d9446fe2ef76fdaeb94b083613ca132"
+    },
+    {
+      "path": "sources/tps22963c.txt",
+      "sha256": "c5b0b9023a2b841ca6dcca2cea52be798f8a3f30ee44dd4c0b1c034566ce6635"
+    },
+    {
+      "path": "sources/tps3700.pdf",
+      "sha256": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0"
+    },
+    {
+      "path": "sources/tps3700.txt",
+      "sha256": "999ca9a432d9b8239afdc69daac7105953e569e0652807d8cc81cc75fc6bfda8"
+    },
+    {
+      "path": "sources/tps3702-q1-land-reference.pdf",
+      "sha256": "5bb4e737d2a425afba7780118e8c1281817ea204a68d8a619e92fdee921a1165"
+    },
+    {
+      "path": "sources/tps3702-q1-land-reference.txt",
+      "sha256": "31b7f4e01af241a82440fbb2441946b05b042e2ec8cb76b0086c9ab5a391fa77"
+    },
+    {
+      "path": "sources/tps3760.pdf",
+      "sha256": "eb7d626587f369ade98d55b60823ed28e4b4d955b41181c4443763cf0eef5e7d"
+    },
+    {
+      "path": "sources/tps3760.txt",
+      "sha256": "fa9a1d216f088bf8e1a719534d044357d4c78f392295b9caa7c529acf74bde51"
+    },
+    {
+      "path": "sources/tps3808.pdf",
+      "sha256": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed"
+    },
+    {
+      "path": "sources/tps3808.txt",
+      "sha256": "c549b4bd508eeadacbe8a1bb064a967d72d01f49fccb1928fbfd5972b1df21a0"
+    },
+    {
+      "path": "sources/vishay-28950.pdf",
+      "sha256": "9e2b145c937da3be1e926b8afc2856959754eeb4d1103241d838038f7308144e"
+    },
+    {
+      "path": "sources/vishay-28950.txt",
+      "sha256": "d932cc30fe5f619ad8ff9537411ba1b38559cbe5628a080e5ac587266b0c87bc"
+    },
+    {
+      "path": "sources/yzp-land.png",
+      "sha256": "b9a5c3104db8edbbebc58af692e3ae291fec786504240e38f29bac681f833649"
+    },
+    {
+      "path": "sources.json",
+      "sha256": "b0e471650e2c013447fe49ae5231057df69930ad26dea8bdd7d9c0c86db67614"
+    },
+    {
+      "path": "sym-lib-table",
+      "sha256": "32063d15abdb741f54ffaf37838cd2a5179cfc69e4ed54fc34f41f91f284f5c1"
+    },
+    {
+      "path": "validate.sh",
+      "sha256": "eacafb10605ce1735f5ba410decb7d682f251cf88e71d76f16cc2143bd5502c2"
+    },
+    {
+      "path": "verify.py",
+      "sha256": "83b3b323c7df36743f6aa770506862258bc87c85e3a9d7446de5c58250509ce7"
+    }
+  ],
+  "hash_inventory": "SHA256SUMS covers every artifact including this receipt, excluding itself to avoid a cycle.",
+  "stop": "Bounded preferred-prototype capture complete; exact protection source/physical bounds remain UNMET. Parent/Astra own integration. No further architecture search/publication.",
+  "documentation_correction": {
+    "review_task": "node:delegated-task:command%3Amcp%3Aeaab7c50-b35d-4a00-9efc-f2e54928abd4%3Adelegate-task%3Anova-cell-protection-glm-review-20261023-r1",
+    "finding": "BQ25173 literature identifier mislabeled SLUSD97A; cached PDF is SLUSDY6, November 2021.",
+    "old_receipt_sha256": "3327446d98881072921be1585e3e99701cb6a7cc10c2ded6ff4b884af204b777",
+    "circuit_numeric_source_artifacts_changed": false,
+    "snapshot_preserved": ".tools/reviews/cell-protection-20261023/"
+  }
+}

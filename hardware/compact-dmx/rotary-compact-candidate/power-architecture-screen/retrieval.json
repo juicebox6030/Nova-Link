@@ -1,0 +1,56 @@
+[
+  {
+    "file": "recom-rac20-k.pdf",
+    "url": "https://recom-power.com/pdf/Powerline_AC-DC/RAC20-K.pdf",
+    "rc": 0,
+    "error": ""
+  },
+  {
+    "file": "traco-tmlm.pdf",
+    "url": "https://www.tracopower.com/sites/default/files/products/datasheets/tmlm_datasheet.pdf",
+    "rc": 22,
+    "error": "curl: (22) The requested URL returned error: 403\n"
+  },
+  {
+    "file": "recom-product.html",
+    "url": "https://recom-power.com/en/rec-p-RAC20-12SK.html",
+    "rc": 47,
+    "error": "curl: (47) Maximum (50) redirects followed\n"
+  },
+  {
+    "file": "traco-tmlm.pdf",
+    "url": "https://www.tracopower.com/products/tmlm.pdf",
+    "rc": 22,
+    "error": "                  Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (22) The requested URL returned error: 403\n"
+  },
+  {
+    "file": "traco-tmlm-installation.pdf",
+    "url": "https://www.tracopower.com/products/tmlm-installation.pdf",
+    "rc": 22,
+    "error": "                  Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0\ncurl: (22) The requested URL returned error: 403\n"
+  },
+  {
+    "file": "recom-installation.pdf",
+    "url": "https://recom-power.com/instruction-manuals/RAC20-K_installation_guide.pdf",
+    "rc": 22,
+    "error": "                  Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "file": "traco-tmlm.pdf",
+    "url": "https://tracopower.com/sites/default/files/products/datasheets/tmlm_datasheet.pdf",
+    "rc": 22,
+    "error": "  0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (22) The requested URL returned error: 403\n"
+  },
+  {
+    "file": "recom-tht.html",
+    "url": "https://backoffice.recom-power.com/en/rec-s-RAC20-K%21s277.html",
+    "rc": 47,
+    "error": "   0     0      0      0 --:--:--  0:00:01 --:--:--     0\ncurl: (47) Maximum (3) redirects followed\n"
+  },
+  {
+    "file": "traco-tmlm.pdf",
+    "url": "https://www.tracopower.com/sites/default/files/products/datasheets/tmlm_datasheet.pdf?download=1",
+    "rc": 0,
+    "error": ""
+  }
+]

@@ -1,0 +1,433 @@
+{
+  "archive": "hardware/fixture-fit/source-cache/chauvet-ovation-e-910fc-3d-cad.zip",
+  "archive_sha256": "5032128181480201b3815f67699c6e264825188e3399b2341cf1f2d4c665051f",
+  "member": "OVATION E-910FC_3D.dwg",
+  "member_bytes": 111808283,
+  "member_sha256": "bf0f9b1d80d933d96a6662b505ed2f9f5476c6970f4a5730307403f5f1ebc5a7",
+  "dwg_header": "AC1032",
+  "converter": "LibreDWG 0.14 (.tools/libredwg-0.14/bin/dwg2dxf)",
+  "timeout_seconds": 180,
+  "conversion_exit": 0,
+  "dxf_bytes": 6574296,
+  "dxf_sha256": "18d4d776d352fd3190a2a8cfe04ba39df1367df77c626fc2a2d13c817a3b2ec5",
+  "dxf_version": "AC1032",
+  "declared_INSUNITS": 4,
+  "modelspace_counts": {
+    "3DSOLID": 82
+  },
+  "solid_payloads": [
+    {
+      "handle": "22E",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "231",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "232",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "233",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "234",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "235",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "236",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "237",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "238",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "239",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "23A",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "23B",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "23C",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "23D",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "23E",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "23F",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "240",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "241",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "242",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "243",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "244",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "245",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "246",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "247",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "248",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "249",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "24A",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "24B",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "24C",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "24D",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "24E",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "24F",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "250",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "251",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "252",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "253",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "254",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "255",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "256",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "257",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "258",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "259",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "25A",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "25B",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "25C",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "25D",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "25E",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "25F",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "260",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "261",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "262",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "263",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "264",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "265",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "266",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "267",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "268",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "269",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "26A",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "26B",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "26C",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "26D",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "26E",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "26F",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "270",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "271",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "272",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "273",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "274",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "275",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "276",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "277",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "278",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "279",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "27A",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "27B",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "27C",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "27D",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "27E",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "27F",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "280",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    },
+    {
+      "handle": "281",
+      "sat_lines": 0,
+      "sab_bytes": 0
+    }
+  ],
+  "ACDSDATA_entity_count": 0,
+  "usable_body_payloads": 0,
+  "fit_use": "Rejected: empty converted solid bodies; no preserved measurable 3D geometry."
+}

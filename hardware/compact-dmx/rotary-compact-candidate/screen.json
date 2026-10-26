@@ -1,0 +1,187 @@
+{
+  "status": "PHASE0 FAIL unchanged5Vsourcepath; no complete compact assembly produced",
+  "electrical_rows": [
+    {
+      "length_m": 0.8,
+      "copper_nom_um": 35.0,
+      "temp_C": 20,
+      "loop_R_ohm": 0.11396011396011395,
+      "flex_drop_V": 0.17094017094017092,
+      "flex_heat_W": 0.2564102564102564,
+      "termination_drop_V": 0.03,
+      "TPS_drop_V": 0.0825,
+      "port_DC_V": 4.591559829059829,
+      "pass_4p75": false
+    },
+    {
+      "length_m": 0.8,
+      "copper_nom_um": 35.0,
+      "temp_C": 80,
+      "loop_R_ohm": 0.14083190883190883,
+      "flex_drop_V": 0.21124786324786324,
+      "flex_heat_W": 0.31687179487179484,
+      "termination_drop_V": 0.03,
+      "TPS_drop_V": 0.0825,
+      "port_DC_V": 4.551252136752137,
+      "pass_4p75": false
+    },
+    {
+      "length_m": 0.8,
+      "copper_nom_um": 70.0,
+      "temp_C": 20,
+      "loop_R_ohm": 0.056980056980056974,
+      "flex_drop_V": 0.08547008547008546,
+      "flex_heat_W": 0.1282051282051282,
+      "termination_drop_V": 0.03,
+      "TPS_drop_V": 0.0825,
+      "port_DC_V": 4.677029914529914,
+      "pass_4p75": false
+    },
+    {
+      "length_m": 0.8,
+      "copper_nom_um": 70.0,
+      "temp_C": 80,
+      "loop_R_ohm": 0.07041595441595441,
+      "flex_drop_V": 0.10562393162393162,
+      "flex_heat_W": 0.15843589743589742,
+      "termination_drop_V": 0.03,
+      "TPS_drop_V": 0.0825,
+      "port_DC_V": 4.656876068376068,
+      "pass_4p75": false
+    },
+    {
+      "length_m": 1.0,
+      "copper_nom_um": 35.0,
+      "temp_C": 20,
+      "loop_R_ohm": 0.14245014245014243,
+      "flex_drop_V": 0.21367521367521364,
+      "flex_heat_W": 0.3205128205128205,
+      "termination_drop_V": 0.03,
+      "TPS_drop_V": 0.0825,
+      "port_DC_V": 4.548824786324786,
+      "pass_4p75": false
+    },
+    {
+      "length_m": 1.0,
+      "copper_nom_um": 35.0,
+      "temp_C": 80,
+      "loop_R_ohm": 0.17603988603988602,
+      "flex_drop_V": 0.26405982905982905,
+      "flex_heat_W": 0.3960897435897435,
+      "termination_drop_V": 0.03,
+      "TPS_drop_V": 0.0825,
+      "port_DC_V": 4.498440170940171,
+      "pass_4p75": false
+    },
+    {
+      "length_m": 1.0,
+      "copper_nom_um": 70.0,
+      "temp_C": 20,
+      "loop_R_ohm": 0.07122507122507121,
+      "flex_drop_V": 0.10683760683760682,
+      "flex_heat_W": 0.16025641025641024,
+      "termination_drop_V": 0.03,
+      "TPS_drop_V": 0.0825,
+      "port_DC_V": 4.655662393162393,
+      "pass_4p75": false
+    },
+    {
+      "length_m": 1.0,
+      "copper_nom_um": 70.0,
+      "temp_C": 80,
+      "loop_R_ohm": 0.08801994301994301,
+      "flex_drop_V": 0.13202991452991453,
+      "flex_heat_W": 0.19804487179487176,
+      "termination_drop_V": 0.03,
+      "TPS_drop_V": 0.0825,
+      "port_DC_V": 4.630470085470085,
+      "pass_4p75": false
+    },
+    {
+      "length_m": 1.1,
+      "copper_nom_um": 35.0,
+      "temp_C": 20,
+      "loop_R_ohm": 0.1566951566951567,
+      "flex_drop_V": 0.23504273504273507,
+      "flex_heat_W": 0.3525641025641026,
+      "termination_drop_V": 0.03,
+      "TPS_drop_V": 0.0825,
+      "port_DC_V": 4.527457264957265,
+      "pass_4p75": false
+    },
+    {
+      "length_m": 1.1,
+      "copper_nom_um": 35.0,
+      "temp_C": 80,
+      "loop_R_ohm": 0.19364387464387464,
+      "flex_drop_V": 0.29046581196581195,
+      "flex_heat_W": 0.43569871794871795,
+      "termination_drop_V": 0.03,
+      "TPS_drop_V": 0.0825,
+      "port_DC_V": 4.472034188034188,
+      "pass_4p75": false
+    },
+    {
+      "length_m": 1.1,
+      "copper_nom_um": 70.0,
+      "temp_C": 20,
+      "loop_R_ohm": 0.07834757834757836,
+      "flex_drop_V": 0.11752136752136753,
+      "flex_heat_W": 0.1762820512820513,
+      "termination_drop_V": 0.03,
+      "TPS_drop_V": 0.0825,
+      "port_DC_V": 4.644978632478632,
+      "pass_4p75": false
+    },
+    {
+      "length_m": 1.1,
+      "copper_nom_um": 70.0,
+      "temp_C": 80,
+      "loop_R_ohm": 0.09682193732193732,
+      "flex_drop_V": 0.14523290598290597,
+      "flex_heat_W": 0.21784935897435898,
+      "termination_drop_V": 0.03,
+      "TPS_drop_V": 0.0825,
+      "port_DC_V": 4.617267094017094,
+      "pass_4p75": false
+    }
+  ],
+  "IRM_voltage_min_25C_V": 4.875,
+  "line_load_already_in_tolerance": true,
+  "optimistic_1m70um_no_terms_port_V": 4.72575,
+  "allowed_FPC_R_with_zero_termination_ohm": 0.02833333333333333,
+  "required_actual_copper_um_at1m80C_8mm_no_terms": 190.82205882352946,
+  "required_actual_copper_um_with20mohm_terms": 648.7950000000004,
+  "motion_diagnostic": {
+    "positions": 181,
+    "neutral_length_mm": 1046.1648589213492,
+    "min_radial_turn_gap_mm": 0.72,
+    "length_error_endpoints_mm": [
+      -43.58896741383296,
+      43.58901786518891
+    ],
+    "constant_length_required_outer_radius_minus90_mm": 32.912179698058495,
+    "not_a_motion_solution": true
+  },
+  "compensation_direction_only": {
+    "local_regulator_before_TPS_V": 5.1,
+    "regulation_target": 0.01,
+    "DC_min_port_V": 4.9365,
+    "efficiency_allocation": 0.9,
+    "input_power_W": 8.516666666666666,
+    "IRM50C_low_V": 4.8375,
+    "source_current_A": 1.8425364781875666,
+    "regulator_input_V": 4.62225131903179,
+    "requires_new_component_capture": true
+  },
+  "lock_stress_screen": {
+    "torque_target_Nm": 1.0,
+    "pin_radius_mm": 28.0,
+    "pin_diameter_mm": 2.0,
+    "index_thickness_mm": 1.5,
+    "pin_shear_MPa": 11.368210220849667,
+    "ring_bearing_MPa": 11.904761904761905,
+    "material_allowable_not_established": true
+  },
+  "manufacturing_release": false
+}

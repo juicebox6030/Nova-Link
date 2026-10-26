@@ -1,0 +1,560 @@
+{
+  "valid_solids": {
+    "D01_Sidecar_base": true,
+    "D02_Sidecar_lid": true,
+    "D03_PCB_envelope": true,
+    "D04_ISOW1412_max": true,
+    "D05_CC1352R": true,
+    "D06_SPI_NOR_max": true,
+    "D07_USB_CX70M": true,
+    "D08_Cap_max": true,
+    "D09_Power_zone": true,
+    "D10_RF_passive_zone": true,
+    "D11_Antenna_keepout": true,
+    "D12_NC5FRX_envelope": true,
+    "D13_Latch_finger_keepout": true,
+    "B01_Stationary_core": true,
+    "B02_Input_endcap_blank": true,
+    "B03_Output_endcap_blank": true,
+    "B04_Rotary_collar": true,
+    "B05_Collar_left_cheek": true,
+    "B06_Collar_right_cheek": true,
+    "B07_POM_left_bush": true,
+    "B08_POM_right_bush": true,
+    "B09_304_lock_ring": true,
+    "B10_Lock_pin_17_4PH": true,
+    "B11_Stop_peg": true,
+    "B12_Stop_track": true,
+    "B13_IRM10_5_envelope": true,
+    "B14_PSU_board": true,
+    "B15_Mains_trunk_keepout": true,
+    "B16_USB_board_envelope": true,
+    "B17_USB_envelope": true,
+    "B19_Lock_pin_guide": true,
+    "EXP_B02_Input_endcap_blank": true,
+    "EXP_B01_Stationary_core": true,
+    "EXP_B09_304_lock_ring": true,
+    "EXP_B04_Rotary_collar": true,
+    "EXP_B06_Collar_right_cheek": true,
+    "EXP_B12_Stop_track": true,
+    "EXP_B03_Output_endcap_blank": true
+  },
+  "package_intersections_mm3": [],
+  "notes": [
+    "Package check excludes shell/PCB supporting contacts and unmodeled passives/harness. No DRC/ERC/fixture fit validation.",
+    "Antenna check excludes the intentional dielectric PCB substrate and plastic shell; copper layout remains unverified. USB PCB slot is provisional. Contacts may have zero gap but must have zero intersection volume.",
+    "78 modeled barrel mechanical pairs checked at neutral; lock release displacement and ideal guide/wire sweep added. Cassette covers/divider seals, fasteners, tails and dynamic wire behavior remain unmodeled/unverified."
+  ],
+  "clearance_checks": [
+    {
+      "a": "D01_Sidecar_base",
+      "b": "D03_PCB_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D02_Sidecar_lid",
+      "b": "D03_PCB_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 16.0,
+      "minimum_gap_mm": 1,
+      "passed": true
+    },
+    {
+      "a": "B11_Stop_peg",
+      "b": "B06_Collar_right_cheek",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.049999999999984675,
+      "minimum_gap_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "B19_Lock_pin_guide",
+      "b": "B05_Collar_left_cheek",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "B10_Lock_pin_17_4PH",
+      "b": "B19_Lock_pin_guide",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.0999999999999784,
+      "minimum_gap_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "B19_Lock_pin_guide",
+      "b": "B16_USB_board_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.6000000000000001,
+      "minimum_gap_mm": 0.6,
+      "passed": true
+    },
+    {
+      "a": "B19_Lock_pin_guide",
+      "b": "B17_USB_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.0999999999999943,
+      "minimum_gap_mm": 1.1,
+      "passed": true
+    },
+    {
+      "a": "D04_ISOW1412_max",
+      "b": "D01_Sidecar_base",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.2574049591089498,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D04_ISOW1412_max",
+      "b": "D02_Sidecar_lid",
+      "intersection_mm3": 0.0,
+      "gap_mm": 12.45,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D04_ISOW1412_max",
+      "b": "D03_PCB_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D04_ISOW1412_max",
+      "b": "D11_Antenna_keepout",
+      "intersection_mm3": 0.0,
+      "gap_mm": 57.07,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D05_CC1352R",
+      "b": "D01_Sidecar_base",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.992258265646105,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D05_CC1352R",
+      "b": "D02_Sidecar_lid",
+      "intersection_mm3": 0.0,
+      "gap_mm": 15.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D05_CC1352R",
+      "b": "D03_PCB_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D05_CC1352R",
+      "b": "D11_Antenna_keepout",
+      "intersection_mm3": 0.0,
+      "gap_mm": 9.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D06_SPI_NOR_max",
+      "b": "D01_Sidecar_base",
+      "intersection_mm3": 0.0,
+      "gap_mm": 4.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D06_SPI_NOR_max",
+      "b": "D02_Sidecar_lid",
+      "intersection_mm3": 0.0,
+      "gap_mm": 15.4,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D06_SPI_NOR_max",
+      "b": "D03_PCB_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D06_SPI_NOR_max",
+      "b": "D11_Antenna_keepout",
+      "intersection_mm3": 0.0,
+      "gap_mm": 20.9,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D07_USB_CX70M",
+      "b": "D01_Sidecar_base",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.5,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D07_USB_CX70M",
+      "b": "D02_Sidecar_lid",
+      "intersection_mm3": 0.0,
+      "gap_mm": 13.34,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D07_USB_CX70M",
+      "b": "D03_PCB_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.5,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D07_USB_CX70M",
+      "b": "D11_Antenna_keepout",
+      "intersection_mm3": 0.0,
+      "gap_mm": 29.6,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D08_Cap_max",
+      "b": "D01_Sidecar_base",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.5,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D08_Cap_max",
+      "b": "D02_Sidecar_lid",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.5,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D08_Cap_max",
+      "b": "D03_PCB_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D08_Cap_max",
+      "b": "D11_Antenna_keepout",
+      "intersection_mm3": 0.0,
+      "gap_mm": 23.6,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D09_Power_zone",
+      "b": "D01_Sidecar_base",
+      "intersection_mm3": 0.0,
+      "gap_mm": 4.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D09_Power_zone",
+      "b": "D02_Sidecar_lid",
+      "intersection_mm3": 0.0,
+      "gap_mm": 12.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D09_Power_zone",
+      "b": "D03_PCB_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D09_Power_zone",
+      "b": "D11_Antenna_keepout",
+      "intersection_mm3": 0.0,
+      "gap_mm": 28.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D10_RF_passive_zone",
+      "b": "D01_Sidecar_base",
+      "intersection_mm3": 0.0,
+      "gap_mm": 2.7856776554368254,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D10_RF_passive_zone",
+      "b": "D02_Sidecar_lid",
+      "intersection_mm3": 0.0,
+      "gap_mm": 13.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D10_RF_passive_zone",
+      "b": "D03_PCB_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D10_RF_passive_zone",
+      "b": "D11_Antenna_keepout",
+      "intersection_mm3": 0.0,
+      "gap_mm": 2.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "B13_IRM10_5_envelope",
+      "b": "B01_Stationary_core",
+      "intersection_mm3": 0.0,
+      "gap_mm": 4.8611148209983694,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "B13_IRM10_5_envelope",
+      "b": "B02_Input_endcap_blank",
+      "intersection_mm3": 0.0,
+      "gap_mm": 43.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "B13_IRM10_5_envelope",
+      "b": "B03_Output_endcap_blank",
+      "intersection_mm3": 0.0,
+      "gap_mm": 49.3,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "B13_IRM10_5_envelope",
+      "b": "B04_Rotary_collar",
+      "intersection_mm3": 0.0,
+      "gap_mm": 24.26111482099837,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "B13_IRM10_5_envelope",
+      "b": "B05_Collar_left_cheek",
+      "intersection_mm3": 0.0,
+      "gap_mm": 7.711114820998387,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "B13_IRM10_5_envelope",
+      "b": "B06_Collar_right_cheek",
+      "intersection_mm3": 0.0,
+      "gap_mm": 7.711114820998373,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "B17_USB_envelope",
+      "b": "B01_Stationary_core",
+      "intersection_mm3": 0.0,
+      "gap_mm": 8.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "B17_USB_envelope",
+      "b": "B02_Input_endcap_blank",
+      "intersection_mm3": 0.0,
+      "gap_mm": 64.4980619863884,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "B17_USB_envelope",
+      "b": "B03_Output_endcap_blank",
+      "intersection_mm3": 0.0,
+      "gap_mm": 63.10911186191737,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "B17_USB_envelope",
+      "b": "B04_Rotary_collar",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.6651284597391893,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "B17_USB_envelope",
+      "b": "B05_Collar_left_cheek",
+      "intersection_mm3": 0.0,
+      "gap_mm": 6.0,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "B17_USB_envelope",
+      "b": "B06_Collar_right_cheek",
+      "intersection_mm3": 0.0,
+      "gap_mm": 4.599999999999994,
+      "minimum_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "D08_Cap_max",
+      "b": "D03_PCB_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.0,
+      "minimum_gap_mm": 1,
+      "passed": true
+    },
+    {
+      "a": "D08_Cap_max",
+      "b": "D02_Sidecar_lid",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.5,
+      "minimum_gap_mm": 1.5,
+      "passed": true
+    }
+  ],
+  "barrel_mechanical_intersections_mm3": [],
+  "barrel_mechanical_pair_count": 78,
+  "lock_release_checks": [
+    {
+      "displacement_mm": 0,
+      "other": "B19_Lock_pin_guide",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.0999999999999784,
+      "passed": true
+    },
+    {
+      "displacement_mm": 0,
+      "other": "B05_Collar_left_cheek",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.39999999999998875,
+      "passed": true
+    },
+    {
+      "displacement_mm": 0,
+      "other": "B16_USB_board_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 4.414748010928821,
+      "passed": true
+    },
+    {
+      "displacement_mm": 3.55,
+      "other": "B19_Lock_pin_guide",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.10000000000000009,
+      "passed": true
+    },
+    {
+      "displacement_mm": 3.55,
+      "other": "B05_Collar_left_cheek",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.39999999999999186,
+      "passed": true
+    },
+    {
+      "displacement_mm": 3.55,
+      "other": "B16_USB_board_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.25,
+      "passed": true
+    },
+    {
+      "displacement_mm": 3.55,
+      "other": "B09_304_lock_ring",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.5590169943749447,
+      "passed": true
+    },
+    {
+      "displacement_mm": 4.2,
+      "other": "B19_Lock_pin_guide",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.09999999999998513,
+      "passed": true
+    },
+    {
+      "displacement_mm": 4.2,
+      "other": "B05_Collar_left_cheek",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.39999999999999564,
+      "passed": true
+    },
+    {
+      "displacement_mm": 4.2,
+      "other": "B16_USB_board_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.0049875621120885,
+      "passed": true
+    },
+    {
+      "displacement_mm": 4.2,
+      "other": "B09_304_lock_ring",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.2041594578792323,
+      "passed": true
+    },
+    {
+      "displacement_mm": 4.8500000000000005,
+      "other": "B19_Lock_pin_guide",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.10000000000000009,
+      "passed": true
+    },
+    {
+      "displacement_mm": 4.8500000000000005,
+      "other": "B05_Collar_left_cheek",
+      "intersection_mm3": 0.0,
+      "gap_mm": 0.3999999999999917,
+      "passed": true
+    },
+    {
+      "displacement_mm": 4.8500000000000005,
+      "other": "B16_USB_board_envelope",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.0,
+      "passed": true
+    },
+    {
+      "displacement_mm": 4.8500000000000005,
+      "other": "B09_304_lock_ring",
+      "intersection_mm3": 0.0,
+      "gap_mm": 1.852700731364892,
+      "passed": true
+    }
+  ],
+  "guide_wire_sweep": {
+    "sample_angles": 181,
+    "wire_OD_max_mm": 1.2,
+    "minimum_nominal_clearance_mm": 0.4999999999999699,
+    "radial_tolerance_allowance_mm": 0.125,
+    "minimum_after_allocated_tolerances_mm": 0.3749999999999699,
+    "passed": true
+  },
+  "usb_window_lane_axial_gap_mm": 0.7000000000000028
+}

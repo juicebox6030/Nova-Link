@@ -1,0 +1,983 @@
+{
+  "valid_closed_solids": {
+    "Base_with_bridge": true,
+    "Lid": true,
+    "PCB_tongue": true,
+    "Shim0": true,
+    "Shim1": true,
+    "Rear_stop_pad": true,
+    "Connector_external_envelope": true,
+    "Stake0": true,
+    "Stake1": true,
+    "Stake2": true,
+    "Stake3": true,
+    "Cap_envelope": true,
+    "NOR_envelope": true,
+    "Plug_test_overmold": true
+  },
+  "pairs": [
+    {
+      "a": "Base_with_bridge",
+      "b": "Lid",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Base_with_bridge",
+      "b": "PCB_tongue",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Base_with_bridge",
+      "b": "Connector_external_envelope",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.6000000000000014,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Base_with_bridge",
+      "b": "Cap_envelope",
+      "intersection_mm3": 0.0,
+      "distance_mm": 1.5,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Base_with_bridge",
+      "b": "NOR_envelope",
+      "intersection_mm3": 0.0,
+      "distance_mm": 3.0700162866017533,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Base_with_bridge",
+      "b": "Shim0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Base_with_bridge",
+      "b": "Shim1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Base_with_bridge",
+      "b": "Rear_stop_pad",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Base_with_bridge",
+      "b": "Stake0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.7810249675906665,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Base_with_bridge",
+      "b": "Stake1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.3201562118716442,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Base_with_bridge",
+      "b": "Stake2",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.7810249675906665,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Base_with_bridge",
+      "b": "Stake3",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.3201562118716442,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Lid",
+      "b": "PCB_tongue",
+      "intersection_mm3": 0.0,
+      "distance_mm": 16.0,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Lid",
+      "b": "Connector_external_envelope",
+      "intersection_mm3": 0.0,
+      "distance_mm": 12.84,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Lid",
+      "b": "Cap_envelope",
+      "intersection_mm3": 0.0,
+      "distance_mm": 1.5,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Lid",
+      "b": "NOR_envelope",
+      "intersection_mm3": 0.0,
+      "distance_mm": 15.4,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Lid",
+      "b": "Shim0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 17.0,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Lid",
+      "b": "Shim1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 17.0,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Lid",
+      "b": "Rear_stop_pad",
+      "intersection_mm3": 0.0,
+      "distance_mm": 13.1,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Lid",
+      "b": "Stake0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 16.0,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Lid",
+      "b": "Stake1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 16.0,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Lid",
+      "b": "Stake2",
+      "intersection_mm3": 0.0,
+      "distance_mm": 16.0,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Lid",
+      "b": "Stake3",
+      "intersection_mm3": 0.0,
+      "distance_mm": 16.0,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "PCB_tongue",
+      "b": "Connector_external_envelope",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "PCB_tongue",
+      "b": "Cap_envelope",
+      "intersection_mm3": 0.0,
+      "distance_mm": 1.0,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "PCB_tongue",
+      "b": "NOR_envelope",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "PCB_tongue",
+      "b": "Shim0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "PCB_tongue",
+      "b": "Shim1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "PCB_tongue",
+      "b": "Rear_stop_pad",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.5,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "PCB_tongue",
+      "b": "Stake0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.11972243622680219,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "PCB_tongue",
+      "b": "Stake1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.11972243622680219,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "PCB_tongue",
+      "b": "Stake2",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.11972243622680219,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "PCB_tongue",
+      "b": "Stake3",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.11972243622680219,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Connector_external_envelope",
+      "b": "Cap_envelope",
+      "intersection_mm3": 0.0,
+      "distance_mm": 10.810484047998223,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Connector_external_envelope",
+      "b": "NOR_envelope",
+      "intersection_mm3": 0.0,
+      "distance_mm": 4.692003836315569,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Connector_external_envelope",
+      "b": "Shim0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 1.29957685421063,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Connector_external_envelope",
+      "b": "Shim1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 1.2995768542106345,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Connector_external_envelope",
+      "b": "Rear_stop_pad",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Connector_external_envelope",
+      "b": "Stake0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Connector_external_envelope",
+      "b": "Stake1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Connector_external_envelope",
+      "b": "Stake2",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Connector_external_envelope",
+      "b": "Stake3",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.0,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Cap_envelope",
+      "b": "NOR_envelope",
+      "intersection_mm3": 0.0,
+      "distance_mm": 4.280979104322515,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Cap_envelope",
+      "b": "Shim0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 13.941181696558559,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Cap_envelope",
+      "b": "Shim1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 13.941181696558559,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Cap_envelope",
+      "b": "Rear_stop_pad",
+      "intersection_mm3": 0.0,
+      "distance_mm": 10.304178373642044,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Cap_envelope",
+      "b": "Stake0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 11.88773054854051,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Cap_envelope",
+      "b": "Stake1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 15.400056433336687,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Cap_envelope",
+      "b": "Stake2",
+      "intersection_mm3": 0.0,
+      "distance_mm": 11.88773054854051,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Cap_envelope",
+      "b": "Stake3",
+      "intersection_mm3": 0.0,
+      "distance_mm": 15.400056433336687,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "NOR_envelope",
+      "b": "Shim0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 5.655528268871088,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "NOR_envelope",
+      "b": "Shim1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 14.009461088849923,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "NOR_envelope",
+      "b": "Rear_stop_pad",
+      "intersection_mm3": 0.0,
+      "distance_mm": 4.322614949310198,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "NOR_envelope",
+      "b": "Stake0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 4.692003836315574,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "NOR_envelope",
+      "b": "Stake1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 7.9167480697569275,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "NOR_envelope",
+      "b": "Stake2",
+      "intersection_mm3": 0.0,
+      "distance_mm": 12.313200233895339,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "NOR_envelope",
+      "b": "Stake3",
+      "intersection_mm3": 0.0,
+      "distance_mm": 13.86632251175488,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Shim0",
+      "b": "Shim1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 10.600000000000001,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Shim0",
+      "b": "Rear_stop_pad",
+      "intersection_mm3": 0.0,
+      "distance_mm": 2.509980079602224,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Shim0",
+      "b": "Stake0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 1.2995768542106345,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Shim0",
+      "b": "Stake1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.8300000000000054,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Shim0",
+      "b": "Stake2",
+      "intersection_mm3": 0.0,
+      "distance_mm": 9.522651941554942,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Shim0",
+      "b": "Stake3",
+      "intersection_mm3": 0.0,
+      "distance_mm": 9.470000000000006,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Shim1",
+      "b": "Rear_stop_pad",
+      "intersection_mm3": 0.0,
+      "distance_mm": 2.5099800796022267,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Shim1",
+      "b": "Stake0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 9.522651941554935,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Shim1",
+      "b": "Stake1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 9.469999999999999,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Shim1",
+      "b": "Stake2",
+      "intersection_mm3": 0.0,
+      "distance_mm": 1.29957685421063,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Shim1",
+      "b": "Stake3",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.8299999999999983,
+      "intended_surface_contact": true,
+      "passed": true
+    },
+    {
+      "a": "Rear_stop_pad",
+      "b": "Stake0",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.5,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Rear_stop_pad",
+      "b": "Stake1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 3.832753579347357,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Rear_stop_pad",
+      "b": "Stake2",
+      "intersection_mm3": 0.0,
+      "distance_mm": 0.5,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Rear_stop_pad",
+      "b": "Stake3",
+      "intersection_mm3": 0.0,
+      "distance_mm": 3.832753579347357,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Stake0",
+      "b": "Stake1",
+      "intersection_mm3": 0.0,
+      "distance_mm": 3.0,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Stake0",
+      "b": "Stake2",
+      "intersection_mm3": 0.0,
+      "distance_mm": 8.340000000000003,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Stake0",
+      "b": "Stake3",
+      "intersection_mm3": 0.0,
+      "distance_mm": 8.86315970746325,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Stake1",
+      "b": "Stake2",
+      "intersection_mm3": 0.0,
+      "distance_mm": 8.86315970746325,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Stake1",
+      "b": "Stake3",
+      "intersection_mm3": 0.0,
+      "distance_mm": 8.340000000000003,
+      "intended_surface_contact": false,
+      "passed": true
+    },
+    {
+      "a": "Stake2",
+      "b": "Stake3",
+      "intersection_mm3": 0.0,
+      "distance_mm": 3.0,
+      "intended_surface_contact": false,
+      "passed": true
+    }
+  ],
+  "plug_approach": [
+    {
+      "offset": 0,
+      "solid": "Base_with_bridge",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 0,
+      "solid": "Lid",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 0,
+      "solid": "PCB_tongue",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 0,
+      "solid": "Connector_external_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 0,
+      "solid": "Cap_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 0,
+      "solid": "NOR_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 0,
+      "solid": "Shim0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 0,
+      "solid": "Shim1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 0,
+      "solid": "Rear_stop_pad",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 0,
+      "solid": "Stake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 0,
+      "solid": "Stake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 0,
+      "solid": "Stake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 0,
+      "solid": "Stake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 1,
+      "solid": "Base_with_bridge",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 1,
+      "solid": "Lid",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 1,
+      "solid": "PCB_tongue",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 1,
+      "solid": "Connector_external_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 1,
+      "solid": "Cap_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 1,
+      "solid": "NOR_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 1,
+      "solid": "Shim0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 1,
+      "solid": "Shim1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 1,
+      "solid": "Rear_stop_pad",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 1,
+      "solid": "Stake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 1,
+      "solid": "Stake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 1,
+      "solid": "Stake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 1,
+      "solid": "Stake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 3,
+      "solid": "Base_with_bridge",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 3,
+      "solid": "Lid",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 3,
+      "solid": "PCB_tongue",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 3,
+      "solid": "Connector_external_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 3,
+      "solid": "Cap_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 3,
+      "solid": "NOR_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 3,
+      "solid": "Shim0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 3,
+      "solid": "Shim1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 3,
+      "solid": "Rear_stop_pad",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 3,
+      "solid": "Stake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 3,
+      "solid": "Stake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 3,
+      "solid": "Stake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 3,
+      "solid": "Stake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 6,
+      "solid": "Base_with_bridge",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 6,
+      "solid": "Lid",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 6,
+      "solid": "PCB_tongue",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 6,
+      "solid": "Connector_external_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 6,
+      "solid": "Cap_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 6,
+      "solid": "NOR_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 6,
+      "solid": "Shim0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 6,
+      "solid": "Shim1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 6,
+      "solid": "Rear_stop_pad",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 6,
+      "solid": "Stake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 6,
+      "solid": "Stake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 6,
+      "solid": "Stake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 6,
+      "solid": "Stake3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 10,
+      "solid": "Base_with_bridge",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 10,
+      "solid": "Lid",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 10,
+      "solid": "PCB_tongue",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 10,
+      "solid": "Connector_external_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 10,
+      "solid": "Cap_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 10,
+      "solid": "NOR_envelope",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 10,
+      "solid": "Shim0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 10,
+      "solid": "Shim1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 10,
+      "solid": "Rear_stop_pad",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 10,
+      "solid": "Stake0",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 10,
+      "solid": "Stake1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 10,
+      "solid": "Stake2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "offset": 10,
+      "solid": "Stake3",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "allocated_worst_connector_to_base": {
+    "intersection_mm3": 0.0,
+    "minimum_distance_mm": 0.25
+  },
+  "scope": "Actual BRep intersections of explicit geometry; connector/stakes/plug are envelope approximations; no strength or universalfit proof",
+  "tolerance_gates": {
+    "rear_stop_nominal_gap": 0.6,
+    "rear_stop_allocated_stack": 0.35,
+    "rear_stop_worst_gap": 0.25,
+    "underside_shim_stack": "compliant contact; compression needs specification",
+    "stake_thickness": "not dimensioned in drawing; assumed .3 screening only"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "revision": "POWER-ARCHITECTURE-SCREEN-R1",
+  "HEAD": "b42c0e6284aac734fde851c69146abf73920f337",
+  "scope": "Two alternative families, one12V MPN each; one existingIRM20 allocation comparison; no CAD/circuit changes",
+  "decision": "No alternative qualified for compact enclosure construction. Prefer a stationary source-pod allocation honoring published IRM20 spacing, with12V internal-bus development conditional on a new regulator/protection qualification.",
+  "alternative_families": [
+    {
+      "family": "RECOM RAC20-K",
+      "candidate": "RAC20-12SK/277",
+      "W": 20.0,
+      "body_nominal_LWH_mm": [
+        52.5,
+        27.4,
+        23.0
+      ],
+      "body_max_LWH_mm": [
+        53.0,
+        27.9,
+        23.5
+      ],
+      "lead_projection_minmax_mm": [
+        5.0,
+        7.0
+      ],
+      "body_plus_max_lead_height_mm": 30.5,
+      "lead_diameter_minmax_mm": [
+        0.95,
+        1.15
+      ],
+      "construction_permission": "UNKNOWN"
+    },
+    {
+      "family": "TRACO POWER TMLM20",
+      "candidate": "TMLM 20112",
+      "W": 20.0,
+      "body_nominal_LWH_mm": [
+        52.4,
+        27.2,
+        23.5
+      ],
+      "body_max_LWH_mm": [
+        52.9,
+        27.7,
+        24.0
+      ],
+      "lead_projection_minmax_mm": [
+        7.5,
+        8.5
+      ],
+      "body_plus_max_lead_height_mm": 32.5,
+      "lead_diameter_minmax_mm": [
+        0.5,
+        1.5
+      ],
+      "lead_diameter_note": "Conservative use of general\u00b10.5 drawing tolerance on \u00d81.0; unusually broad, manufacturing clarification required.",
+      "construction_permission": "UNKNOWN"
+    }
+  ],
+  "installation_permission_found_for_tight_system_enclosure": false,
+  "permission_elsewhere": "UNKNOWN; no general waiver inferred and no vendor contact",
+  "numeric_evidence": "numeric-checks.json",
+  "source_manifest": "sources.json",
+  "full_findings": "README.md",
+  "parent_model_sha256": "6e66981270daf982ad78ddf8cbc3612e6951e4157773ab4a36c46c522fcf56bc",
+  "protected_inputs": 473,
+  "all_protected_hashes_match": true,
+  "commands": [
+    "git status --short --branch",
+    "git rev-parse HEAD",
+    "curl -fL --max-redirs <3..5> --max-time <20..30> <officialURL> -o <owned>/sources/<file> (URLs/outcomes in retrieval.json)",
+    "pdftotext -layout <owned>/sources/recom-rac20-k.pdf <owned>/sources/recom-rac20-k.txt",
+    "pdftotext -layout <owned>/sources/traco-tmlm.pdf <owned>/sources/traco-tmlm.txt",
+    "pdftoppm -f 9 -singlefile -scale-to 1500 -png <owned>/sources/recom-rac20-k.pdf <owned>/sources/recom-dimension-p9",
+    "pdftoppm -f 5 -singlefile -scale-to 1500 -png <owned>/sources/traco-tmlm.pdf <owned>/sources/traco-dimension-p5",
+    "python3 hardware/compact-dmx/rotary-compact-candidate/power-architecture-screen/verify.py",
+    "sha256sum -c SHA256SUMS (owned directory)"
+  ],
+  "open_gates": [
+    "Applicable alternative-module installation/approval conditions and terminal/system clearances",
+    "Stationary pod/carrier/trunk/endcap/PE/insulation and assembly allocation; no actual CAD fit",
+    "12V input protection, converter regulation/filter/magnetics, startup and independent5V output fault barrier",
+    "Source current floor failure in frozen5V stress model; no resistor/circuit change",
+    "Sealed thermal, line derating, load steps/inrush/ESR/reverse leakage/fault response, FPC lifecycle and USB compliance"
+  ],
+  "no_CAD_circuit_firmware_hardware_install_outreach_children_publication": true,
+  "manufacturing_release": false
+}

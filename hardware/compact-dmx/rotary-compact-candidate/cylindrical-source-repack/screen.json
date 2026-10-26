@@ -1,0 +1,99 @@
+{
+  "status": "PARTIAL: radial/axial screen only; source retention crossings and terminal construction unqualified",
+  "whole_carrier_reservation": [
+    81,
+    52,
+    44
+  ],
+  "tolerance_each_face": 0.5,
+  "wall_proposal": 3,
+  "bore_radius": 35.1,
+  "outside_diameter": 76.2,
+  "max_reserved_corner_radius": 34.763486591537394,
+  "nominal_corner_gap": 0.3365134084626078,
+  "allocated_bore_radius_minus_point2_gap": 0.13651340846260496,
+  "film_outer_corner_radius": 34.92581423531884,
+  "film_gap_at_bore_minus_point2": -0.025814235318840417,
+  "trunk_centres_yz": [
+    [
+      -8,
+      -29
+    ],
+    [
+      0,
+      -29
+    ],
+    [
+      8,
+      -29
+    ]
+  ],
+  "wire_screen_radius": 2.75,
+  "trunk_max_radius": 32.83321791298265,
+  "trunk_to_reservation_bottom_gap": 3.75,
+  "transition_radius": 12,
+  "transition_angle_deg": 62.720387264021895,
+  "transition_axial_run": 21.33072900770154,
+  "source_axial_length": 88.0,
+  "retained_CIR_core_length": 87,
+  "each_terminal_access_allowance": 20,
+  "variants": {
+    "classic": {
+      "rear_depths": [
+        30.4,
+        30.4
+      ],
+      "panel_to_panel_allocation": 297.1307290077015,
+      "bounding_box": [
+        297.1307290077015,
+        76.2,
+        76.2
+      ],
+      "bounding_volume_mm3": 1725271.7501394786,
+      "vs_CIR_volume_fraction": 0.9316476767229952,
+      "finished_product_envelope": false
+    },
+    "TRUE1": {
+      "rear_depths": [
+        31.2,
+        32.8
+      ],
+      "panel_to_panel_allocation": 300.3307290077015,
+      "bounding_box": [
+        300.3307290077015,
+        76.2,
+        76.2
+      ],
+      "bounding_volume_mm3": 1743852.3581394786,
+      "vs_CIR_volume_fraction": 0.9416812150765336,
+      "finished_product_envelope": false
+    },
+    "NEMA_flange_comparison_NOT_selected": {
+      "rear_depths": [
+        45.3,
+        43.6
+      ],
+      "panel_to_panel_allocation": 325.23072900770154,
+      "bounding_box": [
+        325.23072900770154,
+        76.2,
+        76.2
+      ],
+      "bounding_volume_mm3": 1888432.7141394787,
+      "vs_CIR_volume_fraction": 1.019754685390004,
+      "finished_product_envelope": false
+    }
+  },
+  "baseline_CIR": [
+    275,
+    91,
+    74
+  ],
+  "baseline_330": [
+    330,
+    89,
+    72
+  ],
+  "sources_are_not_mating_planes": true,
+  "S12_electrical_unchanged": true
+}

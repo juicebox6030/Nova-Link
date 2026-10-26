@@ -1,0 +1,416 @@
+{
+  "tool_count": 16,
+  "tool_failures": [],
+  "board_insertion": [
+    {
+      "part": "rotating_J1_S1_StakeReserve",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_J1_S2_StakeReserve",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_J1_S3_StakeReserve",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_J1_S4_StakeReserve",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_PCB",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R10_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R18_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_D1_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R15_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C13_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R7_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R24_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_U5_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_U3_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C4_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C17_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C12_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C10_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C6_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R20_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R12_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R9_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R14_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R21_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R11_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R23_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_U4_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R19_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C7_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_L1_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C5_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C8_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C3_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_J1_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R22_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R8_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R13_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C16_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R25_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R26_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R16_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C2_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R27_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_R17_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C15_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_U2_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "rotating_C9_Body",
+      "frame": "RotorHalfPositiveY",
+      "volume": 0.0,
+      "axial_travel": 35,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "stationary_PCB",
+      "frame": "StationaryCoreWithSupports",
+      "volume": 0.0,
+      "axial_travel": 65,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "stationary_R2_Body",
+      "frame": "StationaryCoreWithSupports",
+      "volume": 0.0,
+      "axial_travel": 65,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "stationary_R5_Body",
+      "frame": "StationaryCoreWithSupports",
+      "volume": 0.0,
+      "axial_travel": 65,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "stationary_R6_Body",
+      "frame": "StationaryCoreWithSupports",
+      "volume": 0.0,
+      "axial_travel": 65,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "stationary_C14_Body",
+      "frame": "StationaryCoreWithSupports",
+      "volume": 0.0,
+      "axial_travel": 65,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "stationary_C1_Body",
+      "frame": "StationaryCoreWithSupports",
+      "volume": 0.0,
+      "axial_travel": 65,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "stationary_R3_Body",
+      "frame": "StationaryCoreWithSupports",
+      "volume": 0.0,
+      "axial_travel": 65,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "stationary_C11_Body",
+      "frame": "StationaryCoreWithSupports",
+      "volume": 0.0,
+      "axial_travel": 65,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "stationary_R1_Body",
+      "frame": "StationaryCoreWithSupports",
+      "volume": 0.0,
+      "axial_travel": 65,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "stationary_R4_Body",
+      "frame": "StationaryCoreWithSupports",
+      "volume": 0.0,
+      "axial_travel": 65,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    },
+    {
+      "part": "stationary_U1_Body",
+      "frame": "StationaryCoreWithSupports",
+      "volume": 0.0,
+      "axial_travel": 65,
+      "basis": "complete axial AABB sweep; conservative relative to package allocation"
+    }
+  ],
+  "USB_positions": 181,
+  "USB_failures": [],
+  "status": "PASS",
+  "limitations": "Engineeringtool/plug envelopes; endcaps absent for assembly; exact cable/latch unknown; supplier package profiles and tool/process qualification open"
+}

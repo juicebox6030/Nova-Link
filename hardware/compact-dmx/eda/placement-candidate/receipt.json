@@ -1,0 +1,78 @@
+{
+  "physical_components": 37,
+  "mechanical_holes": 4,
+  "checked_numbered_pads": 156,
+  "nets": 67,
+  "six_antenna_NC_islands_distinct": true,
+  "source_hash_mutations": [],
+  "reserve_or_edge_conflicts": [],
+  "drc_violations": 0,
+  "unconnected_items": 89,
+  "tracks": 0,
+  "status": "PARTIAL_PLACEMENT_ONLY",
+  "scope": "one unrouted partial candidate; no full-product packing acceptance",
+  "kicad_version": "10.0.7",
+  "changed_paths": [
+    "hardware/compact-dmx/eda/placement-candidate/README.md",
+    "hardware/compact-dmx/eda/placement-candidate/candidate.kicad_pcb",
+    "hardware/compact-dmx/eda/placement-candidate/candidate.kicad_prl",
+    "hardware/compact-dmx/eda/placement-candidate/drc.json",
+    "hardware/compact-dmx/eda/placement-candidate/generate.py",
+    "hardware/compact-dmx/eda/placement-candidate/inputs.json",
+    "hardware/compact-dmx/eda/placement-candidate/placement-preview.png",
+    "hardware/compact-dmx/eda/placement-candidate/placement.pdf",
+    "hardware/compact-dmx/eda/placement-candidate/placement.svg",
+    "hardware/compact-dmx/eda/placement-candidate/receipt.json",
+    "hardware/compact-dmx/eda/placement-candidate/validation.json",
+    "hardware/compact-dmx/eda/placement-candidate/verify.py"
+  ],
+  "switch_gap_discrepancy_mm": 0.28,
+  "proposed_DMX_entry_CAD_mm": [
+    10,
+    20
+  ],
+  "baseline_mutated": false,
+  "visual_inspection": "Cropped PDF detail regenerated; 2D placement only.",
+  "semantic_TX_RX_RE_pairs": [
+    [
+      "U5",
+      2,
+      "U1",
+      19
+    ],
+    [
+      "U5",
+      4,
+      "U1",
+      18
+    ],
+    [
+      "U5",
+      5,
+      "U1",
+      12
+    ]
+  ],
+  "isolated_component_refs": [
+    "C3",
+    "C4",
+    "R_TERM1",
+    "R_TERM2",
+    "S_TERM"
+  ],
+  "corrections": [
+    "Normalize hierarchical net labels; actual-board TX/RX/RE pin assertions",
+    "Move both terminators and C4 to isolated side; all non-U5 courtyard and isolated-net region checks"
+  ],
+  "RF_land_update": "Five source-backed Coilcraft/Murata prototype substitutions; switch remains provisional",
+  "board_sha256": "fe577602e2891b7c78ec8fba5d71f8648076cadccff2774c96e2673c6fb15a2b",
+  "raw_export_hash_differences": [
+    "dmx-interface.net",
+    "mcu-radio/mcu-radio.net"
+  ],
+  "stable_fingerprint_tests": {
+    "dmx-interface.net": "date-only accepted; value/footprint/net/pin/pintype/other metadata changes rejected",
+    "mcu-radio/mcu-radio.net": "date-only accepted; value/footprint/net/pin/pintype/other metadata changes rejected"
+  },
+  "timestamp_only_reexport_without_regeneration_pass": true
+}

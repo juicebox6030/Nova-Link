@@ -1,0 +1,37 @@
+reference,value,kind,footprint,role
+U1,TPS259474LRPWR,purchased,RPW10,"True reverse blocking, latched circuitbreaker; not instantaneous current limiter"
+U2,TPS63070RNMR,purchased,RNM15,ForcedPWM5.136V; startup unloaded until PG enables U3
+U3,TPS25810RVCR,purchased,RVC20,"1.5A Rp/currentlimit, CC orientation, VCONN and detach discharge"
+J1,USB4105-GF-A,purchased,USB4105,"16 contacts /12 shared electrical lands +4 shellstakes, actual primaryB4 drawing"
+J0,FABRICATED_FPC20_SOLDER_LANDS,land_only,FPC20,"20mm ribbon direct solder lands, supplier/process unqualified, external clamp required"
+L1,XFL4020-152MEC 1.5uH,purchased,XFL4020,"Exact TI typical application magnetics, NRND sourcing gate"
+D1,TPD1E10B06DPYR,purchased,DPY2,VBUS IEC transient suppressor; not DC overvoltage protection
+R1,TNPW040224K9BYED 24900ohm,purchased,R0402,UVLO top
+R2,TNPW040210K0BYED 10000ohm,purchased,R0402,UVLO bottom
+R3,TNPW040237K4BYED 37400ohm,purchased,R0402,OVLO top
+R4,TNPW040210K0BYED 10000ohm,purchased,R0402,OVLO bottom
+R5,TNPW04021K00BYED 1000ohm,purchased,R0402,"3.334A nominal breaker, +/-10% plus resistor tolerance"
+R6,TNPW040254K2BYED 54200ohm,purchased,R0402,Reg top0.1%10ppm
+R7,TNPW040210K0BYED 10000ohm,purchased,R0402,Reg bottom0.1%10ppm
+R8,TNPW0402100KBYED 100000ohm,purchased,R0402,PG and U3 EN pullup
+R9,TNPW0402100KBYED 100000ohm,purchased,R0402,U3 EN default pulldown
+R10,TNPW0402100KBYED 100000ohm,purchased,R0402,"Controller precision reference, return NOT ground"
+C1,GRM21BC71E106ME11L 10uF,purchased,C0805,Reg input
+C2,GRM21BC71E106ME11L 10uF,purchased,C0805,Reg input
+C3,TMK107BBJ106MA-T 10uF,purchased,C0603,Reg close input
+C4,GRM21BC81C226ME44L 22uF,purchased,C0805,Reg output
+C5,GRM21BC81C226ME44L 22uF,purchased,C0805,Reg output
+C6,GRM21BC81C226ME44L 22uF,purchased,C0805,Reg output
+C7,TMK107BBJ106MA-T 10uF,purchased,C0603,Reg close output
+C8,T520D157M010ATE055 150uF,purchased,T520D,Positive pad1;120uF min25C bulk before cold-socket switch
+C9,GRM21BC71E106ME11L 10uF,purchased,C0805,Port output bypass
+C10,TMK105B7104MV-FR 100nF,purchased,C0402,U3 close bypass
+C11,TMK105B7104MV-FR 100nF,purchased,C0402,Do not load VAUX
+C12,GRM155R71E103KA01D 10nF,purchased,C0402,Efuse slew setting; max inrush still bounded by physical circuit tests
+C13,TMK105B7104MV-FR 100nF,purchased,C0402,FPC local bypass
+R13,TNPW0402100RBYED 100ohm,purchased,R0402,TI TPS25947 section7.3.5.1 series100ohm forCdVdt>10nF; C12max11nF
+R12,TNPW040210K0BYED 10000ohm,purchased,R0402,TI TPS63070 section11.1 requires10k series whenEN tiedVIN
+R11,TNPW0402100KBYED 100000ohm,purchased,R0402,"Fault OD pullup, diagnostic only"
+TP1,FAB_FAULT_PROBE,land_only,TP1,Bare1mm fault probe; no MCU/software dependency
+#FLG1,ACTUAL_EXTERNAL_SOURCE,flag,,Isolated module/FPC input and return
+#FLG2,ACTUAL_EXTERNAL_SOURCE,flag,,Isolated module/FPC input and return

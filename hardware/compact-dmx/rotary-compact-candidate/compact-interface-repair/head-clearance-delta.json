@@ -1,0 +1,24 @@
+{
+  "before_native_sha256": "f848d8f34788c84d49f4af97364c7f9f05a67bfb0de9e58052a96c059dbac31a",
+  "after_native_sha256": "714f5a5be445ddfd91141cd8118658deffca614758dd4410c192be05df77b2db",
+  "part": "StationaryCoreWithSupports",
+  "added_material_mm3": 0.0,
+  "removed_material_mm3": 1.0992871539359994,
+  "bores": [
+    {
+      "x": 47.19,
+      "y": 14.1,
+      "z": -9,
+      "radius": 1.05,
+      "length": 1.2
+    },
+    {
+      "x": 47.19,
+      "y": 14.1,
+      "z": 9,
+      "radius": 1.05,
+      "length": 1.2
+    }
+  ],
+  "basis": "Only removal; prior zero-intersection/motion bounds against old core are conservative. Fresh all-core pairs and access checks required."
+}

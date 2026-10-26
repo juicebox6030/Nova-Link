@@ -1,0 +1,4 @@
+(footprint "Epson_FC135_Manufacturer" (version 20241229) (generator "nova_source_lands") (layer "F.Cu") (attr smd) (descr "Epson FC135 EVer2.0 p4;1x1.8 lands centers2.5; no circuit patterns under body; custom AG0 electrical suffix remains supplier gate") (fp_text reference "REF**" (at 0 -1.9) (layer "F.SilkS") (effects (font (size .8 .8) (thickness .12))))(fp_rect (start -1.6 -0.75) (end 1.6 0.75) (stroke (width .05) (type default)) (fill none) (layer "F.Fab"))(fp_rect (start -2.0 -1.15) (end 2.0 1.15) (stroke (width .05) (type default)) (fill none) (layer "F.CrtYd"))
+(pad "1" smd rect (at -1.25 0) (size 1 1.8) (layers "F.Cu" "F.Mask" "F.Paste"))
+(pad "2" smd rect (at 1.25 0) (size 1 1.8) (layers "F.Cu" "F.Mask" "F.Paste"))
+)

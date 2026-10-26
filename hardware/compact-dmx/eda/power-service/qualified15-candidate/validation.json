@@ -1,0 +1,178 @@
+{
+  "status": "PASS static electrical/netlist checks; not arbitrary analog timing or manufacturing release",
+  "ICs": 30,
+  "IC_pins_checked": 212,
+  "two_terminal_checks": 105,
+  "stable_cases": 1536,
+  "CC_orientation_mode_cases": [
+    {
+      "orientation": "CC1",
+      "mode": "unattached",
+      "OUT1": 1,
+      "OUT2": 1,
+      "main_eFuse_enabled": false,
+      "empty_cap_buck_enabled": false
+    },
+    {
+      "orientation": "CC1",
+      "mode": "default",
+      "OUT1": 1,
+      "OUT2": 0,
+      "main_eFuse_enabled": false,
+      "empty_cap_buck_enabled": false
+    },
+    {
+      "orientation": "CC1",
+      "mode": "1.5A",
+      "OUT1": 0,
+      "OUT2": 1,
+      "main_eFuse_enabled": true,
+      "empty_cap_buck_enabled": true
+    },
+    {
+      "orientation": "CC1",
+      "mode": "3A",
+      "OUT1": 0,
+      "OUT2": 0,
+      "main_eFuse_enabled": true,
+      "empty_cap_buck_enabled": true
+    },
+    {
+      "orientation": "CC1",
+      "mode": "detached",
+      "OUT1": 1,
+      "OUT2": 1,
+      "main_eFuse_enabled": false,
+      "empty_cap_buck_enabled": false
+    },
+    {
+      "orientation": "CC1",
+      "mode": "invalid/dead-VDD",
+      "OUT1": 1,
+      "OUT2": 1,
+      "main_eFuse_enabled": false,
+      "empty_cap_buck_enabled": false
+    },
+    {
+      "orientation": "CC2",
+      "mode": "unattached",
+      "OUT1": 1,
+      "OUT2": 1,
+      "main_eFuse_enabled": false,
+      "empty_cap_buck_enabled": false
+    },
+    {
+      "orientation": "CC2",
+      "mode": "default",
+      "OUT1": 1,
+      "OUT2": 0,
+      "main_eFuse_enabled": false,
+      "empty_cap_buck_enabled": false
+    },
+    {
+      "orientation": "CC2",
+      "mode": "1.5A",
+      "OUT1": 0,
+      "OUT2": 1,
+      "main_eFuse_enabled": true,
+      "empty_cap_buck_enabled": true
+    },
+    {
+      "orientation": "CC2",
+      "mode": "3A",
+      "OUT1": 0,
+      "OUT2": 0,
+      "main_eFuse_enabled": true,
+      "empty_cap_buck_enabled": true
+    },
+    {
+      "orientation": "CC2",
+      "mode": "detached",
+      "OUT1": 1,
+      "OUT2": 1,
+      "main_eFuse_enabled": false,
+      "empty_cap_buck_enabled": false
+    },
+    {
+      "orientation": "CC2",
+      "mode": "invalid/dead-VDD",
+      "OUT1": 1,
+      "OUT2": 1,
+      "main_eFuse_enabled": false,
+      "empty_cap_buck_enabled": false
+    }
+  ],
+  "temporal_scenarios": "empty-cap source boot; PG-gated charging; cap-only booster startup; downgrade backup; UVLO and proven rail-loss cutoff; no source-free rebound rearm PASS",
+  "fault_latch": "TPS259474L internally latched circuit-breaker; EN stays CC_ALLOW despite PG/output collapse. No blanket peak-current claim.",
+  "source_stability": "TPS3808G01 CTopen12..28ms assertion after actual SOURCE_VALID and actualBUCKPG; asynchronous assertion low; finite propagation requires measurement",
+  "source_wired_AND": [
+    "U6.3 PG",
+    "U10.1 USBUV",
+    "U20.1 RAWUV"
+  ],
+  "ERC_errors": 0,
+  "ERC_warnings": 0,
+  "ERC_exclusions": 0,
+  "physical_parts": 134,
+  "body_area_excluding_cell_including_USB_mm2": 313.972,
+  "body_area_excluding_cell_and_USB_mm2": 253.17999999999998,
+  "USB_contract": "GCT six physical contacts+SH; no old24contact phantom pins; TUSB internalRd only",
+  "MCU_DMX_factory_mapping": "18/7/6 preserved; no fault translator or firmware",
+  "manufacturing_release": false,
+  "U40_source_behavior": {
+    "evidence": "mux-mode-proof.json",
+    "only_exported_pin_changes": [
+      [
+        "U40.5",
+        "GND_USB",
+        "AON_USB_LIMITED"
+      ]
+    ],
+    "datasheet_truth_rows": 7,
+    "qualified_corner_cases": 48,
+    "old_grounded_MODE_negative_cases": 2,
+    "physical_supply_gate_cases": [
+      {
+        "scenario": "cold source",
+        "U40_selection": "VIN1",
+        "conditional_AON_input_V": 3.73769,
+        "SOURCE_VALID": true,
+        "CAP_ARM": false,
+        "BUCK_EN": true
+      },
+      {
+        "scenario": "default source",
+        "U40_selection": "VIN1",
+        "conditional_AON_input_V": 3.73769,
+        "SOURCE_VALID": false,
+        "CAP_ARM": false,
+        "BUCK_EN": false
+      },
+      {
+        "scenario": "hot attach",
+        "U40_selection": "VIN1",
+        "conditional_AON_input_V": 3.73769,
+        "SOURCE_VALID": true,
+        "CAP_ARM": true,
+        "BUCK_EN": true
+      },
+      {
+        "scenario": "backup after detach",
+        "U40_selection": "VIN2",
+        "conditional_AON_input_V": 3.9,
+        "SOURCE_VALID": false,
+        "CAP_ARM": true,
+        "BUCK_EN": true
+      },
+      {
+        "scenario": "source-free cap rebound",
+        "U40_selection": "VIN2",
+        "conditional_AON_input_V": 3.9,
+        "SOURCE_VALID": false,
+        "CAP_ARM": false,
+        "BUCK_EN": false
+      }
+    ],
+    "unpowered_logic": "Not evaluated as valid logic; no assertion about sub1.65V gates or supervisor timing"
+  }
+}

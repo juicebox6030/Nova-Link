@@ -1,0 +1,65 @@
+{
+  "status": "PARTIAL_PROPOSED_PLACEMENT_PASS_NOT_RELEASED",
+  "kicad": "10.0.7",
+  "electrical_parts": 39,
+  "retained_parts": 37,
+  "baseline_pad_geometry_net_values_unchanged": true,
+  "original_source_backed": 36,
+  "original_provisional_switch": 1,
+  "new_USB_electrical_pads": 6,
+  "shell_stakes": 4,
+  "new_NOR_pads": 9,
+  "geometric_DRC_violations": 0,
+  "unconnected_items": 103,
+  "spatial_conflicts": [],
+  "tracks": 0,
+  "qualified_1p5A_power_circuit_placed": false,
+  "manufacturer_PCB_thickness_tolerance_verified": false,
+  "sources": {
+    "drawing.pdf": {
+      "url": "https://gct.co/download?name=USB4125.pdf&type=PDFDrawing",
+      "sha256": "ea33e0b40545e545bf698cbac3bb1c0f5a3fc7ca6b5b7fda83a63134d4affaa7",
+      "bytes": 469688
+    },
+    "spec.pdf": {
+      "url": "https://gct.co/download?name=usb4125-spec.pdf&type=PDFSpecification",
+      "sha256": "adeaf1f264b8999c4b40bfd7fd202543201a60246297be6906a83e08a59259a2",
+      "bytes": 395353
+    },
+    "product-status.json": {
+      "url": "https://gct.co/connector/usb4125",
+      "sha256": "61f6732561cd6a21f87580f6a45aeae1aff70ca5f57fc56167790fcdc33da1df",
+      "bytes": 5539
+    }
+  },
+  "changed_paths": [
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/Candidate.pretty/AT25SF161B_MHB_Derived.kicad_mod",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/Candidate.pretty/GCT_USB4125_GF_A.kicad_mod",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/README.md",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/candidate.kicad_pcb",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/candidate.kicad_prl",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/candidate.kicad_pro",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/check.log",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/drc.json",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/generate.py",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/inputs.json",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/placement.pdf",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/placement.svg",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/preview.png",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/sources/drawing.pdf",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/sources/product-status.json",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/sources/product.html",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/sources/spec.pdf",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/sources.json",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/validation.json",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/verify.py"
+  ],
+  "board_sha256": "dca73c2ab334e62814240cd0c01a24c17fa69820f151dbf55571e56febdca278",
+  "proposals": [
+    "restore solid PCB under topmount; replace old midmount notch with four plated slots",
+    "resolve3mm case recess against actual plug shoulder/overmold",
+    "adopt explicit shell ground/ESD policy",
+    "reserve NOR separately from unplaced qualified1.5A power"
+  ],
+  "active_circuit_BOM_CAD_or_baseline_board_changed": false
+}

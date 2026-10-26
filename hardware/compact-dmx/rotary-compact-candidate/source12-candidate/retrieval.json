@@ -1,0 +1,44 @@
+[
+  {
+    "file": "taiyo-input.html",
+    "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=TMK212BBJ106MG-T",
+    "rc": 0,
+    "error": ""
+  },
+  {
+    "file": "taiyo-output.html",
+    "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=EMK212BBJ226MG-T",
+    "rc": 0,
+    "error": ""
+  },
+  {
+    "file": "taiyo-input-current.html",
+    "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MSAST21GBB5106MTNA01&u=M",
+    "rc": 0,
+    "error": ""
+  },
+  {
+    "file": "taiyo-output-current.html",
+    "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MLASE21GBB5226MTNA01&u=M",
+    "rc": 0,
+    "error": ""
+  },
+  {
+    "file": "taiyo-output-preferred.html",
+    "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MSASE21GBB5226MTNA01&u=M",
+    "rc": 0,
+    "error": ""
+  },
+  {
+    "file": "MSAST21GBB5106MTNA01.pdf",
+    "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MSAST21GBB5106MTNA01",
+    "rc": 22,
+    "error": "  0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "file": "MSASE21GBB5226MTNA01.pdf",
+    "url": "https://ds.yuden.co.jp/TYCOMPAS/ut/specSheet?pn=MSASE21GBB5226MTNA01",
+    "rc": 22,
+    "error": "  0      0      0 --:--:-- --:--:-- --:--:--     0\ncurl: (22) The requested URL returned error: 404\n"
+  }
+]

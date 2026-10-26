@@ -1,0 +1,423 @@
+{
+  "revision": "CI-R1",
+  "task": "Three stationary power connector interface contracts, one chassis pair per variant",
+  "status": "COMPLETE_SOURCE_CONTRACT_PASS_END_ALLOCATION_UNQUALIFIED",
+  "created_utc": "2026-10-23T20:38:50.052702+00:00",
+  "repository_head": "b42c0e6284aac734fde851c69146abf73920f337",
+  "branch": "main",
+  "owned_write_root": "hardware/compact-dmx/connector-interface-candidate",
+  "baseline_or_circuit_edits": false,
+  "git_publication": false,
+  "hardware_or_energized_tests": false,
+  "children_or_vendor_contact_or_installs": false,
+  "unfinished_Astra_outputs_consumed": false,
+  "candidate_interfaces": 6,
+  "specified_external_mate_models": 6,
+  "current_original_source_count": 42,
+  "source_manifest_sha256": "fdcd45490a227ab406f3073f3302c3bb6f4b6d557f8443f06a50c94d0eae7946",
+  "protected_snapshot_count": 96,
+  "protected_deltas": [],
+  "protected_snapshot_sha256": "39f09c5e11aa2983cdc966aba9aeeb051ebc4444edfdf4f38a9533aa1d98608e",
+  "verification": {
+    "status": "PASS_REFERENCE_CONTRACT_CHECKS",
+    "sources_checked": 42,
+    "official_steps_checked": 12,
+    "barrel_candidate_interfaces": 6,
+    "external_mate_models": 6,
+    "saved_models_checked": 12,
+    "protected_inputs_checked": 96,
+    "protected_deltas": [],
+    "negative_mating_cases": 3,
+    "legacy_no_cbc_negative_case": true,
+    "all_24mm_bare_rear_allocations_fail": true,
+    "nema_48mm_flange_allocation_fails": true,
+    "manufacturing_release": false
+  },
+  "saved_cad_evidence_sha256": "7f9d2c30acb362ff03517c911e332a4b6ce6f4ab8ca3d71b9fe2c8bf98cf256c",
+  "geometry_summary": [
+    {
+      "id": "pc-in",
+      "panel_face": "Face460",
+      "panel_coordinate_mm": 0.0,
+      "sampled_bare_rear_depth_from_panel_mm": 30.050000073197044,
+      "drawing_rear_depth_mm": 30.4,
+      "cad_minus_drawing_mm": -0.3499999268029548,
+      "sampled_radial_diameter_mm": 37.46905070434628
+    },
+    {
+      "id": "pc-out",
+      "panel_face": "Face680",
+      "panel_coordinate_mm": 0.0,
+      "sampled_bare_rear_depth_from_panel_mm": 29.950000073197042,
+      "drawing_rear_depth_mm": 30.4,
+      "cad_minus_drawing_mm": -0.4499999268029562,
+      "sampled_radial_diameter_mm": 37.46905070434628
+    },
+    {
+      "id": "true1-in",
+      "panel_face": "Face178",
+      "panel_coordinate_mm": 0.0,
+      "sampled_bare_rear_depth_from_panel_mm": 31.2,
+      "drawing_rear_depth_mm": 31.2,
+      "cad_minus_drawing_mm": 0.0,
+      "sampled_radial_diameter_mm": 37.609574923381004
+    },
+    {
+      "id": "true1-out",
+      "panel_face": "Face105",
+      "panel_coordinate_mm": 0.0,
+      "sampled_bare_rear_depth_from_panel_mm": 32.80000014197652,
+      "drawing_rear_depth_mm": 32.8,
+      "cad_minus_drawing_mm": 1.4197652120628845e-07,
+      "sampled_radial_diameter_mm": 45.506810921903515
+    },
+    {
+      "id": "nema-in",
+      "panel_face": "Face4",
+      "panel_coordinate_mm": -19.83732635802925,
+      "sampled_bare_rear_depth_from_panel_mm": 45.26272635802927,
+      "drawing_rear_depth_mm": 45.3,
+      "cad_minus_drawing_mm": -0.03727364197072802,
+      "sampled_radial_diameter_mm": 63.49997500000019
+    },
+    {
+      "id": "nema-out",
+      "panel_face": "Face71",
+      "panel_coordinate_mm": -4.3434736419707365,
+      "sampled_bare_rear_depth_from_panel_mm": 43.63705759804924,
+      "drawing_rear_depth_mm": 43.6,
+      "cad_minus_drawing_mm": 0.03705759804923758,
+      "sampled_radial_diameter_mm": 63.499975000001015
+    }
+  ],
+  "source_model_limits": {
+    "invalid_whole_shapes": [
+      "true1-in",
+      "true1-out"
+    ],
+    "no_closed_solids": [
+      "nema-in",
+      "true1-mate-f",
+      "true1-mate-m",
+      "nema-mate-f"
+    ],
+    "healed_or_reconstructed_vendor_solids": false,
+    "mated_assembly_or_certified_bbox_claim": false,
+    "STEP_ENTITY_to_FreeCAD_FACE_mapping_claim": false
+  },
+  "decisions": {
+    "classic": "Current NAC3MPXXA/B with matched FXXA/B cord connectors. Gray B to blue A fixture jumper. Legacy fixture combinations have no CBC. Original chassis discontinued per current official family page.",
+    "TRUE1": "NAC3MPX-TOP / NAC3FPX-TOP with female FX / male MX cable mates; separate input/output genders and installation assignment.",
+    "NEMA": "5278-C / 5279-C flanged comparison, 5269-C / 5266-C class-compatible cable mates. No default locking. Not a replacement approval for baseline molded pigtails. Exact-PN mating recommendation inferred from stated NEMA classes, not an explicit manufacturer pair table.",
+    "24mm": "All six nominal bare rear depths exceed 24 mm; full terminated ends cannot be accepted within that standalone allocation.",
+    "48mm": "NEMA flange diameter63.5 exceeds48 by15.5. Neutrik nominal flange outline only may be plausible; no assembled bore/wall/boss/seal fit claim."
+  },
+  "open_gates": [
+    "Contact mating planes/insertion overlap and latched installed lengths, cap/grasp/rotation access.",
+    "Exact insulated terminals/sleeves, rear tool and wire sweeps, cable bend radius, cord type/gauge and strain relief.",
+    "Panel thickness, chosen mounting side, fasteners/bosses/seal/wall ligaments and full toleranced assembly.",
+    "Classic CAD-vs-drawing rear depth discrepancy; TRUE1 invalid whole models; open-shell CAD; model/drawing version differences.",
+    "Exact approved molded NEMA pigtails remain unselected; no custom mounting approval for field-wireable cord connectors.",
+    "Stationary PE continuity/retention, touch protection, clearances/insulation, full load/thermal/conformity evaluation; no whole-product rating.",
+    "All pre-existing source fault-energy, module installation, electrical/thermal and collar integration blockers remain separate and unresolved."
+  ],
+  "commands": [
+    {
+      "argv": [
+        "env",
+        "QT_QPA_PLATFORM=offscreen",
+        "/home/juicebox/.local/bin/freecadcmd",
+        "/home/juicebox/Nova-Link/hardware/compact-dmx/connector-interface-candidate/inspect-cad.py"
+      ],
+      "exit_code": 0,
+      "evidence": "cad-inspection.log; cad-inspection.json; sources/manufacturer-models.FCStd"
+    },
+    {
+      "argv": [
+        "env",
+        "QT_QPA_PLATFORM=offscreen",
+        "/home/juicebox/.local/bin/freecadcmd",
+        "/home/juicebox/Nova-Link/hardware/compact-dmx/connector-interface-candidate/check-saved-cad.py"
+      ],
+      "exit_code": 0,
+      "evidence": "saved-cad-check.log; saved-cad-check.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "hardware/compact-dmx/connector-interface-candidate/verify.py"
+      ],
+      "exit_code": 0,
+      "evidence": "verify.log; verification.json"
+    },
+    {
+      "argv": [
+        "python3",
+        "hardware/compact-dmx/connector-interface-candidate/make-views.py"
+      ],
+      "exit_code": 0,
+      "evidence": "views/contract-summary.pdf; .svg; .html"
+    },
+    {
+      "argv": [
+        "pdftoppm",
+        "-scale-to",
+        "1600",
+        "-png",
+        "hardware/compact-dmx/connector-interface-candidate/views/contract-summary.pdf",
+        "hardware/compact-dmx/connector-interface-candidate/sources/report-page"
+      ],
+      "exit_code": 0,
+      "evidence": "sources/report-page-1.png; sources/report-page-2.png; both visually inspected"
+    },
+    {
+      "argv": [
+        "pdfinfo",
+        "hardware/compact-dmx/connector-interface-candidate/views/contract-summary.pdf"
+      ],
+      "exit_code": 0,
+      "evidence": "2-page ReportLab PDF; visually inspected"
+    },
+    {
+      "argv": [
+        "python3",
+        "hardware/compact-dmx/connector-interface-candidate/fetch-sources.py",
+        "pc-in.html=https://www.neutrik.com/en/product/nac3mpxxa",
+        "pc-out.html=https://www.neutrik.com/en/product/nac3mpxxb",
+        "true1-in.html=https://www.neutrik.com/en/product/nac3mpx-top",
+        "true1-out.html=https://www.neutrik.com/en/product/nac3fpx-top",
+        "nema-in.html=https://leviton.com/products/5278-c",
+        "nema-out.html=https://leviton.com/products/5279-c"
+      ],
+      "exit_code": 0,
+      "evidence": "source-manifest.json; all files hash-checked"
+    },
+    {
+      "argv": [
+        "python3",
+        "hardware/compact-dmx/connector-interface-candidate/fetch-sources.py",
+        "pc-in.step=https://www.neutrik.com/media/14373/download/nac3mpxxa.stp?v=1",
+        "pc-out.step=https://www.neutrik.com/media/14380/download/30009536_-_NAC3MPXXB.stp?v=4",
+        "pc-in-drawing.pdf=https://www.neutrik.com/media/14374/download/st-nac3mpxxa.PDF?v=1",
+        "pc-out-drawing.pdf=https://www.neutrik.com/media/14378/download/st-nac3mpxxb.PDF?v=1",
+        "pc-mount.pdf=https://www.neutrik.com/media/14384/download/Assembly%20recommendation%20of%20powerCON%20chassis%20connector.pdf?v=1",
+        "true1-in.step=https://www.neutrik.com/media/12884/download/nac3mpx-top.stp?v=10",
+        "true1-out.step=https://www.neutrik.com/media/12882/download/30010398_-_NAC3FPX-TOP.stp?v=3",
+        "true1-in-drawing.pdf=https://www.neutrik.com/media/12874/download/st-nac3mpx-top.PDF?v=1",
+        "true1-out-drawing.pdf=https://www.neutrik.com/media/12868/download/20003608_-_NAC3FPX-TOP.pdf?v=3",
+        "true1-in-mount.pdf=https://www.neutrik.com/media/12863/download/BDA%20544%20V3%20%20-%20powerCON%20TRUE1%20TOP%20-%20NAC3MPX-TOP%20%2B%20NAC3MPX-WOT-TOP.pdf?v=12",
+        "true1-out-mount.pdf=https://www.neutrik.com/media/12861/download/BDA%20545%20V3%20%20-%20powerCON%20TRUE1%20TOP%20-%20NAC3FPX-TOP%20%2B%20NAC3FPX-WOT-TOP.pdf?v=9",
+        "nema-in.step=https://leviton.com/content/dam/leviton/commercial-industrial/product_documents/dimensional_drawing/CATSTD-05278-00C-M01.STEP",
+        "nema-out.step=https://leviton.com/content/dam/leviton/commercial-industrial/product_documents/dimensional_drawing/CATSTD-05279-00C-M01.STEP",
+        "nema-in-drawing.jpg=https://leviton.com/content/dam/leviton/commercial-industrial/product_documents/dimensional_drawing/CATSTD-05278-00C-D01.JPG",
+        "nema-out-drawing.pdf=https://leviton.com/content/dam/leviton/commercial-industrial/product_documents/dimensional_drawing/CATSTD-05279-00C-M01.pdf",
+        "nema-mount.pdf=https://leviton.com/content/dam/leviton/commercial-industrial/product_documents/instruction_sheet/PK-93763-10-02-0C-W.pdf",
+        "pc-mate-a.html=https://www.neutrik.com/en/product/nac3fxxa-w-s",
+        "pc-mate-b.html=https://www.neutrik.com/en/product/nac3fxxb-w-s",
+        "true1-mate-f.html=https://www.neutrik.com/en/product/nac3fx-w-top",
+        "true1-mate-m.html=https://www.neutrik.com/en/product/nac3mx-w-top",
+        "nema-mate-f.html=https://leviton.com/products/5269-c",
+        "nema-mate-m.html=https://leviton.com/products/5266-c"
+      ],
+      "exit_code": 0,
+      "evidence": "source-manifest.json; all files hash-checked"
+    },
+    {
+      "argv": [
+        "python3",
+        "hardware/compact-dmx/connector-interface-candidate/fetch-sources.py",
+        "pc-compatibility.html=https://www.neutrik.us/en-us/news/neu-powercon-xx-iec-60320-1-konform",
+        "pc-family.html=https://www.neutrik.com/en/neutrik/products/powercon-r/powercon-r-xx-series"
+      ],
+      "exit_code": 0,
+      "evidence": "source-manifest.json; all files hash-checked"
+    },
+    {
+      "argv": [
+        "python3",
+        "hardware/compact-dmx/connector-interface-candidate/fetch-sources.py",
+        "pc-mate-a.step=https://www.neutrik.com/media/17080/download/NAC3FXXA-W-S.stp?v=1",
+        "pc-mate-b.step=https://www.neutrik.com/media/17066/download/NAC3FXXB-W-S.stp?v=1",
+        "pc-cable-assembly.pdf=https://www.neutrik.com/media/17126/download/BDA%20639%20V4%20-%20powerCON%20Cable%20Connector.pdf?v=2",
+        "true1-mate-f.step=https://www.neutrik.com/media/13351/download/nac3fx-w-top.stp?v=1",
+        "true1-mate-m.step=https://www.neutrik.com/media/13352/download/nac3mx-w-top.stp?v=1",
+        "true1-cable-f-assembly.pdf=https://www.neutrik.com/media/12859/download/BDA%20541%20V6%20-%20powerCON%20TRUE1%20TOP%20-%20NAC3FX-W-TOP.pdf?v=6",
+        "true1-cable-m-assembly.pdf=https://www.neutrik.com/media/12860/download/BDA%20542%20V6%20-%20powerCON%20TRUE%201%20TOP%20-%20NAC3MX-W-TOP.pdf?v=7",
+        "true1-safety.pdf=https://www.neutrik.com/media/13212/download/BDA%20559%20V3%20-%20powerCON%20TRUE1%20TOP%20SAFETY%20NOTICE.pdf?v=2",
+        "nema-mate-f.step=https://leviton.com/content/dam/leviton/commercial-industrial/product_documents/dimensional_drawing/CATSTD-05269-00C-M01.STEP",
+        "nema-mate-m.step=https://leviton.com/content/dam/leviton/commercial-industrial/product_documents/dimensional_drawing/CATSTD-05266-00X-M01.STEP",
+        "nema-cable-assembly.pdf=https://leviton.com/content/dam/leviton/commercial-industrial/product_documents/instruction_sheet/PK-93690-10-02-0C-W.pdf"
+      ],
+      "exit_code": 0,
+      "evidence": "source-manifest.json; all files hash-checked"
+    },
+    {
+      "argv": [
+        "python3",
+        "hardware/compact-dmx/connector-interface-candidate/fetch-sources.py",
+        "neutrik-product-guide.pdf=https://www.neutrik.com/media/10093/download/Neutrik%20Product%20Guide%20-%2006%20powerCON%20and%20Circular%20Connectors%20PG%20EN%20202210-V25.pdf?v=10"
+      ],
+      "exit_code": 0,
+      "evidence": "source-manifest.json; all files hash-checked"
+    },
+    {
+      "argv": [
+        "sha256sum",
+        "--quiet",
+        "-c",
+        "SHA256SUMS"
+      ],
+      "working_directory": "/home/juicebox/Nova-Link/hardware/compact-dmx/connector-interface-candidate",
+      "exit_code": 0,
+      "evidence": "Final CLI inventory validation; 138 entries, checked after receipt was written"
+    }
+  ],
+  "visual_check": {
+    "PDF_pages": 2,
+    "PDF_both_pages_inspected": true,
+    "HTML_preview_width": 728,
+    "HTML_preview_height": 471,
+    "HTML_console_messages": []
+  },
+  "artifact_count_excluding_receipt_and_SHA256SUMS": 137,
+  "artifacts": {
+    ".gitignore": "df8676c5260f2e92a22d429d37486a98e74c375cf7e82d6414385e6b5df3c6eb",
+    "README.md": "954e22b68e027891349cec4dd115c83f6c5cf8f29bba1652d7fbee3c5857c03c",
+    "__pycache__/check-saved-cad.cpython-311.pyc": "cab115ac122963f3e2cdc56d5c7c0d3cc71a3e659b614655025a5ff3f3efa842",
+    "__pycache__/inspect-cad.cpython-311.pyc": "51783a47a509382af3f2cb0bb4a0926b8d2a124b8ab6eac6d8711dafee20f3e5",
+    "cad-inspection.json": "be5bfb26fdaed0435c849f049f1d331e272c40b2209e05716ec4dea4148612f6",
+    "cad-inspection.log": "1660b554425a2ede01e3b5a61d4871dc7d2e103f87025852980d398c5d9b7017",
+    "check-saved-cad.py": "63f1d09c30807716b405af2a7cf805a216a64007668b82c8645ec2667a67dfbd",
+    "contracts.json": "e9aaff0b5f77e7c359a868272fddbfff5fed269c4a220a50f15b9cef072c9df7",
+    "fetch-sources.py": "3747ddfcc9f60a707c7c7e613a4be42a8d055f2cb95ac5e5ed8b115576ea06dd",
+    "inspect-cad.py": "9a530f0a50a38a14aef7bbfce2d84d1b3e98b48267134557ffeb915ea0830d68",
+    "make-views.py": "2e19bb101f4c838f9836319434ecb0d176111de9024739cd6d6c6ecc61c4147f",
+    "protected-inputs.json": "39f09c5e11aa2983cdc966aba9aeeb051ebc4444edfdf4f38a9533aa1d98608e",
+    "saved-cad-check.json": "7f9d2c30acb362ff03517c911e332a4b6ce6f4ab8ca3d71b9fe2c8bf98cf256c",
+    "saved-cad-check.log": "0cbd4759b13ef5d10f78ecad30c9c5c8d5cd4bd017bdd67bc77a8b2ea842bc54",
+    "source-manifest.json": "fdcd45490a227ab406f3073f3302c3bb6f4b6d557f8443f06a50c94d0eae7946",
+    "sources/manufacturer-models.FCStd": "b4bfc3d52423160050611f641a3c21262f1e12f80cf0fa99f05db75caa2717f1",
+    "sources/nema-cable-assembly.pdf": "d255fe7b4698678a2b56b42e80a1f59150e042114fb60fba71e7640885ac03b6",
+    "sources/nema-cable-assembly.txt": "396a37fe9e5c04da51ad2c2a5228771680647c68cedf96f3e41789f90abad349",
+    "sources/nema-in-all-faces.json": "3d7f678ad5eb824ae6d50b12da8f88e4a384f9d62719f6211fa2dd2f52debd07",
+    "sources/nema-in-drawing.jpg": "5781d557cc4d1e327bf43bb83314c6008fdcd6b07b1497ce360ca502f7f0e750",
+    "sources/nema-in.html": "e2e12c77adef2342b4a78f0d3f89c733a5762065a9b44df928fe425ca375a115",
+    "sources/nema-in.step": "e1bc0695fcd40393ee978d827b9ddb97aa633635ce38817b8a78a5545c98b944",
+    "sources/nema-in.txt": "447e87e2ab8c3ab0ccc17a9226a4684619a591d64743185938f5001c2b4666fe",
+    "sources/nema-mate-f-all-faces.json": "71db60aac5618e7ceb5ab3e2f5bbfe6af0c883165e879e31df98093861e32add",
+    "sources/nema-mate-f.html": "c1a09d72bf194a6185f40280640f2046f6854c1ea9af5b363204d6ce0b5ae123",
+    "sources/nema-mate-f.step": "ebea059b9ba040ec74a3f66f8dfb1d268de5a4ae2e50ca58045fb89554264015",
+    "sources/nema-mate-f.txt": "071a2cb29f0d2cbd86f4716d8785b14ba24b3a1399ffdbb147f59f65fe68bed1",
+    "sources/nema-mate-m-all-faces.json": "dccea796c00d2223d8924df0aea486af35bdc281981e2cacd907893553f7efd4",
+    "sources/nema-mate-m.html": "5686e24bc6eb5a74ba391014f53051cceed384c40e143d22c1dfe7b4a220f43b",
+    "sources/nema-mate-m.step": "c29ec13a617d7101c08a046faec0105be6a4033bed7c191ce1de62bb59567120",
+    "sources/nema-mate-m.txt": "825de7d34ff9adfe4daa12e148f96f2e5b21751f9c64dad54f569a88fb5a9258",
+    "sources/nema-mount.pdf": "1e2b4a05df3b686f2e58cd576465734c7a3984ff6a2f22a5af750c046407f63f",
+    "sources/nema-mount.txt": "ba1a6fdc80a847a891475343f1cef2c4150b50114efdb18d803b7589bf734aa9",
+    "sources/nema-out-all-faces.json": "dd45bcfef2a04656320ffc8a2f2a07bd5480a8102999a32a4d2be2d8ddac2b2f",
+    "sources/nema-out-drawing.pdf": "34685cd7f4212db635c2c77f5f82673aaf8b68ebd963b712be41aecaf0285ae8",
+    "sources/nema-out-drawing.png": "871da01f04ad1eff6bf3492e044d67075eea7f75917cda6397327964ef531f3d",
+    "sources/nema-out-drawing.txt": "47b1a47e57114b59253454aa22914876e444360ca13f3c347dd5e302c016c22a",
+    "sources/nema-out.html": "730b0496167d9259554dd52274618cc8ad44b681be4a1141d6eda6ba37749cd3",
+    "sources/nema-out.step": "a7dbe69fe92b770157f15b3fdfb16ae645a063f75d0a2d540ac53733eb23de70",
+    "sources/nema-out.txt": "4bc655671325ca5faeda635c90927f9bf25a79c1fec38c61a3d9b70b57aaf8e5",
+    "sources/neutrik-product-guide.pdf": "50d2123b7745257d28e4467f11eb616690a596252cd42d080737a5750f840286",
+    "sources/neutrik-product-guide.txt": "585d5c3dd794f00ca0aae8debe6bf6945ba09cdbfd16c7fb5aaa7a9826505624",
+    "sources/pc-cable-assembly.pdf": "d2fa713d7a68fb10f8e88406d9e424a8a825d69fc2a5931cdc5c5100eeff5c37",
+    "sources/pc-cable-assembly.txt": "781d199b0ad5c2ef75d2b50c754e95a24068272e87499fb82e7369a59ff0abd4",
+    "sources/pc-compatibility.html": "ed95514c992217627bdc21d8747f2f4d52d9228e4753c1ed0a1ddb82a6a754fd",
+    "sources/pc-compatibility.txt": "5333bb723af19934a475ab29777d7e9e4cebbc3789605cc054918b5e303ec1e8",
+    "sources/pc-family.html": "5f6daef9b0d187d009c9e83422a6cb4f73a89f5ea340872e0a50ac670d6cef46",
+    "sources/pc-family.txt": "a9bf866b96ab46a8ce75616a8a0a8439889a4e7369e4634325e02ee8b5378275",
+    "sources/pc-in-all-faces.json": "01255ca8ad1f920110422cecdb3f3b3a69ce0d930c6543cd15a4a75aa27f5e7f",
+    "sources/pc-in-drawing.pdf": "d546878fd0e0ff73f9008a110a472f20a88807beb87f582b813f4f39bf12ba10",
+    "sources/pc-in-drawing.png": "53c48a209dbf2a7246ee649558d12de5c93a4113d38d26954758f51b89dc7230",
+    "sources/pc-in-drawing.txt": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+    "sources/pc-in.html": "b827e852b9aff84585d6af3f6e7b78e65a341993183d64a00ae0e9d340602b3e",
+    "sources/pc-in.step": "636e5d416ef048d16e9e42abe32c329b759ad4e4a196816179dbb25cbb7cefb4",
+    "sources/pc-in.txt": "3a21993812ceae8edc7994cd5a927ec960b0636c7fe8b5776bebdbe59a2887f8",
+    "sources/pc-mate-a-all-faces.json": "959280a35196daf684ac3eea5144c69ac9c9288173727a8f128b13068f1ff3b3",
+    "sources/pc-mate-a.html": "2b4fe69f83e254a3d10e6c9aa5bac7570c3bdf0ff09935d105993824d926f421",
+    "sources/pc-mate-a.step": "2ff3f3d0e8bd30590eb6796c1708644955572aea8d9bd911d72f491f7e4d5c24",
+    "sources/pc-mate-a.txt": "dcf3b0a0ce3c97e68b1d8cd4e29437297b218c3b9bd989261fa9d41c53ba5934",
+    "sources/pc-mate-b-all-faces.json": "344c393d00f53492d01839e3653c0054bd0d8e03e399f6c7c26265e0bfe5f36c",
+    "sources/pc-mate-b.html": "d1c977d2fefc3554c27c6e15b9f6e0afb9064c0c3c74c7418e2fbf94c2de1140",
+    "sources/pc-mate-b.step": "1601412b311fcd9d86fbb22939f8ca187ac1cf982442b7fc6489161051a1b950",
+    "sources/pc-mate-b.txt": "de686d3751bb14252a72faee2e78e32907f65d548badfd73ccfe6f37cd0f2958",
+    "sources/pc-mount.pdf": "d97ca09081f985344df997b078a19f99dc46d554faef983e5522f913afd1b78c",
+    "sources/pc-mount.txt": "01986f813ce91e7dc640dd154e854625f32129166ccde6b04075d04df7794850",
+    "sources/pc-out-all-faces.json": "909dd64c39ada83c45651e4c5996d49721d55443871b34fd03f33ec11ce33635",
+    "sources/pc-out-drawing.pdf": "69f47658411fa33dd363bafd31c1bbf8336276c8010482f7a715f33874200d53",
+    "sources/pc-out-drawing.png": "1611a628bd57210d49a825c370bff8a84b82cc0f8e5f6a91d6a87c4867b89b3b",
+    "sources/pc-out-drawing.txt": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+    "sources/pc-out.html": "7e8a49d0200f44b0e9acb415f24b6d058d54fa4c632a18d59d5271f36a9eec78",
+    "sources/pc-out.step": "2985ffa3b2e3306dccf65e6476c974007dffc04798e935f58abde3c33bafff63",
+    "sources/pc-out.txt": "891b37bb2a4253dc95039c6775140c008c455d913bad502d953b293b19c66011",
+    "sources/report-page-1.png": "d83edb7b9f5fc8340cc37736be36571fa5413c6195c791f76a6384ba5ecb3139",
+    "sources/report-page-2.png": "d46fc8f2f5be046e6bc3dfbcaf1639bfeeedb54cd0e64be0b688b4a9a6fbb780",
+    "sources/true1-cable-f-assembly.pdf": "b8cfcef480c8dd6a38bceb36b5a7680bd52ad89764555c3127dc5c1704849bef",
+    "sources/true1-cable-f-assembly.txt": "5da5d09c2f06d3735021476134e25904594dd9738ff59c3b7ce80d75fa07715f",
+    "sources/true1-cable-m-assembly.pdf": "1aadd59a60e105b5b9330b1074ba52e0dd0ac439ccf213c30902ea9500e9dcf8",
+    "sources/true1-cable-m-assembly.txt": "f87c8a4af0c44f2a373d4b4ecc6ce25c81b7617f78934c732720f340f64a9cdf",
+    "sources/true1-in-all-faces.json": "bf90c6a0f5a6825592ce13b373b48588e1c0436f7e77ecc8661f0628c1b5cde7",
+    "sources/true1-in-drawing.pdf": "e70924e40d8fdbd4d866e309365114765543c2eeda50bae56dab4a3c9014cad5",
+    "sources/true1-in-drawing.png": "38af8c94fd91ce04a8afe3d64be1e69d29b73b5d3273f22c4090c592eb20bd73",
+    "sources/true1-in-drawing.txt": "fde08103f5b7b2544f7bf8595459c61c37fa132979672e650d1817d62c64e478",
+    "sources/true1-in-mount.pdf": "4e8620b1b354c4b2be55ac110f267979a13e1d423e160ed7d16a924ec3c8d19e",
+    "sources/true1-in-mount.txt": "9ff0bef40563d712e889674222fdd9cee5fdf02150338aae933d4953b8727191",
+    "sources/true1-in.html": "f6ce790c07fa7b5a86ba72a9c50b4861676650aba077b35fb0581f44c3f0035f",
+    "sources/true1-in.step": "51b7d0442112bb36f3aaa77a1a26ec9aab76682a24c99cd6baffe8e54e6988f0",
+    "sources/true1-in.txt": "eec22f87d4278145be3f8355076c4faf5e520db68abe91681c5e258f6fdc5c00",
+    "sources/true1-mate-f-all-faces.json": "b12a6a73cb0cbcfb145a1a3b603bee617b0a8f547aebd65bdc45b528fdb5bcf0",
+    "sources/true1-mate-f.html": "1cf61c3823d3b808249d7ef5f7406e042451e929c7d7414ff58c977a1c6c894d",
+    "sources/true1-mate-f.step": "fbf7264b3ea29e904193086df571ffce41bd6eab4ac84cc5aa2c5c494ae58dc0",
+    "sources/true1-mate-f.txt": "7a6b57ae3411cc2861c664c6250d96b0582895f8705fff3f2683955f265b8563",
+    "sources/true1-mate-m-all-faces.json": "8a12adea198c71cc9d830dcc0bbdacb3a1db6d82e3f0d80241d71b371438f771",
+    "sources/true1-mate-m.html": "483c12311e1e18a42301b0d1c7e4afdfd291a30bdf2d26921e75f70b782512ea",
+    "sources/true1-mate-m.step": "5c42933b98684d551ed63616555a9ba1fc4b4edd9f8e3ab6a2f82240f7bb46c9",
+    "sources/true1-mate-m.txt": "61c43b45dea38c8931bc0f50b9973d367589fe2eab9bc4a0b611ee00b504501b",
+    "sources/true1-out-all-faces.json": "17d5acdabac4dc9980af5f3303da573a923d1bc26ed231693bb0d86d238c5896",
+    "sources/true1-out-drawing.pdf": "0bff8683b86e714e188ceb875133ad5e20389dbea6b82f5cde4d794200de821f",
+    "sources/true1-out-drawing.png": "c28aa1dbafd955da234d520c925eec8de886d598c07309e8022007bc88618806",
+    "sources/true1-out-drawing.txt": "f72dc8ed94155451249bada6a40795d72cefca9af05eed0b0c9c4b044c0d74f7",
+    "sources/true1-out-mount.pdf": "0e7e324ebc2164dfb9ca59ef5e93654291a0369946f892e8210734798d8e250c",
+    "sources/true1-out-mount.txt": "a3adbbd58fba9359eba05dfbcfebef00aa92eb63bb5370e4774044391ff196e0",
+    "sources/true1-out.html": "65ac1a92534910c0d96707d410ad830e7ca6a08b4def5ce330b5361d3ef0e3cb",
+    "sources/true1-out.step": "35c6cf7b4716bf914fce640593727a32d41d9318d98db7d985977f46cfcecca1",
+    "sources/true1-out.txt": "e990a416a3fad1f532a0ab6ff6b1b19790eb8b09baaaabf740cfd2449b982e30",
+    "sources/true1-safety.pdf": "400719d32bba82a04157232c349cd97c0cdbc93460782543bbba4e1df2da2079",
+    "sources/true1-safety.txt": "da19abe728085d642f3e820fe358957267bcb0cb43fb62bd6f118076686928a2",
+    "verification.json": "cdcd98c691814540b84028d4b2658174f9c06db61970321b90c9cf554c8852ca",
+    "verify.log": "cdcd98c691814540b84028d4b2658174f9c06db61970321b90c9cf554c8852ca",
+    "verify.py": "63e0bbe9a256e3282061af739e2d872b342f23dae43273d07182781bd3976794",
+    "views/contract-summary.html": "3e6f0d20462ecbce799753f0b068a99e1d6cbc3532cd5d82c7a294a31e16691e",
+    "views/contract-summary.pdf": "90afc84ab4a84e6c832eeb78da980e0ff7466162cd15efc83e16da8222550ba4",
+    "views/contract-summary.svg": "c76f8d2e7531417467e4cd8de5f5f852a355133ba533b355d669ba6b03183b1a",
+    "views/manufacturer-models.20261023-152553.FCBak": "b44aebd5fc881a7c3e87d9b75a4757e9ff16d3d1dab5b845ed6f81ec0ad4176b",
+    "views/nema-in-front-edges.svg": "48ed0bb2b7e6d2aec3bbbe75f1bf323eeccc13fffde9651ad6a16033efd18490",
+    "views/nema-in-side-edges.svg": "c3d5acd32cbae3501d46a6c7cc23eb6cb00b79ebb15e409369462263338725e8",
+    "views/nema-mate-f-front-edges.svg": "11110de53667d8f1cd3e45cc9e54efeff90c7181b2e76c1f182f2646c24221bd",
+    "views/nema-mate-f-side-edges.svg": "16b503a2801b71bb078c100498165a16647df90d3b2ec9b90f4b6dacdc8a112b",
+    "views/nema-mate-m-front-edges.svg": "c1cbe20c8967524c09769b91b3748347eef51c2e74f9d1a044c6a02fe706d75b",
+    "views/nema-mate-m-side-edges.svg": "83d62807e05995e5573f11e5a3f7e1bdff25b0fe06eafac2e28540eb2a12535e",
+    "views/nema-out-front-edges.svg": "273e8c6b9755f5e3f14d10f06a4f12be4123dda58c0f2b4ef0cdc567bd4bd98e",
+    "views/nema-out-side-edges.svg": "9d0692e91b37ae1fed944e9fe9e6efd89f6284e01333efa521574e5b50e42ffb",
+    "views/pc-in-front-edges.svg": "cc33ff2265087464ca3d6e5e8646c86c5991f000ad1487742c20ff1358bb7130",
+    "views/pc-in-side-edges.svg": "272e5289e42e8ac80a42c1fc7fdc530dd411aaba1fd6bae8f97b296365a3d7a7",
+    "views/pc-mate-a-front-edges.svg": "ad9388ae626b02d47947e0bed783fdcf42ac84a6513e183f0c475dc9a83e030f",
+    "views/pc-mate-a-side-edges.svg": "4f8ff6aaf0879843077ebfe235e2807d6605bef00609073f695702943ce6cf23",
+    "views/pc-mate-b-front-edges.svg": "05bd3bb2e85cd7907b3f49fd912515fffebcb1f091ffbe164d2370b80ee9f14f",
+    "views/pc-mate-b-side-edges.svg": "4b27321f69b8a269766ab0cc9aedb275043e5e7080e7e543c35efef61efc829c",
+    "views/pc-out-front-edges.svg": "d31d5a2415275a9956106183082e8807113a64715b58d4012373ebe11139f9df",
+    "views/pc-out-side-edges.svg": "a1439d91df487363a3a4df3d4794a0bd4e51063dc6e6707267e4330e95d01eac",
+    "views/true1-in-front-edges.svg": "fc91ed79f31ec5e0eef0092642f5cbd869d0d508cc0bbccdafaedd704aa4e0ab",
+    "views/true1-in-side-edges.svg": "00a17b6c3596ab54fc2d4de303d1fa5b97d34c67b4b43c70e2ae3c4f4c89ea34",
+    "views/true1-mate-f-front-edges.svg": "142f896c06479bd69e7cf5040e39d18ee162c12fa7c3a67ae41d561571591ef9",
+    "views/true1-mate-f-side-edges.svg": "5bb526add7703ff3d63c03b33a382c4063fe64b569dd00208f7acbacb961b930",
+    "views/true1-mate-m-front-edges.svg": "dd527797fab0a123cf9ef6e5fa828f2b78f543510f05999b596a95b48a2298ae",
+    "views/true1-mate-m-side-edges.svg": "2ae68c5c4fa6b478e20049780e46fa61f5fae9b9eb5d422c070c1447556a9e86",
+    "views/true1-out-front-edges.svg": "50ea0ee85fe55cea319417f7fca394ccc4b5c4c7758db5e0cac9394abaea1b21",
+    "views/true1-out-side-edges.svg": "00e70ca862e00bd005597d0844ef584d8056b993e1a439592486f4b5e6aff1c2"
+  },
+  "scope_note": "42 manufacturer downloads plus local derived cache/views. Original supplier files are ignored private reading cache; no redistribution licence asserted. Protected check covers 96 explicitly snapshotted frozen inputs, not concurrently edited unrelated repo files."
+}

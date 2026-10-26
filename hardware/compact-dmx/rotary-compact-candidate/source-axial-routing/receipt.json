@@ -1,0 +1,497 @@
+{
+  "revision": "AXIAL-R1",
+  "date_UTC": "2026-10-23T18:07:50.609909+00:00",
+  "repo_HEAD": "b42c0e6284aac734fde851c69146abf73920f337",
+  "branch": "main",
+  "status": "Complete routed prototype capture at27x20; compactness/process/function gates UNMET; no release",
+  "owned_write_root": "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing",
+  "changed_paths": [
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/BRIEF.md",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/DESIGN.md",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0402.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0603.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/C0805.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/DPY2.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/FPC20.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/R0402.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/RNM15.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/RPW10.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/RVC20.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/T520D.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/TP1.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/USB4105.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/Regulated.pretty/XFL4020.kicad_mod",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/accepted-citation-metadata-delta.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/accepted-source-review-metadata-delta.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/assembly-overview.png",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/assembly-reserves.step",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/assembly.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/build.py",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/component-ledger.csv",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/copper-overview.png",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/copper.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/drc.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/electrical-check.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/envelope-check.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/envelopes.py",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/erc.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/fp-lib-table",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/generate.py",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/land-check.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/land-sources.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/physical-geometry.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/placement-check.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/placement-ledger.csv",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/preservation-check.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/preservation.py",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/protected-inputs.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/regulated-source.kicad_pro",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/regulated-source.kicad_sch",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/regulated-source.kicad_sym",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/regulated-source.net",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/regulated-source.pdf",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/route-ledger.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/route.py",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/routing-check.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/saved-CAD-check.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/schematic-overview.png",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/source-axial-envelopes.FCStd",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/source-axial-envelopes.step",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/source-axial.kicad_pcb",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/source-axial.kicad_pro",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/sources.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/svg/source-axial-B_Cu.svg",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/svg/source-axial-F_Courtyard.svg",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/svg/source-axial-F_Cu.svg",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/svg/source-axial-F_Fab.svg",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/svg/source-axial-In1_Cu.svg",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/svg/source-axial-In2_Cu.svg",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/sym-lib-table",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/validate.sh",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/validation.log",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/verify-envelopes.py",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/verify-lands.py",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/verify-routing.py",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/verify.py",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/write-receipt.py",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/receipt.json",
+    "hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/SHA256SUMS"
+  ],
+  "hardware_only": true,
+  "no_install_children_hardware_firmware_outreach_or_git_publication": true,
+  "circuit_deltas": {
+    "R12": "10kohm EN series required byTPS63070 section11.1",
+    "old_U2_14": "PROTECTED_IN",
+    "new_U2_14": "REG_EN_SERIES",
+    "R13": "100ohm DVDT series perTPS25947 section7.3.5.1; C12max11nF",
+    "C12_1": "INPUT_DVDT_C",
+    "all_original_values_and_pin_nets_except_two_documented_deltas_unchanged": true
+  },
+  "source_logic_limits_V": {
+    "EN_VIL_max": 0.63,
+    "EN_VIH_min": 1.17,
+    "actual_max_low": 0.4,
+    "actual_min_high": 2.49098532173485
+  },
+  "DVDT_series": {
+    "C12_max_initial_nF": 11.000000000000002,
+    "R13_ohm": 100,
+    "series_RC_100K_TCR_alloc_s": [
+      8.982e-07,
+      1.1022e-06
+    ],
+    "not_a_startup_max_bound": true
+  },
+  "original_component_values_and_supplier_lands_preserved": true,
+  "checks": {
+    "ERC_violations": 0,
+    "DRC_new_violations": 0,
+    "DRC_total_violations": 4,
+    "known_GCT_NPTH_clearance_mm": [
+      0.1794,
+      0.2283
+    ],
+    "DRC_exclusions_or_rule_relaxations_added": false,
+    "unconnected": 0,
+    "IC_pin_checks": 46,
+    "USB_terminal_checks": 16,
+    "passive_checks": 26,
+    "CC_PG_static_rows": 18,
+    "pads": 127,
+    "tracks": 582,
+    "vias": 92,
+    "trace_endpoints": 1164,
+    "source_land_dimensions": 57,
+    "independent_foreign_track_clearance_min_mm": 0.21500000000000075,
+    "quiet_ground_stars_and_copper_voids": true,
+    "D_short": {
+      "total_copper_length_mm": 1.529999999999994,
+      "pairwise_resistance_upper_screen_ohm": 0.00262607499999999,
+      "copper_min_allocation_um": 63,
+      "copper_C": 80,
+      "contact_or_open_defect_included": false,
+      "limit_ohm": 200
+    },
+    "CC_trace_lengths_mm": {
+      "USB_CC1": 5.833427124746187,
+      "USB_CC2": 8.070863991822655
+    },
+    "reopened_CAD": {
+      "status": "PASS reopened actual savedFCStd and bothSTEP exports; package allocations only",
+      "saved_body_and_PCB_solids": 34,
+      "saved_zero_overlap_body_pairs": 561,
+      "STEP_solids_including_stake_allocations": 38,
+      "STEP_volume_agreement": true,
+      "assembly_reserve_solids": 4,
+      "R13_actual_body_present": true,
+      "port_and_FPC_allocation_coordinates_match": true,
+      "full_fit_or_supplier_profile_accepted": false
+    }
+  },
+  "physical": {
+    "PCB_mm": [
+      27,
+      20,
+      1
+    ],
+    "25x18_target_achieved": false,
+    "area_growth_percent": 20,
+    "smallest_supported_this_pass_not_global_minimum_proof": true,
+    "purchased_parts": 32,
+    "fabricated_land_probe_footprints": 2,
+    "all_footprints": 34,
+    "original_purchased_parts": 30,
+    "original_footprints": 32,
+    "complete_courtyard_sum_mm2": 354.5802,
+    "body_and_land_projection_mm2": 220.06849999999991,
+    "minimum_courtyard_gap_mm": 0.10999999999999943,
+    "all_components_top": true,
+    "port_datum": {
+      "PCB_edge_X_mm": 27,
+      "center_Y_mm": 10,
+      "solder_row_X_mm": 22.245,
+      "direction": "+X",
+      "body_height_max_mm": 3.46
+    },
+    "local_frame": "X axial towardUSB; Y tangential; Z componentnormal; PCBZ-1..0",
+    "envelopes": {
+      "valid_body_solids": 34,
+      "zero_volume_body_pair_checks": 561,
+      "actual_holes": 98,
+      "stakes": 4,
+      "PCB_local_mm": {
+        "X": [
+          0,
+          27
+        ],
+        "Y": [
+          0,
+          20
+        ],
+        "Z": [
+          -1,
+          0
+        ]
+      },
+      "parent_transform": "NOT selected; parent/Astra owns collar. LocalX axial+; localY tangential; localZ componentnormal. Centered tangentialT=Y-10.",
+      "port": {
+        "PCB_edge_origin_mm": [
+          27,
+          10,
+          0
+        ],
+        "mate_vector": [
+          1,
+          0,
+          0
+        ],
+        "solder_row_X_mm": 22.245,
+        "conservative_body_X_max_mm": 29.17,
+        "body_Y_mm": [
+          5.455,
+          14.545
+        ],
+        "body_height_max_mm": 3.46,
+        "front_body_alignment": "Conservative derivedbody envelope inherited fromprimaryland+bodydims; supplier matingface/profile alignment remainsgate, not an invented exactface coordinate."
+      },
+      "PCB_thickness_proposal_mm": [
+        0.9,
+        1.1
+      ],
+      "stake_length_source_mm": [
+        0.8,
+        1.1
+      ],
+      "stake_below_min_thickness_max_mm": 0.2,
+      "body_to_lowest_PCB_or_stake_max_mm": 4.56,
+      "assembly_normal_reserve_mm": [
+        -1.35,
+        3.71
+      ],
+      "FPC_external_reserve_mm": {
+        "X": [
+          0.225,
+          20.775
+        ],
+        "Y": [
+          20,
+          24
+        ],
+        "Z": [
+          0,
+          2
+        ]
+      },
+      "supplier_stake_cross_section": "STEPuses PCBslot sweptallocation, not invented vendorstake profile. Retention/fillet/tolerance/process notqualified.",
+      "whole_collar_fit": false,
+      "top_only_components": true,
+      "fit_25x18_target": false,
+      "manufacturing_release": false
+    },
+    "parent_Astra_transform_and_collar_acceptance": false
+  },
+  "conditional_current_model_unchanged": {
+    "efficiency_min_published": false,
+    "actual_low_VIN_converter_current_deliverability_guaranteed": false,
+    "worst": {
+      "eta_allocation": 0.8,
+      "VCONN_A": 0.41,
+      "reg_output_A": 1.9109999999999998,
+      "reg_output_W": 9.956966208907334,
+      "FPC_input_A": 2.9871410745684353,
+      "reg_input_V": 4.168269074112291,
+      "module_DC_current_margin_to4A": 1.0128589254315647,
+      "breaker_min_margin_A": 0.007469703874678935,
+      "inductor_peak_model_A": 3.176179242818832,
+      "RHP_zero_Hz_at1p8uH": 154287.97735000897,
+      "TI3p05A_testpoint_margin_to_average_A": 0.06285892543156457,
+      "flex_copper_loss_W": 0.8216632052176527,
+      "termination_loss_W": 0.17846023598747732,
+      "input_eFuse_loss_W": 0.40153553097182393,
+      "regulator_loss_alloc_W": 2.4892415522268334,
+      "module_output_W": 13.852866733311119
+    },
+    "conditional_port_voltage_window_V": [
+      4.78641455257485,
+      5.33602338509018
+    ],
+    "new_copper_resistance_thermal_measured": false
+  },
+  "remaining_UNMET": [
+    "25x18board/bay target and wholecollar fit",
+    "supplier connector profile/matingface/stake/PCB-thickness/NPTH process",
+    "FPC clamp/coverlay/solder/strain/cycle qualification",
+    "70umouter/35uminner4layer1mm stack, plating, filled/plugged/tentedvias, RNMmask/stencil approval",
+    "healthy startup max current/timing, PG/loadstep/rebound behavior",
+    "hotinductor and actual lowVIN current deliverability, efficiency, filter ESR/loopstability",
+    "sealed module/regulator/FPC/contact thermal and line/temperature/derating",
+    "USB attach/detach/VCONN/discharge/ESD/contactsharing/compliance",
+    "input reverse transient/leakage publishedmaximum gaps",
+    "independent DCoutputOVP singlefault containment",
+    "upstream FPCshort stationaryI2t/faultcoordination",
+    "IRM20lead/carrier/harness/mains/endcap safety integration",
+    "XFL4020NRND prototype stock/lifecycle"
+  ],
+  "validation_command": "bash hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/validate.sh > hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/validation.log 2>&1",
+  "validation_exit_code": 0,
+  "exact_executed_check_export_commands": [
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/preservation.py",
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/generate.py",
+    "flatpak run --command=kicad-cli org.kicad.KiCad version",
+    "flatpak run --command=kicad-cli org.kicad.KiCad sch export netlist --format kicadxml -o /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/regulated-source.net /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/regulated-source.kicad_sch",
+    "flatpak run --command=kicad-cli org.kicad.KiCad sch erc --format json --severity-all --exit-code-violations -o /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/erc.json /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/regulated-source.kicad_sch",
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/verify.py",
+    "flatpak run --command=python3 org.kicad.KiCad /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/build.py",
+    "flatpak run --command=python3 org.kicad.KiCad /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/route.py",
+    "flatpak run --command=kicad-cli org.kicad.KiCad pcb drc --format json --all-track-errors --severity-all --refill-zones --save-board -o /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/drc.json /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/source-axial.kicad_pcb",
+    "flatpak run --command=python3 org.kicad.KiCad /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/verify-routing.py",
+    "flatpak run --command=python3 org.kicad.KiCad /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/verify-lands.py",
+    "flatpak run --command=kicad-cli org.kicad.KiCad sch export pdf -o /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/regulated-source.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/regulated-source.kicad_sch",
+    "flatpak run --command=kicad-cli org.kicad.KiCad pcb export pdf --mode-multipage --layers F.Cu,In1.Cu,In2.Cu,B.Cu --scale 4 -o /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/copper.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/source-axial.kicad_pcb",
+    "flatpak run --command=kicad-cli org.kicad.KiCad pcb export pdf --mode-single --layers F.Fab,F.CrtYd,Edge.Cuts --scale 4 -o /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/assembly.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/source-axial.kicad_pcb",
+    "flatpak run --command=kicad-cli org.kicad.KiCad pcb export svg --mode-multi --layers F.Cu,In1.Cu,In2.Cu,B.Cu,F.Fab,F.CrtYd --common-layers Edge.Cuts --page-size-mode 2 --exclude-drawing-sheet -o /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/svg /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/source-axial.kicad_pcb",
+    "pdftoppm -f 1 -l 1 -singlefile -scale-to 2200 -png /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/regulated-source.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/schematic-overview",
+    "pdftoppm -f 1 -l 1 -singlefile -scale-to 1800 -png /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/assembly.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/assembly-overview",
+    "pdftoppm -f 1 -l 1 -singlefile -scale-to 1800 -png /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/copper.pdf /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/copper-overview",
+    "/home/juicebox/.local/bin/freecadcmd /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/envelopes.py",
+    "/home/juicebox/.local/bin/freecadcmd /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/verify-envelopes.py",
+    "python3 /home/juicebox/Nova-Link/hardware/compact-dmx/rotary-compact-candidate/source-axial-routing/preservation.py"
+  ],
+  "independent_checker_imports": "No schematic generator, builder or router imported by literal/land/routing/reopenedCAD checkers",
+  "protected_current_inputs_verified": 349,
+  "protected_input_manifest_sha256": "135294809edf7267ec317f8ba2f58599eca02dc0c21bd00a01264a6739fc11aa",
+  "preservation": {
+    "protected_current_matches": 349,
+    "changed_protected": [],
+    "root_authorized_metadata_delta_paths": [
+      "hardware/compact-dmx/eda/cell-protection-candidate/DESIGN.md",
+      "hardware/compact-dmx/eda/cell-protection-candidate/receipt.json",
+      "hardware/compact-dmx/eda/cell-protection-candidate/SHA256SUMS",
+      "hardware/compact-dmx/rotary-compact-candidate/regulated-source/protected-inputs.json",
+      "hardware/compact-dmx/rotary-compact-candidate/regulated-source/receipt.json",
+      "hardware/compact-dmx/rotary-compact-candidate/regulated-source/SHA256SUMS",
+      "hardware/compact-dmx/rotary-compact-candidate/regulated-source/DESIGN.md",
+      "hardware/compact-dmx/rotary-compact-candidate/regulated-source/verify.py"
+    ],
+    "rotary_review_artifacts_unchanged_other_than_five_authorized_doc_check_inventory_files": true,
+    "cell_review_artifacts_unchanged_other_than_three_metadata_files": true,
+    "primary_PDF_hashes_verified": 14,
+    "frozen_rotary_review_hashes_verified": 90
+  },
+  "accepted_parent_deltas": [
+    "accepted-citation-metadata-delta.json",
+    "accepted-source-review-metadata-delta.json"
+  ],
+  "frozen_original_review_modified": false,
+  "primary_PDF_sources_with_current_hashes": [
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps63070.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps63070.pdf",
+      "sha256": "a88ef66f3493156ff6e7da0849de0e0e1068647f2553d08c1844d4a90c5c65ef",
+      "reused_readonly": null
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm20.pdf",
+      "url": "https://www.meanwell.com/Upload/PDF/IRM-20/IRM-20-SPEC.PDF",
+      "sha256": "aa1afdbcdf0bf6db796710e26bd5e258f4857ffb1c14bd1ac3d94af86f3b8789",
+      "reused_readonly": null
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/irm10.pdf",
+      "url": "https://www.meanwell.com/Upload/PDF/IRM-10/IRM-10-SPEC.PDF",
+      "sha256": "1aab6b30492328818e4d0900416676891eeb1076f409d56dc2277d7119ed208a",
+      "reused_readonly": "hardware/compact-dmx/rotary-compact-candidate/sources/irm10.pdf"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25810.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps25810.pdf",
+      "sha256": "ccc31e3ad8b7970005e23ba8b6a165694f712e86fd337b9ba2fe117a98a2e13e",
+      "reused_readonly": "hardware/compact-dmx/rotary-compact-candidate/sources/tps25810.pdf"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb-type-c-r2.4.pdf",
+      "url": "https://www.usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-24",
+      "sha256": "f5407e6120db1e28137e7fee60f3125f4284e2252b1240d271ce6e40c0ba3121",
+      "reused_readonly": ".tools/references/usb-type-c-r2.4.pdf"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105.pdf",
+      "url": "https://gct.co/files/drawings/USB4105.pdf",
+      "sha256": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/usb4105-spec.pdf",
+      "url": "https://gct.co/files/specs/USB4105-spec.pdf",
+      "sha256": "372fe1bc0e0b1b4ce7e18b61514e967c7c2f883f0c7fe1f4586b567785ee9cd2"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tps25947.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+      "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/T520D157M010ATE055.pdf",
+      "url": "https://search.kemet.com/download/specsheet/T520D157M010ATE055",
+      "sha256": "3b7a59d69d920e5c7b3c87f43ec2b4db34b06335ff3d077023431cc9c6db62ee"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/xfl4020.pdf",
+      "url": "https://www.coilcraft.com/getmedia/50632d43-da1b-4cdb-8ab4-3029cab51df3/XFL4020.pdf",
+      "sha256": "6dca915ac1daa47210f7708a7540221ffef4f34a88a8621c94bd50cdf48647e6"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tpd1e10b06.pdf",
+      "url": "https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf",
+      "sha256": "77fb9c454aee5b14a220d256b7ee9fa9751572840478f80437393aeed2582f8d"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/tnpw.pdf",
+      "url": "https://www.vishay.com/docs/28758/tnpw_e3.pdf",
+      "sha256": "6f0508c568cb355aaf2accdd33fe3a780d3ea5ef207c4c9a71839a8acadc33a5"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/vishay-28950.pdf",
+      "url": "https://www.vishay.com/doc?28950",
+      "sha256": "9e2b145c937da3be1e926b8afc2856959754eeb4d1103241d838038f7308144e",
+      "reused_readonly": "hardware/compact-dmx/eda/cell-protection-candidate/sources/vishay-28950.pdf"
+    },
+    {
+      "path": "hardware/compact-dmx/rotary-compact-candidate/regulated-source/sources/grm21-notice.pdf",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71A106KE51-01.pdf",
+      "sha256": "e8432c7acfa982b24eb06dd145682f78051dc4649abbeb35bbca8646b1408e4f",
+      "reused_readonly": "hardware/compact-dmx/eda/source-cache/grm21-spec.pdf"
+    }
+  ],
+  "artifact_hashes": {
+    "BRIEF.md": "03d79851c537207671d3ce07a1fff8b6e8e40ab603a6298ebfe8eddc4481b65a",
+    "DESIGN.md": "f65d8c25a65c36a52189c2fe4347594693dcbe5b197aba9d0790817c5a44b25c",
+    "Regulated.pretty/C0402.kicad_mod": "5d2d2bd39642d210476925a435a0e4f69132644526d0bd418d7ad91e6c8bf809",
+    "Regulated.pretty/C0603.kicad_mod": "54f7b0dc35f3779bcd61c7a4172fc016d3348995a4f085b639a7dcb7caf457de",
+    "Regulated.pretty/C0805.kicad_mod": "48afcf8985ddc51b815da206f54d12c62f1f6a8ac8e96fdbd723066380140875",
+    "Regulated.pretty/DPY2.kicad_mod": "6fd52b5447a17c430a7121de1fa778c8fce0af1e8e6f2b029b9788e316b9ce75",
+    "Regulated.pretty/FPC20.kicad_mod": "82e68efc7c367382aa47920a0d78f055f1b466271d1facdf8de87f2f8f9087da",
+    "Regulated.pretty/R0402.kicad_mod": "a288d3b4c50e0d590f3cdacc1d920c15c0b00a8789c9861d20fa01c23ad3e575",
+    "Regulated.pretty/RNM15.kicad_mod": "c428f01fdeaa2d10cf604c576e2315bf72d5bd114586b2eeed9d0cfb15ce587c",
+    "Regulated.pretty/RPW10.kicad_mod": "03e05108f15b9aec1978b7891b481cc8bfac45d4c6da4aad25597f7dbd591d85",
+    "Regulated.pretty/RVC20.kicad_mod": "8e44ede566b57b6e3c79831de756a724ba9f501cc6536ec7e316e443184628a8",
+    "Regulated.pretty/T520D.kicad_mod": "d1aee7a046ba37e8b7078425a9c6063661b01aa4e62a19a3b2c64910e82fd7f2",
+    "Regulated.pretty/TP1.kicad_mod": "6969e340bfd26fe4ca6237a076206a02b36fca65c73f4d96381e17c062d52e00",
+    "Regulated.pretty/USB4105.kicad_mod": "9e5ff3a0b3fc0a9e33c98c3927b49fd85a8f98ea76ca88107317cf37bb93b296",
+    "Regulated.pretty/XFL4020.kicad_mod": "5d6db15b6d92f27b373eee53c828587db3bc2edf1512d3b4308d779d6a3e3dfe",
+    "accepted-citation-metadata-delta.json": "7b8c2cad14bf3c6eda7d68052e5cfd97bf1add355737165d6db3a9656b179f4f",
+    "accepted-source-review-metadata-delta.json": "f67bbc31b2f3f736c009f69bcf01fdb63776c118a7e2cc5b33b297772b022f13",
+    "assembly-overview.png": "f0dc621aa4107b30a056e2ecec0b5ba99aa6800653ad1d9042e999a0235c23b7",
+    "assembly-reserves.step": "31f9ea15e233769e15a9daa7dbe4e42f75a02458e2de99811b2469b10fe39d9c",
+    "assembly.pdf": "05ae930e4b3bc64bf2b8620c72ea16ff42a5b9005b506480cb1f38d573b20c13",
+    "build.py": "eedda10ab19b775e4efd7b508f0ec028cd21bbd08dd78402a068aa930f3299a6",
+    "component-ledger.csv": "0d4a34b26f04caf7b654f3221a1ef3e23eb8b2ce725141d66ed9eeb85b26b498",
+    "copper-overview.png": "3868531397bb77673db225f152b80857673440a786f4cca54b23ac05a90dd0f1",
+    "copper.pdf": "be3794d7b432dad4f7aaa9714a8fc9c2ee4f01a1db10f7919407fb142c9e82a4",
+    "drc.json": "aa7702208fc2e4fd883972087d24a101adbe45604b4c0eb990d81177064e5761",
+    "electrical-check.json": "db5360f342b8786766bf1f46b8c392c5734df55bd6ce3c02bad1da1018c8d20f",
+    "envelope-check.json": "a6286327d31d0c2a03d4c11d02ae0fc3cb0e665c390c9556118703335b44bc34",
+    "envelopes.py": "cb6c8fc5c3957975726c2b6f884baf9925dd8aba1fc682bf3847e93ed9d2d803",
+    "erc.json": "52464bb3c6be76100fd4e8350f378a5ff7e7fb57f37863dc79f6f5fd54b2cf46",
+    "fp-lib-table": "d55be2c7f320cff6bb2fcc07523295149d68afd54ed5772c0167315d4ccf2aeb",
+    "generate.py": "53a1984d7dbe693df81c914ed7fc70d419b8f4a22ebe12ed9cedcaaae925a7fc",
+    "land-check.json": "c48e7cad787a531e37679245dd0a7b87ce40367fa15d10aa548af554415bd31e",
+    "land-sources.json": "968cb7e33667174c0bd4bca4b13e9be1e73c9b6e169200ef89c9fb84bda55968",
+    "physical-geometry.json": "d6b19a3efbaa9344ea1a7f7aa85d6c846b5d86aca88331fc6ad95989a4438f37",
+    "placement-check.json": "f38de3b791ba4eda625f2006a5fa39a5f3b5a80c5f00dc9d54d75c538dfc0089",
+    "placement-ledger.csv": "793c479ba5d24194609f38f9ada89016e00d4312b4ac90b3ec9b9a20509f8c2c",
+    "preservation-check.json": "03af5066762552d431c5ab758686ebff8fccbdbbd3ec5464578c6f16e4f9cf83",
+    "preservation.py": "7521b470b578a3e4e41f40f677252f8557226aeb0bd8931621c360ee62f5a23e",
+    "protected-inputs.json": "135294809edf7267ec317f8ba2f58599eca02dc0c21bd00a01264a6739fc11aa",
+    "regulated-source.kicad_pro": "35125d16e651564b8867a7ffb75ef1cf84f273c398287a6ed7ad07c728aeed8c",
+    "regulated-source.kicad_sch": "2ef9231127247d44e33d82cf8457f0094775d85034cd12a55e1413bcafad55e5",
+    "regulated-source.kicad_sym": "6b28ca75bd25f75a7a95c126e6b920700072deb49bf6db55d169c6ca76f44aea",
+    "regulated-source.net": "3e0649ef2e408283d9bc72a9a691bebb3b3ebf2e2588be7405fabec3640992cd",
+    "regulated-source.pdf": "89d22eb56f29a1d0f4c44fc2590fba3e8b118f11e5700df9a24d2ce9f041085a",
+    "route-ledger.json": "7ec3606ddb07e9ace5e8fa410ca2b050800663df8d974571bca3c96f5e093c74",
+    "route.py": "d9fa9850cce685d34520e20e2f6f289e029befc743d5ce0bffbb9110fa1f398d",
+    "routing-check.json": "dc9cae74ed6314817f95a76c67eb83d372c87b93ca98889be80b5133e87214ae",
+    "saved-CAD-check.json": "24dce2057b99818de7d05bd5f60091a5793ea7dd75d645cd398e1ad851a7ccba",
+    "schematic-overview.png": "7994afb2836df96cb6d73ac3a4208ff7aaab784c12b16d09ba6fdde8b181f4ce",
+    "source-axial-envelopes.FCStd": "4fa23d54d4640219965bc668a35c498947feea44d1324bdcea941d1b9089333e",
+    "source-axial-envelopes.step": "ebcbb44d3c499c32d66d45b4b5f9c1908a2e555c0fb10091f274958c294e8213",
+    "source-axial.kicad_pcb": "53b83aa71d1bcd986906509348bc061eb9e334296ddc980340c954eb8305cbcc",
+    "source-axial.kicad_pro": "570791806445843d7b6e2cab0ed47aa9a2ebca3e85550dd30f1199428085d2dc",
+    "sources.json": "114cae4c32d0dfe0e9d088659055b13f2acd5e97b3b9eaaaef628279fc29b1a9",
+    "svg/source-axial-B_Cu.svg": "2b7dcb2b950d950b3e118286615f2aa842e0fd59ab448029cf1f4d68b5b391c9",
+    "svg/source-axial-F_Courtyard.svg": "f63ea74f35e12a081762ff60929e46bdcc7b35f4225ecccd40eb5fcd95f143ac",
+    "svg/source-axial-F_Cu.svg": "465bfae6647eb6d5eb0480e4b895fabbd44401292ba11b029bdda01024695f34",
+    "svg/source-axial-F_Fab.svg": "f2cbf47a0c663adc88886f2a5f7185b6c7786d97c86da6615f2fcf16a232936c",
+    "svg/source-axial-In1_Cu.svg": "4c3dc13ffb07475c4f0b4a66b2925b192ee9bd80f01b6f6df4292a4607486206",
+    "svg/source-axial-In2_Cu.svg": "44801b46c597d526180c90330e9d5b4bde7b22f83921a215f467db6f38f56c7e",
+    "sym-lib-table": "d3a0c69d20fe5c1aaa96ee76ac6565c9b445520a4dfad3cd1a389c9ebea13c25",
+    "validate.sh": "d278e248fd3bdce8f1bd6a55f00b5cee6fc79ca20509d5008d6ee41ff3b67e47",
+    "validation.log": "d40f28660983848051d88d3fc550594c4f70bc000056b8f10d13710b03b3a5fe",
+    "verify-envelopes.py": "d868256127263bbdf8ec55339542732151c7df52352d17dd33d1552f55f48daa",
+    "verify-lands.py": "044a6cf22d72c17e9f14950e64c6dca75acb50b5f3228e7e331b1eb40d3f78a6",
+    "verify-routing.py": "aa1b298ce9b21962bb49ab50ffe618ad5de2c650bc020b151cfc7f43b04147cd",
+    "verify.py": "46c14e289c2ca5fba8759108b8ff0eb53df3b935f5dc92f627aab39048ac4bfe",
+    "write-receipt.py": "52b93e43e8bdcc2f1402fb30a611fd7aae5c06c3d1456d3bd12559d9ee266cf9"
+  },
+  "artifact_count_excluding_receipt_inventory": 68,
+  "manufacturing_release": false
+}

@@ -1,0 +1,80 @@
+{
+  "status": "NO_SWITCH_REPLACEMENT_SELECTED_TWO_FAMILY_BOUND_REACHED",
+  "sources": {
+    "hardware/compact-dmx/eda/footprints/switch-sources/EG-product.html": {
+      "bytes": 309694,
+      "sha256": "95101ece2e14329241967a47237adfb6c1f10b49979e15a8098cdd516aa50117"
+    },
+    "hardware/compact-dmx/eda/footprints/switch-sources/EG1218.pdf": {
+      "bytes": 34663,
+      "sha256": "d8e17f36e65f9a33dbd55b198b8c558a4ddee45a78b932b9b2ab68c376ed18ac"
+    },
+    "hardware/compact-dmx/eda/footprints/switch-sources/EG1315-product.html": {
+      "bytes": 183815,
+      "sha256": "e9617a954e350d337118f884316a5d043f6c6cc9aa6d44db634500f11a4f3613"
+    }
+  },
+  "EG1218": "Current manufacturer-listed/orderable; electrically adequate; THT/top actuator and unspecified full body datum rejected for intended side-access replacement",
+  "EG1315AA": "Current manufacturer-listed; SP3T25mA rejected below required branch current",
+  "source_backed_assignments": 36,
+  "provisional_assignments": [
+    "dmx.S_TERM"
+  ],
+  "placement_timestamp_rootcause_fix": {
+    "physical_components": 37,
+    "mechanical_holes": 4,
+    "checked_numbered_pads": 156,
+    "nets": 67,
+    "six_antenna_NC_islands_distinct": true,
+    "source_hash_mutations": [],
+    "raw_export_hash_differences": [
+      "dmx-interface.net",
+      "mcu-radio/mcu-radio.net"
+    ],
+    "stable_fingerprint_tests": {
+      "dmx-interface.net": "date-only accepted; value/footprint/net/pin/pintype/other metadata changes rejected",
+      "mcu-radio/mcu-radio.net": "date-only accepted; value/footprint/net/pin/pintype/other metadata changes rejected"
+    },
+    "reserve_or_edge_conflicts": [],
+    "drc_violations": 0,
+    "unconnected_items": 89,
+    "semantic_TX_RX_RE_pairs": [
+      [
+        "U5",
+        2,
+        "U1",
+        19
+      ],
+      [
+        "U5",
+        4,
+        "U1",
+        18
+      ],
+      [
+        "U5",
+        5,
+        "U1",
+        12
+      ]
+    ],
+    "isolated_component_refs": [
+      "C3",
+      "C4",
+      "R_TERM1",
+      "R_TERM2",
+      "S_TERM"
+    ],
+    "tracks": 0,
+    "status": "PARTIAL_PLACEMENT_ONLY"
+  },
+  "board_sha256": "fe577602e2891b7c78ec8fba5d71f8648076cadccff2774c96e2673c6fb15a2b",
+  "actual_after_reexport_raw_sha256": {
+    "dmx-interface.net": "f10a06d85612830db4575d30eedec9dcdd1ca8cb5aaf99d473c143b79f5fb34e",
+    "mcu-radio/mcu-radio.net": "7dbdbdf7ea831369a11349de3c9fadb17240747f991cf2bf41a70db48379fb2c"
+  },
+  "whole_package_run": false,
+  "new_ERC_run": false,
+  "schematic_circuit_or_BOM_change": false,
+  "manufacturing_release": false
+}

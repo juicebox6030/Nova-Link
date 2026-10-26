@@ -1,0 +1,5671 @@
+{
+  "status": "PASS exact saved copper conservatively clear of edge captures",
+  "board_sha256": "53b83aa71d1bcd986906509348bc061eb9e334296ddc980340c954eb8305cbcc",
+  "footprints": 34,
+  "numbered_pad_primitives": 127,
+  "capture_local_Y_mm": [
+    [
+      0,
+      0.2
+    ],
+    [
+      19.8,
+      20
+    ]
+  ],
+  "minimum_copper_gap_mm": 0.30049999999999955,
+  "rows": [
+    {
+      "kind": "pad",
+      "key": "R1.1",
+      "Y_min_mm": 10.5,
+      "Y_max_mm": 11.05,
+      "capture_gap_mm": 8.75
+    },
+    {
+      "kind": "pad",
+      "key": "R1.2",
+      "Y_min_mm": 9.55,
+      "Y_max_mm": 10.1,
+      "capture_gap_mm": 9.350000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "C10.1",
+      "Y_min_mm": 12.2,
+      "Y_max_mm": 12.6,
+      "capture_gap_mm": 7.200000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "C10.2",
+      "Y_min_mm": 11.4,
+      "Y_max_mm": 11.8,
+      "capture_gap_mm": 8.0
+    },
+    {
+      "kind": "pad",
+      "key": "C5.1",
+      "Y_min_mm": 4.9,
+      "Y_max_mm": 5.6,
+      "capture_gap_mm": 4.7
+    },
+    {
+      "kind": "pad",
+      "key": "C5.2",
+      "Y_min_mm": 3.0,
+      "Y_max_mm": 3.7,
+      "capture_gap_mm": 2.8
+    },
+    {
+      "kind": "pad",
+      "key": "U1.1",
+      "Y_min_mm": 11.25,
+      "Y_max_mm": 11.55,
+      "capture_gap_mm": 8.25
+    },
+    {
+      "kind": "pad",
+      "key": "U1.1",
+      "Y_min_mm": 10.9,
+      "Y_max_mm": 11.55,
+      "capture_gap_mm": 8.25
+    },
+    {
+      "kind": "pad",
+      "key": "U1.2",
+      "Y_min_mm": 11.75,
+      "Y_max_mm": 12.0,
+      "capture_gap_mm": 7.800000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U1.3",
+      "Y_min_mm": 12.2,
+      "Y_max_mm": 12.45,
+      "capture_gap_mm": 7.350000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U1.4",
+      "Y_min_mm": 12.65,
+      "Y_max_mm": 12.95,
+      "capture_gap_mm": 6.850000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U1.4",
+      "Y_min_mm": 12.65,
+      "Y_max_mm": 13.3,
+      "capture_gap_mm": 6.5
+    },
+    {
+      "kind": "pad",
+      "key": "U1.5",
+      "Y_min_mm": 10.9,
+      "Y_max_mm": 13.3,
+      "capture_gap_mm": 6.5
+    },
+    {
+      "kind": "pad",
+      "key": "U1.6",
+      "Y_min_mm": 10.9,
+      "Y_max_mm": 13.3,
+      "capture_gap_mm": 6.5
+    },
+    {
+      "kind": "pad",
+      "key": "U1.7",
+      "Y_min_mm": 12.65,
+      "Y_max_mm": 13.3,
+      "capture_gap_mm": 6.5
+    },
+    {
+      "kind": "pad",
+      "key": "U1.7",
+      "Y_min_mm": 12.65,
+      "Y_max_mm": 12.95,
+      "capture_gap_mm": 6.850000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U1.8",
+      "Y_min_mm": 12.2,
+      "Y_max_mm": 12.45,
+      "capture_gap_mm": 7.350000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U1.9",
+      "Y_min_mm": 11.75,
+      "Y_max_mm": 12.0,
+      "capture_gap_mm": 7.800000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U1.10",
+      "Y_min_mm": 10.9,
+      "Y_max_mm": 11.55,
+      "capture_gap_mm": 8.25
+    },
+    {
+      "kind": "pad",
+      "key": "U1.10",
+      "Y_min_mm": 11.25,
+      "Y_max_mm": 11.55,
+      "capture_gap_mm": 8.25
+    },
+    {
+      "kind": "pad",
+      "key": "C9.1",
+      "Y_min_mm": 2.85,
+      "Y_max_mm": 4.15,
+      "capture_gap_mm": 2.65
+    },
+    {
+      "kind": "pad",
+      "key": "C9.2",
+      "Y_min_mm": 2.85,
+      "Y_max_mm": 4.15,
+      "capture_gap_mm": 2.65
+    },
+    {
+      "kind": "pad",
+      "key": "C8.1",
+      "Y_min_mm": 12.65,
+      "Y_max_mm": 15.65,
+      "capture_gap_mm": 4.15
+    },
+    {
+      "kind": "pad",
+      "key": "C8.2",
+      "Y_min_mm": 12.65,
+      "Y_max_mm": 15.65,
+      "capture_gap_mm": 4.15
+    },
+    {
+      "kind": "pad",
+      "key": "J0.1",
+      "Y_min_mm": 17.4,
+      "Y_max_mm": 19.4,
+      "capture_gap_mm": 0.40000000000000213
+    },
+    {
+      "kind": "pad",
+      "key": "J0.2",
+      "Y_min_mm": 17.4,
+      "Y_max_mm": 19.4,
+      "capture_gap_mm": 0.40000000000000213
+    },
+    {
+      "kind": "pad",
+      "key": "R5.1",
+      "Y_min_mm": 10.45,
+      "Y_max_mm": 11.05,
+      "capture_gap_mm": 8.75
+    },
+    {
+      "kind": "pad",
+      "key": "R5.2",
+      "Y_min_mm": 10.45,
+      "Y_max_mm": 11.05,
+      "capture_gap_mm": 8.75
+    },
+    {
+      "kind": "pad",
+      "key": "C2.1",
+      "Y_min_mm": 3.9,
+      "Y_max_mm": 4.6,
+      "capture_gap_mm": 3.6999999999999997
+    },
+    {
+      "kind": "pad",
+      "key": "C2.2",
+      "Y_min_mm": 2.0,
+      "Y_max_mm": 2.7,
+      "capture_gap_mm": 1.8
+    },
+    {
+      "kind": "pad",
+      "key": "R12.1",
+      "Y_min_mm": 8.05,
+      "Y_max_mm": 8.6,
+      "capture_gap_mm": 7.8500000000000005
+    },
+    {
+      "kind": "pad",
+      "key": "R12.2",
+      "Y_min_mm": 7.1,
+      "Y_max_mm": 7.65,
+      "capture_gap_mm": 6.8999999999999995
+    },
+    {
+      "kind": "pad",
+      "key": "U2.1",
+      "Y_min_mm": 7.75,
+      "Y_max_mm": 8.35,
+      "capture_gap_mm": 7.55
+    },
+    {
+      "kind": "pad",
+      "key": "U2.2",
+      "Y_min_mm": 7.75,
+      "Y_max_mm": 8.35,
+      "capture_gap_mm": 7.55
+    },
+    {
+      "kind": "pad",
+      "key": "U2.3",
+      "Y_min_mm": 7.75,
+      "Y_max_mm": 8.35,
+      "capture_gap_mm": 7.55
+    },
+    {
+      "kind": "pad",
+      "key": "U2.4",
+      "Y_min_mm": 7.75,
+      "Y_max_mm": 8.35,
+      "capture_gap_mm": 7.55
+    },
+    {
+      "kind": "pad",
+      "key": "U2.5",
+      "Y_min_mm": 7.5,
+      "Y_max_mm": 7.75,
+      "capture_gap_mm": 7.3
+    },
+    {
+      "kind": "pad",
+      "key": "U2.6",
+      "Y_min_mm": 7.0,
+      "Y_max_mm": 7.25,
+      "capture_gap_mm": 6.8
+    },
+    {
+      "kind": "pad",
+      "key": "U2.7",
+      "Y_min_mm": 6.5,
+      "Y_max_mm": 6.75,
+      "capture_gap_mm": 6.3
+    },
+    {
+      "kind": "pad",
+      "key": "U2.8",
+      "Y_min_mm": 6.0,
+      "Y_max_mm": 6.75,
+      "capture_gap_mm": 5.8
+    },
+    {
+      "kind": "pad",
+      "key": "U2.8",
+      "Y_min_mm": 6.0,
+      "Y_max_mm": 6.25,
+      "capture_gap_mm": 5.8
+    },
+    {
+      "kind": "pad",
+      "key": "U2.9",
+      "Y_min_mm": 5.45,
+      "Y_max_mm": 6.8,
+      "capture_gap_mm": 5.25
+    },
+    {
+      "kind": "pad",
+      "key": "U2.10",
+      "Y_min_mm": 5.45,
+      "Y_max_mm": 7.15,
+      "capture_gap_mm": 5.25
+    },
+    {
+      "kind": "pad",
+      "key": "U2.11",
+      "Y_min_mm": 5.45,
+      "Y_max_mm": 6.8,
+      "capture_gap_mm": 5.25
+    },
+    {
+      "kind": "pad",
+      "key": "U2.12",
+      "Y_min_mm": 6.0,
+      "Y_max_mm": 6.75,
+      "capture_gap_mm": 5.8
+    },
+    {
+      "kind": "pad",
+      "key": "U2.12",
+      "Y_min_mm": 6.0,
+      "Y_max_mm": 6.25,
+      "capture_gap_mm": 5.8
+    },
+    {
+      "kind": "pad",
+      "key": "U2.13",
+      "Y_min_mm": 6.5,
+      "Y_max_mm": 6.75,
+      "capture_gap_mm": 6.3
+    },
+    {
+      "kind": "pad",
+      "key": "U2.14",
+      "Y_min_mm": 7.0,
+      "Y_max_mm": 7.25,
+      "capture_gap_mm": 6.8
+    },
+    {
+      "kind": "pad",
+      "key": "U2.15",
+      "Y_min_mm": 7.5,
+      "Y_max_mm": 7.75,
+      "capture_gap_mm": 7.3
+    },
+    {
+      "kind": "pad",
+      "key": "C1.1",
+      "Y_min_mm": 3.9,
+      "Y_max_mm": 4.6,
+      "capture_gap_mm": 3.6999999999999997
+    },
+    {
+      "kind": "pad",
+      "key": "C1.2",
+      "Y_min_mm": 2.0,
+      "Y_max_mm": 2.7,
+      "capture_gap_mm": 1.8
+    },
+    {
+      "kind": "pad",
+      "key": "C7.1",
+      "Y_min_mm": 6.325,
+      "Y_max_mm": 7.275,
+      "capture_gap_mm": 6.125
+    },
+    {
+      "kind": "pad",
+      "key": "C7.2",
+      "Y_min_mm": 6.325,
+      "Y_max_mm": 7.275,
+      "capture_gap_mm": 6.125
+    },
+    {
+      "kind": "pad",
+      "key": "C13.1",
+      "Y_min_mm": 9.15,
+      "Y_max_mm": 9.55,
+      "capture_gap_mm": 8.950000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "C13.2",
+      "Y_min_mm": 8.35,
+      "Y_max_mm": 8.75,
+      "capture_gap_mm": 8.15
+    },
+    {
+      "kind": "pad",
+      "key": "R2.1",
+      "Y_min_mm": 7.7,
+      "Y_max_mm": 8.3,
+      "capture_gap_mm": 7.5
+    },
+    {
+      "kind": "pad",
+      "key": "R2.2",
+      "Y_min_mm": 7.7,
+      "Y_max_mm": 8.3,
+      "capture_gap_mm": 7.5
+    },
+    {
+      "kind": "pad",
+      "key": "R9.1",
+      "Y_min_mm": 15.6,
+      "Y_max_mm": 16.2,
+      "capture_gap_mm": 3.6000000000000014
+    },
+    {
+      "kind": "pad",
+      "key": "R9.2",
+      "Y_min_mm": 15.6,
+      "Y_max_mm": 16.2,
+      "capture_gap_mm": 3.6000000000000014
+    },
+    {
+      "kind": "pad",
+      "key": "C6.1",
+      "Y_min_mm": 4.9,
+      "Y_max_mm": 5.6,
+      "capture_gap_mm": 4.7
+    },
+    {
+      "kind": "pad",
+      "key": "C6.2",
+      "Y_min_mm": 3.0,
+      "Y_max_mm": 3.7,
+      "capture_gap_mm": 2.8
+    },
+    {
+      "kind": "pad",
+      "key": "U3.1",
+      "Y_min_mm": 11.15,
+      "Y_max_mm": 11.35,
+      "capture_gap_mm": 8.450000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.2",
+      "Y_min_mm": 11.65,
+      "Y_max_mm": 11.85,
+      "capture_gap_mm": 7.950000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.3",
+      "Y_min_mm": 12.15,
+      "Y_max_mm": 12.35,
+      "capture_gap_mm": 7.450000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.4",
+      "Y_min_mm": 12.65,
+      "Y_max_mm": 12.85,
+      "capture_gap_mm": 6.950000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.5",
+      "Y_min_mm": 13.15,
+      "Y_max_mm": 13.35,
+      "capture_gap_mm": 6.450000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.6",
+      "Y_min_mm": 13.65,
+      "Y_max_mm": 13.85,
+      "capture_gap_mm": 5.950000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.7",
+      "Y_min_mm": 14.1,
+      "Y_max_mm": 14.7,
+      "capture_gap_mm": 5.100000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.8",
+      "Y_min_mm": 14.1,
+      "Y_max_mm": 14.7,
+      "capture_gap_mm": 5.100000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.9",
+      "Y_min_mm": 14.1,
+      "Y_max_mm": 14.7,
+      "capture_gap_mm": 5.100000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.10",
+      "Y_min_mm": 14.1,
+      "Y_max_mm": 14.7,
+      "capture_gap_mm": 5.100000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.11",
+      "Y_min_mm": 13.65,
+      "Y_max_mm": 13.85,
+      "capture_gap_mm": 5.950000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.12",
+      "Y_min_mm": 13.15,
+      "Y_max_mm": 13.35,
+      "capture_gap_mm": 6.450000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.13",
+      "Y_min_mm": 12.65,
+      "Y_max_mm": 12.85,
+      "capture_gap_mm": 6.950000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.14",
+      "Y_min_mm": 12.15,
+      "Y_max_mm": 12.35,
+      "capture_gap_mm": 7.450000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.15",
+      "Y_min_mm": 11.65,
+      "Y_max_mm": 11.85,
+      "capture_gap_mm": 7.950000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.16",
+      "Y_min_mm": 11.15,
+      "Y_max_mm": 11.35,
+      "capture_gap_mm": 8.450000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "U3.17",
+      "Y_min_mm": 10.3,
+      "Y_max_mm": 10.9,
+      "capture_gap_mm": 8.9
+    },
+    {
+      "kind": "pad",
+      "key": "U3.18",
+      "Y_min_mm": 10.3,
+      "Y_max_mm": 10.9,
+      "capture_gap_mm": 8.9
+    },
+    {
+      "kind": "pad",
+      "key": "U3.19",
+      "Y_min_mm": 10.3,
+      "Y_max_mm": 10.9,
+      "capture_gap_mm": 8.9
+    },
+    {
+      "kind": "pad",
+      "key": "U3.20",
+      "Y_min_mm": 10.3,
+      "Y_max_mm": 10.9,
+      "capture_gap_mm": 8.9
+    },
+    {
+      "kind": "pad",
+      "key": "U3.21",
+      "Y_min_mm": 11.2,
+      "Y_max_mm": 13.8,
+      "capture_gap_mm": 6.0
+    },
+    {
+      "kind": "pad",
+      "key": "TP1.1",
+      "Y_min_mm": 1.5,
+      "Y_max_mm": 2.5,
+      "capture_gap_mm": 1.3
+    },
+    {
+      "kind": "pad",
+      "key": "C3.1",
+      "Y_min_mm": 5.425,
+      "Y_max_mm": 6.375,
+      "capture_gap_mm": 5.225
+    },
+    {
+      "kind": "pad",
+      "key": "C3.2",
+      "Y_min_mm": 5.425,
+      "Y_max_mm": 6.375,
+      "capture_gap_mm": 5.225
+    },
+    {
+      "kind": "pad",
+      "key": "D1.1",
+      "Y_min_mm": 9.15,
+      "Y_max_mm": 9.45,
+      "capture_gap_mm": 8.950000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "D1.2",
+      "Y_min_mm": 8.45,
+      "Y_max_mm": 8.75,
+      "capture_gap_mm": 8.25
+    },
+    {
+      "kind": "pad",
+      "key": "R11.1",
+      "Y_min_mm": 8.9,
+      "Y_max_mm": 9.5,
+      "capture_gap_mm": 8.700000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "R11.2",
+      "Y_min_mm": 8.9,
+      "Y_max_mm": 9.5,
+      "capture_gap_mm": 8.700000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "R8.1",
+      "Y_min_mm": 14.3,
+      "Y_max_mm": 14.85,
+      "capture_gap_mm": 4.950000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "R8.2",
+      "Y_min_mm": 13.35,
+      "Y_max_mm": 13.9,
+      "capture_gap_mm": 5.9
+    },
+    {
+      "kind": "pad",
+      "key": "C11.1",
+      "Y_min_mm": 9.15,
+      "Y_max_mm": 9.75,
+      "capture_gap_mm": 8.950000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "C11.2",
+      "Y_min_mm": 9.15,
+      "Y_max_mm": 9.75,
+      "capture_gap_mm": 8.950000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "R3.1",
+      "Y_min_mm": 12.9,
+      "Y_max_mm": 13.45,
+      "capture_gap_mm": 6.350000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "R3.2",
+      "Y_min_mm": 11.95,
+      "Y_max_mm": 12.5,
+      "capture_gap_mm": 7.300000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "C4.1",
+      "Y_min_mm": 1.45,
+      "Y_max_mm": 2.75,
+      "capture_gap_mm": 1.25
+    },
+    {
+      "kind": "pad",
+      "key": "C4.2",
+      "Y_min_mm": 1.45,
+      "Y_max_mm": 2.75,
+      "capture_gap_mm": 1.25
+    },
+    {
+      "kind": "pad",
+      "key": "R13.1",
+      "Y_min_mm": 14.05,
+      "Y_max_mm": 14.6,
+      "capture_gap_mm": 5.200000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "R13.2",
+      "Y_min_mm": 15.0,
+      "Y_max_mm": 15.55,
+      "capture_gap_mm": 4.25
+    },
+    {
+      "kind": "pad",
+      "key": "R7.1",
+      "Y_min_mm": 10.4,
+      "Y_max_mm": 10.95,
+      "capture_gap_mm": 8.850000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "R7.2",
+      "Y_min_mm": 9.45,
+      "Y_max_mm": 10.0,
+      "capture_gap_mm": 9.25
+    },
+    {
+      "kind": "pad",
+      "key": "L1.1",
+      "Y_min_mm": 0.85,
+      "Y_max_mm": 4.25,
+      "capture_gap_mm": 0.6499999999999999
+    },
+    {
+      "kind": "pad",
+      "key": "L1.2",
+      "Y_min_mm": 0.85,
+      "Y_max_mm": 4.25,
+      "capture_gap_mm": 0.6499999999999999
+    },
+    {
+      "kind": "pad",
+      "key": "R10.1",
+      "Y_min_mm": 15.7,
+      "Y_max_mm": 16.3,
+      "capture_gap_mm": 3.5
+    },
+    {
+      "kind": "pad",
+      "key": "R10.2",
+      "Y_min_mm": 15.7,
+      "Y_max_mm": 16.3,
+      "capture_gap_mm": 3.5
+    },
+    {
+      "kind": "pad",
+      "key": "R6.1",
+      "Y_min_mm": 10.1,
+      "Y_max_mm": 10.65,
+      "capture_gap_mm": 9.15
+    },
+    {
+      "kind": "pad",
+      "key": "R6.2",
+      "Y_min_mm": 9.15,
+      "Y_max_mm": 9.7,
+      "capture_gap_mm": 8.950000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "J1.A1_B12",
+      "Y_min_mm": 12.9,
+      "Y_max_mm": 13.5,
+      "capture_gap_mm": 6.300000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "J1.A4_B9",
+      "Y_min_mm": 12.1,
+      "Y_max_mm": 12.7,
+      "capture_gap_mm": 7.100000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "J1.A5",
+      "Y_min_mm": 11.1,
+      "Y_max_mm": 11.4,
+      "capture_gap_mm": 8.4
+    },
+    {
+      "kind": "pad",
+      "key": "J1.A6",
+      "Y_min_mm": 10.1,
+      "Y_max_mm": 10.4,
+      "capture_gap_mm": 9.4
+    },
+    {
+      "kind": "pad",
+      "key": "J1.A7",
+      "Y_min_mm": 9.6,
+      "Y_max_mm": 9.9,
+      "capture_gap_mm": 9.4
+    },
+    {
+      "kind": "pad",
+      "key": "J1.A8",
+      "Y_min_mm": 8.6,
+      "Y_max_mm": 8.9,
+      "capture_gap_mm": 8.4
+    },
+    {
+      "kind": "pad",
+      "key": "J1.B1_A12",
+      "Y_min_mm": 6.5,
+      "Y_max_mm": 7.1,
+      "capture_gap_mm": 6.3
+    },
+    {
+      "kind": "pad",
+      "key": "J1.B4_A9",
+      "Y_min_mm": 7.3,
+      "Y_max_mm": 7.9,
+      "capture_gap_mm": 7.1
+    },
+    {
+      "kind": "pad",
+      "key": "J1.B5",
+      "Y_min_mm": 8.1,
+      "Y_max_mm": 8.4,
+      "capture_gap_mm": 7.8999999999999995
+    },
+    {
+      "kind": "pad",
+      "key": "J1.B6",
+      "Y_min_mm": 9.1,
+      "Y_max_mm": 9.4,
+      "capture_gap_mm": 8.9
+    },
+    {
+      "kind": "pad",
+      "key": "J1.B7",
+      "Y_min_mm": 10.6,
+      "Y_max_mm": 10.9,
+      "capture_gap_mm": 8.9
+    },
+    {
+      "kind": "pad",
+      "key": "J1.B8",
+      "Y_min_mm": 11.6,
+      "Y_max_mm": 11.9,
+      "capture_gap_mm": 7.9
+    },
+    {
+      "kind": "pad",
+      "key": "J1.S1",
+      "Y_min_mm": 13.82,
+      "Y_max_mm": 14.82,
+      "capture_gap_mm": 4.98
+    },
+    {
+      "kind": "pad",
+      "key": "J1.S2",
+      "Y_min_mm": 5.18,
+      "Y_max_mm": 6.18,
+      "capture_gap_mm": 4.9799999999999995
+    },
+    {
+      "kind": "pad",
+      "key": "J1.S3",
+      "Y_min_mm": 13.82,
+      "Y_max_mm": 14.82,
+      "capture_gap_mm": 4.98
+    },
+    {
+      "kind": "pad",
+      "key": "J1.S4",
+      "Y_min_mm": 5.18,
+      "Y_max_mm": 6.18,
+      "capture_gap_mm": 4.9799999999999995
+    },
+    {
+      "kind": "pad",
+      "key": "C12.1",
+      "Y_min_mm": 14.0,
+      "Y_max_mm": 14.4,
+      "capture_gap_mm": 5.4
+    },
+    {
+      "kind": "pad",
+      "key": "C12.2",
+      "Y_min_mm": 14.8,
+      "Y_max_mm": 15.2,
+      "capture_gap_mm": 4.600000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "R4.1",
+      "Y_min_mm": 14.9,
+      "Y_max_mm": 15.5,
+      "capture_gap_mm": 4.300000000000001
+    },
+    {
+      "kind": "pad",
+      "key": "R4.2",
+      "Y_min_mm": 14.9,
+      "Y_max_mm": 15.5,
+      "capture_gap_mm": 4.300000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "0",
+      "Y_min_mm": 10.49,
+      "Y_max_mm": 12.209999999999999,
+      "capture_gap_mm": 7.590000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "1",
+      "Y_min_mm": 10.040000000000001,
+      "Y_max_mm": 10.709999999999999,
+      "capture_gap_mm": 9.090000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "2",
+      "Y_min_mm": 9.25,
+      "Y_max_mm": 10.25,
+      "capture_gap_mm": 9.05
+    },
+    {
+      "kind": "track/via",
+      "key": "3",
+      "Y_min_mm": 10.49,
+      "Y_max_mm": 12.209999999999999,
+      "capture_gap_mm": 7.590000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "4",
+      "Y_min_mm": 10.040000000000001,
+      "Y_max_mm": 10.709999999999999,
+      "capture_gap_mm": 9.090000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "5",
+      "Y_min_mm": 18.4,
+      "Y_max_mm": 19.0,
+      "capture_gap_mm": 0.8000000000000007
+    },
+    {
+      "kind": "track/via",
+      "key": "6",
+      "Y_min_mm": 18.4,
+      "Y_max_mm": 19.0,
+      "capture_gap_mm": 0.8000000000000007
+    },
+    {
+      "kind": "track/via",
+      "key": "7",
+      "Y_min_mm": 10.475,
+      "Y_max_mm": 11.075000000000001,
+      "capture_gap_mm": 8.725
+    },
+    {
+      "kind": "track/via",
+      "key": "8",
+      "Y_min_mm": 17.799999,
+      "Y_max_mm": 18.399999,
+      "capture_gap_mm": 1.4000009999999996
+    },
+    {
+      "kind": "track/via",
+      "key": "9",
+      "Y_min_mm": 9.85,
+      "Y_max_mm": 10.450000000000001,
+      "capture_gap_mm": 9.35
+    },
+    {
+      "kind": "track/via",
+      "key": "10",
+      "Y_min_mm": 9.85,
+      "Y_max_mm": 10.450000000000001,
+      "capture_gap_mm": 9.35
+    },
+    {
+      "kind": "track/via",
+      "key": "11",
+      "Y_min_mm": 12.875,
+      "Y_max_mm": 13.475000000000001,
+      "capture_gap_mm": 6.324999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "12",
+      "Y_min_mm": 17.799999,
+      "Y_max_mm": 18.399999,
+      "capture_gap_mm": 1.4000009999999996
+    },
+    {
+      "kind": "track/via",
+      "key": "13",
+      "Y_min_mm": 7.925000000000001,
+      "Y_max_mm": 8.125,
+      "capture_gap_mm": 7.7250000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "14",
+      "Y_min_mm": 9.625,
+      "Y_max_mm": 10.875,
+      "capture_gap_mm": 8.925
+    },
+    {
+      "kind": "track/via",
+      "key": "15",
+      "Y_min_mm": 13.0,
+      "Y_max_mm": 13.275,
+      "capture_gap_mm": 6.525
+    },
+    {
+      "kind": "track/via",
+      "key": "16",
+      "Y_min_mm": 7.8500000000000005,
+      "Y_max_mm": 8.075,
+      "capture_gap_mm": 7.65
+    },
+    {
+      "kind": "track/via",
+      "key": "17",
+      "Y_min_mm": 7.825,
+      "Y_max_mm": 8.025,
+      "capture_gap_mm": 7.625
+    },
+    {
+      "kind": "track/via",
+      "key": "18",
+      "Y_min_mm": 8.775,
+      "Y_max_mm": 9.0,
+      "capture_gap_mm": 8.575000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "19",
+      "Y_min_mm": 8.099999,
+      "Y_max_mm": 8.325,
+      "capture_gap_mm": 7.899999
+    },
+    {
+      "kind": "track/via",
+      "key": "20",
+      "Y_min_mm": 8.175,
+      "Y_max_mm": 8.424999,
+      "capture_gap_mm": 7.9750000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "21",
+      "Y_min_mm": 13.875,
+      "Y_max_mm": 14.799999999999999,
+      "capture_gap_mm": 5.000000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "22",
+      "Y_min_mm": 14.5,
+      "Y_max_mm": 15.45,
+      "capture_gap_mm": 4.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "23",
+      "Y_min_mm": 14.600000000000001,
+      "Y_max_mm": 15.524999999999999,
+      "capture_gap_mm": 4.275000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "24",
+      "Y_min_mm": 7.875,
+      "Y_max_mm": 8.125,
+      "capture_gap_mm": 7.675
+    },
+    {
+      "kind": "track/via",
+      "key": "25",
+      "Y_min_mm": 7.8500000000000005,
+      "Y_max_mm": 8.075,
+      "capture_gap_mm": 7.65
+    },
+    {
+      "kind": "track/via",
+      "key": "26",
+      "Y_min_mm": 9.700000000000001,
+      "Y_max_mm": 11.275,
+      "capture_gap_mm": 8.525
+    },
+    {
+      "kind": "track/via",
+      "key": "27",
+      "Y_min_mm": 8.325000000000001,
+      "Y_max_mm": 8.775,
+      "capture_gap_mm": 8.125000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "28",
+      "Y_min_mm": 8.575000000000001,
+      "Y_max_mm": 8.799999999999999,
+      "capture_gap_mm": 8.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "29",
+      "Y_min_mm": 7.925000000000001,
+      "Y_max_mm": 8.65,
+      "capture_gap_mm": 7.7250000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "30",
+      "Y_min_mm": 13.8,
+      "Y_max_mm": 14.725,
+      "capture_gap_mm": 5.075000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "31",
+      "Y_min_mm": 8.6,
+      "Y_max_mm": 8.85,
+      "capture_gap_mm": 8.4
+    },
+    {
+      "kind": "track/via",
+      "key": "32",
+      "Y_min_mm": 13.700000000000001,
+      "Y_max_mm": 14.625,
+      "capture_gap_mm": 5.175000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "33",
+      "Y_min_mm": 8.775,
+      "Y_max_mm": 9.0,
+      "capture_gap_mm": 8.575000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "34",
+      "Y_min_mm": 7.825,
+      "Y_max_mm": 8.05,
+      "capture_gap_mm": 7.625
+    },
+    {
+      "kind": "track/via",
+      "key": "35",
+      "Y_min_mm": 7.925000000000001,
+      "Y_max_mm": 8.299999,
+      "capture_gap_mm": 7.7250000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "36",
+      "Y_min_mm": 10.05,
+      "Y_max_mm": 10.25,
+      "capture_gap_mm": 9.55
+    },
+    {
+      "kind": "track/via",
+      "key": "37",
+      "Y_min_mm": 13.975000000000001,
+      "Y_max_mm": 14.899999999999999,
+      "capture_gap_mm": 4.900000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "38",
+      "Y_min_mm": 14.3,
+      "Y_max_mm": 15.225,
+      "capture_gap_mm": 4.575000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "39",
+      "Y_min_mm": 13.75,
+      "Y_max_mm": 14.7,
+      "capture_gap_mm": 5.100000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "40",
+      "Y_min_mm": 7.825,
+      "Y_max_mm": 8.025,
+      "capture_gap_mm": 7.625
+    },
+    {
+      "kind": "track/via",
+      "key": "41",
+      "Y_min_mm": 16.175,
+      "Y_max_mm": 18.549999,
+      "capture_gap_mm": 1.250001000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "42",
+      "Y_min_mm": 7.8500000000000005,
+      "Y_max_mm": 8.075,
+      "capture_gap_mm": 7.65
+    },
+    {
+      "kind": "track/via",
+      "key": "43",
+      "Y_min_mm": 7.825,
+      "Y_max_mm": 8.05,
+      "capture_gap_mm": 7.625
+    },
+    {
+      "kind": "track/via",
+      "key": "44",
+      "Y_min_mm": 9.700000000000001,
+      "Y_max_mm": 12.975,
+      "capture_gap_mm": 6.825000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "45",
+      "Y_min_mm": 8.75,
+      "Y_max_mm": 9.75,
+      "capture_gap_mm": 8.55
+    },
+    {
+      "kind": "track/via",
+      "key": "46",
+      "Y_min_mm": 7.8500000000000005,
+      "Y_max_mm": 8.05,
+      "capture_gap_mm": 7.65
+    },
+    {
+      "kind": "track/via",
+      "key": "47",
+      "Y_min_mm": 8.375,
+      "Y_max_mm": 8.575,
+      "capture_gap_mm": 8.175
+    },
+    {
+      "kind": "track/via",
+      "key": "48",
+      "Y_min_mm": 7.8500000000000005,
+      "Y_max_mm": 8.05,
+      "capture_gap_mm": 7.65
+    },
+    {
+      "kind": "track/via",
+      "key": "49",
+      "Y_min_mm": 13.65,
+      "Y_max_mm": 14.575,
+      "capture_gap_mm": 5.225000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "50",
+      "Y_min_mm": 8.65,
+      "Y_max_mm": 8.875,
+      "capture_gap_mm": 8.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "51",
+      "Y_min_mm": 8.375,
+      "Y_max_mm": 8.924999999999999,
+      "capture_gap_mm": 8.175
+    },
+    {
+      "kind": "track/via",
+      "key": "52",
+      "Y_min_mm": 12.075000000000001,
+      "Y_max_mm": 14.45,
+      "capture_gap_mm": 5.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "53",
+      "Y_min_mm": 7.925000000000001,
+      "Y_max_mm": 8.125,
+      "capture_gap_mm": 7.7250000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "54",
+      "Y_min_mm": 7.925000000000001,
+      "Y_max_mm": 8.575,
+      "capture_gap_mm": 7.7250000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "55",
+      "Y_min_mm": 9.55,
+      "Y_max_mm": 10.775,
+      "capture_gap_mm": 9.025
+    },
+    {
+      "kind": "track/via",
+      "key": "56",
+      "Y_min_mm": 15.100000000000001,
+      "Y_max_mm": 17.075,
+      "capture_gap_mm": 2.7250000000000014
+    },
+    {
+      "kind": "track/via",
+      "key": "57",
+      "Y_min_mm": 8.6,
+      "Y_max_mm": 8.85,
+      "capture_gap_mm": 8.4
+    },
+    {
+      "kind": "track/via",
+      "key": "58",
+      "Y_min_mm": 7.875,
+      "Y_max_mm": 8.125,
+      "capture_gap_mm": 7.675
+    },
+    {
+      "kind": "track/via",
+      "key": "59",
+      "Y_min_mm": 8.099999,
+      "Y_max_mm": 8.325,
+      "capture_gap_mm": 7.899999
+    },
+    {
+      "kind": "track/via",
+      "key": "60",
+      "Y_min_mm": 13.9,
+      "Y_max_mm": 14.875,
+      "capture_gap_mm": 4.925000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "61",
+      "Y_min_mm": 17.649999,
+      "Y_max_mm": 18.549999,
+      "capture_gap_mm": 1.250001000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "62",
+      "Y_min_mm": 8.575000000000001,
+      "Y_max_mm": 8.799999999999999,
+      "capture_gap_mm": 8.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "63",
+      "Y_min_mm": 11.075000000000001,
+      "Y_max_mm": 13.2,
+      "capture_gap_mm": 6.600000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "64",
+      "Y_min_mm": 8.175,
+      "Y_max_mm": 8.424999,
+      "capture_gap_mm": 7.9750000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "65",
+      "Y_min_mm": 14.575000000000001,
+      "Y_max_mm": 15.5,
+      "capture_gap_mm": 4.300000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "66",
+      "Y_min_mm": 13.55,
+      "Y_max_mm": 14.475,
+      "capture_gap_mm": 5.325000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "67",
+      "Y_min_mm": 18.25,
+      "Y_max_mm": 19.15,
+      "capture_gap_mm": 0.6500000000000021
+    },
+    {
+      "kind": "track/via",
+      "key": "68",
+      "Y_min_mm": 7.875,
+      "Y_max_mm": 8.075,
+      "capture_gap_mm": 7.675
+    },
+    {
+      "kind": "track/via",
+      "key": "69",
+      "Y_min_mm": 8.450000000000001,
+      "Y_max_mm": 8.674999999999999,
+      "capture_gap_mm": 8.250000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "70",
+      "Y_min_mm": 9.9,
+      "Y_max_mm": 10.4,
+      "capture_gap_mm": 9.4
+    },
+    {
+      "kind": "track/via",
+      "key": "71",
+      "Y_min_mm": 8.5,
+      "Y_max_mm": 8.75,
+      "capture_gap_mm": 8.3
+    },
+    {
+      "kind": "track/via",
+      "key": "72",
+      "Y_min_mm": 8.725,
+      "Y_max_mm": 8.975,
+      "capture_gap_mm": 8.525
+    },
+    {
+      "kind": "track/via",
+      "key": "73",
+      "Y_min_mm": 8.55,
+      "Y_max_mm": 9.825,
+      "capture_gap_mm": 8.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "74",
+      "Y_min_mm": 8.125,
+      "Y_max_mm": 8.375,
+      "capture_gap_mm": 7.925
+    },
+    {
+      "kind": "track/via",
+      "key": "75",
+      "Y_min_mm": 8.224999,
+      "Y_max_mm": 8.45,
+      "capture_gap_mm": 8.024999000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "76",
+      "Y_min_mm": 8.475,
+      "Y_max_mm": 8.7,
+      "capture_gap_mm": 8.275
+    },
+    {
+      "kind": "track/via",
+      "key": "77",
+      "Y_min_mm": 8.475,
+      "Y_max_mm": 8.674999999999999,
+      "capture_gap_mm": 8.275
+    },
+    {
+      "kind": "track/via",
+      "key": "78",
+      "Y_min_mm": 7.875,
+      "Y_max_mm": 8.125,
+      "capture_gap_mm": 7.675
+    },
+    {
+      "kind": "track/via",
+      "key": "79",
+      "Y_min_mm": 7.875,
+      "Y_max_mm": 8.075,
+      "capture_gap_mm": 7.675
+    },
+    {
+      "kind": "track/via",
+      "key": "80",
+      "Y_min_mm": 14.0,
+      "Y_max_mm": 15.2,
+      "capture_gap_mm": 4.600000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "81",
+      "Y_min_mm": 7.8500000000000005,
+      "Y_max_mm": 8.05,
+      "capture_gap_mm": 7.65
+    },
+    {
+      "kind": "track/via",
+      "key": "82",
+      "Y_min_mm": 8.675,
+      "Y_max_mm": 8.924999999999999,
+      "capture_gap_mm": 8.475000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "83",
+      "Y_min_mm": 8.224999,
+      "Y_max_mm": 8.45,
+      "capture_gap_mm": 8.024999000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "84",
+      "Y_min_mm": 8.125,
+      "Y_max_mm": 8.375,
+      "capture_gap_mm": 7.925
+    },
+    {
+      "kind": "track/via",
+      "key": "85",
+      "Y_min_mm": 8.65,
+      "Y_max_mm": 8.875,
+      "capture_gap_mm": 8.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "86",
+      "Y_min_mm": 7.925000000000001,
+      "Y_max_mm": 8.125,
+      "capture_gap_mm": 7.7250000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "87",
+      "Y_min_mm": 8.55,
+      "Y_max_mm": 8.75,
+      "capture_gap_mm": 8.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "88",
+      "Y_min_mm": 14.425,
+      "Y_max_mm": 15.375,
+      "capture_gap_mm": 4.425000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "89",
+      "Y_min_mm": 7.875,
+      "Y_max_mm": 8.075,
+      "capture_gap_mm": 7.675
+    },
+    {
+      "kind": "track/via",
+      "key": "90",
+      "Y_min_mm": 8.725,
+      "Y_max_mm": 8.975,
+      "capture_gap_mm": 8.525
+    },
+    {
+      "kind": "track/via",
+      "key": "91",
+      "Y_min_mm": 8.3,
+      "Y_max_mm": 8.775,
+      "capture_gap_mm": 8.100000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "92",
+      "Y_min_mm": 7.8500000000000005,
+      "Y_max_mm": 8.075,
+      "capture_gap_mm": 7.65
+    },
+    {
+      "kind": "track/via",
+      "key": "93",
+      "Y_min_mm": 8.8,
+      "Y_max_mm": 10.25,
+      "capture_gap_mm": 8.600000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "94",
+      "Y_min_mm": 8.675,
+      "Y_max_mm": 8.924999999999999,
+      "capture_gap_mm": 8.475000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "95",
+      "Y_min_mm": 8.25,
+      "Y_max_mm": 8.475,
+      "capture_gap_mm": 8.05
+    },
+    {
+      "kind": "track/via",
+      "key": "96",
+      "Y_min_mm": 13.825000000000001,
+      "Y_max_mm": 14.774999999999999,
+      "capture_gap_mm": 5.025000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "97",
+      "Y_min_mm": 7.825,
+      "Y_max_mm": 8.05,
+      "capture_gap_mm": 7.625
+    },
+    {
+      "kind": "track/via",
+      "key": "98",
+      "Y_min_mm": 14.4,
+      "Y_max_mm": 15.325,
+      "capture_gap_mm": 4.475000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "99",
+      "Y_min_mm": 14.55,
+      "Y_max_mm": 15.475,
+      "capture_gap_mm": 4.325000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "100",
+      "Y_min_mm": 7.925000000000001,
+      "Y_max_mm": 8.125,
+      "capture_gap_mm": 7.7250000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "101",
+      "Y_min_mm": 13.675,
+      "Y_max_mm": 14.6,
+      "capture_gap_mm": 5.200000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "102",
+      "Y_min_mm": 14.325000000000001,
+      "Y_max_mm": 15.299999999999999,
+      "capture_gap_mm": 4.500000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "103",
+      "Y_min_mm": 14.625,
+      "Y_max_mm": 15.975,
+      "capture_gap_mm": 3.825000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "104",
+      "Y_min_mm": 8.5,
+      "Y_max_mm": 8.7,
+      "capture_gap_mm": 8.3
+    },
+    {
+      "kind": "track/via",
+      "key": "105",
+      "Y_min_mm": 8.25,
+      "Y_max_mm": 8.5,
+      "capture_gap_mm": 8.05
+    },
+    {
+      "kind": "track/via",
+      "key": "106",
+      "Y_min_mm": 13.725000000000001,
+      "Y_max_mm": 14.649999999999999,
+      "capture_gap_mm": 5.150000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "107",
+      "Y_min_mm": 13.575000000000001,
+      "Y_max_mm": 14.549999999999999,
+      "capture_gap_mm": 5.250000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "108",
+      "Y_min_mm": 8.3,
+      "Y_max_mm": 8.525,
+      "capture_gap_mm": 8.100000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "109",
+      "Y_min_mm": 7.825,
+      "Y_max_mm": 8.05,
+      "capture_gap_mm": 7.625
+    },
+    {
+      "kind": "track/via",
+      "key": "110",
+      "Y_min_mm": 7.875,
+      "Y_max_mm": 8.075,
+      "capture_gap_mm": 7.675
+    },
+    {
+      "kind": "track/via",
+      "key": "111",
+      "Y_min_mm": 7.925000000000001,
+      "Y_max_mm": 8.299999,
+      "capture_gap_mm": 7.7250000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "112",
+      "Y_min_mm": 10.575000000000001,
+      "Y_max_mm": 10.875,
+      "capture_gap_mm": 8.925
+    },
+    {
+      "kind": "track/via",
+      "key": "113",
+      "Y_min_mm": 15.075000000000001,
+      "Y_max_mm": 16.0,
+      "capture_gap_mm": 3.8000000000000007
+    },
+    {
+      "kind": "track/via",
+      "key": "114",
+      "Y_min_mm": 8.8,
+      "Y_max_mm": 9.9,
+      "capture_gap_mm": 8.600000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "115",
+      "Y_min_mm": 7.875,
+      "Y_max_mm": 8.125,
+      "capture_gap_mm": 7.675
+    },
+    {
+      "kind": "track/via",
+      "key": "116",
+      "Y_min_mm": 8.725,
+      "Y_max_mm": 8.95,
+      "capture_gap_mm": 8.525
+    },
+    {
+      "kind": "track/via",
+      "key": "117",
+      "Y_min_mm": 8.275,
+      "Y_max_mm": 8.5,
+      "capture_gap_mm": 8.075000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "118",
+      "Y_min_mm": 17.649999,
+      "Y_max_mm": 19.15,
+      "capture_gap_mm": 0.6500000000000021
+    },
+    {
+      "kind": "track/via",
+      "key": "119",
+      "Y_min_mm": 14.475000000000001,
+      "Y_max_mm": 15.399999999999999,
+      "capture_gap_mm": 4.400000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "120",
+      "Y_min_mm": 8.450000000000001,
+      "Y_max_mm": 8.65,
+      "capture_gap_mm": 8.250000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "121",
+      "Y_min_mm": 7.8500000000000005,
+      "Y_max_mm": 8.05,
+      "capture_gap_mm": 7.65
+    },
+    {
+      "kind": "track/via",
+      "key": "122",
+      "Y_min_mm": 10.3,
+      "Y_max_mm": 10.525,
+      "capture_gap_mm": 9.275
+    },
+    {
+      "kind": "track/via",
+      "key": "123",
+      "Y_min_mm": 8.075000000000001,
+      "Y_max_mm": 9.924999999999999,
+      "capture_gap_mm": 7.875000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "124",
+      "Y_min_mm": 10.25,
+      "Y_max_mm": 10.5,
+      "capture_gap_mm": 9.3
+    },
+    {
+      "kind": "track/via",
+      "key": "125",
+      "Y_min_mm": 11.125,
+      "Y_max_mm": 11.5,
+      "capture_gap_mm": 8.3
+    },
+    {
+      "kind": "track/via",
+      "key": "126",
+      "Y_min_mm": 9.725,
+      "Y_max_mm": 10.45,
+      "capture_gap_mm": 9.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "127",
+      "Y_min_mm": 10.525,
+      "Y_max_mm": 11.5,
+      "capture_gap_mm": 8.3
+    },
+    {
+      "kind": "track/via",
+      "key": "128",
+      "Y_min_mm": 9.725,
+      "Y_max_mm": 9.924999999999999,
+      "capture_gap_mm": 9.525
+    },
+    {
+      "kind": "track/via",
+      "key": "129",
+      "Y_min_mm": 10.325000000000001,
+      "Y_max_mm": 10.725,
+      "capture_gap_mm": 9.075000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "130",
+      "Y_min_mm": 7.9,
+      "Y_max_mm": 8.275,
+      "capture_gap_mm": 7.7
+    },
+    {
+      "kind": "track/via",
+      "key": "131",
+      "Y_min_mm": 12.64,
+      "Y_max_mm": 12.86,
+      "capture_gap_mm": 6.940000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "132",
+      "Y_min_mm": 12.14,
+      "Y_max_mm": 12.36,
+      "capture_gap_mm": 7.440000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "133",
+      "Y_min_mm": 11.175,
+      "Y_max_mm": 11.375,
+      "capture_gap_mm": 8.425
+    },
+    {
+      "kind": "track/via",
+      "key": "134",
+      "Y_min_mm": 8.3,
+      "Y_max_mm": 9.4,
+      "capture_gap_mm": 8.100000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "135",
+      "Y_min_mm": 11.64,
+      "Y_max_mm": 11.86,
+      "capture_gap_mm": 7.940000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "136",
+      "Y_min_mm": 11.89,
+      "Y_max_mm": 12.36,
+      "capture_gap_mm": 7.440000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "137",
+      "Y_min_mm": 10.525,
+      "Y_max_mm": 10.725,
+      "capture_gap_mm": 9.075000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "138",
+      "Y_min_mm": 11.15,
+      "Y_max_mm": 11.375,
+      "capture_gap_mm": 8.425
+    },
+    {
+      "kind": "track/via",
+      "key": "139",
+      "Y_min_mm": 6.515,
+      "Y_max_mm": 6.735,
+      "capture_gap_mm": 6.3149999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "140",
+      "Y_min_mm": 10.925,
+      "Y_max_mm": 11.15,
+      "capture_gap_mm": 8.65
+    },
+    {
+      "kind": "track/via",
+      "key": "141",
+      "Y_min_mm": 14.225,
+      "Y_max_mm": 14.424999999999999,
+      "capture_gap_mm": 5.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "142",
+      "Y_min_mm": 11.15,
+      "Y_max_mm": 11.35,
+      "capture_gap_mm": 8.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "143",
+      "Y_min_mm": 12.64,
+      "Y_max_mm": 13.11,
+      "capture_gap_mm": 6.690000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "144",
+      "Y_min_mm": 11.0,
+      "Y_max_mm": 11.35,
+      "capture_gap_mm": 8.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "145",
+      "Y_min_mm": 10.275,
+      "Y_max_mm": 10.725,
+      "capture_gap_mm": 9.075000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "146",
+      "Y_min_mm": 9.25,
+      "Y_max_mm": 9.475,
+      "capture_gap_mm": 9.05
+    },
+    {
+      "kind": "track/via",
+      "key": "147",
+      "Y_min_mm": 5.89,
+      "Y_max_mm": 6.485,
+      "capture_gap_mm": 5.6899999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "148",
+      "Y_min_mm": 6.265,
+      "Y_max_mm": 6.485,
+      "capture_gap_mm": 6.0649999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "149",
+      "Y_min_mm": 10.950000000000001,
+      "Y_max_mm": 11.2,
+      "capture_gap_mm": 8.600000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "150",
+      "Y_min_mm": 9.200000000000001,
+      "Y_max_mm": 9.45,
+      "capture_gap_mm": 9.000000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "151",
+      "Y_min_mm": 11.15,
+      "Y_max_mm": 11.375,
+      "capture_gap_mm": 8.425
+    },
+    {
+      "kind": "track/via",
+      "key": "152",
+      "Y_min_mm": 13.14,
+      "Y_max_mm": 13.36,
+      "capture_gap_mm": 6.440000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "153",
+      "Y_min_mm": 11.15,
+      "Y_max_mm": 11.35,
+      "capture_gap_mm": 8.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "154",
+      "Y_min_mm": 10.275,
+      "Y_max_mm": 10.475,
+      "capture_gap_mm": 9.325000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "155",
+      "Y_min_mm": 14.225,
+      "Y_max_mm": 14.5,
+      "capture_gap_mm": 5.300000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "156",
+      "Y_min_mm": 10.525,
+      "Y_max_mm": 11.35,
+      "capture_gap_mm": 8.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "157",
+      "Y_min_mm": 12.89,
+      "Y_max_mm": 13.36,
+      "capture_gap_mm": 6.440000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "158",
+      "Y_min_mm": 9.275,
+      "Y_max_mm": 11.125,
+      "capture_gap_mm": 8.675
+    },
+    {
+      "kind": "track/via",
+      "key": "159",
+      "Y_min_mm": 11.64,
+      "Y_max_mm": 12.11,
+      "capture_gap_mm": 7.690000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "160",
+      "Y_min_mm": 6.7,
+      "Y_max_mm": 8.5,
+      "capture_gap_mm": 6.5
+    },
+    {
+      "kind": "track/via",
+      "key": "161",
+      "Y_min_mm": 6.515,
+      "Y_max_mm": 6.8100000000000005,
+      "capture_gap_mm": 6.3149999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "162",
+      "Y_min_mm": 4.95,
+      "Y_max_mm": 5.55,
+      "capture_gap_mm": 4.75
+    },
+    {
+      "kind": "track/via",
+      "key": "163",
+      "Y_min_mm": 6.5,
+      "Y_max_mm": 7.1,
+      "capture_gap_mm": 6.3
+    },
+    {
+      "kind": "track/via",
+      "key": "164",
+      "Y_min_mm": 14.149999999999999,
+      "Y_max_mm": 14.75,
+      "capture_gap_mm": 5.050000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "165",
+      "Y_min_mm": 13.549999999999999,
+      "Y_max_mm": 14.15,
+      "capture_gap_mm": 5.65
+    },
+    {
+      "kind": "track/via",
+      "key": "166",
+      "Y_min_mm": 8.899999999999999,
+      "Y_max_mm": 9.5,
+      "capture_gap_mm": 8.7
+    },
+    {
+      "kind": "track/via",
+      "key": "167",
+      "Y_min_mm": 14.149999999999999,
+      "Y_max_mm": 14.75,
+      "capture_gap_mm": 5.050000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "168",
+      "Y_min_mm": 6.4,
+      "Y_max_mm": 7.0,
+      "capture_gap_mm": 6.2
+    },
+    {
+      "kind": "track/via",
+      "key": "169",
+      "Y_min_mm": 14.274999999999999,
+      "Y_max_mm": 14.875,
+      "capture_gap_mm": 4.925000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "170",
+      "Y_min_mm": 14.024999999999999,
+      "Y_max_mm": 14.625,
+      "capture_gap_mm": 5.175000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "171",
+      "Y_min_mm": 4.95,
+      "Y_max_mm": 5.55,
+      "capture_gap_mm": 4.75
+    },
+    {
+      "kind": "track/via",
+      "key": "172",
+      "Y_min_mm": 5.7,
+      "Y_max_mm": 6.3,
+      "capture_gap_mm": 5.5
+    },
+    {
+      "kind": "track/via",
+      "key": "173",
+      "Y_min_mm": 12.7,
+      "Y_max_mm": 13.3,
+      "capture_gap_mm": 6.5
+    },
+    {
+      "kind": "track/via",
+      "key": "174",
+      "Y_min_mm": 13.549999999999999,
+      "Y_max_mm": 14.15,
+      "capture_gap_mm": 5.65
+    },
+    {
+      "kind": "track/via",
+      "key": "175",
+      "Y_min_mm": 12.1,
+      "Y_max_mm": 12.700000000000001,
+      "capture_gap_mm": 7.1
+    },
+    {
+      "kind": "track/via",
+      "key": "176",
+      "Y_min_mm": 11.7,
+      "Y_max_mm": 12.3,
+      "capture_gap_mm": 7.5
+    },
+    {
+      "kind": "track/via",
+      "key": "177",
+      "Y_min_mm": 1.8,
+      "Y_max_mm": 2.4,
+      "capture_gap_mm": 1.6
+    },
+    {
+      "kind": "track/via",
+      "key": "178",
+      "Y_min_mm": 6.35,
+      "Y_max_mm": 7.25,
+      "capture_gap_mm": 6.1499999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "179",
+      "Y_min_mm": 12.55,
+      "Y_max_mm": 14.299999999999999,
+      "capture_gap_mm": 5.500000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "180",
+      "Y_min_mm": 13.25,
+      "Y_max_mm": 14.424999999999999,
+      "capture_gap_mm": 5.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "181",
+      "Y_min_mm": 4.8,
+      "Y_max_mm": 5.7,
+      "capture_gap_mm": 4.6
+    },
+    {
+      "kind": "track/via",
+      "key": "182",
+      "Y_min_mm": 6.25,
+      "Y_max_mm": 7.15,
+      "capture_gap_mm": 6.05
+    },
+    {
+      "kind": "track/via",
+      "key": "183",
+      "Y_min_mm": 4.8,
+      "Y_max_mm": 11.5,
+      "capture_gap_mm": 4.6
+    },
+    {
+      "kind": "track/via",
+      "key": "184",
+      "Y_min_mm": 4.825,
+      "Y_max_mm": 6.45,
+      "capture_gap_mm": 4.625
+    },
+    {
+      "kind": "track/via",
+      "key": "185",
+      "Y_min_mm": 14.0,
+      "Y_max_mm": 14.899999999999999,
+      "capture_gap_mm": 4.900000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "186",
+      "Y_min_mm": 12.55,
+      "Y_max_mm": 13.45,
+      "capture_gap_mm": 6.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "187",
+      "Y_min_mm": 4.5249999999999995,
+      "Y_max_mm": 5.7250000000000005,
+      "capture_gap_mm": 4.324999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "188",
+      "Y_min_mm": 13.4,
+      "Y_max_mm": 14.299999999999999,
+      "capture_gap_mm": 5.500000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "189",
+      "Y_min_mm": 12.9,
+      "Y_max_mm": 13.45,
+      "capture_gap_mm": 6.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "190",
+      "Y_min_mm": 6.25,
+      "Y_max_mm": 7.25,
+      "capture_gap_mm": 6.05
+    },
+    {
+      "kind": "track/via",
+      "key": "191",
+      "Y_min_mm": 11.9,
+      "Y_max_mm": 12.1,
+      "capture_gap_mm": 7.700000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "192",
+      "Y_min_mm": 11.9,
+      "Y_max_mm": 12.5,
+      "capture_gap_mm": 7.300000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "193",
+      "Y_min_mm": 14.35,
+      "Y_max_mm": 14.674999999999999,
+      "capture_gap_mm": 5.125000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "194",
+      "Y_min_mm": 1.6500000000000001,
+      "Y_max_mm": 3.6,
+      "capture_gap_mm": 1.4500000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "195",
+      "Y_min_mm": 10.600000000000001,
+      "Y_max_mm": 12.45,
+      "capture_gap_mm": 7.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "196",
+      "Y_min_mm": 13.4,
+      "Y_max_mm": 14.899999999999999,
+      "capture_gap_mm": 4.900000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "197",
+      "Y_min_mm": 11.55,
+      "Y_max_mm": 13.45,
+      "capture_gap_mm": 6.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "198",
+      "Y_min_mm": 4.8,
+      "Y_max_mm": 7.25,
+      "capture_gap_mm": 4.6
+    },
+    {
+      "kind": "track/via",
+      "key": "199",
+      "Y_min_mm": 9.1,
+      "Y_max_mm": 9.875,
+      "capture_gap_mm": 8.9
+    },
+    {
+      "kind": "track/via",
+      "key": "200",
+      "Y_min_mm": 9.675,
+      "Y_max_mm": 12.1,
+      "capture_gap_mm": 7.700000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "201",
+      "Y_min_mm": 14.35,
+      "Y_max_mm": 14.549999999999999,
+      "capture_gap_mm": 5.250000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "202",
+      "Y_min_mm": 2.6999999999999997,
+      "Y_max_mm": 5.425,
+      "capture_gap_mm": 2.4999999999999996
+    },
+    {
+      "kind": "track/via",
+      "key": "203",
+      "Y_min_mm": 5.55,
+      "Y_max_mm": 7.15,
+      "capture_gap_mm": 5.35
+    },
+    {
+      "kind": "track/via",
+      "key": "204",
+      "Y_min_mm": 11.225,
+      "Y_max_mm": 11.45,
+      "capture_gap_mm": 8.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "205",
+      "Y_min_mm": 15.8,
+      "Y_max_mm": 16.0,
+      "capture_gap_mm": 3.8000000000000007
+    },
+    {
+      "kind": "track/via",
+      "key": "206",
+      "Y_min_mm": 3.45,
+      "Y_max_mm": 5.05,
+      "capture_gap_mm": 3.25
+    },
+    {
+      "kind": "track/via",
+      "key": "207",
+      "Y_min_mm": 5.7250000000000005,
+      "Y_max_mm": 6.8999999999999995,
+      "capture_gap_mm": 5.525
+    },
+    {
+      "kind": "track/via",
+      "key": "208",
+      "Y_min_mm": 8.0,
+      "Y_max_mm": 8.2,
+      "capture_gap_mm": 7.8
+    },
+    {
+      "kind": "track/via",
+      "key": "209",
+      "Y_min_mm": 11.15,
+      "Y_max_mm": 11.424999999999999,
+      "capture_gap_mm": 8.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "210",
+      "Y_min_mm": 14.65,
+      "Y_max_mm": 15.2,
+      "capture_gap_mm": 4.600000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "211",
+      "Y_min_mm": 8.5,
+      "Y_max_mm": 8.7,
+      "capture_gap_mm": 8.3
+    },
+    {
+      "kind": "track/via",
+      "key": "212",
+      "Y_min_mm": 14.575000000000001,
+      "Y_max_mm": 14.85,
+      "capture_gap_mm": 4.950000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "213",
+      "Y_min_mm": 10.65,
+      "Y_max_mm": 11.45,
+      "capture_gap_mm": 8.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "214",
+      "Y_min_mm": 13.3,
+      "Y_max_mm": 13.6,
+      "capture_gap_mm": 6.200000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "215",
+      "Y_min_mm": 14.3,
+      "Y_max_mm": 14.775,
+      "capture_gap_mm": 5.025
+    },
+    {
+      "kind": "track/via",
+      "key": "216",
+      "Y_min_mm": 13.15,
+      "Y_max_mm": 13.4,
+      "capture_gap_mm": 6.4
+    },
+    {
+      "kind": "track/via",
+      "key": "217",
+      "Y_min_mm": 7.950000000000001,
+      "Y_max_mm": 8.25,
+      "capture_gap_mm": 7.750000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "218",
+      "Y_min_mm": 11.25,
+      "Y_max_mm": 11.45,
+      "capture_gap_mm": 8.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "219",
+      "Y_min_mm": 11.5,
+      "Y_max_mm": 11.7,
+      "capture_gap_mm": 8.100000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "220",
+      "Y_min_mm": 11.25,
+      "Y_max_mm": 12.424999999999999,
+      "capture_gap_mm": 7.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "221",
+      "Y_min_mm": 5.7250000000000005,
+      "Y_max_mm": 5.999999,
+      "capture_gap_mm": 5.525
+    },
+    {
+      "kind": "track/via",
+      "key": "222",
+      "Y_min_mm": 7.950000000000001,
+      "Y_max_mm": 8.2,
+      "capture_gap_mm": 7.750000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "223",
+      "Y_min_mm": 11.25,
+      "Y_max_mm": 11.7,
+      "capture_gap_mm": 8.100000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "224",
+      "Y_min_mm": 8.35,
+      "Y_max_mm": 8.7,
+      "capture_gap_mm": 8.15
+    },
+    {
+      "kind": "track/via",
+      "key": "225",
+      "Y_min_mm": 15.0,
+      "Y_max_mm": 15.25,
+      "capture_gap_mm": 4.550000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "226",
+      "Y_min_mm": 11.225,
+      "Y_max_mm": 11.424999999999999,
+      "capture_gap_mm": 8.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "227",
+      "Y_min_mm": 13.15,
+      "Y_max_mm": 13.35,
+      "capture_gap_mm": 6.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "228",
+      "Y_min_mm": 12.700000000000001,
+      "Y_max_mm": 13.5,
+      "capture_gap_mm": 6.300000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "229",
+      "Y_min_mm": 4.675,
+      "Y_max_mm": 6.425,
+      "capture_gap_mm": 4.475
+    },
+    {
+      "kind": "track/via",
+      "key": "230",
+      "Y_min_mm": 8.05,
+      "Y_max_mm": 8.799999999999999,
+      "capture_gap_mm": 7.8500000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "231",
+      "Y_min_mm": 12.225,
+      "Y_max_mm": 12.424999999999999,
+      "capture_gap_mm": 7.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "232",
+      "Y_min_mm": 8.0,
+      "Y_max_mm": 8.2,
+      "capture_gap_mm": 7.8
+    },
+    {
+      "kind": "track/via",
+      "key": "233",
+      "Y_min_mm": 7.525,
+      "Y_max_mm": 8.2,
+      "capture_gap_mm": 7.325
+    },
+    {
+      "kind": "track/via",
+      "key": "234",
+      "Y_min_mm": 14.299999999999999,
+      "Y_max_mm": 14.9,
+      "capture_gap_mm": 4.9
+    },
+    {
+      "kind": "track/via",
+      "key": "235",
+      "Y_min_mm": 11.399999999999999,
+      "Y_max_mm": 12.0,
+      "capture_gap_mm": 7.800000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "236",
+      "Y_min_mm": 9.149999999999999,
+      "Y_max_mm": 9.75,
+      "capture_gap_mm": 8.95
+    },
+    {
+      "kind": "track/via",
+      "key": "237",
+      "Y_min_mm": 9.424999999999999,
+      "Y_max_mm": 10.025,
+      "capture_gap_mm": 9.225
+    },
+    {
+      "kind": "track/via",
+      "key": "238",
+      "Y_min_mm": 7.7,
+      "Y_max_mm": 8.3,
+      "capture_gap_mm": 7.5
+    },
+    {
+      "kind": "track/via",
+      "key": "239",
+      "Y_min_mm": 14.899999999999999,
+      "Y_max_mm": 15.5,
+      "capture_gap_mm": 4.300000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "240",
+      "Y_min_mm": 14.85,
+      "Y_max_mm": 15.450000000000001,
+      "capture_gap_mm": 4.35
+    },
+    {
+      "kind": "track/via",
+      "key": "241",
+      "Y_min_mm": 6.5,
+      "Y_max_mm": 7.1,
+      "capture_gap_mm": 6.3
+    },
+    {
+      "kind": "track/via",
+      "key": "242",
+      "Y_min_mm": 5.525,
+      "Y_max_mm": 6.125,
+      "capture_gap_mm": 5.325
+    },
+    {
+      "kind": "track/via",
+      "key": "243",
+      "Y_min_mm": 14.399999999999999,
+      "Y_max_mm": 15.0,
+      "capture_gap_mm": 4.800000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "244",
+      "Y_min_mm": 8.149999999999999,
+      "Y_max_mm": 8.75,
+      "capture_gap_mm": 7.949999999999998
+    },
+    {
+      "kind": "track/via",
+      "key": "245",
+      "Y_min_mm": 18.4,
+      "Y_max_mm": 19.0,
+      "capture_gap_mm": 0.8000000000000007
+    },
+    {
+      "kind": "track/via",
+      "key": "246",
+      "Y_min_mm": 12.2,
+      "Y_max_mm": 12.8,
+      "capture_gap_mm": 7.0
+    },
+    {
+      "kind": "track/via",
+      "key": "247",
+      "Y_min_mm": 13.2,
+      "Y_max_mm": 13.8,
+      "capture_gap_mm": 6.0
+    },
+    {
+      "kind": "track/via",
+      "key": "248",
+      "Y_min_mm": 8.399999999999999,
+      "Y_max_mm": 9.0,
+      "capture_gap_mm": 8.2
+    },
+    {
+      "kind": "track/via",
+      "key": "249",
+      "Y_min_mm": 5.525,
+      "Y_max_mm": 6.125,
+      "capture_gap_mm": 5.325
+    },
+    {
+      "kind": "track/via",
+      "key": "250",
+      "Y_min_mm": 12.899999999999999,
+      "Y_max_mm": 13.5,
+      "capture_gap_mm": 6.300000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "251",
+      "Y_min_mm": 11.399999999999999,
+      "Y_max_mm": 12.0,
+      "capture_gap_mm": 7.800000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "252",
+      "Y_min_mm": 1.8,
+      "Y_max_mm": 2.4,
+      "capture_gap_mm": 1.6
+    },
+    {
+      "kind": "track/via",
+      "key": "253",
+      "Y_min_mm": 6.5,
+      "Y_max_mm": 7.1,
+      "capture_gap_mm": 6.3
+    },
+    {
+      "kind": "track/via",
+      "key": "254",
+      "Y_min_mm": 12.899999999999999,
+      "Y_max_mm": 13.5,
+      "capture_gap_mm": 6.300000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "255",
+      "Y_min_mm": 2.0500000000000003,
+      "Y_max_mm": 2.65,
+      "capture_gap_mm": 1.8500000000000003
+    },
+    {
+      "kind": "track/via",
+      "key": "256",
+      "Y_min_mm": 14.149999999999999,
+      "Y_max_mm": 14.75,
+      "capture_gap_mm": 5.050000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "257",
+      "Y_min_mm": 10.95,
+      "Y_max_mm": 11.55,
+      "capture_gap_mm": 8.25
+    },
+    {
+      "kind": "track/via",
+      "key": "258",
+      "Y_min_mm": 14.7,
+      "Y_max_mm": 15.3,
+      "capture_gap_mm": 4.5
+    },
+    {
+      "kind": "track/via",
+      "key": "259",
+      "Y_min_mm": 15.6,
+      "Y_max_mm": 16.2,
+      "capture_gap_mm": 3.6000000000000014
+    },
+    {
+      "kind": "track/via",
+      "key": "260",
+      "Y_min_mm": 13.549999999999999,
+      "Y_max_mm": 14.15,
+      "capture_gap_mm": 5.65
+    },
+    {
+      "kind": "track/via",
+      "key": "261",
+      "Y_min_mm": 14.149999999999999,
+      "Y_max_mm": 14.75,
+      "capture_gap_mm": 5.050000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "262",
+      "Y_min_mm": 13.549999999999999,
+      "Y_max_mm": 14.15,
+      "capture_gap_mm": 5.65
+    },
+    {
+      "kind": "track/via",
+      "key": "263",
+      "Y_min_mm": 13.0,
+      "Y_max_mm": 13.600000000000001,
+      "capture_gap_mm": 6.199999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "264",
+      "Y_min_mm": 13.0,
+      "Y_max_mm": 13.600000000000001,
+      "capture_gap_mm": 6.199999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "265",
+      "Y_min_mm": 2.0500000000000003,
+      "Y_max_mm": 2.65,
+      "capture_gap_mm": 1.8500000000000003
+    },
+    {
+      "kind": "track/via",
+      "key": "266",
+      "Y_min_mm": 3.0500000000000003,
+      "Y_max_mm": 3.65,
+      "capture_gap_mm": 2.85
+    },
+    {
+      "kind": "track/via",
+      "key": "267",
+      "Y_min_mm": 17.799999,
+      "Y_max_mm": 18.399999,
+      "capture_gap_mm": 1.4000009999999996
+    },
+    {
+      "kind": "track/via",
+      "key": "268",
+      "Y_min_mm": 8.25,
+      "Y_max_mm": 8.850000000000001,
+      "capture_gap_mm": 8.05
+    },
+    {
+      "kind": "track/via",
+      "key": "269",
+      "Y_min_mm": 3.0500000000000003,
+      "Y_max_mm": 3.65,
+      "capture_gap_mm": 2.85
+    },
+    {
+      "kind": "track/via",
+      "key": "270",
+      "Y_min_mm": 3.2,
+      "Y_max_mm": 3.8,
+      "capture_gap_mm": 3.0
+    },
+    {
+      "kind": "track/via",
+      "key": "271",
+      "Y_min_mm": 3.4000000000000004,
+      "Y_max_mm": 4.0,
+      "capture_gap_mm": 3.2
+    },
+    {
+      "kind": "track/via",
+      "key": "272",
+      "Y_min_mm": 7.8,
+      "Y_max_mm": 8.4,
+      "capture_gap_mm": 7.6
+    },
+    {
+      "kind": "track/via",
+      "key": "273",
+      "Y_min_mm": 12.2,
+      "Y_max_mm": 12.8,
+      "capture_gap_mm": 7.0
+    },
+    {
+      "kind": "track/via",
+      "key": "274",
+      "Y_min_mm": 17.799999,
+      "Y_max_mm": 18.399999,
+      "capture_gap_mm": 1.4000009999999996
+    },
+    {
+      "kind": "track/via",
+      "key": "275",
+      "Y_min_mm": 4.3,
+      "Y_max_mm": 4.8999999999999995,
+      "capture_gap_mm": 4.1
+    },
+    {
+      "kind": "track/via",
+      "key": "276",
+      "Y_min_mm": 10.45,
+      "Y_max_mm": 11.05,
+      "capture_gap_mm": 8.75
+    },
+    {
+      "kind": "track/via",
+      "key": "277",
+      "Y_min_mm": 18.4,
+      "Y_max_mm": 19.0,
+      "capture_gap_mm": 0.8000000000000007
+    },
+    {
+      "kind": "track/via",
+      "key": "278",
+      "Y_min_mm": 14.3,
+      "Y_max_mm": 14.799999999999999,
+      "capture_gap_mm": 5.000000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "279",
+      "Y_min_mm": 13.4,
+      "Y_max_mm": 14.7,
+      "capture_gap_mm": 5.100000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "280",
+      "Y_min_mm": 14.3,
+      "Y_max_mm": 14.5,
+      "capture_gap_mm": 5.300000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "281",
+      "Y_min_mm": 13.200000000000001,
+      "Y_max_mm": 13.75,
+      "capture_gap_mm": 6.050000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "282",
+      "Y_min_mm": 14.5,
+      "Y_max_mm": 14.7,
+      "capture_gap_mm": 5.100000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "283",
+      "Y_min_mm": 13.55,
+      "Y_max_mm": 14.5,
+      "capture_gap_mm": 5.300000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "284",
+      "Y_min_mm": 13.4,
+      "Y_max_mm": 13.6,
+      "capture_gap_mm": 6.200000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "285",
+      "Y_min_mm": 13.4,
+      "Y_max_mm": 15.1,
+      "capture_gap_mm": 4.700000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "286",
+      "Y_min_mm": 13.4,
+      "Y_max_mm": 13.6,
+      "capture_gap_mm": 6.200000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "287",
+      "Y_min_mm": 8.0,
+      "Y_max_mm": 8.799999999999999,
+      "capture_gap_mm": 7.8
+    },
+    {
+      "kind": "track/via",
+      "key": "288",
+      "Y_min_mm": 15.075000000000001,
+      "Y_max_mm": 15.299999999999999,
+      "capture_gap_mm": 4.500000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "289",
+      "Y_min_mm": 13.4,
+      "Y_max_mm": 15.275,
+      "capture_gap_mm": 4.525
+    },
+    {
+      "kind": "track/via",
+      "key": "290",
+      "Y_min_mm": 7.925000000000001,
+      "Y_max_mm": 13.6,
+      "capture_gap_mm": 6.200000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "291",
+      "Y_min_mm": 7.9,
+      "Y_max_mm": 8.125,
+      "capture_gap_mm": 7.7
+    },
+    {
+      "kind": "track/via",
+      "key": "292",
+      "Y_min_mm": 8.6,
+      "Y_max_mm": 9.825,
+      "capture_gap_mm": 8.4
+    },
+    {
+      "kind": "track/via",
+      "key": "293",
+      "Y_min_mm": 8.6,
+      "Y_max_mm": 8.799999999999999,
+      "capture_gap_mm": 8.4
+    },
+    {
+      "kind": "track/via",
+      "key": "294",
+      "Y_min_mm": 8.6,
+      "Y_max_mm": 8.799999999999999,
+      "capture_gap_mm": 8.4
+    },
+    {
+      "kind": "track/via",
+      "key": "295",
+      "Y_min_mm": 8.6,
+      "Y_max_mm": 9.549999999999999,
+      "capture_gap_mm": 8.4
+    },
+    {
+      "kind": "track/via",
+      "key": "296",
+      "Y_min_mm": 10.65,
+      "Y_max_mm": 13.6,
+      "capture_gap_mm": 6.200000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "297",
+      "Y_min_mm": 8.6,
+      "Y_max_mm": 8.799999999999999,
+      "capture_gap_mm": 8.4
+    },
+    {
+      "kind": "track/via",
+      "key": "298",
+      "Y_min_mm": 15.700000000000001,
+      "Y_max_mm": 15.9,
+      "capture_gap_mm": 3.9000000000000004
+    },
+    {
+      "kind": "track/via",
+      "key": "299",
+      "Y_min_mm": 15.725,
+      "Y_max_mm": 15.95,
+      "capture_gap_mm": 3.8500000000000014
+    },
+    {
+      "kind": "track/via",
+      "key": "300",
+      "Y_min_mm": 15.700000000000001,
+      "Y_max_mm": 15.924999999999999,
+      "capture_gap_mm": 3.8750000000000018
+    },
+    {
+      "kind": "track/via",
+      "key": "301",
+      "Y_min_mm": 11.5,
+      "Y_max_mm": 11.75,
+      "capture_gap_mm": 8.05
+    },
+    {
+      "kind": "track/via",
+      "key": "302",
+      "Y_min_mm": 11.55,
+      "Y_max_mm": 12.325,
+      "capture_gap_mm": 7.475000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "303",
+      "Y_min_mm": 15.725,
+      "Y_max_mm": 15.924999999999999,
+      "capture_gap_mm": 3.8750000000000018
+    },
+    {
+      "kind": "track/via",
+      "key": "304",
+      "Y_min_mm": 15.125,
+      "Y_max_mm": 15.4,
+      "capture_gap_mm": 4.4
+    },
+    {
+      "kind": "track/via",
+      "key": "305",
+      "Y_min_mm": 15.75,
+      "Y_max_mm": 15.95,
+      "capture_gap_mm": 3.8500000000000014
+    },
+    {
+      "kind": "track/via",
+      "key": "306",
+      "Y_min_mm": 15.200000000000001,
+      "Y_max_mm": 15.9,
+      "capture_gap_mm": 3.9000000000000004
+    },
+    {
+      "kind": "track/via",
+      "key": "307",
+      "Y_min_mm": 15.775,
+      "Y_max_mm": 15.975,
+      "capture_gap_mm": 3.825000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "308",
+      "Y_min_mm": 15.1,
+      "Y_max_mm": 15.325,
+      "capture_gap_mm": 4.475000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "309",
+      "Y_min_mm": 15.75,
+      "Y_max_mm": 15.975,
+      "capture_gap_mm": 3.825000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "310",
+      "Y_min_mm": 11.775,
+      "Y_max_mm": 11.975,
+      "capture_gap_mm": 7.825000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "311",
+      "Y_min_mm": 11.775,
+      "Y_max_mm": 12.325,
+      "capture_gap_mm": 7.475000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "312",
+      "Y_min_mm": 4.7,
+      "Y_max_mm": 5.3,
+      "capture_gap_mm": 4.5
+    },
+    {
+      "kind": "track/via",
+      "key": "313",
+      "Y_min_mm": 11.299999999999999,
+      "Y_max_mm": 11.9,
+      "capture_gap_mm": 7.9
+    },
+    {
+      "kind": "track/via",
+      "key": "314",
+      "Y_min_mm": 8.875,
+      "Y_max_mm": 9.475000000000001,
+      "capture_gap_mm": 8.675
+    },
+    {
+      "kind": "track/via",
+      "key": "315",
+      "Y_min_mm": 15.575,
+      "Y_max_mm": 16.175,
+      "capture_gap_mm": 3.625
+    },
+    {
+      "kind": "track/via",
+      "key": "316",
+      "Y_min_mm": 10.8,
+      "Y_max_mm": 11.025,
+      "capture_gap_mm": 8.775
+    },
+    {
+      "kind": "track/via",
+      "key": "317",
+      "Y_min_mm": 9.5,
+      "Y_max_mm": 9.75,
+      "capture_gap_mm": 9.3
+    },
+    {
+      "kind": "track/via",
+      "key": "318",
+      "Y_min_mm": 9.625,
+      "Y_max_mm": 9.875,
+      "capture_gap_mm": 9.425
+    },
+    {
+      "kind": "track/via",
+      "key": "319",
+      "Y_min_mm": 4.95,
+      "Y_max_mm": 5.55,
+      "capture_gap_mm": 4.75
+    },
+    {
+      "kind": "track/via",
+      "key": "320",
+      "Y_min_mm": 4.9,
+      "Y_max_mm": 5.1499999999999995,
+      "capture_gap_mm": 4.7
+    },
+    {
+      "kind": "track/via",
+      "key": "321",
+      "Y_min_mm": 10.8,
+      "Y_max_mm": 11.049999999999999,
+      "capture_gap_mm": 8.750000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "322",
+      "Y_min_mm": 9.075000000000001,
+      "Y_max_mm": 9.325,
+      "capture_gap_mm": 8.875000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "323",
+      "Y_min_mm": 5.550000000000001,
+      "Y_max_mm": 5.8,
+      "capture_gap_mm": 5.3500000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "324",
+      "Y_min_mm": 10.475,
+      "Y_max_mm": 10.725,
+      "capture_gap_mm": 9.075000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "325",
+      "Y_min_mm": 9.375,
+      "Y_max_mm": 9.65,
+      "capture_gap_mm": 9.175
+    },
+    {
+      "kind": "track/via",
+      "key": "326",
+      "Y_min_mm": 9.725,
+      "Y_max_mm": 10.975,
+      "capture_gap_mm": 8.825000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "327",
+      "Y_min_mm": 5.7,
+      "Y_max_mm": 8.9,
+      "capture_gap_mm": 5.5
+    },
+    {
+      "kind": "track/via",
+      "key": "328",
+      "Y_min_mm": 9.450000000000001,
+      "Y_max_mm": 10.075,
+      "capture_gap_mm": 9.250000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "329",
+      "Y_min_mm": 9.475,
+      "Y_max_mm": 9.7,
+      "capture_gap_mm": 9.275
+    },
+    {
+      "kind": "track/via",
+      "key": "330",
+      "Y_min_mm": 9.575000000000001,
+      "Y_max_mm": 9.825,
+      "capture_gap_mm": 9.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "331",
+      "Y_min_mm": 5.4750000000000005,
+      "Y_max_mm": 5.699999999999999,
+      "capture_gap_mm": 5.275
+    },
+    {
+      "kind": "track/via",
+      "key": "332",
+      "Y_min_mm": 10.85,
+      "Y_max_mm": 11.075,
+      "capture_gap_mm": 8.725000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "333",
+      "Y_min_mm": 11.025,
+      "Y_max_mm": 11.7,
+      "capture_gap_mm": 8.100000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "334",
+      "Y_min_mm": 9.375,
+      "Y_max_mm": 9.575,
+      "capture_gap_mm": 9.175
+    },
+    {
+      "kind": "track/via",
+      "key": "335",
+      "Y_min_mm": 5.3500000000000005,
+      "Y_max_mm": 5.574999999999999,
+      "capture_gap_mm": 5.15
+    },
+    {
+      "kind": "track/via",
+      "key": "336",
+      "Y_min_mm": 10.950000000000001,
+      "Y_max_mm": 11.2,
+      "capture_gap_mm": 8.600000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "337",
+      "Y_min_mm": 9.875,
+      "Y_max_mm": 10.65,
+      "capture_gap_mm": 9.15
+    },
+    {
+      "kind": "track/via",
+      "key": "338",
+      "Y_min_mm": 10.875,
+      "Y_max_mm": 11.125,
+      "capture_gap_mm": 8.675
+    },
+    {
+      "kind": "track/via",
+      "key": "339",
+      "Y_min_mm": 5.45,
+      "Y_max_mm": 5.675,
+      "capture_gap_mm": 5.25
+    },
+    {
+      "kind": "track/via",
+      "key": "340",
+      "Y_min_mm": 12.700000000000001,
+      "Y_max_mm": 15.975,
+      "capture_gap_mm": 3.825000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "341",
+      "Y_min_mm": 10.450000000000001,
+      "Y_max_mm": 10.674999999999999,
+      "capture_gap_mm": 9.125000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "342",
+      "Y_min_mm": 10.825000000000001,
+      "Y_max_mm": 11.075,
+      "capture_gap_mm": 8.725000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "343",
+      "Y_min_mm": 10.775,
+      "Y_max_mm": 11.0,
+      "capture_gap_mm": 8.8
+    },
+    {
+      "kind": "track/via",
+      "key": "344",
+      "Y_min_mm": 5.625,
+      "Y_max_mm": 5.875,
+      "capture_gap_mm": 5.425
+    },
+    {
+      "kind": "track/via",
+      "key": "345",
+      "Y_min_mm": 9.025,
+      "Y_max_mm": 9.275,
+      "capture_gap_mm": 8.825000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "346",
+      "Y_min_mm": 9.55,
+      "Y_max_mm": 9.775,
+      "capture_gap_mm": 9.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "347",
+      "Y_min_mm": 8.700000000000001,
+      "Y_max_mm": 9.2,
+      "capture_gap_mm": 8.500000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "348",
+      "Y_min_mm": 9.0,
+      "Y_max_mm": 9.225,
+      "capture_gap_mm": 8.8
+    },
+    {
+      "kind": "track/via",
+      "key": "349",
+      "Y_min_mm": 10.975,
+      "Y_max_mm": 11.2,
+      "capture_gap_mm": 8.600000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "350",
+      "Y_min_mm": 5.675000000000001,
+      "Y_max_mm": 5.8999999999999995,
+      "capture_gap_mm": 5.4750000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "351",
+      "Y_min_mm": 5.525,
+      "Y_max_mm": 5.75,
+      "capture_gap_mm": 5.325
+    },
+    {
+      "kind": "track/via",
+      "key": "352",
+      "Y_min_mm": 9.225,
+      "Y_max_mm": 9.674999999999999,
+      "capture_gap_mm": 9.025
+    },
+    {
+      "kind": "track/via",
+      "key": "353",
+      "Y_min_mm": 10.55,
+      "Y_max_mm": 11.0,
+      "capture_gap_mm": 8.8
+    },
+    {
+      "kind": "track/via",
+      "key": "354",
+      "Y_min_mm": 5.375,
+      "Y_max_mm": 5.6499999999999995,
+      "capture_gap_mm": 5.175
+    },
+    {
+      "kind": "track/via",
+      "key": "355",
+      "Y_min_mm": 5.6000000000000005,
+      "Y_max_mm": 5.824999999999999,
+      "capture_gap_mm": 5.4
+    },
+    {
+      "kind": "track/via",
+      "key": "356",
+      "Y_min_mm": 10.925,
+      "Y_max_mm": 11.174999999999999,
+      "capture_gap_mm": 8.625000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "357",
+      "Y_min_mm": 9.15,
+      "Y_max_mm": 9.4,
+      "capture_gap_mm": 8.950000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "358",
+      "Y_min_mm": 9.700000000000001,
+      "Y_max_mm": 9.924999999999999,
+      "capture_gap_mm": 9.500000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "359",
+      "Y_min_mm": 9.075000000000001,
+      "Y_max_mm": 9.575,
+      "capture_gap_mm": 8.875000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "360",
+      "Y_min_mm": 11.0,
+      "Y_max_mm": 12.9,
+      "capture_gap_mm": 6.9
+    },
+    {
+      "kind": "track/via",
+      "key": "361",
+      "Y_min_mm": 10.875,
+      "Y_max_mm": 11.1,
+      "capture_gap_mm": 8.700000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "362",
+      "Y_min_mm": 10.9,
+      "Y_max_mm": 11.15,
+      "capture_gap_mm": 8.65
+    },
+    {
+      "kind": "track/via",
+      "key": "363",
+      "Y_min_mm": 11.0,
+      "Y_max_mm": 11.225,
+      "capture_gap_mm": 8.575000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "364",
+      "Y_min_mm": 9.450000000000001,
+      "Y_max_mm": 9.65,
+      "capture_gap_mm": 9.250000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "365",
+      "Y_min_mm": 9.675,
+      "Y_max_mm": 9.9,
+      "capture_gap_mm": 9.475000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "366",
+      "Y_min_mm": 10.525,
+      "Y_max_mm": 10.75,
+      "capture_gap_mm": 9.05
+    },
+    {
+      "kind": "track/via",
+      "key": "367",
+      "Y_min_mm": 5.5,
+      "Y_max_mm": 5.725,
+      "capture_gap_mm": 5.3
+    },
+    {
+      "kind": "track/via",
+      "key": "368",
+      "Y_min_mm": 9.125,
+      "Y_max_mm": 9.35,
+      "capture_gap_mm": 8.925
+    },
+    {
+      "kind": "track/via",
+      "key": "369",
+      "Y_min_mm": 9.200000000000001,
+      "Y_max_mm": 9.424999999999999,
+      "capture_gap_mm": 9.000000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "370",
+      "Y_min_mm": 5.275,
+      "Y_max_mm": 8.1,
+      "capture_gap_mm": 5.075
+    },
+    {
+      "kind": "track/via",
+      "key": "371",
+      "Y_min_mm": 5.175000000000001,
+      "Y_max_mm": 5.375,
+      "capture_gap_mm": 4.9750000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "372",
+      "Y_min_mm": 4.9,
+      "Y_max_mm": 5.375,
+      "capture_gap_mm": 4.7
+    },
+    {
+      "kind": "track/via",
+      "key": "373",
+      "Y_min_mm": 5.2250000000000005,
+      "Y_max_mm": 5.425,
+      "capture_gap_mm": 5.025
+    },
+    {
+      "kind": "track/via",
+      "key": "374",
+      "Y_min_mm": 5.175000000000001,
+      "Y_max_mm": 5.3999999999999995,
+      "capture_gap_mm": 4.9750000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "375",
+      "Y_min_mm": 5.2,
+      "Y_max_mm": 5.3999999999999995,
+      "capture_gap_mm": 5.0
+    },
+    {
+      "kind": "track/via",
+      "key": "376",
+      "Y_min_mm": 5.2250000000000005,
+      "Y_max_mm": 5.475,
+      "capture_gap_mm": 5.025
+    },
+    {
+      "kind": "track/via",
+      "key": "377",
+      "Y_min_mm": 7.9,
+      "Y_max_mm": 9.275,
+      "capture_gap_mm": 7.7
+    },
+    {
+      "kind": "track/via",
+      "key": "378",
+      "Y_min_mm": 5.2,
+      "Y_max_mm": 5.425,
+      "capture_gap_mm": 5.0
+    },
+    {
+      "kind": "track/via",
+      "key": "379",
+      "Y_min_mm": 5.275,
+      "Y_max_mm": 5.475,
+      "capture_gap_mm": 5.075
+    },
+    {
+      "kind": "track/via",
+      "key": "380",
+      "Y_min_mm": 9.690000000000001,
+      "Y_max_mm": 10.709999999999999,
+      "capture_gap_mm": 9.090000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "381",
+      "Y_min_mm": 6.265,
+      "Y_max_mm": 6.485,
+      "capture_gap_mm": 6.0649999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "382",
+      "Y_min_mm": 6.515,
+      "Y_max_mm": 6.735,
+      "capture_gap_mm": 6.3149999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "383",
+      "Y_min_mm": 10.49,
+      "Y_max_mm": 12.209999999999999,
+      "capture_gap_mm": 7.590000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "384",
+      "Y_min_mm": 6.515,
+      "Y_max_mm": 6.760000000000001,
+      "capture_gap_mm": 6.3149999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "385",
+      "Y_min_mm": 10.49,
+      "Y_max_mm": 12.209999999999999,
+      "capture_gap_mm": 7.590000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "386",
+      "Y_min_mm": 10.14,
+      "Y_max_mm": 10.709999999999999,
+      "capture_gap_mm": 9.090000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "387",
+      "Y_min_mm": 5.84,
+      "Y_max_mm": 6.485,
+      "capture_gap_mm": 5.64
+    },
+    {
+      "kind": "track/via",
+      "key": "388",
+      "Y_min_mm": 5.6000000000000005,
+      "Y_max_mm": 6.2,
+      "capture_gap_mm": 5.4
+    },
+    {
+      "kind": "track/via",
+      "key": "389",
+      "Y_min_mm": 3.95,
+      "Y_max_mm": 4.55,
+      "capture_gap_mm": 3.75
+    },
+    {
+      "kind": "track/via",
+      "key": "390",
+      "Y_min_mm": 3.95,
+      "Y_max_mm": 4.55,
+      "capture_gap_mm": 3.75
+    },
+    {
+      "kind": "track/via",
+      "key": "391",
+      "Y_min_mm": 8.024999,
+      "Y_max_mm": 8.624999,
+      "capture_gap_mm": 7.824998999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "392",
+      "Y_min_mm": 5.65,
+      "Y_max_mm": 6.25,
+      "capture_gap_mm": 5.45
+    },
+    {
+      "kind": "track/via",
+      "key": "393",
+      "Y_min_mm": 6.3500000000000005,
+      "Y_max_mm": 6.95,
+      "capture_gap_mm": 6.15
+    },
+    {
+      "kind": "track/via",
+      "key": "394",
+      "Y_min_mm": 9.95,
+      "Y_max_mm": 10.55,
+      "capture_gap_mm": 9.25
+    },
+    {
+      "kind": "track/via",
+      "key": "395",
+      "Y_min_mm": 9.5,
+      "Y_max_mm": 10.100000000000001,
+      "capture_gap_mm": 9.3
+    },
+    {
+      "kind": "track/via",
+      "key": "396",
+      "Y_min_mm": 7.3999999999999995,
+      "Y_max_mm": 8.375,
+      "capture_gap_mm": 7.199999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "397",
+      "Y_min_mm": 9.350000000000001,
+      "Y_max_mm": 10.25,
+      "capture_gap_mm": 9.150000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "398",
+      "Y_min_mm": 8.224999,
+      "Y_max_mm": 8.924999999999999,
+      "capture_gap_mm": 8.024999000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "399",
+      "Y_min_mm": 8.725,
+      "Y_max_mm": 9.9,
+      "capture_gap_mm": 8.525
+    },
+    {
+      "kind": "track/via",
+      "key": "400",
+      "Y_min_mm": 5.1,
+      "Y_max_mm": 6.3500000000000005,
+      "capture_gap_mm": 4.8999999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "401",
+      "Y_min_mm": 3.8,
+      "Y_max_mm": 6.0,
+      "capture_gap_mm": 3.5999999999999996
+    },
+    {
+      "kind": "track/via",
+      "key": "402",
+      "Y_min_mm": 8.275,
+      "Y_max_mm": 9.2,
+      "capture_gap_mm": 8.075000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "403",
+      "Y_min_mm": 7.25,
+      "Y_max_mm": 8.2,
+      "capture_gap_mm": 7.05
+    },
+    {
+      "kind": "track/via",
+      "key": "404",
+      "Y_min_mm": 7.05,
+      "Y_max_mm": 7.9750000000000005,
+      "capture_gap_mm": 6.85
+    },
+    {
+      "kind": "track/via",
+      "key": "405",
+      "Y_min_mm": 7.375,
+      "Y_max_mm": 8.299999999999999,
+      "capture_gap_mm": 7.175
+    },
+    {
+      "kind": "track/via",
+      "key": "406",
+      "Y_min_mm": 8.15,
+      "Y_max_mm": 9.075,
+      "capture_gap_mm": 7.95
+    },
+    {
+      "kind": "track/via",
+      "key": "407",
+      "Y_min_mm": 7.075,
+      "Y_max_mm": 8.049999999999999,
+      "capture_gap_mm": 6.875
+    },
+    {
+      "kind": "track/via",
+      "key": "408",
+      "Y_min_mm": 7.225,
+      "Y_max_mm": 8.15,
+      "capture_gap_mm": 7.0249999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "409",
+      "Y_min_mm": 5.5,
+      "Y_max_mm": 7.1000000000000005,
+      "capture_gap_mm": 5.3
+    },
+    {
+      "kind": "track/via",
+      "key": "410",
+      "Y_min_mm": 7.325,
+      "Y_max_mm": 8.275,
+      "capture_gap_mm": 7.125
+    },
+    {
+      "kind": "track/via",
+      "key": "411",
+      "Y_min_mm": 8.475000000000001,
+      "Y_max_mm": 9.399999999999999,
+      "capture_gap_mm": 8.275000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "412",
+      "Y_min_mm": 9.3,
+      "Y_max_mm": 10.25,
+      "capture_gap_mm": 9.100000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "413",
+      "Y_min_mm": 3.8,
+      "Y_max_mm": 4.7,
+      "capture_gap_mm": 3.5999999999999996
+    },
+    {
+      "kind": "track/via",
+      "key": "414",
+      "Y_min_mm": 8.3,
+      "Y_max_mm": 9.225,
+      "capture_gap_mm": 8.100000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "415",
+      "Y_min_mm": 7.475,
+      "Y_max_mm": 8.4,
+      "capture_gap_mm": 7.2749999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "416",
+      "Y_min_mm": 8.4,
+      "Y_max_mm": 9.325,
+      "capture_gap_mm": 8.200000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "417",
+      "Y_min_mm": 8.350000000000001,
+      "Y_max_mm": 9.299999999999999,
+      "capture_gap_mm": 8.150000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "418",
+      "Y_min_mm": 8.325000000000001,
+      "Y_max_mm": 9.25,
+      "capture_gap_mm": 8.125000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "419",
+      "Y_min_mm": 8.575000000000001,
+      "Y_max_mm": 9.5,
+      "capture_gap_mm": 8.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "420",
+      "Y_min_mm": 8.9,
+      "Y_max_mm": 9.825,
+      "capture_gap_mm": 8.700000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "421",
+      "Y_min_mm": 8.175,
+      "Y_max_mm": 9.149999999999999,
+      "capture_gap_mm": 7.9750000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "422",
+      "Y_min_mm": 8.925,
+      "Y_max_mm": 10.2,
+      "capture_gap_mm": 8.725000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "423",
+      "Y_min_mm": 7.95,
+      "Y_max_mm": 9.049999999999999,
+      "capture_gap_mm": 7.75
+    },
+    {
+      "kind": "track/via",
+      "key": "424",
+      "Y_min_mm": 8.425,
+      "Y_max_mm": 9.375,
+      "capture_gap_mm": 8.225000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "425",
+      "Y_min_mm": 7.1499999999999995,
+      "Y_max_mm": 8.075,
+      "capture_gap_mm": 6.949999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "426",
+      "Y_min_mm": 5.5,
+      "Y_max_mm": 6.4,
+      "capture_gap_mm": 5.3
+    },
+    {
+      "kind": "track/via",
+      "key": "427",
+      "Y_min_mm": 6.2749999999999995,
+      "Y_max_mm": 7.95,
+      "capture_gap_mm": 6.074999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "428",
+      "Y_min_mm": 7.5,
+      "Y_max_mm": 8.85,
+      "capture_gap_mm": 7.3
+    },
+    {
+      "kind": "track/via",
+      "key": "429",
+      "Y_min_mm": 8.5,
+      "Y_max_mm": 9.475,
+      "capture_gap_mm": 8.3
+    },
+    {
+      "kind": "track/via",
+      "key": "430",
+      "Y_min_mm": 7.175,
+      "Y_max_mm": 8.1,
+      "capture_gap_mm": 6.975
+    },
+    {
+      "kind": "track/via",
+      "key": "431",
+      "Y_min_mm": 5.45,
+      "Y_max_mm": 6.4,
+      "capture_gap_mm": 5.25
+    },
+    {
+      "kind": "track/via",
+      "key": "432",
+      "Y_min_mm": 7.3,
+      "Y_max_mm": 8.225,
+      "capture_gap_mm": 7.1
+    },
+    {
+      "kind": "track/via",
+      "key": "433",
+      "Y_min_mm": 6.2,
+      "Y_max_mm": 7.175,
+      "capture_gap_mm": 6.0
+    },
+    {
+      "kind": "track/via",
+      "key": "434",
+      "Y_min_mm": 8.600000000000001,
+      "Y_max_mm": 9.799999999999999,
+      "capture_gap_mm": 8.400000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "435",
+      "Y_min_mm": 7.2,
+      "Y_max_mm": 8.125,
+      "capture_gap_mm": 7.0
+    },
+    {
+      "kind": "track/via",
+      "key": "436",
+      "Y_min_mm": 9.350000000000001,
+      "Y_max_mm": 10.7,
+      "capture_gap_mm": 9.100000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "437",
+      "Y_min_mm": 8.25,
+      "Y_max_mm": 9.174999999999999,
+      "capture_gap_mm": 8.05
+    },
+    {
+      "kind": "track/via",
+      "key": "438",
+      "Y_min_mm": 12.875,
+      "Y_max_mm": 13.9,
+      "capture_gap_mm": 5.9
+    },
+    {
+      "kind": "track/via",
+      "key": "439",
+      "Y_min_mm": 12.700000000000001,
+      "Y_max_mm": 13.075,
+      "capture_gap_mm": 6.725000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "440",
+      "Y_min_mm": 13.700000000000001,
+      "Y_max_mm": 14.424999999999999,
+      "capture_gap_mm": 5.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "441",
+      "Y_min_mm": 11.6,
+      "Y_max_mm": 11.975,
+      "capture_gap_mm": 7.825000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "442",
+      "Y_min_mm": 11.55,
+      "Y_max_mm": 11.799999999999999,
+      "capture_gap_mm": 8.000000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "443",
+      "Y_min_mm": 11.525,
+      "Y_max_mm": 11.75,
+      "capture_gap_mm": 8.05
+    },
+    {
+      "kind": "track/via",
+      "key": "444",
+      "Y_min_mm": 11.3,
+      "Y_max_mm": 11.725,
+      "capture_gap_mm": 8.075000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "445",
+      "Y_min_mm": 11.775,
+      "Y_max_mm": 11.975,
+      "capture_gap_mm": 7.825000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "446",
+      "Y_min_mm": 10.65,
+      "Y_max_mm": 11.5,
+      "capture_gap_mm": 8.3
+    },
+    {
+      "kind": "track/via",
+      "key": "447",
+      "Y_min_mm": 11.64,
+      "Y_max_mm": 11.86,
+      "capture_gap_mm": 7.940000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "448",
+      "Y_min_mm": 9.175,
+      "Y_max_mm": 9.4,
+      "capture_gap_mm": 8.975000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "449",
+      "Y_min_mm": 12.14,
+      "Y_max_mm": 12.36,
+      "capture_gap_mm": 7.440000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "450",
+      "Y_min_mm": 10.59,
+      "Y_max_mm": 11.86,
+      "capture_gap_mm": 7.940000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "451",
+      "Y_min_mm": 11.290000000000001,
+      "Y_max_mm": 12.36,
+      "capture_gap_mm": 7.440000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "452",
+      "Y_min_mm": 3.2,
+      "Y_max_mm": 3.8,
+      "capture_gap_mm": 3.0
+    },
+    {
+      "kind": "track/via",
+      "key": "453",
+      "Y_min_mm": 11.1,
+      "Y_max_mm": 11.700000000000001,
+      "capture_gap_mm": 8.1
+    },
+    {
+      "kind": "track/via",
+      "key": "454",
+      "Y_min_mm": 10.399999999999999,
+      "Y_max_mm": 11.0,
+      "capture_gap_mm": 8.8
+    },
+    {
+      "kind": "track/via",
+      "key": "455",
+      "Y_min_mm": 7.3,
+      "Y_max_mm": 7.8999999999999995,
+      "capture_gap_mm": 7.1
+    },
+    {
+      "kind": "track/via",
+      "key": "456",
+      "Y_min_mm": 12.1,
+      "Y_max_mm": 12.700000000000001,
+      "capture_gap_mm": 7.1
+    },
+    {
+      "kind": "track/via",
+      "key": "457",
+      "Y_min_mm": 8.975,
+      "Y_max_mm": 9.575000000000001,
+      "capture_gap_mm": 8.775
+    },
+    {
+      "kind": "track/via",
+      "key": "458",
+      "Y_min_mm": 5.975,
+      "Y_max_mm": 6.9,
+      "capture_gap_mm": 5.7749999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "459",
+      "Y_min_mm": 12.15,
+      "Y_max_mm": 12.65,
+      "capture_gap_mm": 7.15
+    },
+    {
+      "kind": "track/via",
+      "key": "460",
+      "Y_min_mm": 7.1499999999999995,
+      "Y_max_mm": 8.35,
+      "capture_gap_mm": 6.949999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "461",
+      "Y_min_mm": 5.925,
+      "Y_max_mm": 6.8500000000000005,
+      "capture_gap_mm": 5.725
+    },
+    {
+      "kind": "track/via",
+      "key": "462",
+      "Y_min_mm": 6.0,
+      "Y_max_mm": 6.95,
+      "capture_gap_mm": 5.8
+    },
+    {
+      "kind": "track/via",
+      "key": "463",
+      "Y_min_mm": 6.875,
+      "Y_max_mm": 8.049999999999999,
+      "capture_gap_mm": 6.675
+    },
+    {
+      "kind": "track/via",
+      "key": "464",
+      "Y_min_mm": 10.950000000000001,
+      "Y_max_mm": 12.549999999999999,
+      "capture_gap_mm": 7.250000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "465",
+      "Y_min_mm": 6.05,
+      "Y_max_mm": 6.9750000000000005,
+      "capture_gap_mm": 5.85
+    },
+    {
+      "kind": "track/via",
+      "key": "466",
+      "Y_min_mm": 10.25,
+      "Y_max_mm": 11.85,
+      "capture_gap_mm": 7.950000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "467",
+      "Y_min_mm": 5.6499999999999995,
+      "Y_max_mm": 6.6000000000000005,
+      "capture_gap_mm": 5.449999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "468",
+      "Y_min_mm": 4.3,
+      "Y_max_mm": 6.55,
+      "capture_gap_mm": 4.1
+    },
+    {
+      "kind": "track/via",
+      "key": "469",
+      "Y_min_mm": 6.55,
+      "Y_max_mm": 7.525,
+      "capture_gap_mm": 6.35
+    },
+    {
+      "kind": "track/via",
+      "key": "470",
+      "Y_min_mm": 11.65,
+      "Y_max_mm": 12.85,
+      "capture_gap_mm": 6.950000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "471",
+      "Y_min_mm": 6.725,
+      "Y_max_mm": 7.65,
+      "capture_gap_mm": 6.5249999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "472",
+      "Y_min_mm": 10.0,
+      "Y_max_mm": 10.799999999999999,
+      "capture_gap_mm": 9.000000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "473",
+      "Y_min_mm": 6.75,
+      "Y_max_mm": 7.675,
+      "capture_gap_mm": 6.55
+    },
+    {
+      "kind": "track/via",
+      "key": "474",
+      "Y_min_mm": 6.7,
+      "Y_max_mm": 7.625,
+      "capture_gap_mm": 6.5
+    },
+    {
+      "kind": "track/via",
+      "key": "475",
+      "Y_min_mm": 6.8,
+      "Y_max_mm": 7.7250000000000005,
+      "capture_gap_mm": 6.6
+    },
+    {
+      "kind": "track/via",
+      "key": "476",
+      "Y_min_mm": 5.7,
+      "Y_max_mm": 6.825,
+      "capture_gap_mm": 5.5
+    },
+    {
+      "kind": "track/via",
+      "key": "477",
+      "Y_min_mm": 6.075,
+      "Y_max_mm": 7.05,
+      "capture_gap_mm": 5.875
+    },
+    {
+      "kind": "track/via",
+      "key": "478",
+      "Y_min_mm": 7.45,
+      "Y_max_mm": 11.149999999999999,
+      "capture_gap_mm": 7.25
+    },
+    {
+      "kind": "track/via",
+      "key": "479",
+      "Y_min_mm": 6.6499999999999995,
+      "Y_max_mm": 7.6000000000000005,
+      "capture_gap_mm": 6.449999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "480",
+      "Y_min_mm": 6.825,
+      "Y_max_mm": 7.75,
+      "capture_gap_mm": 6.625
+    },
+    {
+      "kind": "track/via",
+      "key": "481",
+      "Y_min_mm": 6.1499999999999995,
+      "Y_max_mm": 7.075,
+      "capture_gap_mm": 5.949999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "482",
+      "Y_min_mm": 3.05,
+      "Y_max_mm": 5.2,
+      "capture_gap_mm": 2.8499999999999996
+    },
+    {
+      "kind": "track/via",
+      "key": "483",
+      "Y_min_mm": 9.175,
+      "Y_max_mm": 10.2,
+      "capture_gap_mm": 8.975000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "484",
+      "Y_min_mm": 5.95,
+      "Y_max_mm": 6.875,
+      "capture_gap_mm": 5.75
+    },
+    {
+      "kind": "track/via",
+      "key": "485",
+      "Y_min_mm": 6.625,
+      "Y_max_mm": 7.55,
+      "capture_gap_mm": 6.425
+    },
+    {
+      "kind": "track/via",
+      "key": "486",
+      "Y_min_mm": 6.85,
+      "Y_max_mm": 7.775,
+      "capture_gap_mm": 6.6499999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "487",
+      "Y_min_mm": 7.35,
+      "Y_max_mm": 7.85,
+      "capture_gap_mm": 7.1499999999999995
+    },
+    {
+      "kind": "track/via",
+      "key": "488",
+      "Y_min_mm": 6.7749999999999995,
+      "Y_max_mm": 7.7,
+      "capture_gap_mm": 6.574999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "489",
+      "Y_min_mm": 6.175,
+      "Y_max_mm": 7.425,
+      "capture_gap_mm": 5.975
+    },
+    {
+      "kind": "track/via",
+      "key": "490",
+      "Y_min_mm": 6.5249999999999995,
+      "Y_max_mm": 7.45,
+      "capture_gap_mm": 6.324999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "491",
+      "Y_min_mm": 7.1000000000000005,
+      "Y_max_mm": 7.3,
+      "capture_gap_mm": 6.9
+    },
+    {
+      "kind": "track/via",
+      "key": "492",
+      "Y_min_mm": 7.075,
+      "Y_max_mm": 7.3,
+      "capture_gap_mm": 6.875
+    },
+    {
+      "kind": "track/via",
+      "key": "493",
+      "Y_min_mm": 7.025,
+      "Y_max_mm": 7.2749999999999995,
+      "capture_gap_mm": 6.825
+    },
+    {
+      "kind": "track/via",
+      "key": "494",
+      "Y_min_mm": 7.075,
+      "Y_max_mm": 7.2749999999999995,
+      "capture_gap_mm": 6.875
+    },
+    {
+      "kind": "track/via",
+      "key": "495",
+      "Y_min_mm": 7.1000000000000005,
+      "Y_max_mm": 7.475,
+      "capture_gap_mm": 6.9
+    },
+    {
+      "kind": "track/via",
+      "key": "496",
+      "Y_min_mm": 7.275,
+      "Y_max_mm": 7.475,
+      "capture_gap_mm": 7.075
+    },
+    {
+      "kind": "track/via",
+      "key": "497",
+      "Y_min_mm": 14.1,
+      "Y_max_mm": 14.325,
+      "capture_gap_mm": 5.475000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "498",
+      "Y_min_mm": 8.55,
+      "Y_max_mm": 8.75,
+      "capture_gap_mm": 8.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "499",
+      "Y_min_mm": 15.125,
+      "Y_max_mm": 15.674999999999999,
+      "capture_gap_mm": 4.125000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "500",
+      "Y_min_mm": 13.525,
+      "Y_max_mm": 13.725,
+      "capture_gap_mm": 6.075000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "501",
+      "Y_min_mm": 13.525,
+      "Y_max_mm": 13.725,
+      "capture_gap_mm": 6.075000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "502",
+      "Y_min_mm": 15.725,
+      "Y_max_mm": 16.0,
+      "capture_gap_mm": 3.8000000000000007
+    },
+    {
+      "kind": "track/via",
+      "key": "503",
+      "Y_min_mm": 14.825000000000001,
+      "Y_max_mm": 15.049999999999999,
+      "capture_gap_mm": 4.750000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "504",
+      "Y_min_mm": 7.950000000000001,
+      "Y_max_mm": 8.75,
+      "capture_gap_mm": 7.750000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "505",
+      "Y_min_mm": 14.9,
+      "Y_max_mm": 15.325,
+      "capture_gap_mm": 4.475000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "506",
+      "Y_min_mm": 13.575000000000001,
+      "Y_max_mm": 13.775,
+      "capture_gap_mm": 6.025
+    },
+    {
+      "kind": "track/via",
+      "key": "507",
+      "Y_min_mm": 15.475,
+      "Y_max_mm": 15.924999999999999,
+      "capture_gap_mm": 3.8750000000000018
+    },
+    {
+      "kind": "track/via",
+      "key": "508",
+      "Y_min_mm": 8.700000000000001,
+      "Y_max_mm": 9.049999999999999,
+      "capture_gap_mm": 8.500000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "509",
+      "Y_min_mm": 12.85,
+      "Y_max_mm": 13.725,
+      "capture_gap_mm": 6.075000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "510",
+      "Y_min_mm": 14.125,
+      "Y_max_mm": 15.025,
+      "capture_gap_mm": 4.775
+    },
+    {
+      "kind": "track/via",
+      "key": "511",
+      "Y_min_mm": 13.525,
+      "Y_max_mm": 14.25,
+      "capture_gap_mm": 5.550000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "512",
+      "Y_min_mm": 11.975,
+      "Y_max_mm": 12.6,
+      "capture_gap_mm": 7.200000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "513",
+      "Y_min_mm": 13.575000000000001,
+      "Y_max_mm": 13.85,
+      "capture_gap_mm": 5.950000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "514",
+      "Y_min_mm": 8.85,
+      "Y_max_mm": 9.299999999999999,
+      "capture_gap_mm": 8.65
+    },
+    {
+      "kind": "track/via",
+      "key": "515",
+      "Y_min_mm": 12.450000000000001,
+      "Y_max_mm": 12.674999999999999,
+      "capture_gap_mm": 7.125000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "516",
+      "Y_min_mm": 14.05,
+      "Y_max_mm": 14.299999999999999,
+      "capture_gap_mm": 5.500000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "517",
+      "Y_min_mm": 12.4,
+      "Y_max_mm": 12.65,
+      "capture_gap_mm": 7.15
+    },
+    {
+      "kind": "track/via",
+      "key": "518",
+      "Y_min_mm": 14.85,
+      "Y_max_mm": 15.1,
+      "capture_gap_mm": 4.700000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "519",
+      "Y_min_mm": 13.55,
+      "Y_max_mm": 13.75,
+      "capture_gap_mm": 6.050000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "520",
+      "Y_min_mm": 13.55,
+      "Y_max_mm": 13.775,
+      "capture_gap_mm": 6.025
+    },
+    {
+      "kind": "track/via",
+      "key": "521",
+      "Y_min_mm": 12.475,
+      "Y_max_mm": 13.049999999999999,
+      "capture_gap_mm": 6.750000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "522",
+      "Y_min_mm": 8.55,
+      "Y_max_mm": 8.9,
+      "capture_gap_mm": 8.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "523",
+      "Y_min_mm": 8.700000000000001,
+      "Y_max_mm": 8.9,
+      "capture_gap_mm": 8.500000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "524",
+      "Y_min_mm": 13.525,
+      "Y_max_mm": 13.75,
+      "capture_gap_mm": 6.050000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "525",
+      "Y_min_mm": 11.774999999999999,
+      "Y_max_mm": 12.375,
+      "capture_gap_mm": 7.425000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "526",
+      "Y_min_mm": 8.899999999999999,
+      "Y_max_mm": 9.5,
+      "capture_gap_mm": 8.7
+    },
+    {
+      "kind": "track/via",
+      "key": "527",
+      "Y_min_mm": 9.925,
+      "Y_max_mm": 10.125,
+      "capture_gap_mm": 9.675
+    },
+    {
+      "kind": "track/via",
+      "key": "528",
+      "Y_min_mm": 9.925,
+      "Y_max_mm": 10.15,
+      "capture_gap_mm": 9.65
+    },
+    {
+      "kind": "track/via",
+      "key": "529",
+      "Y_min_mm": 9.925,
+      "Y_max_mm": 10.125,
+      "capture_gap_mm": 9.675
+    },
+    {
+      "kind": "track/via",
+      "key": "530",
+      "Y_min_mm": 9.950000000000001,
+      "Y_max_mm": 10.174999999999999,
+      "capture_gap_mm": 9.625000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "531",
+      "Y_min_mm": 10.225,
+      "Y_max_mm": 10.45,
+      "capture_gap_mm": 9.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "532",
+      "Y_min_mm": 10.200000000000001,
+      "Y_max_mm": 10.424999999999999,
+      "capture_gap_mm": 9.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "533",
+      "Y_min_mm": 9.950000000000001,
+      "Y_max_mm": 10.174999999999999,
+      "capture_gap_mm": 9.625000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "534",
+      "Y_min_mm": 9.700000000000001,
+      "Y_max_mm": 9.9,
+      "capture_gap_mm": 9.500000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "535",
+      "Y_min_mm": 9.875,
+      "Y_max_mm": 10.075,
+      "capture_gap_mm": 9.675
+    },
+    {
+      "kind": "track/via",
+      "key": "536",
+      "Y_min_mm": 10.225,
+      "Y_max_mm": 10.45,
+      "capture_gap_mm": 9.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "537",
+      "Y_min_mm": 9.950000000000001,
+      "Y_max_mm": 10.15,
+      "capture_gap_mm": 9.65
+    },
+    {
+      "kind": "track/via",
+      "key": "538",
+      "Y_min_mm": 9.875,
+      "Y_max_mm": 10.125,
+      "capture_gap_mm": 9.675
+    },
+    {
+      "kind": "track/via",
+      "key": "539",
+      "Y_min_mm": 10.200000000000001,
+      "Y_max_mm": 10.424999999999999,
+      "capture_gap_mm": 9.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "540",
+      "Y_min_mm": 10.175,
+      "Y_max_mm": 12.174999999999999,
+      "capture_gap_mm": 7.625000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "541",
+      "Y_min_mm": 10.200000000000001,
+      "Y_max_mm": 10.4,
+      "capture_gap_mm": 9.4
+    },
+    {
+      "kind": "track/via",
+      "key": "542",
+      "Y_min_mm": 9.700000000000001,
+      "Y_max_mm": 10.35,
+      "capture_gap_mm": 9.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "543",
+      "Y_min_mm": 10.225,
+      "Y_max_mm": 10.424999999999999,
+      "capture_gap_mm": 9.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "544",
+      "Y_min_mm": 9.875,
+      "Y_max_mm": 10.075,
+      "capture_gap_mm": 9.675
+    },
+    {
+      "kind": "track/via",
+      "key": "545",
+      "Y_min_mm": 9.975,
+      "Y_max_mm": 10.174999999999999,
+      "capture_gap_mm": 9.625000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "546",
+      "Y_min_mm": 10.175,
+      "Y_max_mm": 10.375,
+      "capture_gap_mm": 9.425
+    },
+    {
+      "kind": "track/via",
+      "key": "547",
+      "Y_min_mm": 9.700000000000001,
+      "Y_max_mm": 10.075,
+      "capture_gap_mm": 9.500000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "548",
+      "Y_min_mm": 10.15,
+      "Y_max_mm": 10.35,
+      "capture_gap_mm": 9.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "549",
+      "Y_min_mm": 9.925,
+      "Y_max_mm": 10.15,
+      "capture_gap_mm": 9.65
+    },
+    {
+      "kind": "track/via",
+      "key": "550",
+      "Y_min_mm": 9.1,
+      "Y_max_mm": 9.475,
+      "capture_gap_mm": 8.9
+    },
+    {
+      "kind": "track/via",
+      "key": "551",
+      "Y_min_mm": 10.175,
+      "Y_max_mm": 10.4,
+      "capture_gap_mm": 9.4
+    },
+    {
+      "kind": "track/via",
+      "key": "552",
+      "Y_min_mm": 10.225,
+      "Y_max_mm": 10.424999999999999,
+      "capture_gap_mm": 9.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "553",
+      "Y_min_mm": 10.200000000000001,
+      "Y_max_mm": 10.4,
+      "capture_gap_mm": 9.4
+    },
+    {
+      "kind": "track/via",
+      "key": "554",
+      "Y_min_mm": 10.25,
+      "Y_max_mm": 10.45,
+      "capture_gap_mm": 9.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "555",
+      "Y_min_mm": 9.875,
+      "Y_max_mm": 10.125,
+      "capture_gap_mm": 9.675
+    },
+    {
+      "kind": "track/via",
+      "key": "556",
+      "Y_min_mm": 9.950000000000001,
+      "Y_max_mm": 10.15,
+      "capture_gap_mm": 9.65
+    },
+    {
+      "kind": "track/via",
+      "key": "557",
+      "Y_min_mm": 9.275,
+      "Y_max_mm": 10.075,
+      "capture_gap_mm": 9.075000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "558",
+      "Y_min_mm": 10.15,
+      "Y_max_mm": 10.4,
+      "capture_gap_mm": 9.4
+    },
+    {
+      "kind": "track/via",
+      "key": "559",
+      "Y_min_mm": 8.325000000000001,
+      "Y_max_mm": 8.549999999999999,
+      "capture_gap_mm": 8.125000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "560",
+      "Y_min_mm": 7.974999,
+      "Y_max_mm": 8.25,
+      "capture_gap_mm": 7.774999
+    },
+    {
+      "kind": "track/via",
+      "key": "561",
+      "Y_min_mm": 8.700000000000001,
+      "Y_max_mm": 8.975,
+      "capture_gap_mm": 8.500000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "562",
+      "Y_min_mm": 8.05,
+      "Y_max_mm": 8.275,
+      "capture_gap_mm": 7.8500000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "563",
+      "Y_min_mm": 8.8,
+      "Y_max_mm": 9.549999999999999,
+      "capture_gap_mm": 8.600000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "564",
+      "Y_min_mm": 8.35,
+      "Y_max_mm": 8.9,
+      "capture_gap_mm": 8.15
+    },
+    {
+      "kind": "track/via",
+      "key": "565",
+      "Y_min_mm": 8.075000000000001,
+      "Y_max_mm": 8.525,
+      "capture_gap_mm": 7.875000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "566",
+      "Y_min_mm": 8.775,
+      "Y_max_mm": 9.0,
+      "capture_gap_mm": 8.575000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "567",
+      "Y_min_mm": 7.950000000000001,
+      "Y_max_mm": 8.174999,
+      "capture_gap_mm": 7.750000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "568",
+      "Y_min_mm": 9.35,
+      "Y_max_mm": 9.549999999999999,
+      "capture_gap_mm": 9.15
+    },
+    {
+      "kind": "track/via",
+      "key": "569",
+      "Y_min_mm": 7.525,
+      "Y_max_mm": 7.925,
+      "capture_gap_mm": 7.325
+    },
+    {
+      "kind": "track/via",
+      "key": "570",
+      "Y_min_mm": 10.225,
+      "Y_max_mm": 10.775,
+      "capture_gap_mm": 9.025
+    },
+    {
+      "kind": "track/via",
+      "key": "571",
+      "Y_min_mm": 9.325000000000001,
+      "Y_max_mm": 9.525,
+      "capture_gap_mm": 9.125000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "572",
+      "Y_min_mm": 9.325000000000001,
+      "Y_max_mm": 10.4,
+      "capture_gap_mm": 9.125000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "573",
+      "Y_min_mm": 10.225,
+      "Y_max_mm": 10.424999999999999,
+      "capture_gap_mm": 9.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "574",
+      "Y_min_mm": 7.7250000000000005,
+      "Y_max_mm": 9.525,
+      "capture_gap_mm": 7.525
+    },
+    {
+      "kind": "track/via",
+      "key": "575",
+      "Y_min_mm": 10.200000000000001,
+      "Y_max_mm": 10.4,
+      "capture_gap_mm": 9.4
+    },
+    {
+      "kind": "track/via",
+      "key": "576",
+      "Y_min_mm": 10.200000000000001,
+      "Y_max_mm": 10.424999999999999,
+      "capture_gap_mm": 9.375000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "577",
+      "Y_min_mm": 2.15,
+      "Y_max_mm": 5.300000000000001,
+      "capture_gap_mm": 1.95
+    },
+    {
+      "kind": "track/via",
+      "key": "578",
+      "Y_min_mm": 4.79,
+      "Y_max_mm": 5.510000000000001,
+      "capture_gap_mm": 4.59
+    },
+    {
+      "kind": "track/via",
+      "key": "579",
+      "Y_min_mm": 5.29,
+      "Y_max_mm": 6.235,
+      "capture_gap_mm": 5.09
+    },
+    {
+      "kind": "track/via",
+      "key": "580",
+      "Y_min_mm": 4.79,
+      "Y_max_mm": 5.510000000000001,
+      "capture_gap_mm": 4.59
+    },
+    {
+      "kind": "track/via",
+      "key": "581",
+      "Y_min_mm": 2.15,
+      "Y_max_mm": 5.300000000000001,
+      "capture_gap_mm": 1.95
+    },
+    {
+      "kind": "track/via",
+      "key": "582",
+      "Y_min_mm": 5.29,
+      "Y_max_mm": 6.235,
+      "capture_gap_mm": 5.09
+    },
+    {
+      "kind": "track/via",
+      "key": "583",
+      "Y_min_mm": 9.1,
+      "Y_max_mm": 9.65,
+      "capture_gap_mm": 8.9
+    },
+    {
+      "kind": "track/via",
+      "key": "584",
+      "Y_min_mm": 4.775,
+      "Y_max_mm": 5.0,
+      "capture_gap_mm": 4.575
+    },
+    {
+      "kind": "track/via",
+      "key": "585",
+      "Y_min_mm": 2.4499999999999997,
+      "Y_max_mm": 2.65,
+      "capture_gap_mm": 2.2499999999999996
+    },
+    {
+      "kind": "track/via",
+      "key": "586",
+      "Y_min_mm": 4.15,
+      "Y_max_mm": 4.3999999999999995,
+      "capture_gap_mm": 3.95
+    },
+    {
+      "kind": "track/via",
+      "key": "587",
+      "Y_min_mm": 9.475,
+      "Y_max_mm": 9.7,
+      "capture_gap_mm": 9.275
+    },
+    {
+      "kind": "track/via",
+      "key": "588",
+      "Y_min_mm": 8.224999,
+      "Y_max_mm": 9.299999999999999,
+      "capture_gap_mm": 8.024999000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "589",
+      "Y_min_mm": 4.75,
+      "Y_max_mm": 4.949999999999999,
+      "capture_gap_mm": 4.55
+    },
+    {
+      "kind": "track/via",
+      "key": "590",
+      "Y_min_mm": 4.2,
+      "Y_max_mm": 4.949999999999999,
+      "capture_gap_mm": 4.0
+    },
+    {
+      "kind": "track/via",
+      "key": "591",
+      "Y_min_mm": 4.125,
+      "Y_max_mm": 4.35,
+      "capture_gap_mm": 3.925
+    },
+    {
+      "kind": "track/via",
+      "key": "592",
+      "Y_min_mm": 2.425,
+      "Y_max_mm": 2.625,
+      "capture_gap_mm": 2.2249999999999996
+    },
+    {
+      "kind": "track/via",
+      "key": "593",
+      "Y_min_mm": 2.425,
+      "Y_max_mm": 2.65,
+      "capture_gap_mm": 2.2249999999999996
+    },
+    {
+      "kind": "track/via",
+      "key": "594",
+      "Y_min_mm": 4.75,
+      "Y_max_mm": 4.975,
+      "capture_gap_mm": 4.55
+    },
+    {
+      "kind": "track/via",
+      "key": "595",
+      "Y_min_mm": 4.800000000000001,
+      "Y_max_mm": 8.424999,
+      "capture_gap_mm": 4.6000000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "596",
+      "Y_min_mm": 4.775,
+      "Y_max_mm": 4.975,
+      "capture_gap_mm": 4.575
+    },
+    {
+      "kind": "track/via",
+      "key": "597",
+      "Y_min_mm": 4.800000000000001,
+      "Y_max_mm": 5.0,
+      "capture_gap_mm": 4.6000000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "598",
+      "Y_min_mm": 9.55,
+      "Y_max_mm": 10.45,
+      "capture_gap_mm": 9.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "599",
+      "Y_min_mm": 9.450000000000001,
+      "Y_max_mm": 9.674999999999999,
+      "capture_gap_mm": 9.250000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "600",
+      "Y_min_mm": 1.9,
+      "Y_max_mm": 2.625,
+      "capture_gap_mm": 1.7
+    },
+    {
+      "kind": "track/via",
+      "key": "601",
+      "Y_min_mm": 3.175,
+      "Y_max_mm": 4.324999999999999,
+      "capture_gap_mm": 2.9749999999999996
+    },
+    {
+      "kind": "track/via",
+      "key": "602",
+      "Y_min_mm": 1.9,
+      "Y_max_mm": 2.1,
+      "capture_gap_mm": 1.7
+    },
+    {
+      "kind": "track/via",
+      "key": "603",
+      "Y_min_mm": 2.4499999999999997,
+      "Y_max_mm": 3.375,
+      "capture_gap_mm": 2.2499999999999996
+    },
+    {
+      "kind": "track/via",
+      "key": "604",
+      "Y_min_mm": 9.5,
+      "Y_max_mm": 9.75,
+      "capture_gap_mm": 9.3
+    },
+    {
+      "kind": "track/via",
+      "key": "605",
+      "Y_min_mm": 10.25,
+      "Y_max_mm": 11.35,
+      "capture_gap_mm": 8.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "606",
+      "Y_min_mm": 15.675,
+      "Y_max_mm": 16.1,
+      "capture_gap_mm": 3.6999999999999993
+    },
+    {
+      "kind": "track/via",
+      "key": "607",
+      "Y_min_mm": 14.3,
+      "Y_max_mm": 15.875,
+      "capture_gap_mm": 3.9250000000000007
+    },
+    {
+      "kind": "track/via",
+      "key": "608",
+      "Y_min_mm": 15.675,
+      "Y_max_mm": 16.1,
+      "capture_gap_mm": 3.6999999999999993
+    },
+    {
+      "kind": "track/via",
+      "key": "609",
+      "Y_min_mm": 14.3,
+      "Y_max_mm": 15.875,
+      "capture_gap_mm": 3.9250000000000007
+    },
+    {
+      "kind": "track/via",
+      "key": "610",
+      "Y_min_mm": 13.65,
+      "Y_max_mm": 13.975,
+      "capture_gap_mm": 5.825000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "611",
+      "Y_min_mm": 11.15,
+      "Y_max_mm": 11.35,
+      "capture_gap_mm": 8.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "612",
+      "Y_min_mm": 13.575,
+      "Y_max_mm": 14.175,
+      "capture_gap_mm": 5.625
+    },
+    {
+      "kind": "track/via",
+      "key": "613",
+      "Y_min_mm": 10.95,
+      "Y_max_mm": 11.55,
+      "capture_gap_mm": 8.25
+    },
+    {
+      "kind": "track/via",
+      "key": "614",
+      "Y_min_mm": 12.625,
+      "Y_max_mm": 12.875,
+      "capture_gap_mm": 6.925000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "615",
+      "Y_min_mm": 11.75,
+      "Y_max_mm": 12.775,
+      "capture_gap_mm": 7.025
+    },
+    {
+      "kind": "track/via",
+      "key": "616",
+      "Y_min_mm": 12.625,
+      "Y_max_mm": 12.825,
+      "capture_gap_mm": 6.975000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "617",
+      "Y_min_mm": 12.6,
+      "Y_max_mm": 12.825,
+      "capture_gap_mm": 6.975000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "618",
+      "Y_min_mm": 12.575000000000001,
+      "Y_max_mm": 12.799999999999999,
+      "capture_gap_mm": 7.000000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "619",
+      "Y_min_mm": 11.675,
+      "Y_max_mm": 11.9,
+      "capture_gap_mm": 7.9
+    },
+    {
+      "kind": "track/via",
+      "key": "620",
+      "Y_min_mm": 11.700000000000001,
+      "Y_max_mm": 11.9,
+      "capture_gap_mm": 7.9
+    },
+    {
+      "kind": "track/via",
+      "key": "621",
+      "Y_min_mm": 11.725,
+      "Y_max_mm": 11.95,
+      "capture_gap_mm": 7.850000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "622",
+      "Y_min_mm": 12.675,
+      "Y_max_mm": 13.35,
+      "capture_gap_mm": 6.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "623",
+      "Y_min_mm": 12.575000000000001,
+      "Y_max_mm": 12.775,
+      "capture_gap_mm": 7.025
+    },
+    {
+      "kind": "track/via",
+      "key": "624",
+      "Y_min_mm": 11.675,
+      "Y_max_mm": 11.875,
+      "capture_gap_mm": 7.925000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "625",
+      "Y_min_mm": 12.675,
+      "Y_max_mm": 12.875,
+      "capture_gap_mm": 6.925000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "626",
+      "Y_min_mm": 11.725,
+      "Y_max_mm": 11.924999999999999,
+      "capture_gap_mm": 7.875000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "627",
+      "Y_min_mm": 11.75,
+      "Y_max_mm": 11.95,
+      "capture_gap_mm": 7.850000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "628",
+      "Y_min_mm": 11.15,
+      "Y_max_mm": 11.875,
+      "capture_gap_mm": 7.925000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "629",
+      "Y_min_mm": 13.15,
+      "Y_max_mm": 13.975,
+      "capture_gap_mm": 5.825000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "630",
+      "Y_min_mm": 12.6,
+      "Y_max_mm": 12.799999999999999,
+      "capture_gap_mm": 7.000000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "631",
+      "Y_min_mm": 11.15,
+      "Y_max_mm": 11.35,
+      "capture_gap_mm": 8.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "632",
+      "Y_min_mm": 11.700000000000001,
+      "Y_max_mm": 11.924999999999999,
+      "capture_gap_mm": 7.875000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "633",
+      "Y_min_mm": 10.0,
+      "Y_max_mm": 10.2,
+      "capture_gap_mm": 9.600000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "634",
+      "Y_min_mm": 8.15,
+      "Y_max_mm": 8.375,
+      "capture_gap_mm": 7.95
+    },
+    {
+      "kind": "track/via",
+      "key": "635",
+      "Y_min_mm": 8.200000000000001,
+      "Y_max_mm": 8.4,
+      "capture_gap_mm": 8.000000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "636",
+      "Y_min_mm": 8.15,
+      "Y_max_mm": 8.35,
+      "capture_gap_mm": 7.95
+    },
+    {
+      "kind": "track/via",
+      "key": "637",
+      "Y_min_mm": 8.175,
+      "Y_max_mm": 8.4,
+      "capture_gap_mm": 7.9750000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "638",
+      "Y_min_mm": 12.975,
+      "Y_max_mm": 13.2,
+      "capture_gap_mm": 6.600000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "639",
+      "Y_min_mm": 12.9,
+      "Y_max_mm": 13.15,
+      "capture_gap_mm": 6.65
+    },
+    {
+      "kind": "track/via",
+      "key": "640",
+      "Y_min_mm": 12.65,
+      "Y_max_mm": 13.1,
+      "capture_gap_mm": 6.700000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "641",
+      "Y_min_mm": 12.950000000000001,
+      "Y_max_mm": 13.174999999999999,
+      "capture_gap_mm": 6.625000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "642",
+      "Y_min_mm": 8.55,
+      "Y_max_mm": 9.049999999999999,
+      "capture_gap_mm": 8.350000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "643",
+      "Y_min_mm": 13.0,
+      "Y_max_mm": 13.4,
+      "capture_gap_mm": 6.4
+    },
+    {
+      "kind": "track/via",
+      "key": "644",
+      "Y_min_mm": 9.5,
+      "Y_max_mm": 10.2,
+      "capture_gap_mm": 9.3
+    },
+    {
+      "kind": "track/via",
+      "key": "645",
+      "Y_min_mm": 8.175,
+      "Y_max_mm": 8.375,
+      "capture_gap_mm": 7.9750000000000005
+    },
+    {
+      "kind": "track/via",
+      "key": "646",
+      "Y_min_mm": 8.85,
+      "Y_max_mm": 9.65,
+      "capture_gap_mm": 8.65
+    },
+    {
+      "kind": "track/via",
+      "key": "647",
+      "Y_min_mm": 12.65,
+      "Y_max_mm": 12.85,
+      "capture_gap_mm": 6.950000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "648",
+      "Y_min_mm": 8.200000000000001,
+      "Y_max_mm": 8.45,
+      "capture_gap_mm": 8.000000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "649",
+      "Y_min_mm": 8.25,
+      "Y_max_mm": 8.45,
+      "capture_gap_mm": 8.05
+    },
+    {
+      "kind": "track/via",
+      "key": "650",
+      "Y_min_mm": 9.450000000000001,
+      "Y_max_mm": 9.7,
+      "capture_gap_mm": 9.250000000000002
+    },
+    {
+      "kind": "track/via",
+      "key": "651",
+      "Y_min_mm": 8.25,
+      "Y_max_mm": 8.75,
+      "capture_gap_mm": 8.05
+    },
+    {
+      "kind": "track/via",
+      "key": "652",
+      "Y_min_mm": 9.799999999999999,
+      "Y_max_mm": 10.4,
+      "capture_gap_mm": 9.4
+    },
+    {
+      "kind": "track/via",
+      "key": "653",
+      "Y_min_mm": 13.0,
+      "Y_max_mm": 13.600000000000001,
+      "capture_gap_mm": 6.199999999999999
+    },
+    {
+      "kind": "track/via",
+      "key": "654",
+      "Y_min_mm": 12.375,
+      "Y_max_mm": 13.4,
+      "capture_gap_mm": 6.4
+    },
+    {
+      "kind": "track/via",
+      "key": "655",
+      "Y_min_mm": 10.075000000000001,
+      "Y_max_mm": 12.575,
+      "capture_gap_mm": 7.225000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "656",
+      "Y_min_mm": 10.0,
+      "Y_max_mm": 10.275,
+      "capture_gap_mm": 9.525
+    },
+    {
+      "kind": "track/via",
+      "key": "657",
+      "Y_min_mm": 14.325000000000001,
+      "Y_max_mm": 14.525,
+      "capture_gap_mm": 5.275
+    },
+    {
+      "kind": "track/via",
+      "key": "658",
+      "Y_min_mm": 14.375,
+      "Y_max_mm": 14.6,
+      "capture_gap_mm": 5.200000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "659",
+      "Y_min_mm": 14.4,
+      "Y_max_mm": 15.375,
+      "capture_gap_mm": 4.425000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "660",
+      "Y_min_mm": 14.4,
+      "Y_max_mm": 14.6,
+      "capture_gap_mm": 5.200000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "661",
+      "Y_min_mm": 14.375,
+      "Y_max_mm": 14.575,
+      "capture_gap_mm": 5.225000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "662",
+      "Y_min_mm": 14.1,
+      "Y_max_mm": 14.525,
+      "capture_gap_mm": 5.275
+    },
+    {
+      "kind": "track/via",
+      "key": "663",
+      "Y_min_mm": 15.175,
+      "Y_max_mm": 15.375,
+      "capture_gap_mm": 4.425000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "664",
+      "Y_min_mm": 14.325000000000001,
+      "Y_max_mm": 14.575,
+      "capture_gap_mm": 5.225000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "665",
+      "Y_min_mm": 9.65,
+      "Y_max_mm": 9.85,
+      "capture_gap_mm": 9.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "666",
+      "Y_min_mm": 10.15,
+      "Y_max_mm": 10.35,
+      "capture_gap_mm": 9.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "667",
+      "Y_min_mm": 9.15,
+      "Y_max_mm": 9.35,
+      "capture_gap_mm": 8.950000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "668",
+      "Y_min_mm": 10.15,
+      "Y_max_mm": 10.35,
+      "capture_gap_mm": 9.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "669",
+      "Y_min_mm": 9.65,
+      "Y_max_mm": 9.85,
+      "capture_gap_mm": 9.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "670",
+      "Y_min_mm": 9.15,
+      "Y_max_mm": 9.85,
+      "capture_gap_mm": 8.950000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "671",
+      "Y_min_mm": 10.65,
+      "Y_max_mm": 10.85,
+      "capture_gap_mm": 8.950000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "672",
+      "Y_min_mm": 9.65,
+      "Y_max_mm": 10.35,
+      "capture_gap_mm": 9.450000000000001
+    },
+    {
+      "kind": "track/via",
+      "key": "673",
+      "Y_min_mm": 10.15,
+      "Y_max_mm": 10.85,
+      "capture_gap_mm": 8.950000000000001
+    },
+    {
+      "kind": "filled-zone",
+      "key": "0:4:0",
+      "Y_min_mm": 0.5005,
+      "Y_max_mm": 19.4995,
+      "capture_gap_mm": 0.30049999999999955
+    },
+    {
+      "kind": "filled-zone",
+      "key": "0:4:1",
+      "Y_min_mm": 13.1,
+      "Y_max_mm": 13.9,
+      "capture_gap_mm": 5.9
+    }
+  ],
+  "actual_holes_clear": 98,
+  "board_modified": false,
+  "limit": "Pad bounding boxes and track capsules conservatively screened; filled zone outlines screened. Copper-safe edge support is not laminate strength/mask wear qualification.",
+  "termination_pads": [
+    {
+      "pin": "1",
+      "net": "FPC_5V",
+      "local_xy_mm": [
+        6.0,
+        18.4
+      ],
+      "size_mm": [
+        8.0,
+        2.0
+      ],
+      "corner_radius_mm": 0.2
+    },
+    {
+      "pin": "2",
+      "net": "GND_ISO",
+      "local_xy_mm": [
+        15.0,
+        18.4
+      ],
+      "size_mm": [
+        8.0,
+        2.0
+      ],
+      "corner_radius_mm": 0.2
+    }
+  ]
+}

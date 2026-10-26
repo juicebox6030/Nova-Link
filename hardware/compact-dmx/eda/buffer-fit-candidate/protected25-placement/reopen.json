@@ -1,0 +1,72 @@
+{
+  "native_shapes": 40,
+  "valid": {
+    "Top_liner0": true,
+    "Bottom_liner0": true,
+    "Top_liner1": true,
+    "Bottom_liner1": true,
+    "End_pad0": true,
+    "End_pad1": true,
+    "M2x22_screw0": true,
+    "M2x22_screw1": true,
+    "M2x22_screw2": true,
+    "M2x22_screw3": true,
+    "Base_integral_cradles": true,
+    "Lid_positive_retainer": true,
+    "PCB_rounded_aperture": true,
+    "Shim0": true,
+    "Shim1": true,
+    "Rear_stop_pad": true,
+    "Connector_external_envelope": true,
+    "Stake0": true,
+    "Stake1": true,
+    "Stake2": true,
+    "Stake3": true,
+    "NOR_envelope": true,
+    "Plug_test_overmold": true,
+    "HV1625_max_body": true,
+    "Lead_positive": true,
+    "Lead_negative": true,
+    "F101_maxbody": true,
+    "U101_maxbody": true,
+    "U102_maxbody": true,
+    "U103_maxbody": true,
+    "R101_maxbody": true,
+    "R102_maxbody": true,
+    "R103_maxbody": true,
+    "R104_maxbody": true,
+    "R105_maxbody": true,
+    "C101_maxbody": true,
+    "C102_maxbody": true,
+    "C103_maxbody": true,
+    "C104_maxbody": true,
+    "C202_maxbody": true
+  },
+  "source_shapes_exactly_preserved": 25,
+  "base_difference_confined_to_relief": true,
+  "full_pairs": 780,
+  "thread_engagements": [
+    [
+      "M2x22_screw0",
+      "Base_integral_cradles",
+      2.6153758841135017
+    ],
+    [
+      "M2x22_screw1",
+      "Base_integral_cradles",
+      2.615375884113524
+    ],
+    [
+      "M2x22_screw2",
+      "Base_integral_cradles",
+      2.6153758841134938
+    ],
+    [
+      "M2x22_screw3",
+      "Base_integral_cradles",
+      2.6153758841135177
+    ]
+  ],
+  "unexpected_intersections": 0,
+  "STEP_closed_solids": 40
+}

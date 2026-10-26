@@ -1,0 +1,13 @@
+reference,quantity,body_or_reference_footprint_mm,dimension_status,source,placement_requirement,fit_status
+U1,1,7x7 RGZ,Nominal package; use TI package drawing for tolerances,SWRS196I,Grounded exposed pad with short internal-supply loops,Existing MCU envelope only; not routed
+TR101,1,2.10x1.35x1.00,Manufacturer maximum,Johanson Rev2.0 p3,Match SWRA629A1.26mm spacing reference and0.25mm traces plus individual nearby groundvias,Not placed
+Y101,1,XTAL_FC-135N,Reference footprint name; body maxima NOT verified,SWRC354 BOM,Short balanced LF oscillator loop;12pF loads; supplier drawing required,Not placed
+Y102,1,2.0x1.6x0.5,Nominal reference footprint naming; not guaranteed maxima,SWRC354 BOM,Short HF oscillator loop; exact custom part/errata/tuning verification,Not placed
+FL101,1,1.6x0.8,0603 reference footprint nominal,SWRC354 BOM,At MCU rail entry; DCdrop and impedance verification,Not placed
+L101,1,2.0x1.25x1.5,Nominal reference footprint; supplier tolerances open,SWRC354 BOM,Close to pin33 and C102; low-inductance ground,Not placed
+C101-C102,2,1.6x0.8x1.0,Nominal reference footprint; effectiveC and tolerance open,SWRC354 BOM,MCU supply/buck reservoirs; preserve reference placement,Not placed
+C103-C111,9,1.0x0.5x0.6,Nominal0402 reference footprint; not courtyard,SWRC354 BOM,Individual supply-pin and crystal placement specified in DESIGN.md,Not placed
+C112-C113,2,0.6x0.3x0.35,Nominal0201 reference footprint; not courtyard,SWRC354 BOM,RF series/shunt locations must reproduce reference topology,Not placed
+A101,1,10.2x3.4x1.7,Manufacturer maximum body,Johanson antenna Rev3.1 p2/p3,Isolated NC lands;10mm all-layer end clearance on reference30mm width,28mm board differs; no proven fit/performance
+L102-L104/C115-C116,5,0402 nominal,Not a courtyard,Johanson antenna Rev3.1 p3,Two match networks; candidate x10..18mm end region,Unplaced; tuning required
+Antenna region,1,18x28 proposed /50x30 reference board,Proposal not proven allocation,Johanson antenna Rev3.1 p3,x0..10 clearance; x10..18 match; actual outline and fixture metal review required,No metal-distance or RF qualification

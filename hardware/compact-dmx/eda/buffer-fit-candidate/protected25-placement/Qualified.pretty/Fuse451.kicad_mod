@@ -1,0 +1,7 @@
+(footprint "Fuse451" (version 20241229) (generator "nova_cell_lands") (layer "F.Cu") (attr smd)
+(descr "Littelfuse451-453 dimensions/padlayout:span6.86,land1.96x3.15; maxbody6.30x2.94x2.94")
+(fp_rect (start -3.68 -1.825) (end 3.68 1.825) (stroke (width .05) (type default)) (fill none) (layer "F.CrtYd"))
+(fp_rect (start -3.15 -1.47) (end 3.15 1.47) (stroke (width .1) (type default)) (fill none) (layer "F.Fab"))
+(pad "1" smd rect (at -2.45 0) (size 1.96 3.15) (layers "F.Cu" "F.Mask" "F.Paste") (solder_mask_margin .025))
+(pad "2" smd rect (at 2.45 0) (size 1.96 3.15) (layers "F.Cu" "F.Mask" "F.Paste") (solder_mask_margin .025))
+)

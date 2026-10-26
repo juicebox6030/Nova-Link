@@ -1,0 +1,61 @@
+reference,value,kind,footprint,role,zone
+U1,TPS259474LRPWR,purchased,RPW10,"Stationary: reverse-blocking latched breaker BEFORE flex; finite response, not instantaneous limiter",stationary
+U2,TPS62135RGXR,purchased,RGX11,"4A buck, forcedPWM,5.18V; MODE high and VSEL low",rotating
+U3,TPS25810RVCR,purchased,RVC20,"5V1.5A CC advertisement; no firmware, data or higherPD",rotating
+U4,TPS25940LRVCR,purchased,RVC20,Independent reverse-blocking output disconnector; thermal latch; OVP recovery is NOT latched,rotating
+U5,TPS3700DDCR,purchased,DDC6,Independent12V-powered4.8..5.4V window; wire-AND outputs control U4EN,rotating
+J1,USB4105-GF-A,purchased,USB4105,Actual16contacts/12signal lands plus4shellstakes,rotating
+J0,FAB_SOURCE12_WIRE_LANDS,land_only,Wire2,Stationary isolated module12V lead termination; primary/mains NOT present,stationary
+J2,FAB_FPC20_STATIONARY,land_only,FPC20,Stationary flex clamp/coverlay/strain relief external; no connector invented,stationary
+J3,FAB_FPC20_ROTATING,land_only,FPC20,Rotating end of SAME external finite-resistance20mm FPC,rotating
+L1,XAL4020-152MEC 1.5uH,purchased,XAL4020,"TI supported1.5uH option; maxDCR23.6mohm25C, current/thermal derating gate",rotating
+D1,TPD1E10B06DPYR,purchased,DPY2,ESD suppression only; NOT DC overvoltage clamp,rotating
+R1,TNPW040268K1BYED 68100ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,stationary
+R2,TNPW040210K0BYED 10000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,stationary
+R3,TNPW0402100KBYED 100000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,stationary
+R4,TNPW04029K09BYED 9090ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,stationary
+R5,TNPW04022K00BYED 2000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,stationary
+R6,TNPW0402100RBYED 100ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,stationary
+R7,TNPW040264K0BYED 64000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R8,TNPW040210K0BYED 10000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R9,TNPW0402100KBYED 100000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R10,TNPW040210K0BYED 10000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R11,TNPW0402100KBYED 100000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R12,TNPW04029K09BYED 9090ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R13,TNPW0402100KBYED 100000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R14,TNPW04028K00BYED 8000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R15,TNPW0402100KBYED 100000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R16,TNPW0402100KBYED 100000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R17,TNPW0402100KBYED 100000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R18,TNPW040220K0BYED 20000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R19,TNPW040224K9BYED 24900ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R20,TNPW040237K4BYED 37400ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R21,TNPW040210K0BYED 10000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R22,TNPW0402100KBYED 100000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R23,TNPW0402100KBYED 100000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R24,TNPW0402100KBYED 100000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R25,TNPW0402100KBYED 100000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R26,TNPW0402100KBYED 100000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+R27,TNPW040210K0BYED 10000ohm,purchased,R0402,0.1%10ppm; independent checker includes±0.2% allocation,rotating
+C1,MSAST21GBB5106MTNA01 10uF,purchased,C0805,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,stationary
+C2,MSAST21GBB5106MTNA01 10uF,purchased,C0805,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+C3,MSAST21GBB5106MTNA01 10uF,purchased,C0805,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+C4,MSASE21GBB5226MTNA01 22uF,purchased,C0805,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+C5,MSASE21GBB5226MTNA01 22uF,purchased,C0805,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+C6,T520D157M010ATE055 150uF,purchased,T520D,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+C7,MSAST21GBB5106MTNA01 10uF,purchased,C0805,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+C8,TMK105B7104MV-FR 100nF,purchased,C0402,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+C9,TMK105B7104MV-FR 100nF,purchased,C0402,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+C10,GRM155R71E103KA01D 10nF,purchased,C0402,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+C11,GRM155R71E103KA01D 10nF,purchased,C0402,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,stationary
+C12,GRM155R71E103KA01D 10nF,purchased,C0402,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+C13,GRM155R71E103KA01D 10nF,purchased,C0402,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+C14,TMK105B7104MV-FR 100nF,purchased,C0402,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,stationary
+C15,TMK105B7104MV-FR 100nF,purchased,C0402,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+C16,TMK105B7104MV-FR 100nF,purchased,C0402,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+C17,TMK105B7104MV-FR 100nF,purchased,C0402,Exact prototype MPN; bias/temperature/ESR/lifecycle gates in DESIGN,rotating
+TP1,FAB_PORT_FAULT_PROBE,land_only,TP1,Diagnostic only; no MCU interface,rotating
+TP2,FAB_PROTECT_FAULT_PROBE,land_only,TP1,Diagnostic only; no qualified source-good signal,rotating
+#FLG1,ACTUAL_POWER_SOURCE,flag,,External source/return or real SW-L1 conversion path,rotating
+#FLG2,ACTUAL_POWER_SOURCE,flag,,External source/return or real SW-L1 conversion path,rotating
+#FLG3,ACTUAL_POWER_SOURCE,flag,,External source/return or real SW-L1 conversion path,rotating

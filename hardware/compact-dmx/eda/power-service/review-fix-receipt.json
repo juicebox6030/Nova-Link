@@ -1,0 +1,270 @@
+{
+  "recorded_utc": "2026-10-23T00:21:05.621722+00:00",
+  "task": "Bounded power-service repairs from ONE owner-supplied Opus5.5 high review; no additional reviewers or children",
+  "status": "BOUNDED_FIX_COMPLETE_WITH_EXPLICIT_UNMET_STARTUP_GATE; NOT_RELEASED",
+  "repo": "/home/juicebox/Nova-Link",
+  "branch": "main",
+  "HEAD": "b42c0e6284aac734fde851c69146abf73920f337",
+  "hardware_origin_owner_supplied": "78ed438 (not fetched or altered)",
+  "review_snapshot": ".tools/reviews/revc-power-20261022",
+  "review_snapshot_manifest_sha256": "8e25fb8aed6dd5d96aaae85e8b1e28c419f7464d97f071be520930fbcbb10907",
+  "review_snapshot_integrity": "66/66 file hashes independently matched",
+  "authority": "HARDWARE ONLY: only power-service/** plus eda/power_budget.py and eda/power-budget.json; no stage/commit/push/pull/branch changes, programming, firmware, hardware, installation, or child work",
+  "preserved_implementation_receipt": {
+    "path": "hardware/compact-dmx/eda/implementation-receipt.json",
+    "sha256": "a03c9a21bcbdfeaac32f875951d8b0f3f28184b5dfbd0315aff455585eef345d",
+    "matches_review_snapshot": true
+  },
+  "shared_source_manifest": {
+    "written_by_this_worker": false,
+    "currently_differs_from_review_snapshot": true,
+    "observation": "Concurrent MCU/radio owner added references; not overwritten. New power references have a separate local manifest."
+  },
+  "findings": {
+    "D-A": {
+      "severity": "HIGH",
+      "disposition": "STATIC_DEFECT_FIXED_IN_ACTUAL_CAPTURE; DYNAMIC_AND_LOAD_QUALIFICATION_OPEN",
+      "confirmed_counterexamples": {
+        "old_false_good_converter_VIN_V": 3.306246823376624,
+        "old_full_source_bypass_entry_margin_V": 0.012091655103254606
+      },
+      "actual_changes": [
+        "Replace D_MAIN PMEG2010ER with U19 TPS2116DRLR selected VIN1 barrier, VIN2 grounded; physical pins independently checked",
+        "Replace U10 TLV3012B with TPS3700DDCR sensing NORMAL_IN through93.1k/10k; add10k AON pullup; remove obsolete reference and10nF sense filter",
+        "Preserve3.6V OSEL,2.6V charge,25mA nominal charge,15F actual cell and all external boundary mappings",
+        "Remove NORMAL_IN power flag because U19 is the real power driver"
+      ],
+      "source_mode": {
+        "status": "STATIC_CORNERS_PASS_WITH_EXPLICIT_ENGINEERING_ALLOCATIONS; DYNAMIC_QUALIFICATION_OPEN",
+        "sense_node": "NORMAL_IN (TPS61094 VIN), after reverse barrier",
+        "OSEL_target_max_V": 3.672,
+        "boost_regulation_envelope_max_V": 3.726,
+        "VBYPASS_max_V": 0.15,
+        "conservative_bypass_entry_max_V": 3.876,
+        "specified_target_bypass_entry_max_V": 3.822,
+        "additional_sag_allocation_V": 0.05,
+        "lowest_qualified_input_after_sag_V": 3.9125015286378924,
+        "entry_margin_after_sag_V": 0.036501528637892466,
+        "source_to_highest_assert_margin_V": 0.11080225708223157,
+        "qualified_input_current_mA": 358.1832850053821,
+        "min_limiter_margin_at_qualified_input_mA": 31.616922547385286,
+        "bypass_Ron_ALLOCATION_ohm_NOT_DS_MAX": 0.3,
+        "minimum_qualified_backup_with_Ron_allocation_V": 3.8050465431362777,
+        "buck_input_required_ALLOCATION_V": 3.41,
+        "buck_headroom_normal_V": 0.3950465431362775,
+        "buck_headroom_boost_V": 0.11799999999999988,
+        "no_false_rearm_margin_V": 0.2365015286378922,
+        "no_slow_sense_filter": true,
+        "dynamic_status_is_commit_authority": false,
+        "propagation_delay_max_specified": false,
+        "arbitrary_source_steps_proven": false
+      },
+      "load_limits": {
+        "normal_input_min_V": 4.304799057371368,
+        "static_whole_VBUS_max_mA": 488.3499621981147,
+        "assumed_load_input_mA": 325.7242037285186,
+        "margin_to_min_limiter_mA": 64.0760038242488,
+        "margin_to_min_limiter_at_qualified_floor_mA": 31.618405765209786
+      },
+      "limits": "Steady-state datasheet control thresholds pass. U3 bypass0.300ohm, buck minimum3.41V,50mV sag, load and efficiencies are explicit engineering allocations, not measured/specification maxima. Arbitrary fast supply steps/response, reverse transients and105C qualification remain open."
+    },
+    "D-B": {
+      "severity": "MEDIUM",
+      "disposition": "UNMET_GATE; NO_REPEATABLE_STARTUP_OR_MANUFACTURING_ACCEPTANCE",
+      "evidence": {
+        "acceptance": "UNMET: empty-cap repeatable startup is not proven",
+        "TPS61094_ISS_min_mA_at_3p6V_VIN_1p8V_VOUT": 500,
+        "TPS61094_ISS_max_mA": null,
+        "TPS61094_ISS_over_all_startup_conditions_bounded": false,
+        "ISS_min_exceeds_limiter_max_mA": 11.790037801885262,
+        "output_precharge_effective_uF": 32,
+        "input_storage_and_filter_effective_uF": 11.1,
+        "guaranteed_max_precharge_time_s": null,
+        "converter_EN_and_buck_EN_share_RUN": true,
+        "new_barrier_softstart_fixes_output_precharge": false,
+        "needed_evidence": "Worst-case startup current or source-backed sequence redesign; waveform proof of single cold attach, no RUN cycling/sag, and USB inrush/load/temperature sweep. Eventual convergence does not pass."
+      },
+      "reason": "500mA minimum at one precharge test point exceeds488.21mA maximum input limit; ISS maximum/startup envelope absent. U19 softstart does not bound later U3 output precharge; RUN still enables both converters.",
+      "counterexample_only_50mV_input_storage_exhaustion_s": 5.036307126129597e-06,
+      "needed": "Bounded-current source-backed sequencing redesign or measured cold/partial/full-cell single-attach waveform proof over source/cable/load/temperature corners, with no RUN cycling; eventual convergence is insufficient."
+    },
+    "D-C": {
+      "severity": "MEDIUM",
+      "disposition": "BUDGET_FIXED; RUNTIME_REMAINS_CONDITIONAL",
+      "charge_low_V": 2.548,
+      "maximum_recharge_hysteresis_V": 0.1,
+      "effective_start_V": 2.448,
+      "aged_cap_F": 9.45,
+      "floor_V": 1.7,
+      "combined_efficiency_ASSUMED": 0.8,
+      "load_W_ASSUMED": 1.11,
+      "runtime_s": 10.565964972972973,
+      "margin_over10s_s": 0.5659649729729725,
+      "max_total_load_for10s_W": 1.172822112,
+      "min_efficiency_for10s": 0.7571480712328181,
+      "unchanged": "Actual15F cell/housing,2.6V target,25mA charge.26min nominal and43.1min positive-C/low-current corner before tail remain. No whole-transfer or production-runtime guarantee."
+    },
+    "INPUT_FAULT_N": {
+      "disposition": "DIRECT_CONNECTION_REJECTED; COORDINATED_PROPOSAL_ONLY",
+      "confirmed": "AON2.5V exceeds unpowered CC1352R VDDS+0.3V limit; powered2.5V high is also below required0.8VDDS at3.3V.100k resistor is not a voltage waiver.",
+      "actual_capture": "Original100k AON pullup preserved, no MCU routing; X_MCU mapping unchanged; DIO18 package28 remains parent/Astra-owned NC",
+      "proposal_file": "hardware/compact-dmx/eda/power-service/fault-interface-proposal.json",
+      "proposed_part": "SN74LVC1G07DCKR on SYS_3V3, input pullup10k AON, output pullup2.2k SYS plus15k ground; 100nF bypass",
+      "proposal_only_initial_and_temperature_allowance_results": {
+        "off_node_V_at_Ioff10uA": 0.151875,
+        "high_margin_V_at3p2V_and_allocated_sink10uA": 0.20233
+      },
+      "required_coordination": "Parent/Astra must approve/map new INPUT_FAULT_N_MCU net and integrate translator/BOM/current/ramps; candidate is not populated or covered by sheet ERC."
+    }
+  },
+  "verification": {
+    "source_documents": "source-evidence.json:8 original used PDFs match reviewed cache;3 newly cached official TI references have a local source-cache-manifest.json",
+    "commands": [
+      {
+        "command": "python3 hardware/compact-dmx/eda/power-service/generate.py",
+        "exit_code": 0,
+        "result": "81 symbols including3 power flags,78 physical parts"
+      },
+      {
+        "command": "python3 hardware/compact-dmx/eda/power-service/verify.py",
+        "exit_code": 0,
+        "result": "Real KiCad10.0.7 export/ERC/PDF/SVG; independent IC/passive/power-only boundary/latch checks"
+      },
+      {
+        "command": "python3 hardware/compact-dmx/eda/power_budget.py",
+        "exit_code": 0,
+        "result": "Static input/mode/headroom/no-false-rearm checks plus explicit hysteresis and startup gate"
+      },
+      {
+        "command": "python3 hardware/compact-dmx/eda/power-service/corner-proof.py",
+        "exit_code": 0,
+        "result": "Independent netlist-based32 detector /256 mode corners; old failures reproduced; corrected runtime and unmet startup checked"
+      }
+    ],
+    "capture": {
+      "capture_check": "PASS",
+      "scope": "Power/buffer/latch/POR/SPI/service hardware captured; MCU/RF and existing DMX sheet are explicit boundaries. Not a routed or qualified product.",
+      "kicad_version": "10.0.7",
+      "components": 78,
+      "ICs": 17,
+      "nets": 74,
+      "erc_errors": 0,
+      "erc_warnings": 0,
+      "erc_exclusions": 0,
+      "critical_IC_pin_map_checks": 131,
+      "all_two_terminal_checks": 57,
+      "all_two_terminal_nodes_present": true,
+      "derived_power_flags": [
+        "AON_RAW after diode OR",
+        "CAP_POS energy reservoir",
+        "SYS_3V3 after buck inductor"
+      ],
+      "control_power_flags": 0,
+      "stable_latch_cases": 16,
+      "USB_data_pins": "NC",
+      "service_separate_from_ROM_backdoor": true,
+      "full_product_release": "NOT_RELEASED",
+      "cold_cap_startup_accepted": false,
+      "timing_transient_and_hardware_validation": false
+    },
+    "independent_corners": {
+      "static_corner_check": "PASS",
+      "scope": "Netlist-derived static arithmetic only",
+      "detector_corners": 32,
+      "mode_corners": 256,
+      "normal_input_min_at_assumed_4p4V_source_V": 4.304799057371368,
+      "GOOD_falling_min_V": 3.9625178211378924,
+      "GOOD_rising_max_V": 4.193996800289137,
+      "minimum_mode_margin_after50mV_sag_V": 0.0365178211378927,
+      "input_demand_at_qualified_floor_mA": 358.1818017875576,
+      "input_margin_at_qualified_floor_mA": 31.618405765209786,
+      "buck_headroom_with_explicit_Ron_allocation_V": 0.395063280601625,
+      "old_false_GOOD_normal_input_V": 3.306246823376624,
+      "old_full_source_entry_margin_V": 0.012091655103254606,
+      "start_after_worst_charge_hysteresis_V": 2.448,
+      "aged_runtime_estimate_s": 10.565964972972973,
+      "runtime_margin_over10s_s": 0.5659649729729725,
+      "input_50mV_reserve_exhaustion_s_at500mA_and_min_limiter": 5.036307126129597e-06,
+      "startup_counterexample_is_waveform_proof": false,
+      "cold_cap_startup_acceptance": "UNMET",
+      "transient_timing_thermal_load_and_efficiency_qualified": false,
+      "manufacturing_acceptance": "NOT_RELEASED"
+    },
+    "root_package_validator": "NOT RUN: parent owns integration and rerun",
+    "rendered_png": "Regenerated locally from exported SVG using installed ImageMagick; no manual electrical changes",
+    "application_or_hardware_measurements": false
+  },
+  "parent_integration_required": [
+    "Record actual U19/U10 source-mode decision and charge-hysteresis correction in canonical DECISIONS/docs/HTML",
+    "Update BOM/CAD/layout allocation for removed D_MAIN/C_VBUS_REF/C_VBUS_FILTER and added U19/R_VBUS_PU/C_U19; U10 changes part, physical part count remains78",
+    "Canonical budget readers: legacy aged_delivered_J_at_low_charge_2p548V key now intentionally integrates from2.448V after hysteresis; runtime10.56596s",
+    "Retain D-B as unmet acceptance gate; do not promote ERC/math pass to repeatable-start or manufacturing acceptance",
+    "Coordinate proposed fault translator and new net before connecting reserved DIO18/pin28",
+    "Integrate dual-band same-radio MCU capture and keep actual RF/system load unmeasured; parent reruns root package validator"
+  ],
+  "unresolved_conditions": [
+    "Cold-cap precharge, inrush, source sag and RUN cycling",
+    "U3 bypass resistance maximum and buck dropout/headroom under actual load/temperature",
+    "TPS2116 finite reverse response, collapse rate and board thermal behavior; maximum operating temperature105C",
+    "Actual cap capacitance/aging/leakage/ESR, conversion efficiency and shared dual-band RF+DMX+flash peaks; only0.566s runtime margin",
+    "Charger current accuracy below its5V datasheet test condition and termination tail",
+    "AON/logic undefined below specified minimum and asynchronous latch/POR/control transitions",
+    "Fault interface still proposed/unconnected; EN/FLT DMX contention remains Astra-owned; flash WP/loader protection remain future integration concerns",
+    "PCB footprints/routing/DRC and complete housing/thermal/USB/ESD/manufacturing qualification"
+  ],
+  "changed_paths_relative_to_review_snapshot": [
+    "hardware/compact-dmx/eda/power-budget.json",
+    "hardware/compact-dmx/eda/power-service/DESIGN.md",
+    "hardware/compact-dmx/eda/power-service/component-ledger.csv",
+    "hardware/compact-dmx/eda/power-service/corner-proof.json",
+    "hardware/compact-dmx/eda/power-service/corner-proof.py",
+    "hardware/compact-dmx/eda/power-service/erc.json",
+    "hardware/compact-dmx/eda/power-service/fault-interface-proposal.json",
+    "hardware/compact-dmx/eda/power-service/generate.py",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_sch",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_sym",
+    "hardware/compact-dmx/eda/power-service/power-service.net",
+    "hardware/compact-dmx/eda/power-service/power-service.pdf",
+    "hardware/compact-dmx/eda/power-service/rendered/power-service.png",
+    "hardware/compact-dmx/eda/power-service/rendered/power-service.svg",
+    "hardware/compact-dmx/eda/power-service/source-cache/sn74lvc1g07.pdf",
+    "hardware/compact-dmx/eda/power-service/source-cache/tps3700.pdf",
+    "hardware/compact-dmx/eda/power-service/source-cache/tps3808.pdf",
+    "hardware/compact-dmx/eda/power-service/source-cache-manifest.json",
+    "hardware/compact-dmx/eda/power-service/source-evidence.json",
+    "hardware/compact-dmx/eda/power-service/validation.json",
+    "hardware/compact-dmx/eda/power-service/verify.py",
+    "hardware/compact-dmx/eda/power_budget.py",
+    "hardware/compact-dmx/eda/power-service/review-fix-receipt.json"
+  ],
+  "artifact_sha256": {
+    "hardware/compact-dmx/eda/power-budget.json": "93643771ab7228dcc158e72926c71a63334daa78172a20bb7f8854be5b78395f",
+    "hardware/compact-dmx/eda/power-service/DESIGN.md": "54072853f0ec085423905b8e96d5cab2d414f9b6cc0abc9d20a32143f4cc479a",
+    "hardware/compact-dmx/eda/power-service/component-ledger.csv": "975ce85c1ea8963ad945ee4f97202809f2f3dc7a7846a488a34e4101f00d38e9",
+    "hardware/compact-dmx/eda/power-service/corner-proof.json": "c0010fd9bd58e3d287a9807d1989868884c705b2ccc4699b5c5bd838c737bb3d",
+    "hardware/compact-dmx/eda/power-service/corner-proof.py": "f79ee146f6091348092289d46594deb76e5cc3fff477b4974a4c4dcda0cdfc24",
+    "hardware/compact-dmx/eda/power-service/erc.json": "e5eb61c2bea377d6bc02d139a48196cfff5db57490d5c7bdf3a076e01c0dca32",
+    "hardware/compact-dmx/eda/power-service/fault-interface-proposal.json": "f4c2550532e7f5fed8fea11fe3379ea6e811c252aea5a69348f6999e529f88cf",
+    "hardware/compact-dmx/eda/power-service/generate.py": "b71ae0a68c28a79d2d103fb24ea83789d0d1c242ef835b23c5fe8aab0e797740",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_sch": "68c63044c78d65f60ffd4554e0d0021bbdd8436baec43b053ab5d7b370e15e3c",
+    "hardware/compact-dmx/eda/power-service/power-service.kicad_sym": "bf8bce3889bb8f66210ee521a42ccab34fc911f2b91508cf06a5f4339c0c0b36",
+    "hardware/compact-dmx/eda/power-service/power-service.net": "879c3be7c1855c2285b555acc60a98f472cfecfad41778d293877ff4907797f1",
+    "hardware/compact-dmx/eda/power-service/power-service.pdf": "d5da3f7f323484f31712622c10afa7c7e7632e2476876ceffb5e161fa47f07c0",
+    "hardware/compact-dmx/eda/power-service/rendered/power-service.png": "ec1eb41389559c7adf0388773831225650116d4b02d090a591b2ffd590308157",
+    "hardware/compact-dmx/eda/power-service/rendered/power-service.svg": "c590c16682d3229694257491c12251e5e44fbe571ee1af99bd020e6ef3da1df1",
+    "hardware/compact-dmx/eda/power-service/source-cache/sn74lvc1g07.pdf": "1e175728fccf85295e744a60420f48b1feb23f7f0061b8c73d70f81a6903f59e",
+    "hardware/compact-dmx/eda/power-service/source-cache/tps3700.pdf": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0",
+    "hardware/compact-dmx/eda/power-service/source-cache/tps3808.pdf": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed",
+    "hardware/compact-dmx/eda/power-service/source-cache-manifest.json": "dad615f516e497325f5d87a973008493fec046564442005f0e732079c62772fd",
+    "hardware/compact-dmx/eda/power-service/source-evidence.json": "7acb92d9bc426a24db6811a3863e7783ec96cf9197d1e0ed8418dd19861a3532",
+    "hardware/compact-dmx/eda/power-service/validation.json": "1b4172ea46fd986bae9a08cfa69d1b41cd1c71f2a8c51593f12a9edeb83e5af9",
+    "hardware/compact-dmx/eda/power-service/verify.py": "d2b4fbb007316ae71d8ee3acdd1531e782bb2ffdd6cb6910c1dedda89e275f46",
+    "hardware/compact-dmx/eda/power_budget.py": "eeb5fa6d83642653bf38ac29b5fc05da0ab03b2605c56993c7648da6432c2504"
+  },
+  "unchanged_regenerated_support_files": [
+    "power-service.kicad_pro",
+    "sym-lib-table",
+    "latch-truth-table.json"
+  ],
+  "publication": "Nothing staged, committed, pushed, pulled, branched or deployed; existing implementation receipt preserved"
+}

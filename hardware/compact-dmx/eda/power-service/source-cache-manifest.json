@@ -1,0 +1,60 @@
+{
+  "scope": "Only new references within power-service/source-cache; includes rejected/proposed parts, not an active BOM",
+  "files": [
+    {
+      "path_relative_to_power_service": "source-cache/tps3700.pdf",
+      "sha256": "3bb7daed20b154bf22ded78e23269c6437eb587400b89bce0f543813df94ebf0",
+      "bytes": 682718,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps3700.pdf",
+      "revision": "SBVS187G February 2019",
+      "printed_pages_consulted": [
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        19
+      ],
+      "use": "SELECTED new cache: U10 DDC pins, separate rising/falling thresholds including hysteresis, input bias, response not max-guaranteed",
+      "evidence_kind": "Manufacturer datasheet, no measurements",
+      "cache_origin": "Official TI URL fetched 2026-10-22; cached before analysis; no current-price/availability inference"
+    },
+    {
+      "path_relative_to_power_service": "source-cache/tps3808.pdf",
+      "sha256": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed",
+      "bytes": 2046179,
+      "source_url": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+      "revision": "SBVS050N August 2026",
+      "printed_pages_consulted": [
+        4,
+        6,
+        7
+      ],
+      "use": "REJECTED candidate: adjustable threshold +/-2% plus up to3% hysteresis did not offer desired assertion/retention margin",
+      "evidence_kind": "Manufacturer datasheet, no measurements",
+      "cache_origin": "Official TI URL fetched 2026-10-22; cached before analysis; no current-price/availability inference"
+    },
+    {
+      "path_relative_to_power_service": "source-cache/sn74lvc1g07.pdf",
+      "sha256": "1e175728fccf85295e744a60420f48b1feb23f7f0061b8c73d70f81a6903f59e",
+      "bytes": 3049328,
+      "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf",
+      "revision": "SCES296AG October 2025",
+      "printed_pages_consulted": [
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "use": "PROPOSED ONLY, NOT POPULATED: SYS-powered open-drain fault translation; tolerant input, input leakage, Ioff, VOL; MCU mapping remains parent/Astra-owned",
+      "evidence_kind": "Manufacturer datasheet, no measurements",
+      "cache_origin": "Official TI URL fetched 2026-10-22; cached before analysis; no current-price/availability inference"
+    }
+  ]
+}

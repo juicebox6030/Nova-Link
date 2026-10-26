@@ -1,0 +1,11 @@
+{
+  "status": "PASS reopened actual savedFCStd and bothSTEP exports; package allocations only",
+  "saved_body_and_PCB_solids": 34,
+  "saved_zero_overlap_body_pairs": 561,
+  "STEP_solids_including_stake_allocations": 38,
+  "STEP_volume_agreement": true,
+  "assembly_reserve_solids": 4,
+  "R13_actual_body_present": true,
+  "port_and_FPC_allocation_coordinates_match": true,
+  "full_fit_or_supplier_profile_accepted": false
+}

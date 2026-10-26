@@ -1,0 +1,75 @@
+{
+  "scope": "buffer-fit-candidate only; conditional25F cutout proposal, not active product",
+  "preferred": "HV1625-2R7256-R",
+  "runtime_s": 16.343271606784583,
+  "charge_nominal_min_before_tail": 43.3333333333,
+  "charge_corner_min_before_tail": 64.0679,
+  "case_mm": [
+    98,
+    34,
+    24
+  ],
+  "new_PCB_aperture_mm": [
+    29.4,
+    10.3
+  ],
+  "valid_closed_shape_objects": 16,
+  "cell_pairs": 15,
+  "component_envelope_checks": 173,
+  "interferences": [],
+  "source_pdf_hashes": {
+    "sources/eaton-hv.pdf": "17fb1d0f56d6766f0866ecb4cc656ce603a74371183ab21ad96f648303b246f1",
+    "sources/avx-scc.pdf": "8c88fc1bb97502873e56db9a17b8315207040e4d636f8ee794b538187cd1f152",
+    "sources/cda.pdf": "c2d18d470aefb69a093ad09e3166585fd0dc367e3e13d08f5b78b7ebb583f5b1",
+    "sources/tps709.pdf": "8c14e3efae738a27b857b789aa87369de9037a8ef3616a9f71a423587cdc6949",
+    "sources/tps3808.pdf": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed",
+    "sources/tnpw_e3.pdf": "6f0508c568cb355aaf2accdd33fe3a780d3ea5ef207c4c9a71839a8acadc33a5"
+  },
+  "placement_extraction_source_sha256": "2b8f12cbe7be407f6d0a351fa524ddc40295017c447c0f57ec269844c1fa035f",
+  "concurrent_input_changes": [
+    "hardware/compact-dmx/eda/power-service/qualified15-candidate/DESIGN.md",
+    "hardware/compact-dmx/eda/power-service/qualified15-candidate/corner-proof.py",
+    "hardware/compact-dmx/eda/power-service/qualified15-candidate/corner-proof.json",
+    "hardware/compact-dmx/eda/power-service/qualified15-candidate/qualified15-placement.kicad_pcb"
+  ],
+  "validation": [
+    "screen.py: baseline reproduction + Simpson convergence + independent forward integration PASS",
+    "geometry.py: closed shapes, cell/PCB/case/lid and cradle comparisons PASS;173 component extrusions PASS",
+    "fit-section.pdf rendered with pdftoppm and visually inspected"
+  ],
+  "gates": [
+    "Cold/aged supplier bounds and measured simultaneous-load runtime",
+    "Independent cell OVP/short protection policy",
+    "Formed leads/newlands/retention/liner/vent/process strength",
+    "Final Sol geometry reconciliation, PCB aperture routing/strength and full RF fit"
+  ],
+  "manufacturing_release": false,
+  "hashes": {
+    "README.md": "1640153506b4b181795575ebfb6f5202c6435fdbd1e2bd9497bcd097d07d5010",
+    "__pycache__/geometry.cpython-311.pyc": "a4d7ef73c85501194f3e1881b63a2f58b309f0589eec17bae9e9c2f825014600",
+    "buffer25-proposal.FCStd": "4ec40f29ae2b1110fe9beb61d7e05c5e93581f8f8a5a717c267a806e888f7a10",
+    "buffer25-proposal.step": "a4b6fe989cbaaf725bbb33ff4ae5e9a8364e51b7a3f319be3a13b5b099c786e2",
+    "draw.py": "8aa3dd130d05ae8228c381bf671cc249a1912f8c3dc5f3ac54c9cc1c3ec8d9e4",
+    "extract-placement.py": "6d15ba740a7f03898ee3ec4fad06c4f3146f83521a52f87a2a40258aaa213df9",
+    "fit-section.pdf": "d69d4c8aaaae4464ebbae02eb675edd638e0a37f0ef6d730387a44a568363abe",
+    "fit-section.svg": "d24407ec22b02778e0a46c23756ee318865d90a2bc74bbf560356cf701291c99",
+    "freeze.py": "7416dbe89cbc1dfb114fed9d3992f6aa1e142f119f0bea4e4b4df9493b3570a1",
+    "geometry-check.json": "5191c12d03c53fd953ba796709a158593a69572e5069ed4f712037a81f761847",
+    "geometry.log": "ded29a4bccbaa4cf33af8a81b3476c4ec732f27472049520eebd2768617e1614",
+    "geometry.py": "7eb20779a8306a61d6ced8bece5e273a1f279da01d57b20d08f1f7196e262289",
+    "inputs.json": "65b3ead2ed52e8ccffa20bc66d55520fc8b85a389aacf0195616ef5786c82b7e",
+    "placement-boxes.json": "2ad56cb1789d7f69db94d15126d3e071408f76d99c3cd596d7212bd3a1d60552",
+    "screen.json": "5195e15d9ada2f2939ab4074cb28f15bccf9e6b1fa1f9e4ec95c4964cf7d8ff7",
+    "screen.py": "b6b73cdd003de5b9e59beb0ccd88724b94c6834f70e05d338a645a426d97da8e",
+    "sources/avx-scc.pdf": "8c88fc1bb97502873e56db9a17b8315207040e4d636f8ee794b538187cd1f152",
+    "sources/avx-scc.txt": "9fef58d067a54f85d675366f2cf019508a7808b2dab9cf0eb9db4d285a5cec08",
+    "sources/cda.pdf": "c2d18d470aefb69a093ad09e3166585fd0dc367e3e13d08f5b78b7ebb583f5b1",
+    "sources/cda.txt": "d0e60fa6a78d6c7896c344edd5fe75ab4c78e2d0fa55806e71cc2eff0c2674ed",
+    "sources/eaton-hv.pdf": "17fb1d0f56d6766f0866ecb4cc656ce603a74371183ab21ad96f648303b246f1",
+    "sources/eaton-hv.txt": "8a59bc375a228d4f1d8d2e4cb732799d2b721e5a95fd4b89c36611d9cce0f7c5",
+    "sources/tnpw_e3.pdf": "6f0508c568cb355aaf2accdd33fe3a780d3ea5ef207c4c9a71839a8acadc33a5",
+    "sources/tps3808.pdf": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed",
+    "sources/tps709.pdf": "8c14e3efae738a27b857b789aa87369de9037a8ef3616a9f71a423587cdc6949",
+    "sources.json": "24d7b2602dbf3b2fb48aa5edcdc36de61f855496ec79365f3c425ea010373d6c"
+  }
+}

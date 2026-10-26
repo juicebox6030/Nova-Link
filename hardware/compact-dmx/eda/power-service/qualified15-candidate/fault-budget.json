@@ -1,0 +1,101 @@
+{
+  "status": "Complete bounded fault/statebudget, with explicit unprotectedfaults; NOTallsinglefault-safe",
+  "rows": [
+    {
+      "state": "Default/invalid CC, empty cell",
+      "USB_main": "OFF",
+      "buck": "OFF",
+      "charger": "disabled",
+      "boost": "OFF",
+      "raw_current_screen_A": 0.05474396302943776,
+      "limit": "Resistorsbounddetect/AON feed; eFuse IQ table applicability and dynamic offleak qualifications remain"
+    },
+    {
+      "state": "Qualified cold emptycell, beforebuckPG",
+      "USB_main": "ON afterCCsupervisor",
+      "buck": "aftermainready",
+      "charger": "disabled",
+      "boost": "OFF",
+      "background_main_alloc_A": 0.3898477688171176,
+      "late_common_charge_C": 0.00013915000000000002,
+      "peak_A": null,
+      "limit": "Initial11uF eFuse ramp andlater20uF mux ramp are distinct; maxpeak/fasttrip/sourcefoldback unresolved"
+    },
+    {
+      "state": "Qualified normal +25mA charge",
+      "USB_main": "ON",
+      "buck": "ON",
+      "charger": "enabled only actualSOURCEVALID&PG",
+      "boost": "OFF until nearfullarm; thereafterstandbyready",
+      "source_alloc_A": 0.3871904894211972,
+      "trip_envelope_total_A": 1.2087831000088656,
+      "limit": "Not guaranteedfull5Vspec: eFuse table defaultVIN12 and assumed efficiency/load/chargecurve"
+    },
+    {
+      "state": "Downgrade/detach/brownout, previouslyarmed",
+      "USB_main": "OFF onceactualCC/UVfault observed",
+      "buck": "backup whileMAINREADY",
+      "charger": "disabled",
+      "boost": "ON untilloadedUVLO/readyrail loss",
+      "rawUSBbackfeed": "RCB muxes, leakage+finite response, not idealzero",
+      "converter_current_max_A": null,
+      "limit": "No sourcegoodmask; GPIO/comparator propagation maxima unknown"
+    },
+    {
+      "state": "Charger IN hardshort ormain overcurrent",
+      "USB_main": "TPS259474L latchesoff afterITIMER/fasttrip",
+      "buck": "may usepreviouslyarmedbackup untilreadyrail loss/UVLO",
+      "charger": "inputremoved",
+      "peak_A": null,
+      "timer_cap_s": [
+        0.00393516,
+        0.01835304166666667
+      ],
+      "limit": "Noinstantaneous1.5A ceiling. ENdoesnotdependonPG/output. RawCCcollapse/foldback is aninputpowercycle andcanresetlatch"
+    },
+    {
+      "state": "CC/AON branch short",
+      "USB_main": "unaffected onlyifCCremainsqualified; CCfaultnormallymainoff",
+      "CC_150ohm_1206_fault_W": 0.2023749790934939,
+      "AON_330ohm_0805_fault_W": 0.09198862686067903,
+      "limit": "Resistor power ratings .25/.125W at70C; enclosure/faultderating must beverified. No rawbranch thermalfuse"
+    },
+    {
+      "state": "ILM resistor open/short",
+      "source": "TPS25947 electricaltablep9 IFLT",
+      "open_threshold_A_typ": 0.1,
+      "short_threshold_A_typ": 1.1,
+      "short_threshold_A_max_at12V": 2.1,
+      "limit": "The1.2088A envelope assumeshealthy3.32k programmingnetwork. It isNOTanallsinglefault1.5A guarantee; faulttimer/fasttrip alsoallowtransientoverload"
+    },
+    {
+      "state": "Charger ISET fault",
+      "source": "BQ25173 RISET_SHORT/OCP",
+      "output_OCP_A": [
+        0.9,
+        1.1
+      ],
+      "limit": "ISETshortdetectthreshold onlymax350ohm; no inventedminimumdetectionthreshold. InternalOCP notupstreaminstantaneous1.5A limiter. U6 providesmain faultshutdown when its envelope is exceeded"
+    },
+    {
+      "state": "Charger OUT-toGND orboostVIN-toGND internalshort",
+      "cell_connection": "DirectCAP_POS; upstreamU6 cannotinterruptcell discharge",
+      "cell_current_max_A": null,
+      "limit": "Cellsideinternalshort is NOTmade safe byinputlatch. ConverterEN/UVLO doesnotisolate aninternalshort; protectivefusing/physicalfaultdisposition is required beforemanufacturingacceptance"
+    },
+    {
+      "state": "Charger FB top open/bottomshort",
+      "cell_connection": "BQfeedback no longerrepresentscellvoltage",
+      "limit": "25mA overcharge canremainbelowU6 threshold. No independentcellOVP iscaptured; upstreambreaker isnot overchargeprotection. Thisfaultrequires a hardware/protection-policy disposition beforemanufacturingacceptance"
+    }
+  ],
+  "cell_energy": {
+    "nominal_15F_2p6V_J": 50.7,
+    "reference_maxC19p5F_2p7V_J": 71.07750000000001,
+    "datasheet_short_reference_A": 90,
+    "peak_max_guaranteed_A": null,
+    "interpretation": "Eaton90A is safetyreference fromratedV/maxinitialESR, not a limit. MinimumESR andinternalshortpathresistance unspecified. Do notoperateatshortcurrent."
+  },
+  "safe_latched_shutdown_scope": "Main-input charger/loadfault whileprogrammingnetwork andrawCCsupply remainfunctional. Continuedmainoperationthroughfailedcharger isnotrequired. Cellsidefaults andfeedback/programmingfaults areseparatelyopen.",
+  "manufacturing_release": false
+}

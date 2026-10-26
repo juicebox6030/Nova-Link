@@ -1,0 +1,210 @@
+{
+  "kind": "Conditional DC/source arithmetic, no functional or manufacturing acceptance",
+  "reg_output_max_V": 5.21034338509018,
+  "reg_output_stress_A": 1.9109999999999998,
+  "reg_output_stress_W": 9.956966208907334,
+  "VCONN_stress_A": 0.41,
+  "auxiliary_output_A": 0.001,
+  "breaker_floor_A": 2.994610778443114,
+  "resistance_ohm": {
+    "flex_hot": 0.09208361747042736,
+    "termination": 0.02,
+    "efuse_max": 0.045,
+    "tail_nominal_hot": 0.01419924378047946,
+    "tail_allocated_hot": 0.01625024565988206,
+    "stationary_hot": 0.00496436883132149
+  },
+  "existing_5V_reproduction": [
+    {
+      "case": "original",
+      "loop_ohm": 0.15708361747042737,
+      "source_V": 4.6375,
+      "eta_assumption": 0.8,
+      "input_A": 2.9871410745684353,
+      "converter_VIN_V": 4.168269074112291,
+      "module_output_W": 13.852866733311119,
+      "flex_copper_loss_W": 0.8216632052176527,
+      "total_series_loss_W": 1.4016589721769541,
+      "breaker_floor_margin_A": 0.007469703874678935
+    },
+    {
+      "case": "tail_nominal_hot",
+      "loop_ohm": 0.17128286125090683,
+      "source_V": 4.6375,
+      "eta_assumption": 0.8,
+      "input_A": 3.022255606352828,
+      "converter_VIN_V": 4.1198394123122934,
+      "module_output_W": 14.01571037446124,
+      "flex_copper_loss_W": 0.8410944278076814,
+      "total_series_loss_W": 1.5645026133270714,
+      "breaker_floor_margin_A": -0.027644827909713676
+    },
+    {
+      "case": "tail_allocated_hot",
+      "loop_ohm": 0.17333386313030943,
+      "source_V": 4.6375,
+      "eta_assumption": 0.8,
+      "input_A": 3.027475599127373,
+      "converter_VIN_V": 4.112735958870505,
+      "module_output_W": 14.039918090953192,
+      "flex_copper_loss_W": 0.8440023873026458,
+      "total_series_loss_W": 1.588710329819021,
+      "breaker_floor_margin_A": -0.03286482068425878
+    },
+    {
+      "case": "tail_and_stationary_wire_allocated_hot",
+      "loop_ohm": 0.17829823196163092,
+      "source_V": 4.6375,
+      "eta_assumption": 0.8,
+      "input_A": 3.0402726127474913,
+      "converter_VIN_V": 4.0954247684657545,
+      "module_output_W": 14.099264241616492,
+      "flex_copper_loss_W": 0.8511525933193269,
+      "total_series_loss_W": 1.648056480482323,
+      "breaker_floor_margin_A": -0.04566183430437709
+    }
+  ],
+  "required_eta_existing_fullR_to_breaker_floor": 0.8105913203243609,
+  "12V_conditional_comparison": [
+    {
+      "case": "IRM20-12 parameter stack",
+      "source_V": 11.41,
+      "eta_assumption": 0.8,
+      "input_A": 1.110525600914525,
+      "converter_VIN_V": 11.211995248808812,
+      "module_output_W": 12.67109710643473,
+      "flex_copper_loss_W": 0.11356369682248757,
+      "total_series_loss_W": 0.21988934530052456,
+      "breaker_floor_margin_A": 1.8840851775285892
+    },
+    {
+      "case": "IRM20-12 parameter stack",
+      "source_V": 11.41,
+      "eta_assumption": 0.85,
+      "input_A": 1.0441242610040986,
+      "converter_VIN_V": 11.223834490314726,
+      "module_output_W": 11.913457818056765,
+      "flex_copper_loss_W": 0.10038914285007156,
+      "total_series_loss_W": 0.19437992522458936,
+      "breaker_floor_margin_A": 1.9504865174390156
+    },
+    {
+      "case": "IRM20-12 parameter stack",
+      "source_V": 11.41,
+      "eta_assumption": 0.9,
+      "input_A": 0.9852202055276401,
+      "converter_VIN_V": 11.234336979261547,
+      "module_output_W": 11.241362545070373,
+      "flex_copper_loss_W": 0.08938177854892068,
+      "total_series_loss_W": 0.17306675739554464,
+      "breaker_floor_margin_A": 2.009390572915474
+    },
+    {
+      "case": "TMLM20112 parameter stack",
+      "source_V": 11.28,
+      "eta_assumption": 0.8,
+      "input_A": 1.123792767198381,
+      "converter_VIN_V": 11.079629736517258,
+      "module_output_W": 12.676382413997736,
+      "flex_copper_loss_W": 0.11629333824681048,
+      "total_series_loss_W": 0.22517465286353708,
+      "breaker_floor_margin_A": 1.8708180112447332
+    },
+    {
+      "case": "TMLM20112 parameter stack",
+      "source_V": 11.28,
+      "eta_assumption": 0.85,
+      "input_A": 1.0565708961106905,
+      "converter_VIN_V": 11.091615277281347,
+      "module_output_W": 11.91811970812859,
+      "flex_copper_loss_W": 0.1027968150818137,
+      "total_series_loss_W": 0.19904181529641024,
+      "breaker_floor_margin_A": 1.9380398823324236
+    },
+    {
+      "case": "TMLM20112 parameter stack",
+      "source_V": 11.28,
+      "eta_assumption": 0.9,
+      "input_A": 0.9969419501104061,
+      "converter_VIN_V": 11.102247012926934,
+      "module_output_W": 11.24550519724538,
+      "flex_copper_loss_W": 0.09152128601347229,
+      "total_series_loss_W": 0.1772094095705721,
+      "breaker_floor_margin_A": 1.9976688283327082
+    },
+    {
+      "case": "11V engineering sensitivity, NOT a RAC20 guarantee",
+      "source_V": 11.0,
+      "eta_assumption": 0.8,
+      "input_A": 1.1534947734519916,
+      "converter_VIN_V": 10.794333921316529,
+      "module_output_W": 12.688442507971907,
+      "flex_copper_loss_W": 0.12252187494042119,
+      "total_series_loss_W": 0.23723474683775114,
+      "breaker_floor_margin_A": 1.8411160049911226
+    },
+    {
+      "case": "11V engineering sensitivity, NOT a RAC20 guarantee",
+      "source_V": 11.0,
+      "eta_assumption": 0.85,
+      "input_A": 1.0844323131174256,
+      "converter_VIN_V": 10.806647635889101,
+      "module_output_W": 11.928755444291681,
+      "flex_copper_loss_W": 0.10828973023629224,
+      "total_series_loss_W": 0.20967755145950462,
+      "breaker_floor_margin_A": 1.9101784653256886
+    },
+    {
+      "case": "11V engineering sensitivity, NOT a RAC20 guarantee",
+      "source_V": 11.0,
+      "eta_assumption": 0.9,
+      "input_A": 1.0231777177090882,
+      "converter_VIN_V": 10.817569221949933,
+      "module_output_W": 11.254954894799969,
+      "flex_copper_loss_W": 0.09640166158004124,
+      "total_series_loss_W": 0.18665910712516087,
+      "breaker_floor_margin_A": 1.971433060734026
+    }
+  ],
+  "12V_warning": "Current headroom is not startup/thermal/fault protection proof; existing board incompatible without redesign.",
+  "IRM20_allocation_comparison": [
+    {
+      "case": "body-face comparison, excludes pins",
+      "LWH_mm": [
+        72.9,
+        47.7,
+        39.5
+      ],
+      "rectangular_bore_ID_mm": 61.93173661379116,
+      "illustrative_OD_2p5mm_wall_mm": 66.93173661379116
+    },
+    {
+      "case": "maximum-pin referenced module",
+      "LWH_mm": [
+        72.9,
+        47.7,
+        44.0
+      ],
+      "rectangular_bore_ID_mm": 64.89445276755171,
+      "illustrative_OD_2p5mm_wall_mm": 69.89445276755171
+    },
+    {
+      "case": "carrier assembly planning allocation",
+      "LWH_mm": [
+        81.0,
+        52.0,
+        44.0
+      ],
+      "rectangular_bore_ID_mm": 68.11754546370561,
+      "illustrative_OD_2p5mm_wall_mm": 73.11754546370561
+    }
+  ],
+  "fixed_trunk_coaxial_example": {
+    "module_bottom_Z_mm": -5.0,
+    "module_top_Z_mm": 19.5,
+    "top_reservation_Z_mm": 29.5,
+    "rectangular_corner_bore_ID_mm": 75.87021813597217,
+    "illustrative_OD_2p5mm_wall_mm": 80.87021813597217,
+    "limitation": "One conservative body+lead reservation at unchanged trunk coordinates; not an optimized bore or complete assembly."
+  }
+}

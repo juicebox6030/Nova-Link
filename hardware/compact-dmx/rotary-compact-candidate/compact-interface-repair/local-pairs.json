@@ -1,0 +1,1056 @@
+{
+  "pairs": 56575,
+  "positive": [
+    {
+      "a": "Trunk_L",
+      "b": "L_TrunkToFuse",
+      "volume": 14.963057928260259
+    },
+    {
+      "a": "Trunk_N",
+      "b": "N_TrunkToCarrier",
+      "volume": 15.009098397609634
+    },
+    {
+      "a": "COL_StationarySpool",
+      "b": "COL_FixedScrew0",
+      "volume": 0.1320210744306095
+    },
+    {
+      "a": "COL_StationarySpool",
+      "b": "COL_FixedScrew1",
+      "volume": 0.13202107443060956
+    },
+    {
+      "a": "COL_StationarySpool",
+      "b": "COL_IndexRearCap",
+      "volume": 3.141592653589771
+    },
+    {
+      "a": "Pin_N",
+      "b": "N_TrunkToCarrier",
+      "volume": 0.18083333337598545
+    },
+    {
+      "a": "Pin_L",
+      "b": "L_FuseToCarrier",
+      "volume": 0.26084921061953475
+    },
+    {
+      "a": "Pin_LVplus",
+      "b": "SourceWireCopper1",
+      "volume": 0.08879449923534324
+    },
+    {
+      "a": "StationaryCoreWithSupports",
+      "b": "StationaryCornerCapFrontp",
+      "volume": 0.2690999999999986
+    },
+    {
+      "a": "StationaryCoreWithSupports",
+      "b": "StationaryCapScrewFrontm",
+      "volume": 0.3317521842190822
+    },
+    {
+      "a": "StationaryCoreWithSupports",
+      "b": "StationaryCapScrewFrontp",
+      "volume": 0.33175218421908204
+    },
+    {
+      "a": "StationaryCoreWithSupports",
+      "b": "StationaryCapScrewRearm",
+      "volume": 0.41538420038209684
+    },
+    {
+      "a": "StationaryCoreWithSupports",
+      "b": "StationaryCapScrewRearp",
+      "volume": 0.4153842003820976
+    },
+    {
+      "a": "rotating_R10_Body",
+      "b": "rotating_R10_Pad1_0",
+      "volume": 0.0073124446785944675
+    },
+    {
+      "a": "rotating_R10_Body",
+      "b": "rotating_R10_Pad2_1",
+      "volume": 0.007312444678594498
+    },
+    {
+      "a": "rotating_R18_Body",
+      "b": "rotating_R18_Pad1_0",
+      "volume": 0.007312444678594435
+    },
+    {
+      "a": "rotating_R18_Body",
+      "b": "rotating_R18_Pad2_1",
+      "volume": 0.0073124446785943166
+    },
+    {
+      "a": "rotating_D1_Body",
+      "b": "rotating_D1_Pad1_0",
+      "volume": 0.005222960168588095
+    },
+    {
+      "a": "rotating_D1_Body",
+      "b": "rotating_D1_Pad2_1",
+      "volume": 0.0052229601685880945
+    },
+    {
+      "a": "rotating_R15_Body",
+      "b": "rotating_R15_Pad1_0",
+      "volume": 0.007312444678594735
+    },
+    {
+      "a": "rotating_R15_Body",
+      "b": "rotating_R15_Pad2_1",
+      "volume": 0.007312444678594616
+    },
+    {
+      "a": "rotating_C13_Body",
+      "b": "rotating_C13_Pad1_0",
+      "volume": 0.007312444678594657
+    },
+    {
+      "a": "rotating_C13_Body",
+      "b": "rotating_C13_Pad2_1",
+      "volume": 0.007312444678594657
+    },
+    {
+      "a": "rotating_R7_Body",
+      "b": "rotating_R7_Pad1_0",
+      "volume": 0.0073124446785944675
+    },
+    {
+      "a": "rotating_R7_Body",
+      "b": "rotating_R7_Pad2_1",
+      "volume": 0.007312444678594496
+    },
+    {
+      "a": "rotating_R24_Body",
+      "b": "rotating_R24_Pad1_0",
+      "volume": 0.007312444678594437
+    },
+    {
+      "a": "rotating_R24_Body",
+      "b": "rotating_R24_Pad2_1",
+      "volume": 0.0073124446785943166
+    },
+    {
+      "a": "rotating_U5_Body",
+      "b": "rotating_U5_Pad1_0",
+      "volume": 0.0015374446785945094
+    },
+    {
+      "a": "rotating_U5_Body",
+      "b": "rotating_U5_Pad2_1",
+      "volume": 0.0015374446785945094
+    },
+    {
+      "a": "rotating_U5_Body",
+      "b": "rotating_U5_Pad3_2",
+      "volume": 0.0015374446785945094
+    },
+    {
+      "a": "rotating_U5_Body",
+      "b": "rotating_U5_Pad4_3",
+      "volume": 0.0015374446785945094
+    },
+    {
+      "a": "rotating_U5_Body",
+      "b": "rotating_U5_Pad5_4",
+      "volume": 0.0015374446785945098
+    },
+    {
+      "a": "rotating_U5_Body",
+      "b": "rotating_U5_Pad6_5",
+      "volume": 0.0015374446785945094
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad1_0",
+      "volume": 0.003143991148575169
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad2_1",
+      "volume": 0.0031439911485751687
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad3_2",
+      "volume": 0.0031439911485751687
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad4_3",
+      "volume": 0.0031439911485751683
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad5_4",
+      "volume": 0.0031439911485751683
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad6_5",
+      "volume": 0.003143991148575169
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad7_6",
+      "volume": 0.0031439911485750794
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad8_7",
+      "volume": 0.0031439911485750794
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad9_8",
+      "volume": 0.0031439911485750803
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad10_9",
+      "volume": 0.0031439911485750794
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad11_10",
+      "volume": 0.0031439911485751774
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad12_11",
+      "volume": 0.0031439911485751757
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad13_12",
+      "volume": 0.0031439911485751765
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad14_13",
+      "volume": 0.0031439911485751765
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad15_14",
+      "volume": 0.0031439911485751765
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad16_15",
+      "volume": 0.0031439911485751774
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad17_16",
+      "volume": 0.003143991148575081
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad18_17",
+      "volume": 0.003143991148575081
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad19_18",
+      "volume": 0.0031439911485750807
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad20_19",
+      "volume": 0.0031439911485750816
+    },
+    {
+      "a": "rotating_U3_Body",
+      "b": "rotating_U3_Pad21_20",
+      "volume": 0.14483086701761638
+    },
+    {
+      "a": "rotating_C4_Body",
+      "b": "rotating_C4_Pad1_0",
+      "volume": 0.02267639157004495
+    },
+    {
+      "a": "rotating_C4_Body",
+      "b": "rotating_C4_Pad2_1",
+      "volume": 0.022676391570045005
+    },
+    {
+      "a": "rotating_C17_Body",
+      "b": "rotating_C17_Pad1_0",
+      "volume": 0.00731244467859465
+    },
+    {
+      "a": "rotating_C17_Body",
+      "b": "rotating_C17_Pad2_1",
+      "volume": 0.0073124446785946505
+    },
+    {
+      "a": "rotating_C12_Body",
+      "b": "rotating_C12_Pad1_0",
+      "volume": 0.007312444678594657
+    },
+    {
+      "a": "rotating_C12_Body",
+      "b": "rotating_C12_Pad2_1",
+      "volume": 0.007312444678594655
+    },
+    {
+      "a": "rotating_C10_Body",
+      "b": "rotating_C10_Pad1_0",
+      "volume": 0.007312444678594574
+    },
+    {
+      "a": "rotating_C10_Body",
+      "b": "rotating_C10_Pad2_1",
+      "volume": 0.007312444678594573
+    },
+    {
+      "a": "rotating_C6_Body",
+      "b": "rotating_C6_Pad1_0",
+      "volume": 0.20393091148724096
+    },
+    {
+      "a": "rotating_C6_Body",
+      "b": "rotating_C6_Pad2_1",
+      "volume": 0.20393091148724227
+    },
+    {
+      "a": "rotating_R20_Body",
+      "b": "rotating_R20_Pad1_0",
+      "volume": 0.007312444678594437
+    },
+    {
+      "a": "rotating_R20_Body",
+      "b": "rotating_R20_Pad2_1",
+      "volume": 0.007312444678594318
+    },
+    {
+      "a": "rotating_R12_Body",
+      "b": "rotating_R12_Pad1_0",
+      "volume": 0.007312444678594468
+    },
+    {
+      "a": "rotating_R12_Body",
+      "b": "rotating_R12_Pad2_1",
+      "volume": 0.007312444678594498
+    },
+    {
+      "a": "rotating_R9_Body",
+      "b": "rotating_R9_Pad1_0",
+      "volume": 0.007312444678594467
+    },
+    {
+      "a": "rotating_R9_Body",
+      "b": "rotating_R9_Pad2_1",
+      "volume": 0.007312444678594497
+    },
+    {
+      "a": "rotating_R14_Body",
+      "b": "rotating_R14_Pad1_0",
+      "volume": 0.0073124446785944675
+    },
+    {
+      "a": "rotating_R14_Body",
+      "b": "rotating_R14_Pad2_1",
+      "volume": 0.007312444678594496
+    },
+    {
+      "a": "rotating_R21_Body",
+      "b": "rotating_R21_Pad1_0",
+      "volume": 0.007312444678594437
+    },
+    {
+      "a": "rotating_R21_Body",
+      "b": "rotating_R21_Pad2_1",
+      "volume": 0.007312444678594317
+    },
+    {
+      "a": "rotating_R11_Body",
+      "b": "rotating_R11_Pad1_0",
+      "volume": 0.007312444678594469
+    },
+    {
+      "a": "rotating_R11_Body",
+      "b": "rotating_R11_Pad2_1",
+      "volume": 0.007312444678594498
+    },
+    {
+      "a": "rotating_R23_Body",
+      "b": "rotating_R23_Pad1_0",
+      "volume": 0.007312444678594438
+    },
+    {
+      "a": "rotating_R23_Body",
+      "b": "rotating_R23_Pad2_1",
+      "volume": 0.007312444678594317
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad1_0",
+      "volume": 0.00314399114857507
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad2_1",
+      "volume": 0.00314399114857507
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad3_2",
+      "volume": 0.00314399114857507
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad4_3",
+      "volume": 0.0031439911485750694
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad5_4",
+      "volume": 0.0031439911485750655
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad6_5",
+      "volume": 0.0031439911485750646
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad7_6",
+      "volume": 0.0031439911485750763
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad8_7",
+      "volume": 0.0031439911485750763
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad9_8",
+      "volume": 0.0031439911485750763
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad10_9",
+      "volume": 0.003143991148575076
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad11_10",
+      "volume": 0.00314399114857517
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad12_11",
+      "volume": 0.0031439911485751705
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad13_12",
+      "volume": 0.003143991148575177
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad14_13",
+      "volume": 0.003143991148575177
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad15_14",
+      "volume": 0.003143991148575177
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad16_15",
+      "volume": 0.003143991148575177
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad17_16",
+      "volume": 0.0031439911485750794
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad18_17",
+      "volume": 0.00314399114857508
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad19_18",
+      "volume": 0.00314399114857508
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad20_19",
+      "volume": 0.00314399114857508
+    },
+    {
+      "a": "rotating_U4_Body",
+      "b": "rotating_U4_Pad21_20",
+      "volume": 0.14483086701761635
+    },
+    {
+      "a": "rotating_R19_Body",
+      "b": "rotating_R19_Pad1_0",
+      "volume": 0.0073124446785947355
+    },
+    {
+      "a": "rotating_R19_Body",
+      "b": "rotating_R19_Pad2_1",
+      "volume": 0.007312444678594617
+    },
+    {
+      "a": "rotating_C7_Body",
+      "b": "rotating_C7_Pad1_0",
+      "volume": 0.02267639157004559
+    },
+    {
+      "a": "rotating_C7_Body",
+      "b": "rotating_C7_Pad2_1",
+      "volume": 0.022676391570044998
+    },
+    {
+      "a": "rotating_L1_Body",
+      "b": "rotating_L1_Pad1_0",
+      "volume": 0.11461228341700566
+    },
+    {
+      "a": "rotating_L1_Body",
+      "b": "rotating_L1_Pad2_1",
+      "volume": 0.11461228341700613
+    },
+    {
+      "a": "rotating_C5_Body",
+      "b": "rotating_C5_Pad1_0",
+      "volume": 0.022676391570044946
+    },
+    {
+      "a": "rotating_C5_Body",
+      "b": "rotating_C5_Pad2_1",
+      "volume": 0.022676391570044994
+    },
+    {
+      "a": "rotating_C8_Body",
+      "b": "rotating_C8_Pad1_0",
+      "volume": 0.007312444678594647
+    },
+    {
+      "a": "rotating_C8_Body",
+      "b": "rotating_C8_Pad2_1",
+      "volume": 0.007312444678594646
+    },
+    {
+      "a": "rotating_C3_Body",
+      "b": "rotating_C3_Pad1_0",
+      "volume": 0.02267639157004531
+    },
+    {
+      "a": "rotating_C3_Body",
+      "b": "rotating_C3_Pad2_1",
+      "volume": 0.022676391570045366
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadA1_B12_2",
+      "volume": 0.0240418406743532
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadA4_B9_3",
+      "volume": 0.024041840674352385
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadA5_4",
+      "volume": 0.01204796016858811
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadA6_5",
+      "volume": 0.012047960168588119
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadA7_6",
+      "volume": 0.012047960168588117
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadA8_7",
+      "volume": 0.012047960168588116
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadB1_A12_8",
+      "volume": 0.024041840674352385
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadB4_A9_9",
+      "volume": 0.024041840674352385
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadB5_10",
+      "volume": 0.012047960168588116
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadB6_11",
+      "volume": 0.012047960168588119
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadB7_12",
+      "volume": 0.012047960168588114
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadB8_13",
+      "volume": 0.01204796016858811
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadS1_14",
+      "volume": 0.01986291366503851
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadS2_15",
+      "volume": 0.019862913665038777
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadS3_16",
+      "volume": 0.017762913665038644
+    },
+    {
+      "a": "rotating_J1_Body",
+      "b": "rotating_J1_PadS4_17",
+      "volume": 0.017762913665039147
+    },
+    {
+      "a": "rotating_R22_Body",
+      "b": "rotating_R22_Pad1_0",
+      "volume": 0.007312444678594436
+    },
+    {
+      "a": "rotating_R22_Body",
+      "b": "rotating_R22_Pad2_1",
+      "volume": 0.0073124446785943166
+    },
+    {
+      "a": "rotating_R8_Body",
+      "b": "rotating_R8_Pad1_0",
+      "volume": 0.0073124446785944675
+    },
+    {
+      "a": "rotating_R8_Body",
+      "b": "rotating_R8_Pad2_1",
+      "volume": 0.007312444678594497
+    },
+    {
+      "a": "rotating_R13_Body",
+      "b": "rotating_R13_Pad1_0",
+      "volume": 0.007312444678594468
+    },
+    {
+      "a": "rotating_R13_Body",
+      "b": "rotating_R13_Pad2_1",
+      "volume": 0.007312444678594498
+    },
+    {
+      "a": "rotating_C16_Body",
+      "b": "rotating_C16_Pad1_0",
+      "volume": 0.0073124446785946505
+    },
+    {
+      "a": "rotating_C16_Body",
+      "b": "rotating_C16_Pad2_1",
+      "volume": 0.0073124446785946505
+    },
+    {
+      "a": "rotating_R25_Body",
+      "b": "rotating_R25_Pad1_0",
+      "volume": 0.00731244467859444
+    },
+    {
+      "a": "rotating_R25_Body",
+      "b": "rotating_R25_Pad2_1",
+      "volume": 0.00731244467859432
+    },
+    {
+      "a": "rotating_R26_Body",
+      "b": "rotating_R26_Pad1_0",
+      "volume": 0.007312444678594443
+    },
+    {
+      "a": "rotating_R26_Body",
+      "b": "rotating_R26_Pad2_1",
+      "volume": 0.007312444678594324
+    },
+    {
+      "a": "rotating_R16_Body",
+      "b": "rotating_R16_Pad1_0",
+      "volume": 0.007312444678594468
+    },
+    {
+      "a": "rotating_R16_Body",
+      "b": "rotating_R16_Pad2_1",
+      "volume": 0.007312444678594617
+    },
+    {
+      "a": "rotating_C2_Body",
+      "b": "rotating_C2_Pad1_0",
+      "volume": 0.022676391570045314
+    },
+    {
+      "a": "rotating_C2_Body",
+      "b": "rotating_C2_Pad2_1",
+      "volume": 0.022676391570045366
+    },
+    {
+      "a": "rotating_R27_Body",
+      "b": "rotating_R27_Pad1_0",
+      "volume": 0.00731244467859444
+    },
+    {
+      "a": "rotating_R27_Body",
+      "b": "rotating_R27_Pad2_1",
+      "volume": 0.007312444678594321
+    },
+    {
+      "a": "rotating_R17_Body",
+      "b": "rotating_R17_Pad1_0",
+      "volume": 0.007312444678594439
+    },
+    {
+      "a": "rotating_R17_Body",
+      "b": "rotating_R17_Pad2_1",
+      "volume": 0.007312444678594317
+    },
+    {
+      "a": "rotating_C15_Body",
+      "b": "rotating_C15_Pad1_0",
+      "volume": 0.007312444678594573
+    },
+    {
+      "a": "rotating_C15_Body",
+      "b": "rotating_C15_Pad2_1",
+      "volume": 0.007312444678594576
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad1_0",
+      "volume": 0.018375000000000006
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad2_1",
+      "volume": 0.018375000000000006
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad3_2",
+      "volume": 0.018375000000000006
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad4_3",
+      "volume": 0.00392811116964865
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad5_4",
+      "volume": 0.00392811116964865
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad6_5",
+      "volume": 0.003928111169648651
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad7_6",
+      "volume": 0.003928111169648651
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad8_7",
+      "volume": 0.003928111169648657
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad9_8",
+      "volume": 0.003928111169648657
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad10_9",
+      "volume": 0.003928111169648656
+    },
+    {
+      "a": "rotating_U2_Body",
+      "b": "rotating_U2_Pad11_10",
+      "volume": 0.003928111169648657
+    },
+    {
+      "a": "rotating_C9_Body",
+      "b": "rotating_C9_Pad1_0",
+      "volume": 0.007312444678594575
+    },
+    {
+      "a": "rotating_C9_Body",
+      "b": "rotating_C9_Pad2_1",
+      "volume": 0.007312444678594575
+    },
+    {
+      "a": "stationary_R2_Body",
+      "b": "stationary_R2_Pad1_0",
+      "volume": 0.007312444678594468
+    },
+    {
+      "a": "stationary_R2_Body",
+      "b": "stationary_R2_Pad2_1",
+      "volume": 0.007312444678594646
+    },
+    {
+      "a": "stationary_R5_Body",
+      "b": "stationary_R5_Pad1_0",
+      "volume": 0.007312444678594317
+    },
+    {
+      "a": "stationary_R5_Body",
+      "b": "stationary_R5_Pad2_1",
+      "volume": 0.007312444678594645
+    },
+    {
+      "a": "stationary_R6_Body",
+      "b": "stationary_R6_Pad1_0",
+      "volume": 0.007312444678594319
+    },
+    {
+      "a": "stationary_R6_Body",
+      "b": "stationary_R6_Pad2_1",
+      "volume": 0.007312444678594646
+    },
+    {
+      "a": "stationary_C14_Body",
+      "b": "stationary_C14_Pad1_0",
+      "volume": 0.007312444678594544
+    },
+    {
+      "a": "stationary_C14_Body",
+      "b": "stationary_C14_Pad2_1",
+      "volume": 0.007312444678594542
+    },
+    {
+      "a": "stationary_C1_Body",
+      "b": "stationary_C1_Pad1_0",
+      "volume": 0.022676391570045442
+    },
+    {
+      "a": "stationary_C1_Body",
+      "b": "stationary_C1_Pad2_1",
+      "volume": 0.02267639157004552
+    },
+    {
+      "a": "stationary_R3_Body",
+      "b": "stationary_R3_Pad1_0",
+      "volume": 0.007312444678594469
+    },
+    {
+      "a": "stationary_R3_Body",
+      "b": "stationary_R3_Pad2_1",
+      "volume": 0.007312444678594646
+    },
+    {
+      "a": "stationary_C11_Body",
+      "b": "stationary_C11_Pad1_0",
+      "volume": 0.007312444678594501
+    },
+    {
+      "a": "stationary_C11_Body",
+      "b": "stationary_C11_Pad2_1",
+      "volume": 0.007312444678594651
+    },
+    {
+      "a": "stationary_R1_Body",
+      "b": "stationary_R1_Pad1_0",
+      "volume": 0.007312444678594468
+    },
+    {
+      "a": "stationary_R1_Body",
+      "b": "stationary_R1_Pad2_1",
+      "volume": 0.007312444678594644
+    },
+    {
+      "a": "stationary_R4_Body",
+      "b": "stationary_R4_Pad1_0",
+      "volume": 0.007312444678594465
+    },
+    {
+      "a": "stationary_R4_Body",
+      "b": "stationary_R4_Pad2_1",
+      "volume": 0.007312444678594646
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad1_0",
+      "volume": 0.0046874446785944756
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad1_1",
+      "volume": 0.004337444678594564
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad2_2",
+      "volume": 0.003899944678594486
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad3_3",
+      "volume": 0.003899944678594487
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad4_4",
+      "volume": 0.00468744467859447
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad4_5",
+      "volume": 0.004337444678594567
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad5_6",
+      "volume": 0.022050000000000042
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad6_7",
+      "volume": 0.022050000000000042
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad7_8",
+      "volume": 0.004337444678594568
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad7_9",
+      "volume": 0.004687444678594546
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad8_10",
+      "volume": 0.0038999446785945493
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad9_11",
+      "volume": 0.0038999446785945493
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad10_12",
+      "volume": 0.004337444678594566
+    },
+    {
+      "a": "stationary_U1_Body",
+      "b": "stationary_U1_Pad10_13",
+      "volume": 0.004687444678594553
+    },
+    {
+      "a": "stationary_U1_Pad1_0",
+      "b": "stationary_U1_Pad1_1",
+      "volume": 0.0025686670178917763
+    },
+    {
+      "a": "stationary_U1_Pad4_4",
+      "b": "stationary_U1_Pad4_5",
+      "volume": 0.002568667017891774
+    },
+    {
+      "a": "stationary_U1_Pad7_8",
+      "b": "stationary_U1_Pad7_9",
+      "volume": 0.0025686670178918245
+    },
+    {
+      "a": "stationary_U1_Pad10_12",
+      "b": "stationary_U1_Pad10_13",
+      "volume": 0.0025686670178918214
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "COL_MovingScrew0",
+      "volume": 0.09952565526572503
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "COL_MovingScrew1",
+      "volume": 0.09952565526572624
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "MovingClampScrew51_7",
+      "volume": 1.3878983839257009
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "MovingClampScrew74_7",
+      "volume": 0.24549661632212208
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "MovingFanoutShoe",
+      "volume": 0.5076423650192353
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "SourceEndGateScrewm17",
+      "volume": 0.9179134529447567
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "SourceEndGateScrew17",
+      "volume": 0.9179134529447214
+    },
+    {
+      "a": "RotorHalfPositiveY",
+      "b": "SourceEndGate",
+      "volume": 0.2560000000000044
+    },
+    {
+      "a": "RotorHalfNegativeY",
+      "b": "COL_FrameBolt_45_25_m29_5",
+      "volume": 0.9952565526572446
+    },
+    {
+      "a": "RotorHalfNegativeY",
+      "b": "COL_FrameBolt_45_25_29_5",
+      "volume": 0.9952565526572479
+    },
+    {
+      "a": "RotorHalfNegativeY",
+      "b": "COL_FrameBolt_68_9_m29_5",
+      "volume": 0.9952565526572565
+    },
+    {
+      "a": "RotorHalfNegativeY",
+      "b": "COL_FrameBolt_68_9_29_5",
+      "volume": 0.99525655265726
+    }
+  ],
+  "status": "raw allpair findings; no exceptions applied"
+}

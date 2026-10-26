@@ -1,0 +1,17 @@
+{
+  "drawing.pdf": {
+    "url": "https://gct.co/download?name=USB4125.pdf&type=PDFDrawing",
+    "sha256": "ea33e0b40545e545bf698cbac3bb1c0f5a3fc7ca6b5b7fda83a63134d4affaa7",
+    "bytes": 469688
+  },
+  "spec.pdf": {
+    "url": "https://gct.co/download?name=usb4125-spec.pdf&type=PDFSpecification",
+    "sha256": "adeaf1f264b8999c4b40bfd7fd202543201a60246297be6906a83e08a59259a2",
+    "bytes": 395353
+  },
+  "product-status.json": {
+    "url": "https://gct.co/connector/usb4125",
+    "sha256": "61f6732561cd6a21f87580f6a45aeae1aff70ca5f57fc56167790fcdc33da1df",
+    "bytes": 5539
+  }
+}

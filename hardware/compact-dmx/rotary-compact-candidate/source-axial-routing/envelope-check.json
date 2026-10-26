@@ -1,0 +1,74 @@
+{
+  "valid_body_solids": 34,
+  "zero_volume_body_pair_checks": 561,
+  "actual_holes": 98,
+  "stakes": 4,
+  "PCB_local_mm": {
+    "X": [
+      0,
+      27
+    ],
+    "Y": [
+      0,
+      20
+    ],
+    "Z": [
+      -1,
+      0
+    ]
+  },
+  "parent_transform": "NOT selected; parent/Astra owns collar. LocalX axial+; localY tangential; localZ componentnormal. Centered tangentialT=Y-10.",
+  "port": {
+    "PCB_edge_origin_mm": [
+      27,
+      10,
+      0
+    ],
+    "mate_vector": [
+      1,
+      0,
+      0
+    ],
+    "solder_row_X_mm": 22.245,
+    "conservative_body_X_max_mm": 29.17,
+    "body_Y_mm": [
+      5.455,
+      14.545
+    ],
+    "body_height_max_mm": 3.46,
+    "front_body_alignment": "Conservative derivedbody envelope inherited fromprimaryland+bodydims; supplier matingface/profile alignment remainsgate, not an invented exactface coordinate."
+  },
+  "PCB_thickness_proposal_mm": [
+    0.9,
+    1.1
+  ],
+  "stake_length_source_mm": [
+    0.8,
+    1.1
+  ],
+  "stake_below_min_thickness_max_mm": 0.2,
+  "body_to_lowest_PCB_or_stake_max_mm": 4.56,
+  "assembly_normal_reserve_mm": [
+    -1.35,
+    3.71
+  ],
+  "FPC_external_reserve_mm": {
+    "X": [
+      0.225,
+      20.775
+    ],
+    "Y": [
+      20,
+      24
+    ],
+    "Z": [
+      0,
+      2
+    ]
+  },
+  "supplier_stake_cross_section": "STEPuses PCBslot sweptallocation, not invented vendorstake profile. Retention/fillet/tolerance/process notqualified.",
+  "whole_collar_fit": false,
+  "top_only_components": true,
+  "fit_25x18_target": false,
+  "manufacturing_release": false
+}

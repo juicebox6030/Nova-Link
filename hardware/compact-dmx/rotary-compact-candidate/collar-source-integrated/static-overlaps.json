@@ -1,0 +1,72 @@
+[
+  {
+    "a": "FixedScrew0",
+    "b": "StationarySpool",
+    "volume": 0.13202107443061162
+  },
+  {
+    "a": "FixedScrew1",
+    "b": "StationarySpool",
+    "volume": 0.1320210744306128
+  },
+  {
+    "a": "MovingScrew0",
+    "b": "RotorHalfPositiveY",
+    "volume": 0.09952565526572504
+  },
+  {
+    "a": "MovingScrew1",
+    "b": "RotorHalfPositiveY",
+    "volume": 0.09952565526572621
+  },
+  {
+    "a": "IndexKnob",
+    "b": "IndexPin",
+    "volume": 0.2764601535159007
+  },
+  {
+    "a": "IndexRearCap",
+    "b": "StationarySpool",
+    "volume": 3.1415926535897665
+  },
+  {
+    "a": "FrameBolt_45_25_m29_5",
+    "b": "RotorHalfNegativeY",
+    "volume": 0.9952565526572447
+  },
+  {
+    "a": "FrameBolt_45_25_29_5",
+    "b": "RotorHalfNegativeY",
+    "volume": 0.9952565526572478
+  },
+  {
+    "a": "FrameBolt_68_9_m29_5",
+    "b": "RotorHalfNegativeY",
+    "volume": 0.9952565526572568
+  },
+  {
+    "a": "FrameBolt_68_9_29_5",
+    "b": "RotorHalfNegativeY",
+    "volume": 0.9952565526572603
+  },
+  {
+    "a": "RotorHalfPositiveY",
+    "b": "BoardRetainerScrew_m11",
+    "volume": 0.4976282763286153
+  },
+  {
+    "a": "RotorHalfPositiveY",
+    "b": "BoardRetainerScrew_11",
+    "volume": 0.4976282763286153
+  },
+  {
+    "a": "RotorHalfPositiveY",
+    "b": "TailClampScrew_74_4",
+    "volume": 0.19905131053145142
+  },
+  {
+    "a": "RotorHalfPositiveY",
+    "b": "TailClampScrew_96_6",
+    "volume": 0.19905131053145142
+  }
+]

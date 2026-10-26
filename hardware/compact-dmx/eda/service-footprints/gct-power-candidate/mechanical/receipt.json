@@ -1,0 +1,87 @@
+{
+  "scope": "local mechanical prototype only",
+  "solid_count": 14,
+  "all_valid_closed": true,
+  "BRep_pair_checks": 78,
+  "plug_external_approach_checks": 65,
+  "allocated_worst_connector_base": {
+    "intersection_mm3": 0.0,
+    "minimum_distance_mm": 0.25
+  },
+  "DRC_geometric_violations": 0,
+  "unrouted": 103,
+  "board_contract": {
+    "source_sha256": "dca73c2ab334e62814240cd0c01a24c17fa69820f151dbf55571e56febdca278",
+    "electrical_parts": 39,
+    "unchanged_nonconnector_footprints": 42,
+    "USB_shift_y_mm": 3,
+    "new_origin": [
+      42.7,
+      47.6
+    ],
+    "tongue": [
+      36.5,
+      51,
+      48.9,
+      53.3
+    ],
+    "mating_plane_y": 54,
+    "same_nets_values": true,
+    "tracks": 0
+  },
+  "external_mm": [
+    98,
+    34,
+    24
+  ],
+  "main_PCB_mm": [
+    90,
+    28,
+    1
+  ],
+  "tongue_mm": [
+    12.4,
+    2.3,
+    1
+  ],
+  "mating_face_before_after_y": [
+    51,
+    54
+  ],
+  "remaining_gates": [
+    "stake thickness assumed .3; supplier exact crosssection missing",
+    "shim/pad compression/adhesive and print-strength/creep tests",
+    "actual plug/overmold and insertion test",
+    "full power/RF/routing and assembly qualification"
+  ],
+  "hashes": {
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/board.py": "3b0b6b983df39e3fb7173650e8789ec9a47f846d4d05575900b049765e1cba19",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/build.py": "77d322501ac79ab932bc7ece37a4994a8b17468c3c412da6c58c7104fe35097e",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/flush-assembly.step": "81097c6d770fead66cbc71a52944746f3c7acc8a5e338c859983867dfc748a1e",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/base-proposal.step": "73731d511f95eed3d2159dfba7682c920ad9978f71e7379ebb6dbb408fd610cd",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/pcb-tongue.step": "4206475c786604d8abbcb01092f52caf128fc474cdc231782dafcc1fd058bd7e",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/tongue.kicad_pcb": "9d199805cb6153b60b46d6027ff0544c402f59536bb5f8b17889015254a0aec1",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/draw.py": "14db1a0e6e2da4ebda0c99424c38c82aefbb61901ec96e3280f2a9934fc22cce",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/section.svg": "8fe5811281d156be3298d98173f8f1c1361e897fcf57bec1d1cd0d821393b24e",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/section.pdf": "f445b09d09963b1efc9546b1b2e6d4ef800437b7bbd5c5f293da1586a74cbf95",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/pcb.svg": "91dff68796104eca02f895ff9b581f23b319cce64e0b9fee1dcc9dc49bbd34e0",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/pcb.pdf": "12b4175eab51327b052a0649f4662a58709d5228563972704a27150acd6a5314",
+    "hardware/compact-dmx/eda/service-footprints/gct-power-candidate/mechanical/flush-prototype.FCStd": "d6a914284d2425f3d5c2564799bd614faff1cfc8a002128bb5d41d0df8ac5350"
+  },
+  "baseline_modified": false,
+  "manufacturing_release": false,
+  "drawing_correction": {
+    "note": "Section layout corrected: complete z5..29 below title, separated annotation column, equal Y/Z scale. Full existing 12mm plug test envelope shown; CAD and board unchanged.",
+    "page_points": [
+      1100,
+      800
+    ],
+    "scale_points_per_mm": 18,
+    "geometry_screen_y_points": [
+      120,
+      552
+    ],
+    "inspection": "PDF rendered with pdftoppm; SVG rendered with ImageMagick; both visually inspected for title/geometry separation and readable labels.",
+    "unchanged_other_artifact_hashes": 9
+  }
+}

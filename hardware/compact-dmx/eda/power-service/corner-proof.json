@@ -1,0 +1,23 @@
+{
+  "static_corner_check": "PASS",
+  "scope": "Netlist-derived static arithmetic only",
+  "detector_corners": 32,
+  "mode_corners": 256,
+  "normal_input_min_at_assumed_4p4V_source_V": 4.304799057371368,
+  "GOOD_falling_min_V": 3.9625178211378924,
+  "GOOD_rising_max_V": 4.193996800289137,
+  "minimum_mode_margin_after50mV_sag_V": 0.0365178211378927,
+  "input_demand_at_qualified_floor_mA": 358.1818017875576,
+  "input_margin_at_qualified_floor_mA": 31.618405765209786,
+  "buck_headroom_with_explicit_Ron_allocation_V": 0.395063280601625,
+  "old_false_GOOD_normal_input_V": 3.306246823376624,
+  "old_full_source_entry_margin_V": 0.012091655103254606,
+  "start_after_worst_charge_hysteresis_V": 2.448,
+  "aged_runtime_estimate_s": 10.565964972972973,
+  "runtime_margin_over10s_s": 0.5659649729729725,
+  "input_50mV_reserve_exhaustion_s_at500mA_and_min_limiter": 5.036307126129597e-06,
+  "startup_counterexample_is_waveform_proof": false,
+  "cold_cap_startup_acceptance": "UNMET",
+  "transient_timing_thermal_load_and_efficiency_qualified": false,
+  "manufacturing_acceptance": "NOT_RELEASED"
+}

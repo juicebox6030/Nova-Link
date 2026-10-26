@@ -1,0 +1,62 @@
+{
+  "status": "Checked editable development assembly; not supplier forming/manufacturing acceptance",
+  "source_board_sha256": "fc0785cdaaf874002b2362835070f29f00b187e4054dd3ab093c43e177ea035f",
+  "board_sha256": "a607ea54646ee852cc41a1894928887a5fa5276dce76ea12690f43ff46b24dd8",
+  "unchanged_noncell_footprints": 177,
+  "unchanged_pad_checks": 671,
+  "C23_changed_pads": 2,
+  "DRC_violations": 0,
+  "unconnected_items": 452,
+  "tracks": 0,
+  "ERC": "PCB-only derivative, no new schematic ERC claim",
+  "closed_shape_objects": 26,
+  "zero_volume_pair_checks": 321,
+  "intentional_thread_engagements": 4,
+  "component_solid_checks": 3268,
+  "rounded_aperture_allocated_gap_mm": 0.17827125369995397,
+  "minimum_pad_aperture_gap_mm": 1.1499999999999986,
+  "rigid_worst": {
+    "Base_integral_cradles": {
+      "volume_mm3": 0.0,
+      "clearance_mm": 0.1999999999999978
+    },
+    "Lid_positive_retainer": {
+      "volume_mm3": 0.0,
+      "clearance_mm": 0.19999999999999465
+    }
+  },
+  "prior_artifact_hashes_verified_unchanged": 26,
+  "source_guide_sha256": "ad251a1e8bb97c2e0c5da1edf55e02aa16aad469d97f689b661eebab9dfb8faa",
+  "remaining_gates": [
+    "Eaton supported forming radius/standoff/seal datum and preformed-lead qualification",
+    "Finished-slot/process/forming tolerance and solder heat/fillet",
+    "Actual vent path and compliant liner/fastener/thread strength/creep",
+    "Cell protection integration, routed RF/PCB and measured runtime/assembly tests"
+  ],
+  "manufacturing_release": false,
+  "hashes": {
+    "Buffer25.pretty/HV1625_formed_ENGINEERING.kicad_mod": "309cfcfe0c229aeabd87281d84aa631685fb8f8298db6481a768f8dd9885737f",
+    "README.md": "b53f1eb607b22c48309c4a8ee24a94f91eee0b64a866d5596f3a2a5a827aa899",
+    "__pycache__/mechanics.cpython-311.pyc": "9c3bd8b973c83224a9865d6401a8ba0d89c3ee23b5ae129c1227bac4c165fa2e",
+    "assembly-sections.pdf": "1cae483a635a87d140eddcabd52766cfbb79ba8be516264722356fc855acb473",
+    "board-check.json": "9047563dd0e58af46aae578830fe2e46e0133d18f1b838d56857b1f79c482e23",
+    "board-input.json": "c30b862034bed9c9cd50631f5e67742bc1860fb4d6db2365a0452d8861843c6e",
+    "board-top.svg": "591cb908efc086cf2f4e5b72c6d4117145c0a56a7b233503a90afd3b7d710dcc",
+    "board.py": "14197744acd8a71cf86fc212a838c7b66419538b9c7ef4afd0543fc224f7de73",
+    "draw.py": "c571d2236f625a7e7d2ba94fff872e2ae7d173d4171a30a4ecaac38d2dd908fa",
+    "drc.json": "d7dd4ed9d6f52df7d320444d39f8f2a620c82fbeba23d2d249a444974371939f",
+    "fp-lib-table": "5a271abecd1c57cda1968472fa83373b3fb9c5f10b2d884bdf46a9b3ea070a1a",
+    "integrated25.FCStd": "4c1849454e974260cb2d917c2f6a73fee0abe98b63ccd6ab0ef1ebfa3fdd517e",
+    "integrated25.kicad_pcb": "a607ea54646ee852cc41a1894928887a5fa5276dce76ea12690f43ff46b24dd8",
+    "integrated25.kicad_prl": "dbb05765976333ad14eb7ed7427a12d9a4a57ce28e7c806095670d995328b642",
+    "integrated25.kicad_pro": "ab82bf812fde80dc716c5efe97ac122ad319c743ba7c39d1898ace9e2f4d1160",
+    "integrated25.step": "b872e8a9ab612e3b445b88a74f379bef737303aac8dfaac269cae431579538dd",
+    "mechanics-check.json": "96c83c331c35dff4c218d4ca212c86ad8c2f823d97015700dd64dda784b3616c",
+    "mechanics.log": "3564365f916d15c2665d7a5c4210e3d0e8fc45d676ca8fef927c9a70b945ae4c",
+    "mechanics.py": "2ef07567f444bfd7199ccaaee283c77ded0e60b9c619910087657cc58153a1c7",
+    "sources/eaton-guide.pdf": "ad251a1e8bb97c2e0c5da1edf55e02aa16aad469d97f689b661eebab9dfb8faa",
+    "sources/eaton-guide.txt": "7de6513a0167ef9089ca84ea293042a5241874192545a3d4d87d6b04e5ca7601",
+    "sources.json": "4400d13bd40e15698235d2225e69d261e9dab9065dab0fea6689bc9c32fc018e",
+    "verify.py": "ca23ce76e34f62585bf6aab6d6afede5060f31f2365b2c58183beeaeefc47383"
+  }
+}

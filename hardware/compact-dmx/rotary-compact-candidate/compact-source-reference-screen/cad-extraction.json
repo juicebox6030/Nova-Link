@@ -1,0 +1,370 @@
+{
+  "method": "KiCad10.0.7 Altium importer in memory, no board saved or circuit modified",
+  "source": "sources/tida-cad/TIDA-01560_PCB.PcbDoc",
+  "outline_bbox_mm": {
+    "x": 115.4761,
+    "y": 79.9786,
+    "width": 66.05,
+    "height": 50.05
+  },
+  "thickness_mm": 1.5948,
+  "footprint_count": 50,
+  "outlines": [
+    {
+      "type": "0",
+      "start": [
+        115.5011,
+        130.0036
+      ],
+      "end": [
+        181.5011,
+        130.0036
+      ],
+      "width": 0.05
+    },
+    {
+      "type": "0",
+      "start": [
+        181.5011,
+        130.0036
+      ],
+      "end": [
+        181.5011,
+        80.0036
+      ],
+      "width": 0.05
+    },
+    {
+      "type": "0",
+      "start": [
+        181.5011,
+        80.0036
+      ],
+      "end": [
+        115.5011,
+        80.0036
+      ],
+      "width": 0.05
+    },
+    {
+      "type": "0",
+      "start": [
+        115.5011,
+        80.0036
+      ],
+      "end": [
+        115.5011,
+        130.0036
+      ],
+      "width": 0.05
+    }
+  ],
+  "models": [
+    {
+      "ref": "T1",
+      "models": [
+        {
+          "filename": "kicad-embed://model_9",
+          "offset": [
+            -11.00006,
+            -0.01266,
+            9.5
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C2",
+      "models": [
+        {
+          "filename": "kicad-embed://AX_1000x1250.stp",
+          "offset": [
+            9e-05,
+            0.0001,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C3",
+      "models": [
+        {
+          "filename": "kicad-embed://AX_1000x1250.stp",
+          "offset": [
+            9e-05,
+            0.0001,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C5",
+      "models": [
+        {
+          "filename": "kicad-embed://R7_1000x1250.stp",
+          "offset": [
+            9e-05,
+            8e-05,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C11",
+      "models": [
+        {
+          "filename": "kicad-embed://Nichicon_630x580.stp",
+          "offset": [
+            -9e-05,
+            0.00012,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D2",
+      "models": [
+        {
+          "filename": "kicad-embed://SMB_nominal.stp",
+          "offset": [
+            8e-05,
+            7e-05,
+            1.31524
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D3",
+      "models": [
+        {
+          "filename": "kicad-embed://PowerDI-5.stp",
+          "offset": [
+            1.0309,
+            -9.56806,
+            7.99173
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D4",
+      "models": [
+        {
+          "filename": "kicad-embed://SMA_nominal.stp",
+          "offset": [
+            8e-05,
+            0.0001,
+            1.41524
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D5",
+      "models": [
+        {
+          "filename": "kicad-embed://SOD-323.stp",
+          "offset": [
+            0.00011,
+            7e-05,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D6",
+      "models": [
+        {
+          "filename": "kicad-embed://PowerDI-5.stp",
+          "offset": [
+            1.0309,
+            -9.56806,
+            7.99173
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J1",
+      "models": [
+        {
+          "filename": "kicad-embed://TEC-282841-2.stp",
+          "offset": [
+            -9e-05,
+            -4.52505,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J2",
+      "models": [
+        {
+          "filename": "kicad-embed://TEC-282841-2.stp",
+          "offset": [
+            -9e-05,
+            -4.52505,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "J3",
+      "models": [
+        {
+          "filename": "kicad-embed://TEC-282841-2.stp",
+          "offset": [
+            -9e-05,
+            -4.52505,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "L2",
+      "models": [
+        {
+          "filename": "kicad-embed://WE-CMB_XS.stp",
+          "offset": [
+            0.00011,
+            0.00013,
+            1.51524
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U1",
+      "models": [
+        {
+          "filename": "kicad-embed://DBV0005A.stp",
+          "offset": [
+            6e-05,
+            7e-05,
+            0.813
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "models": [
+        {
+          "filename": "kicad-embed://D0007A.stp",
+          "offset": [
+            6e-05,
+            9e-05,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U3",
+      "models": [
+        {
+          "filename": "kicad-embed://DBV0005A.stp",
+          "offset": [
+            6e-05,
+            7e-05,
+            0.813
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    }
+  ]
+}
